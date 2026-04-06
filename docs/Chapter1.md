@@ -8,6 +8,54 @@ La introducción desempeña un papel fundamental en la estructuración y compren
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+<table border="1" width="100%">
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/Billy.jpg" alt="Billy Photo" width="120" />
+    </td>
+    <td valign="top">
+      <strong>Billy Jake Ruiz Madrid - (U202116401)</strong> - Ingeniería de Software<br><br>
+      Tengo 22 años, soy una persona tranquila, colaborativa y adaptable. Me gusta trabajar en equipo, aportando ideas y soluciones. Cuento con conocimientos en C++ y Python y siempre busco formas de hacer las cosas de manera eficiente.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="" alt="" width="120" />
+    </td>
+    <td valign="top">
+      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="" alt="" width="120" />
+    </td>
+    <td valign="top">
+      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="" alt="" width="120" />
+    </td>
+    <td valign="top">
+      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+    </td>
+  </tr>
+  
+<tr>
+    <td width="140" valign="top" align="center">
+      <img src="" alt="" width="120" />
+    </td>
+    <td valign="top">
+      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+    </td>
+  </tr>
+</table>
+
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
