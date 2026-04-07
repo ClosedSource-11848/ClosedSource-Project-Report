@@ -22,7 +22,7 @@ La introducción desempeña un papel fundamental en la estructuración y compren
   <table border="1" width="100%">
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="../assets/img/ Daniel.jpg" alt="Daniel Photo" width="120" />
+      <img src="../assets/img/Daniel.jpg" alt="Daniel Photo" width="120" />
     </td>
     <td valign="top">
       <strong>Edgard Daniel Diaz Caruzo - (U202323911)</strong> - Ingeniería de Software<br><br>
