@@ -28,13 +28,13 @@
 
 <div align="center">
 
-| Código     | Apellidos y Nombres    |
-|------------|------------------------|
-| u202116401 | Ruiz Madrid Billy Jake |
-| U          |                        |
-| U          |                        |
-| U          |                        |
-| U          |                        |
+| Código     | Apellidos y Nombres        |
+|------------|----------------------------|
+| U202116401 | Ruiz Madrid Billy Jake     |
+| U202322849 | Viza Quispe Marlon Packard |
+| U          |                            |
+| U          |                            |
+| U          |                            |
 
 ### Abril, 2026
 
