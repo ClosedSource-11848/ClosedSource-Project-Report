@@ -19,12 +19,14 @@ La introducción desempeña un papel fundamental en la estructuración y compren
     </td>
   </tr>
 
+  <table border="1" width="100%">
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="" alt="" width="120" />
+      <img src="../assets/img/Billy.jpg" alt="Billy Photo" width="120" />
     </td>
     <td valign="top">
-      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+      <strong>Edgard Daniel Diaz Caruzo - (U202323911)</strong> - Ingeniería de Software<br><br>
+      Tengo 20 años, y me considero una persona flexible y con buena disposición para colaborar. Disfruto trabajar en equipo, ya que me permite aportar ideas y encontrar soluciones junto a otros. Tengo conocimientos en C++ y Python, y constantemente busco optimizar la forma en que realizo mis tareas para lograr mejores resultados.
     </td>
   </tr>
 
@@ -56,6 +58,7 @@ La introducción desempeña un papel fundamental en la estructuración y compren
   </tr>
 </table>
 
+  
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
