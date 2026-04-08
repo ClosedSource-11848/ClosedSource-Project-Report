@@ -52,10 +52,11 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
 
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="" alt="" width="120" />
+      <img src="../assets/img/Marlon.jpg" alt="Marlon Photo" width="120" />
     </td>
     <td valign="top">
-      <strong> - (U202113229)</strong> - Ingeniería de Software<br><br>
+      <strong>Marlon Packard Viza Quispe - (U202322849)</strong> - Ingeniería de Software<br><br>
+      Estudiante de 20 años, responsable y proactivo, con una sólida base técnica en C++. Destaco por mi capacidad para aportar soluciones creativas y mi compromiso con el aprendizaje constante en entornos profesionales. Busco asumir retos que potencien mi desarrollo y contribuyan al éxito colectivo de mi equipo.
     </td>
   </tr>
 
