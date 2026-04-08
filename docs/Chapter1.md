@@ -18,8 +18,6 @@ La introducción desempeña un papel fundamental en la estructuración y compren
       Tengo 22 años, soy una persona tranquila, colaborativa y adaptable. Me gusta trabajar en equipo, aportando ideas y soluciones. Cuento con conocimientos en C++ y Python y siempre busco formas de hacer las cosas de manera eficiente.
     </td>
   </tr>
-
-  <table border="1" width="100%">
   <tr>
     <td width="140" valign="top" align="center">
       <img src="../assets/img/Daniel.jpg" alt="Daniel Photo" width="120" />
