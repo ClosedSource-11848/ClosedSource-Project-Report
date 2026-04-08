@@ -68,13 +68,13 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
       <strong> - (U)</strong> - Ingeniería de Software<br><br>
     </td>
   </tr>
-  
-<tr>
+  <tr>
     <td width="140" valign="top" align="center">
-      <img src="" alt="" width="120" />
+      <img src="../assets/img/Marcelo.jpg" alt="Marcelo Photo" width="120" />
     </td>
     <td valign="top">
-      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+      <strong>Angulo Ramírez Marcelo Martín - (U202321425)</strong> - Ingeniería de Software<br><br>
+      Tengo 21 años, estudio para ser un ingeinero de software y soy muy activo y comunicativo en el desarrollo de proyectos. Considero que el trabajo en equipo una oportunidad que me permite afinar mi capacidad de encontrar respuestas a una problematica y corroborarlo. Tengo experiencia en C++, C# y Python, con el objetivo de extenderme a otros lenguajes de alto nivel y experimentar metodos para optimizar mi labor.
     </td>
   </tr>
 </table>
