@@ -118,9 +118,19 @@ A pesar de la criticidad de estos procesos, la modernización digital en las ár
 
 ### 1.2.2. Lean UX Process
 
+El Lean UX es una perspectiva que facilita la validación de las soluciones sugeridas para problemas detectados. Este método se enfoca en los individuos que harán uso de nuestro producto. Después de detectar el problema que se debe solucionar, se utilizó este procedimiento para identificar áreas cruciales que ayudarán a dar forma al producto propuesto.
+
 #### 1.2.2.1. Lean UX Problem Statements
 
+Nuestro servicio brinda una plataforma de gestión de calidad y cumplimiento (QMS) para laboratorios farmacéuticos y entidades de salud pública. A través de una arquitectura SaaS e integración con dispositivos IoT, las instituciones buscan garantizar que cada lote de medicamentos cumpla con las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
+
+Hemos observado que el control de variables críticas (pH, temperatura, presión) aún depende de registros manuales y sistemas aislados, lo que genera riesgos de error humano, falta de integridad de datos y demoras críticas durante auditorías regulatorias.
+
+¿Cómo podríamos lograr que el personal de aseguramiento de la calidad y los supervisores farmacéuticos tengan trazabilidad inmutable y alertas en tiempo real de sus procesos de fabricación, sin depender de bitácoras físicas o transcripciones manuales propensas a errores?
+
 #### 1.2.2.2. Lean UX Assumptions
+
+
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
