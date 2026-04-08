@@ -83,6 +83,38 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
 
 ### 1.2.1. Antecedentes y problemática
 
+**1. ANTECEDENTES**
+
+La industria farmacéutica es uno de los sectores más regulados a nivel mundial, dada la implicación directa que tienen sus productos sobre la salud pública. En el Perú, la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID) es la autoridad encargada de velar por el estricto cumplimiento de las Buenas Prácticas de Manufactura (BPM). Estas normativas exigen que los laboratorios —tanto privados como entidades públicas como el Instituto Nacional de Salud (INS)— garanticen que los productos se fabriquen de manera uniforme y controlada, de acuerdo con estándares de calidad adecuados al uso que se les pretende dar.
+
+A pesar de la criticidad de estos procesos, la modernización digital en las áreas de aseguramiento de la calidad (Quality Assurance) es aún incipiente en muchos laboratorios nacionales. El control de equipos industriales clave, como las autoclaves (cuyo éxito en la esterilización depende de la medición exacta de temperatura y presión del vapor) o la medición del pH en el control de calidad, sigue dependiendo en gran medida de sistemas aislados, impresiones térmicas o, en el peor de los casos, registros manuales realizados por operarios. Esta falta de integración digital y automatización no solo ralentiza las operaciones, sino que compromete el principio de "Integridad de Datos" (Data Integrity), un pilar fundamental exigido por las agencias regulatorias internacionales.
+
+**2. PROBLEMÁTICA**
+
+**Riesgo de errores humanos en registros críticos:** La transcripción manual de variables como la temperatura, la presión o el potencial de hidrógeno (pH) desde los sensores físicos hacia las bitácoras de lote introduce un alto riesgo de error humano. Una simple equivocación en la anotación puede comprometer la liberación de un lote completo o, peor aún, permitir la salida de un producto inseguro.
+
+**Trazabilidad fragmentada y vulnerable:** Al no contar con un sistema centralizado, la información de fabricación se dispersa en documentos físicos o archivos de Excel locales. Esto dificulta la trazabilidad inmutable del producto y hace que la detección del origen de una desviación de calidad sea un proceso tedioso y reactivo.
+
+**Auditorías lentas y propensas a observaciones:** Cuando DIGEMID o entidades certificadoras realizan auditorías, los encargados de calidad deben invertir días recopilando documentos físicos para demostrar que los procesos se mantuvieron dentro de los parámetros establecidos. La falta de un historial digital auditable incrementa la probabilidad de recibir observaciones regulatorias o multas.
+
+**Ausencia de alertas tempranas:** Al no existir una integración directa (IoT) entre los sensores de los equipos de producción y un sistema de gestión central (QMS), si una autoclave sufre una caída de presión, la alerta depende de la observación visual del operario. No hay un mecanismo de software que bloquee automáticamente el lote si los parámetros salen del rango permitido por la normativa.
+
+**Análisis 5W+2H:**
+
+**What (¿Qué?):** QualiTrack busca resolver la falta de trazabilidad digital y los riesgos de error humano en la supervisión de fabricación farmacéutica. La plataforma SaaS integrará la telemetría de equipos críticos (simulando sensores IoT de presión, temperatura y pH) con un sistema de gestión de calidad (QMS) que automatiza registros, genera alertas y bloquea lotes fuera de especificación.
+
+**Why (¿Por qué?):** Es fundamental abordar este problema para garantizar la seguridad de los pacientes que consumen estos fármacos y productos biológicos. Además, digitalizar estos procesos permite a los laboratorios evitar costosas multas de DIGEMID, superar auditorías con facilidad y reducir las pérdidas económicas por lotes defectuosos.
+
+**Who (¿Quién?):** Afecta directamente al personal de Aseguramiento de la Calidad, Químicos Farmacéuticos supervisores, y operarios de laboratorio. Beneficia a las directivas de las instituciones (como el INS o laboratorios privados) al asegurar el cumplimiento normativo.
+
+**When (¿Cuándo?):** La problemática ocurre diariamente durante cada ciclo de producción, esterilización y control de calidad. El problema se vuelve crítico durante los periodos de inspección y auditoría de entidades regulatorias, donde la falta de trazabilidad puede paralizar las operaciones.
+
+**Where (¿Dónde?):** Ocurre dentro de las plantas de producción y laboratorios de control de calidad de la industria farmacéutica y entidades de salud pública a nivel nacional e internacional.
+
+**How (¿Cómo?):** Se resuelve mediante una plataforma web distribuida. El backend (Java/Spring Boot) procesará reglas de negocio estrictas basadas en BPM y recibirá datos simulados/reales de microcontroladores conectados a los equipos. El frontend (Angular) proveerá dashboards interactivos donde los supervisores podrán ver telemetría en tiempo real, firmar digitalmente la liberación de lotes y exportar historiales inmutables para auditorías.
+
+**How much (¿Cuánto?):** El modelo de negocio es SaaS B2B. Se cobrará una suscripción (mensual/anual) a los laboratorios basada en el volumen de datos procesados (cantidad de equipos conectados o lotes gestionados). Esto evita que los laboratorios realicen fuertes inversiones iniciales en infraestructura de servidores locales.
+
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
