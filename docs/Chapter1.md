@@ -179,6 +179,35 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 * Asumimos que el sistema de alertas automáticas permitirá bloquear lotes no conformes antes de que avancen en la cadena de suministro.
 * Asumimos que la arquitectura SaaS facilitará el cumplimiento normativo sin que el laboratorio deba gestionar servidores locales complejos.
 
+**Assumptions Priority (riesgo x incertidumbre)**
+
+| Prioridad | Supuesto a validar                                                                                                  | Riesgo | Incertidumbre |
+|----------:|---------------------------------------------------------------------------------------------------------------------|:------:|:-------------:|
+|         1 | Los sensores IoT pueden integrarse de forma estable con equipos industriales antiguos (autoclaves, pH-metros).      |  Alto  |     Alto      |
+|         2 | La plataforma cumple con los estándares de seguridad de datos exigidos por DIGEMID para auditorías digitales.       |  Alto  |     Medio     |
+|         3 | El personal de aseguramiento de calidad preferirá el dashboard digital sobre las bitácoras físicas actuales.        |  Alto  |     Alto      |
+|         4 | Los laboratorios están dispuestos a pagar una suscripción recurrente en lugar de comprar un software de pago único. |  Medio |     Bajo      |
+
+**Business Outcomes esperados**
+
+* Lograr que al menos 2 laboratorios piloto implementen QualiTrack en sus líneas de producción en los primeros 8 meses.
+* Reducir en un 80% el tiempo de preparación de documentos para auditorías regulatorias en las instituciones piloto.
+* Disminuir en un 15% la pérdida de lotes por desviaciones de parámetros no detectadas a tiempo.
+
+**User Outcomes esperados**
+
+* Lograr que los supervisores de calidad firmen y liberen lotes de forma digital en menos de 10 minutos tras finalizar la producción.
+* Reducir el error humano en el registro de variables críticas a un valor cercano al 0% mediante la automatización IoT.
+* Lograr que los operarios visualicen alertas de desviación de parámetros en menos de 5 segundos a través de la plataforma móvil/web.
+
+**Features mínimas para validación**
+
+1. Módulo de registro de lotes e historial de fabricación inmutable.
+2. Integración con sensores IoT (simulados/reales) para captura de pH, temperatura y presión.
+3. Dashboard de monitoreo en tiempo real con indicadores de cumplimiento BPM.
+4. Sistema de alertas automáticas y bloqueo preventivo de lotes fuera de rango.
+5. Generación de reportes de trazabilidad listos para auditoría en formato PDF no editable.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
