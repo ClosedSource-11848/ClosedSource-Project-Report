@@ -183,17 +183,17 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 |         3 | El personal de aseguramiento de calidad preferirá el dashboard digital sobre las bitácoras físicas actuales.        |  Alto  |     Alto      |
 |         4 | Los laboratorios están dispuestos a pagar una suscripción recurrente en lugar de comprar un software de pago único. |  Medio |     Bajo      |
 
-**Business Outcomes esperados**
+**Business Outcomes:**
 * Lograr que al menos 2 laboratorios piloto implementen QualiTrack en sus líneas de producción en los primeros 8 meses.
 * Reducir en un 80% el tiempo de preparación de documentos para auditorías regulatorias en las instituciones piloto.
 * Disminuir en un 15% la pérdida de lotes por desviaciones de parámetros no detectadas a tiempo.
 
-**User Outcomes esperados**
+**User Outcomes:**
 * Lograr que los supervisores de calidad firmen y liberen lotes de forma digital en menos de 10 minutos tras finalizar la producción.
 * Reducir el error humano en el registro de variables críticas a un valor cercano al 0% mediante la automatización IoT.
 * Lograr que los operarios visualicen alertas de desviación de parámetros en menos de 5 segundos a través de la plataforma móvil/web.
 
-**Features mínimas para validación**
+**Features:**
 1. Módulo de registro de lotes e historial de fabricación inmutable.
 2. Integración con sensores IoT (simulados/reales) para captura de pH, temperatura y presión.
 3. Dashboard de monitoreo en tiempo real con indicadores de cumplimiento BPM.
@@ -210,16 +210,6 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 
 #### 1.2.2.4. Lean UX Canvas
 
-| 1. Business Problem | 5. Solution | 2. Business Outcomes |
-| :--- | :--- | :--- |
-| Los laboratorios y entidades de salud pública dependen de registros manuales y sistemas aislados, generando alto riesgo de error humano, pérdida de lotes por desviaciones no detectadas a tiempo y auditorías de DIGEMID lentas y propensas a observaciones. | **QualiTrack:** Plataforma SaaS B2B (Java/Angular) que integra telemetría IoT en tiempo real para automatizar registros BPM, generar alertas preventivas y asegurar la integridad de datos mediante un historial inmutable. | • Reducción del 80% en el tiempo de preparación para auditorías.<br>• Disminución del 15% en pérdida de lotes por desviaciones.<br>• Implementación exitosa en al menos 2 laboratorios piloto en 8 meses. |
-
-| 3. Users & Customers | 4. User Benefits | 6. Solution Ideas |
-| :--- | :--- | :--- |
-| • Jefes de Aseguramiento de la Calidad (QA).<br>• Directores Técnicos.<br>• Operarios de planta/laboratorio.<br>• Auditores regulatorios (DIGEMID). | • Liberación de lotes digitales en < 10 minutos.<br>• Alertas de desviación visibles en < 5 segundos.<br>• Reducción del error humano de transcripción a casi 0%. | • Integración de sensores IoT (temp, presión, pH).<br>• Dashboard web de monitoreo y firma digital.<br>• Motor de bloqueo preventivo de lotes.<br>• Reportes PDF inmutables para auditorías. |
-
-| 7. Hypothesis | 8. What’s the most important thing we need to learn first? |
-| :--- | :--- |
-| Creemos que QualiTrack garantizará la Integridad de Datos (Data Integrity) en la industria farmacéutica digitalizando el control BPM mediante IoT, lo que eliminará errores manuales y agilizará drásticamente las auditorías. | ¿Pueden los sensores IoT integrarse de forma estable y transmitir datos en tiempo real desde los equipos industriales antiguos (autoclaves, pH-metros) que actualmente poseen nuestros clientes piloto? |
+<img src="../assets/img/Lean_UX_Canvas_QualiTrack.png" alt="Lean UX Canvas" width="auto" height="550"/>
 
 ## 1.3. Segmentos objetivo
