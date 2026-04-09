@@ -130,7 +130,54 @@ Hemos observado que el control de variables críticas (pH, temperatura, presión
 
 #### 1.2.2.2. Lean UX Assumptions
 
+En esta sección los supuestos iniciales del equipo acerca del negocio, los usuarios, la problemática y la solución sugerida se exponen. Durante entrevistas, prototipado y pruebas de uso, estas suposiciones se establecen como creencias que necesitan ser confirmadas con evidencia.
 
+**Assumptions Worksheet (síntesis aplicada a QualiTrack)**
+
+| #  | Supuesto aplicado                                                                                                                               |
+|----|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | Creemos que los laboratorios necesitan garantizar la integridad de datos para superar auditorías de DIGEMID sin observaciones.                  |
+| 2  | Estas necesidades pueden resolverse con una solución SaaS integrada a sensores IoT que capturen telemetría (pH, presión, temp) automáticamente. |
+| 3  | Nuestros clientes iniciales serán laboratorios farmacéuticos medianos y entidades públicas (como el INS) que manejan procesos de esterilización.|
+| 4  | El valor #1 para los laboratorios es la reducción del riesgo de rechazo de lotes y la agilización de procesos de auditoría.                     |  
+| 5  | Beneficios adicionales: eliminación del papel, alertas tempranas ante desviaciones y centralización de la firma digital de lotes.               |
+| 6  | Adquiriremos clientes mediante venta directa B2B técnica, ferias del sector farmacéutico y consultorías de cumplimiento regulatorio.            |
+| 7  | Generaremos ingresos con planes de suscripción basados en el volumen de lotes gestionados o cantidad de equipos IoT conectados.                 |
+| 8  | La competencia principal son los registros manuales en papel, hojas de cálculo de Excel.                                                        |
+| 9  | Nos diferenciaremos por la captura automática vía IoT, la inmutabilidad de los registros y el cumplimiento nativo de normativas locales.        |
+| 10 | El mayor riesgo de producto es que el personal de planta se resista a dejar el registro físico por costumbre operativa.                         |
+| 11 | Reduciremos ese riesgo con interfaces de usuario simplificadas para operarios y dashboards de fácil lectura para supervisores.                  |
+| 12 | Si se demuestra que la integración de hardware es muy compleja para el cliente, pivotaremos hacia una solución de gestión documental robusta.   |
+
+**Supuestos por dimensión**
+
+**Business Assumptions**
+
+* Asumimos que los laboratorios farmacéuticos y entidades como el INS enfrentan una presión regulatoria creciente que hace insostenible el registro manual.
+* Asumimos que las instituciones están dispuestas a invertir en una solución SaaS para evitar multas de DIGEMID y reducir la merma de productos.
+* Asumimos que el modelo de suscripción basado en volumen de datos o equipos es escalable y aceptado por la industria farmacéutica.
+* Asumimos que nuestra principal ventaja competitiva es la garantía de "Integridad de Datos" (Data Integrity) mediante la automatización IoT.
+
+**User Assumptions**
+
+* Asumimos que los principales usuarios serán Directores Técnicos, Jefes de Aseguramiento de la Calidad (QA) y operarios de planta.
+* Asumimos que los Jefes de QA necesitan dashboards de supervisión remota para liberar lotes sin estar físicamente en la línea de producción.
+* Asumimos que los operarios de laboratorio adoptarán la plataforma si esta simplifica su flujo de trabajo y elimina la carga de llenar bitácoras físicas.
+* Asumimos que los auditores regulatorios aceptarán los reportes digitales de QualiTrack como evidencia válida e inmutable.
+
+**Problem Assumptions**
+
+* Asumimos que los registros manuales actuales son la causa principal de las observaciones en auditorías y de la liberación de lotes defectuosos.
+* Asumimos que la falta de centralización de la telemetría (pH, temperatura, presión) impide una respuesta rápida ante fallas mecánicas en equipos industriales.
+* Asumimos que la trazabilidad física fragmentada hace que el análisis de causa raíz ante una desviación de calidad sea lento y costoso.
+* Asumimos que existe un riesgo crítico de manipulación o pérdida de datos en los sistemas actuales basados en papel o Excel.
+
+**Solution Assumptions**
+
+* Asumimos que una plataforma digital centralizada y auditable (QMS) reducirá drásticamente el tiempo de preparación para inspecciones.
+* Asumimos que la integración IoT eliminará el error de transcripción humana en las variables críticas de control.
+* Asumimos que el sistema de alertas automáticas permitirá bloquear lotes no conformes antes de que avancen en la cadena de suministro.
+* Asumimos que la arquitectura SaaS facilitará el cumplimiento normativo sin que el laboratorio deba gestionar servidores locales complejos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
