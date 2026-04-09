@@ -49,7 +49,6 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
       Tengo 20 años, y me considero una persona flexible y con buena disposición para colaborar. Disfruto trabajar en equipo, ya que me permite aportar ideas y encontrar soluciones junto a otros. Tengo conocimientos en C++ y Python, y constantemente busco optimizar la forma en que realizo mis tareas para lograr mejores resultados.
     </td>
   </tr>
-
   <tr>
     <td width="140" valign="top" align="center">
       <img src="../assets/img/Marlon.jpg" alt="Marlon Photo" width="120" />
@@ -59,13 +58,13 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
       Estudiante de 20 años, responsable y proactivo, con una sólida base técnica en C++. Destaco por mi capacidad para aportar soluciones creativas y mi compromiso con el aprendizaje constante en entornos profesionales. Busco asumir retos que potencien mi desarrollo y contribuyan al éxito colectivo de mi equipo.
     </td>
   </tr>
-
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="" alt="" width="120" />
+      <img src="../assets/img/Castillo_Foto.jpg" alt="Castillo Photo" width="120" />
     </td>
     <td valign="top">
-      <strong> - (U)</strong> - Ingeniería de Software<br><br>
+      <strong>Mauricio Sebastian Castillo Yataco - (U202113229)</strong> - Ingeniería de Software<br><br>
+      Soy estudiante de Ingeniería de Software, apasionado por la creación de soluciones tecnológicas que mejoren la vida de las personas. Mi enfoque va más allá de la programación, ya que me interesa desarrollar experiencias digitales que sean tanto funcionales como agradables para el usuario.Conocimiento básico en el lenguaje de C++, Html y CSS, presento además las aptitudes de responsabilidad, cooperación, comunicación, flexibilidad y adaptabilidad
     </td>
   </tr>
   <tr>
@@ -79,7 +78,7 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
   </tr>
 </table>
 
-  
+
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
@@ -152,28 +151,24 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 **Supuestos por dimensión**
 
 **Business Assumptions**
-
 * Asumimos que los laboratorios farmacéuticos y entidades como el INS enfrentan una presión regulatoria creciente que hace insostenible el registro manual.
 * Asumimos que las instituciones están dispuestas a invertir en una solución SaaS para evitar multas de DIGEMID y reducir la merma de productos.
 * Asumimos que el modelo de suscripción basado en volumen de datos o equipos es escalable y aceptado por la industria farmacéutica.
 * Asumimos que nuestra principal ventaja competitiva es la garantía de "Integridad de Datos" (Data Integrity) mediante la automatización IoT.
 
 **User Assumptions**
-
 * Asumimos que los principales usuarios serán Directores Técnicos, Jefes de Aseguramiento de la Calidad (QA) y operarios de planta.
 * Asumimos que los Jefes de QA necesitan dashboards de supervisión remota para liberar lotes sin estar físicamente en la línea de producción.
 * Asumimos que los operarios de laboratorio adoptarán la plataforma si esta simplifica su flujo de trabajo y elimina la carga de llenar bitácoras físicas.
 * Asumimos que los auditores regulatorios aceptarán los reportes digitales de QualiTrack como evidencia válida e inmutable.
 
 **Problem Assumptions**
-
 * Asumimos que los registros manuales actuales son la causa principal de las observaciones en auditorías y de la liberación de lotes defectuosos.
 * Asumimos que la falta de centralización de la telemetría (pH, temperatura, presión) impide una respuesta rápida ante fallas mecánicas en equipos industriales.
 * Asumimos que la trazabilidad física fragmentada hace que el análisis de causa raíz ante una desviación de calidad sea lento y costoso.
 * Asumimos que existe un riesgo crítico de manipulación o pérdida de datos en los sistemas actuales basados en papel o Excel.
 
 **Solution Assumptions**
-
 * Asumimos que una plataforma digital centralizada y auditable (QMS) reducirá drásticamente el tiempo de preparación para inspecciones.
 * Asumimos que la integración IoT eliminará el error de transcripción humana en las variables críticas de control.
 * Asumimos que el sistema de alertas automáticas permitirá bloquear lotes no conformes antes de que avancen en la cadena de suministro.
@@ -189,19 +184,16 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 |         4 | Los laboratorios están dispuestos a pagar una suscripción recurrente en lugar de comprar un software de pago único. |  Medio |     Bajo      |
 
 **Business Outcomes esperados**
-
 * Lograr que al menos 2 laboratorios piloto implementen QualiTrack en sus líneas de producción en los primeros 8 meses.
 * Reducir en un 80% el tiempo de preparación de documentos para auditorías regulatorias en las instituciones piloto.
 * Disminuir en un 15% la pérdida de lotes por desviaciones de parámetros no detectadas a tiempo.
 
 **User Outcomes esperados**
-
 * Lograr que los supervisores de calidad firmen y liberen lotes de forma digital en menos de 10 minutos tras finalizar la producción.
 * Reducir el error humano en el registro de variables críticas a un valor cercano al 0% mediante la automatización IoT.
 * Lograr que los operarios visualicen alertas de desviación de parámetros en menos de 5 segundos a través de la plataforma móvil/web.
 
 **Features mínimas para validación**
-
 1. Módulo de registro de lotes e historial de fabricación inmutable.
 2. Integración con sensores IoT (simulados/reales) para captura de pH, temperatura y presión.
 3. Dashboard de monitoreo en tiempo real con indicadores de cumplimiento BPM.
@@ -210,6 +202,24 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+* **Hipótesis 1:** Creemos que al integrar sensores IoT para la captura automática de variables críticas (pH, temperatura, presión), eliminaremos el riesgo de manipulación y error de transcripción. Lo sabremos cuando el error humano en los registros se reduzca a un valor cercano al 0%.
+* **Hipótesis 2:** Creemos que al implementar un sistema centralizado de alertas y bloqueo preventivo de lotes no conformes, reduciremos el desperdicio de producción. Lo sabremos cuando la pérdida de lotes por desviaciones de parámetros disminuya en un 15%.
+* **Hipótesis 3:** Creemos que al digitalizar la trazabilidad de forma inmutable mediante QualiTrack, agilizaremos las inspecciones regulatorias de DIGEMID. Lo sabremos cuando el tiempo de preparación de documentos para auditorías se reduzca en un 80% en las instituciones piloto.
+* **Hipótesis 4:** Creemos que al habilitar la firma digital en un dashboard web responsivo, aceleraremos la cadena de suministro segura. Lo sabremos cuando los supervisores de calidad logren firmar y liberar lotes de forma remota en menos de 10 minutos tras finalizar la producción.
+* **Hipótesis 5:** Creemos que al utilizar notificaciones en tiempo real, el personal de planta reaccionará instantáneamente ante fallas mecánicas en equipos como autoclaves. Lo sabremos cuando los operarios visualicen y atiendan alertas de desviación en menos de 5 segundos.
+
 #### 1.2.2.4. Lean UX Canvas
+
+| 1. Business Problem | 5. Solution | 2. Business Outcomes |
+| :--- | :--- | :--- |
+| Los laboratorios y entidades de salud pública dependen de registros manuales y sistemas aislados, generando alto riesgo de error humano, pérdida de lotes por desviaciones no detectadas a tiempo y auditorías de DIGEMID lentas y propensas a observaciones. | **QualiTrack:** Plataforma SaaS B2B (Java/Angular) que integra telemetría IoT en tiempo real para automatizar registros BPM, generar alertas preventivas y asegurar la integridad de datos mediante un historial inmutable. | • Reducción del 80% en el tiempo de preparación para auditorías.<br>• Disminución del 15% en pérdida de lotes por desviaciones.<br>• Implementación exitosa en al menos 2 laboratorios piloto en 8 meses. |
+
+| 3. Users & Customers | 4. User Benefits | 6. Solution Ideas |
+| :--- | :--- | :--- |
+| • Jefes de Aseguramiento de la Calidad (QA).<br>• Directores Técnicos.<br>• Operarios de planta/laboratorio.<br>• Auditores regulatorios (DIGEMID). | • Liberación de lotes digitales en < 10 minutos.<br>• Alertas de desviación visibles en < 5 segundos.<br>• Reducción del error humano de transcripción a casi 0%. | • Integración de sensores IoT (temp, presión, pH).<br>• Dashboard web de monitoreo y firma digital.<br>• Motor de bloqueo preventivo de lotes.<br>• Reportes PDF inmutables para auditorías. |
+
+| 7. Hypothesis | 8. What’s the most important thing we need to learn first? |
+| :--- | :--- |
+| Creemos que QualiTrack garantizará la Integridad de Datos (Data Integrity) en la industria farmacéutica digitalizando el control BPM mediante IoT, lo que eliminará errores manuales y agilizará drásticamente las auditorías. | ¿Pueden los sensores IoT integrarse de forma estable y transmitir datos en tiempo real desde los equipos industriales antiguos (autoclaves, pH-metros) que actualmente poseen nuestros clientes piloto? |
 
 ## 1.3. Segmentos objetivo
