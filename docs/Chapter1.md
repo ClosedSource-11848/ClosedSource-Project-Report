@@ -213,3 +213,37 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 <img src="../assets/img/Lean_UX_Canvas_QualiTrack.png" alt="Lean UX Canvas" width="auto" height="550"/>
 
 ## 1.3. Segmentos objetivo
+
+Esta sección incluye la descripción de los segmentos asociados al dominio del problema, incluyendo características demográficas e información estadística de sustento.
+
+<h3 id="segment1">Segmento Objetivo 1: Gerentes y Jefes de Aseguramiento de Calidad</h3>
+
+Características demográficas:
+
+- **Edad:** Entre 35 y 60 años.
+- **Género:** Indistinto.
+- **Ocupación:** Químicos Farmacéuticos, Ingenieros Químicos, Gerentes de Asuntos Regulatorios y Aseguramiento de la Calidad.
+- **Nivel educativo:** Titulados universitarios, usualmente con maestrías o especializaciones en normativas ISO o BPM.
+- **Ubicación geográfica:** Zonas industriales y polos de desarrollo a nivel nacional (ej. Lima, Callao, y grandes capitales regionales).
+
+Información estadística de sustento:
+
+- La industria farmacéutica está obligada a cumplir regulaciones que cambian constantemente. El incumplimiento de las BPM en Perú puede resultar en sanciones severas por parte de DIGEMID, incluyendo el cierre temporal de líneas de producción.
+- La inversión en digitalización en el sector salud industrial (HealthTech e Industria 4.0) ha demostrado reducir hasta en un 30% los costos asociados a la "no calidad" (reprocesos, lotes rechazados).
+- Según reportes del sector industrial, una gran barrera para los laboratorios medianos es el alto costo de licencias de software privativo extranjero (tipo SAP o LIMS corporativos), lo que justifica la necesidad de una solución SaaS más accesible y Open Source.
+
+<h3 id="segment2">Segmento Objetivo 2: Directores y Supervisores de Entidades de Salud Pública</h3>
+
+Características demográficas:
+
+- **Edad:** Entre 40 y 65 años.
+- **Género:** Indistinto.
+- **Ocupación:** Funcionarios públicos de alto nivel, investigadores, directores de laboratorios nacionales.
+- **Nivel educativo:** Postgrados, maestrías en salud pública, doctores en ciencias químicas o biológicas.
+- **Ubicación geográfica:** Sedes institucionales (principalmente Lima Metropolitana).
+
+Información estadística de sustento:
+
+- Entidades como el Instituto Nacional de Salud (INS) manejan la producción y control de calidad de biológicos estratégicos a nivel nacional. La precisión en estos procesos es un mandato de seguridad nacional.
+- El sector público peruano se encuentra en un proceso de transformación digital impulsado por el Estado (Ley de Gobierno Digital), priorizando plataformas interoperables, seguras y escalables en la nube.
+- La capacidad técnica para auditar procesos en entidades estatales a menudo se ve superada por el volumen de datos en papel, lo que hace urgente la adopción de arquitecturas centralizadas de software para el manejo de información crítica.
