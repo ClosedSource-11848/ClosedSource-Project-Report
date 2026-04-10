@@ -27,6 +27,7 @@ Teniendo en cuenta la importancia en la información que nos puede proveer los e
 - ¿Cuál es su formación académica?
 
 <h4 id="PreguntEspe">Preguntas específicas:</h4>
+
 - ¿Cómo registran actualmente las variables críticas de producción durante los procesos de esterilización o control de calidad?
 - ¿Qué tipo de sistema o herramienta utiliza su laboratorio para gestionar la trazabilidad de los lotes?
 - ¿Con qué frecuencia han recibido observaciones o multas por parte de DIGEMID en las últimas auditorías relacionadas con la integridad de datos o registros incompletos?
