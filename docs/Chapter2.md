@@ -57,7 +57,119 @@ Teniendo en cuenta la importancia en la información que nos puede proveer los e
 
 ### 2.2.2. Registro de entrevistas
 
-En esta subsección se presentan los resultados de las entrevistas aplicadas a cada segmento objetivo. Para cada sesión, se incluye: datos del entrevistado, un resumen de las respuestas clave, observaciones del equipo y las principales conclusiones. Este registro sirve como evidencia para orientar las decisiones de diseño y funcionalidades de QualiTrack.
+En esta sección se presentan los resultados de las entrevistas aplicadas a cada segmento objetivo. Para cada sesión, se incluye: datos del entrevistado, un resumen de las respuestas clave, observaciones del equipo y las principales conclusiones. Este registro sirve como evidencia para orientar las decisiones de diseño y funcionalidades de QualiTrack.
+
+**Segmento 1: Gerentes y jefes de Aseguramiento de Calidad**
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Delcy</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Castro</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>59 años</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div align="center"><img src="../images/Entrevista1.png" alt="Entrevista"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td><p><a target="_blank"  href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202321425_upc_edu_pe/IQAbnqO6o9SfS5HcDwP4wS7hAfPizsOG9y8vV0OsHH7xFvs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NlLRfk" title="Title">https://outlook.office365.com</p></td>
+  </tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>00:19 min</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>10:39 min</td>
+  <tr>
+    <td>Resumen</td>
+    <td>
+a
+
+b
+
+c
+
+d
+
+e
+</td>
+  </tr>
+</tbody>
+</table>
+
+**Segmento 2: Directores y supervisores de Entidades de Salud Pública**
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Amelia</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Mendonza</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>51 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div align="center"><img src="../images/Entrevista 1-segmento2.png" alt="Entrevista"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td><p><a target="_blank"  href="https://shorturl.at/uoNBn" title="Title">https://shorturl.at/uoNBn</p></td>
+  </tr>
+  <tr>
+    <td>Timing donde inicia la entrevista<br></td>
+    <td>00:11 min</td>
+  </tr>
+  <tr>
+    <td>Duración de la entrevista<br></td>
+    <td>19:34 min</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+a
+
+b
+
+c
+
+d
+</td>
+  </tr>
+</tbody>
+</table>
 
 ### 2.2.3. Análisis de entrevistas
 
