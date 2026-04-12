@@ -87,7 +87,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Evidencia</td>
-            <td><div align="center"><img src="..\img\Segmento1-Entrevista1.png" alt="Entrevista"></div></td>
+            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista1.png" alt="Entrevista"></div></td>
         </tr>
         <tr>
             <td>Link</td>
@@ -133,11 +133,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Distrito</td>
-            <td>x</td>
+            <td>San Isidro</td>
         </tr>
         <tr>
             <td>Evidencia</td>
-            <td><div align="center"><img src="...\img\Segmento2-Entrevista1.png" alt="Entrevista"></div></td>
+            <td><div align="center"><img src="../assets/img/Segmento2-Entrevista1.png" alt="Entrevista"></div></td>
         </tr>
         <tr>
             <td>Link</td>
