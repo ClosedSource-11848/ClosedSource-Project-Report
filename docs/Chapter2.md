@@ -121,11 +121,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
     <tbody>
         <tr>
             <td>Nombre</td>
-            <td>Amelia</td>
+            <td>Rosa</td>
         </tr>
         <tr>
             <td>Apellidos</td>
-            <td>Mendonza</td>
+            <td>Amelia Mendonza</td>
         </tr>
         <tr>
             <td>Edad</td>
@@ -153,7 +153,15 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Resumen</td>
-            <td>a<br>b<br>c<br>d</td>
+            <td>
+            La Sra. Rosa Amelia Mendoza es una profesional quimica farmaceutica con maestria en el area de Salud Publica por esudios dentro de la Universidad Nacional Mayor de San Marcos junto con un Diplomado de "Control de Calidad", trabajando en un laboratorio que esta enfocado en el control de la produccón de vacunas.
+            <br> <br>
+            En su rol se presenta la observación y control tanto del proceso de producción de vacunas como la documentación siguiendo las indicaciones y estandares de la organización Dirección General de Medicamentos, Insumos y Drogas (DIGEMID).
+            <br> <br>
+            Ella indica que aún se emplea un metodo de documentación y regulación manual en el proceso de producción y analisís de las vacunas dentro del laborotiro, ya que las herramientas digitales que poseen no presentan funcionalidades que documente como un historial datos clave como la temperatura y el nivel de esterilzación, forzando la documentación a mano.
+            <br> <br>
+            Entre las herramientas que considera dispensables mencionó la capacidad de almacenar constantemente los cambios y variaciones en el control de la calidad de los lotes, los cuales se refieren en su labor las vacunas. Un ejemplo clave es la temperatura, ya que se tiene un habito el documentar en la mañana, tarde y noche la temperatura mostrada por las herramientas digitales que presentan, lo cual muestra su dificultad en el ambito digital para simplificar el registro de calidad.
+            </td>
         </tr>
     </tbody>
 </table>
