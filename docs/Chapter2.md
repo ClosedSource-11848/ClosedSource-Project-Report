@@ -75,7 +75,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Apellidos</td>
-            <td>Castro</td>
+            <td>Castro Condori</td>
         </tr>
         <tr>
             <td>Edad</td>
@@ -103,7 +103,13 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Resumen</td>
-            <td>a<br>b<br>c<br>d<br>e</td>
+            <td>
+            La Sra. Delci Castro Codorin es química farmacéutica y subdirectora de la operación de la planta de radioisótopos y radiofármacos; egresada de la Universidad Nacional Mayor de San Marcos, actualmente cursa una maestría en Ingeniería Industrial enfocada en el emprendimiento, y ha llevado diplomados en regulación, preparación y control de radiofármacos, así como capacitaciones en protección radiológica y en sistemas de gestión de grado. 
+            <br> <br>
+            Dentro de la planta, se presenta el proceso de producción de los fármacos y se destaca que los registros se realizan de dos maneras: manual y digital. A partir de los registros manuales se identifican automáticamente los lotes, cada uno con su propia unidad documentaria, donde se registran la materia prima y los controles efectuados en cada uno de los dispositivos (los cuales han sido codificados previamente). Asimismo, la distribución también se registra por lotes.
+            <br> <br>
+            Ella menciona que no hubo casos de reportes relacionados con una auditoría insuficiente por parte de la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID), ni registros incompletos o erróneos. Lo que sí se reportaron fueron recomendaciones sobre otros sistemas que podrían beneficiar a la organización en las auditorías y los registros, además de recordatorios sobre el formato de documentación.
+            </td>
         </tr>
     </tbody>
 </table>
