@@ -953,7 +953,7 @@ A partir de estos impactos se definieron los Deliverables que QualiTrack debe of
 
 ## 3.3. Product Backlog
 
-En esta sección se presenta el Product Backlog priorizado, el cual contiene las Historias de Usuario y Technical Stories estimadas en Story Points. El orden ha sido determinado por el valor que aportan al negocio, priorizando las funcionalidades core de compliance y trazabilidad que son el diferenciador clave de QualiTrack.
+En esta sección se presenta el Product Backlog priorizado con las Historias de Usuario y Technical Stories estimadas en Story Points. El orden ha sido determinado por el valor que aportan al negocio, priorizando las funcionalidades core de compliance y trazabilidad que son el diferenciador clave de QualiTrack.
 
 <table border="1" style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -968,32 +968,55 @@ En esta sección se presenta el Product Backlog priorizado, el cual contiene las
   <tr><td>3</td><td>US03</td><td>Visualización del equipo creador</td><td>Como visitante quiero ver información del equipo detrás de QualiTrack para generar confianza antes de contratar.</td><td>1</td></tr>
   <tr><td>4</td><td>US04</td><td>Formulario de contacto</td><td>Como visitante quiero completar un formulario de contacto para enviar consultas al equipo de QualiTrack.</td><td>2</td></tr>
   <tr><td>5</td><td>US05</td><td>Cambio de idioma</td><td>Como visitante quiero cambiar el idioma entre español e inglés para entender mejor la propuesta de valor.</td><td>2</td></tr>
-  <tr><td>6</td><td>US06</td><td>Registro de laboratorio en la plataforma</td><td>Como jefe de QA quiero registrar mi laboratorio en QualiTrack para comenzar a gestionar los procesos de calidad de forma digital.</td><td>3</td></tr>
+  <tr><td>6</td><td>US06</td><td>Registro de laboratorio en la plataforma</td><td>Como jefe de QA quiero registrar mi laboratorio en QualiTrack para comenzar a gestionar los procesos de calidad digitalmente.</td><td>3</td></tr>
   <tr><td>7</td><td>US07</td><td>Inicio de sesión seguro</td><td>Como usuario registrado quiero iniciar sesión con mis credenciales para acceder a las funcionalidades según mi rol.</td><td>2</td></tr>
-  <tr><td>8</td><td>US08</td><td>Gestión de roles y permisos</td><td>Como jefe de QA quiero gestionar los roles de mi equipo para garantizar accesos según responsabilidades.</td><td>3</td></tr>
-  <tr><td>9</td><td>US11</td><td>Vinculación de equipos IoT</td><td>Como jefe de QA quiero registrar y vincular los equipos industriales para que la plataforma reciba su telemetría automáticamente.</td><td>3</td></tr>
-  <tr><td>10</td><td>US16</td><td>Configuración de parámetros BPM por equipo</td><td>Como jefe de QA quiero configurar los rangos permitidos de variables para que el sistema detecte desviaciones automáticamente.</td><td>3</td></tr>
-  <tr><td>11</td><td>US09</td><td>Visualización del dashboard de telemetría</td><td>Como jefe de QA quiero un dashboard en tiempo real de las variables críticas de los equipos para supervisar el cumplimiento BPM.</td><td>3</td></tr>
-  <tr><td>12</td><td>US10</td><td>Visualización del historial de telemetría</td><td>Como jefe de QA quiero consultar el historial de variables de un equipo para analizar el comportamiento del proceso en periodos anteriores.</td><td>3</td></tr>
-  <tr><td>13</td><td>US17</td><td>Alerta automática ante desviación de parámetros</td><td>Como operario quiero recibir alertas visuales inmediatas cuando una variable salga del rango BPM para actuar en menos de 5 segundos.</td><td>3</td></tr>
-  <tr><td>14</td><td>US18</td><td>Bloqueo automático de lote por desviación</td><td>Como jefe de QA quiero que el sistema bloquee automáticamente un lote ante una desviación crítica para impedir que avance en la cadena de suministro.</td><td>3</td></tr>
-  <tr><td>15</td><td>US19</td><td>Historial de alertas y eventos de compliance</td><td>Como jefe de QA quiero consultar el historial completo de alertas registradas para analizar patrones de falla.</td><td>3</td></tr>
-  <tr><td>16</td><td>US12</td><td>Registro de nuevo lote de producción</td><td>Como jefe de QA quiero registrar un nuevo lote de producción para iniciar el seguimiento digital de su ciclo de fabricación.</td><td>3</td></tr>
-  <tr><td>17</td><td>US13</td><td>Consulta del historial de un lote</td><td>Como jefe de QA quiero consultar el historial completo de un lote para verificar el cumplimiento BPM de todo el proceso.</td><td>3</td></tr>
-  <tr><td>18</td><td>US14</td><td>Liberación digital de lote</td><td>Como jefe de QA quiero firmar digitalmente la liberación de un lote conforme para agilizar la cadena de suministro.</td><td>3</td></tr>
-  <tr><td>19</td><td>US15</td><td>Rechazo y documentación de lote no conforme</td><td>Como jefe de QA quiero registrar el rechazo de un lote no conforme con su justificación para mantener el registro documental completo.</td><td>3</td></tr>
-  <tr><td>20</td><td>US20</td><td>Generación de reporte de trazabilidad de lote</td><td>Como jefe de QA quiero generar un reporte PDF inmutable del historial de fabricación de un lote para presentarlo en auditorías.</td><td>3</td></tr>
-  <tr><td>21</td><td>US21</td><td>Generación de reporte de cumplimiento BPM por periodo</td><td>Como jefe de QA quiero un reporte consolidado de cumplimiento BPM por periodo para preparar la documentación antes de una auditoría.</td><td>3</td></tr>
-  <tr><td>22</td><td>US22</td><td>Exportación de log de eventos inmutable</td><td>Como auditor quiero exportar el log de eventos de un equipo en formato no editable para verificar la integridad de datos en una inspección.</td><td>3</td></tr>
-  <tr><td>23</td><td>TS-IOT01</td><td>Endpoint de ingesta de telemetría</td><td>Como desarrollador backend quiero implementar un endpoint POST para recibir y almacenar la telemetría enviada por los sensores IoT.</td><td>3</td></tr>
-  <tr><td>24</td><td>TS-IOT02</td><td>Servicio de evaluación de compliance BPM</td><td>Como desarrollador backend quiero implementar un servicio que evalúe cada medición contra los parámetros BPM configurados.</td><td>3</td></tr>
-  <tr><td>25</td><td>TS-EQ001</td><td>Registrar equipo industrial</td><td>Como desarrollador backend quiero implementar un endpoint POST para registrar nuevos equipos industriales con sus parámetros BPM.</td><td>3</td></tr>
-  <tr><td>26</td><td>TS-EQ002</td><td>Listar equipos del laboratorio</td><td>Como desarrollador backend quiero implementar un endpoint GET para listar los equipos de un laboratorio con su estado de conexión.</td><td>2</td></tr>
-  <tr><td>27</td><td>TS-LOT001</td><td>Crear lote de producción</td><td>Como desarrollador backend quiero implementar un endpoint POST para crear nuevos lotes de producción con validaciones obligatorias.</td><td>3</td></tr>
-  <tr><td>28</td><td>TS-LOT002</td><td>Obtener detalle de lote</td><td>Como desarrollador backend quiero implementar un endpoint GET para obtener el detalle completo de un lote con su historial.</td><td>3</td></tr>
-  <tr><td>29</td><td>TS-LOT003</td><td>Actualizar estado de lote</td><td>Como desarrollador backend quiero implementar un endpoint PATCH para actualizar el estado del lote con registro del responsable.</td><td>3</td></tr>
-  <tr><td>30</td><td>TS-REP001</td><td>Generar reporte PDF de lote</td><td>Como desarrollador backend quiero implementar un endpoint GET que genere el reporte PDF inmutable del historial de un lote.</td><td>3</td></tr>
-  <tr><td>31</td><td>TS-REP002</td><td>Exportar log de eventos de equipo</td><td>Como desarrollador backend quiero implementar un endpoint GET que exporte el log de eventos de un equipo en formato PDF.</td><td>3</td></tr>
+  <tr><td>8</td><td>US08</td><td>Recuperación de contraseña</td><td>Como usuario registrado quiero recuperar mi contraseña olvidada para no perder acceso a la plataforma.</td><td>2</td></tr>
+  <tr><td>9</td><td>US09</td><td>Gestión de roles y permisos</td><td>Como jefe de QA quiero gestionar los roles de mi equipo para garantizar accesos según responsabilidades.</td><td>3</td></tr>
+  <tr><td>10</td><td>US12</td><td>Vinculación de equipos IoT</td><td>Como jefe de QA quiero registrar y vincular los equipos industriales para que la plataforma reciba su telemetría automáticamente.</td><td>3</td></tr>
+  <tr><td>11</td><td>US19</td><td>Configuración de parámetros BPM por equipo</td><td>Como jefe de QA quiero configurar los rangos permitidos de variables para que el sistema detecte desviaciones automáticamente.</td><td>3</td></tr>
+  <tr><td>12</td><td>US10</td><td>Visualización del dashboard de telemetría</td><td>Como jefe de QA quiero un dashboard en tiempo real de las variables críticas para supervisar el cumplimiento BPM.</td><td>3</td></tr>
+  <tr><td>13</td><td>US11</td><td>Visualización del historial de telemetría</td><td>Como jefe de QA quiero consultar el historial de variables de un equipo para analizar el comportamiento del proceso.</td><td>3</td></tr>
+  <tr><td>14</td><td>US13</td><td>Consulta del estado de equipos en tiempo real</td><td>Como operario quiero verificar el estado de conexión de los equipos antes de iniciar un proceso de producción.</td><td>2</td></tr>
+  <tr><td>15</td><td>US20</td><td>Alerta automática ante desviación de parámetros</td><td>Como operario quiero recibir alertas visuales inmediatas cuando una variable salga del rango BPM.</td><td>3</td></tr>
+  <tr><td>16</td><td>US21</td><td>Bloqueo automático de lote por desviación</td><td>Como jefe de QA quiero que el sistema bloquee automáticamente un lote ante una desviación crítica.</td><td>3</td></tr>
+  <tr><td>17</td><td>US22</td><td>Historial de alertas y eventos de compliance</td><td>Como jefe de QA quiero consultar el historial completo de alertas para analizar patrones de falla.</td><td>3</td></tr>
+  <tr><td>18</td><td>US23</td><td>Notificación push de alerta crítica</td><td>Como jefe de QA quiero recibir notificaciones push ante alertas críticas para reaccionar aunque no esté en la plataforma.</td><td>3</td></tr>
+  <tr><td>19</td><td>US24</td><td>Configuración de canales de notificación</td><td>Como jefe de QA quiero configurar los canales por los que deseo recibir alertas para adaptar las notificaciones a mis preferencias.</td><td>2</td></tr>
+  <tr><td>20</td><td>US14</td><td>Registro de nuevo lote de producción</td><td>Como jefe de QA quiero registrar un nuevo lote de producción para iniciar su seguimiento digital.</td><td>3</td></tr>
+  <tr><td>21</td><td>US15</td><td>Consulta del historial completo de un lote</td><td>Como jefe de QA quiero consultar el historial de un lote para verificar el cumplimiento BPM del proceso.</td><td>3</td></tr>
+  <tr><td>22</td><td>US18</td><td>Búsqueda y filtrado de lotes</td><td>Como jefe de QA quiero buscar y filtrar lotes por estado, producto o fecha para localizar rápidamente información específica.</td><td>2</td></tr>
+  <tr><td>23</td><td>US16</td><td>Liberación digital de lote conforme</td><td>Como jefe de QA quiero firmar digitalmente la liberación de un lote conforme para agilizar la cadena de suministro.</td><td>3</td></tr>
+  <tr><td>24</td><td>US17</td><td>Rechazo y documentación de lote no conforme</td><td>Como jefe de QA quiero registrar el rechazo de un lote no conforme con justificación para mantener el registro documental.</td><td>3</td></tr>
+  <tr><td>25</td><td>US25</td><td>Generación de reporte de trazabilidad de lote</td><td>Como jefe de QA quiero generar un reporte PDF inmutable del historial de un lote para auditorías regulatorias.</td><td>3</td></tr>
+  <tr><td>26</td><td>US26</td><td>Generación de reporte consolidado de cumplimiento BPM</td><td>Como jefe de QA quiero un reporte consolidado de cumplimiento BPM por periodo para preparar documentación de auditoría.</td><td>3</td></tr>
+  <tr><td>27</td><td>US27</td><td>Exportación de log de eventos inmutable</td><td>Como auditor quiero exportar el log de eventos en formato no editable para verificar la integridad de datos.</td><td>3</td></tr>
+  <tr><td>28</td><td>US28</td><td>Registro de operario o supervisor</td><td>Como jefe de QA quiero registrar a los miembros del equipo técnico para que puedan acceder a la plataforma.</td><td>3</td></tr>
+  <tr><td>29</td><td>US29</td><td>Baja de personal del laboratorio</td><td>Como jefe de QA quiero desactivar el acceso de personal que ya no forma parte del laboratorio.</td><td>3</td></tr>
+  <tr><td>30</td><td>US30</td><td>Consulta de actividad de personal por turno</td><td>Como jefe de QA quiero consultar el registro de actividad de cada operario por turno para verificar responsabilidades.</td><td>2</td></tr>
+  <tr><td>31</td><td>US31</td><td>Registro de producto farmacéutico</td><td>Como jefe de QA quiero registrar los productos farmacéuticos con sus especificaciones para vincularlos a lotes de producción.</td><td>3</td></tr>
+  <tr><td>32</td><td>US32</td><td>Consulta del catálogo de productos</td><td>Como jefe de QA quiero consultar el catálogo de productos registrados para revisar sus especificaciones.</td><td>2</td></tr>
+  <tr><td>33</td><td>US33</td><td>Registro de materia prima</td><td>Como jefe de QA quiero registrar las materias primas con proveedor y fecha de vencimiento para garantizar su trazabilidad.</td><td>3</td></tr>
+  <tr><td>34</td><td>US34</td><td>Trazabilidad de materia prima en lote</td><td>Como jefe de QA quiero consultar qué materias primas se utilizaron en un lote para garantizar la trazabilidad completa.</td><td>3</td></tr>
+  <tr><td>35</td><td>US35</td><td>Alerta de stock mínimo de materia prima</td><td>Como jefe de QA quiero recibir alertas de stock mínimo para gestionar el reabastecimiento a tiempo.</td><td>3</td></tr>
+  <tr><td>36</td><td>US36</td><td>Dashboard de indicadores de calidad (KPIs)</td><td>Como jefe de QA quiero un panel de KPIs para evaluar el desempeño del área de calidad basado en datos.</td><td>3</td></tr>
+  <tr><td>37</td><td>US37</td><td>Reporte de tendencias de desviaciones</td><td>Como jefe de QA quiero visualizar tendencias de desviaciones por equipo y variable para priorizar acciones correctivas.</td><td>3</td></tr>
+  <tr><td>38</td><td>US38</td><td>Gestión de información del laboratorio</td><td>Como jefe de QA quiero actualizar los datos institucionales de mi laboratorio para mantener la información vigente.</td><td>2</td></tr>
+  <tr><td>39</td><td>US39</td><td>Configuración de normativas aplicables</td><td>Como jefe de QA quiero configurar las normativas regulatorias bajo las cuales opera mi laboratorio.</td><td>2</td></tr>
+  <tr><td>40</td><td>US40</td><td>Términos y condiciones de uso</td><td>Como visitante quiero acceder a los términos y condiciones de QualiTrack para conocer las políticas antes de contratar.</td><td>1</td></tr>
+  <tr><td>41</td><td>US41</td><td>Cifrado de datos sensibles</td><td>Como jefe de QA quiero que la información sensible esté cifrada en almacenamiento y tránsito para protegerla de accesos no autorizados.</td><td>3</td></tr>
+  <tr><td>42</td><td>US42</td><td>Log de auditoría de accesos y acciones</td><td>Como jefe de QA quiero que la plataforma registre un log de todos los accesos e interacciones para garantizar la trazabilidad de acciones.</td><td>3</td></tr>
+  <tr><td>43</td><td>US43</td><td>Registro de mantenimiento de equipo</td><td>Como jefe de QA quiero registrar las actividades de mantenimiento de los equipos para garantizar la trazabilidad de su estado operativo.</td><td>3</td></tr>
+  <tr><td>44</td><td>US44</td><td>Historial de mantenimiento de equipo</td><td>Como jefe de QA quiero consultar el historial de mantenimientos de un equipo para verificar su estado de calibración.</td><td>2</td></tr>
+  <tr><td>45</td><td>US45</td><td>Alerta de calibración próxima a vencer</td><td>Como jefe de QA quiero recibir alertas de calibración próxima a vencer para programar el mantenimiento con anticipación.</td><td>3</td></tr>
+  <tr><td>46</td><td>TS-IOT01</td><td>Endpoint de ingesta de telemetría</td><td>Como desarrollador backend quiero implementar un endpoint POST para recibir y almacenar la telemetría de los sensores IoT.</td><td>3</td></tr>
+  <tr><td>47</td><td>TS-IOT02</td><td>Servicio de evaluación de compliance BPM</td><td>Como desarrollador backend quiero implementar un servicio que evalúe cada medición contra los parámetros BPM configurados.</td><td>3</td></tr>
+  <tr><td>48</td><td>TS-EQ001</td><td>Registrar equipo industrial</td><td>Como desarrollador backend quiero implementar un endpoint POST para registrar equipos industriales con sus parámetros BPM.</td><td>3</td></tr>
+  <tr><td>49</td><td>TS-EQ002</td><td>Listar equipos del laboratorio</td><td>Como desarrollador backend quiero implementar un endpoint GET para listar los equipos con su estado de conexión.</td><td>2</td></tr>
+  <tr><td>50</td><td>TS-LOT001</td><td>Crear lote de producción</td><td>Como desarrollador backend quiero implementar un endpoint POST para crear nuevos lotes de producción con validaciones obligatorias.</td><td>3</td></tr>
+  <tr><td>51</td><td>TS-LOT002</td><td>Obtener detalle de lote</td><td>Como desarrollador backend quiero implementar un endpoint GET para obtener el detalle completo de un lote con su historial.</td><td>3</td></tr>
+  <tr><td>52</td><td>TS-LOT003</td><td>Actualizar estado de lote</td><td>Como desarrollador backend quiero implementar un endpoint PATCH para actualizar el estado del lote con registro del responsable.</td><td>3</td></tr>
+  <tr><td>53</td><td>TS-REP001</td><td>Generar reporte PDF de lote</td><td>Como desarrollador backend quiero implementar un endpoint GET que genere el reporte PDF inmutable del historial de un lote.</td><td>3</td></tr>
+  <tr><td>54</td><td>TS-REP002</td><td>Exportar log de eventos de equipo</td><td>Como desarrollador backend quiero implementar un endpoint GET que exporte el log de eventos de un equipo en formato PDF.</td><td>3</td></tr>
 </table>
 
 <div align="center">
