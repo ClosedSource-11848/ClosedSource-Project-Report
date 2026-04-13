@@ -4,13 +4,15 @@
 
 En el contexto de la industria farmacéutica, la gestión de calidad y el cumplimiento de las Buenas Prácticas de Manufactura (BPM) requieren herramientas que aseguren la trazabilidad, integridad de datos y control de procesos críticos. Sin embargo, las soluciones existentes en el mercado presentan distintos niveles de madurez tecnológica y accesibilidad.
 
-Para el caso de QualiTrack, los competidores no se limitan únicamente a plataformas digitales avanzadas, sino que incluyen también herramientas tradicionales ampliamente utilizadas en los laboratorios. En ese sentido, se identifican tres categorías principales de competencia:
+Para el caso de QualiTrack, los competidores no se limitan únicamente a plataformas digitales avanzadas, sino que incluyen también herramientas tradicionales ampliamente utilizadas en los laboratorios.
 
-Herramientas tradicionales: registros manuales en papel y hojas de cálculo (Excel).
+<h4 id="PreguntEspe">En ese sentido, se identifican tres categorías principales de competencia:</h4>
 
-Sistemas empresariales (ERP): soluciones robustas orientadas a grandes organizaciones.
+- Herramientas tradicionales: registros manuales en papel y hojas de cálculo (Excel).
 
-Plataformas especializadas (LIMS/QMS): sistemas diseñados para la gestión de calidad y laboratorio.
+- Sistemas empresariales (ERP): soluciones robustas orientadas a grandes organizaciones.
+
+- Plataformas especializadas (LIMS/QMS): sistemas diseñados para la gestión de calidad y laboratorio.
 
 Cada una de estas categorías aborda parcialmente el problema de la gestión de calidad, pero presenta limitaciones importantes en términos de automatización, integración y adaptación al contexto local.
 
