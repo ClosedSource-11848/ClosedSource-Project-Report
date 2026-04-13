@@ -18,7 +18,9 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 <tr>
 <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
+<tr>
 <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
+</tr>
 <td colspan="4">¿Cómo se posiciona Veyra frente a sus competidores en cuanto a propuesta de valor, marketing, producto y estrategia?</td>
 </tr>
 <tr>
