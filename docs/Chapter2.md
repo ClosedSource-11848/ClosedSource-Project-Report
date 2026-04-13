@@ -16,7 +16,7 @@ Cada una de estas categorías aborda parcialmente el problema de la gestión de 
 
 ### 2.1.1. Análisis competitivo
 
-Herramientas tradicionales:
+<h4 id="PreguntEspe">Herramientas tradicionales</h4>
 
 Estas herramientas representan la forma más común de gestión de procesos en muchos laboratorios, especialmente en contextos donde la digitalización aún es limitada. Incluyen registros en papel y archivos de Excel para documentar variables críticas como temperatura, presión y pH.
 
@@ -36,7 +36,7 @@ Estas herramientas representan la forma más común de gestión de procesos en m
 Impacto frente a QualiTrack:
 Aunque no constituyen una solución tecnológica avanzada, representan el principal competidor debido a su uso extendido y a la resistencia al cambio en los entornos operativos.
 
-Sistemas ERP:
+<h4 id="PreguntEspe">Sistemas ERP:</h4>
 
 Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos de gestión de calidad y manufactura. Son utilizados principalmente por grandes corporaciones con alta capacidad de inversión.
 
@@ -46,7 +46,7 @@ Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos
 - Cumplimiento de estándares internacionales.
 - Escalabilidad y robustez del sistema.
 
-<h4 id="PreguntEspe">Debilidades:</h4>
+<h4 id="PreguntEspe">Debilidades</h4>
 
 - Costos elevados de implementación y mantenimiento.
 - Complejidad técnica y largos tiempos de despliegue.
@@ -56,7 +56,7 @@ Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos
 Impacto frente a QualiTrack:
 Compiten en términos de robustez, pero no en accesibilidad ni especialización. QualiTrack ofrece una alternativa más ágil y adaptada al contexto local.
 
-Sistemas especializados LIMS/QMS:
+:<h4 id="PreguntEspe">Sistemas especializados LIMS/QMS</h4>
 
 Estas plataformas están diseñadas específicamente para la gestión de laboratorio (LIMS) y calidad (QMS), ofreciendo funcionalidades avanzadas para auditorías, control de procesos y trazabilidad.
 
