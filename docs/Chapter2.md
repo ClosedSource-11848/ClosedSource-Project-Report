@@ -54,54 +54,54 @@ A continuación, se presenta una comparación de los competidores considerando s
 <tr>
 <td rowspan="2"><b>Perfil</b></td>
 <td>Overview</td>
-<td>Plataforma SaaS integral enfocada en la gestión de casas de reposo y conexión con familias en Perú y Latinoamérica.</td>
-<td>Software SaaS global para residencias de adultos mayores. Fundado en Reino Unido, con presencia en varios países.</td>
-<td>Software de escritorio dirigido a grandes clínicas y residencias geriátricas.</td>
-<td>Plataforma cloud completa para la gestión de salud general (EE.UU.). Ofrece EHR, facturación y portal de pacientes.</td>
+<td>Plataforma SaaS enfocada en la gestión de calidad farmacéutica con integración IoT y trazabilidad en tiempo real.</td>
+<td>Sistema ERP global con módulos de calidad y manufactura.</td>
+<td>Software especializado en gestión de laboratorio (LIMS).</td>
+<td>Registros en papel y hojas de cálculo (Excel).</td>
 </tr>
 <tr>
 <td>Ventaja competitiva</td>
-<td>Especialización regional (normativas LATAM), modelo escalable, acceso bidireccional para familias y preparación para IoT.</td>
-<td>Portal familiar muy desarrollado, integración de historias de vida y fotos, cuidado centrado en la persona.</td>
-<td>Gestión integral potente para operaciones internas (historial clínico, facturación, inventario, camas).</td>
-<td>Suite completa de funcionalidades clínicas y administrativas con integración nativa de sistemas de pago.</td>
+<td>Integración IoT, enfoque en normativas locales, modelo SaaS accesible.</td>
+<td>Alta robustez e integración empresarial.</td>
+<td>Especialización en procesos de laboratorio.</td>
+<td>Bajo costo y facilidad de uso.</td>
 </tr>
 <tr>
 <td rowspan="2"><b>Perfil de Marketing</b></td>
 <td>Mercado objetivo</td>
-<td>Casas de reposo medianas/pequeñas y familias en LATAM.</td>
-<td>Residencias en UK, US, Australia y Canadá.</td>
-<td>Grandes clínicas geriátricas en mercados específicos.</td>
-<td>Clínicas y centros de salud de todos los tamaños en EE.UU.</td>
+<td>Laboratorios medianos y entidades públicas en LATAM.</td>
+<td>Grandes corporaciones.</td>
+<td>Laboratorios grandes y multinacionales.</td>
+<td>Todo tipo de laboratorio.</td>
 </tr>
 <tr>
 <td>Estrategias de marketing</td>
-<td>Marketing digital, alianzas con asociaciones geriátricas y precios flexibles.</td>
-<td>Marketing de contenidos, redes sociales y testimonios de clientes.</td>
-<td>Ventas directas enfocadas a grandes clientes institucionales.</td>
-<td>Ventas directas y marketing especializado en el sector salud estadounidense.</td>
+<td>Venta B2B, enfoque en cumplimiento regulatorio y precios accesibles.</td>
+<td>Ventas corporativas y consultoría empresarial.</td>
+<td>Ventas especializadas en sector laboratorio.</td>
+<td>Uso interno sin estrategia formal.</td>
 </tr>
 <tr>
 <td rowspan="3"><b>Perfil de Producto</b></td>
 <td>Productos & Servicios</td>
-<td>Plataforma web y aplicación móvil.</td>
-<td>Plataforma web y app específica para familias.</td>
-<td>Software de instalación local (Escritorio).</td>
-<td>CareCloud Central, Pulse y Companion.</td>
+<td>Plataforma web con dashboards, monitoreo en tiempo real y alertas.</td>
+<td>Software empresarial modular.</td>
+<td>Sistema estructurado de gestión de laboratorio.</td>
+<td>Registros manuales o digitales básicos.</td>
 </tr>
 <tr>
 <td>Precios & Costos</td>
-<td>Modelo modular: Planes Gratuito, Estándar y Premium.</td>
-<td>Precios en libras/euros, no transparentes en el sitio web.</td>
-<td>Precios no públicos, probablemente elevados por licenciamiento.</td>
-<td>Costos elevados para el mercado LATAM, cotización bajo pedido.</td>
+<td>Suscripción SaaS escalable.</td>
+<td>Costos elevados de implementación.</td>
+<td>Licencias costosas.</td>
+<td>Bajo costo.</td>
 </tr>
 <tr>
 <td>Canales de distribución</td>
-<td>Web, móvil (iOS/Android) y API para integraciones.</td>
-<td>Web y dispositivos móviles.</td>
-<td>Instalación local, sin acceso móvil nativo.</td>
-<td>Web y dispositivos móviles.</td>
+<td>Web, nube e integración con dispositivos IoT.</td>
+<td>Implementación empresarial.</td>
+<td>Implementación técnica especializada.</td>
+<td>Uso interno.</td>
 </tr>
 <tr>
 <td rowspan="5"><b>Análisis SWOT</b></td>
@@ -109,35 +109,33 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 <tr>
 <td>Fortalezas</td>
-<td>Especialización local y modelo de negocio escalable.</td>
-<td>Enfoque en experiencia familiar y facilidad de uso.</td>
-<td>Funcionalidades de gestión operativa muy sólidas.</td>
-<td>Producto robusto, muy completo y reconocido.</td>
+<td>Integración IoT, trazabilidad en tiempo real, accesibilidad SaaS.</td>
+<td>Sistema robusto y escalable.</td>
+<td>Alta especialización en laboratorio.</td>
+<td>Bajo costo y facilidad de uso.</td>
 </tr>
 <tr>
 <td>Debilidades</td>
-<td>Marca nueva con poca trayectoria en el mercado.</td>
-<td>Poca adaptación a normativas y precios de Latinoamérica.</td>
-<td>Tecnología obsoleta (desktop), sin movilidad ni acceso familiar.</td>
-<td>Precio prohibitivo para LATAM y complejidad de implementación.</td>
+<td>Producto nuevo, dependencia de hardware, adopción del usuario.</td>
+<td>Alto costo y complejidad.</td>
+<td>Costos elevados y baja accesibilidad.</td>
+<td>Alto riesgo de error y falta de trazabilidad.</td>
 </tr>
 <tr>
 <td>Oportunidades</td>
-<td>Crecimiento acelerado del sector geriátrico en LATAM.</td>
-<td>Expansión a nuevos mercados internacionales.</td>
-<td>Modernización de su plataforma hacia la nube.</td>
-<td>Venta de servicios a grandes cadenas de salud.</td>
+<td>Crecimiento de digitalización en salud y cumplimiento regulatorio.</td>
+<td>Expansión en grandes corporaciones.</td>
+<td>Modernización e integración tecnológica.</td>
+<td>Migración hacia soluciones digitales.</td>
 </tr>
 <tr>
 <td>Amenazas</td>
-<td>Competidores globales con mayores recursos financieros.</td>
-<td>Surgimiento de competidores locales en cada región.</td>
-<td>Migración general de los clientes hacia soluciones cloud.</td>
-<td>Aparición de soluciones más nicho y económicas.</td>
+<td>Competidores globales y resistencia al cambio.</td>
+<td>Nuevas soluciones más accesibles.</td>
+<td>Competencia SaaS más económica.</td>
+<td>Regulaciones que exigen digitalización.</td>
 </tr>
 </table>
-
-(esta para editar esta tabla)
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
