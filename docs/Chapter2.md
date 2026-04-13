@@ -36,7 +36,7 @@ Estas herramientas representan la forma más común de gestión de procesos en m
 Impacto frente a QualiTrack:
 Aunque no constituyen una solución tecnológica avanzada, representan el principal competidor debido a su uso extendido y a la resistencia al cambio en los entornos operativos.
 
-<h4 id="PreguntEspe">Sistemas ERP:</h4>
+<h4 id="PreguntEspe">Sistemas ERP</h4>
 
 Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos de gestión de calidad y manufactura. Son utilizados principalmente por grandes corporaciones con alta capacidad de inversión.
 
