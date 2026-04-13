@@ -22,16 +22,16 @@ Estas herramientas representan la forma más común de gestión de procesos en m
 
 <h4 id="PreguntEspe">Fortalezas:</h4>
 
--Bajo costo de implementación.
--Fácil adopción por parte del personal.
--Flexibilidad para adaptarse a distintos procesos.
+- Bajo costo de implementación.
+- Fácil adopción por parte del personal.
+- Flexibilidad para adaptarse a distintos procesos.
 
 <h4 id="PreguntEspe">Debilidades:</h4>
 
--Alto riesgo de error humano en la transcripción de datos.
--Falta de trazabilidad confiable e inmutable.
--Vulnerabilidad ante pérdida o manipulación de información.
--Ausencia de automatización y monitoreo en tiempo real.
+- Alto riesgo de error humano en la transcripción de datos.
+- Falta de trazabilidad confiable e inmutable.
+- Vulnerabilidad ante pérdida o manipulación de información.
+- Ausencia de automatización y monitoreo en tiempo real.
 
 Impacto frente a QualiTrack:
 Aunque no constituyen una solución tecnológica avanzada, representan el principal competidor debido a su uso extendido y a la resistencia al cambio en los entornos operativos.
@@ -42,16 +42,16 @@ Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos
 
 <h4 id="PreguntEspe">Fortalezas:</h4>
 
--Alta integración entre procesos organizacionales.
--Cumplimiento de estándares internacionales.
--Escalabilidad y robustez del sistema.
+- Alta integración entre procesos organizacionales.
+- Cumplimiento de estándares internacionales.
+- Escalabilidad y robustez del sistema.
 
 <h4 id="PreguntEspe">Debilidades:</h4>
 
--Costos elevados de implementación y mantenimiento.
--Complejidad técnica y largos tiempos de despliegue.
--Baja accesibilidad para laboratorios medianos o públicos.
--Integración IoT no siempre nativa o requiere desarrollos adicionales.
+- Costos elevados de implementación y mantenimiento.
+- Complejidad técnica y largos tiempos de despliegue.
+- Baja accesibilidad para laboratorios medianos o públicos.
+- Integración IoT no siempre nativa o requiere desarrollos adicionales.
 
 Impacto frente a QualiTrack:
 Compiten en términos de robustez, pero no en accesibilidad ni especialización. QualiTrack ofrece una alternativa más ágil y adaptada al contexto local.
@@ -62,16 +62,16 @@ Estas plataformas están diseñadas específicamente para la gestión de laborat
 
 <h4 id="PreguntEspe">Fortalezas:</h4>
 
--Enfoque directo en cumplimiento regulatorio.
--Funcionalidades avanzadas de trazabilidad y auditoría.
--Estructuración formal de procesos de calidad.
+- Enfoque directo en cumplimiento regulatorio.
+- Funcionalidades avanzadas de trazabilidad y auditoría.
+- Estructuración formal de procesos de calidad.
 
 <h4 id="PreguntEspe">Debilidades:</h4>
 
--Costos elevados de licenciamiento.
--Interfaces poco intuitivas para usuarios operativos.
--Integración limitada con sensores IoT o alta complejidad técnica.
--Escasa adaptación a normativas locales como DIGEMID.
+- Costos elevados de licenciamiento.
+- Interfaces poco intuitivas para usuarios operativos.
+- Integración limitada con sensores IoT o alta complejidad técnica.
+- Escasa adaptación a normativas locales como DIGEMID.
 
 Impacto frente a QualiTrack:
 Son los competidores más cercanos en funcionalidad; sin embargo, presentan barreras de costo, usabilidad e integración tecnológica que QualiTrack busca superar.
