@@ -557,4 +557,20 @@
 
 ## 3.2. Impact Mapping
 
+<p>
+En el Impact Mapping de QualiTrack, el equipo elaboró el mapa partiendo de un Business Goal principal que cumple los criterios SMART: "Reducir en un 80% el tiempo de preparación para auditorías regulatorias de DIGEMID y disminuir en un 15% la pérdida de lotes por desviaciones no detectadas, logrando la suscripción de al menos 2 laboratorios piloto en los primeros 8 meses de operación".
+</p>
+
+<p>
+A partir de esta meta se incorporaron como Actors/Personas a los User Personas previamente definidos: el Jefe de Aseguramiento de la Calidad (QA) y el Operario de planta. Para cada uno se identificaron los Impacts esperados: en el caso del Jefe de QA, la reducción del tiempo dedicado a preparar documentación para auditorías, la liberación de lotes de forma digital en menos de 10 minutos y la detección anticipada de desviaciones normativas; en el caso del Operario, la eliminación de las bitácoras físicas y la recepción de alertas de desviación en menos de 5 segundos.
+</p>
+
+<p>
+A partir de estos impactos se definieron los Deliverables que QualiTrack debe ofrecer: el dashboard de telemetría en tiempo real con indicadores de cumplimiento BPM, el módulo de gestión de lotes con historial inmutable, el motor de alertas automáticas y bloqueo de lotes no conformes, la generación de reportes PDF de trazabilidad listos para inspección, y la integración IoT para la captura automática de variables críticas. Finalmente, en la columna de User Stories se detallaron historias que permiten trazar la ruta desde los objetivos de negocio hasta los features concretos del producto, asegurando la alineación entre Business Goals, Impacts, Deliverables y desarrollo de la solución.
+</p>
+
+<img src="../assets/img/Impact_Map_QualiTrack.png" alt="Impact Map QualiTrack" style="width: 90%; height: auto;">
+
+<div style="page-break-after: always;"></div>
+
 ## 3.3. Product Backlog
