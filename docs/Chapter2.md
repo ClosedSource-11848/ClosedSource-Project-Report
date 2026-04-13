@@ -30,25 +30,25 @@ A continuación, se presenta una comparación de los competidores considerando s
 <b>QualiTrack</b>
 
 
-<img src="../assets/img/veyralogo.jpeg" alt="Veyra" width="50"/>
+<img src="../assets/img/QualiTrack.png" alt="QualiTrack" width="150"/>
 </td>
 <td style="text-align: center; vertical-align: middle;">
 <b>SAP (ERP)</b>
 
 
-<img src="../assets/img/chapter-II/competitors/STORIICARE.png" alt="StoriiCare" width="50"/>
+<img src="../assets/img/SAP ERP.png" alt="SAP ERP" width="150"/>
 </td>
 <td style="text-align: center; vertical-align: middle;">
 <b>LabWare (LIMS)</b>
 
 
-<img src="../assets/img/chapter-II/competitors/SENIOR%20SOFT.png" alt="SeniorSoft" width="50"/>
+<img src="../assets/img/LabWare LIMS.png" alt="LabWare LIMS" width="150"/>
 </td>
 <td style="text-align: center; vertical-align: middle;">
 <b>Métodos tradicionales</b>
 
 
-<img src="../assets/img/chapter-II/competitors/CARE%20CLOUD.png" alt="CareCloud" width="50"/>
+<img src="../assets/img/Métodos tradicionales.png" alt="Métodos tradicionales" width="150"/>
 </td>
 </tr>
 <tr>
