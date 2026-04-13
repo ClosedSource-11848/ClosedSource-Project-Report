@@ -19,10 +19,10 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 <tr>
 <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
-<td colspan="4">¿Cómo se posiciona Veyra frente a sus competidores en cuanto a propuesta de valor, marketing, producto y estrategia?</td>
+<td colspan="4">¿Cómo se posiciona QualiTrack frente a sus competidores en cuanto a fortalezas, debilidades, oportunidades y su propuesta de valor dentro del mercado de gestión de calidad farmacéutica?</td>
 </tr>
 <tr>
-<td colspan="4">Es un análisis comparativo que permite identificar fortalezas, debilidades, oportunidades y amenazas, así como entender mejor la posición del producto frente a otros actores relevantes del mercado.</td>
+<td colspan="4">Es una propuesta que posiciona a QualiTrack como una plataforma SaaS orientada a la gestión de calidad farmacéutica, incorporando integración IoT para automatizar la captura de datos, mejorar la trazabilidad y asegurar el cumplimiento normativo frente a otras soluciones del mercado.</td>
 </tr>
 <tr>
 <td colspan="2" style="text-align: center;"><b>Competidores</b></td>
