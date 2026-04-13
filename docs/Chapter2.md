@@ -8,6 +8,10 @@ En esta etapa, se analizan distintos tipos de competidores con el objetivo de en
 
 ### 2.1.1. Análisis competitivo
 
+Para comprender el entorno en el que se desarrollará QualiTrack, se realizó un análisis competitivo enfocado en identificar las principales soluciones utilizadas actualmente en la gestión de calidad farmacéutica. Este análisis permite evaluar no solo las características de cada competidor, sino también sus enfoques, limitaciones y el valor que ofrecen a sus usuarios.
+
+A continuación, se presenta una comparación de los principales competidores, considerando aspectos como su propuesta de valor, mercado objetivo, estrategias y funcionalidades, con el fin de determinar el posicionamiento de QualiTrack frente a ellos.
+
 
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
