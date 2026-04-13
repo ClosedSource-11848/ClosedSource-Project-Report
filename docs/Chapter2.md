@@ -2,7 +2,7 @@
 
 ## 2.1. Competidores
 
-En el contexto de la industria farmacéutica, la gestión de calidad y el cumplimiento de las Buenas Prácticas de Manufactura (BPM) requieren herramientas que aseguren la trazabilidad, integridad de datos y control de procesos críticos. Sin embargo, las soluciones existentes en el mercado presentan distintos niveles de madurez tecnológica y accesibilidad.
+En el contexto de la industria farmacéutica, la gestión de calidad requieren herramientas que aseguren la trazabilidad, integridad de datos y control de procesos críticos. Sin embargo, las soluciones existentes en el mercado presentan distintos niveles de madurez tecnológica y accesibilidad.
 
 Para el caso de QualiTrack, los competidores no se limitan únicamente a plataformas digitales avanzadas, sino que incluyen también herramientas tradicionales ampliamente utilizadas en los laboratorios.
 
