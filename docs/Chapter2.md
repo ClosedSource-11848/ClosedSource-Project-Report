@@ -6,9 +6,11 @@ En el contexto de la industria farmacéutica, la gestión de calidad y el cumpli
 
 Para el caso de QualiTrack, los competidores no se limitan únicamente a plataformas digitales avanzadas, sino que incluyen también herramientas tradicionales ampliamente utilizadas en los laboratorios. En ese sentido, se identifican tres categorías principales de competencia:
 
--Herramientas tradicionales: registros manuales en papel y hojas de cálculo (Excel).
--Sistemas empresariales (ERP): soluciones robustas orientadas a grandes organizaciones.
--Plataformas especializadas (LIMS/QMS): sistemas diseñados para la gestión de calidad y laboratorio.
+Herramientas tradicionales: registros manuales en papel y hojas de cálculo (Excel).
+
+Sistemas empresariales (ERP): soluciones robustas orientadas a grandes organizaciones.
+
+Plataformas especializadas (LIMS/QMS): sistemas diseñados para la gestión de calidad y laboratorio.
 
 Cada una de estas categorías aborda parcialmente el problema de la gestión de calidad, pero presenta limitaciones importantes en términos de automatización, integración y adaptación al contexto local.
 
