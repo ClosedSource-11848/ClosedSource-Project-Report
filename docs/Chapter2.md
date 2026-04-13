@@ -18,6 +18,7 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 <tr>
 <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
+</tr>
 <tr>
 <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
 </tr>
