@@ -139,7 +139,13 @@ A continuación, se presenta una comparación de los competidores considerando s
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Luego de haber realizado el análisis de nuestra solución con respecto a soluciones ya existentes, nuestro equipo procederá a plantear estrategias y tácticas que debemos poner en marcha para sobresalir de las otras soluciones.
+Una vez identificados los actores del mercado, el siguiente paso es definir cómo QualiTrack logrará posicionarse frente a ellos. No basta con conocer a la competencia; es necesario establecer un plan de acción que permita aprovechar las ventajas del producto y reducir sus posibles limitaciones.
+
+Para ello, se utiliza la Matriz CAME, una herramienta que permite transformar el análisis FODA en estrategias concretas, orientadas a fortalecer la propuesta de valor y mejorar el posicionamiento en el mercado.
+
+A través de este enfoque, se plantean acciones orientadas a potenciar la integración IoT, el cumplimiento normativo y la accesibilidad del modelo SaaS, así como a mitigar riesgos como la resistencia al cambio y la entrada a un mercado con competidores consolidados.
+
+Matriz CAME para el desarrollo de estrategias basadas en el análisis FODA.
 
 
 ## 2.2. Entrevistas
