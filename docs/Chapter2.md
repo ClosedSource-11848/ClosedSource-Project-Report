@@ -33,19 +33,19 @@ A continuación, se presenta una comparación de los competidores considerando s
 <img src="../assets/img/veyralogo.jpeg" alt="Veyra" width="50"/>
 </td>
 <td style="text-align: center; vertical-align: middle;">
-<b>StoriiCare</b>
+<b>SAP (ERP)</b>
 
 
 <img src="../assets/img/chapter-II/competitors/STORIICARE.png" alt="StoriiCare" width="50"/>
 </td>
 <td style="text-align: center; vertical-align: middle;">
-<b>SeniorSoft</b>
+<b>LabWare (LIMS)</b>
 
 
 <img src="../assets/img/chapter-II/competitors/SENIOR%20SOFT.png" alt="SeniorSoft" width="50"/>
 </td>
 <td style="text-align: center; vertical-align: middle;">
-<b>CareCloud</b>
+<b>Métodos tradicionales</b>
 
 
 <img src="../assets/img/chapter-II/competitors/CARE%20CLOUD.png" alt="CareCloud" width="50"/>
