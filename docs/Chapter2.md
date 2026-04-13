@@ -18,7 +18,6 @@ Cada una de estas categorías aborda parcialmente el problema de la gestión de 
 
 Herramientas tradicionales
 
-Descripción:
 Estas herramientas representan la forma más común de gestión de procesos en muchos laboratorios, especialmente en contextos donde la digitalización aún es limitada. Incluyen registros en papel y archivos de Excel para documentar variables críticas como temperatura, presión y pH.
 
 <h4 id="PreguntEspe">Fortalezas:</h4>
@@ -39,7 +38,6 @@ Aunque no constituyen una solución tecnológica avanzada, representan el princi
 
 Sistemas ERP
 
-Descripción:
 Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos de gestión de calidad y manufactura. Son utilizados principalmente por grandes corporaciones con alta capacidad de inversión.
 
 <h4 id="PreguntEspe">Fortalezas:</h4>
@@ -60,7 +58,6 @@ Compiten en términos de robustez, pero no en accesibilidad ni especialización.
 
 Sistemas especializados LIMS/QMS
 
-Descripción:
 Estas plataformas están diseñadas específicamente para la gestión de laboratorio (LIMS) y calidad (QMS), ofreciendo funcionalidades avanzadas para auditorías, control de procesos y trazabilidad.
 
 <h4 id="PreguntEspe">Fortalezas:</h4>
