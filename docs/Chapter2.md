@@ -27,7 +27,7 @@ A continuación, se presenta una comparación de los competidores considerando s
 <tr>
 <td colspan="2" style="text-align: center;"><b>Competidores</b></td>
 <td style="text-align: center; vertical-align: middle;">
-<b>Veyra</b>
+<b>QualiTrack</b>
 
 
 <img src="../assets/img/veyralogo.jpeg" alt="Veyra" width="50"/>
