@@ -2,79 +2,13 @@
 
 ## 2.1. Competidores
 
-En el contexto de la industria farmacéutica, la gestión de calidad requieren herramientas que aseguren la trazabilidad, integridad de datos y control de procesos críticos. Sin embargo, las soluciones existentes en el mercado presentan distintos niveles de madurez tecnológica y accesibilidad.
+Para desarrollar una solución realmente útil, es fundamental comprender el entorno competitivo y las alternativas que actualmente utilizan los laboratorios farmacéuticos. Este análisis permite identificar cómo se gestionan hoy los procesos de calidad y qué limitaciones presentan las soluciones existentes.
 
-Para el caso de QualiTrack, los competidores no se limitan únicamente a plataformas digitales avanzadas, sino que incluyen también herramientas tradicionales ampliamente utilizadas en los laboratorios.
-
-<h4 id="PreguntEspe">En ese sentido, se identifican tres categorías principales de competencia:</h4>
-
-- Herramientas tradicionales: registros manuales en papel y hojas de cálculo (Excel).
-- Sistemas empresariales (ERP): soluciones robustas orientadas a grandes organizaciones.
-- Plataformas especializadas (LIMS/QMS): sistemas diseñados para la gestión de calidad y laboratorio.
-
-Cada una de estas categorías aborda parcialmente el problema de la gestión de calidad, pero presenta limitaciones importantes en términos de automatización, integración y adaptación al contexto local.
+En esta etapa, se analizan distintos tipos de competidores con el objetivo de entender sus fortalezas y debilidades, y así posicionar a QualiTrack como una propuesta que responda de manera más efectiva a las necesidades reales del sector.
 
 ### 2.1.1. Análisis competitivo
 
-<h4 id="PreguntEspe">Herramientas tradicionales</h4>
 
-Estas herramientas representan la forma más común de gestión de procesos en muchos laboratorios, especialmente en contextos donde la digitalización aún es limitada. Incluyen registros en papel y archivos de Excel para documentar variables críticas como temperatura, presión y pH.
-
-<h4 id="PreguntEspe">Fortalezas:</h4>
-
-- Bajo costo de implementación.
-- Fácil adopción por parte del personal.
-- Flexibilidad para adaptarse a distintos procesos.
-
-<h4 id="PreguntEspe">Debilidades:</h4>
-
-- Alto riesgo de error humano en la transcripción de datos.
-- Falta de trazabilidad confiable e inmutable.
-- Vulnerabilidad ante pérdida o manipulación de información.
-- Ausencia de automatización y monitoreo en tiempo real.
-
-Impacto frente a QualiTrack:
-Aunque no constituyen una solución tecnológica avanzada, representan el principal competidor debido a su uso extendido y a la resistencia al cambio en los entornos operativos.
-
-<h4 id="PreguntEspe">Sistemas ERP</h4>
-
-Los sistemas ERP integran múltiples procesos empresariales, incluyendo módulos de gestión de calidad y manufactura. Son utilizados principalmente por grandes corporaciones con alta capacidad de inversión.
-
-<h4 id="PreguntEspe">Fortalezas:</h4>
-
-- Alta integración entre procesos organizacionales.
-- Cumplimiento de estándares internacionales.
-- Escalabilidad y robustez del sistema.
-
-<h4 id="PreguntEspe">Debilidades</h4>
-
-- Costos elevados de implementación y mantenimiento.
-- Complejidad técnica y largos tiempos de despliegue.
-- Baja accesibilidad para laboratorios medianos o públicos.
-- Integración IoT no siempre nativa o requiere desarrollos adicionales.
-
-Impacto frente a QualiTrack:
-Compiten en términos de robustez, pero no en accesibilidad ni especialización. QualiTrack ofrece una alternativa más ágil y adaptada al contexto local.
-
-:<h4 id="PreguntEspe">Sistemas especializados LIMS/QMS</h4>
-
-Estas plataformas están diseñadas específicamente para la gestión de laboratorio (LIMS) y calidad (QMS), ofreciendo funcionalidades avanzadas para auditorías, control de procesos y trazabilidad.
-
-<h4 id="PreguntEspe">Fortalezas:</h4>
-
-- Enfoque directo en cumplimiento regulatorio.
-- Funcionalidades avanzadas de trazabilidad y auditoría.
-- Estructuración formal de procesos de calidad.
-
-<h4 id="PreguntEspe">Debilidades:</h4>
-
-- Costos elevados de licenciamiento.
-- Interfaces poco intuitivas para usuarios operativos.
-- Integración limitada con sensores IoT o alta complejidad técnica.
-- Escasa adaptación a normativas locales como DIGEMID.
-
-Impacto frente a QualiTrack:
-Son los competidores más cercanos en funcionalidad; sin embargo, presentan barreras de costo, usabilidad e integración tecnológica que QualiTrack busca superar.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
