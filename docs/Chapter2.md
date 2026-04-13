@@ -12,6 +12,7 @@ Para comprender el entorno en el que se desarrollará QualiTrack, se realizó un
 
 A continuación, se presenta una comparación de los competidores considerando su propuesta de valor, mercado objetivo y funcionalidades, con el fin de definir el posicionamiento de QualiTrack frente a ellos.
 
+
 <table border="1" cellpadding="10" cellspacing="0" style="margin-left: auto; margin-right: auto; font-family: sans-serif;">
 <tr>
 <th colspan="6">Panorama del análisis competitivo</th>
@@ -27,6 +28,7 @@ A continuación, se presenta una comparación de los competidores considerando s
 <td colspan="2" style="text-align: center;"><b>Competidores</b></td>
 <td style="text-align: center; vertical-align: middle;">
 <b>Veyra</b>
+
 
 <img src="../assets/img/veyralogo.jpeg" alt="Veyra" width="50"/>
 </td>
