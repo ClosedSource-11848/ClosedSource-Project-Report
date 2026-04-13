@@ -14,7 +14,7 @@ A continuación, se presenta una comparación de los competidores considerando s
 
 <table border="1" cellpadding="10" cellspacing="0" style="margin-left: auto; margin-right: auto; font-family: sans-serif;">
 <tr>
-<th colspan="6">Competitive Analysis Landscape</th>
+<th colspan="6">Panorama del análisis competitivo</th>
 </tr>
 <tr>
 <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
