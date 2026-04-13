@@ -259,6 +259,60 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
     </tbody>
 </table>
 
+<table>
+    <colgroup></colgroup>
+    <thead>
+        <tr>
+            <th colspan="2">Entrevista #2<br></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Patricia</td>
+        </tr>
+        <tr>
+            <td>Apellidos</td>
+            <td>Navarro]/td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>32 años</td>
+        </tr>
+        <tr>
+            <td>Distrito</td>
+            <td>Santa anita</td>
+        </tr>
+        <tr>
+            <td>Evidencia</td>
+            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista2.png" alt="Entrevista"></div></td>
+        </tr>
+        <tr>
+            <td>Link</td>
+            <td><p><a target="_blank" href="https://acortar.link/Xdz3pq" title="Title">https://acortar.link/Xdz3pq</a></p></td>
+        </tr>
+        <tr>
+            <td>Timing donde inicia la entrevista<br></td>
+            <td>00:36 min</td>
+        </tr>
+        <tr>
+            <td>Duración de la entrevista<br></td>
+            <td>7:05 min</td>
+        </tr>
+        <tr>
+            <td>Resumen</td>
+            <td>
+            La entrevistada es Química Farmacéutica titulada con una Maestría en Gestión de la Calidad y Excelencia Operacional. Actualmente se desempeña como Jefa de Aseguramiento de Calidad en los Laboratorios AC Farma, donde lidera un equipo de analistas y supervisores enfocados en el sistema preventivo, la liberación de lotes y la gestión de riesgos para mantener el laboratorio preparado ante inspecciones regulatorias.
+            <br> <br>
+            En cuanto a la trazabilidad y registro, señala que utilizan el sistema SAP para la logística, pero los controles de manufactura fina aún se realizan de forma manual. Las variables críticas de equipos como autoclaves se monitorean con data loggers que deben imprimirse y adjuntarse físicamente a los registros (Batch Records). Esto genera un proceso lento donde la búsqueda del historial de un lote puede tomar horas, además de representar un alto riesgo de pérdida de tickets o datos ilegibles que derivan en investigaciones por desviaciones.
+            <br> <br>
+            Respecto a las auditorías de DIGEMID, menciona que el enfoque actual es muy estricto con la integridad de datos. Recientemente recibieron observaciones preventivas sobre el control de accesos a equipos computarizados, ya que el sistema manual resulta insuficiente para demostrar la originalidad al 100%. Preparar esta documentación les exige semanas de trabajo administrativo de "limpieza" de expedientes, restando valor operativo.
+            <br> <br>
+            Finalmente, muestra una disposición total a digitalizar el proceso mediante una plataforma que capture datos de sensores en tiempo real y admita firmas confiables. Identifica como principales barreras el costo inicial de validación percibido por la alta dirección y la resistencia cultural de los operarios más antiguos, retos que asume con el objetivo de usar la tecnología para prevenir errores y asegurar el cumplimiento legal.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 **Segmento 2: Directores y supervisores de Entidades de Salud Pública**
 
@@ -323,7 +377,83 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
 
 ### 2.3.1. User Personas
 
+A partir del análisis de entrevistas y la recolección de información sobre las dinámicas en los laboratorios de producción y control de calidad, se identificaron los principales perfiles de usuarios que interactúan directamente con la solución QualiTrack. Estos perfiles representan los segmentos clave para el sistema, ya que concentran tanto la necesidad de asegurar la integridad de los datos operativos como la necesidad de optimizar la preparación ante auditorías regulatorias. La construcción de los *User Persona* permite al equipo de desarrollo comprender mejor sus motivaciones, frustraciones y hábitos, lo que resulta esencial para diseñar funcionalidades adecuadas y experiencias de usuario efectivas.
+
+**1) Segmento 1: Gerentes y Jefes de Aseguramiento de Calidad**
+
+Para este segmento se elaboró el User Persona **Valeria Castro**. Se consideraron factores como su experiencia en el sector industrial farmacéutico, su rol liderando la liberación de lotes y su responsabilidad directa frente a las inspecciones de la DIGEMID. Sus principales frustraciones giran en torno a la dependencia de registros en papel (batch records) y la pérdida de tiempo reconstruyendo el historial de producción de forma manual, lo que aumenta el riesgo de observaciones por integridad de datos. Asimismo, se tomó en cuenta su familiaridad con herramientas digitales y su necesidad de contar con una plataforma que automatice la captura de variables mediante sensores IoT, garantizando firmas confiables y manteniendo el laboratorio "siempre listo" para las auditorías.
+
+<img src="../assets/img/UserPersona1.png" alt="User Persona 1" width="auto" height="1900"/>
+
+<br>
+
+**2) Segmento 2: Directores y Supervisores de Entidades de Salud Pública**
+
+Para este segmento se elaboró el User Persona **Rosa Amelia Mendoza**. Se consideraron aspectos como su formación científica y su rol en la supervisión de la producción de biológicos o vacunas a nivel estatal. Sus motivaciones están orientadas a estandarizar los procesos de manufactura cumpliendo estrictamente con las normativas nacionales de salud. Entre sus frustraciones se encuentra la falta de sistemas integrados, lo que obliga a su personal a realizar mediciones manuales constantemente, generando brechas de seguridad en la información y lentitud operativa. Su perfil refleja una necesidad crítica de sistemas inmutables y de trazabilidad en tiempo real que garanticen la seguridad pública de manera amigable para el personal técnico.
+
+<img src="../assets/img/UserPersona2.png" alt="User Persona 2" width="auto" height="1900"/>
+
 ### 2.3.2. User Task Matrix
+
+El User Task Matrix presenta las tareas que realizan los User Persona para cumplir sus objetivos en su día a día, independientemente de si usan nuestro software o no. Se evalúa la frecuencia y la importancia de cada tarea para identificar dónde aportar valor.
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif; text-align:center;">
+  <thead>
+    <tr style="background-color:#eef3f7;">
+      <th rowspan="2">Tarea (Task)</th>
+      <th colspan="2">Jefa de Calidad (Valeria)</th>
+      <th colspan="2">Dir. de Salud Pública (Rosa)</th>
+    </tr>
+    <tr style="background-color:#eef3f7;">
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left;">Registrar variables críticas (temperatura, pH, esterilización)</td>
+      <td>Often</td><td>High</td>
+      <td>Often</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Rastrear y consolidar el historial de un lote de producción</td>
+      <td>Often</td><td>High</td>
+      <td>Often</td><td>Medium</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Preparar documentación para auditorías de DIGEMID</td>
+      <td>Occasionally</td><td>High</td>
+      <td>Occasionally</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Atender alertas de desviación de equipos (ej. autoclaves)</td>
+      <td>Occasionally</td><td>High</td>
+      <td>Occasionally</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Aprobar y firmar digitalmente la liberación de lotes</td>
+      <td>Often</td><td>High</td>
+      <td>Often</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Generar reportes estadísticos de calidad para gerencia</td>
+      <td>Often</td><td>Medium</td>
+      <td>Monthly</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Capacitar al personal técnico en buenas prácticas (BPM)</td>
+      <td>Rarely</td><td>Medium</td>
+      <td>Rarely</td><td>Medium</td>
+    </tr>
+  </tbody>
+</table>
+
+**Análisis del Task Matrix:**
+Se observa que las tareas **"Registrar variables críticas"** y **"Aprobar y firmar digitalmente la liberación de lotes"** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos, ya que representan el núcleo operativo de la manufactura segura. Esto confirma que estas tareas son el "Core" del negocio y deben ser priorizadas mediante automatización IoT. Además, la tarea crítica de **"Preparar documentación para auditorías"**, aunque es *Occasionally*, tiene una importancia altísima (**High**) para ambos, validando la necesidad de un sistema inmutable y trazable para evitar penalidades de la DIGEMID.
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.3. User Journey Mapping
 
