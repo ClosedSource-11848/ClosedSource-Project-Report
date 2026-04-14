@@ -32,7 +32,7 @@
 |------------|----------------------------|
 | U202116401 | Ruiz Madrid Billy Jake     |
 | U202322849 | Viza Quispe Marlon Packard |
-| U          |                            |
+| U202323911 | Diaz Caruzo Edgard Daniel  |
 | U          |                            |
 | U          |                            |
 
