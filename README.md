@@ -28,13 +28,13 @@
 
 <div align="center">
 
-| Código     | Apellidos y Nombres        |
-|------------|----------------------------|
-| U202116401 | Ruiz Madrid Billy Jake     |
-| U202322849 | Viza Quispe Marlon Packard |
-| U202323911 | Diaz Caruzo Edgard Daniel  |
-| U202113229 | Castillo Yataco Mauricio   |
-| U          |                            |
+| Código     | Apellidos y Nombres           |
+|------------|-------------------------------|
+| U202116401 | Ruiz Madrid Billy Jake        |
+| U202322849 | Viza Quispe Marlon Packard    |
+| U202323911 | Diaz Caruzo Edgard Daniel     |
+| U202113229 | Castillo Yataco Mauricio      |
+| U202321425 | Angulo Ramírez Marcelo Martín |
 
 ### Abril, 2026
 
