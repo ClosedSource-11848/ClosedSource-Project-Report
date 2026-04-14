@@ -172,12 +172,12 @@ Teniendo en cuenta la importancia en la información que nos puede proveer los e
 
 <h4 id="PreguntEspe">Preguntas específicas:</h4>
 
-- ¿Cómo registran actualmente las variables críticas de producción durante los procesos de esterilización o control de calidad?
-- ¿Qué tipo de sistema o herramienta utiliza su laboratorio para gestionar la trazabilidad de los lotes?
-- ¿Con qué frecuencia han recibido observaciones o multas por parte de DIGEMID en las últimas auditorías relacionadas con la integridad de datos o registros incompletos?
-- ¿Cuánto tiempo suele tomar a su equipo preparar la documentación para una auditoría regulatoria?
-- ¿Qué tan dispuesto estaría su equipo a reemplazar los registros manuales por una plataforma digital que capture automáticamente los datos de sensores?
-- ¿Cuáles son las principales barreras que ha enfrentado para digitalizar los procesos de calidad?
+- ¿Cómo registran las variables críticas en esterilización/control de calidad?
+- ¿Cómo gestionan la trazabilidad de lotes?
+- En las últimas auditorías de DIGEMID, ¿con qué frecuencia han tenido observaciones o multas por integridad de datos/registros incompletos?
+- ¿Cuánto tiempo les toma preparar la documentación para una auditoría?
+- ¿Qué tan dispuestos estarían a reemplazar los registros manuales por una plataforma digital que capture automáticamente datos de sensores?
+- ¿Cuáles son las principales barreras que han enfrentado para digitalizar procesos de calidad?
 
 <h4 id="Segmento" >Segmento objetivo: Directores y supervisores de Entidades de Salud Pública</h4>
 
@@ -190,14 +190,13 @@ Teniendo en cuenta la importancia en la información que nos puede proveer los e
 
 <h4 id="PreguntEspe">Preguntas específicas:</h4>
 
-- ¿Qué procesos de control de calidad o manufactura se realizan actualmente en su institución que aún dependen de registros en papel o sistemas no integrados?
-- ¿Cómo se gestiona actualmente la trazabilidad de los lotes de productos biológicos o medicamentos críticos producidos por su entidad?
-- ¿Qué desafíos específicos ha enfrentado su institución durante auditorías internas o externas en relación con la integridad de los datos de producción?
-- ¿Qué nivel de interoperabilidad requieren con otros sistemas estatales?
-- ¿Cómo se enteran actualmente de una desviación de parámetros durante la producción? ¿Existe algún mecanismo de alerta temprana?
-- ¿Cuánto tiempo y recursos se destinan actualmente a la preparación de informes y evidencias para las auditorías regulatorias?
-- ¿Qué requisitos de seguridad y cumplimiento normativo serían indispensables para adoptar una plataforma SaaS en el sector público?
-- ¿Qué tipo de capacitación o acompañamiento necesitaria su personal técnico y operativo para migrar de un regístro manual a uno digital con integración IoT?
+- ¿Qué procesos de calidad o manufactura aún dependen de registros en papel o sistemas no integrados?
+- ¿Cómo gestionan hoy la trazabilidad de lotes de productos biológicos o medicamentos críticos?
+- ¿Qué desafíos específicos han enfrentado en auditorías relacionados con la integridad de los datos de producción?
+- ¿Cómo se enteran de una desviación de parámetros durante la producción? ¿Existe algún mecanismo de alerta temprana?
+- ¿Cuánto tiempo y recursos destinan a preparar evidencias para auditorías regulatorias?
+- ¿Qué requisitos de seguridad y cumplimiento serían indispensables para adoptar una plataforma SaaS en el sector público?
+- ¿Qué tipo de capacitación o acompañamiento necesitaría su personal técnico para migrar de registro manual a digital con integración IoT?
 
 ### 2.2.2. Registro de entrevistas
 
@@ -288,7 +287,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Link</td>
-            <td><p><a target="_blank" href="https://shorturl.at/DMyrs" title="Title">https://shorturl.at/DMyrs</a></p></td>
+            <td><p><a target="_blank" href="https://shorturl.at/9FYYE" title="Title">https://shorturl.at/9FYYE</a></p></td>
         </tr>
         <tr>
             <td>Timing donde inicia la entrevista<br></td>
@@ -455,7 +454,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Link</td>
-            <td><p><a target="_blank" href="https://shorturl.at/DMyrs" title="Title">https://shorturl.at/DMyrs</a></p></td>
+            <td><p><a target="_blank" href="https://shorturl.at/mVFf9" title="Title">https://shorturl.at/mVFf9</a></p></td>
         </tr>
         <tr>
             <td>Timing donde inicia la entrevista<br></td>
