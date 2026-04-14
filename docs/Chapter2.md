@@ -105,7 +105,6 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 <tr>
 <td rowspan="5"><b>Análisis SWOT</b></td>
-</td>
 </tr>
 <tr>
 <td>Fortalezas</td>
@@ -269,6 +268,61 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
     <tbody>
         <tr>
             <td>Nombre</td>
+            <td>Fredd</td>
+        </tr>
+        <tr>
+            <td>Apellidos</td>
+            <td>Palomino</td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>41 años</td>
+        </tr>
+        <tr>
+            <td>Distrito</td>
+            <td>San Juan de Lurigancho</td>
+        </tr>
+        <tr>
+            <td>Evidencia</td>
+            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista2.png" alt="Entrevista"></div></td>
+        </tr>
+        <tr>
+            <td>Link</td>
+            <td><p><a target="_blank" href="https://shorturl.at/DMyrs" title="Title">https://shorturl.at/DMyrs</a></p></td>
+        </tr>
+        <tr>
+            <td>Timing donde inicia la entrevista<br></td>
+            <td>00:06 min</td>
+        </tr>
+        <tr>
+            <td>Duración de la entrevista<br></td>
+            <td>4:55 min</td>
+        </tr>
+        <tr>
+            <td>Resumen</td>
+            <td>
+            El Sr. Fredd Palomino trabaja en el laboratorio del Instituto Nacional de la Salud, una institución de referencia en el país. Dentro de este laboratorio, su equipo se dedica a la fabricación de productos farmacéuticos estériles, lo que exige un riguroso control de las condiciones ambientales y de los procesos para garantizar la ausencia de microorganismos.
+            <br> <br>
+            Para registrar las variables críticas del proceso, emplean un sistema mixto: por un lado, utilizan papel emitido directamente por un equipo de medición; por otro lado, complementan con un registro manual donde anotan datos como temperatura, presión, unidades producidas, entre otros. De esta forma, se muestra tanto el resultado obtenido como los insumos y condiciones empleadas durante el proceso, con el fin de preservar la trazabilidad completa de cada lote fabricado.
+            <br> <br>
+            A pesar de la naturaleza manual del registro, no han recibido observaciones relacionadas con la integridad de los datos. Sin embargo, sí reciben constantemente recomendaciones y recordatorios sobre los parámetros establecidos por la DIGEMID, el ente regulador sanitario. Además, el Sr. Palomino afirma que el tiempo de preparación de un producto puede extenderse desde 6 meses hasta 1 año, debido a la minuciosa identificación de los materiales y los datos necesarios para asegurar un plan de acción eficiente antes de iniciar la producción.
+            <br> <br>
+            El Sr. Palomino comenta que la digitalización y automatización del traslado de los datos hacia un informe virtual, así como el apunte de los datos en tiempo real, serían de gran utilidad para agilizar el proceso de producción. No obstante, señala que esto solo sería viable siempre y cuando se garantice una buena tasa de seguridad, protegiendo la integridad y confidencialidad de la información generada durante la fabricación.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <colgroup></colgroup>
+    <thead>
+        <tr>
+            <th colspan="2">Entrevista #3<br></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
             <td>Patricia</td>
         </tr>
         <tr>
@@ -285,7 +339,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Evidencia</td>
-            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista2.png" alt="Entrevista"></div></td>
+            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista3.png" alt="Entrevista"></div></td>
         </tr>
         <tr>
             <td>Link</td>
@@ -366,6 +420,63 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             Ella indica que aún se emplea un metodo de documentación y regulación manual en el proceso de producción y analisís de las vacunas dentro del laborotiro, ya que las herramientas digitales que poseen no presentan funcionalidades que documente como un historial datos clave como la temperatura y el nivel de esterilzación, forzando la documentación a mano.
             <br> <br>
             Entre las herramientas que considera dispensables mencionó la capacidad de almacenar constantemente los cambios y variaciones en el control de la calidad de los lotes, los cuales se refieren en su labor las vacunas. Un ejemplo clave es la temperatura, ya que se tiene un habito el documentar en la mañana, tarde y noche la temperatura mostrada por las herramientas digitales que presentan, lo cual muestra su dificultad en el ambito digital para simplificar el registro de calidad.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <colgroup></colgroup>
+    <thead>
+        <tr>
+            <th colspan="2">Entrevista #2<br></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Rocio</td>
+        </tr>
+        <tr>
+            <td>Apellidos</td>
+            <td>Santo Alegre</td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>49 años</td>
+        </tr>
+        <tr>
+            <td>Distrito</td>
+            <td>Chorrillos</td>
+        </tr>
+        <tr>
+            <td>Evidencia</td>
+            <td><div align="center"><img src="../assets/img/Segmento2-Entrevista2.png" alt="Entrevista"></div></td>
+        </tr>
+        <tr>
+            <td>Link</td>
+            <td><p><a target="_blank" href="https://shorturl.at/DMyrs" title="Title">https://shorturl.at/DMyrs</a></p></td>
+        </tr>
+        <tr>
+            <td>Timing donde inicia la entrevista<br></td>
+            <td>00:14 min</td>
+        </tr>
+        <tr>
+            <td>Duración de la entrevista<br></td>
+            <td>4:59 min</td>
+        </tr>
+        <tr>
+            <td>Resumen</td>
+            <td>
+            La Sra. Rocío Santo Alegre es química farmacéutica de producción, una profesión que combina la química con la tecnología farmacéutica aplicada a la elaboración de medicamentos. Actualmente, trabaja en un laboratorio especializado en la producción de radiactivos para diagnóstico, un área de alta precisión y regulación. Desde hace 8 meses, ocupa el puesto de responsable del área, lo que implica supervisar tanto los procesos técnicos como al personal a su cargo.
+            <br> <br>
+            Uno de los principales desafíos que enfrenta el laboratorio es que aún no se ha migrado a la digitalización. Esto significa que toda la información técnica relacionada con los procesos de producción se traslada en formatos impresos, utilizando exclusivamente la escritura manual. Esta falta de digitalización no solo ralentiza el flujo de trabajo, sino que también aumenta el riesgo de errores humanos y de pérdida de documentos.
+            <br> <br>
+            El proceso productivo comienza con una orden de producción que es impresa en papel. Para estructurar los datos de dichas órdenes, se emplean herramientas ofimáticas como Word, pero una vez impresas, todos los documentos pasan a formar parte del expediente de producción. Durante el resto del proceso, cada uno de estos papeles va siendo llenado manualmente por los operarios, desde los registros de materias primas hasta los controles de calidad intermedios.
+            <br> <br>
+            Rocío expresa, desde dos perspectivas complementarias, los desafíos que enfrentan durante las auditorías. Por un lado, desde el punto de vista del productor, ella valora positivamente poder mostrar la información disponible tal como está registrada en los documentos físicos. Por otro lado, desde la perspectiva del auditor, se evidencian claras limitaciones derivadas de la falta de información clara, ordenada y de rápida consulta en el momento de la inspección, lo que puede generar observaciones o retrasos.
+            <br> <br>
+            En cuanto a las desviaciones, estas son detectadas mientras el proceso de producción aún está en marcha, lo que permite tomar acciones correctivas de forma temprana. Para identificar dichas desviaciones, el equipo se basa en dos pilares fundamentales: el conocimiento profundo de los requisitos establecidos por las normativas y procedimientos internos, y el seguimiento continuo y meticuloso de los datos obtenidos durante cada etapa del proceso.
             </td>
         </tr>
     </tbody>
