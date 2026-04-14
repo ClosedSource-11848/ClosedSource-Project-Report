@@ -567,8 +567,18 @@ Se observa que las tareas **"Registrar variables críticas"** y **"Aprobar y fir
 <div style="page-break-after: always;"></div>
 
 ### 2.3.3. User Journey Mapping
+El User Journey Mapping es una herramienta visual que nos permite "caminar en los zapatos" del usuario.Aquí, trazamos un mapa del emocionalrecorrido y trayectoria operativaque realizan tanto los administradores como las personas cercanas en determinadas situaciones.que tanto los administradores como las personas conocidas adoptan en determinadas situaciones. Los momentos de mayor frustración ( puntos bajos) nos dan la oportunidad de transformarlos en momentos de satisfacción a través de nuestra intervención tecnológica.
+
+**Segmento objetivo: Gerentes y jefes de Aseguramiento de Calidad (Valeri Castrol)**
+
+<img src="../assets/img/JourneyMapping1.png" alt="Journey Mapping 1" width="auto" height="1900"/>
+
+**Segmento objetivo: Directores y supervisores de Entidades de Salud Pública (Rosa Amelia Mendoza)**
+
+<img src="../assets/img/JourneyMapping2.png" alt="Journey Mapping 2" width="auto" height="1900"/>
 
 ### 2.3.4. Empathy Mapping
+
 
 ## 2.4. Big Picture Event Storming
 
