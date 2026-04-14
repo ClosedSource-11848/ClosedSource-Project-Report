@@ -20,7 +20,7 @@
 
 **Nombre del Startup:** ClosedSource
 
-**Nombre del Producto:**
+**Nombre del Producto:** QualiTrack
 
 **Integrantes:**
 
@@ -33,7 +33,7 @@
 | U202116401 | Ruiz Madrid Billy Jake     |
 | U202322849 | Viza Quispe Marlon Packard |
 | U202323911 | Diaz Caruzo Edgard Daniel  |
-| U          |                            |
+| U202113229 | Castillo Yataco Mauricio   |
 | U          |                            |
 
 ### Abril, 2026
