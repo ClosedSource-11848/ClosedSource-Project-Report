@@ -483,6 +483,47 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
 
 ### 2.2.3. Análisis de entrevistas
 
+En esta sección se presenta el análisis detallado de la información recolectada. Para cada segmento, se explican primero los hallazgos estadísticos objetivos y subjetivos, seguidos de la evidencia gráfica correspondiente.
+
+#### Segmento 1: Gerentes y jefes de Aseguramiento de Calidad
+
+**Análisis de Características Objetivas y Subjetivas:**
+El análisis revela una alta dependencia de procesos análogos en el área de manufactura. Como se detalla en el gráfico a continuación, el **100%** de los jefes de calidad utiliza un **sistema mixto o netamente manual** (tickets físicos y llenado a mano) para el registro de variables críticas, y el **100%** ha recibido observaciones preventivas de DIGEMID respecto a la integridad de datos. Si bien un **33%** se apoya en sistemas logísticos robustos (como SAP), la falta de integración con la producción es crítica.
+A nivel subjetivo, el **100%** valora positivamente la **digitalización y la captura IoT**. Sin embargo, existe una restricción clara: el **67%** manifiesta preocupación por los **retos de implementación**, ya sea por la resistencia cultural del personal antiguo o por la seguridad de los datos.
+
+<div align="center"><img src="../assets/img/Grafico1Segmento1Cap2.png" alt="Gráfico Estadístico Gerentes de Calidad" width="80%"></div>
+<br>
+
+#### Segmento 2: Directores y supervisores de Entidades de Salud Pública
+
+**Análisis de Características Objetivas y Subjetivas:**
+Los datos confirman una brecha tecnológica severa en el control de calidad estatal. El **100%** reporta que el expediente de producción se elabora mediante **documentación manual** (Word y lapicero), y el **100%** indica que sus herramientas **no permiten un historial continuo**, forzándolos a registrar variables en turnos aislados.
+Subjetivamente, el dolor principal es el riesgo regulatorio: el **100%** siente **frustración ante las auditorías** por la falta de información rápida. Reconociendo que el papel ralentiza el trabajo, el **100%** considera indispensable una solución que **almacene constantemente las variaciones** para mitigar el error humano.
+
+<div align="center"><img src="../assets/img/Grafico2Segmento2Cap2.png" alt="Gráfico Estadístico Supervisores de Salud" width="80%"></div>
+<br>
+
+#### Análisis Comparativo
+
+**Contrastación de Segmentos:**
+Al comparar ambos grupos, encontramos coincidencias vitales para el producto: ambos tienen un **100% de dependencia documentaria en papel** y una necesidad unánime de asegurar la trazabilidad. Sin embargo, existe una brecha notable en la percepción de los obstáculos: mientras los gerentes (Segmento 1) prevén retos de adopción y seguridad informática (**67%** de preocupación), los supervisores públicos (Segmento 2) priorizan la urgencia de resolver el desorden operativo ante el auditor. Esto define la propuesta de valor: inmutabilidad y seguridad para la gerencia, y automatización continua para aliviar la carga del supervisor.
+
+<div align="center"><img src="../assets/img/Comparativa_segmentos_objetivos.png" alt="Gráfico Comparativo Segmentos" width="80%"></div>
+<br>
+
+### Conclusiones y Definición de Arquetipos
+
+Basado en el análisis estadístico, se definen los siguientes perfiles para los User Personas:
+
+1.  **User Persona Jefe de Calidad:**
+    * **Rasgo clave:** Busca modernizar la planta pero teme la fricción cultural y las vulnerabilidades de datos.
+    * **Sustento:** El 100% valora la captura IoT, pero el 67% se preocupa por la implementación. La solución debe garantizar firmas seguras y ser amigable para operarios sin experiencia digital.
+2.  **User Persona Supervisor Público:**
+    * **Rasgo clave:** Necesita orden absoluto y trazabilidad continua para proteger la salud pública y superar auditorías.
+    * **Sustento:** El 100% se frustra al recopilar papeles para auditorías y sufre por los registros manuales aislados. La solución debe centrarse en historiales (Batch Records) autogenerados y alertas continuas.
+
+<div style="page-break-after: always;"></div>
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
