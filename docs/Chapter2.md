@@ -589,4 +589,18 @@ Para crear una solución que realmente se vincula con las personas, no es sufici
 
 ## 2.4. Big Picture Event Storming
 
+Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados, antes de crear un sistema sólido. El Big Picture Event Storming es un método colaborativo que facilita la visualización de todos los sucesosque tienen lugar en una casa de reposo. Al Estructurar estos eventos de forma lógica y cronológica, conseguimos detectar los flujos cruciales del negocio y los lugares en los que la información tiende a retrasarse o a perderse.
+
+**Step 1 – Free Exploration**
+
+En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de recopilar todos los eventos pertinentes al dominio, sin importar la secuencia o la jerarquía. El El propósito principal fue ilustrar los sucesos reales del negocio, sin depender de ninguna función técnica o vinculada a un sistema.
+
+<img src="../assets/img/BigPicture1.png" alt="Big Picture Event Storming 1" width="auto" height="1900"/>
+
+**Step 2 – Structured Organization**
+
+Luego de enumerar los eventos, el equipo los agrupó en flujos de negocio lógicos que muestran las fases más relevantes en la operación de una casa de reposo. Esta La estructura facilitó la identificación de los procesos fundamentales y las áreas que necesitaban mejoras, las cuales se podrían abordar más tarde a través de soluciones digitales o de gestión.
+
+<img src="../assets/img/BigPicture2.png" alt="Big Picture Event Storming 2" width="auto" height="1900"/>
+
 ## 2.5. Ubiquitous Language
