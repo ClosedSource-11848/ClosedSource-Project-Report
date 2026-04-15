@@ -605,9 +605,7 @@ Luego de enumerar los eventos, el equipo los agrupó en flujos de negocio lógic
 
 ## 2.5. Ubiquitous Language
 
-En proyectos donde interactúan desarrolladores, médicos y familias, es fácil que ocurran malentendidos. Por ello, hemos establecido un Lenguaje Ubicuo: un diccionario común de términos que todos los involucrados entenderemos de la misma manera. Este glosario no solo facilita la comunicación interna, sino que asegura que el código y la interfaz del software reflejen fielmente la realidad del negocio geriátrico.
-
-
+Este glosario asegura que los desarrolladores, los químicos farmacéuticos y los auditores de DIGEMID compartan un marco conceptual idéntico, garantizando que el software sea una extensión fiel de las normativas de manufactura.
 
 | Term               | Definition                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
