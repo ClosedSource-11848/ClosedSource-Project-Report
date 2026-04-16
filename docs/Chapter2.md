@@ -618,7 +618,7 @@ El User Journey Mapping es una herramienta visual que nos permite "caminar en lo
 <img src="../assets/img/JourneyMapping2.png" alt="Journey Mapping 2" width="auto" height="1900"/>
 
 ### 2.3.4. Empathy Mapping
-Para crear una solución que realmente se vincula con las personas, no es suficiente con saber qué hacen; Tenemos que comprender lo que sienten. El Empathy Mapping es una herramienta que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno de los usuarios.es un instrumento que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno.los usuarios. Al examine lo que el administrador y los familiares observan, escuchan, dicen y hacen, conseguimos reconocer sus temores y sus deseos. Este Ejercicio es esencial para que Veyra no sea únicamente una herramienta útil, sino también una plataforma que ofrezca tranquilidad y bienestar emocional a todos los que la usen.
+Para crear una solución que realmente se vincula con las personas, no es suficiente con saber qué hacen; Tenemos que comprender lo que sienten. El Empathy Mapping es una herramienta que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno de los usuarios.es un instrumento que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno.los usuarios. Al examine lo que el administrador y los familiares observan, escuchan, dicen y hacen, conseguimos reconocer sus temores y sus deseos.
 
 **1) Segmento objetivo: Gerentes y jefes de Aseguramiento de Calidad**
 
