@@ -275,6 +275,8 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 
 ### 4.6.2. Software Architecture Context Diagram
 
+El diagrama de contexto de QualiTrack muestra a la plataforma como el sistema central que gestiona la calidad farmacéutica, integrando sensores IoT, monitoreo de variables, trazabilidad de lotes y soporte para auditorías. A su alrededor interactúan actores como el jefe de calidad, operarios, auditores y administradores, junto con sistemas externos que permiten su funcionamiento.
+
 ### 4.6.3. Software Architecture Container Diagrams
 
 ### 4.6.4. Software Architecture Components Diagrams
