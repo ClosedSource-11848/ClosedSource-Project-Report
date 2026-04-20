@@ -44,8 +44,8 @@ Esta distribución garantiza un contraste óptimo entre el texto y el fondo, sup
 
 Nuestra paleta de colores ha sido cuidadosamente seleccionada para evocar sensaciones de pulcritud, profesionalismo tecnológico y control. Se ha distribuido en tres categorías principales:
 
-**Paleta principal**: Colores que definen la identidad de Veyra y se usan en elementos clave.
-* **Primario (Azul Veyra):** var(--primary-color) (referencia principal).
+**Paleta principal**: Colores que definen la identidad de QualiTrack y se usan en elementos clave.
+* **Primario (Azul QualiTrack):** var(--primary-color) (referencia principal).
 * **Secundario (Azul Profundo):** var(--secondary-color) (para texto principal y elementos interactivos).
 * **Terciario (Gris Oscuro):** var(--tertiary-color) (para texto secundario y detalles).
 * **Fondo Claro:** var(--bg-light) (fondos de secciones).
