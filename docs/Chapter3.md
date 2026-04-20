@@ -1020,6 +1020,6 @@ En esta sección se presenta el Product Backlog priorizado con las Historias de 
 </table>
 
 <div align="center">
-  <img src="../assets/img/Product_Backlog_QualiTrack.png" alt="Evidence Product Backlog" width="90%">
+  <img src="../assets/img/Backlog-ClosedSource.jpeg" alt="Evidence Product Backlog" width="90%">
   <p><em>Figura: Captura del Product Backlog en la herramienta de gestión del proyecto.</em></p>
 </div>
