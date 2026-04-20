@@ -395,7 +395,7 @@ evitar la duplicidad de lógica entre contextos, asegurar la coherencia de los d
 compartidos y proveer una base técnica sólida y reutilizable para toda la arquitectura de 
 QualiTrack.
 
-<img src="../assets/img/bc-shared.jpg" alt="Bounded Context Shared" width="80%"/>
+<img src="../assets/img/b-c-shared.jpg" alt="Bounded Context Shared" width="80%"/>
 
 ### 4.6.2. Software Architecture Context Diagram
 
