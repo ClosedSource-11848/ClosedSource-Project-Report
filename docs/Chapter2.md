@@ -234,15 +234,15 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Link</td>
-            <td><p><a target="_blank" href="https://shorturl.at/KhSHa" title="Title">https://shorturl.at/KhSHa</a></p></td>
+            <td><p><a target="_blank" href="https://shorturl.at/CMWHx" title="Title">https://shorturl.at/CMWHx</a></p></td>
         </tr>
         <tr>
             <td>Timing donde inicia la entrevista<br></td>
-            <td>00:19 min</td>
+            <td>00:00 min</td>
         </tr>
         <tr>
             <td>Duración de la entrevista<br></td>
-            <td>10:39 min</td>
+            <td>04:55 min</td>
         </tr>
         <tr>
             <td>Resumen</td>
@@ -287,15 +287,15 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Link</td>
-            <td><p><a target="_blank" href="https://shorturl.at/9FYYE" title="Title">https://shorturl.at/9FYYE</a></p></td>
+            <td><p><a target="_blank" href="https://shorturl.at/CMWHx" title="Title">https://shorturl.at/CMWHx</a></p></td>
         </tr>
         <tr>
             <td>Timing donde inicia la entrevista<br></td>
-            <td>00:06 min</td>
+            <td>04:56 min</td>
         </tr>
         <tr>
             <td>Duración de la entrevista<br></td>
-            <td>4:55 min</td>
+            <td>4:57 min</td>
         </tr>
         <tr>
             <td>Resumen</td>
@@ -322,6 +322,63 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
     <tbody>
         <tr>
             <td>Nombre</td>
+            <td>Alberto</td>
+        </tr>
+        <tr>
+            <td>Apellidos</td>
+            <td>Valle Vega</td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>68 años</td>
+        </tr>
+        <tr>
+            <td>Distrito</td>
+            <td>Arequipa</td>
+        </tr>
+        <tr>
+            <td>Evidencia</td>
+            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista3.png" alt="Entrevista"></div></td>
+        </tr>
+        <tr>
+            <td>Link</td>
+            <td><p><a target="_blank" href="https://shorturl.at/CMWHx" title="Title">https://shorturl.at/CMWHx</a></p></td>
+        </tr>
+        <tr>
+            <td>Timing donde inicia la entrevista<br></td>
+            <td>09:53 min</td>
+        </tr>
+        <tr>
+            <td>Duración de la entrevista<br></td>
+            <td>4:57 min</td>
+        </tr>
+        <tr>
+            <td>Resumen</td>
+            <td>
+            El Sr. Alberto Valle es químico farmacéutico de profesión. Tiene 40 años y ha trabajado en la industria farmacéutica manejando diferentes métodos y formas de producción.
+            <br> <br>
+            Menciona que la industria es muy estricta y que todo debe registrarse de forma manual. Cada producto tiene sus propias características de anotación, dependiendo de la variable que se debe evaluar.
+            <br> <br>
+            A pesar de la rigurosidad del método manual, en el laboratorio donde trabaja no han recibido ninguna observación en las auditorías, gracias al estricto método y formato de registro que emplean.
+            <br> <br>
+            Explica que la auditoría abarca el sistema completo: calidad, mantenimiento, control y cantidad. La preparación implica verificar los datos desde un tiempo prudente, indicando que el promedio es de 4 semanas de registro cuidadoso.
+            <br> <br>
+            Finalmente, señala que la disponibilidad de sistemas IoT es alta debido a las actualizaciones y estándares del sector, y comenta que un sistema de registro más sencillo podría ser de gran ayuda.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <colgroup></colgroup>
+    <thead>
+        <tr>
+            <th colspan="2">Entrevista #4<br></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
             <td>Patricia</td>
         </tr>
         <tr>
@@ -338,7 +395,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Evidencia</td>
-            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista3.png" alt="Entrevista"></div></td>
+            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista4.png" alt="Entrevista"></div></td>
         </tr>
         <tr>
             <td>Link</td>
@@ -399,15 +456,15 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Link</td>
-            <td><p><a target="_blank" href="https://shorturl.at/DMyrs" title="Title">https://shorturl.at/DMyrs</a></p></td>
+            <td><p><a target="_blank" href="https://shorturl.at/CMWHx" title="Title">https://shorturl.at/CMWHx</a></p></td>
         </tr>
         <tr>
             <td>Timing donde inicia la entrevista<br></td>
-            <td>00:11 min</td>
+            <td>14:50 min</td>
         </tr>
         <tr>
             <td>Duración de la entrevista<br></td>
-            <td>19:34 min</td>
+            <td>5:07 min</td>
         </tr>
         <tr>
             <td>Resumen</td>
@@ -454,11 +511,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         </tr>
         <tr>
             <td>Link</td>
-            <td><p><a target="_blank" href="https://shorturl.at/mVFf9" title="Title">https://shorturl.at/mVFf9</a></p></td>
+            <td><p><a target="_blank" href="https://shorturl.at/CMWHx" title="Title">https://shorturl.at/CMWHx</a></p></td>
         </tr>
         <tr>
             <td>Timing donde inicia la entrevista<br></td>
-            <td>00:14 min</td>
+            <td>19:50 min</td>
         </tr>
         <tr>
             <td>Duración de la entrevista<br></td>
@@ -476,6 +533,61 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             Rocío expresa, desde dos perspectivas complementarias, los desafíos que enfrentan durante las auditorías. Por un lado, desde el punto de vista del productor, ella valora positivamente poder mostrar la información disponible tal como está registrada en los documentos físicos. Por otro lado, desde la perspectiva del auditor, se evidencian claras limitaciones derivadas de la falta de información clara, ordenada y de rápida consulta en el momento de la inspección, lo que puede generar observaciones o retrasos.
             <br> <br>
             En cuanto a las desviaciones, estas son detectadas mientras el proceso de producción aún está en marcha, lo que permite tomar acciones correctivas de forma temprana. Para identificar dichas desviaciones, el equipo se basa en dos pilares fundamentales: el conocimiento profundo de los requisitos establecidos por las normativas y procedimientos internos, y el seguimiento continuo y meticuloso de los datos obtenidos durante cada etapa del proceso.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <colgroup></colgroup>
+    <thead>
+        <tr>
+            <th colspan="2">Entrevista #3<br></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Risa</td>
+        </tr>
+        <tr>
+            <td>Apellidos</td>
+            <td>Sotelo</td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>53 años</td>
+        </tr>
+        <tr>
+            <td>Distrito</td>
+            <td>San Isidro</td>
+        </tr>
+        <tr>
+            <td>Evidencia</td>
+            <td><div align="center"><img src="../assets/img/Segmento2-Entrevista3.png" alt="Entrevista"></div></td>
+        </tr>
+        <tr>
+            <td>Link</td>
+            <td><p><a target="_blank" href="https://shorturl.at/CMWHx" title="Title">https://shorturl.at/CMWHx</a></p></td>
+        </tr>
+        <tr>
+            <td>Timing donde inicia la entrevista<br></td>
+            <td>24:53 min</td>
+        </tr>
+        <tr>
+            <td>Duración de la entrevista<br></td>
+            <td>4:59 min</td>
+        </tr>
+        <tr>
+            <td>Resumen</td>
+            <td>
+            La Sra. Rita Sotelo es una profesional con una amplia trayectoria en el sector farmacéutico. Cuenta con 30 años de experiencia acumulada, habiendo trabajado durante gran parte de su carrera en MediFarma, un laboratorio reconocido en el ámbito nacional. Su rol le ha permitido conocer en profundidad los procesos de manufactura y control de calidad.
+            <br> <br>
+            En cuanto al sistema de registro utilizado en su laboratorio, la Sra. Sotelo indica que ya han dado el salto hacia la digitalización. Emplean un sistema de manufactura digital que integra protocolos de análisis, fabricación y aseguramiento de la calidad. Esto les permite llevar un control más riguroso y ordenado de todas las etapas productivas.
+            <br> <br>
+            Ella explica que los lotes se digitalizan completamente dentro del sistema, lo que facilita su trazabilidad desde el ingreso de los insumos hasta su utilización final. Además, los productos ya fabricados también son mapeados en el sistema, lo que permite visualizar claramente su distribución y ubicación en la cadena de suministro.
+            <br> <br>
+            Finalmente, la Sra. Rita Sotelo destaca un punto clave para la adopción de herramientas digitales: la capacitación. Según su experiencia, el principal requisito para que este tipo de sistemas realmente permitan conservar y analizar los datos de forma efectiva es una capacitación adecuada, la cual debe estar adaptada al sistema encargado de cada proceso y al perfil de los usuarios que lo operarán.
             </td>
         </tr>
     </tbody>
