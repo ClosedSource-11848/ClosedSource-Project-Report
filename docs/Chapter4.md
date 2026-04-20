@@ -271,7 +271,131 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 
 ## 4.6. Domain-Driven Software Architecture
 
-### 4.6.1. Design-Level Event Storming
+## 4.6.1. Design-Level Event Storming
+
+Para identificar los eventos de dominio, es recomendable realizar una sesión de Event 
+Storming. Esta técnica permite visualizar y comprender el flujo de eventos dentro del 
+dominio, facilitando la identificación de los Bounded Contexts.
+
+El desarrollo del proceso del Domain-Driven Design se realizó en la aplicación Miro: 
+[https://shorturl.at/0eSVT]
+
+---
+
+### Bounded Context IAM
+
+El bounded context IAM (Identity and Access Management) se encarga de la autenticación, 
+autorización y gestión de credenciales dentro del ecosistema QualiTrack. Administra 
+procesos como el registro de usuarios, inicio de sesión, recuperación de contraseñas y 
+asignación de permisos según el rol (jefe de QA, operario, auditor). Su propósito es 
+garantizar accesos seguros, confiables y alineados con las políticas de protección de la 
+información regulatoria en toda la plataforma.
+
+<img src="../assets/img/bc-iam.jpg" alt="Bounded Context IAM" width="80%"/>
+
+---
+
+### Bounded Context Laboratory Management
+
+El bounded context Laboratory Management gestiona toda la información institucional del 
+laboratorio farmacéutico dentro de QualiTrack: datos del laboratorio, normativas 
+regulatorias aplicables, catálogo de productos farmacéuticos, materias primas y personal 
+técnico. Administra la creación, actualización y mantenimiento de los datos base del 
+laboratorio. Su propósito es centralizar la ficha institucional y servir como base para 
+otros contextos como Equipment Management, Batch Management y Reporting & Audit.
+
+<img src="../assets/img/bc-laboratory.jpg" alt="Bounded Context Laboratory Management" width="80%"/>
+
+---
+
+### Bounded Context Equipment Management
+
+El bounded context Equipment Management gestiona el ciclo de vida completo de los equipos 
+industriales del laboratorio: autoclaves, medidores de pH, termómetros y sensores de 
+presión. Incluye el registro de equipos, la vinculación con sensores IoT, la configuración 
+de parámetros BPM por variable, el registro de mantenimientos y el control de calibración. 
+Se integra con Tracking para habilitar la recepción de telemetría y con Compliance & 
+Alerting para aplicar los rangos configurados. Su propósito es asegurar que todos los 
+equipos conectados estén correctamente identificados, calibrados y con parámetros de control 
+actualizados.
+
+<img src="../assets/img/bc-equipment.jpg" alt="Bounded Context Equipment Management" width="80%"/>
+
+---
+
+### Bounded Context Tracking (IoT)
+
+El bounded context Tracking constituye uno de los núcleos del sistema QualiTrack. Captura, 
+sincroniza y almacena la telemetría enviada por los sensores IoT vinculados a los equipos 
+industriales. Registra variables críticas como temperatura, presión y pH en tiempo real, 
+con marca de tiempo y asociación al equipo y lote correspondiente. Estos datos son enviados 
+al contexto Compliance & Alerting para su evaluación normativa y a Reporting & Audit para 
+análisis histórico. Su propósito es brindar monitoreo continuo y automático del estado 
+operativo de los equipos de producción, eliminando la dependencia de registros manuales.
+
+<img src="../assets/img/bc-tracking.jpg" alt="Bounded Context Tracking IoT" width="80%"/>
+
+---
+
+### Bounded Context Compliance & Alerting
+
+El bounded context Compliance & Alerting es el otro núcleo estratégico de QualiTrack. 
+Procesa, evalúa y clasifica cada medición recibida desde Tracking comparándola con los 
+parámetros BPM configurados para el equipo correspondiente. Cuando detecta una desviación 
+crítica, genera alertas inmediatas para el operario de turno, notifica al jefe de 
+Aseguramiento de la Calidad y bloquea automáticamente el lote asociado, impidiendo su 
+avance en la cadena de suministro. Administra también el historial de eventos de compliance 
+y las preferencias de notificación de los usuarios. Su propósito es garantizar que ninguna 
+desviación de los parámetros BPM pase desapercibida, protegiendo la integridad del producto 
+y el cumplimiento normativo ante DIGEMID.
+
+<img src="../assets/img/bc-compliance.jpg" alt="Bounded Context Compliance and Alerting" width="80%"/>
+
+---
+
+### Bounded Context Batch Management
+
+El bounded context Batch Management representa el núcleo operativo de la gestión de 
+producción en QualiTrack. Administra el ciclo de vida completo de cada lote farmacéutico: 
+desde su creación y vinculación con materias primas y equipos, hasta su liberación digital 
+mediante firma del jefe de QA o su rechazo documentado. Conecta flujos con Equipment 
+Management para asociar equipos al lote, con Tracking para recibir telemetría vinculada, 
+con Compliance & Alerting para gestionar bloqueos automáticos y con Reporting & Audit para 
+la generación de registros inmutables. Su propósito es garantizar la trazabilidad completa 
+de cada lote de producción, asegurando que toda decisión de liberación o rechazo quede 
+registrada de forma inmutable y auditable.
+
+<img src="../assets/img/bc-batch.jpg" alt="Bounded Context Batch Management" width="80%"/>
+
+---
+
+### Bounded Context Reporting & Audit
+
+El bounded context Reporting & Audit recopila información de múltiples fuentes (Tracking, 
+Compliance & Alerting, Batch Management, Equipment Management) para generar reportes de 
+trazabilidad inmutables, logs de auditoría y visualizaciones de indicadores clave de 
+calidad (KPIs). Permite la generación de reportes PDF no editables por lote o por periodo, 
+la exportación de logs de eventos de equipos y el análisis de tendencias de desviaciones. 
+Su propósito es ofrecer una capa de transparencia y evidencia documental que permita 
+afrontar inspecciones de DIGEMID con toda la información consolidada, reduciendo el tiempo 
+de preparación de auditorías en un 80%.
+
+<img src="../assets/img/bc-reporting.jpg" alt="Bounded Context Reporting and Audit" width="80%"/>
+
+---
+
+### Bounded Context Shared
+
+El bounded context Shared contiene los elementos reutilizables y transversales utilizados 
+por todos los demás contextos de QualiTrack, como configuraciones globales, value objects 
+comunes (LabId, UserId, DateRange, Quantity), clases base auditables, plantillas de 
+eventos de dominio y políticas compartidas. Gestiona además el registro de tenants y la 
+propagación de configuraciones por defecto a los contextos dependientes. Su propósito es 
+evitar la duplicidad de lógica entre contextos, asegurar la coherencia de los datos 
+compartidos y proveer una base técnica sólida y reutilizable para toda la arquitectura de 
+QualiTrack.
+
+<img src="../assets/img/bc-shared.jpg" alt="Bounded Context Shared" width="80%"/>
 
 ### 4.6.2. Software Architecture Context Diagram
 
