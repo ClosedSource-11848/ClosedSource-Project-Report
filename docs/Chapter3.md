@@ -947,7 +947,7 @@ A partir de esta meta se incorporaron como Actors/Personas a los User Personas p
 A partir de estos impactos se definieron los Deliverables que QualiTrack debe ofrecer: el dashboard de telemetría en tiempo real con indicadores de cumplimiento BPM, el módulo de gestión de lotes con historial inmutable, el motor de alertas automáticas y bloqueo de lotes no conformes, la generación de reportes PDF de trazabilidad listos para inspección, y la integración IoT para la captura automática de variables críticas. Finalmente, en la columna de User Stories se detallaron historias que permiten trazar la ruta desde los objetivos de negocio hasta los features concretos del producto, asegurando la alineación entre Business Goals, Impacts, Deliverables y desarrollo de la solución.
 </p>
 
-<img src="../assets/img/Impact_Map_QualiTrack.png" alt="Impact Map QualiTrack" style="width: 90%; height: auto;">
+<img src="../assets/img/Impact-Map.png" alt="Impact Map QualiTrack" style="width: 90%; height: auto;">
 
 <div style="page-break-after: always;"></div>
 
