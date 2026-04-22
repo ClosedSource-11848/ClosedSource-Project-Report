@@ -399,42 +399,44 @@ QualiTrack.
 
 ## 4.6.2. Software Architecture Context Diagram
 
-En este nivel se presenta una vista de alto nivel de la arquitectura, donde el foco está 
-en el sistema de software QualiTrack como una "caja negra" y en las interacciones que 
+En este nivel se presenta una vista de alto nivel de la arquitectura, donde el foco está
+en el sistema de software QualiTrack como una "caja negra" y en las interacciones que
 mantiene con sus usuarios y con otros sistemas externos.
 
-El context diagram muestra al **QualiTrack Software System** como un recuadro en el 
+El context diagram muestra al **QualiTrack Software System** como un recuadro en el
 centro, rodeado por los principales actores y sistemas con los que se comunica:
 
-- **QA Manager / Supervisor:** usuario interno responsable de gestionar el laboratorio, 
-registrar y liberar lotes de producción, configurar parámetros BPM de los equipos, 
-supervisar el dashboard de telemetría en tiempo real y generar reportes de auditoría 
+- **QA Manager / Supervisor:** usuario interno responsable de gestionar el laboratorio,
+registrar y liberar lotes de producción, configurar parámetros BPM de los equipos,
+supervisar el dashboard de telemetría en tiempo real y generar reportes de auditoría
 para DIGEMID.
 
-- **Lab Operator:** usuario operativo que monitorea el estado de los equipos industriales 
-durante los turnos de producción, recibe alertas de desviación de parámetros BPM y 
+- **Lab Operator:** usuario operativo que monitorea el estado de los equipos industriales
+durante los turnos de producción, recibe alertas de desviación de parámetros BPM y
 registra observaciones sobre el proceso de fabricación.
 
-- **IoT Sensors / Industrial Equipment:** sistemas externos representados por los sensores 
-conectados a los equipos industriales del laboratorio (autoclaves, medidores de pH, 
-termómetros, sensores de presión). Envían telemetría de variables críticas de forma 
-automática y continua hacia QualiTrack mediante endpoints REST.
+- **IoT Sensors / Industrial Equipment:** sistema externo compuesto por los sensores
+conectados a los equipos industriales del laboratorio (autoclaves, medidores de pH,
+termómetros, sensores de presión). No representan un actor humano, sino un sistema
+automatizado que envía telemetría de variables críticas de forma continua hacia
+QualiTrack mediante endpoints REST, sin intervención manual.
 
-- **Email Notification Service:** servicio externo de correo electrónico utilizado para 
-enviar notificaciones transaccionales a los usuarios (alertas de desviación crítica, 
-confirmación de registro, alertas de calibración próxima a vencer, reportes de auditoría 
+- **Email Notification Service:** servicio externo de correo electrónico utilizado para
+enviar notificaciones transaccionales a los usuarios (alertas de desviación crítica,
+confirmación de registro, alertas de calibración próxima a vencer, reportes de auditoría
 generados).
 
-- **PDF Generation Service:** servicio externo utilizado para generar los reportes de 
-trazabilidad inmutables en formato PDF no editable, garantizando la integridad documental 
+- **PDF Generation Service:** servicio externo utilizado para generar los reportes de
+trazabilidad inmutables en formato PDF no editable, garantizando la integridad documental
 requerida para las inspecciones de DIGEMID.
 
-En el diagrama se representan las relaciones entre estos elementos, destacando que tanto 
-el QA Manager como el Lab Operator interactúan únicamente con QualiTrack a través de la 
-interfaz web, mientras que el sistema se encarga de orquestar las integraciones con los 
-servicios externos (sensores IoT, notificaciones por correo y generación de reportes PDF). 
-Esta vista permite entender el alcance del sistema, los límites de responsabilidad y el 
-ecosistema en el que se inserta QualiTrack antes de entrar a detalles de implementación.
+En el diagrama se representan las relaciones entre estos elementos. El QA Manager y el
+Lab Operator interactúan con QualiTrack a través de la interfaz web. Los sensores IoT
+envían telemetría entrante hacia QualiTrack de forma automática. QualiTrack se encarga
+de orquestar las integraciones salientes con los servicios externos (notificaciones por
+correo y generación de reportes PDF). Esta vista permite entender el alcance del sistema,
+los límites de responsabilidad y el ecosistema en el que se inserta QualiTrack antes de
+entrar a detalles de implementación.
 
 <img src="../assets/img/ContextDiagram.svg" alt="Context Diagram" width="100%"/>
 
@@ -442,56 +444,64 @@ ecosistema en el que se inserta QualiTrack antes de entrar a detalles de impleme
 
 ## 4.6.3. Software Architecture Container Diagrams
 
-En el nivel de contenedores, la atención se desplaza desde "quién usa el sistema" hacia 
-"cómo se organiza internamente el sistema en aplicaciones y fuentes de datos". El 
-container diagram muestra los elementos de alto nivel de la arquitectura de QualiTrack, 
-sus responsabilidades principales y la forma en que se comunican entre sí y con los 
+En el nivel de contenedores, la atención se desplaza desde "quién usa el sistema" hacia
+"cómo se organiza internamente el sistema en aplicaciones y fuentes de datos". El
+container diagram muestra los elementos de alto nivel de la arquitectura de QualiTrack,
+sus responsabilidades principales y la forma en que se comunican entre sí y con los
 sistemas externos.
 
 La arquitectura lógica de QualiTrack se estructura en los siguientes contenedores:
 
-- **Landing Page:** aplicación web estática que presenta la propuesta de valor de 
-QualiTrack, informa sobre las funcionalidades de la plataforma y los planes de 
-suscripción disponibles para laboratorios farmacéuticos. Está desarrollada con 
-tecnologías web estándar (HTML, CSS y JavaScript) y se despliega en un entorno orientado 
-a contenido estático.
+- **Landing Page:** aplicación web estática que presenta la propuesta de valor de
+QualiTrack, informa sobre las funcionalidades de la plataforma y los planes de
+suscripción disponibles para laboratorios farmacéuticos. Está desarrollada con
+tecnologías web estándar (HTML, CSS y JavaScript). Cuando el usuario desea acceder a
+la aplicación, delega la entrega del bundle al servidor web.
 
-- **Single Page Application (SPA):** aplicación web principal implementada en **Angular**, 
-donde interactúan el QA Manager y el Lab Operator. Este contenedor concentra la 
-experiencia de usuario, las vistas y la lógica de presentación para los diferentes 
-contextos del dominio (iam, laboratory-management, equipment-management, tracking, 
-compliance-alerting, batch-management, reporting-audit y shared).
+- **Web Application:** servidor web implementado con **Nginx** que actúa como servidor
+de archivos estáticos. Recibe la delegación de la Landing Page y entrega el bundle
+compilado de la SPA Angular al navegador del usuario. Este contenedor separa la
+responsabilidad de servir el contenido estático de la lógica de negocio del backend.
 
-- **API Application:** backend implementado con **Spring Boot**, que expone una API REST 
-y encapsula la lógica de negocio, reglas de validación de parámetros BPM y orquestación 
-de procesos de compliance farmacéutico. Este contenedor agrupa los módulos backend por 
-contexto (IAM Backend, Laboratory Management Backend, Equipment Management Backend, 
-Tracking Backend, Compliance & Alerting Backend, Batch Management Backend, 
+- **QualiTrack Web Client Application (SPA):** aplicación web principal implementada en
+**Angular** que corre directamente en el navegador del usuario. Una vez entregado el
+bundle por el Web Application, el QA Manager y el Lab Operator interactúan con esta
+SPA para gestionar el laboratorio, monitorear la telemetría IoT, administrar lotes y
+generar reportes de auditoría. Concentra la lógica de presentación para los contextos
+de IAM, Laboratory Management, Equipment Management, Tracking, Compliance & Alerting,
+Batch Management, Reporting & Audit y Shared.
+
+- **API Application:** backend implementado con **Spring Boot**, que expone una API REST
+y encapsula la lógica de negocio, reglas de validación de parámetros BPM y orquestación
+de procesos de compliance farmacéutico. Este contenedor agrupa los módulos backend por
+contexto (IAM Backend, Laboratory Management Backend, Equipment Management Backend,
+Tracking Backend, Compliance & Alerting Backend, Batch Management Backend,
 Reporting & Audit Backend y Shared Backend).
 
-- **Database:** base de datos relacional **MySQL**, donde se persiste la información 
-estructurada del sistema: laboratorios, equipos, configuraciones BPM, mediciones de 
-telemetría, lotes de producción, eventos de compliance, alertas, materias primas, 
+- **Database:** base de datos relacional **MySQL**, donde se persiste la información
+estructurada del sistema: laboratorios, equipos, configuraciones BPM, mediciones de
+telemetría, lotes de producción, eventos de compliance, alertas, materias primas,
 reportes de auditoría y usuarios.
 
 En el diagrama se observa que:
 
-- Los usuarios acceden primero a la **Landing Page**, la cual redirige a la **SPA** tras 
-la autenticación.
-- La **SPA** se comunica exclusivamente con la **API Application** mediante peticiones 
+- Los usuarios acceden primero a la **Landing Page**, que delega la entrega del bundle
+al **Web Application (Nginx)**, el cual sirve el bundle compilado al navegador del
+usuario como la **SPA Angular**.
+- La **SPA** se comunica exclusivamente con la **API Application** mediante peticiones
 **HTTP/HTTPS** con mensajes **JSON**, siguiendo un estilo REST.
-- La **API Application** persiste y consulta datos en la **Database** mediante JDBC y 
+- La **API Application** persiste y consulta datos en la **Database** mediante JDBC y
 mapeo objeto–relacional.
-- Los **sensores IoT** envían telemetría directamente a la **API Application** mediante 
-peticiones POST al endpoint de ingesta de telemetría.
-- La **API Application** interactúa con los sistemas externos: el **Email Notification 
-Service** para el envío de alertas críticas y notificaciones, y el **PDF Generation 
-Service** para la generación de reportes de trazabilidad inmutables.
+- Los **sensores IoT** envían telemetría entrante directamente a la **API Application**
+mediante peticiones POST al endpoint de ingesta, sin intervención de la SPA.
+- La **API Application** interactúa con los sistemas externos salientes: el **Email
+Notification Service** para el envío de alertas críticas y notificaciones, y el **PDF
+Generation Service** para la generación de reportes de trazabilidad inmutables.
 
-Esta vista permite apreciar cómo se distribuyen las responsabilidades entre la capa de 
-presentación (Landing y SPA), la capa de lógica de negocio (API Application) y la capa 
-de persistencia (Database), así como las principales decisiones tecnológicas adoptadas 
-para cada contenedor.
+Esta vista permite apreciar cómo se distribuyen las responsabilidades entre la capa de
+presentación (Landing Page, Web Application y SPA), la capa de lógica de negocio
+(API Application) y la capa de persistencia (Database), así como las principales
+decisiones tecnológicas adoptadas para cada contenedor.
 
 <img src="../assets/img/ContainerDiagram.svg" alt="Container Diagram" width="100%"/>
 
@@ -499,75 +509,79 @@ para cada contenedor.
 
 ## 4.6.4. Software Architecture Components Diagrams
 
-En el nivel de componentes se detalla la descomposición interna de los contenedores, 
-mostrando los bloques estructurales que conforman cada uno y las relaciones entre ellos. 
-Dado que la **Single Page Application** y la **Database** ya fueron descritas en otros 
-apartados mediante diagramas de clases frontend y de base de datos, en esta sección se 
-pone especial énfasis en el contenedor **API Application**, donde reside la mayor parte 
-de la lógica de negocio y las reglas de compliance farmacéutico.
+En el nivel de componentes se detalla la descomposición interna de los contenedores,
+mostrando los bloques estructurales que conforman cada uno y las relaciones entre ellos.
+Dado que la **SPA** y la **Database** ya fueron descritas en otros apartados mediante
+diagramas de clases frontend y de base de datos, en esta sección se pone especial énfasis
+en el contenedor **API Application**, donde reside la mayor parte de la lógica de negocio
+y las reglas de compliance farmacéutico.
 
-El component diagram de la **API Application** agrupa la arquitectura interna siguiendo 
-los bounded contexts definidos en el dominio de QualiTrack. Cada módulo backend representa 
+El component diagram de la **API Application** agrupa la arquitectura interna siguiendo
+los bounded contexts definidos en el dominio de QualiTrack. Cada módulo backend representa
 un componente principal dentro del contenedor:
 
-- **IAM Backend:** se encarga de la autenticación, gestión de usuarios, roles, permisos 
-y validaciones de acceso a la plataforma. Garantiza que cada usuario acceda únicamente 
+- **IAM Backend:** se encarga de la autenticación, gestión de usuarios, roles, permisos
+y validaciones de acceso a la plataforma. Garantiza que cada usuario acceda únicamente
 a las funcionalidades habilitadas según su rol (QA Manager, Lab Operator, Auditor).
+Se integra con el Email Notification Service para el envío de correos de activación de
+cuenta y recuperación de contraseña.
 
-- **Laboratory Management Backend:** gestiona la información institucional del laboratorio, 
-el catálogo de productos farmacéuticos, el inventario de materias primas y el personal 
+- **Laboratory Management Backend:** gestiona la información institucional del laboratorio,
+el catálogo de productos farmacéuticos, el inventario de materias primas y el personal
 técnico. Sirve como base de datos maestra para los demás contextos del sistema.
 
-- **Equipment Management Backend:** administra el ciclo de vida de los equipos 
-industriales, la vinculación con sensores IoT, la configuración de parámetros BPM por 
+- **Equipment Management Backend:** administra el ciclo de vida de los equipos
+industriales, la vinculación con sensores IoT, la configuración de parámetros BPM por
 variable y el historial de mantenimientos y calibraciones.
 
-- **Tracking Backend:** implementa el endpoint de ingesta de telemetría que recibe los 
-datos enviados por los sensores IoT. Almacena las mediciones de temperatura, presión y 
-pH asociadas al equipo y lote correspondiente, y las pone a disposición del contexto de 
-Compliance & Alerting para su evaluación inmediata.
+- **Tracking Backend:** implementa el endpoint de ingesta de telemetría que recibe los
+datos enviados automáticamente por los sensores IoT (sistemas externos, no actores
+humanos). Almacena las mediciones de temperatura, presión y pH asociadas al equipo y
+lote correspondiente, y las pone a disposición del contexto de Compliance & Alerting
+para su evaluación inmediata mediante eventos de dominio.
 
-- **Compliance & Alerting Backend:** constituye el núcleo de inteligencia de QualiTrack. 
-Evalúa cada medición recibida desde Tracking comparándola con los parámetros BPM 
-configurados, clasifica las desviaciones por severidad, genera alertas inmediatas y 
-bloquea automáticamente los lotes no conformes. Se integra con el Email Notification 
-Service para el envío de alertas críticas.
+- **Compliance & Alerting Backend:** constituye el núcleo de inteligencia de QualiTrack.
+Evalúa cada medición recibida desde Tracking comparándola con los parámetros BPM
+configurados, clasifica las desviaciones por severidad, genera alertas inmediatas y
+bloquea automáticamente los lotes no conformes. Se integra con el Email Notification
+Service para el envío de alertas críticas al QA Manager y al operario asignado.
 
-- **Batch Management Backend:** gestiona el ciclo de vida completo de los lotes de 
-producción, desde su creación hasta su liberación digital o rechazo documentado. 
-Registra la trazabilidad de materias primas utilizadas y mantiene el historial inmutable 
-de cada lote.
+- **Batch Management Backend:** gestiona el ciclo de vida completo de los lotes de
+producción, desde su creación hasta su liberación digital o rechazo documentado.
+Registra la trazabilidad de materias primas utilizadas y mantiene el historial inmutable
+de cada lote. Recibe eventos de bloqueo automático desde el Compliance & Alerting
+Backend cuando se detecta una desviación crítica.
 
-- **Reporting & Audit Backend:** genera reportes de trazabilidad en PDF para lotes 
-individuales y periodos de tiempo, exporta logs de eventos de equipos y calcula KPIs 
-de calidad. Se integra con el PDF Generation Service para producir documentos inmutables 
+- **Reporting & Audit Backend:** genera reportes de trazabilidad en PDF para lotes
+individuales y periodos de tiempo, exporta logs de eventos de equipos y calcula KPIs
+de calidad. Se integra con el PDF Generation Service para producir documentos inmutables
 listos para inspecciones de DIGEMID.
 
-- **Shared Backend:** provee componentes compartidos, value objects comunes, clases base 
-auditables, eventos de dominio y mecanismos de infraestructura transversales utilizados 
-por los demás módulos backend.
+- **Shared Backend:** provee componentes compartidos, value objects comunes (LabId,
+UserId, DateRange, Quantity), clases base auditables, eventos de dominio y mecanismos
+de infraestructura transversales utilizados por todos los módulos backend.
 
 En el diagrama se refleja cómo:
 
-- La **SPA** consume los servicios expuestos por cada módulo backend a través de la 
+- La **SPA** consume los servicios expuestos por cada módulo backend a través de la
 **API Application**, utilizando endpoints REST específicos por contexto.
-- Cada módulo backend accede a la **Database** para leer y escribir la información 
-correspondiente a su contexto (por ejemplo, Tracking Backend persiste mediciones de 
-telemetría, Batch Management Backend gestiona el estado de los lotes, etc.).
-- El **Tracking Backend** y el **Compliance & Alerting Backend** trabajan en conjunto 
-como el core domain del sistema: el primero ingesta las mediciones y el segundo las 
-evalúa, generando los eventos de bloqueo y alerta correspondientes.
-- El **Reporting & Audit Backend** se integra con el **PDF Generation Service** externo 
+- Los **sensores IoT** envían telemetría entrante directamente al **Tracking Backend**
+mediante HTTP POST, sin pasar por la SPA.
+- El **Tracking Backend** y el **Compliance & Alerting Backend** trabajan en conjunto
+como el core domain del sistema: el primero ingesta las mediciones y publica el evento
+`MeasurementRecorded`; el segundo lo evalúa y, si detecta una desviación crítica,
+publica el evento `BatchBlocked` hacia el Batch Management Backend.
+- El **Reporting & Audit Backend** se integra con el **PDF Generation Service** externo
 para garantizar la inmutabilidad de los reportes de auditoría.
-- El **IAM Backend** se integra con el **Email Notification Service** para el envío de 
+- El **IAM Backend** se integra con el **Email Notification Service** para el envío de
 notificaciones de activación de cuenta y recuperación de contraseña.
-- Todos los módulos backend reutilizan capacidades comunes provistas por el 
-**Shared Backend**, favoreciendo la consistencia, la reutilización y la reducción de 
+- Todos los módulos backend reutilizan capacidades comunes provistas por el
+**Shared Backend**, favoreciendo la consistencia, la reutilización y la reducción de
 duplicación de código entre contextos.
 
-De esta forma, los component diagrams complementan los diagramas de clases del frontend, 
-backend y base de datos, mostrando cómo los contenedores se descomponen en componentes 
-coherentes con los bounded contexts del dominio farmacéutico y cómo estos colaboran entre 
+De esta forma, los component diagrams complementan los diagramas de clases del frontend,
+backend y base de datos, mostrando cómo los contenedores se descomponen en componentes
+coherentes con los bounded contexts del dominio farmacéutico y cómo estos colaboran entre
 sí para implementar la funcionalidad completa de QualiTrack.
 
 <img src="../assets/img/ComponentDiagram.svg" alt="Component Diagram" width="100%"/>
