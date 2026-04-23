@@ -588,7 +588,195 @@ sí para implementar la funcionalidad completa de QualiTrack.
 
 ## 4.7. Software Object-Oriented Design
 
-### 4.7.1. Class Diagrams
+En esta sección se presenta el diseño orientado a objetos del sistema QualiTrack, el cual
+desarrolla con mayor detalle la implementación interna de los componentes identificados
+en los diagramas C4 del apartado 4.6. A partir de los contenedores y componentes definidos
+en Structurizr (Frontend SPA, API Application y Database), se derivan diagramas de clases
+específicos para cada bounded context del dominio, con el objetivo de mostrar:
+
+- Cómo se modelan las entidades, agregados, servicios y recursos en el backend para cada
+contexto de dominio farmacéutico.
+- Cómo se estructuran los componentes de presentación, estado e infraestructura en el
+frontend Angular.
+- Cómo se reflejan estos modelos en el diseño de la base de datos relacional MySQL.
+
+De esta forma, el diseño orientado a objetos enlaza el nivel arquitectónico (C4 Model)
+con el nivel de implementación, permitiendo verificar coherencia entre bounded contexts,
+responsabilidades de cada módulo y decisiones de diseño técnico.
+
+## 4.7.1. Class Diagrams
+
+En esta subsección se presentan los diagramas de clases que detallan la estructura interna
+de los principales componentes para cada bounded context. Estos diagramas complementan al
+Component Diagram de la **API Application** y a los contenedores definidos en Structurizr,
+proporcionando una vista centrada en clases, atributos, métodos y relaciones.
+
+A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que
+consumen los servicios expuestos por la API:
+
+- **Frontend completo**: muestra la organización general de la capa de presentación,
+incluyendo componentes de rutas, componentes de página y servicios de estado que
+interactúan con los contenedores backend definidos en el container diagram.
+- **IAM Frontend**: incluye los formularios y componentes relacionados con autenticación,
+registro, manejo de sesión y autorización, que consumen los endpoints del *IAM Backend*.
+- **Laboratory Management Frontend**: detalla las clases que gestionan las vistas de
+información institucional del laboratorio, catálogo de productos, inventario de materias
+primas y gestión de personal técnico.
+- **Equipment Management Frontend**: modela los componentes responsables del registro de
+equipos industriales, configuración de parámetros BPM, historial de mantenimientos y
+alertas de calibración.
+- **Tracking Frontend**: presenta los componentes de interfaz que construyen el dashboard
+de telemetría en tiempo real, gráficos de historial de variables y el panel de estado
+de equipos conectados.
+- **Compliance & Alerting Frontend**: modela las vistas de historial de alertas, detalle
+de desviaciones, configuración de canales de notificación e indicadores de compliance BPM.
+- **Batch Management Frontend**: detalla los componentes para la gestión de lotes de
+producción, trazabilidad de materias primas, flujos de liberación y rechazo documentado.
+- **Reporting & Audit Frontend**: presenta los componentes del KPI dashboard, generación
+de reportes PDF de trazabilidad y exportación de logs de eventos inmutables.
+- **Shared Frontend**: agrupa componentes reutilizables (layouts, formularios base,
+guards de autenticación, interceptores HTTP, servicios compartidos y pipes) que sirven
+como infraestructura de presentación común para el resto de módulos frontend.
+
+A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de
+los módulos definidos como componentes en la **API Application**:
+
+- **Backend completo**: ilustra la estructura general de la capa de dominio y aplicación
+(aggregates, entities, value objects, command handlers, domain services, repositories,
+event handlers), mostrando cómo se distribuyen estas clases entre los distintos bounded
+contexts modelados como componentes (*IAM Backend, Laboratory Management Backend,
+Equipment Management Backend, Tracking Backend, Compliance & Alerting Backend,
+Batch Management Backend, Reporting & Audit Backend y Shared Backend*).
+- **IAM Backend**: muestra clases como `User`, `Role`, `Permission` y `UserRoleAssignment`,
+junto con servicios de autenticación/autorización, JWT token management y repositorios
+para credenciales y roles.
+- **Laboratory Management Backend**: incluye agregados como `Laboratory`, `StaffMember`,
+`ProductCatalog` y `RawMaterial`, junto con sus servicios de dominio y repositorios,
+encargados de la gestión institucional del laboratorio farmacéutico.
+- **Equipment Management Backend**: detalla las clases `Equipment`, `BpmParameterConfig`,
+`MaintenanceRecord` y `CalibrationRecord`, así como servicios de configuración de
+parámetros BPM y gestión del ciclo de vida de los equipos industriales.
+- **Tracking Backend**: define entidades como `Measurement`, `DeviceBinding` y
+`TelemetryRecord` que permiten la ingesta, almacenamiento y consulta de telemetría
+proveniente de sensores IoT vinculados a los equipos de producción.
+- **Compliance & Alerting Backend**: modela el núcleo del sistema con clases como
+`ComplianceEvent`, `DeviationAlert` y `BpmEvaluationService`, responsables de evaluar
+cada medición, clasificar desviaciones por severidad y generar los eventos de bloqueo
+automático de lotes no conformes.
+- **Batch Management Backend**: contiene los agregados `Batch`, `BatchStatus` y
+`RawMaterialUsage`, junto con value objects de estado, servicios de liberación y rechazo,
+y repositorios que mantienen el historial inmutable de cada lote de producción.
+- **Reporting & Audit Backend**: modela las clases `AuditReport`, `ComplianceReport` y
+`KpiMetric`, junto con los servicios de generación de reportes PDF y cálculo de
+indicadores de calidad a partir de datos consolidados de múltiples contextos.
+- **Shared Backend**: concentra clases base auditables (`AuditableEntity`), value objects
+comunes (`LabId`, `UserId`, `DateRange`, `Quantity`), eventos de dominio base y
+configuraciones compartidas por todos los módulos, soportando la consistencia del diseño
+y la reutilización de código entre contextos.
+
+---
+
+### Diagrama de clases del frontend
+
+#### Diagrama del frontend completo:
+
+![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg)
+
+<h3><strong>Diagrama del frontend dividido por contextos:</strong></h3>
+
+<h4>iam frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, roles y permisos de acceso.</p>
+
+![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg)
+
+<h4>laboratory management frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de información institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y gestión de personal técnico.</p>
+
+![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg)
+
+<h4>equipment management frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de registro de equipos industriales, vinculación IoT, configuración de parámetros BPM, historial de mantenimientos y alertas de calibración.</p>
+
+![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg)
+
+<h4>tracking frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría en tiempo real, historial de variables críticas (temperatura, presión, pH) y panel de estado de equipos IoT conectados.</p>
+
+![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg)
+
+<h4>compliance & alerting frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de historial de alertas BPM, detalle de desviaciones detectadas, configuración de canales de notificación y panel de compliance regulatorio.</p>
+
+![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg)
+
+<h4>batch management frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de gestión de lotes de producción, trazabilidad de materias primas, flujos de liberación digital y rechazo documentado de lotes no conformes.</p>
+
+![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg)
+
+<h4>reporting & audit frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, generación y descarga de reportes PDF de trazabilidad inmutables y exportación de logs de eventos de equipos para auditorías DIGEMID.</p>
+
+![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg)
+
+<h4>shared frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja los componentes comunes, utilidades, clases base, guards de autenticación, interceptores HTTP, servicios compartidos y patrones reutilizables entre módulos.</p>
+
+![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg)
+
+<div style="page-break-after: always;"></div>
+
+---
+
+### Diagrama de clases del backend
+
+#### Diagrama del backend completo:
+
+![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/backend/qualitrack-backend-diagram.puml&fmt=svg)
+
+<h3><strong>Diagrama del backend dividido por contextos:</strong></h3>
+
+<h4>iam backend:</h4>
+<p><strong>Responsabilidad:</strong> Usuarios, autenticación, roles, permisos y gestión de credenciales de acceso.</p>
+
+![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg)
+
+<h4>laboratory management backend:</h4>
+<p><strong>Responsabilidad:</strong> Gestión institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y personal técnico.</p>
+
+![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg)
+
+<h4>equipment management backend:</h4>
+<p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, vinculación IoT, configuración de parámetros BPM y registros de mantenimiento y calibración.</p>
+
+![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg)
+
+<h4>tracking backend:</h4>
+<p><strong>Responsabilidad:</strong> Ingesta, almacenamiento y consulta de telemetría IoT (temperatura, presión, pH) proveniente de sensores vinculados a equipos industriales.</p>
+
+![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg)
+
+<h4>compliance & alerting backend:</h4>
+<p><strong>Responsabilidad:</strong> Evaluación de mediciones contra parámetros BPM, clasificación de desviaciones por severidad, generación de alertas inmediatas y bloqueo automático de lotes no conformes.</p>
+
+![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/compliance/compliance-backend-diagram.puml&fmt=svg)
+
+<h4>batch management backend:</h4>
+<p><strong>Responsabilidad:</strong> Gestión del ciclo de vida de lotes de producción, trazabilidad de materias primas, liberación digital con firma del QA Manager y rechazo documentado de lotes no conformes.</p>
+
+![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg)
+
+<h4>reporting & audit backend:</h4>
+<p><strong>Responsabilidad:</strong> Generación de reportes de trazabilidad PDF inmutables por lote o periodo, exportación de logs de eventos de equipos y cálculo de KPIs de calidad farmacéutica.</p>
+
+![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/reporting/reporting-backend-diagram.puml&fmt=svg)
+
+<h4>shared backend:</h4>
+<p><strong>Responsabilidad:</strong> Componentes comunes, clases base auditables, value objects (LabId, UserId, DateRange, Quantity), eventos de dominio base y patrones compartidos entre todos los módulos backend.</p>
+
+![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg)
+
+<div style="page-break-after: always;"></div>
 
 ## 4.8. Database Design
 
