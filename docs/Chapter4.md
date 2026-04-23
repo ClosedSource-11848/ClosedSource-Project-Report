@@ -728,53 +728,53 @@ y la reutilización de código entre contextos.
 
 ---
 
-### Diagrama de clases del backend
+### Diagrama de clases del backend 
 
 #### Diagrama del backend completo:
 
-![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/backend/qualitrack-backend-diagram.puml&fmt=svg)
+![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-backend-diagram.puml&fmt=svg)
 
 <h3><strong>Diagrama del backend dividido por contextos:</strong></h3>
 
 <h4>iam backend:</h4>
 <p><strong>Responsabilidad:</strong> Usuarios, autenticación, roles, permisos y gestión de credenciales de acceso.</p>
 
-![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg)
+![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg)
 
 <h4>laboratory management backend:</h4>
 <p><strong>Responsabilidad:</strong> Gestión institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y personal técnico.</p>
 
-![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg)
+![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg)
 
 <h4>equipment management backend:</h4>
 <p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, vinculación IoT, configuración de parámetros BPM y registros de mantenimiento y calibración.</p>
 
-![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg)
+![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg)
 
 <h4>tracking backend:</h4>
 <p><strong>Responsabilidad:</strong> Ingesta, almacenamiento y consulta de telemetría IoT (temperatura, presión, pH) proveniente de sensores vinculados a equipos industriales.</p>
 
-![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg)
+![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg)
 
 <h4>compliance & alerting backend:</h4>
 <p><strong>Responsabilidad:</strong> Evaluación de mediciones contra parámetros BPM, clasificación de desviaciones por severidad, generación de alertas inmediatas y bloqueo automático de lotes no conformes.</p>
 
-![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/compliance/compliance-backend-diagram.puml&fmt=svg)
+![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ca/ca-backend-diagram.puml&fmt=svg)
 
 <h4>batch management backend:</h4>
 <p><strong>Responsabilidad:</strong> Gestión del ciclo de vida de lotes de producción, trazabilidad de materias primas, liberación digital con firma del QA Manager y rechazo documentado de lotes no conformes.</p>
 
-![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg)
+![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg)
 
 <h4>reporting & audit backend:</h4>
 <p><strong>Responsabilidad:</strong> Generación de reportes de trazabilidad PDF inmutables por lote o periodo, exportación de logs de eventos de equipos y cálculo de KPIs de calidad farmacéutica.</p>
 
-![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/reporting/reporting-backend-diagram.puml&fmt=svg)
+![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ra/ra-backend-diagram.puml&fmt=svg)
 
 <h4>shared backend:</h4>
 <p><strong>Responsabilidad:</strong> Componentes comunes, clases base auditables, value objects (LabId, UserId, DateRange, Quantity), eventos de dominio base y patrones compartidos entre todos los módulos backend.</p>
 
-![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Project-Report/refs/heads/main/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg)
+![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg)
 
 <div style="page-break-after: always;"></div>
 
