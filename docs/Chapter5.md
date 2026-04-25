@@ -1082,31 +1082,29 @@ de las principales vistas del Landing Page.
 </p>
 
 <p><strong>Encabezado y menú de navegación:</strong></p>
-<img src="../assets/img/chapter-V/header-landing-page.png" alt="Header Landing Page QualiTrack" width="90%">
+<img src="../assets/img/header-landing-page.jpeg" alt="Header Landing Page QualiTrack" width="90%">
 
 <p><strong>Sección Hero:</strong></p>
-<img src="../assets/img/chapter-V/hero-landing-page.png" alt="Hero Section QualiTrack" width="90%">
+<img src="../assets/img/hero-landing-page.jpeg" alt="Hero Section QualiTrack" width="90%">
 
-<p><strong>Sección What We Offer (Features):</strong></p>
-<img src="../assets/img/chapter-V/features-landing-page.png" alt="Features Section QualiTrack" width="90%">
-
-<p><strong>Sección Benefits:</strong></p>
-<img src="../assets/img/chapter-V/benefits-landing-page.png" alt="Benefits Section QualiTrack" width="90%">
+<p><strong>Sección What We Offer:</strong></p>
+<img src="../assets/img/features-landing-page.jpeg" alt="Features Section QualiTrack" width="90%">
 
 <p><strong>Sección Plans:</strong></p>
-<img src="../assets/img/chapter-V/plans-landing-page.png" alt="Plans Section QualiTrack" width="90%">
+<img src="../assets/img/plans-landing-page.jpeg" alt="Plans Section QualiTrack" width="90%">
 
 <p><strong>Sección About Us:</strong></p>
-<img src="../assets/img/chapter-V/about-landing-page.png" alt="About Us Section QualiTrack" width="90%">
+<img src="../assets/img/about-landing-page.jpeg" alt="About Us Section QualiTrack" width="90%">
 
 <p><strong>Sección Our Team:</strong></p>
-<img src="../assets/img/chapter-V/team-landing-page.png" alt="Our Team Section QualiTrack" width="90%">
+<img src="../assets/img/team-landing-page1.jpeg" alt="Our Team Section QualiTrack1" width="90%">
+<img src="../assets/img/team-landing-page2.jpeg" alt="Our Team Section QualiTrack2" width="90%">
 
-<p><strong>Sección Testimonials y CTA:</strong></p>
-<img src="../assets/img/chapter-V/testimonials-landing-page.png" alt="Testimonials Section QualiTrack" width="90%">
+<p><strong>Sección Testimonials:</strong></p>
+<img src="../assets/img/testimonials-landing-page.jpeg" alt="Testimonials Section QualiTrack" width="90%">
 
 <p><strong>Footer:</strong></p>
-<img src="../assets/img/chapter-V/footer-landing-page.png" alt="Footer QualiTrack" width="90%">
+<img src="../assets/img/footer-landing-page.jpeg" alt="Footer QualiTrack" width="90%">
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
