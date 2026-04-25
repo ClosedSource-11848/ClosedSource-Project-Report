@@ -419,9 +419,62 @@ Interfaz para exportar registros de eventos inmutables en formato PDF para inspe
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+El user flow es la representación visual del camino que un usuario sigue dentro de la plataforma QualiTrack para alcanzar un objetivo específico, como registrar un lote de producción, atender una alerta de desviación o generar un reporte de auditoría. Estos diagramas son esenciales para garantizar que la navegación sea lógica, intuitiva y libre de obstáculos, asegurando una experiencia de usuario satisfactoria y eficiente para cada uno de los roles definidos en el sistema: Jefe de Aseguramiento de la Calidad (QA Manager), Operario de laboratorio y Auditor regulatorio. A continuación, se detallan los flujos para las tareas clave de la plataforma, alineados con los procesos de cumplimiento BPM, monitoreo IoT y trazabilidad inmutable exigidos por DIGEMID.
+
+---
+
+- #### **Objetivo 1: Un operativo o supervisor desea registrarse e iniciar sesión en el sistema.**
+
+  **Happy Path**
+
+  En este flujo ideal, el usuario accede por primera vez a QualiTrack y, al no tener una cuenta registrada, desde la pantalla de inicio de sesión selecciona la opción "Registrarse", completa el formulario con los datos del laboratorio y sus credenciales, y una vez finalizado el proceso exitosamente es redirigido a la sección de inicio de sesión, donde ingresa su correo y contraseña; si se trata de un Jefe de Aseguramiento de la Calidad (QA Manager), el sistema le presenta el dashboard de telemetría en tiempo real con los indicadores de cumplimiento BPM y el estado de los lotes activos, mientras que si el usuario es un Operario de planta, se le muestra una interfaz especializada enfocada en el monitoreo de equipos industriales, alertas de desviación y registro de observaciones en el laboratorio.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1(1).png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1(2).png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  
+  **Unhappy Path**
+
+  En este escenario alternativo, el usuario intenta acceder a QualiTrack con su cuenta, pero se presenta un problema técnico como credenciales incorrectas, conectividad inestable o bloqueo temporal por múltiples intentos fallidos; por lo tanto, el sistema no permite el ingreso y muestra un mensaje de error específico según la causa, invitando al usuario a verificar sus datos, revisar su conexión o contactar al administrador del laboratorio, registrando cada intento fallido en el log de auditoría para garantizar la trazabilidad exigida por DIGEMID.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-1.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+----
+
+- #### **Objetivo 2: Un supervisor necesita realizar una investigación de una alerta activa.**
+
+  **Happy Path**
+
+  En este flujo ideal, el Supervisor de QA identifica una alerta activa en el dashboard de telemetría, presiona el botón "Investigate" para iniciar el análisis de la desviación detectada, luego presiona el botón "Complete Investigation" una vez que ha revisado la información, y finalmente espera a que el sistema realice el proceso de investigación automática, el cual confirma el origen de la desviación y, si corresponde, libera o mantiene el bloqueo del lote conforme a los parámetros BPM, registrando toda la acción en el historial inmutable de cumplimiento.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  En este escenario alternativo, el supervisor presiona el botón "Investigate" sobre una alerta activa, luego presiona "Complete Investigation" para finalizar el análisis, pero al esperar el proceso de investigación automática, el sistema presenta dificultades técnicas como lentitud extrema, timeout de conexión o error en el motor de compliance, impidiendo que la investigación se complete correctamente; como resultado, la alerta permanece sin resolver, el lote no cambia de estado y se muestra un mensaje de error, quedando registrado el incidente en el log de auditoría para su revisión posterior.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+----
+
+- #### **Objetivo 3: El usuario requiere modificar la configuración tanto del sistema como su perfil.**
+
+  **Happy Path**
+
+  En este flujo ideal, el usuario accede a la sección de configuración, modifica los datos que necesita actualizar (como perfil de usuario, información de la organización o preferencias de notificación), luego presiona el botón "Save Settings" y finalmente espera a que el sistema procese y cargue los cambios correctamente, mostrando un mensaje de confirmación y aplicando las nuevas configuraciones en toda la plataforma sin afectar la continuidad operativa del laboratorio.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  En este escenario alternativo, el usuario modifica los datos necesarios en la sección de configuración y presiona el botón "Save Settings", pero al esperar que se carguen los cambios, el sistema presenta dificultades técnicas como validación de campos fallida (formato de correo incorrecto, contraseñas que no coinciden, URL inválida), problemas de conectividad con el servidor o un error interno en la API; como resultado, la configuración no se guarda, se muestra un mensaje de error específico indicando la causa, y el usuario debe corregir los datos o reintentar la operación, quedando registrado el intento fallido en el log de auditoría para garantizar la trazabilidad exigida por DIGEMID.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
+
+La arquitectura de QualiTrack se fundamenta en Domain-Driven Design (DDD) para modelar con precisión las reglas de negocio del sector farmacéutico, incluyendo el cumplimiento BPM, la integración IoT y la trazabilidad inmutable exigida por DIGEMID. Mediante la delimitación de bounded contexts, se separan claramente las responsabilidades de cada subsistema. En esta sección se presentan los resultados del Event Storming, así como los diagramas de contexto, contenedores y componentes que estructuran la solución.
 
 ## 4.6.1. Design-Level Event Storming
 
