@@ -781,3 +781,53 @@ y la reutilización de código entre contextos.
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
+
+En esta sección se presenta el diseño de la base de datos relacional de QualiTrack,
+organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas,
+garantizando la separación de responsabilidades y la alineación con la arquitectura
+DDD definida en los apartados anteriores. La base de datos está implementada en
+**MySQL** y todas las tablas principales heredan los campos de auditoría
+(`created_at`, `updated_at`, `created_by`) para garantizar la trazabilidad de cada
+operación, cumpliendo con los requisitos de Data Integrity exigidos por DIGEMID.
+
+#### Diagrama de base de datos completo:
+
+![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg)
+
+<h3><strong>Diagrama de base de datos dividido por contextos:</strong></h3>
+
+<h4>iam base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestión de usuarios, roles, permisos y asignaciones de acceso por laboratorio.</p>
+
+![IAM Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/iam/iam-database-diagram.puml&fmt=svg)
+
+<h4>laboratory management base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Información institucional del laboratorio, personal técnico, catálogo de productos farmacéuticos y materias primas.</p>
+
+![Laboratory Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/laboratory/laboratory-database-diagram.puml&fmt=svg)
+
+<h4>equipment management base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, configuración de parámetros BPM, historial de mantenimientos y registros de calibración.</p>
+
+![Equipment Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/equipment/equipment-database-diagram.puml&fmt=svg)
+
+<h4>tracking base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Ingesta y almacenamiento de telemetría IoT, vinculación de sensores a equipos y trazabilidad de mediciones por lote.</p>
+
+![Tracking Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/tracking/tracking-database-diagram.puml&fmt=svg)
+
+<h4>compliance & alerting base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Eventos de compliance BPM, alertas de desviación, historial de resoluciones y preferencias de notificación por usuario.</p>
+
+![Compliance Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ca/ca-database-diagram.puml&fmt=svg)
+
+<h4>batch management base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Ciclo de vida de lotes de producción, trazabilidad de materias primas, firmas digitales de liberación y registros de rechazo.</p>
+
+![Batch Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/batch/batch-database-diagram.puml&fmt=svg)
+
+<h4>reporting & audit base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Reportes de trazabilidad generados, métricas KPI y log de auditoría de acciones de usuarios.</p>
+
+![Reporting Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ra/ra-database-diagram.puml&fmt=svg)
+
