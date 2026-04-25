@@ -852,7 +852,7 @@ documentos legales. Todas las tareas son monitoreadas mediante <strong>Jira Soft
 </p>
 
 <div align="center">
-  <img src="../assets/img/sprint1-board.png" alt="Sprint 1 Board Screenshot" width="100%">
+  <img src="../assets/img/sprint1-board.jpeg" alt="Sprint 1 Board Screenshot" width="100%">
   <p><em>Figura: Tablero del Sprint 1 en Jira Software (Proyecto QualiTrack)</em></p>
 </div>
 
