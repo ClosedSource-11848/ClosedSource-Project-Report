@@ -45,9 +45,9 @@ Esta distribución garantiza un contraste óptimo entre el texto y el fondo, sup
 Nuestra paleta de colores ha sido cuidadosamente seleccionada para evocar sensaciones de pulcritud, profesionalismo tecnológico y control. Se ha distribuido en tres categorías principales:
 
 **Paleta principal**: Colores que definen la identidad de QualiTrack y se usan en elementos clave.
-* **Primario (Azul QualiTrack):** var(--primary-color) (referencia principal).
-* **Secundario (Azul Profundo):** var(--secondary-color) (para texto principal y elementos interactivos).
-* **Terciario (Gris Oscuro):** var(--tertiary-color) (para texto secundario y detalles).
+* **Primario (Verde Azulado / Teal QualiTrack):** var(--primary-color | #0D9488) (referencia principal).
+* **Secundario (Azul Pizarra Oscuro):** var(--secondary-color | #0F172A) (para texto principal y elementos interactivos).
+* **Terciario (Gris Pizarra):** var(--tertiary-color | #64748B) (para texto secundario y detalles).
 * **Fondo Claro:** var(--bg-light) (fondos de secciones).
 * **Fondo Blanco:** var(--white) (fondos de tarjetas y elementos principales).
   
@@ -416,6 +416,19 @@ Panel técnico para el monitoreo de telemetría de equipos activos y la configur
 Interfaz para exportar registros de eventos inmutables en formato PDF para inspecciones de DIGEMID.
 
 <img src="../assets/img/Logs-de-Auditoría - ClosedSource - Mock-ups.jpeg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+### Mock-ups Version Mobile
+<p>La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de QualiTrack, el ecosistema orientado a la gestión integral de operaciones de precisión clínica, el monitoreo de telemetría IoT en tiempo real y la trazabilidad inmutable de lotes de producción.
+
+El diseño se elaboró siguiendo principios de usabilidad, accesibilidad, consistencia visual y orientación a tareas críticas, asegurando que cada interfaz responda a las exigentes necesidades normativas y operativas identificadas durante el proceso de investigación. La propuesta UI/UX se centra en crear una experiencia clara, confiable y altamente precisa, facilitando la interacción transparente y la toma de decisiones rápidas para distintos perfiles, desde operarios de planta hasta jefes de calidad e inspectores públicos (como DIGEMID).</p>
+
+<img src="../assets/img/mobile1.png" alt="inicio" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile2.png" alt="mobile2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile3.png" alt="mobile3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile4.png" alt="mobile4" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile5.png" alt="mobile5" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile6-corregido.png" alt="mobile6" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile7.png" alt="Historial Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
