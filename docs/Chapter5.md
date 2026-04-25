@@ -1149,7 +1149,7 @@ carpeta raíz como fuente.
 </p>
 
 <div align="center">
-  <img src="../assets/img/chapter-V/deployment-evidence-sprint1.png"
+  <img src="../assets/img/deployment-evidence-sprint1.jpeg"
        alt="GitHub Pages Deployment Evidence Sprint 1" width="90%">
   <p><em>Figura: Configuración de GitHub Pages para el despliegue del Landing Page de QualiTrack.</em></p>
 </div>
