@@ -331,6 +331,10 @@ Interfaz para exportar registros de eventos inmutables para inspecciones de DIGE
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+Los Wireflows se utilizan, sobre todo, en el diseño de la experiencia del usuario (UX) y son particularmente beneficiosos para aplicaciones que contienen interacciones complejas y flujos de trabajo.
+
+<img src="../assets/img/Web-Applications-Wireflow-Diagrams.jpeg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
 ### 4.4.3. Web Applications Mock-ups
 
 ### 4.4.4. Web Applications User Flow Diagrams
