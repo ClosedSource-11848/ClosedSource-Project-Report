@@ -88,7 +88,7 @@
     <strong>Ruta de descarga:</strong> <a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a>
   </li>
   <li>
-    <strong>IntelliJ IDEA:</strong> IDE de JetBrains para la implementación del Backend con Spring Boot, procesamiento de reglas de negocio y despliegue en la nube mediante los plugins de Azure. <br>
+    <strong>IntelliJ IDEA:</strong> IDE de JetBrains para la implementación del Backend con Spring Boot, procesamiento de reglas de negocio y despliegue en la nube. <br>
     <strong>Ruta de descarga:</strong> <a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a>
   </li>
   <li>
