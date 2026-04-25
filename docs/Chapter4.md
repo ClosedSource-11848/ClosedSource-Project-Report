@@ -263,71 +263,73 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 
 En esta sección se presentan los **wireframes diseñados para la aplicación web de ClosedSource(QualiTrack)**. Cada pantalla responde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA), Operario de planta y Auditor.
 
-**Portal de Inicio** 
+**Portal de Inicio - ClosedSource** 
 
 Pantalla principal de presentación donde se ofrecen las opciones de ingreso y registro de nuevas plantas industriales.
 
 <img src="../assets/img/Login - ClosedSource.jpeg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Crear Cuenta**  
+**Crear Cuenta - ClosedSource**  
 
 Formulario para registrar laboratorios, solicitando datos del responsable y credenciales de acceso.
 
 <img src="../assets/img/Registro – ClosedSource.jpeg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ingreso al Sistema** 
+**Ingreso al Sistema - ClosedSource** 
 
 Pantalla de autenticación para usuarios registrados con campos de correo y contraseña.
 
 <img src="../assets/img/Inicio de Sesión – ClosedSource.jpeg" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Panel de Control** 
+**Panel de Control - ClosedSource** 
 
 Vista general de la planta que muestra el progreso del lote activo y el estado de las unidades de producción.
 
 <img src="../assets/img/Ingreso-al-Sistema- ClosedSource.jpeg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ejecución de Lote** 
+**Ejecución de Lote - ClosedSource** 
 
 Interfaz para registrar materias primas y verificar procesos con monitoreo de telemetría en vivo.
 
 <img src="../assets/img/Ejecución-de-Lote-Activo – ClosedSource.jpeg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Estado de Equipos** 
+**Estado de Equipos - ClosedSource** 
 
 Pantalla de monitoreo técnico que detalla el funcionamiento de la maquinaria y sus sensores IoT.
 
 <img src="../assets/img/Estado-de-Equipamiento-IoT – ClosedSource.jpeg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Centro de Alertas** 
+**Centro de Alertas - ClosedSource** 
 
 Módulo de respuesta ante emergencias que permite pausar procesos cuando se detectan desviaciones críticas.
 
 <img src="../assets/img/Gestión-de-Alertas-e-Incidentes – ClosedSource.jpeg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Resumen de Calidad** 
+**Resumen de Calidad - ClosedSource** 
 
 Panel consolidado con gráficos e indicadores de cumplimiento (KPIs) globales del laboratorio.
 
 <img src="../assets/img/Dashboard-General – ClosedSource.jpeg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Módulo de Cumplimiento** 
+**Módulo de Cumplimiento - ClosedSource** 
 
 Sección dedicada a la validación de normativas y estándares de calidad para cada producto.
 
 <img src="../assets/img/Cumplimiento - Normativo – ClosedSource.jpeg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Historial de Lotes** 
+**Historial de Lotes - ClosedSource** 
 
 Listado de trazabilidad que permite buscar y filtrar todos los lotes fabricados anteriormente.
 
 <img src="../assets/img/Ciclo-de-Vida-del-Lote – ClosedSource.jpeg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
+**Análisis y Configuración de Equipos - ClosedSource**
+
 Panel técnico para el monitoreo de telemetría de equipos activos y la configuración detallada de umbrales y parámetros BPM
 
 <img src="../assets/img/Análisis-y-Configuración-de-Equipos - ClosedSource.jpeg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
 
-**Logs de Auditoría**
+**Logs de Auditoría - ClosedSource**
 
 Interfaz para exportar registros de eventos inmutables para inspecciones de DIGEMID.
 
