@@ -1316,38 +1316,121 @@ comentario -->
 <div style="page-break-after: always;"></div>
 
 # Anexos
-<h2>Anexo A: Evidencias de Entrevistas (Needfinding)</h2>
+<h4>Anexo A: Enlaces de Despliegue y Repositorios</h4>
 <p>
-  Se adjuntan los registros y enlaces a las sesiones de validación con los segmentos objetivo para el análisis de requerimientos de QualiTrack.
+  A continuación se listan los enlaces correspondientes a los recursos disponibles hasta el Sprint 1 (AV1), incluyendo el despliegue del Landing Page y los repositorios del proyecto QualiTrack.
 </p>
-<ul>
-  <li><strong>Segmento 1 (Gerentes de Calidad):</strong>
-    <ul>
-      <li>Entrevista 1 (Delcy Castro): <a href="https://shorturl.at/CMWHx">https://shorturl.at/CMWHx</a></li>
-      <li>Entrevista 4 (Patricia Navarro): <a href="https://acortar.link/Xdz3pq">https://acortar.link/Xdz3pq</a></li>
-    </ul>
-  </li>
-  <li><strong>Segmento 2 (Supervisores Públicos):</strong>
-    <ul>
-      <li>Compendio de entrevistas (Rosa, Rocio, Risa): <a href="https://shorturl.at/CMWHx">https://shorturl.at/CMWHx</a></li>
-    </ul>
-  </li>
-</ul>
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Recurso</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Landing Page (GitHub Pages)</strong></td>
+      <td>
+        <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">
+          https://closedsource-11848.github.io/ClosedSource-LandingPage/
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Repositorio Landing Page</strong></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">
+          https://github.com/ClosedSource-11848/ClosedSource-LandingPage
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Repositorio Project Report</strong></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-Project-Report">
+          https://github.com/ClosedSource-11848/ClosedSource-Project-Report
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Repositorio Frontend</strong></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">
+          https://github.com/ClosedSource-11848/ClosedSource-Frontend
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Repositorio Backend</strong></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-Backend">
+          https://github.com/ClosedSource-11848/ClosedSource-Backend
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<h2>Anexo B: Pizarra de Diseño de Arquitectura (DDD)</h2>
+<h4>Anexo B: Videos de Exposiciones</h4>
 <p>
-  Enlace a la herramienta Miro donde se desarrollaron los artefactos de diseño de software y lógica de negocio.
+  Registro de las exposiciones realizadas hasta el hito AV1 correspondiente al Sprint 1.
 </p>
-<ul>
-  <li><strong>Miro Board (Event Storming & Bounded Contexts):</strong> <a href="https://shorturl.at/0eSVT">https://shorturl.at/0eSVT</a></li>
-</ul>
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Entrega / Hito</th>
+      <th>Plataforma</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><strong>Video de Exposición AV1 (Sprint 1)</strong></td>
+      <td>YouTube</td>
+      <td><a href="#">[INSERTAR URL YOUTUBE]</a></td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td><a href="#">[INSERTAR URL STREAM]</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<h2>Anexo C: Control de Versiones y Repositorios</h2>
+<!-- 
+
+<h4>Anexo C: Videos del Proyecto</h4>
 <p>
-  Acceso a la organización de GitHub de ClosedSource donde se gestionan los repositorios de la solución.
+  Material audiovisual del proyecto QualiTrack relacionado a la presentación del producto y del equipo (opcional en AV1 si ya lo tienen grabado).
 </p>
-<ul>
-  <li><strong>GitHub Organization:</strong> <a href="https://github.com/ClosedSource-11848">https://github.com/ClosedSource-11848</a></li>
-  <li><strong>Frontend Repository:</strong> <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">QualiTrack Frontend</a></li>
-  <li><strong>Backend Repository:</strong> <a href="https://github.com/ClosedSource-11848/ClosedSource-BackEnd">QualiTrack Backend</a></li>
-</ul>
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Tipo de Video</th>
+      <th>Plataforma</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><strong>Video "About the Product"</strong></td>
+      <td>YouTube</td>
+      <td><a href="#">[OPCIONAL]</a></td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td><a href="#">[OPCIONAL]</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Video "About the Team"</strong></td>
+      <td>YouTube</td>
+      <td><a href="#">[OPCIONAL]</a></td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td><a href="#">[OPCIONAL]</a></td>
+    </tr>
+  </tbody>
+</table>
+
+comentario -->
+
