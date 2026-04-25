@@ -173,7 +173,7 @@
 <p>Ejemplos adaptados a QualiTrack:</p>
 <pre><code>feat(tracking): implement IoT telemetry ingestion endpoint
 fix(compliance): resolve blocking mechanism for minor deviations
-docs(readme): update Azure deployment guidelines
+docs(readme): update docs bibliography
 build(deps): update Spring Boot to 3.1.2
 </code></pre>
 
