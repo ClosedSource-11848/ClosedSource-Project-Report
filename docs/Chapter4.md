@@ -353,9 +353,9 @@ Pantalla principal de presentación donde se ofrecen las opciones de ingreso y r
 
 **Crear Cuenta - ClosedSource**  
 
-Formulario para registrar laboratorios, solicitando datos del responsable, RUC y credenciales de acceso.
+Formulario para registrar laboratorios, solicitando datos del responsable y credenciales de acceso.
 
-<img src="../assets/img/Registro – ClosedSource - Mock-ups.jpeg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/Registro – ClosedSource - Mock - ups.jpeg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Ingreso al Sistema - ClosedSource** 
 
@@ -379,7 +379,7 @@ Interfaz para registrar materias primas y verificar procesos con monitoreo de te
 
 Pantalla de monitoreo técnico que detalla el funcionamiento de la maquinaria y sus sensores IoT.
 
-<img src="../assets/img/Estado-de-Equipamiento-IoT – ClosedSource - Mock-ups.jpeg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/Estado-de-Equipamiento-IoT – ClosedSource Mock-ups.jpeg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Centro de Alertas - ClosedSource** 
 
