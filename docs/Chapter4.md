@@ -323,6 +323,10 @@ Listado de trazabilidad que permite buscar y filtrar todos los lotes fabricados 
 
 <img src="../assets/img/Ciclo-de-Vida-del-Lote – ClosedSource.jpeg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
+Panel técnico para el monitoreo de telemetría de equipos activos y la configuración detallada de umbrales y parámetros BPM
+
+<img src="../assets/img/Análisis-y-Configuración-de-Equipos - ClosedSource.jpeg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+
 **Logs de Auditoría**
 
 Interfaz para exportar registros de eventos inmutables para inspecciones de DIGEMID.
