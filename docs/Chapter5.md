@@ -2,122 +2,216 @@
 <body>
   
 # Capítulo V: Product Implementation, Validation & Deployment
-  
+
 ## 5.1. Software Configuration Management
+
 <p>
-    En esta sección se describen las decisiones, convenciones y principios adoptados por el equipo de ClosedSource para garantizar la coherencia, trazabilidad y control de versiones durante el ciclo de vida del desarrollo de la solución QualiTrack. Se establecen los lineamientos para la configuración del entorno de desarrollo, gestión del código fuente, convenciones de estilo y configuración de despliegue.
+En esta sección se describen las decisiones, convenciones y principios adoptados por el
+equipo de ClosedSource para garantizar la coherencia, trazabilidad y control de versiones
+durante el ciclo de vida del desarrollo de la solución QualiTrack. Se establecen los
+lineamientos para la configuración del entorno de desarrollo, gestión del código fuente,
+convenciones de estilo y configuración de despliegue.
 </p>
-  
+
 ### 5.1.1. Software Development Environment Configuration
+
 <p>
-    En esta sección se especifican los productos de software utilizados durante el ciclo de vida del proyecto, incluyendo el nombre de cada herramienta, su propósito técnico específico dentro del proyecto QualiTrack, y la ruta de referencia o descarga. Las herramientas se organizan según las siguientes disciplinas:
+En esta sección se especifican los productos de software utilizados durante el ciclo de
+vida del proyecto, incluyendo el nombre de cada herramienta, su propósito técnico
+específico dentro del proyecto QualiTrack, y la ruta de referencia (para software SaaS)
+o ruta de descarga (para productos de instalación local). Las herramientas se organizan
+según las siguientes disciplinas:
 </p>
-  
+
 <ol>
-    <li>Project Management</li>
-    <li>Requirements Management</li>
-    <li>Product UX/UI Design</li>
-    <li>Software Development</li>
-    <li>Software Testing</li>
-    <li>Software Documentation</li>
+  <li>Project Management</li>
+  <li>Requirements Management</li>
+  <li>Product UX/UI Design</li>
+  <li>Software Development</li>
+  <li>Software Testing</li>
+  <li>Software Documentation</li>
 </ol>
 
 <h4>Project Management</h4>
+
 <p>
-    Esta disciplina se centra en la planificación, seguimiento y control de las actividades del proyecto, asegurando el cumplimiento de los objetivos dentro del tiempo y recurso establecidos.
+Esta disciplina se centra en la planificación, seguimiento y control de las actividades
+del proyecto, asegurando el cumplimiento de los objetivos dentro del tiempo y recursos
+establecidos.
 </p>
 
 <ul>
   <li>
-    <strong>Jira:</strong> Plataforma de gestión de proyectos ágiles utilizada para la administración del Product Backlog, planificación de Sprints, asignación de User Stories y Technical Stories a los miembros del equipo, y seguimiento del progreso mediante tableros Scrum. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://www.atlassian.com/software/jira">https://www.atlassian.com/software/jira</a>
+    <strong>Jira:</strong> Plataforma de gestión de proyectos ágiles utilizada para la
+    administración del Product Backlog, planificación de Sprints, asignación de User
+    Stories y Technical Stories a los miembros del equipo, y seguimiento del progreso
+    mediante tableros Scrum con estados To-Do, In-Process, To-Review y Done.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.atlassian.com/software/jira">https://www.atlassian.com/software/jira</a>
   </li>
 </ul>
 
 <h4>Requirements Management</h4>
 
 <p>
-    Este proceso se enfoca en la documentación, verificación y seguimiento de los requisitos del proyecto, asegurando que las necesidades de los laboratorios y normativas BPM sean satisfechas.
+Este proceso se enfoca en la documentación, verificación y seguimiento de los requisitos
+del proyecto, asegurando que las necesidades de los laboratorios farmacéuticos y las
+normativas BPM sean satisfechas.
 </p>
 
 <ul>
   <li>
-    <strong>Trello:</strong> Plataforma de gestión visual basada en tableros, listas y tarjetas, utilizada para la organización rápida del Sprint Backlog y colaboración del equipo. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://trello.com">https://trello.com</a>
+    <strong>Trello:</strong> Plataforma de gestión visual basada en tableros, listas y
+    tarjetas, utilizada para la organización rápida del Sprint Backlog, gestión de User
+    Stories por estado y colaboración del equipo en la priorización de requisitos del
+    proyecto QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://trello.com">https://trello.com</a>
   </li>
 </ul>
 
 <h4>Product UX/UI Design</h4>
 
 <p>
-    El diseño de la experiencia de usuario y la interfaz para QualiTrack contempla paneles de control de telemetría de alta densidad de datos. Se utilizan las siguientes herramientas:
+El diseño de la experiencia de usuario y la interfaz para QualiTrack contempla paneles
+de control de telemetría de alta densidad de datos y flujos de gestión de lotes
+farmacéuticos. Se utilizan las siguientes herramientas:
 </p>
 
 <ol>
   <li>
-    <strong>UXPressia:</strong> Plataforma para la elaboración de User Personas (Jefe de QA y Supervisor Público), Empathy Maps y Customer Journey Maps. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://uxpressia.com/">https://uxpressia.com/</a>
+    <strong>UXPressia:</strong> Plataforma para la elaboración de User Personas (Jefe de
+    QA y Supervisor de Salud Pública), Empathy Maps y Customer Journey Maps.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://uxpressia.com/">https://uxpressia.com/</a>
   </li>
   <li>
-    <strong>Miro:</strong> Pizarra digital colaborativa utilizada para sesiones de Event Storming, facilitando la identificación de Bounded Contexts del dominio farmacéutico. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://miro.com/es/">https://miro.com/es/</a>
+    <strong>Miro:</strong> Pizarra digital colaborativa utilizada para sesiones de Big
+    Picture Event Storming y Design-Level Event Storming, facilitando la identificación
+    de Bounded Contexts del dominio farmacéutico de QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://miro.com/es/">https://miro.com/es/</a>
   </li>
   <li>
-    <strong>Figma:</strong> Herramienta de diseño para la creación de Wireframes, Mock-ups y Prototipos interactivos del Landing Page y la Web Application SaaS de QualiTrack. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://www.figma.com/es-es/">https://www.figma.com/es-es/</a>
+    <strong>Figma:</strong> Herramienta de diseño colaborativo para la creación de
+    Wireframes, Mock-ups y Prototipos interactivos del Landing Page y la Web Application
+    SaaS de QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.figma.com/es-es/">https://www.figma.com/es-es/</a>
   </li>
   <li>
-    <strong>LucidChart:</strong> Aplicación para la creación de diagramas de arquitectura C4, Class Diagrams y Database Diagrams. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://www.lucidchart.com/pages/es">https://www.lucidchart.com/pages/es</a>
+    <strong>LucidChart:</strong> Aplicación de diagramación colaborativa para la creación
+    de diagramas C4, Class Diagrams y Database Diagrams de la arquitectura de QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.lucidchart.com/pages/es">https://www.lucidchart.com/pages/es</a>
   </li>
 </ol>
 
 <h4>Software Development</h4>
 
 <p>
-    El desarrollo abarca la implementación de la Landing Page, la Frontend Web Application (SPA) y los Backend Web Services integrados con IoT.
+El desarrollo abarca la implementación del Landing Page, la Frontend Web Application (SPA
+Angular) y los Backend Web Services integrados con telemetría IoT.
 </p>
 
 <ol>
   <li>
-    <strong>GitHub:</strong> Sistema de control de versiones y plataforma de hosting. Gestión de la organización ClosedSource-11848, implementación de GitFlow y Conventional Commits. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://github.com">https://github.com</a>
+    <strong>GitHub:</strong> Sistema de control de versiones distribuido y plataforma de
+    hosting para repositorios de código fuente. Gestión de la organización
+    ClosedSource-11848, implementación de GitFlow Workflow y Conventional Commits.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://github.com">https://github.com</a><br>
+    <strong>Organización del proyecto:</strong>
+    <a href="https://github.com/ClosedSource-11848">https://github.com/ClosedSource-11848</a>
   </li>
   <li>
-    <strong>WebStorm:</strong> Entorno de desarrollo integrado (IDE) de JetBrains optimizado para la implementación del Frontend utilizando Angular, TypeScript, HTML5 y CSS3. <br>
-    <strong>Ruta de descarga:</strong> <a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a>
+    <strong>WebStorm:</strong> Entorno de desarrollo integrado (IDE) de JetBrains para la
+    implementación del Frontend utilizando Angular Framework, HTML5, CSS3, JavaScript y
+    TypeScript. Incluye integración con GitHub para control de versiones.<br>
+    <strong>Ruta de descarga:</strong>
+    <a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a>
   </li>
   <li>
-    <strong>IntelliJ IDEA:</strong> IDE de JetBrains para la implementación del Backend con Spring Boot, procesamiento de reglas de negocio y despliegue en la nube. <br>
-    <strong>Ruta de descarga:</strong> <a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a>
+    <strong>IntelliJ IDEA:</strong> Entorno de desarrollo integrado (IDE) de JetBrains
+    para la implementación del Backend con Spring Boot Framework y Java 17. Incluye
+    integración con plataformas cloud para despliegue de Web Services.<br>
+    <strong>Ruta de descarga:</strong>
+    <a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a>
   </li>
   <li>
-    <strong>Angular Framework:</strong> Framework principal para la SPA, gestión de estado y consumo de APIs REST para los dashboards en tiempo real. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://angular.io/">https://angular.io/</a>
+    <strong>Angular Framework:</strong> Framework principal para la SPA de QualiTrack.
+    Construcción de componentes reutilizables, gestión de estado mediante Services y RxJS,
+    enrutamiento entre vistas y consumo de APIs REST para los dashboards de telemetría en
+    tiempo real.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://angular.io/">https://angular.io/</a>
   </li>
   <li>
-    <strong>Spring Boot (Java 17):</strong> Framework para el desarrollo de la API RESTful. Implementación de compliance BPM y persistencia de telemetría IoT. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://spring.io/projects/spring-boot">https://spring.io/projects/spring-boot</a>
+    <strong>Spring Boot (Java 17):</strong> Framework para el desarrollo de los Web
+    Services RESTful del Backend de QualiTrack. Implementación de la lógica de compliance
+    BPM, ingesta de telemetría IoT y persistencia de datos con JPA/Hibernate.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://spring.io/projects/spring-boot">https://spring.io/projects/spring-boot</a>
+  </li>
+  <li>
+    <strong>HTML5, CSS3, JavaScript:</strong> Tecnologías fundamentales para la
+    implementación del Landing Page y estructura base de la Web Application.<br>
+    <strong>Referencias:</strong>
+    <ul>
+      <li>HTML5: <a href="https://html.spec.whatwg.org/">https://html.spec.whatwg.org/</a></li>
+      <li>CSS3: <a href="https://www.w3.org/Style/CSS/">https://www.w3.org/Style/CSS/</a></li>
+      <li>JavaScript: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">https://developer.mozilla.org/es/docs/Web/JavaScript</a></li>
+    </ul>
+  </li>
+  <li>
+    <strong>TypeScript:</strong> Lenguaje de programación tipado para el desarrollo del
+    Frontend con Angular. Proporciona tipado estático, detección temprana de errores y
+    mejor soporte de IDE.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a>
   </li>
 </ol>
 
 <h4>Software Testing</h4>
+
 <p>
-    Las pruebas verifican que los datos no puedan ser manipulados y que las alertas IoT funcionen en tiempo real.
+Las pruebas de software permiten verificar que los módulos de compliance BPM, bloqueo
+automático de lotes y generación de reportes inmutables funcionen correctamente según los
+criterios de aceptación definidos.
 </p>
 
 <ul>
   <li>
-    <strong>Lenguaje Gherkin:</strong> Lenguaje (DSL) para la redacción de Acceptance Criteria en formato Given-When-Then, vital para validar historias de usuario de liberación de lotes y bloqueos de parámetros. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://cucumber.io/docs/gherkin/">https://cucumber.io/docs/gherkin/</a>
+    <strong>Lenguaje Gherkin:</strong> Lenguaje de dominio específico (DSL) para la
+    redacción de Acceptance Criteria de User Stories en formato Given-When-Then, utilizado
+    para definir escenarios de prueba legibles por stakeholders y ejecutables por
+    herramientas de automatización.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://cucumber.io/docs/gherkin/">https://cucumber.io/docs/gherkin/</a>
   </li>
 </ul>
 
 <h4>Software Documentation</h4>
+
+<p>
+La documentación de software permite explicar el funcionamiento, uso y arquitectura de los
+productos desarrollados, facilitando su mantenimiento y evolución.
+</p>
+
 <ul>
   <li>
-    <strong>OpenAPI Specification / Swagger:</strong> Estándar para la documentación interactiva de los Web Services de QualiTrack. <br>
-    <strong>Ruta de referencia:</strong> <a href="https://swagger.io/">https://swagger.io/</a>
+    <strong>OpenAPI Specification / Swagger:</strong> Estándar para la documentación
+    interactiva de los Web Services RESTful del Backend de QualiTrack. Especificación de
+    endpoints de telemetría, gestión de lotes, compliance y reportes de auditoría.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://swagger.io/">https://swagger.io/</a>
+  </li>
+  <li>
+    <strong>Markdown:</strong> Lenguaje de marcado ligero para la elaboración del Project
+    Report en el repositorio GitHub, permitiendo estructurar la documentación con formato
+    consistente y compatible con control de versiones.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a>
   </li>
 </ul>
 
@@ -126,7 +220,9 @@
 ### 5.1.2. Source Code Management
 
 <p>
-    En esta sección se establecen los medios y esquemas de organización aplicados para el seguimiento de modificaciones del código fuente utilizando GitHub.
+En esta sección se establecen los medios y esquemas de organización aplicados para el
+seguimiento de modificaciones del código fuente. Se utiliza GitHub como plataforma y
+sistema de control de versiones distribuido.
 </p>
 
 <h4>Repositorios del Proyecto</h4>
@@ -144,8 +240,12 @@
       <td><a href="https://github.com/ClosedSource-11848">https://github.com/ClosedSource-11848</a></td>
     </tr>
     <tr>
+      <td>Project Report</td>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Project-Report">https://github.com/ClosedSource-11848/ClosedSource-Project-Report</a></td>
+    </tr>
+    <tr>
       <td>Landing Page</td>
-      <td><a href="https://github.com/ClosedSource-11848/QualiTrack-LandingPage">https://github.com/ClosedSource-11848/QualiTrack-LandingPage</a></td>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">https://github.com/ClosedSource-11848/ClosedSource-LandingPage</a></td>
     </tr>
     <tr>
       <td>Frontend Web Application</td>
@@ -159,29 +259,108 @@
 </table>
 
 <h4>GitFlow Workflow</h4>
+
 <p>
-    Se implementa GitFlow para facilitar el desarrollo paralelo de los Bounded Contexts.
+Se implementa GitFlow como modelo de flujo de trabajo para el control de versiones,
+estableciendo una estructura de ramas que facilita el desarrollo paralelo de los Bounded
+Contexts y la gestión de releases.
 </p>
+
+<p><strong>Ramas Principales:</strong></p>
+
 <ul>
-  <li><strong>main:</strong> Versiones estables listas para producción.</li>
-  <li><strong>develop:</strong> Rama de integración de features.</li>
-  <li><strong>feature/&lt;contexto&gt;-&lt;funcionalidad&gt;:</strong> Ej. <code>feature/batch-release-digital-signature</code>.</li>
-  <li><strong>hotfix/&lt;issue&gt;:</strong> Correcciones críticas.</li>
+  <li>
+    <strong>main:</strong> Rama principal que contiene el historial oficial de versiones
+    estables listas para producción. Solo recibe merges de release branches y hotfix
+    branches.
+  </li>
+  <li>
+    <strong>develop:</strong> Rama de integración donde se consolidan los features
+    completados y probados. Sirve como base para la creación de release branches.
+  </li>
+</ul>
+
+<p><strong>Ramas de Soporte:</strong></p>
+
+<ul>
+  <li>
+    <strong>feature/&lt;bounded-context&gt;-&lt;funcionalidad&gt;:</strong> Ramas creadas
+    a partir de develop para implementar nuevas funcionalidades. Se fusionan de vuelta a
+    develop una vez completadas y revisadas. Ejemplo:
+    <code>feature/batch-release-digital-signature</code>,
+    <code>feature/tracking-iot-telemetry-ingestion</code>.
+  </li>
+  <li>
+    <strong>release/&lt;version&gt;:</strong> Ramas creadas a partir de develop para
+    preparar una nueva versión de producción. Ejemplo: <code>release/1.0.0</code>.
+  </li>
+  <li>
+    <strong>hotfix/&lt;issue&gt;:</strong> Ramas creadas a partir de main para
+    correcciones urgentes en producción. Se fusionan tanto a main como a develop.
+    Ejemplo: <code>hotfix/fix-bpm-evaluation-threshold</code>.
+  </li>
 </ul>
 
 <h4>Conventional Commits</h4>
-<p>Ejemplos adaptados a QualiTrack:</p>
+
+<p>
+Se aplica la especificación Conventional Commits para los mensajes de commit, siguiendo
+la estructura: <code>&lt;type&gt;[optional scope]: &lt;description&gt;</code>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>feat</code></td><td>Nueva funcionalidad para el usuario</td></tr>
+    <tr><td><code>fix</code></td><td>Corrección de un bug</td></tr>
+    <tr><td><code>docs</code></td><td>Cambios en documentación</td></tr>
+    <tr><td><code>style</code></td><td>Cambios de formato sin afectar lógica</td></tr>
+    <tr><td><code>refactor</code></td><td>Refactorización sin cambiar funcionalidad</td></tr>
+    <tr><td><code>test</code></td><td>Adición o corrección de pruebas</td></tr>
+    <tr><td><code>build</code></td><td>Cambios en sistema de build o dependencias</td></tr>
+    <tr><td><code>chore</code></td><td>Tareas de mantenimiento sin afectar producción</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplos de commits adaptados al dominio QualiTrack:</strong></p>
+
 <pre><code>feat(tracking): implement IoT telemetry ingestion endpoint
 fix(compliance): resolve blocking mechanism for minor deviations
-docs(readme): update docs bibliography
-build(deps): update Spring Boot to 3.1.2
+docs(readme): update deployment instructions for GitHub Pages
+build(deps): upgrade Spring Boot to 3.1.2
+chore: initial commit.
+feat: add main structure and content to index
+docs: add terms of service.
+docs: add privacy policy compliant with peruvian law.
 </code></pre>
+
+<h4>Semantic Versioning</h4>
+
+<p>
+Se aplica Semantic Versioning 2.0.0 para el versionado de releases, siguiendo el formato
+<code>MAJOR.MINOR.PATCH</code>:
+</p>
+
+<ul>
+  <li><strong>MAJOR:</strong> Cambios incompatibles con versiones anteriores</li>
+  <li><strong>MINOR:</strong> Nuevas funcionalidades compatibles con versiones anteriores</li>
+  <li><strong>PATCH:</strong> Correcciones de bugs compatibles con versiones anteriores</li>
+</ul>
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-  <p>
-      En esta sección se establecen las convenciones de estilo y nomenclatura adoptadas para los lenguajes utilizados en el proyecto QualiTrack: HTML, CSS, JavaScript, TypeScript, Java y Gherkin. Se aplica nomenclatura en inglés para todos los elementos del código, siguiendo el Ubiquitous Language definido para el dominio de gestión de calidad farmacéutica.
-  </p>
+<p>
+En esta sección se establecen las convenciones de estilo y nomenclatura adoptadas para
+los lenguajes utilizados en el proyecto QualiTrack: HTML, CSS, JavaScript, TypeScript,
+Java y Gherkin. Se aplica nomenclatura en inglés para todos los elementos del código,
+siguiendo el Ubiquitous Language definido para el dominio de gestión de calidad
+farmacéutica.
+</p>
 
 <h4>Referencias de Guías de Estilo Adoptadas</h4>
 
@@ -214,6 +393,10 @@ build(deps): update Spring Boot to 3.1.2
       <td><a href="https://google.github.io/styleguide/javaguide.html">Google Java Style Guide</a></td>
     </tr>
     <tr>
+      <td>Spring Boot</td>
+      <td><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html">Spring Boot Reference Documentation</a></td>
+    </tr>
+    <tr>
       <td>Gherkin</td>
       <td><a href="https://cucumber.io/docs/gherkin/reference/">Gherkin Reference</a></td>
     </tr>
@@ -221,10 +404,6 @@ build(deps): update Spring Boot to 3.1.2
 </table>
 
 <h4>Nomenclatura General</h4>
-
-<p>
-  Se utiliza nomenclatura en inglés para todos los elementos del código, relacionada con la entidad que representan dentro del dominio del negocio (ej. Batch, Equipment, Telemetry).
-</p>
 
 <table>
   <thead>
@@ -273,14 +452,17 @@ build(deps): update Spring Boot to 3.1.2
     <tr>
       <td>Endpoints REST</td>
       <td>kebab-case (plural)</td>
-      <td><code>/api/v1/batches</code>, <code>/api/v1/equipments</code></td>
+      <td><code>/api/v1/batches</code>, <code>/api/v1/equipment</code></td>
     </tr>
   </tbody>
 </table>
 
 <h4>Sangría</h4>
 
-<p>Se aplica un espaciado de dos espacios para la indentación en todos los archivos HTML, CSS, JavaScript y TypeScript.</p>
+<p>
+Se aplica un espaciado de dos espacios para la indentación en todos los archivos HTML,
+CSS, JavaScript y TypeScript.
+</p>
 
 <p><strong>Ejemplo HTML:</strong></p>
 
@@ -303,7 +485,6 @@ build(deps): update Spring Boot to 3.1.2
 <h4>Convenciones por Lenguaje</h4>
 
 <h5>HTML</h5>
-
 <ul>
   <li>Declarar <code>&lt;!DOCTYPE html&gt;</code> en la primera línea.</li>
   <li>Utilizar minúsculas para nombres de elementos y atributos.</li>
@@ -314,17 +495,15 @@ build(deps): update Spring Boot to 3.1.2
 </ul>
 
 <h5>CSS</h5>
-
 <ul>
   <li>Utilizar shorthand properties cuando sea posible: <code>margin: 10px 20px;</code></li>
   <li>Terminar todas las declaraciones con punto y coma.</li>
   <li>Un espacio después de los dos puntos en propiedades: <code>color: #333;</code></li>
-  <li>Usar comillas simples para valores de font-family: <code>font-family: 'Rubik', sans-serif;</code></li>
+  <li>Usar comillas simples para font-family: <code>font-family: 'Rubik', sans-serif;</code></li>
   <li>Organizar propiedades alfabéticamente dentro de cada selector.</li>
 </ul>
 
 <h5>JavaScript / TypeScript</h5>
-
 <ul>
   <li>Usar <code>const</code> y <code>let</code> en lugar de <code>var</code>.</li>
   <li>Espacios alrededor de operadores: <code>const isCompliant = temp &lt; maxTemp;</code></li>
@@ -349,7 +528,6 @@ build(deps): update Spring Boot to 3.1.2
 </code></pre>
 
 <h5>Java</h5>
-
 <ul>
   <li>Seguir convenciones de nomenclatura de Spring Boot.</li>
   <li>Documentar clases y métodos públicos con Javadoc.</li>
@@ -371,7 +549,7 @@ public class BatchController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity&lt;Batch&gt; getBatchById(@PathVariable Long id) {
+    public ResponseEntity&lt;Batch&gt; getBatchById(@PathVariable String id) {
         return batchService.findById(id)
             .map(ResponseEntity::ok)
             .orElse(ResponseEntity.notFound().build());
@@ -380,7 +558,6 @@ public class BatchController {
 </code></pre>
 
 <h5>Gherkin</h5>
-
 <ul>
   <li>Escribir escenarios en inglés.</li>
   <li>Un escenario por comportamiento específico.</li>
@@ -408,32 +585,128 @@ public class BatchController {
     And the equipment should not be registered
 </code></pre>
 
+<div style="page-break-after: always;"></div>
+
 ### 5.1.4. Software Deployment Configuration
 
 <p>
-    En esta sección se especifica la configuración de despliegue para los entornos de QualiTrack, apoyados en plataformas en la nube de alta disponibilidad.
+En esta sección se especifica la configuración de despliegue para cada uno de los
+productos digitales de la solución QualiTrack: Landing Page, Frontend Web Application
+y Backend Web Services.
 </p>
 
-<h4>Landing Page - GitHub Pages</h4>
+<h4>Landing Page – GitHub Pages</h4>
+
 <p>
-    Despliegue directo del contenido estático de marketing desde el repositorio principal a través de GitHub Actions.
+El Landing Page se despliega mediante GitHub Pages directamente desde el repositorio,
+aprovechando el hosting gratuito para sitios estáticos.
 </p>
-<p><strong>URL de despliegue:</strong> <a href="https://closedsource-11848.github.io/QualiTrack-LandingPage/">XXXXXXXXXX</a></p>
 
+<p><strong>Pasos de configuración:</strong></p>
+
+<ol>
+  <li>Acceder al repositorio <code>ClosedSource-LandingPage</code> en GitHub.</li>
+  <li>Navegar a <strong>Settings &gt; Pages</strong> en el menú lateral.</li>
+  <li>En la sección "Source", seleccionar la rama <code>main</code> y carpeta
+  <code>/ (root)</code>.</li>
+  <li>Hacer clic en <strong>Save</strong> y esperar la generación del sitio (1-2 minutos).</li>
+  <li>Verificar el despliegue accediendo a la URL generada.</li>
+</ol>
+
+<p>
+  <strong>URL de despliegue:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">https://closedsource-11848.github.io/ClosedSource-LandingPage/</a>
+</p>
+
+<h4>Frontend Web Application – Vercel</h4>
+
+<p>
+El Frontend desarrollado con Angular se desplegará en Vercel, plataforma que ofrece
+hosting optimizado para aplicaciones frontend con CDN global y despliegue automático.
+</p>
+
+<p><strong>Pasos de configuración:</strong></p>
+
+<ol>
+  <li>Crear cuenta en <a href="https://vercel.com">Vercel</a> y vincular con GitHub.</li>
+  <li>Importar el repositorio <code>ClosedSource-Frontend</code> desde GitHub.</li>
+  <li>Configurar el proyecto:
+    <ul>
+      <li><strong>Framework Preset:</strong> Angular</li>
+      <li><strong>Build Command:</strong> <code>ng build --configuration production</code></li>
+      <li><strong>Output Directory:</strong> <code>dist/qualitrack-frontend</code></li>
+    </ul>
+  </li>
+  <li>Configurar variables de entorno: <code>API_BASE_URL</code> con la URL del Backend.</li>
+  <li>Habilitar despliegue automático en cada push a la rama <code>main</code>.</li>
+</ol>
+
+<h4>Backend Web Services – Azure App Service</h4>
+
+<p>
+El Backend desarrollado con Spring Boot se desplegará en Azure App Service, servicio PaaS
+que facilita el hosting de aplicaciones web Java.
+</p>
+
+<p><strong>Configuración principal:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable de Entorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>SPRING_DATASOURCE_URL</code></td>
+      <td>Cadena de conexión JDBC a MySQL</td>
+    </tr>
+    <tr>
+      <td><code>SPRING_DATASOURCE_USERNAME</code></td>
+      <td>Usuario de la base de datos</td>
+    </tr>
+    <tr>
+      <td><code>SPRING_DATASOURCE_PASSWORD</code></td>
+      <td>Contraseña de la base de datos</td>
+    </tr>
+    <tr>
+      <td><code>SPRING_PROFILES_ACTIVE</code></td>
+      <td><code>prod</code></td>
+    </tr>
+    <tr>
+      <td><code>JWT_SECRET_KEY</code></td>
+      <td>Clave secreta para generación de tokens JWT</td>
+    </tr>
+  </tbody>
+</table>
+
+---
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
 
 <p>
-  Durante el Sprint 1, el equipo de ClosedSource se enfocó en el desarrollo e implementación de la Landing Page pública de QualiTrack, abarcando las secciones de presentación del negocio, la propuesta de valor basada en IoT y despliegue en la nube.
+Durante el Sprint 1, el equipo de ClosedSource se enfocó en el desarrollo e
+implementación del Landing Page público de QualiTrack, abarcando las secciones de
+presentación del negocio, la propuesta de valor basada en IoT, la sección de planes de
+suscripción, el equipo de desarrollo, los términos de servicio, la política de privacidad
+y el despliegue en GitHub Pages.
 </p>
 
 <p>
-  <strong>Repositorio:</strong> <a href="https://github.com/ClosedSource-11848/QualiTrack-LandingPage">XXXXXXXXXXXXXXXXXX</a>
+  <strong>Repositorio:</strong>
+  <a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">https://github.com/ClosedSource-11848/ClosedSource-LandingPage</a>
 </p>
 
-#### 5.2.1.1. Sprint Planning
+<p>
+  <strong>Landing Page Desplegada:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">https://closedsource-11848.github.io/ClosedSource-LandingPage/</a>
+</p>
+
+#### 5.2.1.1. Sprint Planning 1
+
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -454,14 +727,14 @@ public class BatchController {
     </tr>
     <tr>
       <td>Location</td>
-      <td>Discord / Teams</td>
+      <td>Discord</td>
     </tr>
     <tr>
       <td>Prepared By</td>
       <td>Ruiz Madrid, Billy Jake</td>
     </tr>
     <tr>
-      <td>Attendees</td>
+      <td>Attendees (to planning meeting)</td>
       <td>
         Ruiz Madrid, Billy Jake<br>
         Diaz Caruzo, Edgard Daniel<br>
@@ -471,18 +744,41 @@ public class BatchController {
       </td>
     </tr>
     <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 0 Review Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">N/A (Este es el primer sprint del proyecto)</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 0 Retrospective Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">N/A (Este es el primer sprint del proyecto)</td>
+    </tr>
+    <tr>
       <td colspan="2" style="text-align: center;"><strong>Sprint Goal & User Stories</strong></td>
     </tr>
     <tr>
-      <td colspan="2"><strong>Sprint 1 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
-<em>Our focus is on delivering the first marketing Landing Page of QualiTrack that clearly communicates the value proposition regarding IoT automation and BPM compliance.</em><br><br>
-<em>We believe it delivers a clear, professional first impression for QA Managers and Public Health Directors, helping them understand our SaaS offering.</em><br><br>
-<em>This will be confirmed when users can navigate through all core sections (Hero, Features, Benefits, Plans, About Us) and can seamlessly switch languages and contact the sales team.</em>
+      <td colspan="2">
+        <strong>Sprint 1 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
+        <em>Our focus is on delivering the first marketing Landing Page of QualiTrack that
+        clearly communicates the value proposition regarding IoT automation and BPM
+        compliance for pharmaceutical laboratories.</em><br><br>
+        <em>We believe it delivers a clear, professional first impression for QA Managers
+        and Public Health Directors, helping them understand our SaaS offering and the
+        regulatory compliance benefits.</em><br><br>
+        <em>This will be confirmed when users can navigate through all core sections
+        (Hero, Features, Benefits, Plans, About Us, Team, Contact) and can access the
+        Terms of Service and Privacy Policy pages without issues.</em>
       </td>
     </tr>
     <tr>
       <td>Sprint 1 Velocity</td>
       <td>14 Story Points</td>
+    </tr>
+    <tr>
+      <td>Sum of Story Points</td>
+      <td>14 SP</td>
     </tr>
   </tbody>
 </table>
@@ -490,78 +786,288 @@ public class BatchController {
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
 <p>
-Esta matriz <strong>LACX</strong> identifica los aspectos principales del sprint y asigna responsabilidades (Líder/Colaborador) para organizar al equipo de ClosedSource.
+En esta sección se presenta la matriz <strong>Leadership-and-Collaboration (LACX)</strong>
+correspondiente al Sprint 1. Su propósito es identificar claramente los aspectos
+principales del sprint y asignar responsabilidades de liderazgo (<strong>L</strong>) y
+colaboración (<strong>C</strong>) para fortalecer la coordinación y trazabilidad del
+trabajo dentro del equipo ClosedSource.
 </p>
+
+<p>Los aspectos se derivan directamente de los objetivos del Sprint 1 Goal:</p>
+
+<ul>
+  <li><strong>UI/UX & Styling:</strong> Diseño, estructura visual y estilos CSS de todas
+  las secciones del Landing Page.</li>
+  <li><strong>HTML Structuring & Content:</strong> Maquetación HTML, contenido de
+  secciones y documentos legales (ToS, Privacy Policy).</li>
+  <li><strong>Deployment & QA:</strong> Configuración de GitHub Pages, correcciones de
+  estructura y verificación del despliegue.</li>
+</ul>
 
 <table border="1" cellpadding="4" cellspacing="0" align="center">
   <thead>
     <tr>
-      <th>Team Member</th>
+      <th>Team Member (Last Name, First Name)</th>
       <th>Aspect: UI/UX & Styling</th>
-      <th>Aspect: HTML Structuring & Deployment</th>
+      <th>Aspect: HTML Structuring & Content</th>
+      <th>Aspect: Deployment & QA</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Ruiz Madrid, Billy Jake</td><td>C</td><td>C</td></tr>
-    <tr><td>Diaz Caruzo, Edgard Daniel</td><td>C</td><td>C</td></tr>
-    <tr><td>Viza Quispe, Marlon Packard</td><td>C</td><td>C</td></tr>
-    <tr><td>Castillo Yataco, Mauricio Sebastian</td><td>C</td><td>C</td></tr>
-    <tr><td>Angulo Ramírez, Marcelo Martín</td><td>C</td><td>C</td></tr>
+    <tr>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>C</td><td>L</td><td>L</td>
+    </tr>
+    <tr>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>L</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
   </tbody>
 </table>
 
-### 5.2.1.3. Sprint Backlog 1  
+<ul>
+  <li><strong>L</strong> = Líder del aspecto</li>
+  <li><strong>C</strong> = Colaborador en el aspecto</li>
+</ul>
 
-El Sprint Backlog agrupa las historias EP01 (US01 a US05) definidas en el Capítulo III.
+#### 5.2.1.3. Sprint Backlog 1
 
-| Sprint # | Sprint 1 |   |   |   |   |   |   |
-|---------|----------|---|---|---|---|---|---|
-| **User Story Id** | **Title** | **Task Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US01 | Menú de navegación | T001 | Definir estructura del menú | Implementar el navbar responsivo. | 3h | | Done |
-| US02 | Visualización de planes | T002 | Diseñar UI de pricing | Crear tarjetas de suscripción Standard y Enterprise. | 4h | | Done |
-| US03 | Visualización del equipo | T003 | Maquetar sección Team | Mostrar las tarjetas de los ingenieros de ClosedSource. | 3h |  | Done |
-| US04 | Formulario de contacto | T004 | Implementar Footer y form | Formulario de validación básica. | 4h | | Done |
-| US05 | Cambio de idioma | T005 | Lógica de i18n básica | Toggle de cambio de idioma. | 3h || Done |
+<p>
+El Sprint Backlog 1 reúne las historias de usuario y tareas necesarias para implementar
+la primera versión del Landing Page de QualiTrack, incluyendo el menú de navegación,
+visualización de planes, equipo creador, formulario de contacto, cambio de idioma y
+documentos legales. Todas las tareas son monitoreadas mediante <strong>Jira Software</strong>.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint1-board.png" alt="Sprint 1 Board Screenshot" width="100%">
+  <p><em>Figura: Tablero del Sprint 1 en Jira Software (Proyecto QualiTrack)</em></p>
+</div>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="8" style="text-align:center;">Sprint # 1</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">US01</td>
+      <td rowspan="2">Menú de navegación</td>
+      <td>T001</td>
+      <td>Implementar navbar responsivo</td>
+      <td>Estructurar el menú de navegación con los enlaces a Home, Features, Benefits, Plans y Contact.</td>
+      <td>2h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T002</td>
+      <td>Estilos y hamburger menu</td>
+      <td>Aplicar estilos CSS al menú y añadir comportamiento responsive con menú hamburguesa para móvil.</td>
+      <td>2h</td>
+      <td>Castillo, Mauricio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US02</td>
+      <td rowspan="2">Visualización de planes de suscripción</td>
+      <td>T003</td>
+      <td>Diseñar tarjetas de planes</td>
+      <td>Crear las tarjetas de los planes Standard Lab ($199/mes) y Enterprise ($599/mes) con sus características.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T004</td>
+      <td>Toggle mensual/anual</td>
+      <td>Implementar el toggle de cambio entre precios mensuales y anuales con descuento del 15%.</td>
+      <td>2h</td>
+      <td>Angulo, Marcelo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US03</td>
+      <td rowspan="2">Visualización del equipo creador</td>
+      <td>T005</td>
+      <td>Maquetar sección Our Team</td>
+      <td>Implementar las tarjetas de los 5 integrantes del equipo ClosedSource con foto, nombre y descripción.</td>
+      <td>2h</td>
+      <td>Diaz, Daniel</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T006</td>
+      <td>Correcciones sección Our Team</td>
+      <td>Corregir la estructura y contenido de la sección del equipo tras revisión de pares.</td>
+      <td>1h</td>
+      <td>Viza, Marlon</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US04</td>
+      <td rowspan="2">Formulario de contacto</td>
+      <td>T007</td>
+      <td>Implementar footer y formulario</td>
+      <td>Desarrollar el footer con el formulario de suscripción por email, datos de contacto y links legales.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T008</td>
+      <td>Correcciones de estructura index</td>
+      <td>Corregir la estructura general del index.html para asegurar consistencia semántica y accesibilidad.</td>
+      <td>2h</td>
+      <td>Angulo, Marcelo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Cambio de idioma</td>
+      <td>T009</td>
+      <td>Lógica i18n y toggle de idioma</td>
+      <td>Implementar el switcher de idioma ES/EN con archivos de traducción y lógica JavaScript de i18n.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">—</td>
+      <td rowspan="2">Documentos legales</td>
+      <td>T010</td>
+      <td>Agregar Terms of Service</td>
+      <td>Redactar e implementar la página de Términos de Servicio de QualiTrack.</td>
+      <td>2h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T011</td>
+      <td>Agregar Privacy Policy</td>
+      <td>Redactar e implementar la Política de Privacidad conforme a la legislación peruana.</td>
+      <td>2h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 <p>
-  Resumen de los commits más relevantes en el repositorio de la Landing Page de QualiTrack.
+En esta sección se explican y presentan los avances en la implementación logrados durante
+el Sprint 1 en relación con el Landing Page de QualiTrack. A lo largo de este sprint se
+construyó la primera versión navegable del sitio, incluyendo las secciones Hero, Features,
+Benefits, Plans, About Us, Team, Contact, junto con los documentos legales (Terms of
+Service y Privacy Policy), correcciones de estructura y despliegue en GitHub Pages.
+</p>
+
+<p>
+La tabla siguiente resume los commits realizados en el repositorio de la Landing Page,
+indicando la rama, el identificador del commit, el mensaje asociado, una breve descripción
+del cambio introducido y la fecha de commit.
 </p>
 
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
+      <th>Repository</th>
       <th>Branch</th>
       <th>Commit Id</th>
       <th>Commit Message</th>
-      <th>Committed on</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td rowspan="8">
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">
+          ClosedSource-LandingPage
+        </a>
+      </td>
       <td>main</td>
-      <td></td>
-      <td>Initial commit: basic project structure</td>
-      <td>-04-2026</td>
-    </tr>
-    <tr>
-      <td>feature/hero</td>
-      <td></td>
-      <td>feat(ui): add hero section for Quality Management</td>
-      <td>-04-2026</td>
-    </tr>
-    <tr>
-      <td>feature/plans</td>
-      <td></td>
-      <td>feat(pricing): add standard and enterprise cards</td>
-      <td>-04-2026</td>
+      <td>09d8dfc52a792ecd6930665ffdca67510806887e</td>
+      <td>chore: initial commit.</td>
+      <td>Commit inicial del repositorio, creando la estructura base del proyecto del Landing Page de QualiTrack.</td>
+      <td>15-04-2026</td>
     </tr>
     <tr>
       <td>main</td>
-      <td></td>
-      <td>fix: update assets paths for GitHub Pages deploy</td>
-      <td>-04-2026</td>
+      <td>edfa9efe945509d09ed9867bb058db8745fc2409</td>
+      <td>feat: add main structure and content to index</td>
+      <td>Implementa la estructura HTML principal del index con todas las secciones de la Landing Page: Hero, Features, Benefits, Plans, About Us, Team y Contact.</td>
+      <td>15-04-2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>9763e7c1e300b863be7440b48c73ef1472086211</td>
+      <td>docs: add privacy policy compliant with peruvian law.</td>
+      <td>Agrega la página de Política de Privacidad redactada conforme a la normativa peruana de protección de datos personales (Ley N.° 29733).</td>
+      <td>15-04-2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>268ccfb7c24e22a36de24f1ff41d70d77840a3f8</td>
+      <td>docs: add terms of service.</td>
+      <td>Agrega la página de Términos de Servicio de QualiTrack, detallando las condiciones de uso de la plataforma SaaS.</td>
+      <td>15-04-2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>3617ff5f54fef982480d241b20da49466731db95</td>
+      <td>fix: fixed structural content of the index</td>
+      <td>Corrige errores de estructura semántica del index.html, mejorando la jerarquía de etiquetas y la accesibilidad general del Landing Page.</td>
+      <td>15-04-2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>2ca94f8e67de32e54dd239d0055e4fc6690bd75d</td>
+      <td>fix: fixed our team section</td>
+      <td>Corrige la sección Our Team ajustando el diseño y contenido de las tarjetas de los integrantes del equipo ClosedSource.</td>
+      <td>15-04-2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>285f9877f14b495e17a4b779ca42571432e52424</td>
+      <td>fix: fixed our team section</td>
+      <td>Aplica correcciones adicionales a la sección Our Team tras revisión de pares, ajustando imágenes y descripciones de los integrantes.</td>
+      <td>15-04-2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>93c3c1707f03b96d3b96544264e9c5757be4071c</td>
+      <td>fix: fixed our team section</td>
+      <td>Realiza la corrección final de la sección Our Team consolidando los cambios de los commits anteriores y verificando la coherencia visual con el resto del Landing Page.</td>
+      <td>15-04-2026</td>
     </tr>
   </tbody>
 </table>
@@ -569,40 +1075,143 @@ El Sprint Backlog agrupa las historias EP01 (US01 a US05) definidas en el Capít
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
 <p>
-  Se completó la implementación y el diseño de la Landing Page. 
-
-#### 5.2.1.6. Services Documentation Evidence
-<p>
-  Dado que el Sprint 1 abarca únicamente contenido estático (Landing Page), la implementación y consumo de la API de telemetría IoT y gestión de lotes se abordará en los sprints posteriores orientados al Backend Web Services.
+Durante el Sprint 1, se completó exitosamente la implementación del Landing Page de
+QualiTrack con todas sus secciones, soporte bilingüe (ES/EN) y despliegue en GitHub
+Pages. A continuación se presentan evidencias de ejecución mediante capturas de pantalla
+de las principales vistas del Landing Page.
 </p>
 
-#### 5.2.1.7. Software Deployment Evidence
+<p><strong>Encabezado y menú de navegación:</strong></p>
+<img src="../assets/img/chapter-V/header-landing-page.png" alt="Header Landing Page QualiTrack" width="90%">
+
+<p><strong>Sección Hero:</strong></p>
+<img src="../assets/img/chapter-V/hero-landing-page.png" alt="Hero Section QualiTrack" width="90%">
+
+<p><strong>Sección What We Offer (Features):</strong></p>
+<img src="../assets/img/chapter-V/features-landing-page.png" alt="Features Section QualiTrack" width="90%">
+
+<p><strong>Sección Benefits:</strong></p>
+<img src="../assets/img/chapter-V/benefits-landing-page.png" alt="Benefits Section QualiTrack" width="90%">
+
+<p><strong>Sección Plans:</strong></p>
+<img src="../assets/img/chapter-V/plans-landing-page.png" alt="Plans Section QualiTrack" width="90%">
+
+<p><strong>Sección About Us:</strong></p>
+<img src="../assets/img/chapter-V/about-landing-page.png" alt="About Us Section QualiTrack" width="90%">
+
+<p><strong>Sección Our Team:</strong></p>
+<img src="../assets/img/chapter-V/team-landing-page.png" alt="Our Team Section QualiTrack" width="90%">
+
+<p><strong>Sección Testimonials y CTA:</strong></p>
+<img src="../assets/img/chapter-V/testimonials-landing-page.png" alt="Testimonials Section QualiTrack" width="90%">
+
+<p><strong>Footer:</strong></p>
+<img src="../assets/img/chapter-V/footer-landing-page.png" alt="Footer QualiTrack" width="90%">
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
 <p>
-  <strong>URL de Producción:</strong> <a href="https://closedsource-11848.github.io/QualiTrack-LandingPage/">XXXXXXXXXXXXXXX</a>
+En el Sprint 1, el equipo diseñó, implementó y desplegó el Landing Page de QualiTrack.
+Esta es una página web completamente estática desarrollada con HTML, CSS y JavaScript,
+por lo que no se implementaron Web Services ni endpoints REST en este sprint. La
+implementación y documentación de los Web Services de telemetría IoT, gestión de lotes y
+compliance BPM se abordará en los sprints posteriores orientados al Backend.
 </p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>End Point</th>
+      <th>Funciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N/A</td>
+      <td>No hay Web Services implementados en el Sprint 1 (Landing Page estático)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+<p>
+El Landing Page de QualiTrack fue desplegado exitosamente en <strong>GitHub Pages</strong>
+directamente desde la rama <code>main</code> del repositorio
+<code>ClosedSource-LandingPage</code>. El proceso de despliegue se realizó configurando
+GitHub Pages en la sección Settings del repositorio, seleccionando la rama main y la
+carpeta raíz como fuente.
+</p>
+
+<p>
+  <strong>URL de Producción:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">https://closedsource-11848.github.io/ClosedSource-LandingPage/</a>
+</p>
+
+<div align="center">
+  <img src="../assets/img/chapter-V/deployment-evidence-sprint1.png"
+       alt="GitHub Pages Deployment Evidence Sprint 1" width="90%">
+  <p><em>Figura: Configuración de GitHub Pages para el despliegue del Landing Page de QualiTrack.</em></p>
+</div>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 <p>
-  Durante este primer sprint, el esfuerzo principal del equipo de ClosedSource se centró en la estructuración del proyecto, el diseño de UX/UI, la arquitectura de software y la elaboración de los requerimientos técnicos (Capítulos I al IV). Por lo tanto, las evidencias de colaboración de GitHub presentadas a continuación corresponden al repositorio del <strong>Project Report</strong>, sentando las bases documentales y de diseño para la posterior codificación de la plataforma QualiTrack.
+Durante el Sprint 1, el esfuerzo principal del equipo de ClosedSource se centró en dos
+frentes paralelos: la estructuración y codificación del Landing Page, y la elaboración
+de los Capítulos I al IV del Project Report. Las evidencias de colaboración de GitHub
+reflejan ambas líneas de trabajo.
 </p>
 
 <p>
-  En primer lugar, el <strong>Historial de Commits</strong> del repositorio demuestra que el trabajo no fue centralizado, sino altamente colaborativo. A lo largo del sprint, se observa un flujo constante de aportes realizados en diferentes días por distintos miembros del equipo (reflejados a través de sus usuarios de GitHub). Cada integrante se encargó de actualizar y mejorar secciones específicas, como el análisis de entrevistas, el Event Storming o los diagramas de arquitectura, evidenciando un desarrollo incremental y distribuido.
+El <strong>Historial de Commits</strong> del repositorio
+<code>ClosedSource-LandingPage</code> demuestra que el trabajo fue distribuido entre los
+5 integrantes del equipo. Se observa la participación de los usuarios
+<strong>BJRM03</strong> (Ruiz Madrid, Billy), <strong>Dan-trax</strong> (Diaz, Daniel),
+<strong>M4uricioCastillo</strong> (Castillo, Mauricio), <strong>V8Z5</strong>
+(Viza, Marlon) y <strong>Zock2005</strong> (Angulo, Marcelo), realizando commits
+orientados a la implementación de contenido principal, correcciones de la sección Our
+Team, estructura del index y documentos legales.
 </p>
 
 <div align="center">
-  <img src="../assets/img/commit-history-sprint1.png" alt="Commit History Evidence" width="90%">
-  <p><em>Figura: Historial de commits demostrando la participación activa de los miembros del equipo.</em></p>
+  <img src="../assets/img/chapter-V/commit-history-sprint1.png"
+       alt="Commit History Landing Page Sprint 1" width="90%">
+  <p><em>Figura: Historial de commits del repositorio ClosedSource-LandingPage demostrando
+  la participación activa de los miembros del equipo.</em></p>
 </div>
 
 <p>
-  En segundo lugar, el gráfico de <strong>Visitors (Traffic)</strong> proporcionado por los Insights de GitHub demuestra que el repositorio documental mantuvo una actividad de consulta constante. El flujo de "Views" y "Unique visitors" a lo largo de las semanas del sprint confirma que los integrantes del equipo ingresaban recurrentemente al repositorio no solo para subir su parte, sino para revisar el trabajo de sus compañeros, unificar criterios sobre el Ubiquitous Language y validar la coherencia de los diagramas C4 antes del cierre del documento.
+El gráfico de <strong>Contributors</strong> de GitHub Insights confirma que los aportes
+no fueron centralizados en un solo integrante, sino distribuidos a lo largo del sprint.
+Cada miembro realizó contribuciones directas al código del Landing Page, ya sea mediante
+la creación de nuevas secciones, ajustes de contenido, correcciones de estructura o
+implementación de documentos legales, asegurando un desarrollo colaborativo alineado con
+las prácticas ágiles del equipo.
 </p>
 
 <div align="center">
-  <img src="../assets/img/visitors-sprint1.png" alt="Traffic Visitors Graph">
-  <p><em>Figura: Gráfica de visitantes mostrando la revisión constante del repositorio por parte del equipo.</em></p>
+  <img src="../assets/img/chapter-V/contributors-sprint1.png"
+       alt="Contributors Graph Sprint 1" width="90%">
+  <p><em>Figura: Gráfico de Contributors mostrando la distribución de aportes entre los
+  integrantes del equipo ClosedSource durante el Sprint 1.</em></p>
+</div>
+
+<p>
+El <strong>Network Graph</strong> de GitHub refleja que las contribuciones se realizaron
+directamente sobre la rama <code>main</code>, siguiendo un flujo de integración continua
+apropiado para el alcance del Sprint 1 (Landing Page estático). Esta estructura permitió
+que todos los integrantes pudieran ver y revisar los cambios de sus compañeros en tiempo
+real, facilitando la detección temprana de conflictos y la corrección coordinada de la
+sección Our Team, que recibió tres commits de corrección consecutivos por parte de
+diferentes miembros.
+</p>
+
+<div align="center">
+  <img src="../assets/img/chapter-V/network-graph-sprint1.png"
+       alt="Network Graph Sprint 1" width="90%">
+  <p><em>Figura: Network Graph del repositorio ClosedSource-LandingPage mostrando el
+  flujo de commits durante el Sprint 1.</em></p>
 </div>
 
 ### 5.2.2. Sprint 2
