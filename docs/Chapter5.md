@@ -1212,6 +1212,8 @@ diferentes miembros.
   flujo de commits durante el Sprint 1.</em></p>
 </div>
 
+<!-- 
+
 ### 5.2.2. Sprint 2
 
 #### 5.2.2.1. Sprint Planning 2
@@ -1276,11 +1278,17 @@ diferentes miembros.
 
 ## 5.4. Video About-the-Product
 
+comentario -->
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
 
+<!-- 
+
 ## Video About-the-Team
+
+comentario -->
 
 # Bibliografía
 <ul>
