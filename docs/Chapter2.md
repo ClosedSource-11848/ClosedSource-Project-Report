@@ -198,6 +198,8 @@ Teniendo en cuenta la importancia en la información que nos puede proveer los e
 - ¿Qué requisitos de seguridad y cumplimiento serían indispensables para adoptar una plataforma SaaS en el sector público?
 - ¿Qué tipo de capacitación o acompañamiento necesitaría su personal técnico para migrar de registro manual a digital con integración IoT?
 
+<div style="page-break-after: always;"></div>
+
 ### 2.2.2. Registro de entrevistas
 
 En esta sección se presentan los resultados de las entrevistas aplicadas a cada segmento objetivo. Para cada sesión, se incluye: datos del entrevistado, un resumen de las respuestas clave, observaciones del equipo y las principales conclusiones. Este registro sirve como evidencia para orientar las decisiones de diseño y funcionalidades de QualiTrack.
@@ -668,22 +670,22 @@ El User Journey Mapping es una herramienta visual que nos permite "caminar en lo
 
 **1) Segmento objetivo: Gerentes y jefes de Aseguramiento de Calidad (Valeri Castrol)**
 
-<img src="../assets/img/JourneyMapping1.png" alt="Journey Mapping 1" width="auto" height="1900"/>
+<img src="../assets/img/JourneyMapping1.png" alt="Journey Mapping 1" width="auto" height="450"/>
 
 **2) Segmento objetivo: Directores y supervisores de Entidades de Salud Pública (Rosa Amelia Mendoza)**
 
-<img src="../assets/img/JourneyMapping2.png" alt="Journey Mapping 2" width="auto" height="1900"/>
+<img src="../assets/img/JourneyMapping2.png" alt="Journey Mapping 2" width="auto" height="450"/>
 
 ### 2.3.4. Empathy Mapping
 Para crear una solución que realmente se vincula con las personas, no es suficiente con saber qué hacen; Tenemos que comprender lo que sienten. El Empathy Mapping es una herramienta que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno de los usuarios.es un instrumento que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno.los usuarios. Al examine lo que el administrador y los familiares observan, escuchan, dicen y hacen, conseguimos reconocer sus temores y sus deseos.
 
 **1) Segmento objetivo: Gerentes y jefes de Aseguramiento de Calidad**
 
-<img src="../assets/img/EmpathyMapping1.png" alt="Empathy Mapping 1" width="auto" height="1900"/>
+<img src="../assets/img/EmpathyMapping1.png" alt="Empathy Mapping 1" width="auto" height="450"/>
 
 **2) Segmento objetivo: Directores y supervisores de Entidades de Salud Pública**
 
-<img src="../assets/img/EmpathyMapping2.png" alt="Empathy Mapping 2" width="auto" height="1900"/>
+<img src="../assets/img/EmpathyMapping2.png" alt="Empathy Mapping 2" width="auto" height="450"/>
 
 ## 2.4. Big Picture Event Storming
 
@@ -693,13 +695,13 @@ Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados
 
 En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de recopilar todos los eventos pertinentes al dominio, sin importar la secuencia o la jerarquía. El El propósito principal fue ilustrar los sucesos reales del negocio, sin depender de ninguna función técnica o vinculada a un sistema.
 
-<img src="../assets/img/Event-Storming1.jpg" alt="Big Picture Event Storming 1" width="auto" height="1900"/>
+<img src="../assets/img/Event-Storming1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
 
 **Step 2 – Structured Organization**
 
 Luego de enumerar los eventos, el equipo los agrupó en flujos de negocio lógicos que muestran las fases más relevantes en la operación de una casa de reposo. Esta La estructura facilitó la identificación de los procesos fundamentales y las áreas que necesitaban mejoras, las cuales se podrían abordar más tarde a través de soluciones digitales o de gestión.
 
-<img src="../assets/img/Event-Storming2.jpg" alt="Big Picture Event Storming 2" width="auto" height="1900"/>
+<img src="../assets/img/Event-Storming2.jpg" alt="Big Picture Event Storming 2" width="auto" height="450"/>
 
 ## 2.5. Ubiquitous Language
 
