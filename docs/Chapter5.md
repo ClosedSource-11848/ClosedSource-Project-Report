@@ -1508,11 +1508,11 @@ comentario -->
     <tr>
       <td rowspan="2"><strong>Video de Exposición AV1 (Sprint 1)</strong></td>
       <td>YouTube</td>
-      <td><a href="#">[INSERTAR URL YOUTUBE]</a></td>
+      <td><a href="https://shorturl.at/6tJNG">[https://shorturl.at/6tJNG]</a></td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="#">[INSERTAR URL STREAM]</a></td>
+      <td><a href="https://shorturl.at/VP26T">[https://shorturl.at/VP26T]</a></td>
     </tr>
   </tbody>
 </table>
