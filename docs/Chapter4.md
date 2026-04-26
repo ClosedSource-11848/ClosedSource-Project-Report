@@ -1010,7 +1010,7 @@ operación, cumpliendo con los requisitos de Data Integrity exigidos por DIGEMID
 
 #### Diagrama de base de datos completo:
 
-![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg)
+![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg&v=2)
 
 <h3><strong>Diagrama de base de datos dividido por contextos:</strong></h3>
 
