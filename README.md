@@ -306,7 +306,7 @@ A continuación se presentan los gráficos de colaboración que representan la c
 de commits realizados por cada miembro del equipo en el repositorio del informe.
 
 <div align="center">
-  <img src="./assets/img/Readme/commits-av1-1.png" alt="Commits AV1 - Gráfico 1" width="90%">
+  <img src="./assets/img/Readme/commits-av1-1.jpeg" alt="Commits AV1 - Gráfico 1" width="90%">
   <p><em>Figura: Contribuciones por miembro del equipo ClosedSource durante el AV1.</em></p>
 </div>
 
@@ -317,7 +317,7 @@ registradas durante la fase AV1, evidenciando el flujo de trabajo colaborativo
 del equipo.
 
 <div align="center">
-  <img src="./assets/img/Readme/network-av1.png" alt="Network Graph AV1" width="90%">
+  <img src="./assets/img/Readme/network-av1.jpeg" alt="Network Graph AV1" width="90%">
   <p><em>Figura: Network Graph del repositorio ClosedSource-Project-Report durante el AV1.</em></p>
 </div>
 
