@@ -427,8 +427,15 @@ El diseño se elaboró siguiendo principios de usabilidad, accesibilidad, consis
 <img src="../assets/img/mobile3.png" alt="mobile3" style="width:auto; height:auto; border:2px solid #00bfff;">
 <img src="../assets/img/mobile4.png" alt="mobile4" style="width:auto; height:auto; border:2px solid #00bfff;">
 <img src="../assets/img/mobile5.png" alt="mobile5" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../assets/img/mobile6-corregido.png" alt="mobile6" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../assets/img/mobile7.png" alt="Historial Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile6.png" alt="mobile6" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile7.png" alt="mobile7" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile8.png" alt="mobile8" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile9.png" alt="mobile9" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile10.png" alt="mobile10" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile11.png" alt="mobile11" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile12.png" alt="mobile12" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile13.png" alt="mobile13" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/mobile14.png" alt="mobile14" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
