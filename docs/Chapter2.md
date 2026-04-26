@@ -198,6 +198,8 @@ Teniendo en cuenta la importancia en la información que nos puede proveer los e
 - ¿Qué requisitos de seguridad y cumplimiento serían indispensables para adoptar una plataforma SaaS en el sector público?
 - ¿Qué tipo de capacitación o acompañamiento necesitaría su personal técnico para migrar de registro manual a digital con integración IoT?
 
+<div style="page-break-after: always;"></div>
+
 ### 2.2.2. Registro de entrevistas
 
 En esta sección se presentan los resultados de las entrevistas aplicadas a cada segmento objetivo. Para cada sesión, se incluye: datos del entrevistado, un resumen de las respuestas clave, observaciones del equipo y las principales conclusiones. Este registro sirve como evidencia para orientar las decisiones de diseño y funcionalidades de QualiTrack.
@@ -364,61 +366,6 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             Explica que la auditoría abarca el sistema completo: calidad, mantenimiento, control y cantidad. La preparación implica verificar los datos desde un tiempo prudente, indicando que el promedio es de 4 semanas de registro cuidadoso.
             <br> <br>
             Finalmente, señala que la disponibilidad de sistemas IoT es alta debido a las actualizaciones y estándares del sector, y comenta que un sistema de registro más sencillo podría ser de gran ayuda.
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<table>
-    <colgroup></colgroup>
-    <thead>
-        <tr>
-            <th colspan="2">Entrevista #4<br></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Nombre</td>
-            <td>Patricia</td>
-        </tr>
-        <tr>
-            <td>Apellidos</td>
-            <td>Navarro]/td>
-        </tr>
-        <tr>
-            <td>Edad</td>
-            <td>32 años</td>
-        </tr>
-        <tr>
-            <td>Distrito</td>
-            <td>Santa anita</td>
-        </tr>
-        <tr>
-            <td>Evidencia</td>
-            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista4.png" alt="Entrevista"></div></td>
-        </tr>
-        <tr>
-            <td>Link</td>
-            <td><p><a target="_blank" href="https://acortar.link/Xdz3pq" title="Title">https://acortar.link/Xdz3pq</a></p></td>
-        </tr>
-        <tr>
-            <td>Timing donde inicia la entrevista<br></td>
-            <td>00:36 min</td>
-        </tr>
-        <tr>
-            <td>Duración de la entrevista<br></td>
-            <td>7:05 min</td>
-        </tr>
-        <tr>
-            <td>Resumen</td>
-            <td>
-            La entrevistada es Química Farmacéutica titulada con una Maestría en Gestión de la Calidad y Excelencia Operacional. Actualmente se desempeña como Jefa de Aseguramiento de Calidad en los Laboratorios AC Farma, donde lidera un equipo de analistas y supervisores enfocados en el sistema preventivo, la liberación de lotes y la gestión de riesgos para mantener el laboratorio preparado ante inspecciones regulatorias.
-            <br> <br>
-            En cuanto a la trazabilidad y registro, señala que utilizan el sistema SAP para la logística, pero los controles de manufactura fina aún se realizan de forma manual. Las variables críticas de equipos como autoclaves se monitorean con data loggers que deben imprimirse y adjuntarse físicamente a los registros (Batch Records). Esto genera un proceso lento donde la búsqueda del historial de un lote puede tomar horas, además de representar un alto riesgo de pérdida de tickets o datos ilegibles que derivan en investigaciones por desviaciones.
-            <br> <br>
-            Respecto a las auditorías de DIGEMID, menciona que el enfoque actual es muy estricto con la integridad de datos. Recientemente recibieron observaciones preventivas sobre el control de accesos a equipos computarizados, ya que el sistema manual resulta insuficiente para demostrar la originalidad al 100%. Preparar esta documentación les exige semanas de trabajo administrativo de "limpieza" de expedientes, restando valor operativo.
-            <br> <br>
-            Finalmente, muestra una disposición total a digitalizar el proceso mediante una plataforma que capture datos de sensores en tiempo real y admita firmas confiables. Identifica como principales barreras el costo inicial de validación percibido por la alta dirección y la resistencia cultural de los operarios más antiguos, retos que asume con el objetivo de usar la tecnología para prevenir errores y asegurar el cumplimiento legal.
             </td>
         </tr>
     </tbody>
@@ -723,22 +670,22 @@ El User Journey Mapping es una herramienta visual que nos permite "caminar en lo
 
 **1) Segmento objetivo: Gerentes y jefes de Aseguramiento de Calidad (Valeri Castrol)**
 
-<img src="../assets/img/JourneyMapping1.png" alt="Journey Mapping 1" width="auto" height="1900"/>
+<img src="../assets/img/JourneyMapping1.png" alt="Journey Mapping 1" width="auto" height="450"/>
 
 **2) Segmento objetivo: Directores y supervisores de Entidades de Salud Pública (Rosa Amelia Mendoza)**
 
-<img src="../assets/img/JourneyMapping2.png" alt="Journey Mapping 2" width="auto" height="1900"/>
+<img src="../assets/img/JourneyMapping2.png" alt="Journey Mapping 2" width="auto" height="450"/>
 
 ### 2.3.4. Empathy Mapping
 Para crear una solución que realmente se vincula con las personas, no es suficiente con saber qué hacen; Tenemos que comprender lo que sienten. El Empathy Mapping es una herramienta que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno de los usuarios.es un instrumento que nos posibilita ir más allá de la información demográfica y adentrarnos en el mundo interno.los usuarios. Al examine lo que el administrador y los familiares observan, escuchan, dicen y hacen, conseguimos reconocer sus temores y sus deseos.
 
 **1) Segmento objetivo: Gerentes y jefes de Aseguramiento de Calidad**
 
-<img src="../assets/img/EmpathyMapping1.png" alt="Empathy Mapping 1" width="auto" height="1900"/>
+<img src="../assets/img/EmpathyMapping1.png" alt="Empathy Mapping 1" width="auto" height="450"/>
 
 **2) Segmento objetivo: Directores y supervisores de Entidades de Salud Pública**
 
-<img src="../assets/img/EmpathyMapping2.png" alt="Empathy Mapping 2" width="auto" height="1900"/>
+<img src="../assets/img/EmpathyMapping2.png" alt="Empathy Mapping 2" width="auto" height="450"/>
 
 ## 2.4. Big Picture Event Storming
 
@@ -748,13 +695,13 @@ Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados
 
 En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de recopilar todos los eventos pertinentes al dominio, sin importar la secuencia o la jerarquía. El El propósito principal fue ilustrar los sucesos reales del negocio, sin depender de ninguna función técnica o vinculada a un sistema.
 
-<img src="../assets/img/Event-Storming1.jpg" alt="Big Picture Event Storming 1" width="auto" height="1900"/>
+<img src="../assets/img/Event-Storming1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
 
 **Step 2 – Structured Organization**
 
 Luego de enumerar los eventos, el equipo los agrupó en flujos de negocio lógicos que muestran las fases más relevantes en la operación de una casa de reposo. Esta La estructura facilitó la identificación de los procesos fundamentales y las áreas que necesitaban mejoras, las cuales se podrían abordar más tarde a través de soluciones digitales o de gestión.
 
-<img src="../assets/img/Event-Storming2.jpg" alt="Big Picture Event Storming 2" width="auto" height="1900"/>
+<img src="../assets/img/Event-Storming2.jpg" alt="Big Picture Event Storming 2" width="auto" height="450"/>
 
 ## 2.5. Ubiquitous Language
 
