@@ -651,7 +651,7 @@ Las tareas principales (atender una alerta de desviación, investigar su causa, 
 
 La navegación sea intuitiva para usuarios con distintos niveles tecnológicos, desde operarios hasta QA Managers.
 
-<img src="assets/img/prototypy.png" alt="ContextDiagram Diagram">
+<img src="../assets/img/prototypy.png" alt="ContextDiagram-Diagram" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 https://shorturl.at/kcHKY
 
