@@ -898,49 +898,49 @@ y la reutilización de código entre contextos.
 
 #### Diagrama del frontend completo:
 
-![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg)
+![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=2)
 
 <h3><strong>Diagrama del frontend dividido por contextos:</strong></h3>
 
 <h4>iam frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, roles y permisos de acceso.</p>
 
-![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg)
+![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>laboratory management frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de información institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y gestión de personal técnico.</p>
 
-![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg)
+![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>equipment management frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de registro de equipos industriales, vinculación IoT, configuración de parámetros BPM, historial de mantenimientos y alertas de calibración.</p>
 
-![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg)
+![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>tracking frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría en tiempo real, historial de variables críticas (temperatura, presión, pH) y panel de estado de equipos IoT conectados.</p>
 
-![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg)
+![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>compliance & alerting frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de historial de alertas BPM, detalle de desviaciones detectadas, configuración de canales de notificación y panel de compliance regulatorio.</p>
 
-![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg)
+![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>batch management frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de gestión de lotes de producción, trazabilidad de materias primas, flujos de liberación digital y rechazo documentado de lotes no conformes.</p>
 
-![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg)
+![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>reporting & audit frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, generación y descarga de reportes PDF de trazabilidad inmutables y exportación de logs de eventos de equipos para auditorías DIGEMID.</p>
 
-![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg)
+![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=2)
 
 <h4>shared frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja los componentes comunes, utilidades, clases base, guards de autenticación, interceptores HTTP, servicios compartidos y patrones reutilizables entre módulos.</p>
 
-![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg)
+![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=2)
 
 <div style="page-break-after: always;"></div>
 
