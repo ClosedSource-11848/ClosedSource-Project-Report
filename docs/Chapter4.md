@@ -492,6 +492,169 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
 ## 4.5. Web Applications Prototyping
 
+La sección de Web Applications Prototyping presenta los prototipos interactivos diseñados para la versión Desktop y Mobile Web de QualiTrack. Estos prototipos permiten simular la navegación real dentro de la plataforma y visualizar cómo los usuarios recorren los principales paths definidos en los User Flow Diagrams.
+
+Las decisiones de interacción tomadas en esta etapa responden a tres criterios fundamentales:
+
+- Claridad y eficiencia operativa, especialmente considerando que los operarios y supervisores requieren acceder a datos críticos en entornos de producción donde cada segundo cuenta.
+
+- Rapidez de acceso a la información de cumplimiento, alineada con la necesidad de monitorear telemetría IoT en tiempo real y atender alertas de desviación BPM antes de que afecten la calidad del lote.
+
+- Consistencia visual y funcional, asegurando que las interacciones sean predecibles y estén alineadas con el Design System de QualiTrack, reflejando la rigurosidad exigida por DIGEMID.
+  <br>
+
+**Criterios que guiaron las decisiones de interacción**
+
+1. Arquitectura de Información basada en prioridades del usuario
+
+La estructura del contenido se organizó priorizando los elementos más consultados por los Jefes de Aseguramiento de la Calidad y los Operarios de planta.
+
+- Telemetría en tiempo real
+
+- Estado y trazabilidad de lotes activos
+
+- Alertas de desviación y bloqueo automático
+
+- Registro y liberación digital de lotes
+
+- Historial de auditoría y reportes PDF
+
+- Configuración de equipos y parámetros BPM
+
+Estos componentes se ubicaron en zonas de acceso rápido tanto en desktop como en mobile, asegurando rutas de navegación cortas y directas.
+
+<br>
+
+2. Navegación clara y consistente
+
+Se optó por un sistema de navegación híbrido:
+
+En desktop, un menú superior horizontal que mantiene visibles las secciones principales.
+
+En mobile, un menú inferior tipo tab-bar para accesos frecuentes y un menú hamburguesa para secciones secundarias.
+
+Esta decisión refleja la arquitectura de información previamente definida y garantiza que las rutas de navegación coincidan con los User Flow Diagrams propuestos.
+
+<br>
+
+3. Interacciones basadas en patrones familiares
+
+Para reducir la curva de aprendizaje se utilizaron patrones estándar, como:
+
+- Tarjetas para resumir el estado de cada equipo IoT y sus últimas mediciones.
+
+- Gráficos en tiempo real para visualizar la evolución de variables críticas.
+
+- Acordeones para desglosar el historial de alertas por lote o equipo.
+
+- Iconos universales (alerta, bloqueo, liberación, calibración).
+
+- Transiciones suaves que evitan saturar la experiencia durante la actualización de datos.
+
+<br>
+
+4. Principios de diseño inclusivo
+
+Los prototipos consideran la diversidad de entornos donde se usa QualiTrack:
+
+- Tipografías legibles y de alto contraste para pantallas industriales con iluminación variable.
+
+- Botones amplios y bien espaciados para facilitar el uso con guantes o en dispositivos táctiles.
+
+- Lenguaje visual claro y directo, utilizando colores funcionales (verde = conforme, rojo = desviación, amarillo = advertencia).
+
+Los prototipos desktop muestran una interfaz amplia, optimizada para Jefes de Aseguramiento de la Calidad (QA Manager) y supervisores que consultan información desde una laptop o PC en la sala de control. Entre los elementos destacados:
+
+• Dashboard principal
+
+Vista general del cumplimiento BPM del laboratorio.
+
+Resumen de lotes activos y su estado de trazabilidad.
+
+Gráficos en tiempo real de telemetría (temperatura, presión, pH).
+
+<br>
+
+• Navegación superior
+
+Acceso rápido a Dashboard, Lotes, Equipos, Alertas, Reportes y Configuración.
+
+Persistencia visual para orientar al usuario.
+
+<br>
+
+• Secciones modulares
+
+El contenido se divide en bloques visuales que permiten una lectura rápida:
+
+Tarjetas de estado de cada equipo IoT con sus últimas mediciones.
+
+Tablas de trazabilidad de lotes y materias primas.
+
+Calendarios interactivos para mantenimientos y calibraciones.
+
+Panel lateral con alertas de desviación no atendidas.
+
+La versión móvil prioriza la usabilidad y accesibilidad para operarios de planta que se desplazan por el laboratorio, manteniendo la esencia visual del desktop pero adaptada a pantallas reducidas.
+
+<br>
+
+• Home simplificado
+
+Resumen instantáneo de alertas activas, último lote en producción y estado de conexión de los equipos IoT.
+
+Acceso directo a alertas, lotes activos y telemetría crítica.
+
+<br>
+
+• Tab-Bar inferior
+
+Incluye 4 accesos principales:
+
+Telemetría
+
+Alertas
+
+Lotes
+
+Perfil
+
+Esto reduce la carga cognitiva y facilita el uso con una sola mano.
+
+<br>
+
+• Menú hamburguesa
+
+Incluye secciones secundarias como Reportes de auditoría, Configuración de equipos, Logs de cumplimiento y Ayuda. Se evita sobrecargar la pantalla principal.
+
+<br>
+
+• Interacción táctil optimizada
+
+Botones grandes y espaciados.
+
+Acordeones y sliders fáciles de usar.
+
+Scroll vertical continuo para favorecer fluidez.
+
+<br>
+
+**Relación con los User Flow Diagrams**
+
+Cada prototipo fue diseñado respetando los recorridos definidos en los User Flows, garantizando que:
+
+Las pantallas aparezcan en el orden lógico previsto.
+
+No existan rutas muertas o pasos innecesarios.
+
+Las tareas principales (atender una alerta de desviación, investigar su causa, completar la investigación, guardar configuración de equipos) se completen con la menor cantidad de clics posible.
+
+La navegación sea intuitiva para usuarios con distintos niveles tecnológicos, desde operarios hasta QA Managers.
+
+![ContextDiagram Diagram](assets/img/prototypy.png)
+
+https://shorturl.at/kcHKY
+
 ## 4.6. Domain-Driven Software Architecture
 
 La arquitectura de QualiTrack se fundamenta en Domain-Driven Design (DDD) para modelar con precisión las reglas de negocio del sector farmacéutico, incluyendo el cumplimiento BPM, la integración IoT y la trazabilidad inmutable exigida por DIGEMID. Mediante la delimitación de bounded contexts, se separan claramente las responsabilidades de cada subsistema. En esta sección se presentan los resultados del Event Storming, así como los diagramas de contexto, contenedores y componentes que estructuran la solución.
