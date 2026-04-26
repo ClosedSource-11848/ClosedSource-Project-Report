@@ -369,61 +369,6 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
     </tbody>
 </table>
 
-<table>
-    <colgroup></colgroup>
-    <thead>
-        <tr>
-            <th colspan="2">Entrevista #4<br></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Nombre</td>
-            <td>Patricia</td>
-        </tr>
-        <tr>
-            <td>Apellidos</td>
-            <td>Navarro]/td>
-        </tr>
-        <tr>
-            <td>Edad</td>
-            <td>32 años</td>
-        </tr>
-        <tr>
-            <td>Distrito</td>
-            <td>Santa anita</td>
-        </tr>
-        <tr>
-            <td>Evidencia</td>
-            <td><div align="center"><img src="../assets/img/Segmento1-Entrevista4.png" alt="Entrevista"></div></td>
-        </tr>
-        <tr>
-            <td>Link</td>
-            <td><p><a target="_blank" href="https://acortar.link/Xdz3pq" title="Title">https://acortar.link/Xdz3pq</a></p></td>
-        </tr>
-        <tr>
-            <td>Timing donde inicia la entrevista<br></td>
-            <td>00:36 min</td>
-        </tr>
-        <tr>
-            <td>Duración de la entrevista<br></td>
-            <td>7:05 min</td>
-        </tr>
-        <tr>
-            <td>Resumen</td>
-            <td>
-            La entrevistada es Química Farmacéutica titulada con una Maestría en Gestión de la Calidad y Excelencia Operacional. Actualmente se desempeña como Jefa de Aseguramiento de Calidad en los Laboratorios AC Farma, donde lidera un equipo de analistas y supervisores enfocados en el sistema preventivo, la liberación de lotes y la gestión de riesgos para mantener el laboratorio preparado ante inspecciones regulatorias.
-            <br> <br>
-            En cuanto a la trazabilidad y registro, señala que utilizan el sistema SAP para la logística, pero los controles de manufactura fina aún se realizan de forma manual. Las variables críticas de equipos como autoclaves se monitorean con data loggers que deben imprimirse y adjuntarse físicamente a los registros (Batch Records). Esto genera un proceso lento donde la búsqueda del historial de un lote puede tomar horas, además de representar un alto riesgo de pérdida de tickets o datos ilegibles que derivan en investigaciones por desviaciones.
-            <br> <br>
-            Respecto a las auditorías de DIGEMID, menciona que el enfoque actual es muy estricto con la integridad de datos. Recientemente recibieron observaciones preventivas sobre el control de accesos a equipos computarizados, ya que el sistema manual resulta insuficiente para demostrar la originalidad al 100%. Preparar esta documentación les exige semanas de trabajo administrativo de "limpieza" de expedientes, restando valor operativo.
-            <br> <br>
-            Finalmente, muestra una disposición total a digitalizar el proceso mediante una plataforma que capture datos de sensores en tiempo real y admita firmas confiables. Identifica como principales barreras el costo inicial de validación percibido por la alta dirección y la resistencia cultural de los operarios más antiguos, retos que asume con el objetivo de usar la tecnología para prevenir errores y asegurar el cumplimiento legal.
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 **Segmento 2: Directores y supervisores de Entidades de Salud Pública**
 
 <table>
