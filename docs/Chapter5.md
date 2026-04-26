@@ -1173,26 +1173,10 @@ Team, estructura del index y documentos legales.
 </p>
 
 <div align="center">
-  <img src="../assets/img/chapter-V/commit-history-sprint1.png"
+  <img src="../assets/img/commits-av1-1.jpeg"
        alt="Commit History Landing Page Sprint 1" width="90%">
   <p><em>Figura: Historial de commits del repositorio ClosedSource-LandingPage demostrando
   la participación activa de los miembros del equipo.</em></p>
-</div>
-
-<p>
-El gráfico de <strong>Contributors</strong> de GitHub Insights confirma que los aportes
-no fueron centralizados en un solo integrante, sino distribuidos a lo largo del sprint.
-Cada miembro realizó contribuciones directas al código del Landing Page, ya sea mediante
-la creación de nuevas secciones, ajustes de contenido, correcciones de estructura o
-implementación de documentos legales, asegurando un desarrollo colaborativo alineado con
-las prácticas ágiles del equipo.
-</p>
-
-<div align="center">
-  <img src="../assets/img/chapter-V/contributors-sprint1.png"
-       alt="Contributors Graph Sprint 1" width="90%">
-  <p><em>Figura: Gráfico de Contributors mostrando la distribución de aportes entre los
-  integrantes del equipo ClosedSource durante el Sprint 1.</em></p>
 </div>
 
 <p>
@@ -1206,7 +1190,7 @@ diferentes miembros.
 </p>
 
 <div align="center">
-  <img src="../assets/img/chapter-V/network-graph-sprint1.png"
+  <img src="../assets/img/network-av1.jpeg"
        alt="Network Graph Sprint 1" width="90%">
   <p><em>Figura: Network Graph del repositorio ClosedSource-LandingPage mostrando el
   flujo de commits durante el Sprint 1.</em></p>
