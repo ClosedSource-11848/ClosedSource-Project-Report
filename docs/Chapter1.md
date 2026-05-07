@@ -148,31 +148,38 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 | 11 | Reduciremos ese riesgo con interfaces de usuario simplificadas para operarios y dashboards de fácil lectura para supervisores.                  |
 | 12 | Si se demuestra que la integración de hardware es muy compleja para el cliente, pivotaremos hacia una solución de gestión documental robusta.   |
 
-**Supuestos por dimensión**
+**Business Assumptions:**
+* Existe un mercado crítico de laboratorios farmacéuticos medianos y entidades de salud pública (como el INS) en Perú y LATAM que necesitan digitalizar su telemetría para sobrevivir a las regulaciones.
+* Los directores y gerentes de calidad están dispuestos a invertir en una plataforma SaaS B2B si perciben que elimina el riesgo de multas de la DIGEMID y la pérdida total de lotes de producción.
+* Los laboratorios pueden asumir un modelo de suscripción (basado en el volumen de lotes gestionados o cantidad de sensores IoT conectados) si el retorno de inversión se refleja en la reducción de mermas.
+* La automatización de la captura de datos (pH, temperatura, presión) genera una garantía de "Integridad de Datos" que compensa económicamente la curva de aprendizaje inicial del personal de planta.
+* El modelo de QualiTrack es escalable a otros países de la región, ya que las normativas de Buenas Prácticas de Manufactura (BPM) son similares en toda Latinoamérica.
 
-**Business Assumptions**
-* Asumimos que los laboratorios farmacéuticos y entidades como el INS enfrentan una presión regulatoria creciente que hace insostenible el registro manual.
-* Asumimos que las instituciones están dispuestas a invertir en una solución SaaS para evitar multas de DIGEMID y reducir la merma de productos.
-* Asumimos que el modelo de suscripción basado en volumen de datos o equipos es escalable y aceptado por la industria farmacéutica.
-* Asumimos que nuestra principal ventaja competitiva es la garantía de "Integridad de Datos" (Data Integrity) mediante la automatización IoT.
+**Business Outcomes:**
+* Queremos que los laboratorios farmacéuticos adopten QualiTrack como su Sistema de Gestión de Calidad (QMS) principal, abandonando definitivamente los registros en papel y Excel.
+* Esperamos reducir en un 80% el tiempo que invierten las empresas en la preparación y recopilación de documentos para las auditorías de DIGEMID.
+* Buscamos disminuir en un 15% la pérdida de lotes de medicamentos mediante la detección temprana de fallas en las variables críticas.
+* Aspiramos a conseguir la suscripción de 2 laboratorios piloto en los primeros 8 meses para validar la estabilidad de la integración IoT.
+* Buscamos que QualiTrack se posicione como el "estándar de oro" en trazabilidad inmutable frente a los auditores regulatorios.
 
-**User Assumptions**
-* Asumimos que los principales usuarios serán Directores Técnicos, Jefes de Aseguramiento de la Calidad (QA) y operarios de planta.
-* Asumimos que los Jefes de QA necesitan dashboards de supervisión remota para liberar lotes sin estar físicamente en la línea de producción.
-* Asumimos que los operarios de laboratorio adoptarán la plataforma si esta simplifica su flujo de trabajo y elimina la carga de llenar bitácoras físicas.
-* Asumimos que los auditores regulatorios aceptarán los reportes digitales de QualiTrack como evidencia válida e inmutable.
+**User Assumptions:**
+* Los Jefes de Aseguramiento de la Calidad (QA) necesitan dashboards remotos para supervisar la producción y liberar lotes sin tener que estar físicamente al lado de la maquinaria.
+* Los operarios de planta adoptarán el sistema rápidamente si este elimina la tediosa tarea de transcribir datos de las pantallas de las máquinas a bitácoras de papel.
+* Los supervisores públicos (ej. INS) valoran la inmediatez de las alertas automatizadas por encima de los reportes retrospectivos.
+* Los auditores de la DIGEMID aceptarán la validez de los reportes digitales generados por el sistema si estos cuentan con firmas digitales y registros inmutables.
+* Existe un rechazo natural al cambio tecnológico en la planta, el cual se vencerá si la interfaz del operario es lo suficientemente minimalista e intuitiva.
 
-**Problem Assumptions**
-* Asumimos que los registros manuales actuales son la causa principal de las observaciones en auditorías y de la liberación de lotes defectuosos.
-* Asumimos que la falta de centralización de la telemetría (pH, temperatura, presión) impide una respuesta rápida ante fallas mecánicas en equipos industriales.
-* Asumimos que la trazabilidad física fragmentada hace que el análisis de causa raíz ante una desviación de calidad sea lento y costoso.
-* Asumimos que existe un riesgo crítico de manipulación o pérdida de datos en los sistemas actuales basados en papel o Excel.
+**User Outcomes:**
+* Los Jefes de Calidad reportan cero estrés durante las inspecciones inopinadas, ya que tienen toda la documentación a un clic de distancia.
+* Los operarios de laboratorio reducen el tiempo dedicado a labores administrativas y se enfocan en la correcta operación de los equipos de esterilización y manufactura.
+* Los supervisores detectan desviaciones térmicas o de presión en tiempo real, bloqueando lotes defectuosos antes de que avancen en la cadena de suministro.
+* Las decisiones de liberación o rechazo de un medicamento se basan en métricas exactas extraídas por hardware, eliminando el error de transcripción humana.
 
-**Solution Assumptions**
-* Asumimos que una plataforma digital centralizada y auditable (QMS) reducirá drásticamente el tiempo de preparación para inspecciones.
-* Asumimos que la integración IoT eliminará el error de transcripción humana en las variables críticas de control.
-* Asumimos que el sistema de alertas automáticas permitirá bloquear lotes no conformes antes de que avancen en la cadena de suministro.
-* Asumimos que la arquitectura SaaS facilitará el cumplimiento normativo sin que el laboratorio deba gestionar servidores locales complejos.
+**Features:**
+* **Dashboard de Monitoreo IoT en tiempo real:** Interfaz que centraliza la telemetría (pH, temperatura, presión) capturada directamente por los sensores de las máquinas, accesible por roles.
+* **Motor de Compliance y Alertas Automáticas:** Sistema que evalúa los datos entrantes contra los umbrales de las normativas BPM y envía notificaciones push/email inmediatas si hay desviaciones.
+* **Gestor Inmutable de Lotes:** Módulo que registra todo el ciclo de vida de un lote de producción, bloqueándolo automáticamente si detecta fallas críticas de calidad.
+* **Generador de Reportes Regulatorios:** Herramienta para exportar expedientes completos en PDF con firmas digitales, listos para ser presentados ante auditores de la DIGEMID.
 
 **Assumptions Priority (riesgo x incertidumbre)**
 
@@ -182,23 +189,6 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 |         2 | La plataforma cumple con los estándares de seguridad de datos exigidos por DIGEMID para auditorías digitales.       |  Alto  |     Medio     |
 |         3 | El personal de aseguramiento de calidad preferirá el dashboard digital sobre las bitácoras físicas actuales.        |  Alto  |     Alto      |
 |         4 | Los laboratorios están dispuestos a pagar una suscripción recurrente en lugar de comprar un software de pago único. |  Medio |     Bajo      |
-
-**Business Outcomes:**
-* Lograr que al menos 2 laboratorios piloto implementen QualiTrack en sus líneas de producción en los primeros 8 meses.
-* Reducir en un 80% el tiempo de preparación de documentos para auditorías regulatorias en las instituciones piloto.
-* Disminuir en un 15% la pérdida de lotes por desviaciones de parámetros no detectadas a tiempo.
-
-**User Outcomes:**
-* Lograr que los supervisores de calidad firmen y liberen lotes de forma digital en menos de 10 minutos tras finalizar la producción.
-* Reducir el error humano en el registro de variables críticas a un valor cercano al 0% mediante la automatización IoT.
-* Lograr que los operarios visualicen alertas de desviación de parámetros en menos de 5 segundos a través de la plataforma móvil/web.
-
-**Features:**
-1. Módulo de registro de lotes e historial de fabricación inmutable.
-2. Integración con sensores IoT (simulados/reales) para captura de pH, temperatura y presión.
-3. Dashboard de monitoreo en tiempo real con indicadores de cumplimiento BPM.
-4. Sistema de alertas automáticas y bloqueo preventivo de lotes fuera de rango.
-5. Generación de reportes de trazabilidad listos para auditoría en formato PDF no editable.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
