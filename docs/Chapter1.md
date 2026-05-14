@@ -161,11 +161,11 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 * Las decisiones de liberación o rechazo de medicamentos se basan en datos capturados directamente por hardware, eliminando errores asociados a la transcripción manual.
 
 **Features:**
-* **Captura Automática de Variables mediante Sensores IoT:** Integración de sensores IoT en equipos industriales para capturar automáticamente variables críticas como pH, temperatura y presión, eliminando la transcripción manual y reduciendo el error humano en los registros de calidad.
-* **Sistema de Alertas Operativas en Tiempo Real:** Sistema que detecta desviaciones de parámetros frente a los umbrales definidos por las Buenas Prácticas de Manufactura (BPM) y notifica en tiempo real al operario de planta para una atención inmediata de eventos críticos.
-* **Módulo de Trazabilidad Digital Inmutable:** Componente que registra de forma digital e inmutable todo el ciclo de vida de los lotes de producción, asegurando la integridad de la información y la trazabilidad completa de los procesos de manufactura.
-* **Firma Digital para Liberación Remota de Lotes:** Funcionalidad que permite a supervisores y jefes de aseguramiento de la calidad liberar lotes mediante firmas digitales desde cualquier dispositivo autorizado, reduciendo tiempos de aprobación y dependencia de procesos presenciales.
-* **Plataforma Centralizada como Reemplazo del Registro Manual:** Plataforma integral de gestión de calidad que consolida monitoreo, alertas, trazabilidad y documentación regulatoria, reemplazando los registros manuales en papel y Excel por una fuente única y confiable de información.
+* **Disponibilidad confiable de datos operativos críticos:** Capacidad del sistema para disponer de información precisa y continua sobre variables críticas del proceso productivo, reduciendo la dependencia de registros humanos y asegurando consistencia en los datos utilizados para control de calidad.
+* **Capacidad de reacción inmediata ante eventos de riesgo:** Capacidad del sistema para advertir oportunamente sobre desviaciones relevantes durante la operación, permitiendo que el personal responsable actúe sin demoras ante condiciones que comprometan la calidad del producto.
+* **Conservación íntegra y verificable de la información de producción:** Capacidad del sistema para mantener un registro completo, confiable y no alterable de la información asociada a los procesos y lotes, de manera que pueda ser consultada y utilizada como evidencia cuando sea necesario.
+* **Autorización digital descentralizada de decisiones críticas:** Capacidad del sistema para permitir que las decisiones de liberación o aprobación se realicen de forma digital y remota, sin depender de presencia física ni de flujos manuales tradicionales.
+* **Sustitución del registro manual como fuente principal de información:** Capacidad del sistema para consolidarse como la fuente central y más confiable de información operativa y regulatoria, desplazando progresivamente los registros manuales y hojas de cálculo en la gestión de calidad.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
