@@ -28,8 +28,8 @@
       <td>
         <strong>Escenario 1: Navegación exitosa</strong><br>
         <strong>Dado que</strong> el visitante se encuentra en la landing page<br>
-        <strong>Cuando</strong> la navegación principal carga correctamente<br>
-        <strong>Entonces</strong> el visitante accede a las secciones de inicio, características, planes y contacto.<br><br>
+        <strong>Cuando</strong> la navegación principal es desplegada<br>
+        <strong>Entonces</strong> el sistema desplaza al usuario a la sección correspondiente en menos de 2 segundos.<br><br>
         <strong>Escenario 2: Navegación no disponible</strong><br>
         <strong>Dado que</strong> el servicio web presenta una falla temporal<br>
         <strong>Cuando</strong> el visitante accede a la navegación<br>
@@ -43,12 +43,12 @@
       <td>
         <strong>Escenario 1: Visualización de planes disponibles</strong><br>
         <strong>Dado que</strong> el visitante navega a la sección de planes<br>
-        <strong>Cuando</strong> los planes están disponibles en el sistema<br>
-        <strong>Entonces</strong> el visitante visualiza la lista de planes con sus precios y características detalladas.<br><br>
+        <strong>Cuando</strong> el sistema carga la información de suscripciones<br>
+        <strong>Entonces</strong>el visitante visualiza cada plan con nombre, precio mensual, límite de usuarios y funcionalidades incluidas.<br><br>
         <strong>Escenario 2: Planes no disponibles</strong><br>
         <strong>Dado que</strong> ocurre un error de carga en la sección de planes<br>
         <strong>Cuando</strong> el visitante accede al contenido<br>
-        <strong>Entonces</strong> el sistema informa sobre la indisponibilidad temporal del contenido.
+        <strong>Entonces</strong> el sistema muestra un mensaje indicando que los planes no están disponibles temporalmente.
       </td>
     </tr>
     <tr>
@@ -58,12 +58,12 @@
       <td>
         <strong>Escenario 1: Acceso a información del equipo</strong><br>
         <strong>Dado que</strong> el visitante navega a la sección del equipo<br>
-        <strong>Cuando</strong> la información del equipo está disponible<br>
-        <strong>Entonces</strong> el visitante visualiza los perfiles de los creadores incluyendo nombres, roles y especialidades.<br><br>
+        <strong>Cuando</strong> el sistema carga la información correctamente<br>
+        <strong>Entonces</strong> el visitante visualiza el nombre, rol y especialidad de cada integrante del equipo.<br><br>
         <strong>Escenario 2: Información del equipo no disponible</strong><br>
-        <strong>Dado que</strong> ocurre un error de carga en la sección del equipo<br>
+        <strong>Dado que</strong> que ocurre un error de carga en la sección del equipo<br>
         <strong>Cuando</strong> el visitante accede a la información<br>
-        <strong>Entonces</strong> el sistema informa sobre la indisponibilidad temporal.
+        <strong>Entonces</strong> el sistema muestra un mensaje indicando que la información no está disponible temporalmente.
       </td>
     </tr>
     <tr>
@@ -82,7 +82,7 @@
         <strong>Escenario 3: Error en el envío</strong><br>
         <strong>Dado que</strong> ocurre un error en el servicio de envío<br>
         <strong>Cuando</strong> el visitante envía la consulta<br>
-        <strong>Entonces</strong> el sistema informa sobre el error y sugiere reintentar.
+        <strong>Entonces</strong> el sistema muestra un mensaje de error y permite reenviar el formulario.
       </td>
     </tr>
     <tr>
@@ -93,11 +93,11 @@
         <strong>Escenario 1: Cambio exitoso de idioma</strong><br>
         <strong>Dado que</strong> el visitante selecciona un idioma diferente<br>
         <strong>Cuando</strong> el sistema procesa la selección<br>
-        <strong>Entonces</strong> el contenido del sitio se presenta en el idioma elegido.<br><br>
+        <strong>Entonces</strong> todo el contenido visible del sitio se actualiza al idioma seleccionado en menos de 3 segundos.<br><br>
         <strong>Escenario 2: Persistencia de preferencia</strong><br>
         <strong>Dado que</strong> el visitante ha seleccionado un idioma específico<br>
-        <strong>Cuando</strong> el visitante navega entre secciones<br>
-        <strong>Entonces</strong> el sistema mantiene el idioma seleccionado durante toda la sesión.
+        <strong>Cuando</strong> el visitante navega entre secciones del sitio<br>
+        <strong>Entonces</strong> el sistema mantiene el idioma seleccionado durante toda la sesión activa.
       </td>
     </tr>
     <tr>
@@ -162,17 +162,17 @@
       <td>Como usuario registrado, quiero recuperar mi contraseña olvidada, para no perder acceso a la plataforma.</td>
       <td>
         <strong>Escenario 1: Solicitud exitosa de recuperación</strong><br>
-        <strong>Dado que</strong> el usuario solicita recuperar su contraseña<br>
-        <strong>Cuando</strong> el sistema valida el correo electrónico registrado<br>
-        <strong>Entonces</strong> el sistema envía instrucciones de recuperación al correo electrónico del usuario.<br><br>
+        <strong>Dado que</strong> el usuario ingresa un correo registrado<br>
+        <strong>Cuando</strong> solicita recuperar su contraseña<br>
+        <strong>Entonces</strong> el sistema envía un enlace de recuperación válido por 15 minutos al correo electrónico registrado.<br><br>
         <strong>Escenario 2: Correo no registrado</strong><br>
         <strong>Dado que</strong> el usuario solicita recuperar la contraseña con un correo no registrado<br>
         <strong>Cuando</strong> el sistema valida el correo electrónico<br>
         <strong>Entonces</strong> el sistema indica que el correo no está asociado a ninguna cuenta.<br><br>
         <strong>Escenario 3: Restablecimiento exitoso</strong><br>
-        <strong>Dado que</strong> el usuario accede al enlace de recuperación<br>
-        <strong>Cuando</strong> el usuario ingresa y confirma la nueva contraseña<br>
-        <strong>Entonces</strong> el sistema actualiza la contraseña y confirma el cambio exitoso.
+        <strong>Dado que</strong> el usuario accede al enlace de recuperación válido<br>
+        <strong>Cuando</strong> ingresa y confirma una nueva contraseña que cumple las políticas de seguridad<br>
+        <strong>Entonces</strong> el sistema actualiza la contraseña y permite iniciar sesión con la nueva credencial.
       </td>
     </tr>
     <tr>
@@ -288,15 +288,15 @@
         <strong>Escenario 1: Dashboard con telemetría activa</strong><br>
         <strong>Dado que</strong> los equipos están enviando telemetría<br>
         <strong>Cuando</strong> el QA Manager accede al dashboard<br>
-        <strong>Entonces</strong> el QA Manager visualiza los valores actuales de todas las variables críticas de los equipos activos.<br><br>
+        <strong>Entonces</strong> el sistema muestra las variables críticas actualizadas con una frecuencia máxima de 5 segundos.<br><br>
         <strong>Escenario 2: Indicación de desviaciones</strong><br>
-        <strong>Dado que</strong> una variable excede los parámetros BPM configurados<br>
+        <strong>Dado que</strong> una variable supera el rango BPM configurado<br>
         <strong>Cuando</strong> el sistema procesa la telemetría<br>
-        <strong>Entonces</strong> el dashboard marca visualmente la desviación en la variable correspondiente.<br><br>
+        <strong>Entonces</strong> el dashboard resalta la variable en color rojo y muestra una alerta visible para el usuario.<br><br>
         <strong>Escenario 3: Sin telemetría disponible</strong><br>
-        <strong>Dado que</strong> no hay equipos enviando telemetría<br>
+        <strong>Dado que</strong> no existen equipos enviando telemetría<br>
         <strong>Cuando</strong> el QA Manager accede al dashboard<br>
-        <strong>Entonces</strong> el sistema indica que no hay datos disponibles en tiempo real.
+        <strong>Entonces</strong> el sistema muestra el mensaje “No hay datos disponibles en tiempo real”.
       </td>
     </tr>
     <tr>
@@ -387,13 +387,13 @@
       <td>Como Lab Operator, quiero recibir alertas inmediatas cuando una variable salga del rango BPM, para tomar acciones correctivas de inmediato.</td>
       <td>
         <strong>Escenario 1: Alerta de desviación no crítica</strong><br>
-        <strong>Dado que</strong> una variable excede el rango BPM sin llegar al límite crítico<br>
+        <strong>Dado que</strong> una variable excede el rango BPM configurado en menos del 10%<br>
         <strong>Cuando</strong> el sistema detecta la desviación<br>
-        <strong>Entonces</strong> el Lab Operator recibe una alerta indicando la variable afectada y el valor actual.<br><br>
+        <strong>Entonces</strong> el Lab Operator recibe una alerta visual en menos de 5 segundos indicando la variable afectada y el valor registrado.<br><br>
         <strong>Escenario 2: Alerta de desviación crítica</strong><br>
-        <strong>Dado que</strong> una variable excede el límite crítico de parámetros BPM<br>
+        <strong>Dado que</strong> una variable excede el rango BPM configurado en más del 10%<br>
         <strong>Cuando</strong> el sistema detecta la desviación<br>
-        <strong>Entonces</strong> el Lab Operator recibe una alerta de alta prioridad indicando la gravedad de la desviación.
+        <strong>Entonces</strong> el sistema genera una alerta de prioridad alta y notifica al Lab Operator en menos de 5 segundos.
       </td>
     </tr>
     <tr>
@@ -402,13 +402,13 @@
       <td>Como QA Manager, quiero que el sistema bloquee automáticamente un lote ante una desviación crítica, para evitar que productos no conformes avancen en la cadena de suministro.</td>
       <td>
         <strong>Escenario 1: Bloqueo automático por desviación crítica</strong><br>
-        <strong>Dado que</strong> ocurre una desviación crítica en un lote en proceso<br>
-        <strong>Cuando</strong> el sistema evalúa la gravedad de la desviación<br>
-        <strong>Entonces</strong> el sistema bloquea automáticamente el lote y registra la causa del bloqueo.<br><br>
+        <strong>Dado que</strong> una variable crítica excede el límite BPM permitido en más del 10%<br>
+        <strong>Cuando</strong> el sistema evalúa la telemetría del lote<br>
+        <strong>Entonces</strong> el sistema cambia automáticamente el estado del lote a “Bloqueado” y registra la causa del bloqueo.br><br>
         <strong>Escenario 2: Notificación de bloqueo</strong><br>
         <strong>Dado que</strong> el sistema bloquea un lote automáticamente<br>
-        <strong>Cuando</strong> el bloqueo se ejecuta<br>
-        <strong>Entonces</strong> el QA Manager y el Lab Operator responsable reciben notificación del bloqueo y sus causas.
+        <strong>Cuando</strong> el bloqueo es ejecutado<br>
+        <strong>Entonces</strong> el QA Manager y el Lab Operator reciben una notificación con el identificador del lote, variable afectada y fecha del evento.
       </td>
     </tr>
     <tr>
@@ -488,13 +488,13 @@
       <td>Como QA Manager, quiero consultar el historial de un lote, para verificar el cumplimiento BPM del proceso completo.</td>
       <td>
         <strong>Escenario 1: Consulta exitosa de historial</strong><br>
-        <strong>Dado que</strong> el QA Manager selecciona un lote específico<br>
+        <strong>Dado que</strong> el QA Manager selecciona un lote registrado<br>
         <strong>Cuando</strong> el sistema recupera la información<br>
-        <strong>Entonces</strong> el QA Manager visualiza todas las etapas, variables registradas, alertas y acciones realizadas en el lote.<br><br>
+        <strong>Entonces</strong> el sistema muestra el estado del lote, fechas de producción, variables registradas, alertas generadas y acciones realizadas por los usuarios.<br><br>
         <strong>Escenario 2: Trazabilidad de materias primas</strong><br>
         <strong>Dado que</strong> el QA Manager consulta el historial de un lote<br>
         <strong>Cuando</strong> el sistema presenta la información<br>
-        <strong>Entonces</strong> el QA Manager visualiza las materias primas utilizadas con sus proveedores y lotes de origen.
+        <strong>Entonces</strong> el sistema muestra las materias primas utilizadas, proveedor asociado y lote de origen de cada insumo.
       </td>
     </tr>
     <tr>
@@ -641,13 +641,13 @@
       <td>Como QA Manager, quiero generar un reporte PDF inmutable del historial de un lote, para presentarlo en auditorías regulatorias.</td>
       <td>
         <strong>Escenario 1: Generación exitosa de reporte</strong><br>
-        <strong>Dado que</strong> el QA Manager solicita el reporte de un lote específico<br>
+        <strong>Dado que</strong> el QA Manager solicita el reporte de un lote existente<br>
         <strong>Cuando</strong> el sistema genera el documento<br>
-        <strong>Entonces</strong> el QA Manager descarga el reporte con toda la información de trazabilidad del lote.<br><br>
+        <strong>Entonces</strong> el sistema descarga un archivo PDF que contiene historial del lote, alertas, variables registradas y responsables asociados.<br><br>
         <strong>Escenario 2: Reporte con firma digital</strong><br>
         <strong>Dado que</strong> el QA Manager solicita el reporte de trazabilidad<br>
-        <strong>Cuando</strong> el sistema crea el documento<br>
-        <strong>Entonces</strong> el reporte incluye firma digital y marca de tiempo para garantizar su inmutabilidad.
+        <strong>Cuando</strong> el sistema genera el PDF<br>
+        <strong>Entonces</strong> eel documento incluye firma digital y marca de tiempo para validar su integridad.
       </td>
     </tr>
     <tr>
@@ -759,10 +759,12 @@
       <td>Cifrado de datos sensibles</td>
       <td>Como QA Manager, quiero que la información sensible esté cifrada en almacenamiento y tránsito, para protegerla de accesos no autorizados.</td>
       <td>
-        <strong>Regla de negocio: Cifrado end-to-end</strong><br>
-        Toda información sensible del laboratorio debe estar cifrada tanto en almacenamiento como durante la transmisión, utilizando protocolos de cifrado estándar de la industria.<br><br>
+        <strong>Regla de negocio: Cifrado de almacenamiento</strong><br>
+        Toda información sensible almacenada en la plataforma debe utilizar cifrado AES-256.<br><br>
+        <strong>Regla de negocio: Cifrado en tránsito</strong><br>
+       Toda transmisión de datos entre cliente y servidor debe realizarse mediante protocolo HTTPS con TLS 1.2 o superior.<br><br>
         <strong>Regla de negocio: Clasificación de datos</strong><br>
-        El sistema clasifica automáticamente los datos sensibles y aplica el nivel de cifrado correspondiente según su clasificación.
+      El sistema debe clasificar automáticamente la información sensible y aplicar el nivel de cifrado correspondiente según el tipo de dato.
       </td>
     </tr>
     <tr>
@@ -770,10 +772,12 @@
       <td>Log de auditoría de accesos y acciones</td>
       <td>Como QA Manager, quiero que la plataforma registre un log de todos los accesos e interacciones, para garantizar la trazabilidad de acciones realizadas en el sistema.</td>
       <td>
-        <strong>Regla de negocio: Registro inmutable</strong><br>
-        Cada acción en el sistema queda registrada en un log inmutable con fecha, hora, usuario y descripción de la acción realizada.<br><br>
+        <strong>Regla de negocio: Registro de acciones</strong><br>
+       El sistema debe registrar cada acceso, modificación y eliminación de información indicando fecha, hora, usuario y acción realizada.<br><br>
+        <strong>Regla de negocio: Inmutabilidad de logs</strong><br>
+      Los registros de auditoría no pueden ser modificados ni eliminados por usuarios del sistema.<br><br>
         <strong>Regla de negocio: Retención de logs</strong><br>
-        Los logs de auditoría se conservan por un periodo mínimo de 5 años para cumplir con requisitos regulatorios de la industria farmacéutica.
+      Los logs de auditoría deben conservarse por un periodo mínimo de 5 años.
       </td>
     </tr>
     <!-- Technical Stories -->
