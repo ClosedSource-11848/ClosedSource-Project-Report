@@ -121,11 +121,13 @@ El Lean UX es una perspectiva que facilita la validación de las soluciones suge
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-Nuestro servicio brinda una plataforma de gestión de calidad y cumplimiento (QMS) para laboratorios farmacéuticos y entidades de salud pública. A través de una arquitectura SaaS e integración con dispositivos IoT, las instituciones buscan garantizar que cada lote de medicamentos cumpla con las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
+En la industria farmacéutica peruana y en las entidades de salud pública, los procesos de control de calidad y fabricación continúan dependiendo en gran medida de registros manuales, sistemas aislados y documentos físicos, lo que incrementa significativamente el riesgo de error humano, compromete la integridad de los datos y dificulta el cumplimiento oportuno de las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
 
-Hemos observado que el control de variables críticas (pH, temperatura, presión) aún depende de registros manuales y sistemas aislados, lo que genera riesgos de error humano, falta de integridad de datos y demoras críticas durante auditorías regulatorias.
+Actualmente, los Jefes de Aseguramiento de la Calidad y los Supervisores de entidades públicas deben invertir grandes cantidades de tiempo en consolidar información dispersa para auditorías regulatorias, sin contar con trazabilidad digital continua ni alertas tempranas ante desviaciones críticas de variables como temperatura, presión o pH. Esta brecha tecnológica no solo ralentiza la operación diaria, sino que expone a las instituciones a observaciones regulatorias, sanciones económicas y potenciales riesgos para la salud pública.
 
-¿Cómo podríamos lograr que el personal de aseguramiento de la calidad y los supervisores farmacéuticos tengan trazabilidad inmutable y alertas en tiempo real de sus procesos de fabricación, sin depender de bitácoras físicas o transcripciones manuales propensas a errores?
+Existe una oportunidad clara de mercado para una plataforma SaaS especializada que permita digitalizar la trazabilidad de procesos farmacéuticos, automatizar la captura de variables críticas mediante integración IoT y garantizar registros inmutables auditables, especialmente dirigida a laboratorios medianos y entidades públicas que no pueden adoptar soluciones corporativas costosas como SAP o LIMS tradicionales.
+
+¿Cómo podríamos permitir que los responsables de aseguramiento de la calidad y supervisión pública gestionen, supervisen y auditen procesos de fabricación farmacéutica en tiempo real, con trazabilidad digital completa y mínima fricción operativa, eliminando la dependencia de registros manuales y reduciendo drásticamente el tiempo y riesgo asociado a las auditorías de DIGEMID?
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -192,11 +194,10 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hipótesis 1:** Creemos que al integrar sensores IoT para la captura automática de variables críticas (pH, temperatura, presión), eliminaremos el riesgo de manipulación y error de transcripción. Lo sabremos cuando el error humano en los registros se reduzca a un valor cercano al 0%.
-* **Hipótesis 2:** Creemos que al implementar un sistema centralizado de alertas y bloqueo preventivo de lotes no conformes, reduciremos el desperdicio de producción. Lo sabremos cuando la pérdida de lotes por desviaciones de parámetros disminuya en un 15%.
-* **Hipótesis 3:** Creemos que al digitalizar la trazabilidad de forma inmutable mediante QualiTrack, agilizaremos las inspecciones regulatorias de DIGEMID. Lo sabremos cuando el tiempo de preparación de documentos para auditorías se reduzca en un 80% en las instituciones piloto.
-* **Hipótesis 4:** Creemos que al habilitar la firma digital en un dashboard web responsivo, aceleraremos la cadena de suministro segura. Lo sabremos cuando los supervisores de calidad logren firmar y liberar lotes de forma remota en menos de 10 minutos tras finalizar la producción.
-* **Hipótesis 5:** Creemos que al utilizar notificaciones en tiempo real, el personal de planta reaccionará instantáneamente ante fallas mecánicas en equipos como autoclaves. Lo sabremos cuando los operarios visualicen y atiendan alertas de desviación en menos de 5 segundos.
+* **Hipótesis 1:** Creemos que, si las variables críticas del proceso se registran de forma automática y centralizada, el error humano asociado al registro manual se reducirá significativamente. Sabremos que esto es cierto cuando disminuyan las inconsistencias detectadas en los registros de producción.
+* **Hipótesis 2:** Creemos que, si los historiales de producción se gestionan de manera digital y continua, el proceso de preparación para auditorías regulatorias será más rápido y menos complejo. Sabremos que esto es cierto cuando se reduzca el tiempo dedicado a la recopilación y validación de documentación.
+* **Hipótesis 3:** Creemos que, si el sistema permite identificar desviaciones de parámetros de manera oportuna, será posible intervenir antes de que estas generen impactos en etapas posteriores del proceso. Sabremos que esto es cierto cuando disminuyan las incidencias detectadas de forma tardía.
+* **Hipótesis 4:** Creemos que, si la solución respeta los roles y flujos de trabajo existentes, la adopción del sistema podrá realizarse de forma progresiva y sostenible. Sabremos que esto es cierto cuando los usuarios utilicen la plataforma de manera recurrente como fuente principal de control.
 
 #### 1.2.2.4. Lean UX Canvas
 
