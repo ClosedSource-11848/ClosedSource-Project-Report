@@ -533,8 +533,11 @@ En esta sección se presenta el análisis detallado de la información recolecta
 #### Segmento 1: Gerentes y jefes de Aseguramiento de Calidad
 
 **Análisis de Características Objetivas y Subjetivas:**
-El análisis revela una alta dependencia de procesos análogos en el área de manufactura. Como se detalla en el gráfico a continuación, el **100%** de los jefes de calidad utiliza un **sistema mixto o netamente manual** (tickets físicos y llenado a mano) para el registro de variables críticas, y el **100%** ha recibido observaciones preventivas de DIGEMID respecto a la integridad de datos. Si bien un **33%** se apoya en sistemas logísticos robustos (como SAP), la falta de integración con la producción es crítica.
-A nivel subjetivo, el **100%** valora positivamente la **digitalización y la captura IoT**. Sin embargo, existe una restricción clara: el **67%** manifiesta preocupación por los **retos de implementación**, ya sea por la resistencia cultural del personal antiguo o por la seguridad de los datos.
+El análisis de las entrevistas evidencia que la gestión de calidad en el sector farmacéutico aún se realiza bajo métodos tradicionales y poco integrados. El **100%** de los entrevistados ocupa cargos de alta responsabilidad técnica, lo que valida la relevancia de sus opiniones para el dominio del problema. 
+
+En cuanto al monitoreo de procesos, el **100%** utiliza un sistema mixto o netamente manual (tickets físicos y llenado a mano) para el monitoreo de condiciones críticas en planta, lo que ha derivado en que el 100% haya recibido observaciones preventivas de la DIGEMID respecto a la integridad de datos. 
+
+Aunque un 33% complementa su gestión con herramientas como Excel o sistemas logísticos, existe una desconexión crítica con los datos de producción en tiempo real. A nivel subjetivo, el **100%** manifestó una alta disposición hacia la digitalización mediante sensores IoT. No obstante, el **67%** identificó como condición clave que la herramienta debe ser de fácil adopción para el personal operativo, evitando la complejidad técnica excesiva y garantizando la seguridad de la información inmutable.
 
 <div align="center"><img src="../assets/img/Grafico1Segmento1Cap2.png" alt="Gráfico Estadístico Gerentes de Calidad" width="80%"></div>
 <br>
@@ -542,8 +545,9 @@ A nivel subjetivo, el **100%** valora positivamente la **digitalización y la ca
 #### Segmento 2: Directores y supervisores de Entidades de Salud Pública
 
 **Análisis de Características Objetivas y Subjetivas:**
-Los datos confirman una brecha tecnológica severa en el control de calidad estatal. El **100%** reporta que el expediente de producción se elabora mediante **documentación manual** (Word y lapicero), y el **100%** indica que sus herramientas **no permiten un historial continuo**, forzándolos a registrar variables en turnos aislados.
-Subjetivamente, el dolor principal es el riesgo regulatorio: el **100%** siente **frustración ante las auditorías** por la falta de información rápida. Reconociendo que el papel ralentiza el trabajo, el **100%** considera indispensable una solución que **almacene constantemente las variaciones** para mitigar el error humano.
+El análisis muestra una brecha tecnológica severa en el sector estatal. El **100%** reporta que el expediente de producción se elabora mediante documentación manual y herramientas ofimáticas aisladas, lo que fragmenta la trazabilidad. Asimismo, el **100%** indica dificultades para generar historiales continuos de variables críticas, forzando registros en turnos discontinuos. 
+
+En situaciones de auditoría, el **100%** experimenta frustración debido a la falta de inmediatez en el acceso a la información histórica para la sustentación de conformidad ante los inspectores. A nivel subjetivo, el 100% de los supervisores mostró una alta disposición a utilizar una plataforma digital. Buscan, principalmente, transparencia y respaldo profesional mediante alertas automáticas que reduzcan la incertidumbre y el error humano durante la fabricación.
 
 <div align="center"><img src="../assets/img/Grafico2Segmento2Cap2.png" alt="Gráfico Estadístico Supervisores de Salud" width="80%"></div>
 <br>
@@ -551,7 +555,7 @@ Subjetivamente, el dolor principal es el riesgo regulatorio: el **100%** siente 
 #### Análisis Comparativo
 
 **Contrastación de Segmentos:**
-Al comparar ambos grupos, encontramos coincidencias vitales para el producto: ambos tienen un **100% de dependencia documentaria en papel** y una necesidad unánime de asegurar la trazabilidad. Sin embargo, existe una brecha notable en la percepción de los obstáculos: mientras los gerentes (Segmento 1) prevén retos de adopción y seguridad informática (**67%** de preocupación), los supervisores públicos (Segmento 2) priorizan la urgencia de resolver el desorden operativo ante el auditor. Esto define la propuesta de valor: inmutabilidad y seguridad para la gerencia, y automatización continua para aliviar la carga del supervisor.
+Al comparar ambos segmentos, se identifican coincidencias clave: el **100%** de ambos evidencia la necesidad urgente de centralizar la información y asegurar la trazabilidad inmutable de los lotes.  Sin embargo, existe una diferencia en el enfoque del problema. Para el administrador privado (Segmento 1), la falta de un sistema representa un riesgo de seguridad de datos y resistencia cultural (**67%**), mientras que para el supervisor público (Segmento 2), representa una fuente de desorden operativo ante entes reguladores. Esta diferencia define claramente el enfoque de QualiTrack: mejorar la seguridad de la información para la gerencia y, simultáneamente, brindar eficiencia operativa al supervisor.
 
 <div align="center"><img src="../assets/img/Comparativa_segmentos_objetivos.png" alt="Gráfico Comparativo Segmentos" width="80%"></div>
 <br>
@@ -561,11 +565,11 @@ Al comparar ambos grupos, encontramos coincidencias vitales para el producto: am
 Basado en el análisis estadístico, se definen los siguientes perfiles para los User Personas:
 
 1.  **User Persona Jefe de Calidad:**
-    * **Rasgo clave:** Busca modernizar la planta pero teme la fricción cultural y las vulnerabilidades de datos.
-    * **Sustento:** El 100% valora la captura IoT, pero el 67% se preocupa por la implementación. La solución debe garantizar firmas seguras y ser amigable para operarios sin experiencia digital.
+    * **Rasgo clave:** Busca modernizar la planta mediante automatización, pero necesita una solución que garantice seguridad de datos y baja resistencia al cambio.
+    * **Sustento:** El 100% valora la captura IoT y el 67% teme a la complejidad de la implementación.  Esto demuestra que requiere una plataforma intuitiva con procesos validados.
 2.  **User Persona Supervisor Público:**
-    * **Rasgo clave:** Necesita orden absoluto y trazabilidad continua para proteger la salud pública y superar auditorías.
-    * **Sustento:** El 100% se frustra al recopilar papeles para auditorías y sufre por los registros manuales aislados. La solución debe centrarse en historiales (Batch Records) autogenerados y alertas continuas.
+    * **Rasgo clave:** Necesita información histórica inmediata y continua para garantizar la salud pública y superar auditorías.
+    * **Sustento:** El 100% reporta frustración ante registros manuales aislados y el 100% considera como un requisito indispensable el almacenamiento continuo de variaciones para mitigar el error humano.
 
 <div style="page-break-after: always;"></div>
 
