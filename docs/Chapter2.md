@@ -249,11 +249,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Delci Castro Codorin es química farmacéutica y subdirectora de la operación de la planta de radioisótopos y radiofármacos; egresada de la Universidad Nacional Mayor de San Marcos, actualmente cursa una maestría en Ingeniería Industrial enfocada en el emprendimiento, y ha llevado diplomados en regulación, preparación y control de radiofármacos, así como capacitaciones en protección radiológica y en sistemas de gestión de grado. 
+            La Sra. Delci Castro Codorin es una experimentada profesional de 59 años, residente del distrito de San Juan de Lurigancho y Química Farmacéutica egresada de la Universidad Nacional Mayor de San Marcos. En su cargo actual como subdirectora de operaciones en una planta de radioisótopos y radiofármacos, lidera procesos de manufactura crítica donde la documentación técnica se gestiona bajo un esquema mixto; si bien cuentan con equipos modernos con salida digital e impresoras, la trazabilidad final depende de registros manuales consolidados en un dossier físico por cada lote.
             <br> <br>
-            Dentro de la planta, se presenta el proceso de producción de los fármacos y se destaca que los registros se realizan de dos maneras: manual y digital. A partir de los registros manuales se identifican automáticamente los lotes, cada uno con su propia unidad documentaria, donde se registran la materia prima y los controles efectuados en cada uno de los dispositivos (los cuales han sido codificados previamente). Asimismo, la distribución también se registra por lotes.
+            Comportamiento y Necesidades: Se percibe como una líder técnica meticulosa que valora el cumplimiento normativo estricto, pero reconoce la ineficiencia de los formatos tradicionales. Busca una solución que permita la captura de datos de manera simultánea para eliminar la variabilidad y el riesgo del llenado a mano exigido por DIGEMID. Su principal necesidad es optimizar las auditorías que se realizan cada cinco años mediante la reducción de la dependencia del papel.
             <br> <br>
-            Ella menciona que no hubo casos de reportes relacionados con una auditoría insuficiente por parte de la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID), ni registros incompletos o erróneos. Lo que sí se reportaron fueron recomendaciones sobre otros sistemas que podrían beneficiar a la organización en las auditorías y los registros, además de recordatorios sobre el formato de documentación.
+            Tecnología, Marcas y Canales: Posee una alfabetización digital orientada a la gestión farmacéutica y sistemas de gestión de grado. Utiliza equipos de medición con capacidad de impresión digital y herramientas ofimáticas para la supervisión. Sus canales de referencia son las normativas de la DIGEMID y los sistemas de control de radiofármacos.
             </td>
         </tr>
     </tbody>
@@ -302,13 +302,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            El Sr. Fredd Palomino trabaja en el laboratorio del Instituto Nacional de la Salud, una institución de referencia en el país. Dentro de este laboratorio, su equipo se dedica a la fabricación de productos farmacéuticos estériles, lo que exige un riguroso control de las condiciones ambientales y de los procesos para garantizar la ausencia de microorganismos.
+            El Sr. Fredd Palomino de 41 años y residente de San Juan de Lurigancho, labora en el laboratorio del Instituto Nacional de la Salud, una institución de referencia en el país donde su equipo se dedica a la fabricación de productos farmacéuticos estériles. Esto exige un riguroso control de las condiciones ambientales y de los procesos para garantizar la ausencia de microorganismos. Para registrar las variables críticas del proceso, emplean un sistema mixto: papel emitido por equipos de medición y registros manuales de temperatura y presión.
             <br> <br>
-            Para registrar las variables críticas del proceso, emplean un sistema mixto: por un lado, utilizan papel emitido directamente por un equipo de medición; por otro lado, complementan con un registro manual donde anotan datos como temperatura, presión, unidades producidas, entre otros. De esta forma, se muestra tanto el resultado obtenido como los insumos y condiciones empleadas durante el proceso, con el fin de preservar la trazabilidad completa de cada lote fabricado.
+            Comportamiento y Necesidades: Muestra una actitud favorable hacia la digitalización para agilizar la producción, la cual puede tomar hasta un año en etapa de preparación. Necesita automatizar el traslado de datos hacia informes virtuales en tiempo real para evitar la fatiga administrativa. Valora profundamente la confidencialidad y la integridad de la información generada durante la fabricación.
             <br> <br>
-            A pesar de la naturaleza manual del registro, no han recibido observaciones relacionadas con la integridad de los datos. Sin embargo, sí reciben constantemente recomendaciones y recordatorios sobre los parámetros establecidos por la DIGEMID, el ente regulador sanitario. Además, el Sr. Palomino afirma que el tiempo de preparación de un producto puede extenderse desde 6 meses hasta 1 año, debido a la minuciosa identificación de los materiales y los datos necesarios para asegurar un plan de acción eficiente antes de iniciar la producción.
-            <br> <br>
-            El Sr. Palomino comenta que la digitalización y automatización del traslado de los datos hacia un informe virtual, así como el apunte de los datos en tiempo real, serían de gran utilidad para agilizar el proceso de producción. No obstante, señala que esto solo sería viable siempre y cuando se garantice una buena tasa de seguridad, protegiendo la integridad y confidencialidad de la información generada durante la fabricación.
+            Tecnología, Marcas y Canales: Usuario de hardware especializado en medición de variables críticas (presión, temperatura) y sistemas de documentación del INS. Utiliza formatos físicos para la trazabilidad completa del lote. Sus canales de comunicación y referencia técnica están alineados con los recordatorios y parámetros establecidos por la DIGEMID.
             </td>
         </tr>
     </tbody>
@@ -357,15 +355,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            El Sr. Alberto Valle es químico farmacéutico de profesión. Tiene 40 años y ha trabajado en la industria farmacéutica manejando diferentes métodos y formas de producción.
+            El Sr. Alberto Valle es un Químico Farmacéutico de 68 años con base en Arequipa, cuya trayectoria de cuatro décadas en la industria farmacéutica le otorga una visión profunda sobre los métodos de manufactura y control de calidad. Ha trabajado con diversos sistemas de producción, manteniendo siempre un enfoque estricto en el registro manual de variables según el producto.
             <br> <br>
-            Menciona que la industria es muy estricta y que todo debe registrarse de forma manual. Cada producto tiene sus propias características de anotación, dependiendo de la variable que se debe evaluar.
+            Comportamiento y Necesidades: Perfil disciplinado y habituado al rigor normativo que considera la industria como un entorno punitivo. Necesita un sistema de registro más sencillo y estandarizado que reduzca las cuatro semanas de preparación previa que demanda una auditoría. Busca mejorar la agilidad operativa sin comprometer los niveles de seguridad y cumplimiento del sector.
             <br> <br>
-            A pesar de la rigurosidad del método manual, en el laboratorio donde trabaja no han recibido ninguna observación en las auditorías, gracias al estricto método y formato de registro que emplean.
-            <br> <br>
-            Explica que la auditoría abarca el sistema completo: calidad, mantenimiento, control y cantidad. La preparación implica verificar los datos desde un tiempo prudente, indicando que el promedio es de 4 semanas de registro cuidadoso.
-            <br> <br>
-            Finalmente, señala que la disponibilidad de sistemas IoT es alta debido a las actualizaciones y estándares del sector, y comenta que un sistema de registro más sencillo podría ser de gran ayuda.
+            Tecnología, Marcas y Canales: Experto en métodos tradicionales de anotación manual y formatos de registro de calidad y mantenimiento. Reconoce la alta disponibilidad y utilidad de los sistemas IoT actuales para las actualizaciones del sector. Su canal de referencia principal es la normativa vigente y los estándares de producción farmacéutica.
             </td>
         </tr>
     </tbody>
@@ -416,13 +410,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rosa Amelia Mendoza es una profesional quimica farmaceutica con maestria en el area de Salud Publica por esudios dentro de la Universidad Nacional Mayor de San Marcos junto con un Diplomado de "Control de Calidad", trabajando en un laboratorio que esta enfocado en el control de la produccón de vacunas.
+            La Sra. Rosa Amelia Mendoza de 51 años y residente de San Isidro, es Química Farmacéutica con maestría en Salud Pública y un diplomado en Control de Calidad. Actualmente supervisa la producción de vacunas en un laboratorio enfocado en el cumplimiento de los estándares de la DIGEMID. Su labor implica el control meticuloso tanto de la producción física como de la documentación histórica.
             <br> <br>
-            En su rol se presenta la observación y control tanto del proceso de producción de vacunas como la documentación siguiendo las indicaciones y estandares de la organización Dirección General de Medicamentos, Insumos y Drogas (DIGEMID).
+            Comportamiento y Necesidades: Se muestra proactiva y receptiva hacia herramientas que automaticen el almacenamiento de datos. Su principal dolor es la falta de funcionalidades digitales para generar historiales automáticos de temperatura y esterilización. Necesita una plataforma que elimine la documentación redundante a mano (realizada tres veces al día) para asegurar la integridad de los productos biológicos.
             <br> <br>
-            Ella indica que aún se emplea un metodo de documentación y regulación manual en el proceso de producción y analisís de las vacunas dentro del laborotiro, ya que las herramientas digitales que poseen no presentan funcionalidades que documente como un historial datos clave como la temperatura y el nivel de esterilzación, forzando la documentación a mano.
-            <br> <br>
-            Entre las herramientas que considera dispensables mencionó la capacidad de almacenar constantemente los cambios y variaciones en el control de la calidad de los lotes, los cuales se refieren en su labor las vacunas. Un ejemplo clave es la temperatura, ya que se tiene un habito el documentar en la mañana, tarde y noche la temperatura mostrada por las herramientas digitales que presentan, lo cual muestra su dificultad en el ambito digital para simplificar el registro de calidad.
+            Tecnología, Marcas y Canales: Utiliza herramientas digitales básicas que carecen de módulos de historial de variables críticas. Su entorno de trabajo incluye sensores de temperatura digitales que requieren transcripción manual a expedientes físicos. Se guía por los lineamientos de salud pública de la UNMSM y las directrices de control de calidad de la DIGEMID.
             </td>
         </tr>
     </tbody>
@@ -471,15 +463,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rocío Santo Alegre es química farmacéutica de producción, una profesión que combina la química con la tecnología farmacéutica aplicada a la elaboración de medicamentos. Actualmente, trabaja en un laboratorio especializado en la producción de radiactivos para diagnóstico, un área de alta precisión y regulación. Desde hace 8 meses, ocupa el puesto de responsable del área, lo que implica supervisar tanto los procesos técnicos como al personal a su cargo.
+            La Sra. Rocío Santo Alegre , de 49 años y residente de Chorrillos, ejerce como Química Farmacéutica de producción en un laboratorio de radiactivos para diagnóstico. Ocupa el cargo de responsable del área desde hace ocho meses, supervisando procesos de alta precisión que aún no han sido migrados a la digitalización, lo que genera un flujo de trabajo basado en formatos impresos y escritura manual.
             <br> <br>
-            Uno de los principales desafíos que enfrenta el laboratorio es que aún no se ha migrado a la digitalización. Esto significa que toda la información técnica relacionada con los procesos de producción se traslada en formatos impresos, utilizando exclusivamente la escritura manual. Esta falta de digitalización no solo ralentiza el flujo de trabajo, sino que también aumenta el riesgo de errores humanos y de pérdida de documentos.
+            Comportamiento y Necesidades: Valora la transparencia ante los auditores, pero sufre la lentitud y el desorden de los documentos físicos durante las inspecciones. Necesita un sistema de alerta temprana para detectar desviaciones de parámetros mientras el proceso está en marcha. Busca optimizar el tiempo de consulta de datos y reducir el riesgo de pérdida de documentos críticos del expediente de producción.
             <br> <br>
-            El proceso productivo comienza con una orden de producción que es impresa en papel. Para estructurar los datos de dichas órdenes, se emplean herramientas ofimáticas como Word, pero una vez impresas, todos los documentos pasan a formar parte del expediente de producción. Durante el resto del proceso, cada uno de estos papeles va siendo llenado manualmente por los operarios, desde los registros de materias primas hasta los controles de calidad intermedios.
-            <br> <br>
-            Rocío expresa, desde dos perspectivas complementarias, los desafíos que enfrentan durante las auditorías. Por un lado, desde el punto de vista del productor, ella valora positivamente poder mostrar la información disponible tal como está registrada en los documentos físicos. Por otro lado, desde la perspectiva del auditor, se evidencian claras limitaciones derivadas de la falta de información clara, ordenada y de rápida consulta en el momento de la inspección, lo que puede generar observaciones o retrasos.
-            <br> <br>
-            En cuanto a las desviaciones, estas son detectadas mientras el proceso de producción aún está en marcha, lo que permite tomar acciones correctivas de forma temprana. Para identificar dichas desviaciones, el equipo se basa en dos pilares fundamentales: el conocimiento profundo de los requisitos establecidos por las normativas y procedimientos internos, y el seguimiento continuo y meticuloso de los datos obtenidos durante cada etapa del proceso.
+            Tecnología, Marcas y Canales: Su ecosistema tecnológico se limita al uso de Microsoft Word para estructurar órdenes de producción que luego se imprimen. Gestiona la información mediante expedientes de producción en papel llenados manualmente por operarios. Su canal de referencia es el conocimiento profundo de los procedimientos internos y normativas de radioisótopos.
             </td>
         </tr>
     </tbody>
@@ -528,13 +516,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rita Sotelo es una profesional con una amplia trayectoria en el sector farmacéutico. Cuenta con 30 años de experiencia acumulada, habiendo trabajado durante gran parte de su carrera en MediFarma, un laboratorio reconocido en el ámbito nacional. Su rol le ha permitido conocer en profundidad los procesos de manufactura y control de calidad.
+            Resumen: La Sra. Rita Sotelo es una profesional de 53 años residente de San Isidro con 30 años de experiencia en el sector farmacéutico, incluyendo laboratorios de renombre como MediFarma. Su rol actual se centra en la manufactura de productos biológicos, utilizando ya sistemas de registro digital para integrar protocolos de análisis y aseguramiento de la calidad.
             <br> <br>
-            En cuanto al sistema de registro utilizado en su laboratorio, la Sra. Sotelo indica que ya han dado el salto hacia la digitalización. Emplean un sistema de manufactura digital que integra protocolos de análisis, fabricación y aseguramiento de la calidad. Esto les permite llevar un control más riguroso y ordenado de todas las etapas productivas.
+            <b>Comportamiento y Necesidades:</b> Representa el perfil de usuario avanzado que ya experimenta los beneficios de la trazabilidad digital completa. Identifica la capacitación especializada como el requisito indispensable para la adopción exitosa de nuevas herramientas. Necesita que los sistemas garanticen la inalterabilidad del historial de cambios (Audit Trail) para cumplir con las exigencias internacionales de manufactura.
             <br> <br>
-            Ella explica que los lotes se digitalizan completamente dentro del sistema, lo que facilita su trazabilidad desde el ingreso de los insumos hasta su utilización final. Además, los productos ya fabricados también son mapeados en el sistema, lo que permite visualizar claramente su distribución y ubicación en la cadena de suministro.
-            <br> <br>
-            Finalmente, la Sra. Rita Sotelo destaca un punto clave para la adopción de herramientas digitales: la capacitación. Según su experiencia, el principal requisito para que este tipo de sistemas realmente permitan conservar y analizar los datos de forma efectiva es una capacitación adecuada, la cual debe estar adaptada al sistema encargado de cada proceso y al perfil de los usuarios que lo operarán.
+            Tecnología, Marcas y Canales: Usuaria de sistemas de manufactura digital y protocolos de análisis integrados en plataformas de software. Utiliza herramientas digitales para mapear la distribución de medicamentos hasta el punto de entrega. Sus influencias de marca y tecnología son las plataformas de manufactura digital validadas y los sistemas de gestión de bases de datos para el sector farmacéutico.
             </td>
         </tr>
     </tbody>
