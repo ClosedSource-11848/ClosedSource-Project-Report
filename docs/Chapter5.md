@@ -2276,6 +2276,14 @@ comentario -->
       </td>
     </tr>
     <tr>
+      <td><strong>Frontend Web App (Firebase)</strong></td>
+      <td>
+        <a href="https://closedsource-qualitrack.web.app">
+          https://closedsource-qualitrack.web.app
+        </a>
+      </td>
+    </tr>
+    <tr>
       <td><strong>Repositorio Landing Page</strong></td>
       <td>
         <a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">
