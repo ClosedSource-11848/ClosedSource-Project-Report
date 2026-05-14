@@ -251,9 +251,9 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             <td>
             La Sra. Delci Castro Codorin es una experimentada profesional de 59 años, residente del distrito de San Juan de Lurigancho y Química Farmacéutica egresada de la Universidad Nacional Mayor de San Marcos. En su cargo actual como subdirectora de operaciones en una planta de radioisótopos y radiofármacos, lidera procesos de manufactura crítica donde la documentación técnica se gestiona bajo un esquema mixto; si bien cuentan con equipos modernos con salida digital e impresoras, la trazabilidad final depende de registros manuales consolidados en un dossier físico por cada lote.
             <br> <br>
-            Comportamiento y Necesidades: Se percibe como una líder técnica meticulosa que valora el cumplimiento normativo estricto, pero reconoce la ineficiencia de los formatos tradicionales. Busca una solución que permita la captura de datos de manera simultánea para eliminar la variabilidad y el riesgo del llenado a mano exigido por DIGEMID. Su principal necesidad es optimizar las auditorías que se realizan cada cinco años mediante la reducción de la dependencia del papel.
+            <b>Comportamiento y Necesidades:</b> Se percibe como una líder técnica meticulosa que valora el cumplimiento normativo estricto, pero reconoce la ineficiencia de los formatos tradicionales. Busca una solución que permita la captura de datos de manera simultánea para eliminar la variabilidad y el riesgo del llenado a mano exigido por DIGEMID. Su principal necesidad es optimizar las auditorías que se realizan cada cinco años mediante la reducción de la dependencia del papel.
             <br> <br>
-            Tecnología, Marcas y Canales: Posee una alfabetización digital orientada a la gestión farmacéutica y sistemas de gestión de grado. Utiliza equipos de medición con capacidad de impresión digital y herramientas ofimáticas para la supervisión. Sus canales de referencia son las normativas de la DIGEMID y los sistemas de control de radiofármacos.
+            <b>Tecnología, Marcas y Canales:</b> Posee una alfabetización digital orientada a la gestión farmacéutica y sistemas de gestión de grado. Utiliza equipos de medición con capacidad de impresión digital y herramientas ofimáticas para la supervisión. Sus canales de referencia son las normativas de la DIGEMID y los sistemas de control de radiofármacos.
             </td>
         </tr>
     </tbody>
@@ -304,9 +304,9 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             <td>
             El Sr. Fredd Palomino de 41 años y residente de San Juan de Lurigancho, labora en el laboratorio del Instituto Nacional de la Salud, una institución de referencia en el país donde su equipo se dedica a la fabricación de productos farmacéuticos estériles. Esto exige un riguroso control de las condiciones ambientales y de los procesos para garantizar la ausencia de microorganismos. Para registrar las variables críticas del proceso, emplean un sistema mixto: papel emitido por equipos de medición y registros manuales de temperatura y presión.
             <br> <br>
-            Comportamiento y Necesidades: Muestra una actitud favorable hacia la digitalización para agilizar la producción, la cual puede tomar hasta un año en etapa de preparación. Necesita automatizar el traslado de datos hacia informes virtuales en tiempo real para evitar la fatiga administrativa. Valora profundamente la confidencialidad y la integridad de la información generada durante la fabricación.
+            <b>Comportamiento y Necesidades:</b> Muestra una actitud favorable hacia la digitalización para agilizar la producción, la cual puede tomar hasta un año en etapa de preparación. Necesita automatizar el traslado de datos hacia informes virtuales en tiempo real para evitar la fatiga administrativa. Valora profundamente la confidencialidad y la integridad de la información generada durante la fabricación.
             <br> <br>
-            Tecnología, Marcas y Canales: Usuario de hardware especializado en medición de variables críticas (presión, temperatura) y sistemas de documentación del INS. Utiliza formatos físicos para la trazabilidad completa del lote. Sus canales de comunicación y referencia técnica están alineados con los recordatorios y parámetros establecidos por la DIGEMID.
+            <b>Tecnología, Marcas y Canales:</b> Usuario de hardware especializado en medición de variables críticas (presión, temperatura) y sistemas de documentación del INS. Utiliza formatos físicos para la trazabilidad completa del lote. Sus canales de comunicación y referencia técnica están alineados con los recordatorios y parámetros establecidos por la DIGEMID.
             </td>
         </tr>
     </tbody>
@@ -357,9 +357,9 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             <td>
             El Sr. Alberto Valle es un Químico Farmacéutico de 68 años con base en Arequipa, cuya trayectoria de cuatro décadas en la industria farmacéutica le otorga una visión profunda sobre los métodos de manufactura y control de calidad. Ha trabajado con diversos sistemas de producción, manteniendo siempre un enfoque estricto en el registro manual de variables según el producto.
             <br> <br>
-            Comportamiento y Necesidades: Perfil disciplinado y habituado al rigor normativo que considera la industria como un entorno punitivo. Necesita un sistema de registro más sencillo y estandarizado que reduzca las cuatro semanas de preparación previa que demanda una auditoría. Busca mejorar la agilidad operativa sin comprometer los niveles de seguridad y cumplimiento del sector.
+            <b>Comportamiento y Necesidades:</b> Perfil disciplinado y habituado al rigor normativo que considera la industria como un entorno punitivo. Necesita un sistema de registro más sencillo y estandarizado que reduzca las cuatro semanas de preparación previa que demanda una auditoría. Busca mejorar la agilidad operativa sin comprometer los niveles de seguridad y cumplimiento del sector.
             <br> <br>
-            Tecnología, Marcas y Canales: Experto en métodos tradicionales de anotación manual y formatos de registro de calidad y mantenimiento. Reconoce la alta disponibilidad y utilidad de los sistemas IoT actuales para las actualizaciones del sector. Su canal de referencia principal es la normativa vigente y los estándares de producción farmacéutica.
+            <b>Tecnología, Marcas y Canales:</b> Experto en métodos tradicionales de anotación manual y formatos de registro de calidad y mantenimiento. Reconoce la alta disponibilidad y utilidad de los sistemas IoT actuales para las actualizaciones del sector. Su canal de referencia principal es la normativa vigente y los estándares de producción farmacéutica.
             </td>
         </tr>
     </tbody>
@@ -412,9 +412,9 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             <td>
             La Sra. Rosa Amelia Mendoza de 51 años y residente de San Isidro, es Química Farmacéutica con maestría en Salud Pública y un diplomado en Control de Calidad. Actualmente supervisa la producción de vacunas en un laboratorio enfocado en el cumplimiento de los estándares de la DIGEMID. Su labor implica el control meticuloso tanto de la producción física como de la documentación histórica.
             <br> <br>
-            Comportamiento y Necesidades: Se muestra proactiva y receptiva hacia herramientas que automaticen el almacenamiento de datos. Su principal dolor es la falta de funcionalidades digitales para generar historiales automáticos de temperatura y esterilización. Necesita una plataforma que elimine la documentación redundante a mano (realizada tres veces al día) para asegurar la integridad de los productos biológicos.
+            <b>Comportamiento y Necesidades:</b> Se muestra proactiva y receptiva hacia herramientas que automaticen el almacenamiento de datos. Su principal dolor es la falta de funcionalidades digitales para generar historiales automáticos de temperatura y esterilización. Necesita una plataforma que elimine la documentación redundante a mano (realizada tres veces al día) para asegurar la integridad de los productos biológicos.
             <br> <br>
-            Tecnología, Marcas y Canales: Utiliza herramientas digitales básicas que carecen de módulos de historial de variables críticas. Su entorno de trabajo incluye sensores de temperatura digitales que requieren transcripción manual a expedientes físicos. Se guía por los lineamientos de salud pública de la UNMSM y las directrices de control de calidad de la DIGEMID.
+            <b>Tecnología, Marcas y Canales:</b> Utiliza herramientas digitales básicas que carecen de módulos de historial de variables críticas. Su entorno de trabajo incluye sensores de temperatura digitales que requieren transcripción manual a expedientes físicos. Se guía por los lineamientos de salud pública de la UNMSM y las directrices de control de calidad de la DIGEMID.
             </td>
         </tr>
     </tbody>
@@ -465,9 +465,9 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             <td>
             La Sra. Rocío Santo Alegre , de 49 años y residente de Chorrillos, ejerce como Química Farmacéutica de producción en un laboratorio de radiactivos para diagnóstico. Ocupa el cargo de responsable del área desde hace ocho meses, supervisando procesos de alta precisión que aún no han sido migrados a la digitalización, lo que genera un flujo de trabajo basado en formatos impresos y escritura manual.
             <br> <br>
-            Comportamiento y Necesidades: Valora la transparencia ante los auditores, pero sufre la lentitud y el desorden de los documentos físicos durante las inspecciones. Necesita un sistema de alerta temprana para detectar desviaciones de parámetros mientras el proceso está en marcha. Busca optimizar el tiempo de consulta de datos y reducir el riesgo de pérdida de documentos críticos del expediente de producción.
+            <b>Comportamiento y Necesidades:</b> Valora la transparencia ante los auditores, pero sufre la lentitud y el desorden de los documentos físicos durante las inspecciones. Necesita un sistema de alerta temprana para detectar desviaciones de parámetros mientras el proceso está en marcha. Busca optimizar el tiempo de consulta de datos y reducir el riesgo de pérdida de documentos críticos del expediente de producción.
             <br> <br>
-            Tecnología, Marcas y Canales: Su ecosistema tecnológico se limita al uso de Microsoft Word para estructurar órdenes de producción que luego se imprimen. Gestiona la información mediante expedientes de producción en papel llenados manualmente por operarios. Su canal de referencia es el conocimiento profundo de los procedimientos internos y normativas de radioisótopos.
+            <b>Tecnología, Marcas y Canales:</b> Su ecosistema tecnológico se limita al uso de Microsoft Word para estructurar órdenes de producción que luego se imprimen. Gestiona la información mediante expedientes de producción en papel llenados manualmente por operarios. Su canal de referencia es el conocimiento profundo de los procedimientos internos y normativas de radioisótopos.
             </td>
         </tr>
     </tbody>
@@ -520,7 +520,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
             <br> <br>
             <b>Comportamiento y Necesidades:</b> Representa el perfil de usuario avanzado que ya experimenta los beneficios de la trazabilidad digital completa. Identifica la capacitación especializada como el requisito indispensable para la adopción exitosa de nuevas herramientas. Necesita que los sistemas garanticen la inalterabilidad del historial de cambios (Audit Trail) para cumplir con las exigencias internacionales de manufactura.
             <br> <br>
-            Tecnología, Marcas y Canales: Usuaria de sistemas de manufactura digital y protocolos de análisis integrados en plataformas de software. Utiliza herramientas digitales para mapear la distribución de medicamentos hasta el punto de entrega. Sus influencias de marca y tecnología son las plataformas de manufactura digital validadas y los sistemas de gestión de bases de datos para el sector farmacéutico.
+            <b>Tecnología, Marcas y Canales:</b> Usuaria de sistemas de manufactura digital y protocolos de análisis integrados en plataformas de software. Utiliza herramientas digitales para mapear la distribución de medicamentos hasta el punto de entrega. Sus influencias de marca y tecnología son las plataformas de manufactura digital validadas y los sistemas de gestión de bases de datos para el sector farmacéutico.
             </td>
         </tr>
     </tbody>
