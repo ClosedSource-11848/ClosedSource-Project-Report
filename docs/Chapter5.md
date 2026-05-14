@@ -1848,8 +1848,8 @@ de las principales vistas de la aplicación web.
 
 <p>
 En el Sprint 2, el equipo implementó la Frontend Web Application de QualiTrack conectada a
-una fake API mediante JSON Server. Se configuraron los siguientes endpoints simulados que
-replican la estructura de los Web Services RESTful planificados para el Backend. La
+una fake API alojada en la nube mediante <strong>Beeceptor</strong>. Se configuraron diversas reglas de simulación (mock rules) que
+replican la estructura de los Web Services RESTful planificados para el Backend, permitiendo probar la reactividad del Dashboard en tiempo real. La
 implementación y documentación de los Web Services reales con Spring Boot y Swagger se
 abordará en los sprints posteriores orientados al Backend.
 </p>
@@ -1857,7 +1857,7 @@ abordará en los sprints posteriores orientados al Backend.
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
-      <th>End Point Base (JSON Server)</th>
+      <th>End Point Base (Beeceptor)</th>
       <th>Método HTTP</th>
       <th>Acción Implementada (Funciones)</th>
       <th>Sintaxis de Llamada (Ejemplo)</th>
@@ -1866,82 +1866,94 @@ abordará en los sprints posteriores orientados al Backend.
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3"><strong>/api/v1/laboratories</strong></td>
+      <td rowspan="3"><strong>/laboratories</strong></td>
       <td><strong>GET</strong></td>
       <td>Obtener listado de laboratorios.</td>
-      <td><code>GET /api/v1/laboratories</code></td>
+      <td><code>GET /laboratories</code></td>
       <td><code>200 OK</code>: Array JSON de objetos Laboratory.</td>
     </tr>
     <tr>
       <td><strong>GET</strong></td>
       <td>Obtener laboratorio por ID.</td>
-      <td><code>GET /api/v1/laboratories/{id}</code></td>
+      <td><code>GET /laboratories/{id}</code></td>
       <td><code>200 OK</code>: Objeto Laboratory. <code>404</code> si no existe.</td>
     </tr>
     <tr>
       <td><strong>POST</strong></td>
       <td>Crear un nuevo laboratorio.</td>
-      <td><code>POST /api/v1/laboratories</code></td>
+      <td><code>POST /laboratories</code></td>
       <td><code>201 Created</code>: Objeto Laboratory creado con ID asignado.</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>/api/v1/products</strong></td>
+      <td rowspan="2"><strong>/products</strong></td>
       <td><strong>GET</strong></td>
       <td>Obtener catálogo de productos farmacéuticos.</td>
-      <td><code>GET /api/v1/products</code></td>
+      <td><code>GET /products</code></td>
       <td><code>200 OK</code>: Array JSON de objetos Product.</td>
     </tr>
     <tr>
       <td><strong>POST</strong></td>
       <td>Registrar un nuevo producto.</td>
-      <td><code>POST /api/v1/products</code></td>
+      <td><code>POST /products</code></td>
       <td><code>201 Created</code>: Objeto Product creado.</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>/api/v1/equipment</strong></td>
+      <td rowspan="2"><strong>/equipment</strong></td>
       <td><strong>GET</strong></td>
       <td>Obtener listado de equipos IoT.</td>
-      <td><code>GET /api/v1/equipment</code></td>
+      <td><code>GET /equipment</code></td>
       <td><code>200 OK</code>: Array JSON de objetos Equipment.</td>
     </tr>
     <tr>
       <td><strong>POST</strong></td>
       <td>Registrar nuevo equipo con parámetros BPM.</td>
-      <td><code>POST /api/v1/equipment</code></td>
+      <td><code>POST /equipment</code></td>
       <td><code>201 Created</code>: Objeto Equipment creado.</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>/api/v1/batches</strong></td>
+      <td rowspan="2"><strong>/batches</strong></td>
       <td><strong>GET</strong></td>
       <td>Obtener listado de lotes farmacéuticos.</td>
-      <td><code>GET /api/v1/batches</code></td>
+      <td><code>GET /batches</code></td>
       <td><code>200 OK</code>: Array JSON de objetos Batch.</td>
     </tr>
     <tr>
       <td><strong>POST</strong></td>
       <td>Crear un nuevo lote farmacéutico.</td>
-      <td><code>POST /api/v1/batches</code></td>
+      <td><code>POST /batches</code></td>
       <td><code>201 Created</code>: Objeto Batch creado.</td>
     </tr>
     <tr>
-      <td><strong>/api/v1/alerts</strong></td>
+      <td><strong>/alerts</strong></td>
       <td><strong>GET</strong></td>
       <td>Obtener alertas de desviación BPM.</td>
-      <td><code>GET /api/v1/alerts</code></td>
+      <td><code>GET /alerts</code></td>
       <td><code>200 OK</code>: Array JSON de objetos DeviationAlert.</td>
     </tr>
     <tr>
-      <td><strong>/api/v1/telemetry</strong></td>
+      <td rowspan="3"><strong>/telemetry</strong><br><em>(Endpoints de Monitoreo)</em></td>
       <td><strong>GET</strong></td>
-      <td>Obtener datos de telemetría IoT.</td>
-      <td><code>GET /api/v1/telemetry</code></td>
-      <td><code>200 OK</code>: Array JSON de objetos TelemetryRecord.</td>
+      <td>Obtener lecturas actuales de los sensores (Mediciones).</td>
+      <td><code>GET /measurements</code></td>
+      <td><code>200 OK</code>: JSON envuelto en la propiedad <code>measurements</code> con array de objetos MeasurementResource.</td>
     </tr>
     <tr>
-      <td><strong>/api/v1/kpi-dashboards</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener historial de telemetría y detección de anomalías.</td>
+      <td><code>GET /history?equipmentId=EQ-001</code></td>
+      <td><code>200 OK</code>: JSON envuelto en <code>historyPoints</code> con array de puntos para el gráfico.</td>
+    </tr>
+    <tr>
+      <td><strong>GET</strong></td>
+      <td>Obtener estado actual de conexión del equipo (Online/Offline).</td>
+      <td><code>GET /status/{equipmentId}</code></td>
+      <td><code>200 OK</code>: Objeto JSON único con el estado operativo y último heartbeat del equipo.</td>
+    </tr>
+    <tr>
+      <td><strong>/kpi-dashboards</strong></td>
       <td><strong>GET</strong></td>
       <td>Obtener indicadores clave de rendimiento.</td>
-      <td><code>GET /api/v1/kpi-dashboards</code></td>
+      <td><code>GET /kpi-dashboards</code></td>
       <td><code>200 OK</code>: Array JSON de objetos KpiDashboard.</td>
     </tr>
   </tbody>
