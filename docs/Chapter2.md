@@ -8,9 +8,11 @@ En esta etapa, se analizan distintos tipos de competidores con el objetivo de en
 
 ### 2.1.1. Análisis competitivo
 
-Para comprender el entorno en el que se desarrollará QualiTrack, se realizó un análisis competitivo que permite identificar las principales soluciones utilizadas en la gestión de calidad farmacéutica, así como sus enfoques y limitaciones.
+Para desarrollar una solución realmente útil, es fundamental comprender el entorno competitivo y las alternativas que actualmente utilizan los laboratorios farmacéuticos para la gestión de la calidad. Este análisis permite identificar no solo cómo se gestionan hoy estos procesos, sino también las principales limitaciones de las soluciones existentes.
 
-A continuación, se presenta una comparación de los competidores considerando su propuesta de valor, mercado objetivo y funcionalidades, con el fin de definir el posicionamiento de QualiTrack frente a ellos.
+En esta etapa, se analizan distintos tipos de competidores con el objetivo de entender sus fortalezas, debilidades y enfoques de mercado, y así definir con claridad el posicionamiento de QualiTrack como una solución diferenciada dentro del sector farmacéutico.
+
+A continuación, se presenta una comparación de los principales competidores considerando su propuesta de valor, mercado objetivo y características generales. Este análisis permite evidenciar que, mientras las soluciones existentes se orientan a grandes corporaciones o dependen de procesos manuales, QualiTrack se posiciona como una alternativa especializada, accesible y centrada en la automatización del aseguramiento de la calidad mediante integración IoT y trazabilidad digital, especialmente pensada para laboratorios medianos y entidades públicas de la región.
 
 
 <table border="1" cellpadding="10" cellspacing="0" style="margin-left: auto; margin-right: auto; font-family: sans-serif;">
@@ -136,13 +138,25 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 </table>
 
+A partir del análisis comparativo, se identifican las siguientes diferencias clave:
+
+* Frente a métodos tradicionales, QualiTrack propone la sustitución del registro manual por una plataforma digital que reduce el error humano y mejora la confiabilidad de la información.
+* En comparación con sistemas ERP como SAP, QualiTrack evita implementaciones complejas y costosas, ofreciendo un modelo SaaS más accesible y adaptable a laboratorios que no cuentan con infraestructura empresarial avanzada.
+* A diferencia de soluciones LIMS como LabWare, QualiTrack se enfoca específicamente en la gestión del aseguramiento de la calidad y el cumplimiento normativo durante la operación productiva, integrando datos en tiempo real desde los equipos.
+
+En conjunto, este análisis permite concluir que QualiTrack no compite directamente como un ERP o un LIMS tradicional, sino que ocupa un espacio diferenciado, orientado a resolver una problemática concreta del sector farmacéutico: la digitalización confiable del control de calidad bajo normativas locales.
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Una vez identificados los actores del mercado, el siguiente paso es definir cómo QualiTrack logrará posicionarse frente a ellos. No basta con conocer a la competencia; es necesario establecer un plan de acción que permita aprovechar las ventajas del producto y reducir sus posibles limitaciones.
+Una vez identificados los actores del mercado y las principales diferencias entre las soluciones existentes, resulta necesario definir cómo QualiTrack puede fortalecer su posicionamiento competitivo y enfrentar los desafíos propios de ingresar a un mercado con opciones consolidadas y prácticas tradicionales ampliamente adoptadas.
 
-Para ello, se utiliza la Matriz CAME, una herramienta que permite transformar el análisis FODA en estrategias concretas, orientadas a fortalecer la propuesta de valor y mejorar el posicionamiento en el mercado.
+Con este objetivo, se emplea la Matriz CAME, la cual permite transformar el análisis FODA en estrategias y acciones concretas. A través de esta herramienta, se plantean tácticas orientadas a potenciar las fortalezas diferenciales de QualiTrack, como la integración IoT, la trazabilidad digital y el enfoque en normativas locales, así como a mitigar debilidades propias de una startup en etapa inicial, como la necesidad de adopción progresiva y validación en el sector.
 
-A través de este enfoque, se plantean acciones orientadas a potenciar la integración IoT, el cumplimiento normativo y la accesibilidad del modelo SaaS, así como a mitigar riesgos como la resistencia al cambio y la entrada a un mercado con competidores consolidados.
+Las estrategias definidas buscan:
+* Aprovechar la creciente necesidad de cumplimiento normativo y digitalización en el sector farmacéutico.
+* Comunicar claramente el valor de la automatización y la integridad de datos frente a soluciones manuales o genéricas.
+* Reducir la resistencia al cambio mediante interfaces simples, capacitación y acompañamiento.
+* Posicionar a QualiTrack como una alternativa especializada y confiable para laboratorios medianos y entidades públicas.
 
 Matriz CAME para el desarrollo de estrategias basadas en el análisis FODA.
 
