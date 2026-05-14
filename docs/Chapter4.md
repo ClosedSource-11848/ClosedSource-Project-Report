@@ -804,7 +804,7 @@ Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados e
 | **BC: Context Shared** | Contiene el Aggregate `Billing Account` y la integración con Stripe / Payment Gateway para cobros. |
 
 <img src="../assets/img/bc-iam.png" alt="Bounded Context iam" width="80%"/>
-<img src="../assets/img/bc-em-png.png" alt="Bounded Context em" width="80%"/>
+<img src="../assets/img/bc-em.png" alt="Bounded Context em" width="80%"/>
 <img src="../assets/img/bc-lm.png" alt="Bounded Context lm" width="80%"/>
 <img src="../assets/img/bc-tracking.png" alt="Bounded Context tracking" width="80%"/>
 <img src="../assets/img/bc-ca.png" alt="Bounded Context ca" width="80%"/>
