@@ -131,47 +131,49 @@ Existe una oportunidad clara de mercado para una plataforma SaaS especializada q
 
 #### 1.2.2.2. Lean UX Assumptions
 
-En esta sección los supuestos iniciales del equipo acerca del negocio, los usuarios, la problemática y la solución sugerida se exponen. Durante entrevistas, prototipado y pruebas de uso, estas suposiciones se establecen como creencias que necesitan ser confirmadas con evidencia.
+En esta sección se exponen las premisas sobre las cuales se construye la propuesta de QualiTrack, considerando el contexto regulatorio del sector farmacéutico, la realidad operativa de los laboratorios y el valor esperado de la solución tecnológica.
 
 **Business Assumptions:**
-* Existe un mercado crítico de laboratorios farmacéuticos medianos y entidades de salud pública (como el INS) en Perú y LATAM que necesitan digitalizar su telemetría para sobrevivir a las regulaciones.
-* Los directores y gerentes de calidad están dispuestos a invertir en una plataforma SaaS B2B si perciben que elimina el riesgo de multas de la DIGEMID y la pérdida total de lotes de producción.
-* Los laboratorios pueden asumir un modelo de suscripción (basado en el volumen de lotes gestionados o cantidad de sensores IoT conectados) si el retorno de inversión se refleja en la reducción de mermas.
-* La automatización de la captura de datos (pH, temperatura, presión) genera una garantía de "Integridad de Datos" que compensa económicamente la curva de aprendizaje inicial del personal de planta.
-* El modelo de QualiTrack es escalable a otros países de la región, ya que las normativas de Buenas Prácticas de Manufactura (BPM) son similares en toda Latinoamérica.
+* Existe un segmento relevante de laboratorios farmacéuticos medianos y entidades de salud pública en Perú y Latinoamérica que enfrentan limitaciones operativas significativas debido a la falta de digitalización de la telemetría y los registros de calidad.
+* Los directores y responsables de aseguramiento de la calidad están dispuestos a invertir en una plataforma SaaS B2B cuando esta les permite reducir el riesgo de sanciones regulatorias por parte de la DIGEMID y evitar la pérdida total de lotes de producción.
+* Los laboratorios pueden adoptar un modelo de suscripción basado en el volumen de operación (cantidad de lotes gestionados o sensores IoT conectados), siempre que el impacto económico positivo sea visible en la reducción de mermas, reprocesos y tiempos improductivos.
+* La captura automática de variables críticas como pH, temperatura y presión genera un nivel de confiabilidad e integridad de los datos que justifica la inversión inicial y compensa la curva de adaptación operativa del personal de planta.
+* El modelo de QualiTrack es escalable a otros países de la región debido a la similitud entre las normativas de Buenas Prácticas de Manufactura aplicadas en Latinoamérica.
 
 **Business Outcomes:**
-* Queremos que los laboratorios farmacéuticos adopten QualiTrack como su Sistema de Gestión de Calidad (QMS) principal, abandonando definitivamente los registros en papel y Excel.
-* Esperamos reducir en un 80% el tiempo que invierten las empresas en la preparación y recopilación de documentos para las auditorías de DIGEMID.
-* Buscamos disminuir en un 15% la pérdida de lotes de medicamentos mediante la detección temprana de fallas en las variables críticas.
-* Aspiramos a conseguir la suscripción de 2 laboratorios piloto en los primeros 8 meses para validar la estabilidad de la integración IoT.
-* Buscamos que QualiTrack se posicione como el "estándar de oro" en trazabilidad inmutable frente a los auditores regulatorios.
+* Que los laboratorios adopten QualiTrack como su sistema principal de gestión de calidad, reduciendo progresivamente la dependencia de registros en papel y hojas de cálculo.
+* Reducir en aproximadamente un 80% el tiempo destinado a la preparación, consolidación y revisión de documentación durante auditorías regulatorias.
+* Disminuir en un 15% la pérdida de lotes de medicamentos mediante la detección temprana de desviaciones en variables críticas del proceso productivo.
+* Conseguir la suscripción de al menos dos laboratorios piloto en los primeros ocho meses de operación, validando la factibilidad y estabilidad del uso de la plataforma en entornos reales.
+* Posicionar a QualiTrack como una solución confiable y reconocida de trazabilidad digital frente a auditores regulatorios y entidades de control sanitario.
 
 **User Assumptions:**
-* Los Jefes de Aseguramiento de la Calidad (QA) necesitan dashboards remotos para supervisar la producción y liberar lotes sin tener que estar físicamente al lado de la maquinaria.
-* Los operarios de planta adoptarán el sistema rápidamente si este elimina la tediosa tarea de transcribir datos de las pantallas de las máquinas a bitácoras de papel.
-* Los supervisores públicos (ej. INS) valoran la inmediatez de las alertas automatizadas por encima de los reportes retrospectivos.
-* Los auditores de la DIGEMID aceptarán la validez de los reportes digitales generados por el sistema si estos cuentan con firmas digitales y registros inmutables.
-* Existe un rechazo natural al cambio tecnológico en la planta, el cual se vencerá si la interfaz del operario es lo suficientemente minimalista e intuitiva.
+* Los Jefes de Aseguramiento de la Calidad requieren visibilidad remota de la producción para supervisar procesos y liberar lotes sin necesidad de supervisión presencial constante.
+* Los operarios de planta adoptan con mayor facilidad herramientas que eliminan tareas repetitivas y propensas a error, como la transcripción manual de datos desde la maquinaria hacia registros físicos.
+* Los supervisores de entidades de salud pública priorizan la detección inmediata de desviaciones críticas por encima del análisis posterior de reportes históricos.
+* Los auditores regulatorios aceptan reportes digitales cuando estos garantizan trazabilidad completa, registros inmutables y autenticación mediante firmas digitales.
+* La resistencia inicial al cambio tecnológico en planta se reduce significativamente cuando la interfaz destinada al operario es simple, directa y enfocada exclusivamente en sus funciones esenciales.
 
 **User Outcomes:**
-* Los Jefes de Calidad reportan cero estrés durante las inspecciones inopinadas, ya que tienen toda la documentación a un clic de distancia.
-* Los operarios de laboratorio reducen el tiempo dedicado a labores administrativas y se enfocan en la correcta operación de los equipos de esterilización y manufactura.
-* Los supervisores detectan desviaciones térmicas o de presión en tiempo real, bloqueando lotes defectuosos antes de que avancen en la cadena de suministro.
-* Las decisiones de liberación o rechazo de un medicamento se basan en métricas exactas extraídas por hardware, eliminando el error de transcripción humana.
+* Los Jefes de Aseguramiento de la Calidad enfrentan inspecciones regulatorias con mayor tranquilidad al contar con información organizada, accesible y actualizada en tiempo real.
+* Los operarios reducen el tiempo dedicado a tareas administrativas y se concentran en la correcta operación de los equipos de esterilización y manufactura.
+* Los supervisores detectan desviaciones térmicas o de presión en el momento en que ocurren, permitiendo bloquear lotes defectuosos antes de que avancen en la cadena de suministro.
+* Las decisiones de liberación o rechazo de medicamentos se basan en datos capturados directamente por hardware, eliminando errores asociados a la transcripción manual.
 
 **Features:**
-* **Dashboard de Monitoreo IoT en tiempo real:** Interfaz que centraliza la telemetría (pH, temperatura, presión) capturada directamente por los sensores de las máquinas, accesible por roles.
-* **Motor de Compliance y Alertas Automáticas:** Sistema que evalúa los datos entrantes contra los umbrales de las normativas BPM y envía notificaciones push/email inmediatas si hay desviaciones.
-* **Gestor Inmutable de Lotes:** Módulo que registra todo el ciclo de vida de un lote de producción, bloqueándolo automáticamente si detecta fallas críticas de calidad.
-* **Generador de Reportes Regulatorios:** Herramienta para exportar expedientes completos en PDF con firmas digitales, listos para ser presentados ante auditores de la DIGEMID.
+* **Captura Automática de Variables mediante Sensores IoT:** Integración de sensores IoT en equipos industriales para capturar automáticamente variables críticas como pH, temperatura y presión, eliminando la transcripción manual y reduciendo el error humano en los registros de calidad.
+* **Sistema de Alertas Operativas en Tiempo Real:** Sistema que detecta desviaciones de parámetros frente a los umbrales definidos por las Buenas Prácticas de Manufactura (BPM) y notifica en tiempo real al operario de planta para una atención inmediata de eventos críticos.
+* **Módulo de Trazabilidad Digital Inmutable:** Componente que registra de forma digital e inmutable todo el ciclo de vida de los lotes de producción, asegurando la integridad de la información y la trazabilidad completa de los procesos de manufactura.
+* **Firma Digital para Liberación Remota de Lotes:** Funcionalidad que permite a supervisores y jefes de aseguramiento de la calidad liberar lotes mediante firmas digitales desde cualquier dispositivo autorizado, reduciendo tiempos de aprobación y dependencia de procesos presenciales.
+* **Plataforma Centralizada como Reemplazo del Registro Manual:** Plataforma integral de gestión de calidad que consolida monitoreo, alertas, trazabilidad y documentación regulatoria, reemplazando los registros manuales en papel y Excel por una fuente única y confiable de información.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hipótesis 1:** Creemos que los Jefes de Aseguramiento de la Calidad reducirán significativamente los errores de registro si la plataforma captura automáticamente la telemetría de equipos mediante integración IoT. Lo sabremos cuando el error de transcripción manual se reduzca a valores cercanos a 0%.
-* **Hipótesis 2:** Creemos que, si los historiales de producción se gestionan de manera digital y continua, el proceso de preparación para auditorías regulatorias será más rápido y menos complejo. Sabremos que esto es cierto cuando se reduzca el tiempo dedicado a la recopilación y validación de documentación.
-* **Hipótesis 3:** Creemos que, si el sistema permite identificar desviaciones de parámetros de manera oportuna, será posible intervenir antes de que estas generen impactos en etapas posteriores del proceso. Sabremos que esto es cierto cuando disminuyan las incidencias detectadas de forma tardía.
-* **Hipótesis 4:** Creemos que, si la solución respeta los roles y flujos de trabajo existentes, la adopción del sistema podrá realizarse de forma progresiva y sostenible. Sabremos que esto es cierto cuando los usuarios utilicen la plataforma de manera recurrente como fuente principal de control.
+* **Hipótesis 1:** Creemos que al integrar sensores IoT para la captura automática de variables críticas (pH, temperatura, presión), eliminaremos el riesgo de manipulación y error de transcripción. Lo sabremos cuando el error humano en los registros se reduzca a un valor cercano al 0%.
+* **Hipótesis 2:** Creemos que al implementar un sistema centralizado de alertas y bloqueo preventivo de lotes no conformes, reduciremos el desperdicio de producción. Lo sabremos cuando la pérdida de lotes por desviaciones de parámetros disminuya en un 15%.
+* **Hipótesis 3:** Creemos que al digitalizar la trazabilidad de forma inmutable mediante QualiTrack, agilizaremos las inspecciones regulatorias de DIGEMID. Lo sabremos cuando el tiempo de preparación de documentos para auditorías se reduzca en un 80% en las instituciones piloto.
+* **Hipótesis 4:** Creemos que al habilitar la firma digital en un dashboard web responsivo, aceleraremos la cadena de suministro segura. Lo sabremos cuando los supervisores de calidad logren firmar y liberar lotes de forma remota en menos de 10 minutos tras finalizar la producción.
+* **Hipótesis 5:** Creemos que al utilizar notificaciones en tiempo real, el personal de planta reaccionará instantáneamente ante fallas mecánicas en equipos como autoclaves. Lo sabremos cuando los operarios visualicen y atiendan alertas de desviación en menos de 5 segundos.
 
 #### 1.2.2.4. Lean UX Canvas
 
