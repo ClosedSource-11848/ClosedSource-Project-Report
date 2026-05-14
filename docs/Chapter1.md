@@ -133,23 +133,6 @@ Existe una oportunidad clara de mercado para una plataforma SaaS especializada q
 
 En esta sección los supuestos iniciales del equipo acerca del negocio, los usuarios, la problemática y la solución sugerida se exponen. Durante entrevistas, prototipado y pruebas de uso, estas suposiciones se establecen como creencias que necesitan ser confirmadas con evidencia.
 
-**Assumptions Worksheet (síntesis aplicada a QualiTrack)**
-
-| #  | Supuesto aplicado                                                                                                                               |
-|----|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | Creemos que los laboratorios necesitan garantizar la integridad de datos para superar auditorías de DIGEMID sin observaciones.                  |
-| 2  | Estas necesidades pueden resolverse con una solución SaaS integrada a sensores IoT que capturen telemetría (pH, presión, temp) automáticamente. |
-| 3  | Nuestros clientes iniciales serán laboratorios farmacéuticos medianos y entidades públicas (como el INS) que manejan procesos de esterilización.|
-| 4  | El valor #1 para los laboratorios es la reducción del riesgo de rechazo de lotes y la agilización de procesos de auditoría.                     |  
-| 5  | Beneficios adicionales: eliminación del papel, alertas tempranas ante desviaciones y centralización de la firma digital de lotes.               |
-| 6  | Adquiriremos clientes mediante venta directa B2B técnica, ferias del sector farmacéutico y consultorías de cumplimiento regulatorio.            |
-| 7  | Generaremos ingresos con planes de suscripción basados en el volumen de lotes gestionados o cantidad de equipos IoT conectados.                 |
-| 8  | La competencia principal son los registros manuales en papel, hojas de cálculo de Excel.                                                        |
-| 9  | Nos diferenciaremos por la captura automática vía IoT, la inmutabilidad de los registros y el cumplimiento nativo de normativas locales.        |
-| 10 | El mayor riesgo de producto es que el personal de planta se resista a dejar el registro físico por costumbre operativa.                         |
-| 11 | Reduciremos ese riesgo con interfaces de usuario simplificadas para operarios y dashboards de fácil lectura para supervisores.                  |
-| 12 | Si se demuestra que la integración de hardware es muy compleja para el cliente, pivotaremos hacia una solución de gestión documental robusta.   |
-
 **Business Assumptions:**
 * Existe un mercado crítico de laboratorios farmacéuticos medianos y entidades de salud pública (como el INS) en Perú y LATAM que necesitan digitalizar su telemetría para sobrevivir a las regulaciones.
 * Los directores y gerentes de calidad están dispuestos a invertir en una plataforma SaaS B2B si perciben que elimina el riesgo de multas de la DIGEMID y la pérdida total de lotes de producción.
@@ -183,18 +166,9 @@ En esta sección los supuestos iniciales del equipo acerca del negocio, los usua
 * **Gestor Inmutable de Lotes:** Módulo que registra todo el ciclo de vida de un lote de producción, bloqueándolo automáticamente si detecta fallas críticas de calidad.
 * **Generador de Reportes Regulatorios:** Herramienta para exportar expedientes completos en PDF con firmas digitales, listos para ser presentados ante auditores de la DIGEMID.
 
-**Assumptions Priority (riesgo x incertidumbre)**
-
-| Prioridad | Supuesto a validar                                                                                                  | Riesgo | Incertidumbre |
-|----------:|---------------------------------------------------------------------------------------------------------------------|:------:|:-------------:|
-|         1 | Los sensores IoT pueden integrarse de forma estable con equipos industriales antiguos (autoclaves, pH-metros).      |  Alto  |     Alto      |
-|         2 | La plataforma cumple con los estándares de seguridad de datos exigidos por DIGEMID para auditorías digitales.       |  Alto  |     Medio     |
-|         3 | El personal de aseguramiento de calidad preferirá el dashboard digital sobre las bitácoras físicas actuales.        |  Alto  |     Alto      |
-|         4 | Los laboratorios están dispuestos a pagar una suscripción recurrente en lugar de comprar un software de pago único. |  Medio |     Bajo      |
-
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hipótesis 1:** Creemos que, si las variables críticas del proceso se registran de forma automática y centralizada, el error humano asociado al registro manual se reducirá significativamente. Sabremos que esto es cierto cuando disminuyan las inconsistencias detectadas en los registros de producción.
+* **Hipótesis 1:** Creemos que los Jefes de Aseguramiento de la Calidad reducirán significativamente los errores de registro si la plataforma captura automáticamente la telemetría de equipos mediante integración IoT. Lo sabremos cuando el error de transcripción manual se reduzca a valores cercanos a 0%.
 * **Hipótesis 2:** Creemos que, si los historiales de producción se gestionan de manera digital y continua, el proceso de preparación para auditorías regulatorias será más rápido y menos complejo. Sabremos que esto es cierto cuando se reduzca el tiempo dedicado a la recopilación y validación de documentación.
 * **Hipótesis 3:** Creemos que, si el sistema permite identificar desviaciones de parámetros de manera oportuna, será posible intervenir antes de que estas generen impactos en etapas posteriores del proceso. Sabremos que esto es cierto cuando disminuyan las incidencias detectadas de forma tardía.
 * **Hipótesis 4:** Creemos que, si la solución respeta los roles y flujos de trabajo existentes, la adopción del sistema podrá realizarse de forma progresiva y sostenible. Sabremos que esto es cierto cuando los usuarios utilicen la plataforma de manera recurrente como fuente principal de control.
