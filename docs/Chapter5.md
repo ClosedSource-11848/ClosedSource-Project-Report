@@ -1660,140 +1660,140 @@ descripción del cambio introducido y la fecha de commit.
         </a>
       </td>
       <td>feature/shared</td>
-      <td>7f3a91bc52de89f1447acb20de7a8f2a61d4e9bc</td>
+      <td>7f3a91b</td>
       <td>feat(shared): add layout, home view, footer and toolbar components.</td>
       <td>Implementa el componente de layout principal con navigation toolbar, sidebar, home view y footer con créditos de tecnología.</td>
       <td>30-04-2026</td>
     </tr>
     <tr>
       <td>feature/shared</td>
-      <td>a5c92ef14bd772e9c08fa61c52a3df1a7e8bc442</td>
+      <td>a5c92ef</td>
       <td>feat(api): add abstract base classes for api gateway and endpoints with error handling.</td>
       <td>Crea las clases abstractas BaseService y BaseEndpoint para el consumo estandarizado de la fake API con manejo de errores centralizado.</td>
       <td>30-04-2026</td>
     </tr>
     <tr>
       <td>feature/iam</td>
-      <td>4bc28e17fd54a2d90c91fe2a84fd6f5d9a3c11ea</td>
+      <td>4bc28e1</td>
       <td>feat(iam): add sign-in and sign-up views.</td>
       <td>Implementa los formularios de autenticación (sign-in y sign-up) con validación de campos y navegación entre vistas.</td>
       <td>02-05-2026</td>
     </tr>
     <tr>
       <td>feature/iam</td>
-      <td>b2d91fa43cc7de801f3ab67f92b3e7d22f61aa90</td>
+      <td>b2d91fa</td>
       <td>feat(iam): add api services, endpoints and mappers for iam.</td>
       <td>Desarrolla los servicios API, endpoints REST y mappers de datos para el módulo de Identity and Access Management.</td>
       <td>02-05-2026</td>
     </tr>
     <tr>
       <td>feature/laboratory</td>
-      <td>61ef8cb772ab54d33e8a9bc44f98cdab5e7f1124</td>
+      <td>61ef8cb</td>
       <td>feat(laboratory): add entities and commands for laboratory, products, raw materials and staff.</td>
       <td>Crea las entidades de dominio y comandos para el bounded context Laboratory Management.</td>
       <td>02-05-2026</td>
     </tr>
     <tr>
       <td>feature/laboratory</td>
-      <td>98d2c1ef45ab78fd4a11bc72ee5d390ccfa812e7</td>
+      <td>98d2c1e</td>
       <td>feat(laboratory): add views for lab profile, product catalog, raw materials and staff management.</td>
       <td>Implementa las vistas de perfil de laboratorio, catálogo de productos, gestión de materias primas y personal.</td>
       <td>02-05-2026</td>
     </tr>
     <tr>
       <td>feature/equipment</td>
-      <td>e91bc8f4d12a77ab3ef5c92144dd81fe70ac2931</td>
+      <td>e91bc8f</td>
       <td>feat(equipment): add entities and commands for equipment, maintenance and bpm configuration.</td>
       <td>Crea las entidades de dominio para equipos IoT, registros de mantenimiento y configuración de parámetros BPM.</td>
       <td>03-05-2026</td>
     </tr>
     <tr>
       <td>feature/equipment</td>
-      <td>91de5c77ab8422f8ec6f4410a2b86cfa11f72e90</td>
+      <td>91de5c7</td>
       <td>feat(equipment): add equipment list, form and detail views.</td>
       <td>Desarrolla las vistas de listado de equipos, formulario de registro y vista detallada con información de BPM.</td>
       <td>03-05-2026</td>
     </tr>
     <tr>
       <td>feature/batch</td>
-      <td>7abf22d8ce43fa91b6d0e17fcbb81e3c94a72df1</td>
+      <td>7abf22d</td>
       <td>feat(batch): add entities and commands for batch lifecycle and raw material usage.</td>
       <td>Crea entidades de dominio para el ciclo de vida de lotes farmacéuticos y uso de materias primas.</td>
       <td>04-05-2026</td>
     </tr>
     <tr>
       <td>feature/batch</td>
-      <td>c82ab67fd2f9c8bdb4d5f217bb4e2f98aa73d611</td>
+      <td>c82ab67</td>
       <td>feat(batch): add batch list, detail and form views.</td>
       <td>Implementa las vistas de lista de lotes, vista detallada y formulario de gestión de lotes.</td>
       <td>04-05-2026</td>
     </tr>
     <tr>
       <td>feature/ca</td>
-      <td>52df1ab7c91e3fa882bc71d5ee6ac91b2f773cd0</td>
+      <td>52df1ab</td>
       <td>feat(ca): add entities and commands for compliance events, alerts and notification preferences.</td>
       <td>Crea entidades para eventos de compliance, alertas de desviación y preferencias de notificación del módulo CA.</td>
       <td>04-05-2026</td>
     </tr>
     <tr>
       <td>feature/ca</td>
-      <td>84ce2fa771b94dd2ac11ef6ab998f0c3de72b5aa</td>
+      <td>84ce2fa</td>
       <td>feat(ca): add alert dashboard and history views.</td>
       <td>Desarrolla el dashboard de alertas de desviación y la vista de historial de compliance.</td>
       <td>04-05-2026</td>
     </tr>
     <tr>
       <td>feature/ra</td>
-      <td>fa28bc7de33e91ac4f882d71b2ef61c8d994ab21</td>
+      <td>fa28bc7</td>
       <td>feat(ra): add entities and commands for audit logs, KPIs and report generation.</td>
       <td>Crea entidades de dominio para logs de auditoría, indicadores clave de rendimiento y generación de reportes.</td>
       <td>05-05-2026</td>
     </tr>
     <tr>
       <td>feature/ra</td>
-      <td>1cd82fa77bb42e8d90fc17ab92e5d11ca8f441d2</td>
+      <td>1cd82fa</td>
       <td>feat(ra): add deviation trend chart view.</td>
       <td>Implementa la vista de gráfico de tendencias de desviación para el módulo de Reporting & Audit.</td>
       <td>05-05-2026</td>
     </tr>
     <tr>
       <td>feature/tracking</td>
-      <td>4fd91ac27be71f0c88aa21e5fd93bc77ea12d6c1</td>
+      <td>4fd91ac</td>
       <td>feat(tracking): add entities for telemetry, measurements and equipment status.</td>
       <td>Crea entidades de dominio para telemetría IoT, mediciones en tiempo real y estado de equipos.</td>
       <td>08-05-2026</td>
     </tr>
     <tr>
       <td>feature/tracking</td>
-      <td>58fd3a2e9bc4f1d7c4aa611e8f2c39ab5d6ef220</td>
+      <td>58fd3a2</td>
       <td>feat(tracking): add telemetry dashboard and equipment status card.</td>
       <td>Desarrolla el dashboard de telemetría en tiempo real con tarjetas de estado de equipos IoT.</td>
       <td>08-05-2026</td>
     </tr>
     <tr>
       <td>develop</td>
-      <td>d82bc17ea4f2c91ab73dd8ef61ca994b21ef77c</td>
+      <td>d82bc17</td>
       <td>chore(mockapi): add mock api configuration and startup scripts.</td>
       <td>Configura JSON Server como fake API con datos de prueba para todos los bounded contexts y scripts de inicio.</td>
       <td>11-05-2026</td>
     </tr>
     <tr>
       <td>feature/equipment</td>
-      <td>7ce11af82db44ec91fa7d5bc22e81df93ac5e7b</td>
+      <td>7ce11af</td>
       <td>feat(equipment): add equipment list, detailed view and registration forms.</td>
       <td>Actualiza las vistas de equipos con mejoras en la lista, vista detallada y formularios de registro (aporte de Dan-trax).</td>
       <td>12-05-2026</td>
     </tr>
     <tr>
       <td>feature/batch</td>
-      <td>2ab77fd91cbe53ef8d14ca88f72b91de6aa4fc3</td>
+      <td>2ab77fd</td>
       <td>feat(batch): add batch list table and detailed management view.</td>
       <td>Actualiza la tabla de lista de lotes y la vista de gestión detallada de lotes (aporte de M4uricioCastillo).</td>
       <td>12-05-2026</td>
     </tr>
     <tr>
       <td>feature/laboratory</td>
-      <td>91fa2bc77de14ac88fb53d2ef7ca11bd44e8f219</td>
+      <td>91fa2bc</td>
       <td>feat(laboratory): add laboratory store management.</td>
       <td>Implementa la gestión de estado del store de laboratorio con señales reactivas (aporte de BJRM03).</td>
       <td>13-05-2026</td>
