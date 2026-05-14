@@ -669,121 +669,149 @@ El desarrollo del proceso del Domain-Driven Design se realizó en la aplicación
 [https://shorturl.at/0eSVT]
 
 ---
+#### Paso 1: Brainstorming (Unstructured Exploration)
 
-### Bounded Context IAM
+El primer paso consistió en realizar una exploración sin estructura para identificar todos los posibles eventos del dominio. Durante esta etapa, el equipo analizó criterios como la mutación de estados y la ejecución exitosa de comandos en el sistema, identificando 38 situaciones concretas (Domain Events) que los diferentes actores del sistema desencadenan. Entre los eventos más relevantes se capturaron: "Batch created", "Measurement recorded", "Deviation alert triggered", "Equipment registered", "Calibration alert triggered", "Raw material usage recorded" y "Batch released", entre otros. Esta exploración permitió capturar el núcleo operativo e IoT del laboratorio en su totalidad.
 
-El bounded context IAM (Identity and Access Management) se encarga de la autenticación, 
-autorización y gestión de credenciales dentro del ecosistema QualiTrack. Administra 
-procesos como el registro de usuarios, inicio de sesión, recuperación de contraseñas y 
-asignación de permisos según el rol (jefe de QA, operario, auditor). Su propósito es 
-garantizar accesos seguros, confiables y alineados con las políticas de protección de la 
-información regulatoria en toda la plataforma.
 
-<img src="../assets/img/bc-iam.jpg" alt="Bounded Context IAM" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-1.png" alt="Bounded Context brainstorming" width="80%"/>
 
----
+#### Paso 2: Timelines
 
-### Bounded Context Laboratory Management
+Posteriormente, organizamos los eventos en líneas de tiempo para visualizar el flujo de interacciones y secuencias entre eventos. Se identificaron los siguientes flujos principales:
 
-El bounded context Laboratory Management gestiona toda la información institucional del 
-laboratorio farmacéutico dentro de QualiTrack: datos del laboratorio, normativas 
-regulatorias aplicables, catálogo de productos farmacéuticos, materias primas y personal 
-técnico. Administra la creación, actualización y mantenimiento de los datos base del 
-laboratorio. Su propósito es centralizar la ficha institucional y servir como base para 
-otros contextos como Equipment Management, Batch Management y Reporting & Audit.
+* **IAM & Security Flow:** gestión de identidad, roles, registro, inicio de sesión y desactivación de accesos del personal.
+* **Laboratory Setup Flow:** configuración inicial del laboratorio, registro de personal, creación de catálogo de productos farmacéuticos y materias primas.
+* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración.
+* **Tracking & Telemetry Flow:** recepción continua de mediciones IoT, actualización de estado de los equipos y registro de historiales telemétricos.
+* **Compliance & Alerting Flow:** configuración de preferencias de notificación, detección de anomalías, registro de eventos de cumplimiento y envío de alertas Push.
+* **Production Batch Flow:** creación de lotes, asignación de materia prima, procesamiento y decisión final de liberación (Release) o rechazo (Reject).
+* **Reporting & Analytics Flow:** cálculo de KPIs, generación de reportes BPM consolidados y exportación de logs inmutables para auditoría.
+* **Subscription & Payments Flow:** selección de planes SaaS para el laboratorio y procesamiento de transacciones financieras.
 
-<img src="../assets/img/bc-laboratory.jpg" alt="Bounded Context Laboratory Management" width="80%"/>
+Esta organización temporal facilitó la comprensión de dependencias y secuencias críticas entre la configuración humana y la automatización del sistema.
 
----
+<img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Timelines" width="80%"/>
 
-### Bounded Context Equipment Management
+#### Paso 3: Commands
 
-El bounded context Equipment Management gestiona el ciclo de vida completo de los equipos 
-industriales del laboratorio: autoclaves, medidores de pH, termómetros y sensores de 
-presión. Incluye el registro de equipos, la vinculación con sensores IoT, la configuración 
-de parámetros BPM por variable, el registro de mantenimientos y el control de calibración. 
-Se integra con Tracking para habilitar la recepción de telemetría y con Compliance & 
-Alerting para aplicar los rangos configurados. Su propósito es asegurar que todos los 
-equipos conectados estén correctamente identificados, calibrados y con parámetros de control 
-actualizados.
+En este paso definimos los comandos que los diferentes actores pueden ejecutar en el sistema. Los comandos representan las intenciones o acciones (en verbo imperativo) que mutan el estado de la aplicación y desencadenan los eventos en el dominio.
 
-<img src="../assets/img/bc-equipment.jpg" alt="Bounded Context Equipment Management" width="80%"/>
+| Actor | Comandos |
+|-------|----------|
+| **QA Manager** | Sign Up, Sign In, Assign Role, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Update Notification Preference, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report, Subscribe Laboratory. |
+| **Lab Operator** | Sign In, Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
+| **Auditor** | Export Equipment Log. |
+| **IoT Sensor** | Record Measurement. |
+| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Send Push Notification, Calculate KPI Metrics. |
+| **Payment System** | Process Payment. |
 
----
+<img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Commands" width="80%"/>
 
-### Bounded Context Tracking (IoT)
+#### Paso 4: Policies and Actors
 
-El bounded context Tracking constituye uno de los núcleos del sistema QualiTrack. Captura, 
-sincroniza y almacena la telemetría enviada por los sensores IoT vinculados a los equipos 
-industriales. Registra variables críticas como temperatura, presión y pH en tiempo real, 
-con marca de tiempo y asociación al equipo y lote correspondiente. Estos datos son enviados 
-al contexto Compliance & Alerting para su evaluación normativa y a Reporting & Audit para 
-análisis histórico. Su propósito es brindar monitoreo continuo y automático del estado 
-operativo de los equipos de producción, eliminando la dependencia de registros manuales.
+En este paso identificamos las políticas de negocio (reglas WHEN/THEN) y los actores responsables de cada flujo. Las políticas representan las reglas automáticas que el sistema ejecuta en respuesta a ciertos eventos, garantizando el estricto cumplimiento de las normativas de manufactura sin depender de la intervención humana constante.
 
-<img src="../assets/img/bc-tracking.jpg" alt="Bounded Context Tracking IoT" width="80%"/>
+Las políticas identificadas fueron:
 
----
+* **WHEN** raw material stock reaches the minimum threshold **THEN** trigger a minimum stock alert.
+* **WHEN** an equipment's calibration date is near **THEN** trigger a calibration due alert internally.
+* **WHEN** an IoT device loses connection **THEN** trigger an equipment connection lost alert.
+* **WHEN** telemetry is received **THEN** evaluate the measurement against the configured BPM parameters automatically.
+* **WHEN** a non-critical deviation is detected **THEN** trigger a warning alert and send a push notification to the QA Manager.
+* **WHEN** a critical deviation is detected in telemetry **THEN** block the batch automatically and register a compliance event.
+* **WHEN** a batch is successfully released with a digital signature **THEN** auto-generate the immutable batch record PDF.
+* **WHEN** a QA Manager deactivates a user access **THEN** revoke all permissions immediately while keeping the audit log intact.
 
-### Bounded Context Compliance & Alerting
+Estas políticas permiten automatizar procesos críticos del sistema, reduciendo drásticamente el error humano y asegurando respuestas oportunas ante situaciones de riesgo que podrían comprometer la calidad de los medicamentos.
 
-El bounded context Compliance & Alerting es el otro núcleo estratégico de QualiTrack. 
-Procesa, evalúa y clasifica cada medición recibida desde Tracking comparándola con los 
-parámetros BPM configurados para el equipo correspondiente. Cuando detecta una desviación 
-crítica, genera alertas inmediatas para el operario de turno, notifica al jefe de 
-Aseguramiento de la Calidad y bloquea automáticamente el lote asociado, impidiendo su 
-avance en la cadena de suministro. Administra también el historial de eventos de compliance 
-y las preferencias de notificación de los usuarios. Su propósito es garantizar que ninguna 
-desviación de los parámetros BPM pase desapercibida, protegiendo la integridad del producto 
-y el cumplimiento normativo ante DIGEMID.
+<img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Policies" width="80%"/>
 
-<img src="../assets/img/bc-compliance.jpg" alt="Bounded Context Compliance and Alerting" width="80%"/>
+#### 4.6.1.1. Candidate Context Discovery
 
----
+Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como gestión de identidad, configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
 
-### Bounded Context Batch Management
+#### Paso 5: Read Models
 
-El bounded context Batch Management representa el núcleo operativo de la gestión de 
-producción en QualiTrack. Administra el ciclo de vida completo de cada lote farmacéutico: 
-desde su creación y vinculación con materias primas y equipos, hasta su liberación digital 
-mediante firma del jefe de QA o su rechazo documentado. Conecta flujos con Equipment 
-Management para asociar equipos al lote, con Tracking para recibir telemetría vinculada, 
-con Compliance & Alerting para gestionar bloqueos automáticos y con Reporting & Audit para 
-la generación de registros inmutables. Su propósito es garantizar la trazabilidad completa 
-de cada lote de producción, asegurando que toda decisión de liberación o rechazo quede 
-registrada de forma inmutable y auditable.
+Los Read Models representan las vistas de consulta que los actores utilizan para tomar decisiones dentro del sistema. De acuerdo con el modelado, se identificaron las siguientes vistas principales mediante los post-its verdes:
 
-<img src="../assets/img/bc-batch.jpg" alt="Bounded Context Batch Management" width="80%"/>
+* **User Directory & role Permissions:** utilizado en el flujo de IAM para consultar accesos y permisos.
+* **Equipment Inventory & Connectivity Status:** utilizado para verificar el inventario de maquinaria y su estado de conexión a la red.
+* **Laboratory Infrastructure Map:** permite consultar el estado y la configuración de la infraestructura del laboratorio.
+* **Sensor Config:** vista utilizada para consultar los parámetros de configuración de los dispositivos IoT.
+* **Real-time Telemetry Dashboard:** panel para el monitoreo continuo y en vivo de los datos transmitidos por los sensores.
+* **Batch Genealogy & Material Stock:** utilizado para consultar la trazabilidad del lote y el inventario disponible de materias primas.
+* **Performance Metrics & KPI Summary:** dashboard utilizado por Analytics para visualizar el rendimiento y los indicadores clave.
+* **Plan Options:** permite consultar los planes de suscripción disponibles antes de realizar el pago.
 
----
+<img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context Models" width="80%"/>
 
-### Bounded Context Reporting & Audit
+#### Paso 6: External Systems
 
-El bounded context Reporting & Audit recopila información de múltiples fuentes (Tracking, 
-Compliance & Alerting, Batch Management, Equipment Management) para generar reportes de 
-trazabilidad inmutables, logs de auditoría y visualizaciones de indicadores clave de 
-calidad (KPIs). Permite la generación de reportes PDF no editables por lote o por periodo, 
-la exportación de logs de eventos de equipos y el análisis de tendencias de desviaciones. 
-Su propósito es ofrecer una capa de transparencia y evidencia documental que permita 
-afrontar inspecciones de DIGEMID con toda la información consolidada, reduciendo el tiempo 
-de preparación de auditorías en un 80%.
+En este paso identificamos los sistemas externos que interactúan con el dominio, pero que están fuera del control directo del sistema (representados con post-its rosados).
 
-<img src="../assets/img/bc-reporting.jpg" alt="Bounded Context Reporting and Audit" width="80%"/>
+* **SendGrid / Email Service:** sistema externo utilizado en el contexto de IAM para el envío de correos, como la recuperación de contraseñas.
+* **IoT Hub:** infraestructura externa encargada de gestionar la conectividad y recepción de datos de los equipos.
+* **Cloudinary (Product Assets):** servicio en la nube utilizado para el almacenamiento de imágenes y recursos del laboratorio.
+* **OneSignal:** sistema externo utilizado para el envío de notificaciones push ante eventos de cumplimiento y alertas.
+* **Audit Vault (Secure Storage):** servicio de almacenamiento seguro utilizado para resguardar los registros de auditoría inmutables.
+* **Stripe / Payment Gateway:** pasarela de pagos externa utilizada para procesar las transacciones de las suscripciones.
 
----
+<img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context External" width="80%"/>
 
-### Bounded Context Shared
+#### Paso 7: Add Aggregates
 
-El bounded context Shared contiene los elementos reutilizables y transversales utilizados 
-por todos los demás contextos de QualiTrack, como configuraciones globales, value objects 
-comunes (LabId, UserId, DateRange, Quantity), clases base auditables, plantillas de 
-eventos de dominio y políticas compartidas. Gestiona además el registro de tenants y la 
-propagación de configuraciones por defecto a los contextos dependientes. Su propósito es 
-evitar la duplicidad de lógica entre contextos, asegurar la coherencia de los datos 
-compartidos y proveer una base técnica sólida y reutilizable para toda la arquitectura de 
-QualiTrack.
+En este paso identificamos los Aggregates, que representan los objetos de dominio centrales que agrupan entidades relacionadas y se tratan como una sola unidad. Cada aggregate (post-it amarillo grande) actúa como el punto central alrededor del cual giran los eventos y comandos:
 
-<img src="../assets/img/b-c-shared.jpg" alt="Bounded Context Shared" width="80%"/>
+* **User Security:** centraliza la lógica de autenticación y roles de usuario.
+* **Equipment:** gestiona el estado y ciclo de vida de la maquinaria industrial.
+* **Maintenance Log:** controla los registros de mantenimiento de los equipos.
+* **Laboratory:** agrupa la configuración y catálogo central del laboratorio.
+* **Telemetry Log:** concentra el registro histórico de las mediciones capturadas.
+* **Compliance Event:** gestiona las incidencias y alertas de cumplimiento normativo.
+* **Audit Trail:** centraliza la traza inmutable de acciones críticas en el sistema.
+* **Analytics Engine:** procesa la información para la generación de métricas.
+* **Manufacturing Batch:** controla el ciclo de vida de producción de un lote.
+* **Inventory Ledger:** gestiona el registro exacto de los movimientos de inventario.
+* **Billing Account:** controla el estado de facturación y suscripción.
+
+<img src="../assets/img/design-level-event-storming-step-71.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-72.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-73.png" alt="Bounded Context aggregates" width="80%"/>
+
+#### Paso 8: Bounded Contexts
+
+Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados en contextos delimitados con responsabilidades claras. Según las agrupaciones finales del tablero, se definieron los siguientes:
+
+| Bounded Context | Descripción de Componentes Clave |
+|-----------------|----------------------------------|
+| **BC: IAM** | Contiene el Aggregate `User Security`, las políticas de sesión y el servicio de SendGrid. |
+| **BC: Equipment Management** | Agrupa los Aggregates `Equipment` y `Maintenance Log`, junto con IoT Hub (AWS/Azure). |
+| **BC: Laboratory Management** | Contiene el Aggregate `Laboratory` y la integración con Cloudinary. |
+| **BC: Tracking (IoT)** | Agrupa el Aggregate `Telemetry Log` y las pantallas de monitoreo en tiempo real. |
+| **BC: Compliance & Alerting** | Contiene los Aggregates `Compliance Event` y `Audit Trail`, apoyado por OneSignal. |
+| **BC: Reporting & Audit** | Contiene el Aggregate `Analytics Engine` y el almacenamiento seguro Audit Vault. |
+| **BC: Batch Management** | Agrupa los Aggregates `Manufacturing Batch` e `Inventory Ledger`. |
+| **BC: Context Shared** | Contiene el Aggregate `Billing Account` y la integración con Stripe / Payment Gateway para cobros. |
+
+<img src="../assets/img/bc-iam.png" alt="Bounded Context iam" width="80%"/>
+<img src="../assets/img/bc-em-png.png" alt="Bounded Context em" width="80%"/>
+<img src="../assets/img/bc-lm.png" alt="Bounded Context lm" width="80%"/>
+<img src="../assets/img/bc-tracking.png" alt="Bounded Context tracking" width="80%"/>
+<img src="../assets/img/bc-ca.png" alt="Bounded Context ca" width="80%"/>
+<img src="../assets/img/bc-ra.png" alt="Bounded Context ra" width="80%"/>
+<img src="../assets/img/bc-bm.png" alt="Bounded Context bm" width="80%"/>
+<img src="../assets/img/bc-shared.png" alt="Bounded Context shared" width="80%"/>
+
 
 ## 4.6.2. Software Architecture Context Diagram
 
