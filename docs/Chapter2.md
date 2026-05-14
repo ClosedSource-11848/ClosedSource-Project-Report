@@ -609,37 +609,37 @@ El User Task Matrix presenta las tareas que realizan los User Persona para cumpl
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left;">Registrar variables críticas (temperatura, pH, esterilización)</td>
+      <td style="text-align:left;">Monitoreo de condiciones críticas en planta (temp, pH, esterilización)</td>
       <td>Often</td><td>High</td>
       <td>Often</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Rastrear y consolidar el historial de un lote de producción</td>
+      <td style="text-align:left;">Control de trazabilidad y antecedentes de lotes de producción</td>
       <td>Often</td><td>High</td>
       <td>Often</td><td>Medium</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Preparar documentación para auditorías de DIGEMID</td>
+      <td style="text-align:left;">Sustentación de conformidad ante inspecciones de DIGEMID</td>
       <td>Occasionally</td><td>High</td>
       <td>Occasionally</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Atender alertas de desviación de equipos (ej. autoclaves)</td>
+      <td style="text-align:left;">Respuesta ante incidentes o fallos en equipos de esterilización</td>
       <td>Occasionally</td><td>High</td>
       <td>Occasionally</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Aprobar y firmar digitalmente la liberación de lotes</td>
+      <td style="text-align:left;">Validación y autorización para la salida de productos al mercado</td>
       <td>Often</td><td>High</td>
       <td>Often</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Generar reportes estadísticos de calidad para gerencia</td>
+      <td style="text-align:left;">Análisis de indicadores de desempeño operativo para la alta dirección</td>
       <td>Often</td><td>Medium</td>
       <td>Monthly</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Capacitar al personal técnico en buenas prácticas (BPM)</td>
+      <td style="text-align:left;">Actualización de competencias técnicas del personal operativo (BPM)</td>
       <td>Rarely</td><td>Medium</td>
       <td>Rarely</td><td>Medium</td>
     </tr>
@@ -647,7 +647,7 @@ El User Task Matrix presenta las tareas que realizan los User Persona para cumpl
 </table>
 
 **Análisis del Task Matrix:**
-Se observa que las tareas **"Registrar variables críticas"** y **"Aprobar y firmar digitalmente la liberación de lotes"** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos, ya que representan el núcleo operativo de la manufactura segura. Esto confirma que estas tareas son el "Core" del negocio y deben ser priorizadas mediante automatización IoT. Además, la tarea crítica de **"Preparar documentación para auditorías"**, aunque es *Occasionally*, tiene una importancia altísima (**High**) para ambos, validando la necesidad de un sistema inmutable y trazable para evitar penalidades de la DIGEMID.
+Se observa que las tareas **Monitoreo de condiciones críticas en planta** y **Validación y autorización para la salida de productos** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos, ya que representan el núcleo operativo de la manufactura segura lo cual confirma que estas tareas son el **Core** del negocio y deben ser priorizadas mediante automatización IoT además la tarea crítica de **Sustentación de conformidad ante inspecciones de DIGEMID**, aunque es *Occasionally*, tiene una importancia altísima (**High**) para ambos, validando la necesidad de un sistema inmutable y trazable para evitar penalidades de la DIGEMID
 
 <div style="page-break-after: always;"></div>
 
