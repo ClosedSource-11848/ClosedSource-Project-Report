@@ -1811,14 +1811,14 @@ Hosting. A continuación se presentan evidencias de ejecución mediante capturas
 de las principales vistas de la aplicación web.
 </p>
 
+<p><strong>Home:</strong></p>
+<img src="../assets/img/home.jpeg" alt="Home QualiTrack" width="90%">
+
 <p><strong>Pantalla de Sign-In:</strong></p>
 <img src="../assets/img/frontend-sign-in.jpeg" alt="Sign In QualiTrack" width="90%">
 
 <p><strong>Pantalla de Sign-Up:</strong></p>
 <img src="../assets/img/frontend-sign-up.jpeg" alt="Sign Up QualiTrack" width="90%">
-
-<p><strong>Dashboard principal con sidebar:</strong></p>
-<img src="../assets/img/frontend-dashboard.jpeg" alt="Dashboard QualiTrack" width="90%">
 
 <p><strong>Módulo Laboratory - Perfil del laboratorio:</strong></p>
 <img src="../assets/img/frontend-laboratory-profile.jpeg" alt="Laboratory Profile QualiTrack" width="90%">
