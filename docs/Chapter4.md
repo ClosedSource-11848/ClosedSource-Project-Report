@@ -826,7 +826,7 @@ correo y generación de reportes PDF). Esta vista permite entender el alcance de
 los límites de responsabilidad y el ecosistema en el que se inserta QualiTrack antes de
 entrar a detalles de implementación.
 
-<img src="../assets/img/ContextDiagram.svg" alt="Context Diagram" width="100%"/>
+<img src="../assets/img/ContextDiagram-v2.svg" alt="Context Diagram" width="100%"/>
 
 ---
 
@@ -891,7 +891,7 @@ presentación (Landing Page, Web Application y SPA), la capa de lógica de negoc
 (API Application) y la capa de persistencia (Database), así como las principales
 decisiones tecnológicas adoptadas para cada contenedor.
 
-<img src="../assets/img/ContainerDiagram.svg" alt="Container Diagram" width="100%"/>
+<img src="../assets/img/ContainerDiagram-v2.svg" alt="Container Diagram" width="100%"/>
 
 ---
 
@@ -972,7 +972,7 @@ backend y base de datos, mostrando cómo los contenedores se descomponen en comp
 coherentes con los bounded contexts del dominio farmacéutico y cómo estos colaboran entre
 sí para implementar la funcionalidad completa de QualiTrack.
 
-<img src="../assets/img/ComponentDiagram.svg" alt="Component Diagram" width="100%"/>
+<img src="../assets/img/ComponentDiagram-v2.svg" alt="Component Diagram" width="100%"/>
 
 ## 4.7. Software Object-Oriented Design
 
