@@ -701,7 +701,7 @@ En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de 
 
 Luego de enumerar los eventos, el equipo los agrupó en flujos de negocio lógicos que muestran las fases más relevantes en la operación de una casa de reposo. Esta La estructura facilitó la identificación de los procesos fundamentales y las áreas que necesitaban mejoras, las cuales se podrían abordar más tarde a través de soluciones digitales o de gestión.
 
-<img src="../assets/img/design-level-event-storming-step-11.pngg" alt="Big Picture Event Storming 2" width="auto" height="450"/>
+<img src="../assets/img/design-level-event-storming-step-11.png" alt="Big Picture Event Storming 2" width="auto" height="450"/>
 <img src="../assets/img/design-level-event-storming-step-12.png" alt="Big Picture Event Storming 3" width="auto" height="450"/>
 <img src="../assets/img/design-level-event-storming-step-13.png" alt="Big Picture Event Storming 4" width="auto" height="450"/>
 
