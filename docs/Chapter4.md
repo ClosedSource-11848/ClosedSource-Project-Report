@@ -794,14 +794,14 @@ Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados e
 
 | Bounded Context | Descripción de Componentes Clave |
 |-----------------|----------------------------------|
-| **BC: IAM** | Contiene el Aggregate `User Security`, las políticas de sesión y el servicio de SendGrid. |
-| **BC: Equipment Management** | Agrupa los Aggregates `Equipment` y `Maintenance Log`, junto con IoT Hub (AWS/Azure). |
-| **BC: Laboratory Management** | Contiene el Aggregate `Laboratory` y la integración con Cloudinary. |
+| **BC: IAM** | Contiene el Aggregate `User Security` y las políticas de sesión. |
+| **BC: Equipment Management** | Agrupa los Aggregates `Equipment` y `Maintenance Log`, junto con IoT Hub. |
+| **BC: Laboratory Management** | Contiene el Aggregate `Laboratory`. |
 | **BC: Tracking (IoT)** | Agrupa el Aggregate `Telemetry Log` y las pantallas de monitoreo en tiempo real. |
-| **BC: Compliance & Alerting** | Contiene los Aggregates `Compliance Event` y `Audit Trail`, apoyado por OneSignal. |
-| **BC: Reporting & Audit** | Contiene el Aggregate `Analytics Engine` y el almacenamiento seguro Audit Vault. |
+| **BC: Compliance & Alerting** | Contiene los Aggregates `Compliance Event` y `Audit Trail`. |
+| **BC: Reporting & Audit** | Contiene el Aggregate `Analytics Engine` y el almacenamiento seguro. |
 | **BC: Batch Management** | Agrupa los Aggregates `Manufacturing Batch` e `Inventory Ledger`. |
-| **BC: Context Shared** | Contiene el Aggregate `Billing Account` y la integración con Stripe / Payment Gateway para cobros. |
+| **BC: Context Shared** | Contiene el Aggregate `Billing Account` y la integración para cobros. |
 
 <img src="../assets/img/bc-iam.png" alt="Bounded Context iam" width="80%"/>
 <img src="../assets/img/bc-em.png" alt="Bounded Context em" width="80%"/>
