@@ -1196,25 +1196,855 @@ diferentes miembros.
   flujo de commits durante el Sprint 1.</em></p>
 </div>
 
-<!-- 
-
 ### 5.2.2. Sprint 2
+
+<p>
+Durante el Sprint 2, el equipo de ClosedSource se enfocó en el desarrollo e implementación
+de la primera versión de la Frontend Web Application (SPA Angular) de QualiTrack. Este
+sprint abarcó la construcción de los módulos correspondientes a los Bounded Contexts del
+dominio farmacéutico: IAM, Laboratory Management, Equipment Management, Batch Management,
+Compliance & Alerting, Tracking (IoT), Reporting & Audit y Shared. Se implementó la
+arquitectura DDD con capas de dominio, infraestructura y presentación, soporte bilingüe
+(ES/EN), consumo de APIs REST mediante JSON Server como fake API, y despliegue en Firebase
+Hosting.
+</p>
+
+<p>
+  <strong>Repositorio:</strong>
+  <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">https://github.com/ClosedSource-11848/ClosedSource-Frontend</a>
+</p>
+
+<p>
+  <strong>Frontend Web Application Desplegada:</strong>
+  <a href="https://closedsource-qualitrack.web.app">https://closedsource-qualitrack.web.app</a>
+</p>
 
 #### 5.2.2.1. Sprint Planning 2
 
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: center;">Sprint Planning Sprint 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>28/04/2026</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>10:00 p.m.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Discord</td>
+    </tr>
+    <tr>
+      <td>Prepared By</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+    </tr>
+    <tr>
+      <td>Attendees (to planning meeting)</td>
+      <td>
+        Ruiz Madrid, Billy Jake<br>
+        Diaz Caruzo, Edgard Daniel<br>
+        Viza Quispe, Marlon Packard<br>
+        Castillo Yataco, Mauricio Sebastian<br>
+        Angulo Ramírez, Marcelo Martín
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 1 Review Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        Se completó exitosamente el desarrollo y despliegue del Landing Page de QualiTrack
+        en GitHub Pages, incluyendo todas las secciones planificadas (Hero, Features,
+        Benefits, Plans, About Us, Team, Contact), soporte bilingüe (ES/EN), documentos
+        legales (Terms of Service y Privacy Policy) y correcciones de estructura tras
+        revisión de pares. Se identificó la necesidad de mejorar la coordinación en la
+        asignación de tareas para evitar commits redundantes sobre la misma sección.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 1 Retrospective Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        El equipo reconoció que la concentración de commits de corrección sobre la sección
+        Our Team evidenció la necesidad de aplicar GitFlow con feature branches desde el
+        inicio. Se acordó implementar ramas feature/ por Bounded Context para el Sprint 2
+        y realizar revisiones de código antes de cada merge a develop.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Sprint 2 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
+        <em>Our focus is on delivering the first functional version of the QualiTrack
+        Frontend Web Application, implementing the core Bounded Contexts (IAM, Laboratory
+        Management, Equipment Management, Batch Management, Compliance & Alerting,
+        Tracking and Reporting & Audit) with Angular, consuming a fake API via JSON Server
+        and deploying to Firebase Hosting.</em><br><br>
+        <em>We believe it delivers a tangible, navigable first impression of the
+        pharmaceutical quality management platform to QA Managers and Lab Operators,
+        allowing them to explore the dashboard, manage laboratory data, monitor equipment
+        and review compliance alerts from a unified interface.</em><br><br>
+        <em>This will be confirmed when users can authenticate (sign-in/sign-up), navigate
+        through all Bounded Context modules via the sidebar, perform CRUD operations on
+        laboratory entities (products, raw materials, staff), view equipment details with
+        BPM parameters, consult batch records, review compliance alerts and access KPI
+        dashboards, all connected to the fake API and deployed on Firebase.</em>
+      </td>
+    </tr>
+    <tr>
+      <td>Sprint 2 Velocity</td>
+      <td>32 Story Points</td>
+    </tr>
+    <tr>
+      <td>Sum of Story Points</td>
+      <td>32 SP</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.2.2. Aspect Leaders and Collaborators
+
+<p>
+En esta sección se presenta la matriz <strong>Leadership-and-Collaboration (LACX)</strong>
+correspondiente al Sprint 2. Su propósito es identificar claramente los aspectos
+principales del sprint y asignar responsabilidades de liderazgo (<strong>L</strong>) y
+colaboración (<strong>C</strong>) para fortalecer la coordinación y trazabilidad del
+trabajo dentro del equipo ClosedSource.
+</p>
+
+<p>Los aspectos se derivan directamente de los objetivos del Sprint 2 Goal:</p>
+
+<ul>
+  <li><strong>Shared & IAM:</strong> Componentes base reutilizables (layout, toolbar,
+  footer, language switcher, API gateway), módulo de autenticación (sign-in, sign-up)
+  e internacionalización (i18n).</li>
+  <li><strong>Domain Modules (Laboratory, Equipment, Batch):</strong> Implementación de
+  las capas de dominio, infraestructura y presentación para los Bounded Contexts de
+  gestión de laboratorio, equipos y lotes.</li>
+  <li><strong>Domain Modules (CA, Tracking, RA) & Deployment:</strong> Implementación de
+  los módulos de Compliance & Alerting, Tracking IoT y Reporting & Audit, configuración
+  de JSON Server como fake API y despliegue en Firebase Hosting.</li>
+</ul>
+
+<table border="1" cellpadding="4" cellspacing="0" align="center">
+  <thead>
+    <tr>
+      <th>Team Member (Last Name, First Name)</th>
+      <th>Aspect: Shared & IAM</th>
+      <th>Aspect: Laboratory, Equipment & Batch</th>
+      <th>Aspect: CA, Tracking, RA & Deployment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>L</td><td>L</td><td>L</td>
+    </tr>
+    <tr>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>C</td><td>L</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>C</td><td>C</td><td>L</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>L</strong> = Líder del aspecto</li>
+  <li><strong>C</strong> = Colaborador en el aspecto</li>
+</ul>
 
 #### 5.2.2.3. Sprint Backlog 2
 
+<p>
+El Sprint Backlog 2 reúne las historias de usuario y tareas necesarias para implementar
+la primera versión de la Frontend Web Application de QualiTrack, organizada por Bounded
+Contexts. Todas las tareas son monitoreadas mediante <strong>Jira Software</strong>.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint2-board.jpeg" alt="Sprint 2 Board Screenshot" width="100%">
+  <p><em>Figura: Tablero del Sprint 2 en Jira Software (Proyecto QualiTrack)</em></p>
+</div>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="8" style="text-align:center;">Sprint # 2</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Shared -->
+    <tr>
+      <td rowspan="3">US06</td>
+      <td rowspan="3">Componentes base y layout principal</td>
+      <td>T012</td>
+      <td>Implementar layout, toolbar y footer</td>
+      <td>Desarrollar el componente de layout principal con navigation toolbar, sidebar colapsable y footer con créditos de tecnología.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T013</td>
+      <td>Implementar language switcher e i18n</td>
+      <td>Desarrollar el componente de cambio de idioma (ES/EN) y configurar archivos de localización para todas las vistas.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T014</td>
+      <td>Implementar clases base de API gateway</td>
+      <td>Crear las clases abstractas BaseService y BaseEndpoint con manejo de errores para consumo de la fake API.</td>
+      <td>2h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- IAM -->
+    <tr>
+      <td rowspan="2">US07</td>
+      <td rowspan="2">Autenticación de usuario</td>
+      <td>T015</td>
+      <td>Implementar vistas sign-in y sign-up</td>
+      <td>Desarrollar los formularios de inicio de sesión y registro con validación, entidad User y comandos de autenticación.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T016</td>
+      <td>Implementar IAM store y API services</td>
+      <td>Desarrollar el store de autenticación, endpoints, assemblers y gestión de estado para el módulo IAM.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Laboratory -->
+    <tr>
+      <td rowspan="3">US08</td>
+      <td rowspan="3">Gestión del perfil del laboratorio</td>
+      <td>T017</td>
+      <td>Implementar entidades y comandos de Laboratory</td>
+      <td>Crear entidades de dominio (Laboratory, Product, RawMaterial, Staff) y comandos para el bounded context Laboratory Management.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T018</td>
+      <td>Implementar API services y store de Laboratory</td>
+      <td>Desarrollar endpoints, assemblers, request/response contracts y store con gestión de estado para laboratorio, productos, materias primas y personal.</td>
+      <td>4h</td>
+      <td>Viza, Marlon</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T019</td>
+      <td>Implementar vistas de Laboratory</td>
+      <td>Desarrollar las vistas de perfil de laboratorio, catálogo de productos, formularios de productos, lista de materias primas y gestión de personal.</td>
+      <td>5h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Equipment -->
+    <tr>
+      <td rowspan="3">US09</td>
+      <td rowspan="3">Gestión de equipos IoT</td>
+      <td>T020</td>
+      <td>Implementar entidades y comandos de Equipment</td>
+      <td>Crear entidades de dominio para equipos, registros de mantenimiento y configuración de parámetros BPM.</td>
+      <td>3h</td>
+      <td>Diaz, Daniel</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T021</td>
+      <td>Implementar API services y store de Equipment</td>
+      <td>Desarrollar servicios API, data transformers para configuración BPM, ciclo de vida de mantenimiento, endpoints y assemblers.</td>
+      <td>4h</td>
+      <td>Diaz, Daniel</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T022</td>
+      <td>Implementar vistas de Equipment</td>
+      <td>Desarrollar las vistas de lista de equipos, vista detallada, formularios de registro, alertas de calibración e historial de mantenimiento.</td>
+      <td>5h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Batch -->
+    <tr>
+      <td rowspan="3">US10</td>
+      <td rowspan="3">Gestión de lotes farmacéuticos</td>
+      <td>T023</td>
+      <td>Implementar entidades y comandos de Batch</td>
+      <td>Crear entidades de dominio para lotes farmacéuticos, ciclo de vida del lote y uso de materias primas.</td>
+      <td>3h</td>
+      <td>Castillo, Mauricio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T024</td>
+      <td>Implementar API services y store de Batch</td>
+      <td>Desarrollar servicios API, endpoints, assemblers, request/response contracts y store con estado basado en signals.</td>
+      <td>4h</td>
+      <td>Castillo, Mauricio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T025</td>
+      <td>Implementar vistas de Batch</td>
+      <td>Desarrollar la tabla de lista de lotes y vista detallada de gestión de lotes con navegación y lazy loading.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Compliance & Alerting -->
+    <tr>
+      <td rowspan="3">US11</td>
+      <td rowspan="3">Dashboard de alertas y compliance</td>
+      <td>T026</td>
+      <td>Implementar entidades de CA</td>
+      <td>Crear entidades para eventos de compliance, alertas de desviación y preferencias de notificación.</td>
+      <td>3h</td>
+      <td>Angulo, Marcelo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T027</td>
+      <td>Implementar API services y store de CA</td>
+      <td>Desarrollar servicios API, endpoints, assemblers, response contracts y store con métodos para alertas y eventos de compliance.</td>
+      <td>4h</td>
+      <td>Angulo, Marcelo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T028</td>
+      <td>Implementar vistas de CA</td>
+      <td>Desarrollar el dashboard de alertas y la vista de historial de compliance con routing y navegación.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Tracking -->
+    <tr>
+      <td rowspan="2">US12</td>
+      <td rowspan="2">Dashboard de telemetría IoT</td>
+      <td>T029</td>
+      <td>Implementar entidades, API y store de Tracking</td>
+      <td>Crear entidades para telemetría, mediciones y estado de equipos, junto con servicios API, endpoints, assemblers y store.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T030</td>
+      <td>Implementar dashboard de telemetría</td>
+      <td>Desarrollar el dashboard de telemetría en tiempo real con tarjetas de estado de equipos y rutas del módulo tracking.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Reporting & Audit -->
+    <tr>
+      <td rowspan="2">US13</td>
+      <td rowspan="2">Reportes y auditoría</td>
+      <td>T031</td>
+      <td>Implementar entidades, API y store de RA</td>
+      <td>Crear entidades para audit logs, KPIs y generación de reportes, junto con servicios API, endpoints, assemblers y store.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T032</td>
+      <td>Implementar vistas de RA</td>
+      <td>Desarrollar el dashboard de KPIs, gráfico de tendencias de desviación y generador de reportes con rutas del módulo.</td>
+      <td>4h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <!-- Configuración y Despliegue -->
+    <tr>
+      <td rowspan="2">—</td>
+      <td rowspan="2">Configuración y despliegue</td>
+      <td>T033</td>
+      <td>Configurar JSON Server (fake API)</td>
+      <td>Configurar JSON Server como mock backend con datos de prueba para todos los bounded contexts y scripts de inicio.</td>
+      <td>3h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>T034</td>
+      <td>Configurar y desplegar en Firebase Hosting</td>
+      <td>Configurar Firebase Hosting, build de producción Angular y despliegue de la Frontend Web Application.</td>
+      <td>2h</td>
+      <td>Ruiz Madrid, Billy</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.2.4. Development Evidence for Sprint Review
+
+<p>
+En esta sección se explican y presentan los avances en la implementación logrados durante
+el Sprint 2 en relación con la Frontend Web Application de QualiTrack. A lo largo de este
+sprint se construyó la primera versión funcional de la SPA Angular, implementando todos los
+Bounded Contexts del dominio farmacéutico con arquitectura DDD (entidades, comandos,
+servicios API, stores y vistas), soporte bilingüe, consumo de fake API mediante JSON Server
+y despliegue en Firebase Hosting.
+</p>
+
+<p>
+La tabla siguiente resume los commits más relevantes realizados en el repositorio del
+Frontend, indicando la rama, el identificador del commit, el mensaje asociado, una breve
+descripción del cambio introducido y la fecha de commit.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="20">
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">
+          ClosedSource-Frontend
+        </a>
+      </td>
+      <td>feature/shared</td>
+      <td>7f3a91b</td>
+      <td>feat(shared): add layout, home view, footer and toolbar components.</td>
+      <td>Implementa el componente de layout principal con navigation toolbar, sidebar, home view y footer con créditos de tecnología.</td>
+      <td>30-04-2026</td>
+    </tr>
+    <tr>
+      <td>feature/shared</td>
+      <td>a5c92ef</td>
+      <td>feat(api): add abstract base classes for api gateway and endpoints with error handling.</td>
+      <td>Crea las clases abstractas BaseService y BaseEndpoint para el consumo estandarizado de la fake API con manejo de errores centralizado.</td>
+      <td>30-04-2026</td>
+    </tr>
+    <tr>
+      <td>feature/laboratory</td>
+      <td>61ef8cb</td>
+      <td>feat(laboratory): add entities and commands for laboratory, products, raw materials and staff.</td>
+      <td>Crea las entidades de dominio y comandos para el bounded context Laboratory Management.</td>
+      <td>02-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/laboratory</td>
+      <td>98d2c1e</td>
+      <td>feat(laboratory): add views for lab profile, product catalog, raw materials and staff management.</td>
+      <td>Implementa las vistas de perfil de laboratorio, catálogo de productos, gestión de materias primas y personal.</td>
+      <td>02-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/equipment</td>
+      <td>e91bc8f</td>
+      <td>feat(equipment): add entities and commands for equipment, maintenance and bpm configuration.</td>
+      <td>Crea las entidades de dominio para equipos IoT, registros de mantenimiento y configuración de parámetros BPM.</td>
+      <td>03-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/equipment</td>
+      <td>91de5c7</td>
+      <td>feat(equipment): add equipment list, form and detail views.</td>
+      <td>Desarrolla las vistas de listado de equipos, formulario de registro y vista detallada con información de BPM.</td>
+      <td>03-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/batch</td>
+      <td>7abf22d</td>
+      <td>feat(batch): add entities and commands for batch lifecycle and raw material usage.</td>
+      <td>Crea entidades de dominio para el ciclo de vida de lotes farmacéuticos y uso de materias primas.</td>
+      <td>04-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/batch</td>
+      <td>c82ab67</td>
+      <td>feat(batch): add batch list, detail and form views.</td>
+      <td>Implementa las vistas de lista de lotes, vista detallada y formulario de gestión de lotes.</td>
+      <td>04-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/ca</td>
+      <td>52df1ab</td>
+      <td>feat(ca): add entities and commands for compliance events, alerts and notification preferences.</td>
+      <td>Crea entidades para eventos de compliance, alertas de desviación y preferencias de notificación del módulo CA.</td>
+      <td>04-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/ca</td>
+      <td>84ce2fa</td>
+      <td>feat(ca): add alert dashboard and history views.</td>
+      <td>Desarrolla el dashboard de alertas de desviación y la vista de historial de compliance.</td>
+      <td>04-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/ra</td>
+      <td>fa28bc7</td>
+      <td>feat(ra): add entities and commands for audit logs, KPIs and report generation.</td>
+      <td>Crea entidades de dominio para logs de auditoría, indicadores clave de rendimiento y generación de reportes.</td>
+      <td>05-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/ra</td>
+      <td>1cd82fa</td>
+      <td>feat(ra): add deviation trend chart view.</td>
+      <td>Implementa la vista de gráfico de tendencias de desviación para el módulo de Reporting & Audit.</td>
+      <td>05-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/tracking</td>
+      <td>4fd91ac</td>
+      <td>feat(tracking): add entities for telemetry, measurements and equipment status.</td>
+      <td>Crea entidades de dominio para telemetría IoT, mediciones en tiempo real y estado de equipos.</td>
+      <td>08-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/tracking</td>
+      <td>58fd3a2</td>
+      <td>feat(tracking): add telemetry dashboard and equipment status card.</td>
+      <td>Desarrolla el dashboard de telemetría en tiempo real con tarjetas de estado de equipos IoT.</td>
+      <td>08-05-2026</td>
+    </tr>
+    <tr>
+      <td>develop</td>
+      <td>d82bc17</td>
+      <td>chore(mockapi): add mock api configuration and startup scripts.</td>
+      <td>Configura JSON Server como fake API con datos de prueba para todos los bounded contexts y scripts de inicio.</td>
+      <td>11-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/equipment</td>
+      <td>7ce11af</td>
+      <td>feat(equipment): add equipment list, detailed view and registration forms.</td>
+      <td>Actualiza las vistas de equipos con mejoras en la lista, vista detallada y formularios de registro (aporte de Dan-trax).</td>
+      <td>12-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/batch</td>
+      <td>2ab77fd</td>
+      <td>feat(batch): add batch list table and detailed management view.</td>
+      <td>Actualiza la tabla de lista de lotes y la vista de gestión detallada de lotes (aporte de M4uricioCastillo).</td>
+      <td>12-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/laboratory</td>
+      <td>91fa2bc</td>
+      <td>feat(laboratory): add laboratory store management.</td>
+      <td>Implementa la gestión de estado del store de laboratorio con señales reactivas (aporte de BJRM03).</td>
+      <td>13-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/iam</td>
+      <td>4bc28e1</td>
+      <td>feat(iam): add sign-in and sign-up views.</td>
+      <td>Implementa los formularios de autenticación (sign-in y sign-up) con validación de campos y navegación entre vistas.</td>
+      <td>13-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/iam</td>
+      <td>b2d91fa</td>
+      <td>feat(iam): add api services, endpoints and mappers for iam.</td>
+      <td>Desarrolla los servicios API, endpoints REST y mappers de datos para el módulo de Identity and Access Management.</td>
+      <td>13-05-2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
+<p>
+Durante el Sprint 2, se completó exitosamente la implementación de la primera versión de
+la Frontend Web Application de QualiTrack con todos los Bounded Contexts del dominio
+farmacéutico, soporte bilingüe (ES/EN), consumo de fake API y despliegue en Firebase
+Hosting. A continuación se presentan evidencias de ejecución mediante capturas de pantalla
+de las principales vistas de la aplicación web.
+</p>
+
+<p><strong>Home:</strong></p>
+<img src="../assets/img/home.jpeg" alt="Home QualiTrack" width="90%">
+
+<p><strong>Pantalla de Sign-In:</strong></p>
+<img src="../assets/img/frontend-sign-in.jpeg" alt="Sign In QualiTrack" width="90%">
+
+<p><strong>Pantalla de Sign-Up:</strong></p>
+<img src="../assets/img/frontend-sign-up.jpeg" alt="Sign Up QualiTrack" width="90%">
+
+<p><strong>Módulo Laboratory - Perfil del laboratorio:</strong></p>
+<img src="../assets/img/frontend-laboratory-profile.jpeg" alt="Laboratory Profile QualiTrack" width="90%">
+
+<p><strong>Módulo Laboratory - Catálogo de productos:</strong></p>
+<img src="../assets/img/frontend-product-catalog.jpeg" alt="Product Catalog QualiTrack" width="90%">
+
+<p><strong>Módulo Equipment - Lista de equipos:</strong></p>
+<img src="../assets/img/frontend-equipment-list.jpeg" alt="Equipment List QualiTrack" width="90%">
+
+<p><strong>Módulo Equipment - Detalle de equipo:</strong></p>
+<img src="../assets/img/frontend-equipment-detail.jpeg" alt="Equipment Detail QualiTrack" width="90%">
+
+<p><strong>Módulo Batch - Lista de lotes:</strong></p>
+<img src="../assets/img/frontend-batch-list.jpeg" alt="Batch List QualiTrack" width="90%">
+
+<p><strong>Módulo Compliance & Alerting - Dashboard de alertas:</strong></p>
+<img src="../assets/img/frontend-alerts-dashboard.jpeg" alt="Alerts Dashboard QualiTrack" width="90%">
+
+<p><strong>Módulo Tracking - Dashboard de telemetría:</strong></p>
+<img src="../assets/img/frontend-telemetry-dashboard.jpeg" alt="Telemetry Dashboard QualiTrack" width="90%">
+
+<p><strong>Módulo Reporting & Audit - KPI Dashboard:</strong></p>
+<img src="../assets/img/frontend-kpi-dashboard.jpeg" alt="KPI Dashboard QualiTrack" width="90%">
+
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+<p>
+En el Sprint 2, el equipo implementó la Frontend Web Application de QualiTrack conectada a
+una fake API alojada en la nube mediante <strong>Beeceptor</strong>. Se configuraron diversas reglas de simulación (mock rules) que
+replican la estructura de los Web Services RESTful planificados para el Backend, permitiendo probar la reactividad del Dashboard en tiempo real. La
+implementación y documentación de los Web Services reales con Spring Boot y Swagger se
+abordará en los sprints posteriores orientados al Backend.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>End Point Base (Beeceptor)</th>
+      <th>Método HTTP</th>
+      <th>Acción Implementada (Funciones)</th>
+      <th>Sintaxis de Llamada (Ejemplo)</th>
+      <th>Explicación del Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><strong>/laboratories</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener listado de laboratorios.</td>
+      <td><code>GET /laboratories</code></td>
+      <td><code>200 OK</code>: Array JSON de objetos Laboratory.</td>
+    </tr>
+    <tr>
+      <td><strong>GET</strong></td>
+      <td>Obtener laboratorio por ID.</td>
+      <td><code>GET /laboratories/{id}</code></td>
+      <td><code>200 OK</code>: Objeto Laboratory. <code>404</code> si no existe.</td>
+    </tr>
+    <tr>
+      <td><strong>POST</strong></td>
+      <td>Crear un nuevo laboratorio.</td>
+      <td><code>POST /laboratories</code></td>
+      <td><code>201 Created</code>: Objeto Laboratory creado con ID asignado.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>/products</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener catálogo de productos farmacéuticos.</td>
+      <td><code>GET /products</code></td>
+      <td><code>200 OK</code>: Array JSON de objetos Product.</td>
+    </tr>
+    <tr>
+      <td><strong>POST</strong></td>
+      <td>Registrar un nuevo producto.</td>
+      <td><code>POST /products</code></td>
+      <td><code>201 Created</code>: Objeto Product creado.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>/equipment</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener listado de equipos IoT.</td>
+      <td><code>GET /equipment</code></td>
+      <td><code>200 OK</code>: Array JSON de objetos Equipment.</td>
+    </tr>
+    <tr>
+      <td><strong>POST</strong></td>
+      <td>Registrar nuevo equipo con parámetros BPM.</td>
+      <td><code>POST /equipment</code></td>
+      <td><code>201 Created</code>: Objeto Equipment creado.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>/batches</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener listado de lotes farmacéuticos.</td>
+      <td><code>GET /batches</code></td>
+      <td><code>200 OK</code>: Array JSON de objetos Batch.</td>
+    </tr>
+    <tr>
+      <td><strong>POST</strong></td>
+      <td>Crear un nuevo lote farmacéutico.</td>
+      <td><code>POST /batches</code></td>
+      <td><code>201 Created</code>: Objeto Batch creado.</td>
+    </tr>
+    <tr>
+      <td><strong>/alerts</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener alertas de desviación BPM.</td>
+      <td><code>GET /alerts</code></td>
+      <td><code>200 OK</code>: Array JSON de objetos DeviationAlert.</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>/telemetry</strong><br><em>(Endpoints de Monitoreo)</em></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener lecturas actuales de los sensores (Mediciones).</td>
+      <td><code>GET /measurements</code></td>
+      <td><code>200 OK</code>: JSON envuelto en la propiedad <code>measurements</code> con array de objetos MeasurementResource.</td>
+    </tr>
+    <tr>
+      <td><strong>GET</strong></td>
+      <td>Obtener historial de telemetría y detección de anomalías.</td>
+      <td><code>GET /history?equipmentId=EQ-001</code></td>
+      <td><code>200 OK</code>: JSON envuelto en <code>historyPoints</code> con array de puntos para el gráfico.</td>
+    </tr>
+    <tr>
+      <td><strong>GET</strong></td>
+      <td>Obtener estado actual de conexión del equipo (Online/Offline).</td>
+      <td><code>GET /status/{equipmentId}</code></td>
+      <td><code>200 OK</code>: Objeto JSON único con el estado operativo y último heartbeat del equipo.</td>
+    </tr>
+    <tr>
+      <td><strong>/kpi-dashboards</strong></td>
+      <td><strong>GET</strong></td>
+      <td>Obtener indicadores clave de rendimiento.</td>
+      <td><code>GET /kpi-dashboards</code></td>
+      <td><code>200 OK</code>: Array JSON de objetos KpiDashboard.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+<p>
+La Frontend Web Application de QualiTrack fue desplegada exitosamente en
+<strong>Firebase Hosting</strong> desde la rama <code>develop</code> del repositorio
+<code>ClosedSource-Frontend</code>. El proceso de despliegue se realizó siguiendo los
+siguientes pasos:
+</p>
+
+<p><strong>Pasos de configuración:</strong></p>
+
+<ol>
+  <li>Instalar Firebase CLI globalmente: <code>npm install -g firebase-tools</code>.</li>
+  <li>Autenticarse con Firebase: <code>firebase login</code>.</li>
+  <li>Inicializar el proyecto: <code>firebase init hosting</code>, seleccionando el
+  directorio de output <code>dist/qualitrack-frontend</code>.</li>
+  <li>Compilar el proyecto Angular para producción:
+  <code>ng build --configuration production</code>.</li>
+  <li>Desplegar: <code>firebase deploy --only hosting</code>.</li>
+  <li>Verificar el despliegue accediendo a la URL generada.</li>
+</ol>
+
+<p>
+  <strong>URL de Producción:</strong>
+  <a href="https://closedsource-qualitrack.web.app">https://closedsource-qualitrack.web.app</a>
+</p>
+
+<div align="center">
+  <img src="../assets/img/deployment-evidence-sprint2.jpeg"
+       alt="Firebase Hosting Deployment Evidence Sprint 2" width="90%">
+  <p><em>Figura: Configuración de Firebase Hosting para el despliegue de la Frontend Web
+  Application de QualiTrack.</em></p>
+</div>
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint
+
+<p>
+Durante el Sprint 2, el esfuerzo principal del equipo de ClosedSource se centró en la
+implementación de la Frontend Web Application, trabajando en paralelo sobre los diferentes
+Bounded Contexts del dominio farmacéutico. A diferencia del Sprint 1, se aplicó
+correctamente GitFlow con feature branches por módulo
+(<code>feature/shared</code>, <code>feature/iam</code>, <code>feature/laboratory</code>,
+<code>feature/equipment</code>, <code>feature/batch</code>, <code>feature/ca</code>,
+<code>feature/tracking</code>, <code>feature/ra</code>), lo que permitió desarrollo
+paralelo y merges controlados.
+</p>
+
+<p>
+El <strong>Historial de Commits</strong> del repositorio
+<code>ClosedSource-Frontend</code> demuestra que el trabajo fue distribuido entre los
+5 integrantes del equipo. Se observa la participación de los usuarios
+<strong>BJRM03</strong> (Ruiz Madrid, Billy), <strong>Dan-trax</strong> (Diaz, Daniel),
+<strong>M4uricioCastillo</strong> (Castillo, Mauricio), <strong>V8Z5</strong>
+(Viza, Marlon) y <strong>Zock2005</strong> (Angulo, Marcelo), realizando commits
+orientados a la implementación de entidades de dominio, servicios API, stores de
+gestión de estado y componentes de presentación para cada Bounded Context.
+</p>
+
+<div align="center">
+  <img src="../assets/img/commits-av2-frontend.jpeg"
+       alt="Commit History Frontend Sprint 2" width="90%">
+  <p><em>Figura: Historial de commits del repositorio ClosedSource-Frontend demostrando
+  la participación activa de los miembros del equipo durante el Sprint 2.</em></p>
+</div>
+
+<p>
+El <strong>Network Graph</strong> de GitHub refleja el uso efectivo de GitFlow con
+múltiples feature branches creadas a partir de develop para cada Bounded Context. Se
+observan ciclos de creación de ramas, desarrollo de funcionalidades (entidades, servicios
+API, stores y vistas) y merges controlados tras revisiones de código, confirmando que las
+contribuciones individuales se alinearon con el marco de trabajo acordado en la
+retrospectiva del Sprint 1. Esta estructura de ramas permitió que los módulos de Equipment
+(Dan-trax), Batch (M4uricioCastillo), Compliance & Alerting (Zock2005) y Laboratory (V8Z5)
+se desarrollaran en paralelo sin conflictos, mientras BJRM03 coordinaba la integración
+general, el layout compartido y las correcciones transversales.
+</p>
+
+<div align="center">
+  <img src="../assets/img/network-av2.jpeg"
+       alt="Network Graph Sprint 2" width="90%">
+  <p><em>Figura: Network Graph del repositorio ClosedSource-Frontend mostrando el
+  flujo de feature branches y merges durante el Sprint 2.</em></p>
+</div>
+
+
+<!-- 
 
 ### 5.2.3. Sprint 3
 
@@ -1458,6 +2288,14 @@ comentario -->
       </td>
     </tr>
     <tr>
+      <td><strong>Frontend Web App (Firebase)</strong></td>
+      <td>
+        <a href="https://closedsource-qualitrack.web.app">
+          https://closedsource-qualitrack.web.app
+        </a>
+      </td>
+    </tr>
+    <tr>
       <td><strong>Repositorio Landing Page</strong></td>
       <td>
         <a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">
@@ -1513,6 +2351,23 @@ comentario -->
     <tr>
       <td>Microsoft Stream</td>
       <td><a href="https://shorturl.at/VP26T">[https://shorturl.at/VP26T]</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Video de Exposición TB1 (Sprint 2)</strong></td>
+      <td>YouTube</td>
+      <td>
+        <a href="https://shorturl.at/C0LQI">
+          [https://shorturl.at/C0LQI]
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td>
+        <a href="https://shorturl.at/Vj4Vm">
+          [https://shorturl.at/Vj4Vm]
+        </a>
+      </td>
     </tr>
   </tbody>
 </table>
