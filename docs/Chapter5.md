@@ -1673,20 +1673,6 @@ descripción del cambio introducido y la fecha de commit.
       <td>30-04-2026</td>
     </tr>
     <tr>
-      <td>feature/iam</td>
-      <td>4bc28e1</td>
-      <td>feat(iam): add sign-in and sign-up views.</td>
-      <td>Implementa los formularios de autenticación (sign-in y sign-up) con validación de campos y navegación entre vistas.</td>
-      <td>02-05-2026</td>
-    </tr>
-    <tr>
-      <td>feature/iam</td>
-      <td>b2d91fa</td>
-      <td>feat(iam): add api services, endpoints and mappers for iam.</td>
-      <td>Desarrolla los servicios API, endpoints REST y mappers de datos para el módulo de Identity and Access Management.</td>
-      <td>02-05-2026</td>
-    </tr>
-    <tr>
       <td>feature/laboratory</td>
       <td>61ef8cb</td>
       <td>feat(laboratory): add entities and commands for laboratory, products, raw materials and staff.</td>
@@ -1796,6 +1782,20 @@ descripción del cambio introducido y la fecha de commit.
       <td>91fa2bc</td>
       <td>feat(laboratory): add laboratory store management.</td>
       <td>Implementa la gestión de estado del store de laboratorio con señales reactivas (aporte de BJRM03).</td>
+      <td>13-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/iam</td>
+      <td>4bc28e1</td>
+      <td>feat(iam): add sign-in and sign-up views.</td>
+      <td>Implementa los formularios de autenticación (sign-in y sign-up) con validación de campos y navegación entre vistas.</td>
+      <td>13-05-2026</td>
+    </tr>
+    <tr>
+      <td>feature/iam</td>
+      <td>b2d91fa</td>
+      <td>feat(iam): add api services, endpoints and mappers for iam.</td>
+      <td>Desarrolla los servicios API, endpoints REST y mappers de datos para el módulo de Identity and Access Management.</td>
       <td>13-05-2026</td>
     </tr>
   </tbody>
