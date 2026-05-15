@@ -1,100 +1,328 @@
 <div align="center">
 
-<img src="./assets/img/Readme/UPC.png" alt="UPC Logo" width="auto" height="120"/>
+  <img src="./assets/img/Readme/UPC.png" alt="UPC Logo" width="auto" height="120"/>
 
-# Universidad Peruana de Ciencias Aplicadas
+  <br>
 
-**Facultad de Ingeniería**
+  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
 
-**Carrera de Ingeniería de Software**
+  <br>
 
-**Ciclo:** 202610
+  <p>
+    <br>
+    Facultad de Ingeniería
+    <br><br>
+    Carrera de Ingeniería de Software
+    <br><br>
+    <strong>Periodo:</strong> 202610
+    <br><br>
+    1ASI0729 Desarrollo de Aplicaciones Open Source
+    <br><br>
+    <strong>NRC:</strong> 11848
+    <br><br>
+    <strong>Nombre del profesor:</strong> Ángel Augusto Velásquez Núñez
+  </p>
 
-**Código y nombre del curso:** 1ASI0729 - Desarrollo de Aplicaciones Open Source
+  <h3>"Informe de Trabajo Final"</h3>
 
-**NRC:** 11848
+  <p>
+    <br>
+    <strong>Nombre del Startup:</strong> ClosedSource
+    <br><br>
+    <strong>Nombre del Producto:</strong> QualiTrack
+    <br><br>
+    <strong>Integrantes:</strong>
+    <br><br>
+    <table>
+      <tr>
+        <td>Código</td>
+        <td>Apellidos y Nombres</td>
+      </tr>
+      <tr>
+        <td>U202116401</td>
+        <td>Ruiz Madrid, Billy Jake</td>
+      </tr>
+      <tr>
+        <td>U202322849</td>
+        <td>Viza Quispe, Marlon Packard</td>
+      </tr>
+      <tr>
+        <td>U202323911</td>
+        <td>Diaz Caruzo, Edgard Daniel</td>
+      </tr>
+      <tr>
+        <td>U202113229</td>
+        <td>Castillo Yataco, Mauricio Sebastián</td>
+      </tr>
+      <tr>
+        <td>U202321425</td>
+        <td>Angulo Ramírez, Marcelo Martín</td>
+      </tr>
+    </table>
+  </p>
 
-**Nombre del profesor:** Ángel Augusto Velásquez Núñez
-
-### "Informe de Trabajo Final"
-
-**Nombre del Startup:** ClosedSource
-
-**Nombre del Producto:**
-
-**Integrantes:**
+  <h3>Abril, 2026</h3>
 
 </div>
 
-<div align="center">
+<div style="page-break-after: always;"></div>
 
-| Código     | Apellidos y Nombres    |
-|------------|------------------------|
-| u202116401 | Ruiz Madrid Billy Jake |
-| U          |                        |
-| U          |                        |
-| U          |                        |
-| U          |                        |
-
-### Abril, 2026
-
-</div>
-
----
+<hr>
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción |
-|---------|-------|-------|-------------|
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
-|         |       |       |             |
+<table border="1" cellpadding="5" cellspacing="0">
 
----
+  <thead>
+    <tr>
+      <th>Versión</th>
+      <th>Fecha</th>
+      <th>Autor</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0.0</td>
+      <td>05/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>
+        Inicialización del repositorio del informe (first commit) y creación de la
+        estructura base del proyecto.
+      </td>
+    </tr>
+    <tr>
+      <td>1.0.1</td>
+      <td>06/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>
+        Desarrollo del <strong>Startup Profile</strong> y agregado del perfil del
+        integrante, incluyendo imágenes y estructura inicial del Capítulo I.
+      </td>
+    </tr>
+    <tr>
+      <td>1.0.2</td>
+      <td>07/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake / Diaz Caruzo, Edgard Daniel</td>
+      <td>
+        Avance del Capítulo I con definición de <strong>Startup Profile, 5W+2H</strong>
+        y estructura general. Se añadieron y corrigieron perfiles del equipo.
+      </td>
+    </tr>
+    <tr>
+      <td>1.0.3</td>
+      <td>08/04/2026</td>
+      <td>Viza Quispe, Marlon Packard / Angulo Ramírez, Marcelo Martín</td>
+      <td>
+        Incorporación de <strong>Lean UX Canvas, assumptions y outcomes</strong>,
+        además de perfiles de integrantes con sus respectivos recursos gráficos.
+      </td>
+    </tr>
+    <tr>
+      <td>1.0.4</td>
+      <td>09/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake / Castillo Yataco, Mauricio Sebastián</td>
+      <td>
+        Ajustes al <strong>Lean UX Canvas</strong>, definición de segmentos objetivo
+        y consolidación de contenido del Capítulo I.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.0</td>
+      <td>10/04/2026</td>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>
+        Inicio del Capítulo II con el diseño de entrevistas y estructura inicial
+        de recolección de información.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.1</td>
+      <td>11/04/2026</td>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>
+        Definición de la estructura de entrevistas y ajustes en preguntas
+        específicas.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.2</td>
+      <td>12/04/2026</td>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>
+        Registro de entrevistas, incorporación de evidencias (imágenes) y
+        corrección de enlaces.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.3</td>
+      <td>13/04/2026</td>
+      <td>Castillo Yataco, Mauricio Sebastián / Diaz Caruzo, Edgard Daniel</td>
+      <td>
+        Desarrollo de <strong>entrevistas, needfinding, user personas y task matrix</strong>,
+        junto con evidencia de entrevistas realizadas.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.4</td>
+      <td>14/04/2026</td>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>
+        Desarrollo de <strong>User Journey Mapping, Empathy Mapping y Ubiquitous Language</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.5</td>
+      <td>15/04/2026</td>
+      <td>Castillo Yataco, Mauricio Sebastián</td>
+      <td>
+        Elaboración del <strong>análisis de entrevistas</strong> para ambos segmentos.
+      </td>
+    </tr>
+    <tr>
+      <td>1.1.6</td>
+      <td>16/04/2026</td>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>
+        Correcciones y mejoras en <strong>Empathy Mapping</strong> y artefactos UX.
+      </td>
+    </tr>
+    <tr>
+      <td>1.2.0</td>
+      <td>19/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>
+        Desarrollo de <strong>User Stories, Impact Mapping y Product Backlog</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td>1.2.1</td>
+      <td>21/04/2026</td>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>
+        Actualización de <strong>Impact Mapping</strong> e incorporación de recursos gráficos.
+      </td>
+    </tr>
+    <tr>
+      <td>1.3.0</td>
+      <td>22/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>
+        Desarrollo de <strong>diagramas de arquitectura (C4 y class diagrams)</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td>1.3.1</td>
+      <td>23/04/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>
+        Correcciones en <strong>diagramas backend y arquitectura</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td>1.3.2</td>
+      <td>24/04/2026</td>
+      <td>Viza Quispe, Marlon Packard / Ruiz Madrid, Billy Jake</td>
+      <td>
+        Desarrollo de <strong>wireframes, wireflows y diagramas de base de datos</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td>1.3.3</td>
+      <td>25/04/2026</td>
+      <td>Diaz Caruzo, Edgard Daniel / Viza Quispe, Marlon Packard</td>
+      <td>
+        Incorporación de <strong>mockups y user flow diagrams</strong> de la web application.
+      </td>
+    </tr>
+    <tr>
+      <td>1.4.0</td>
+      <td>24/04/2026</td>
+      <td>Castillo Yataco, Mauricio Sebastián / Ruiz Madrid, Billy Jake</td>
+      <td>
+        Desarrollo del <strong>Capítulo V (AV1)</strong>, incluyendo Sprint 1,
+        evidencias de implementación y documentación de gestión de configuración.
+      </td>
+    </tr>
+    <tr>
+      <td>1.4.1</td>
+      <td>25/04/2026</td>
+      <td>Castillo Yataco, Mauricio Sebastián</td>
+      <td>
+        Correcciones finales del Capítulo V y ajustes en documentación de
+        <strong>Software Configuration Management</strong>.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
-**Link de los repositorios de la organización**: https://github.com/ClosedSource-11848
+**Link de los repositorios de la organización:**
+https://github.com/ClosedSource-11848
 
-**Link del repositorio-Informe**: https://github.com/ClosedSource-11848/ClosedSource-Project-Report
+**Link del repositorio del Informe:**
+https://github.com/ClosedSource-11848/ClosedSource-Project-Report
 
-**Reporte de colaboración de la entrega del AV1**:
+---
 
-Durante la primera fase de elaboración del informe, el equipo  centró sus esfuerzos en la construcción de los fundamentos conceptuales, de investigación y diseño inicial del proyecto. Cada integrante asumió un rol activo en la redacción, modelado y documentación de secciones clave del reporte, asegurando una coherencia entre la teoría, la metodología y la propuesta tecnológica.
+### Reporte de colaboración de la entrega del AV1
 
+Durante la primera fase de elaboración del informe (Sprint 1 – AV1), el equipo ClosedSource centró sus esfuerzos en la construcción progresiva del documento, abarcando la definición del problema, la investigación con usuarios, el diseño de la solución y la documentación de la arquitectura.
+El trabajo se realizó de manera iterativa, evidenciado en los commits del repositorio, donde cada integrante contribuyó en distintas secciones mediante la creación, mejora y corrección continua de contenidos.
 
-Finalmente, estos gráficos representan la cantidad de commits realizados por cada miembro del equipo en el repositorio del proyecto. Cada barra representa a un miembro del equipo y la altura de la barra indica el número total de commits realizados por esa persona.
+**Billy Jake Ruiz Madrid**
 
-![Commits 1](assets/img/)
+Billy lideró la inicialización del repositorio y la estructuración base del informe. Participó activamente en el desarrollo del Capítulo I (Startup Profile, segmentos objetivo y ajustes del Lean UX Canvas).
+En el Capítulo III, contribuyó con la elaboración y mejora del Product Backlog, User Stories e Impact Mapping.
+Asimismo, desarrolló gran parte de los artefactos del Capítulo IV relacionados con arquitectura (diagramas C4, class diagrams y database diagrams), y apoyó en la documentación del Capítulo V correspondiente al Sprint 1 (AV1).
 
-![Commits 2](assets/img/)
+**Marcelo Martín Angulo Ramírez**
+
+Marcelo contribuyó en la elaboración y mejora del Lean UX Canvas y en la definición de contenidos del Capítulo I, incluyendo perfiles y estructura del documento.
+También participó en la consolidación de contenido y ajustes generales del informe, asegurando coherencia en la presentación de los artefactos generados durante el Sprint.
+
+**Edgard Daniel Diaz Caruzo**
+
+Daniel tuvo un rol principal en el desarrollo del Capítulo II, específicamente en el diseño, estructura y registro de entrevistas.
+Se encargó de la incorporación de evidencias (imágenes, enlaces y resúmenes), así como de la organización de la información recolectada.
+Además, participó en la integración de artefactos visuales en capítulos posteriores, como mockups y user flows.
+
+**Marlon Packard Viza Quispe**
+
+Marlon contribuyó en el desarrollo del Capítulo I mediante la incorporación de elementos del Lean UX (assumptions, outcomes y recursos visuales).
+En el Capítulo II, participó en la construcción de artefactos de análisis como User Journey Mapping, Empathy Mapping y Ubiquitous Language.
+Asimismo, tuvo un rol importante en el Capítulo IV, desarrollando wireframes, wireflows, mockups y actualizando recursos gráficos del sistema.
+
+**Mauricio Sebastián Castillo Yataco**
+
+Mauricio participó en la construcción del Capítulo I mediante la incorporación de contenido y mejora de la documentación.
+En el Capítulo II, contribuyó en el desarrollo de entrevistas, needfinding y análisis de resultados.
+Además, apoyó en la elaboración y corrección del Capítulo V, específicamente en la documentación del Sprint 1 (AV1) y aspectos de Software Configuration Management.
+
+A continuación se presentan los gráficos de colaboración que representan la cantidad
+de commits realizados por cada miembro del equipo en el repositorio del informe.
+
+<div align="center">
+  <img src="./assets/img/Readme/commits-av1-1.jpeg" alt="Commits AV1 - Gráfico 1" width="90%">
+  <p><em>Figura: Contribuciones por miembro del equipo ClosedSource durante el AV1.</em></p>
+</div>
 
 **Ramificación del proyecto usando GitFlow:**
 
-Este gráfico ofrece una visualización de las veces que se ha clonado nuestro repositorio, junto con las fechas correspondientes a cada evento. También muestran datos sobre el número de visitas que ha recibido el repositorio de nuestro equipo a lo largo del tiempo.
+El siguiente gráfico muestra la ramificación del repositorio y las visitas
+registradas durante la fase AV1, evidenciando el flujo de trabajo colaborativo
+del equipo.
 
-![Ramificación 1](assets/img/)
+<div align="center">
+  <img src="./assets/img/Readme/network-av1.jpeg" alt="Network Graph AV1" width="90%">
+  <p><em>Figura: Network Graph del repositorio ClosedSource-Project-Report durante el AV1.</em></p>
+</div>
 
----
+<div style="page-break-after: always;"></div>
+
 ## Tabla de contenido
 
 - [Capítulo I: Introducción](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#capítulo-i-introducción)
@@ -104,10 +332,10 @@ Este gráfico ofrece una visualización de las veces que se ha clonado nuestro r
     - [1.2. Solution Profile](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#12-solution-profile)
         - [1.2.1. Antecedentes y problemática](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#121-antecedentes-y-problemática)
         - [1.2.2. Lean UX Process](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#122-lean-ux-process)
-        - [1.2.2.1. Lean UX Problem Statements](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1221-lean-ux-problem-statements)
-        - [1.2.2.2. Lean UX Assumptions](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1222-lean-ux-assumptions)
-        - [1.2.2.3. Lean UX Hypothesis Statements](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1223-lean-ux-hypothesis-statements)
-        - [1.2.2.4. Lean UX Canvas](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1224-lean-ux-canvas)
+            - [1.2.2.1. Lean UX Problem Statements](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1221-lean-ux-problem-statements)
+            - [1.2.2.2. Lean UX Assumptions](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1222-lean-ux-assumptions)
+            - [1.2.2.3. Lean UX Hypothesis Statements](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1223-lean-ux-hypothesis-statements)
+            - [1.2.2.4. Lean UX Canvas](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#1224-lean-ux-canvas)
     - [1.3. Segmentos objetivo](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#13-segmentos-objetivo)
 
 - [Capítulo II: Requirements Elicitation & Analysis](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterII.md#capítulo-ii-requirements-elicitation--analysis)
@@ -147,8 +375,8 @@ Este gráfico ofrece una visualización de las veces que se ha clonado nuestro r
     - [4.4. Web Applications UX/UI Design](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#44-web-applications-uxui-design)
         - [4.4.1. Web Applications Wireframes](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#441-web-applications-wireframes)
         - [4.4.2. Web Applications Wireflow Diagrams](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#442-web-applications-wireflow-diagrams)
-        - [4.4.2. Web Applications Mock-ups](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#442-web-applications-mock-ups)
-        - [4.4.3. Web Applications User Flow Diagrams](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#443-web-applications-user-flow-diagrams)
+        - [4.4.3. Web Applications Mock-ups](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#443-web-applications-mock-ups)
+        - [4.4.4. Web Applications User Flow Diagrams](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#444-web-applications-user-flow-diagrams)
     - [4.5. Web Applications Prototyping](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#45-web-applications-prototyping)
     - [4.6. Domain-Driven Software Architecture](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#46-domain-driven-software-architecture)
         - [4.6.1. Design-Level Event Storming](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterIV.md#461-design-level-event-storming)
@@ -167,15 +395,15 @@ Este gráfico ofrece una visualización de las veces que se ha clonado nuestro r
         - [5.1.3. Source Code Style Guide & Conventions](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#513-source-code-style-guide--conventions)
         - [5.1.4. Software Deployment Configuration](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#514-software-deployment-configuration)
     - [5.2. Landing Page, Services & Applications Implementation](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52-landing-page-services--applications-implementation)
-        - [5.2.1. Sprint n](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x-sprint-n)
-        - [5.2.1.1. Sprint Planning n](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x1-sprint-planning-n)
-        - [5.2.1.2. Aspect Leaders and Collaborators](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x2-aspect-leaders-and-collaborators)
-        - [5.2.1.3. Sprint Backlog n](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x3-sprint-backlog-n)
-        - [5.2.1.4. Development Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x4-development-evidence-for-sprint-review)
-        - [5.2.1.5. Execution Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x5-execution-evidence-for-sprint-review)
-        - [5.2.1.6. Services Documentation Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x6-services-documentation-evidence-for-sprint-review)
-        - [5.2.1.7. Software Deployment Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x7-software-deployment-evidence-for-sprint-review)
-        - [5.2.1.8. Team Collaboration Insights during Sprint](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#52x8-team-collaboration-insights-during-sprint)
+        - [5.2.1. Sprint 1](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#521-sprint-1)
+            - [5.2.1.1. Sprint Planning 1](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5211-sprint-planning-1)
+            - [5.2.1.2. Aspect Leaders and Collaborators](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5212-aspect-leaders-and-collaborators)
+            - [5.2.1.3. Sprint Backlog 1](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5213-sprint-backlog-1)
+            - [5.2.1.4. Development Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5214-development-evidence-for-sprint-review)
+            - [5.2.1.5. Execution Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5215-execution-evidence-for-sprint-review)
+            - [5.2.1.6. Services Documentation Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5216-services-documentation-evidence-for-sprint-review)
+            - [5.2.1.7. Software Deployment Evidence for Sprint Review](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5217-software-deployment-evidence-for-sprint-review)
+            - [5.2.1.8. Team Collaboration Insights during Sprint](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#5218-team-collaboration-insights-during-sprint)
     - [5.3. Validation Interviews](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#53-validation-interviews)
         - [5.3.1. Diseño de Entrevistas](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#531-diseño-de-entrevistas)
         - [5.3.2. Registro de Entrevistas](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#532-registro-de-entrevistas)
@@ -190,6 +418,7 @@ Este gráfico ofrece una visualización de las veces que se ha clonado nuestro r
 - [Anexos](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterV.md#anexos)
 
 ---
+
 ## ABET – EAC - Student Outcome 3
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -197,9 +426,56 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **Criterio:** Capacidad de comunicarse efectivamente con un rango de audiencias.
 
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET - EAC - Student Outcome 3.
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones
+por parte del grupo, que permiten sustentar el haber alcanzado el logro del
+ABET - EAC - Student Outcome 3.
 
-| Criterio específico                                                                        | Acciones realizadas | Conclusiones |
-|--------------------------------------------------------------------------------------------|---------------------|--------------|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.**                   |                     |              |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.**                 |                     |              |
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th width="25%">Criterio específico</th>
+      <th width="55%">Acciones realizadas</th>
+      <th width="20%">Conclusiones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Comunica oralmente con efectividad a diferentes rangos de audiencia.</strong></td>
+      <td>
+        <strong>Ruiz Madrid, Billy Jake:</strong><br><br>
+        <strong>AV1:</strong> Presentó los avances del Capítulo I y Capítulo III en reuniones de equipo, explicando los segmentos objetivo, el Product Backlog y el Impact Mapping, facilitando la comprensión de las decisiones de priorización y del enfoque del producto.<br><br>
+        <strong>Angulo Ramírez, Marcelo Martín:</strong><br><br>
+        <strong>AV1:</strong> Expuso el Lean UX Canvas y los lineamientos de arquitectura del sistema, adaptando el nivel técnico de la explicación según la audiencia para asegurar la comprensión del enfoque de diseño y la estructura general de la solución.<br><br>
+        <strong>Diaz Caruzo, Edgard Daniel:</strong><br><br>
+        <strong>AV1:</strong> Comunicó los resultados de las entrevistas y la estructura del proceso de recolección de información, explicando los hallazgos obtenidos y su impacto en la definición de necesidades del sistema.<br><br>
+        <strong>Viza Quispe, Marlon Packard:</strong><br><br>
+        <strong>AV1:</strong> Presentó los artefactos de análisis de usuario como User Journey Mapping, Empathy Mapping y flujos de navegación, facilitando la comprensión del comportamiento del usuario dentro del sistema.<br><br>
+        <strong>Castillo Yataco, Mauricio Sebastián:</strong><br><br>
+        <strong>AV1:</strong> Expuso el desarrollo de entrevistas y el análisis de resultados, explicando la relación entre los hallazgos obtenidos y la definición de funcionalidades del sistema.
+      </td>
+      <td>
+        <strong>Conclusión AV1:</strong><br>
+        La comunicación oral permitió al equipo compartir avances de manera clara y estructurada, facilitando la comprensión del problema, los usuarios y la solución propuesta. Las exposiciones durante el sprint ayudaron a alinear decisiones y mantener una visión común del proyecto.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Comunica por escrito con efectividad a diferentes rangos de audiencia.</strong></td>
+      <td>
+        <strong>Ruiz Madrid, Billy Jake:</strong><br><br>
+        <strong>AV1:</strong> Redactó secciones del Capítulo I, Capítulo III y Capítulo IV, incluyendo Product Backlog, Impact Mapping y diagramas de arquitectura, utilizando un lenguaje técnico claro que permitió la comprensión tanto a nivel académico como técnico.<br><br>
+        <strong>Angulo Ramírez, Marcelo Martín:</strong><br><br>
+        <strong>AV1:</strong> Documentó el Lean UX Canvas y aportó en la organización y mejora del contenido del informe, manteniendo coherencia en la estructura y claridad en la redacción.<br><br>
+        <strong>Diaz Caruzo, Edgard Daniel:</strong><br><br>
+        <strong>AV1:</strong> Redactó el diseño, registro y evidencias de entrevistas en el Capítulo II, organizando la información de manera clara y comprensible para su análisis posterior.<br><br>
+        <strong>Viza Quispe, Marlon Packard:</strong><br><br>
+        <strong>AV1:</strong> Elaboró la documentación de artefactos de análisis de usuario y diseño (User Journey, Empathy Mapping, wireframes y mockups), asegurando consistencia en el uso de términos y claridad en la representación de flujos.<br><br>
+        <strong>Castillo Yataco, Mauricio Sebastián:</strong><br><br>
+        <strong>AV1:</strong> Documentó entrevistas, análisis de resultados y parte del Capítulo V, organizando la información de forma estructurada y alineada con los requerimientos del informe.
+      </td>
+      <td>
+        <strong>Conclusión AV1:</strong><br>
+        La comunicación escrita permitió estructurar y documentar de manera clara los avances del proyecto, facilitando la comprensión de los artefactos desarrollados por parte del equipo y del evaluador. La consistencia en la redacción contribuyó a mantener coherencia entre los capítulos y asegurar la trazabilidad del trabajo realizado.
+      </td>
+    </tr>
+  </tbody>
+</table>
