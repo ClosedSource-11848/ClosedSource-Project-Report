@@ -121,84 +121,51 @@ El Lean UX es una perspectiva que facilita la validación de las soluciones suge
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-Nuestro servicio brinda una plataforma de gestión de calidad y cumplimiento (QMS) para laboratorios farmacéuticos y entidades de salud pública. A través de una arquitectura SaaS e integración con dispositivos IoT, las instituciones buscan garantizar que cada lote de medicamentos cumpla con las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
+En la industria farmacéutica peruana y en las entidades de salud pública, los procesos de control de calidad y fabricación continúan dependiendo en gran medida de registros manuales, sistemas aislados y documentos físicos, lo que incrementa significativamente el riesgo de error humano, compromete la integridad de los datos y dificulta el cumplimiento oportuno de las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
 
-Hemos observado que el control de variables críticas (pH, temperatura, presión) aún depende de registros manuales y sistemas aislados, lo que genera riesgos de error humano, falta de integridad de datos y demoras críticas durante auditorías regulatorias.
+Actualmente, los Jefes de Aseguramiento de la Calidad y los Supervisores de entidades públicas deben invertir grandes cantidades de tiempo en consolidar información dispersa para auditorías regulatorias, sin contar con trazabilidad digital continua ni alertas tempranas ante desviaciones críticas de variables como temperatura, presión o pH. Esta brecha tecnológica no solo ralentiza la operación diaria, sino que expone a las instituciones a observaciones regulatorias, sanciones económicas y potenciales riesgos para la salud pública.
 
-¿Cómo podríamos lograr que el personal de aseguramiento de la calidad y los supervisores farmacéuticos tengan trazabilidad inmutable y alertas en tiempo real de sus procesos de fabricación, sin depender de bitácoras físicas o transcripciones manuales propensas a errores?
+Existe una oportunidad clara de mercado para una plataforma SaaS especializada que permita digitalizar la trazabilidad de procesos farmacéuticos, automatizar la captura de variables críticas mediante integración IoT y garantizar registros inmutables auditables, especialmente dirigida a laboratorios medianos y entidades públicas que no pueden adoptar soluciones corporativas costosas como SAP o LIMS tradicionales.
+
+¿Cómo podríamos permitir que los responsables de aseguramiento de la calidad y supervisión pública gestionen, supervisen y auditen procesos de fabricación farmacéutica en tiempo real, con trazabilidad digital completa y mínima fricción operativa, eliminando la dependencia de registros manuales y reduciendo drásticamente el tiempo y riesgo asociado a las auditorías de DIGEMID?
 
 #### 1.2.2.2. Lean UX Assumptions
 
-En esta sección los supuestos iniciales del equipo acerca del negocio, los usuarios, la problemática y la solución sugerida se exponen. Durante entrevistas, prototipado y pruebas de uso, estas suposiciones se establecen como creencias que necesitan ser confirmadas con evidencia.
+En esta sección se exponen las premisas sobre las cuales se construye la propuesta de QualiTrack, considerando el contexto regulatorio del sector farmacéutico, la realidad operativa de los laboratorios y el valor esperado de la solución tecnológica.
 
-**Assumptions Worksheet (síntesis aplicada a QualiTrack)**
-
-| #  | Supuesto aplicado                                                                                                                               |
-|----|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | Creemos que los laboratorios necesitan garantizar la integridad de datos para superar auditorías de DIGEMID sin observaciones.                  |
-| 2  | Estas necesidades pueden resolverse con una solución SaaS integrada a sensores IoT que capturen telemetría (pH, presión, temp) automáticamente. |
-| 3  | Nuestros clientes iniciales serán laboratorios farmacéuticos medianos y entidades públicas (como el INS) que manejan procesos de esterilización.|
-| 4  | El valor #1 para los laboratorios es la reducción del riesgo de rechazo de lotes y la agilización de procesos de auditoría.                     |  
-| 5  | Beneficios adicionales: eliminación del papel, alertas tempranas ante desviaciones y centralización de la firma digital de lotes.               |
-| 6  | Adquiriremos clientes mediante venta directa B2B técnica, ferias del sector farmacéutico y consultorías de cumplimiento regulatorio.            |
-| 7  | Generaremos ingresos con planes de suscripción basados en el volumen de lotes gestionados o cantidad de equipos IoT conectados.                 |
-| 8  | La competencia principal son los registros manuales en papel, hojas de cálculo de Excel.                                                        |
-| 9  | Nos diferenciaremos por la captura automática vía IoT, la inmutabilidad de los registros y el cumplimiento nativo de normativas locales.        |
-| 10 | El mayor riesgo de producto es que el personal de planta se resista a dejar el registro físico por costumbre operativa.                         |
-| 11 | Reduciremos ese riesgo con interfaces de usuario simplificadas para operarios y dashboards de fácil lectura para supervisores.                  |
-| 12 | Si se demuestra que la integración de hardware es muy compleja para el cliente, pivotaremos hacia una solución de gestión documental robusta.   |
-
-**Supuestos por dimensión**
-
-**Business Assumptions**
-* Asumimos que los laboratorios farmacéuticos y entidades como el INS enfrentan una presión regulatoria creciente que hace insostenible el registro manual.
-* Asumimos que las instituciones están dispuestas a invertir en una solución SaaS para evitar multas de DIGEMID y reducir la merma de productos.
-* Asumimos que el modelo de suscripción basado en volumen de datos o equipos es escalable y aceptado por la industria farmacéutica.
-* Asumimos que nuestra principal ventaja competitiva es la garantía de "Integridad de Datos" (Data Integrity) mediante la automatización IoT.
-
-**User Assumptions**
-* Asumimos que los principales usuarios serán Directores Técnicos, Jefes de Aseguramiento de la Calidad (QA) y operarios de planta.
-* Asumimos que los Jefes de QA necesitan dashboards de supervisión remota para liberar lotes sin estar físicamente en la línea de producción.
-* Asumimos que los operarios de laboratorio adoptarán la plataforma si esta simplifica su flujo de trabajo y elimina la carga de llenar bitácoras físicas.
-* Asumimos que los auditores regulatorios aceptarán los reportes digitales de QualiTrack como evidencia válida e inmutable.
-
-**Problem Assumptions**
-* Asumimos que los registros manuales actuales son la causa principal de las observaciones en auditorías y de la liberación de lotes defectuosos.
-* Asumimos que la falta de centralización de la telemetría (pH, temperatura, presión) impide una respuesta rápida ante fallas mecánicas en equipos industriales.
-* Asumimos que la trazabilidad física fragmentada hace que el análisis de causa raíz ante una desviación de calidad sea lento y costoso.
-* Asumimos que existe un riesgo crítico de manipulación o pérdida de datos en los sistemas actuales basados en papel o Excel.
-
-**Solution Assumptions**
-* Asumimos que una plataforma digital centralizada y auditable (QMS) reducirá drásticamente el tiempo de preparación para inspecciones.
-* Asumimos que la integración IoT eliminará el error de transcripción humana en las variables críticas de control.
-* Asumimos que el sistema de alertas automáticas permitirá bloquear lotes no conformes antes de que avancen en la cadena de suministro.
-* Asumimos que la arquitectura SaaS facilitará el cumplimiento normativo sin que el laboratorio deba gestionar servidores locales complejos.
-
-**Assumptions Priority (riesgo x incertidumbre)**
-
-| Prioridad | Supuesto a validar                                                                                                  | Riesgo | Incertidumbre |
-|----------:|---------------------------------------------------------------------------------------------------------------------|:------:|:-------------:|
-|         1 | Los sensores IoT pueden integrarse de forma estable con equipos industriales antiguos (autoclaves, pH-metros).      |  Alto  |     Alto      |
-|         2 | La plataforma cumple con los estándares de seguridad de datos exigidos por DIGEMID para auditorías digitales.       |  Alto  |     Medio     |
-|         3 | El personal de aseguramiento de calidad preferirá el dashboard digital sobre las bitácoras físicas actuales.        |  Alto  |     Alto      |
-|         4 | Los laboratorios están dispuestos a pagar una suscripción recurrente en lugar de comprar un software de pago único. |  Medio |     Bajo      |
+**Business Assumptions:**
+* Existe un segmento relevante de laboratorios farmacéuticos medianos y entidades de salud pública en Perú y Latinoamérica que enfrentan limitaciones operativas significativas debido a la falta de digitalización de la telemetría y los registros de calidad.
+* Los directores y responsables de aseguramiento de la calidad están dispuestos a invertir en una plataforma SaaS B2B cuando esta les permite reducir el riesgo de sanciones regulatorias por parte de la DIGEMID y evitar la pérdida total de lotes de producción.
+* Los laboratorios pueden adoptar un modelo de suscripción basado en el volumen de operación (cantidad de lotes gestionados o sensores IoT conectados), siempre que el impacto económico positivo sea visible en la reducción de mermas, reprocesos y tiempos improductivos.
+* La captura automática de variables críticas como pH, temperatura y presión genera un nivel de confiabilidad e integridad de los datos que justifica la inversión inicial y compensa la curva de adaptación operativa del personal de planta.
+* El modelo de QualiTrack es escalable a otros países de la región debido a la similitud entre las normativas de Buenas Prácticas de Manufactura aplicadas en Latinoamérica.
 
 **Business Outcomes:**
-* Lograr que al menos 2 laboratorios piloto implementen QualiTrack en sus líneas de producción en los primeros 8 meses.
-* Reducir en un 80% el tiempo de preparación de documentos para auditorías regulatorias en las instituciones piloto.
-* Disminuir en un 15% la pérdida de lotes por desviaciones de parámetros no detectadas a tiempo.
+* Que los laboratorios adopten QualiTrack como su sistema principal de gestión de calidad, reduciendo progresivamente la dependencia de registros en papel y hojas de cálculo.
+* Reducir en aproximadamente un 80% el tiempo destinado a la preparación, consolidación y revisión de documentación durante auditorías regulatorias.
+* Disminuir en un 15% la pérdida de lotes de medicamentos mediante la detección temprana de desviaciones en variables críticas del proceso productivo.
+* Conseguir la suscripción de al menos dos laboratorios piloto en los primeros ocho meses de operación, validando la factibilidad y estabilidad del uso de la plataforma en entornos reales.
+* Posicionar a QualiTrack como una solución confiable y reconocida de trazabilidad digital frente a auditores regulatorios y entidades de control sanitario.
+
+**User Assumptions:**
+* Los Jefes de Aseguramiento de la Calidad requieren visibilidad remota de la producción para supervisar procesos y liberar lotes sin necesidad de supervisión presencial constante.
+* Los operarios de planta adoptan con mayor facilidad herramientas que eliminan tareas repetitivas y propensas a error, como la transcripción manual de datos desde la maquinaria hacia registros físicos.
+* Los supervisores de entidades de salud pública priorizan la detección inmediata de desviaciones críticas por encima del análisis posterior de reportes históricos.
+* Los auditores regulatorios aceptan reportes digitales cuando estos garantizan trazabilidad completa, registros inmutables y autenticación mediante firmas digitales.
+* La resistencia inicial al cambio tecnológico en planta se reduce significativamente cuando la interfaz destinada al operario es simple, directa y enfocada exclusivamente en sus funciones esenciales.
 
 **User Outcomes:**
-* Lograr que los supervisores de calidad firmen y liberen lotes de forma digital en menos de 10 minutos tras finalizar la producción.
-* Reducir el error humano en el registro de variables críticas a un valor cercano al 0% mediante la automatización IoT.
-* Lograr que los operarios visualicen alertas de desviación de parámetros en menos de 5 segundos a través de la plataforma móvil/web.
+* Los Jefes de Aseguramiento de la Calidad enfrentan inspecciones regulatorias con mayor tranquilidad al contar con información organizada, accesible y actualizada en tiempo real.
+* Los operarios reducen el tiempo dedicado a tareas administrativas y se concentran en la correcta operación de los equipos de esterilización y manufactura.
+* Los supervisores detectan desviaciones térmicas o de presión en el momento en que ocurren, permitiendo bloquear lotes defectuosos antes de que avancen en la cadena de suministro.
+* Las decisiones de liberación o rechazo de medicamentos se basan en datos capturados directamente por hardware, eliminando errores asociados a la transcripción manual.
 
 **Features:**
-1. Módulo de registro de lotes e historial de fabricación inmutable.
-2. Integración con sensores IoT (simulados/reales) para captura de pH, temperatura y presión.
-3. Dashboard de monitoreo en tiempo real con indicadores de cumplimiento BPM.
-4. Sistema de alertas automáticas y bloqueo preventivo de lotes fuera de rango.
-5. Generación de reportes de trazabilidad listos para auditoría en formato PDF no editable.
+* **Disponibilidad confiable de datos operativos críticos:** Capacidad del sistema para disponer de información precisa y continua sobre variables críticas del proceso productivo, reduciendo la dependencia de registros humanos y asegurando consistencia en los datos utilizados para control de calidad.
+* **Capacidad de reacción inmediata ante eventos de riesgo:** Capacidad del sistema para advertir oportunamente sobre desviaciones relevantes durante la operación, permitiendo que el personal responsable actúe sin demoras ante condiciones que comprometan la calidad del producto.
+* **Conservación íntegra y verificable de la información de producción:** Capacidad del sistema para mantener un registro completo, confiable y no alterable de la información asociada a los procesos y lotes, de manera que pueda ser consultada y utilizada como evidencia cuando sea necesario.
+* **Autorización digital descentralizada de decisiones críticas:** Capacidad del sistema para permitir que las decisiones de liberación o aprobación se realicen de forma digital y remota, sin depender de presencia física ni de flujos manuales tradicionales.
+* **Sustitución del registro manual como fuente principal de información:** Capacidad del sistema para consolidarse como la fuente central y más confiable de información operativa y regulatoria, desplazando progresivamente los registros manuales y hojas de cálculo en la gestión de calidad.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
