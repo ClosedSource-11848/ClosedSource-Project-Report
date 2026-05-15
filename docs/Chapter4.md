@@ -345,77 +345,215 @@ Los Wireflows se utilizan, sobre todo, en el diseño de la experiencia del usuar
 
 En esta sección se presentan los mock-ups diseñados para la aplicación web de ClosedSource(QualiTrack). Cada pantalla responde a las funcionalidades principales del sistema
 
-**Portal de Inicio - ClosedSource** 
+**Inicio - ClosedSource**
 
-Pantalla principal de presentación donde se ofrecen las opciones de ingreso y registro de nuevas plantas industriales.
+Página de bienvenida con selección de rol (QA Manager/Supervisor o Lab Operator) para acceder al sistema.
 
-<img src="../assets/img/Login - ClosedSource - Mock-ups.jpeg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/outside/home.jpg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Crear Cuenta - ClosedSource**  
+**Inicio de Sesión - ClosedSource**
 
-Formulario para registrar laboratorios, solicitando datos del responsable y credenciales de acceso.
+Módulo de autenticación de usuarios con credenciales (usuario y contraseña) para acceder a QualiTrack.
 
-<img src="../assets/img/Registro – ClosedSource - Mock - ups.jpeg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/outside/iam_sign-in.jpg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ingreso al Sistema - ClosedSource** 
+**Registro de Gestor de Calidad - ClosedSource**
 
-Pantalla de autenticación para usuarios registrados con campos de correo y contraseña.
+Creación de cuenta para rol de QA Manager/Supervisor con permisos de administración de calidad.
 
-<img src="../assets/img/Inicio de Sesión – ClosedSource - Mock-ups.jpeg" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/outside/iam_sign-up_role=manager.png" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Panel de Control - ClosedSource** 
+**Registro de Operador de Laboratorio - ClosedSource**
 
-Vista general de la planta que muestra el progreso del lote activo y el estado de las unidades de producción.
+Creación de cuenta para rol de Operador de Laboratorio con acceso a operaciones diarias del laboratorio.
 
-<img src="../assets/img/Ingreso-al-Sistema- ClosedSource - Mock-ups.jpeg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/outside/iam_sign-up_role=operator.jpg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ejecución de Lote - ClosedSource** 
+**Panel de Telemetría - ClosedSource**
 
-Interfaz para registrar materias primas y verificar procesos con monitoreo de telemetría en vivo.
+Monitorización en tiempo real de datos sensoriales de equipos, mostrando estado de conexión y lecturas actuales.
 
-<img src="../assets/img/Ejecución-de-Lote-Activo – ClosedSource - Mock-ups.jpeg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/tracking/tracking_dashboard.jpg" alt="Panel-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Estado de Equipos - ClosedSource** 
+**Análisis de Telemetría - ClosedSource**
 
-Pantalla de monitoreo técnico que detalla el funcionamiento de la maquinaria y sus sensores IoT.
+Módulo de análisis de datos históricos de telemetría de equipos con gráficos y filtros por fecha.
 
-<img src="../assets/img/Estado-de-Equipamiento-IoT – ClosedSource Mock-ups.jpeg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/tracking/tracking_analysis.jpg" alt="Análisis-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Centro de Alertas - ClosedSource** 
+Registro de Telemetría - ClosedSource
+
+Registro detallado de datos crudos de telemetría con búsqueda y filtros por equipo y rango de fechas.
+
+<img src="../assets/img/mockup/tracking/tracking_history.jpg" alt="Registro-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Listado de Lotes de Producción - ClosedSource**
+
+Módulo de listado y seguimiento de lotes para control de trazabilidad y calidad en los ciclos productivos.
+
+<img src="../assets/img/mockup/batch/batch_batch-list.jpg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Nuevo Lote - ClosedSource**
+
+Formulario para registrar lotes de producción con especificaciones de calidad, número de lote de proveedor y stock inicial.
+
+<img src="../assets/img/mockup/batch/batch_batch-form.jpg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Ficha Técnica de Lote - ClosedSource**
+
+Módulo de visualización de detalles técnicos de lotes de producción, incluyendo información general y materias primas asociadas.
+
+<img src="../assets/img/mockup/batch/batch_batch-detail_1.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Liberación de Lote - ClosedSource**
+
+Módulo para liberar lotes que cumplen especificaciones, con registro de notas del proceso BPM.
+
+<img src="../assets/img/mockup/batch/batch_batch-release-form_1.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Rechazo de Lote - ClosedSource**
+
+Registro de lotes no conformes, especificando motivo de rechazo y fecha para auditoría de calidad.
+
+<img src="../assets/img/mockup/batch/batch_batch-reject-form_1.jpg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Catálogo de Equipos - ClosedSource**
+
+Gestión y monitoreo de activos de laboratorio con listado de equipos, modelo, número de serie y estado.
+
+<img src="../assets/img/mockup/equipment/equipment_equipment-list.jpg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Nuevo Equipo - ClosedSource**
+
+Alta de nuevos equipos en el catálogo ingresando especificaciones técnicas como nombre, tipo, modelo y número de serie.
+
+<img src="../assets/img/mockup/equipment/equipment_register-equipment.jpg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+
+**Detalle de Equipo - ClosedSource**
+
+Visualización de información general y configuración BPM de equipos de laboratorio.
+
+<img src="../assets/img/mockup/equipment/equipment_equipment-detail_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Detalle de Mantenimiento del Equipo - ClosedSource**
+
+Módulo de detalles técnicos de equipos, incluyendo configuración BPM y acceso al historial de mantenimiento.
+
+<img src="../assets/img/mockup/equipment/equipment_equipment-detail_2.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Historial de Mantenimiento - ClosedSource**
+
+Registro cronológico de eventos de mantenimiento y calibración de equipos.
+
+<img src="../assets/img/mockup/equipment/equipment_equipment-detail_3.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Configuración de Parámetros BPM - ClosedSource**
+
+Definición de rangos de tolerancia y parámetros de monitoreo de calidad para equipos industriales.
+
+<img src="../assets/img/mockup/equipment/equipment_bpm-config-form_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Historial de Mantenimiento - ClosedSource**
+
+Registro cronológico de actividades técnicas con opción de añadir nuevos eventos de mantenimiento.
+
+<img src="../assets/img/mockup/equipment/equipment_maintenance-history_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Actividad Técnica - ClosedSource**
+
+Formulario para registrar intervenciones técnicas, mantenimientos y calibraciones realizadas por técnicos responsables.
+
+<img src="../assets/img/mockup/equipment/equipment_maintenance-form_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Centro de Alertas - ClosedSource**
 
 Módulo de respuesta ante emergencias que permite pausar procesos cuando se detectan desviaciones críticas.
 
-<img src="../assets/img/Gestión-de-Alertas-e-Incidentes – ClosedSource - Mock-ups.jpeg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/ca/ca_alert-dashboard.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Resumen de Calidad - ClosedSource** 
+**Historial de Alertas - ClosedSource**
 
-Panel consolidado con gráficos e indicadores de cumplimiento (KPIs) globales del laboratorio.
+Registro completo de todas las desviaciones de calidad con filtros por equipo, severidad y estado.
 
-<img src="../assets/img/Dashboard-General – ClosedSource - Mock-ups.jpeg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/ca/ca_alert-history.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Módulo de Cumplimiento - ClosedSource** 
+**Detalle de Desviación - ClosedSource**
 
-Sección dedicada a la validación de normativas y estándares de calidad para cada producto.
+Inspección técnica de alertas de calidad mostrando detalles específicos de la desviación detectada.
 
-<img src="../assets/img/Cumplimiento - Normativo – ClosedSource - Mock-ups.jpeg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/ca/ca_deviation-detail_1.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Historial de Lotes - ClosedSource** 
+**Preferencias de Notificación - ClosedSource**
 
-Listado de trazabilidad que permite buscar y filtrar todos los lotes fabricados anteriormente.
+Configuración de canales (app, email, SMS) y umbrales de severidad para recibir alertas del sistema.
 
-<img src="../assets/img/Ciclo-de-Vida-del-Lote – ClosedSource - Mock-ups.jpeg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/ca/ca_notification-settings.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Análisis y Configuración de Equipos - ClosedSource**
+**Panel de KPIs - ClosedSource**
 
-Panel técnico para el monitoreo de telemetría de equipos activos y la configuración detallada de umbrales y parámetros BPM
+Indicadores clave de rendimiento y métricas de calidad para supervisión de laboratorio.
 
-<img src="../assets/img/Análisis-y-Configuración-de-Equipos - ClosedSource - Mock-ups.jpeg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+<img src="../assets/img/mockup/ra/ra_kpi-dashboard.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Logs de Auditoría - ClosedSource**
+**Análisis de Tendencias - ClosedSource**
 
-Interfaz para exportar registros de eventos inmutables en formato PDF para inspecciones de DIGEMID.
+Módulo de análisis de tendencias de desviaciones para identificar patrones y mejorar procesos de calidad.
 
-<img src="../assets/img/Logs-de-Auditoría - ClosedSource - Mock-ups.jpeg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mockup/ra/ra_deviation-trends.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Generador de Reportes - ClosedSource**
+
+Generación de informes de calidad, trazabilidad de lotes, cumplimiento y exportación de datos técnicos (PDF/CSV).
+
+<img src="../assets/img/mockup/ra/ra_report-generator.jpg" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Auditoría - ClosedSource**
+
+Trazabilidad completa de acciones del sistema con timestamp, entidad afectada y usuario responsable.
+
+<img src="../assets/img/mockup/ra/ra_audit-log.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Perfil de Laboratorio - ClosedSource**
+
+Gestión de información del laboratorio y acceso a módulos de personal, productos y materias primas.
+
+<img src="../assets/img/mockup/laboratory/laboratory_lab-profile.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Listado de Personal - ClosedSource**
+
+Lista de miembros del laboratorio con sus roles, correo corporativo y estado laboral.
+
+<img src="../assets/img/mockup/laboratory/laboratory_staff-list.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Personal - ClosedSource**
+
+Formulario para añadir personal autorizado al laboratorio, asignando rol y correo electrónico.
+
+<img src="../assets/img/mockup/laboratory/laboratory_staff-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Catálogo de Productos Farmacéuticos - ClosedSource**
+
+Listado de productos con especificaciones BPM, código SKU y estado, con funcionalidad de búsqueda.
+
+<img src="../assets/img/mockup/laboratory/laboratory_product-catalog.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Producto - ClosedSource**
+
+Formulario para registrar nuevos productos farmacéuticos con nombre comercial, descripción terapéutica y especificaciones de calidad.
+
+<img src="../assets/img/mockup/laboratory/laboratory_product-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Listado de Materias Primas - ClosedSource**
+
+Inventario de materias primas con código interno, proveedor autorizado, stock actual y fecha de caducidad.
+
+<img src="../assets/img/mockup/laboratory/laboratory_raw-material-list.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Materia Prima - ClosedSource**
+
+Entrada de materiales al inventario farmacéutico con control de lote, proveedor, fecha de caducidad, cantidad y umbral de stock mínimo.
+
+<img src="../assets/img/mockup/laboratory/laboratory_raw-material-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### Mock-ups Version Mobile
 <p>La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de QualiTrack, el ecosistema orientado a la gestión integral de operaciones de precisión clínica, el monitoreo de telemetría IoT en tiempo real y la trazabilidad inmutable de lotes de producción.
@@ -669,121 +807,149 @@ El desarrollo del proceso del Domain-Driven Design se realizó en la aplicación
 [https://shorturl.at/0eSVT]
 
 ---
+#### Paso 1: Brainstorming (Unstructured Exploration)
 
-### Bounded Context IAM
+El primer paso consistió en realizar una exploración sin estructura para identificar todos los posibles eventos del dominio. Durante esta etapa, el equipo analizó criterios como la mutación de estados y la ejecución exitosa de comandos en el sistema, identificando 38 situaciones concretas (Domain Events) que los diferentes actores del sistema desencadenan. Entre los eventos más relevantes se capturaron: "Batch created", "Measurement recorded", "Deviation alert triggered", "Equipment registered", "Calibration alert triggered", "Raw material usage recorded" y "Batch released", entre otros. Esta exploración permitió capturar el núcleo operativo e IoT del laboratorio en su totalidad.
 
-El bounded context IAM (Identity and Access Management) se encarga de la autenticación, 
-autorización y gestión de credenciales dentro del ecosistema QualiTrack. Administra 
-procesos como el registro de usuarios, inicio de sesión, recuperación de contraseñas y 
-asignación de permisos según el rol (jefe de QA, operario, auditor). Su propósito es 
-garantizar accesos seguros, confiables y alineados con las políticas de protección de la 
-información regulatoria en toda la plataforma.
 
-<img src="../assets/img/bc-iam.jpg" alt="Bounded Context IAM" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-1.png" alt="Bounded Context brainstorming" width="80%"/>
 
----
+#### Paso 2: Timelines
 
-### Bounded Context Laboratory Management
+Posteriormente, organizamos los eventos en líneas de tiempo para visualizar el flujo de interacciones y secuencias entre eventos. Se identificaron los siguientes flujos principales:
 
-El bounded context Laboratory Management gestiona toda la información institucional del 
-laboratorio farmacéutico dentro de QualiTrack: datos del laboratorio, normativas 
-regulatorias aplicables, catálogo de productos farmacéuticos, materias primas y personal 
-técnico. Administra la creación, actualización y mantenimiento de los datos base del 
-laboratorio. Su propósito es centralizar la ficha institucional y servir como base para 
-otros contextos como Equipment Management, Batch Management y Reporting & Audit.
+* **IAM & Security Flow:** gestión de identidad, roles, registro, inicio de sesión y desactivación de accesos del personal.
+* **Laboratory Setup Flow:** configuración inicial del laboratorio, registro de personal, creación de catálogo de productos farmacéuticos y materias primas.
+* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración.
+* **Tracking & Telemetry Flow:** recepción continua de mediciones IoT, actualización de estado de los equipos y registro de historiales telemétricos.
+* **Compliance & Alerting Flow:** configuración de preferencias de notificación, detección de anomalías, registro de eventos de cumplimiento y envío de alertas Push.
+* **Production Batch Flow:** creación de lotes, asignación de materia prima, procesamiento y decisión final de liberación (Release) o rechazo (Reject).
+* **Reporting & Analytics Flow:** cálculo de KPIs, generación de reportes BPM consolidados y exportación de logs inmutables para auditoría.
+* **Subscription & Payments Flow:** selección de planes SaaS para el laboratorio y procesamiento de transacciones financieras.
 
-<img src="../assets/img/bc-laboratory.jpg" alt="Bounded Context Laboratory Management" width="80%"/>
+Esta organización temporal facilitó la comprensión de dependencias y secuencias críticas entre la configuración humana y la automatización del sistema.
 
----
+<img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Timelines" width="80%"/>
 
-### Bounded Context Equipment Management
+#### Paso 3: Commands
 
-El bounded context Equipment Management gestiona el ciclo de vida completo de los equipos 
-industriales del laboratorio: autoclaves, medidores de pH, termómetros y sensores de 
-presión. Incluye el registro de equipos, la vinculación con sensores IoT, la configuración 
-de parámetros BPM por variable, el registro de mantenimientos y el control de calibración. 
-Se integra con Tracking para habilitar la recepción de telemetría y con Compliance & 
-Alerting para aplicar los rangos configurados. Su propósito es asegurar que todos los 
-equipos conectados estén correctamente identificados, calibrados y con parámetros de control 
-actualizados.
+En este paso definimos los comandos que los diferentes actores pueden ejecutar en el sistema. Los comandos representan las intenciones o acciones (en verbo imperativo) que mutan el estado de la aplicación y desencadenan los eventos en el dominio.
 
-<img src="../assets/img/bc-equipment.jpg" alt="Bounded Context Equipment Management" width="80%"/>
+| Actor | Comandos |
+|-------|----------|
+| **QA Manager** | Sign Up, Sign In, Assign Role, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Update Notification Preference, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report, Subscribe Laboratory. |
+| **Lab Operator** | Sign In, Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
+| **Auditor** | Export Equipment Log. |
+| **IoT Sensor** | Record Measurement. |
+| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Send Push Notification, Calculate KPI Metrics. |
+| **Payment System** | Process Payment. |
 
----
+<img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Commands" width="80%"/>
 
-### Bounded Context Tracking (IoT)
+#### Paso 4: Policies and Actors
 
-El bounded context Tracking constituye uno de los núcleos del sistema QualiTrack. Captura, 
-sincroniza y almacena la telemetría enviada por los sensores IoT vinculados a los equipos 
-industriales. Registra variables críticas como temperatura, presión y pH en tiempo real, 
-con marca de tiempo y asociación al equipo y lote correspondiente. Estos datos son enviados 
-al contexto Compliance & Alerting para su evaluación normativa y a Reporting & Audit para 
-análisis histórico. Su propósito es brindar monitoreo continuo y automático del estado 
-operativo de los equipos de producción, eliminando la dependencia de registros manuales.
+En este paso identificamos las políticas de negocio (reglas WHEN/THEN) y los actores responsables de cada flujo. Las políticas representan las reglas automáticas que el sistema ejecuta en respuesta a ciertos eventos, garantizando el estricto cumplimiento de las normativas de manufactura sin depender de la intervención humana constante.
 
-<img src="../assets/img/bc-tracking.jpg" alt="Bounded Context Tracking IoT" width="80%"/>
+Las políticas identificadas fueron:
 
----
+* **WHEN** raw material stock reaches the minimum threshold **THEN** trigger a minimum stock alert.
+* **WHEN** an equipment's calibration date is near **THEN** trigger a calibration due alert internally.
+* **WHEN** an IoT device loses connection **THEN** trigger an equipment connection lost alert.
+* **WHEN** telemetry is received **THEN** evaluate the measurement against the configured BPM parameters automatically.
+* **WHEN** a non-critical deviation is detected **THEN** trigger a warning alert and send a push notification to the QA Manager.
+* **WHEN** a critical deviation is detected in telemetry **THEN** block the batch automatically and register a compliance event.
+* **WHEN** a batch is successfully released with a digital signature **THEN** auto-generate the immutable batch record PDF.
+* **WHEN** a QA Manager deactivates a user access **THEN** revoke all permissions immediately while keeping the audit log intact.
 
-### Bounded Context Compliance & Alerting
+Estas políticas permiten automatizar procesos críticos del sistema, reduciendo drásticamente el error humano y asegurando respuestas oportunas ante situaciones de riesgo que podrían comprometer la calidad de los medicamentos.
 
-El bounded context Compliance & Alerting es el otro núcleo estratégico de QualiTrack. 
-Procesa, evalúa y clasifica cada medición recibida desde Tracking comparándola con los 
-parámetros BPM configurados para el equipo correspondiente. Cuando detecta una desviación 
-crítica, genera alertas inmediatas para el operario de turno, notifica al jefe de 
-Aseguramiento de la Calidad y bloquea automáticamente el lote asociado, impidiendo su 
-avance en la cadena de suministro. Administra también el historial de eventos de compliance 
-y las preferencias de notificación de los usuarios. Su propósito es garantizar que ninguna 
-desviación de los parámetros BPM pase desapercibida, protegiendo la integridad del producto 
-y el cumplimiento normativo ante DIGEMID.
+<img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Policies" width="80%"/>
 
-<img src="../assets/img/bc-compliance.jpg" alt="Bounded Context Compliance and Alerting" width="80%"/>
+#### 4.6.1.1. Candidate Context Discovery
 
----
+Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como gestión de identidad, configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
 
-### Bounded Context Batch Management
+#### Paso 5: Read Models
 
-El bounded context Batch Management representa el núcleo operativo de la gestión de 
-producción en QualiTrack. Administra el ciclo de vida completo de cada lote farmacéutico: 
-desde su creación y vinculación con materias primas y equipos, hasta su liberación digital 
-mediante firma del jefe de QA o su rechazo documentado. Conecta flujos con Equipment 
-Management para asociar equipos al lote, con Tracking para recibir telemetría vinculada, 
-con Compliance & Alerting para gestionar bloqueos automáticos y con Reporting & Audit para 
-la generación de registros inmutables. Su propósito es garantizar la trazabilidad completa 
-de cada lote de producción, asegurando que toda decisión de liberación o rechazo quede 
-registrada de forma inmutable y auditable.
+Los Read Models representan las vistas de consulta que los actores utilizan para tomar decisiones dentro del sistema. De acuerdo con el modelado, se identificaron las siguientes vistas principales mediante los post-its verdes:
 
-<img src="../assets/img/bc-batch.jpg" alt="Bounded Context Batch Management" width="80%"/>
+* **User Directory & role Permissions:** utilizado en el flujo de IAM para consultar accesos y permisos.
+* **Equipment Inventory & Connectivity Status:** utilizado para verificar el inventario de maquinaria y su estado de conexión a la red.
+* **Laboratory Infrastructure Map:** permite consultar el estado y la configuración de la infraestructura del laboratorio.
+* **Sensor Config:** vista utilizada para consultar los parámetros de configuración de los dispositivos IoT.
+* **Real-time Telemetry Dashboard:** panel para el monitoreo continuo y en vivo de los datos transmitidos por los sensores.
+* **Batch Genealogy & Material Stock:** utilizado para consultar la trazabilidad del lote y el inventario disponible de materias primas.
+* **Performance Metrics & KPI Summary:** dashboard utilizado por Analytics para visualizar el rendimiento y los indicadores clave.
+* **Plan Options:** permite consultar los planes de suscripción disponibles antes de realizar el pago.
 
----
+<img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context Models" width="80%"/>
 
-### Bounded Context Reporting & Audit
+#### Paso 6: External Systems
 
-El bounded context Reporting & Audit recopila información de múltiples fuentes (Tracking, 
-Compliance & Alerting, Batch Management, Equipment Management) para generar reportes de 
-trazabilidad inmutables, logs de auditoría y visualizaciones de indicadores clave de 
-calidad (KPIs). Permite la generación de reportes PDF no editables por lote o por periodo, 
-la exportación de logs de eventos de equipos y el análisis de tendencias de desviaciones. 
-Su propósito es ofrecer una capa de transparencia y evidencia documental que permita 
-afrontar inspecciones de DIGEMID con toda la información consolidada, reduciendo el tiempo 
-de preparación de auditorías en un 80%.
+En este paso identificamos los sistemas externos que interactúan con el dominio, pero que están fuera del control directo del sistema (representados con post-its rosados).
 
-<img src="../assets/img/bc-reporting.jpg" alt="Bounded Context Reporting and Audit" width="80%"/>
+* **SendGrid / Email Service:** sistema externo utilizado en el contexto de IAM para el envío de correos, como la recuperación de contraseñas.
+* **IoT Hub:** infraestructura externa encargada de gestionar la conectividad y recepción de datos de los equipos.
+* **Cloudinary (Product Assets):** servicio en la nube utilizado para el almacenamiento de imágenes y recursos del laboratorio.
+* **OneSignal:** sistema externo utilizado para el envío de notificaciones push ante eventos de cumplimiento y alertas.
+* **Audit Vault (Secure Storage):** servicio de almacenamiento seguro utilizado para resguardar los registros de auditoría inmutables.
+* **Stripe / Payment Gateway:** pasarela de pagos externa utilizada para procesar las transacciones de las suscripciones.
 
----
+<img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context External" width="80%"/>
 
-### Bounded Context Shared
+#### Paso 7: Add Aggregates
 
-El bounded context Shared contiene los elementos reutilizables y transversales utilizados 
-por todos los demás contextos de QualiTrack, como configuraciones globales, value objects 
-comunes (LabId, UserId, DateRange, Quantity), clases base auditables, plantillas de 
-eventos de dominio y políticas compartidas. Gestiona además el registro de tenants y la 
-propagación de configuraciones por defecto a los contextos dependientes. Su propósito es 
-evitar la duplicidad de lógica entre contextos, asegurar la coherencia de los datos 
-compartidos y proveer una base técnica sólida y reutilizable para toda la arquitectura de 
-QualiTrack.
+En este paso identificamos los Aggregates, que representan los objetos de dominio centrales que agrupan entidades relacionadas y se tratan como una sola unidad. Cada aggregate (post-it amarillo grande) actúa como el punto central alrededor del cual giran los eventos y comandos:
 
-<img src="../assets/img/b-c-shared.jpg" alt="Bounded Context Shared" width="80%"/>
+* **User Security:** centraliza la lógica de autenticación y roles de usuario.
+* **Equipment:** gestiona el estado y ciclo de vida de la maquinaria industrial.
+* **Maintenance Log:** controla los registros de mantenimiento de los equipos.
+* **Laboratory:** agrupa la configuración y catálogo central del laboratorio.
+* **Telemetry Log:** concentra el registro histórico de las mediciones capturadas.
+* **Compliance Event:** gestiona las incidencias y alertas de cumplimiento normativo.
+* **Audit Trail:** centraliza la traza inmutable de acciones críticas en el sistema.
+* **Analytics Engine:** procesa la información para la generación de métricas.
+* **Manufacturing Batch:** controla el ciclo de vida de producción de un lote.
+* **Inventory Ledger:** gestiona el registro exacto de los movimientos de inventario.
+* **Billing Account:** controla el estado de facturación y suscripción.
+
+<img src="../assets/img/design-level-event-storming-step-71.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-72.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-73.png" alt="Bounded Context aggregates" width="80%"/>
+
+#### Paso 8: Bounded Contexts
+
+Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados en contextos delimitados con responsabilidades claras. Según las agrupaciones finales del tablero, se definieron los siguientes:
+
+| Bounded Context | Descripción de Componentes Clave |
+|-----------------|----------------------------------|
+| **BC: IAM** | Contiene el Aggregate `User Security` y las políticas de sesión. |
+| **BC: Equipment Management** | Agrupa los Aggregates `Equipment` y `Maintenance Log`, junto con IoT Hub. |
+| **BC: Laboratory Management** | Contiene el Aggregate `Laboratory`. |
+| **BC: Tracking (IoT)** | Agrupa el Aggregate `Telemetry Log` y las pantallas de monitoreo en tiempo real. |
+| **BC: Compliance & Alerting** | Contiene los Aggregates `Compliance Event` y `Audit Trail`. |
+| **BC: Reporting & Audit** | Contiene el Aggregate `Analytics Engine` y el almacenamiento seguro. |
+| **BC: Batch Management** | Agrupa los Aggregates `Manufacturing Batch` e `Inventory Ledger`. |
+| **BC: Context Shared** | Contiene el Aggregate `Billing Account` y la integración para cobros. |
+
+<img src="../assets/img/bc-iam.png" alt="Bounded Context iam" width="80%"/>
+<img src="../assets/img/bc-em.png" alt="Bounded Context em" width="80%"/>
+<img src="../assets/img/bc-lm.png" alt="Bounded Context lm" width="80%"/>
+<img src="../assets/img/bc-tracking.png" alt="Bounded Context tracking" width="80%"/>
+<img src="../assets/img/bc-ca.png" alt="Bounded Context ca" width="80%"/>
+<img src="../assets/img/bc-ra.png" alt="Bounded Context ra" width="80%"/>
+<img src="../assets/img/bc-bm.png" alt="Bounded Context bm" width="80%"/>
+<img src="../assets/img/bc-shared.png" alt="Bounded Context shared" width="80%"/>
+
 
 ## 4.6.2. Software Architecture Context Diagram
 
@@ -826,7 +992,7 @@ correo y generación de reportes PDF). Esta vista permite entender el alcance de
 los límites de responsabilidad y el ecosistema en el que se inserta QualiTrack antes de
 entrar a detalles de implementación.
 
-<img src="../assets/img/ContextDiagram.svg" alt="Context Diagram" width="100%"/>
+<img src="../assets/img/ContextDiagram-v2.svg" alt="Context Diagram" width="100%"/>
 
 ---
 
@@ -891,7 +1057,7 @@ presentación (Landing Page, Web Application y SPA), la capa de lógica de negoc
 (API Application) y la capa de persistencia (Database), así como las principales
 decisiones tecnológicas adoptadas para cada contenedor.
 
-<img src="../assets/img/ContainerDiagram.svg" alt="Container Diagram" width="100%"/>
+<img src="../assets/img/ContainerDiagram-v2.svg" alt="Container Diagram" width="100%"/>
 
 ---
 
@@ -972,7 +1138,7 @@ backend y base de datos, mostrando cómo los contenedores se descomponen en comp
 coherentes con los bounded contexts del dominio farmacéutico y cómo estos colaboran entre
 sí para implementar la funcionalidad completa de QualiTrack.
 
-<img src="../assets/img/ComponentDiagram.svg" alt="Component Diagram" width="100%"/>
+<img src="../assets/img/ComponentDiagram-v2.svg" alt="Component Diagram" width="100%"/>
 
 ## 4.7. Software Object-Oriented Design
 
