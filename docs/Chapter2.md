@@ -8,9 +8,11 @@ En esta etapa, se analizan distintos tipos de competidores con el objetivo de en
 
 ### 2.1.1. Análisis competitivo
 
-Para comprender el entorno en el que se desarrollará QualiTrack, se realizó un análisis competitivo que permite identificar las principales soluciones utilizadas en la gestión de calidad farmacéutica, así como sus enfoques y limitaciones.
+Para desarrollar una solución realmente útil, es fundamental comprender el entorno competitivo y las alternativas que actualmente utilizan los laboratorios farmacéuticos para la gestión de la calidad. Este análisis permite identificar no solo cómo se gestionan hoy estos procesos, sino también las principales limitaciones de las soluciones existentes.
 
-A continuación, se presenta una comparación de los competidores considerando su propuesta de valor, mercado objetivo y funcionalidades, con el fin de definir el posicionamiento de QualiTrack frente a ellos.
+En esta etapa, se analizan distintos tipos de competidores con el objetivo de entender sus fortalezas, debilidades y enfoques de mercado, y así definir con claridad el posicionamiento de QualiTrack como una solución diferenciada dentro del sector farmacéutico.
+
+A continuación, se presenta una comparación de los principales competidores considerando su propuesta de valor, mercado objetivo y características generales. Este análisis permite evidenciar que, mientras las soluciones existentes se orientan a grandes corporaciones o dependen de procesos manuales, QualiTrack se posiciona como una alternativa especializada, accesible y centrada en la automatización del aseguramiento de la calidad mediante integración IoT y trazabilidad digital, especialmente pensada para laboratorios medianos y entidades públicas de la región.
 
 
 <table border="1" cellpadding="10" cellspacing="0" style="margin-left: auto; margin-right: auto; font-family: sans-serif;">
@@ -136,13 +138,25 @@ A continuación, se presenta una comparación de los competidores considerando s
 </tr>
 </table>
 
+A partir del análisis comparativo, se identifican las siguientes diferencias clave:
+
+* Frente a métodos tradicionales, QualiTrack propone la sustitución del registro manual por una plataforma digital que reduce el error humano y mejora la confiabilidad de la información.
+* En comparación con sistemas ERP como SAP, QualiTrack evita implementaciones complejas y costosas, ofreciendo un modelo SaaS más accesible y adaptable a laboratorios que no cuentan con infraestructura empresarial avanzada.
+* A diferencia de soluciones LIMS como LabWare, QualiTrack se enfoca específicamente en la gestión del aseguramiento de la calidad y el cumplimiento normativo durante la operación productiva, integrando datos en tiempo real desde los equipos.
+
+En conjunto, este análisis permite concluir que QualiTrack no compite directamente como un ERP o un LIMS tradicional, sino que ocupa un espacio diferenciado, orientado a resolver una problemática concreta del sector farmacéutico: la digitalización confiable del control de calidad bajo normativas locales.
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Una vez identificados los actores del mercado, el siguiente paso es definir cómo QualiTrack logrará posicionarse frente a ellos. No basta con conocer a la competencia; es necesario establecer un plan de acción que permita aprovechar las ventajas del producto y reducir sus posibles limitaciones.
+Una vez identificados los actores del mercado y las principales diferencias entre las soluciones existentes, resulta necesario definir cómo QualiTrack puede fortalecer su posicionamiento competitivo y enfrentar los desafíos propios de ingresar a un mercado con opciones consolidadas y prácticas tradicionales ampliamente adoptadas.
 
-Para ello, se utiliza la Matriz CAME, una herramienta que permite transformar el análisis FODA en estrategias concretas, orientadas a fortalecer la propuesta de valor y mejorar el posicionamiento en el mercado.
+Con este objetivo, se emplea la Matriz CAME, la cual permite transformar el análisis FODA en estrategias y acciones concretas. A través de esta herramienta, se plantean tácticas orientadas a potenciar las fortalezas diferenciales de QualiTrack, como la integración IoT, la trazabilidad digital y el enfoque en normativas locales, así como a mitigar debilidades propias de una startup en etapa inicial, como la necesidad de adopción progresiva y validación en el sector.
 
-A través de este enfoque, se plantean acciones orientadas a potenciar la integración IoT, el cumplimiento normativo y la accesibilidad del modelo SaaS, así como a mitigar riesgos como la resistencia al cambio y la entrada a un mercado con competidores consolidados.
+Las estrategias definidas buscan:
+* Aprovechar la creciente necesidad de cumplimiento normativo y digitalización en el sector farmacéutico.
+* Comunicar claramente el valor de la automatización y la integridad de datos frente a soluciones manuales o genéricas.
+* Reducir la resistencia al cambio mediante interfaces simples, capacitación y acompañamiento.
+* Posicionar a QualiTrack como una alternativa especializada y confiable para laboratorios medianos y entidades públicas.
 
 Matriz CAME para el desarrollo de estrategias basadas en el análisis FODA.
 
@@ -249,11 +263,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Delci Castro Codorin es química farmacéutica y subdirectora de la operación de la planta de radioisótopos y radiofármacos; egresada de la Universidad Nacional Mayor de San Marcos, actualmente cursa una maestría en Ingeniería Industrial enfocada en el emprendimiento, y ha llevado diplomados en regulación, preparación y control de radiofármacos, así como capacitaciones en protección radiológica y en sistemas de gestión de grado. 
+            La Sra. Delci Castro Codorines una profesional de 59 años, residente de San Juan de Lurigancho y Química Farmacéutica egresada de la UNMSM, quien actualmente cursa una maestría en Ingeniería Industrial enfocada en emprendimiento. En su cargo como subdirectora de operaciones en una planta de radioisótopos, lidera procesos de manufactura donde la trazabilidad depende de registros manuales consolidados en un dossier físico por cada lote, a pesar de contar con equipos con salida digital. Su labor implica supervisar que cada dispositivo codificado cumpla con los controles de calidad antes de la distribución de los radiofármacos.
             <br> <br>
-            Dentro de la planta, se presenta el proceso de producción de los fármacos y se destaca que los registros se realizan de dos maneras: manual y digital. A partir de los registros manuales se identifican automáticamente los lotes, cada uno con su propia unidad documentaria, donde se registran la materia prima y los controles efectuados en cada uno de los dispositivos (los cuales han sido codificados previamente). Asimismo, la distribución también se registra por lotes.
+            <b>Comportamiento y Necesidades:</b> Se define por un perfil metódico, analítico y orientado al cumplimiento normativo estricto, mostrando una actitud proactiva ante la innovación necesaria para eliminar la redundancia de datos. Su principal necesidad es adoptar una solución que permita la captura de datos de forma simultánea para mitigar los riesgos de integridad señalados por la DIGEMID en auditorías previas. Busca reducir el tiempo dedicado a la revisión manual de expedientes para enfocarse en la mejora estratégica de la planta.
             <br> <br>
-            Ella menciona que no hubo casos de reportes relacionados con una auditoría insuficiente por parte de la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID), ni registros incompletos o erróneos. Lo que sí se reportaron fueron recomendaciones sobre otros sistemas que podrían beneficiar a la organización en las auditorías y los registros, además de recordatorios sobre el formato de documentación.
+            <b>Tecnología, Marcas y Canales:</b> Es usuaria frecuente de hardware especializado en medición con capacidad de impresión digital, aunque reconoce que la integración con sistemas informáticos es nula. Domina herramientas ofimáticas como Microsoft Excel para la supervisión administrativa y utiliza el correo institucional para la coordinación técnica. Sus canales de referencia son las normativas de seguridad radiológica y los estándares de gestión de la DIGEMID, utilizando bases de datos locales para la identificación de lotes.
             </td>
         </tr>
     </tbody>
@@ -302,13 +316,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            El Sr. Fredd Palomino trabaja en el laboratorio del Instituto Nacional de la Salud, una institución de referencia en el país. Dentro de este laboratorio, su equipo se dedica a la fabricación de productos farmacéuticos estériles, lo que exige un riguroso control de las condiciones ambientales y de los procesos para garantizar la ausencia de microorganismos.
+            El Sr. Fredd Palomino de 41 años, labora en el Instituto Nacional de la Salud en la fabricación de productos farmacéuticos estériles, lo que exige un riguroso control ambiental para garantizar la ausencia de microorganismos. Emplea un sistema mixto donde los datos de temperatura y presión se anotan manualmente para complementar los reportes impresos por equipos de medición, preservando la trazabilidad de cada lote fabricado. La complejidad de su trabajo reside en la coordinación de múltiples variables críticas que deben ser validadas antes de cualquier liberación de producto.
             <br> <br>
-            Para registrar las variables críticas del proceso, emplean un sistema mixto: por un lado, utilizan papel emitido directamente por un equipo de medición; por otro lado, complementan con un registro manual donde anotan datos como temperatura, presión, unidades producidas, entre otros. De esta forma, se muestra tanto el resultado obtenido como los insumos y condiciones empleadas durante el proceso, con el fin de preservar la trazabilidad completa de cada lote fabricado.
+            <b>Comportamiento y Necesidades:</b> Revela una frustración latente por la excesiva carga administrativa, ya que la preparación documental puede extenderse hasta por un año debido a la identificación manual minuciosa de materiales y procesos. Desea una plataforma que automatice el traslado de datos hacia informes virtuales en tiempo real, priorizando la seguridad y confidencialidad de la información estratégica del laboratorio. Valora la precisión técnica y busca herramientas que reduzcan el margen de error humano en situaciones de alta presión.
             <br> <br>
-            A pesar de la naturaleza manual del registro, no han recibido observaciones relacionadas con la integridad de los datos. Sin embargo, sí reciben constantemente recomendaciones y recordatorios sobre los parámetros establecidos por la DIGEMID, el ente regulador sanitario. Además, el Sr. Palomino afirma que el tiempo de preparación de un producto puede extenderse desde 6 meses hasta 1 año, debido a la minuciosa identificación de los materiales y los datos necesarios para asegurar un plan de acción eficiente antes de iniciar la producción.
-            <br> <br>
-            El Sr. Palomino comenta que la digitalización y automatización del traslado de los datos hacia un informe virtual, así como el apunte de los datos en tiempo real, serían de gran utilidad para agilizar el proceso de producción. No obstante, señala que esto solo sería viable siempre y cuando se garantice una buena tasa de seguridad, protegiendo la integridad y confidencialidad de la información generada durante la fabricación.
+            <b>Tecnología, Marcas y Canales:</b> Utiliza equipos de medición de variables críticas de alta precisión y formatos de papel emitidos directamente por el hardware de control. Sus influencias tecnológicas provienen de los sistemas de referencia del INS y los parámetros establecidos por el ente regulador sanitario. Interactúa principalmente mediante informes técnicos complejos y registros de manufactura físicos, utilizando computadoras de escritorio para la consolidación final de la data.
             </td>
         </tr>
     </tbody>
@@ -357,15 +369,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            El Sr. Alberto Valle es químico farmacéutico de profesión. Tiene 40 años y ha trabajado en la industria farmacéutica manejando diferentes métodos y formas de producción.
+            El Sr. Alberto Valle es un Químico Farmacéutico de 68 años con base en Arequipa y cuatro décadas de trayectoria en la industria manejando diversos métodos de producción. Describe el entorno farmacéutico como estrictamente manual y punitivo, donde cada variable debe registrarse en formatos específicos para evitar observaciones en auditorías integrales de calidad y mantenimiento. Su experiencia le permite detectar fallas en el flujo de trabajo que personal menos experimentado suele omitir.
             <br> <br>
-            Menciona que la industria es muy estricta y que todo debe registrarse de forma manual. Cada producto tiene sus propias características de anotación, dependiendo de la variable que se debe evaluar.
+            <b>Comportamiento y Necesidades:</b> Presenta un perfil disciplinado, conservador y habituado al rigor del método manual, pero reconoce que la preparación para inspecciones demanda un tiempo excesivo de revisión de datos históricos, usualmente de hasta 4 semanas. Busca un sistema de registro más sencillo y estandarizado que reduzca el esfuerzo cognitivo del operario y mejore la agilidad operativa sin comprometer el cumplimiento de los estándares de seguridad. Su motivación principal es dejar un legado de procesos eficientes para las futuras generaciones del laboratorio.  
             <br> <br>
-            A pesar de la rigurosidad del método manual, en el laboratorio donde trabaja no han recibido ninguna observación en las auditorías, gracias al estricto método y formato de registro que emplean.
-            <br> <br>
-            Explica que la auditoría abarca el sistema completo: calidad, mantenimiento, control y cantidad. La preparación implica verificar los datos desde un tiempo prudente, indicando que el promedio es de 4 semanas de registro cuidadoso.
-            <br> <br>
-            Finalmente, señala que la disponibilidad de sistemas IoT es alta debido a las actualizaciones y estándares del sector, y comenta que un sistema de registro más sencillo podría ser de gran ayuda.
+            <b>Tecnología, Marcas y Canales:</b> Experto en formatos de anotación manual y protocolos de control de cantidad vigentes en el sector por décadas. Identifica a los sistemas IoT y las actualizaciones tecnológicas como herramientas de alta disponibilidad necesarias para modernizar el laboratorio, tomando como referencia las normativas internacionales de manufactura farmacéutica. Su principal medio de información son los boletines técnicos impresos y las capacitaciones presenciales del sector.
             </td>
         </tr>
     </tbody>
@@ -416,13 +424,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rosa Amelia Mendoza es una profesional quimica farmaceutica con maestria en el area de Salud Publica por esudios dentro de la Universidad Nacional Mayor de San Marcos junto con un Diplomado de "Control de Calidad", trabajando en un laboratorio que esta enfocado en el control de la produccón de vacunas.
+            La Sra. Rosa Amelia Mendoza de 51 años, es Química Farmacéutica con maestría en Salud Pública y se desempeña en la supervisión de la producción de vacunas. Su labor se centra en el control meticuloso de la documentación siguiendo los estándares de la DIGEMID, enfrentando diariamente la dificultad de no contar con historiales digitales automáticos para variables críticas de almacenamiento
             <br> <br>
-            En su rol se presenta la observación y control tanto del proceso de producción de vacunas como la documentación siguiendo las indicaciones y estandares de la organización Dirección General de Medicamentos, Insumos y Drogas (DIGEMID).
+            <b>Comportamiento y Necesidades:</b> Se muestra receptiva, empática y abierta hacia herramientas que eliminen la redundancia de documentar manualmente la temperatura y esterilización tres veces al día en turnos rotativos. Necesita una plataforma que almacene y grafique constantemente las variaciones de calidad de los lotes para reducir la probabilidad de error humano en el manejo de productos biológicos sensibles. Su mayor preocupación es la estabilidad de las vacunas y el impacto en la salud pública si la cadena de frío falla por un registro tardío.  
             <br> <br>
-            Ella indica que aún se emplea un metodo de documentación y regulación manual en el proceso de producción y analisís de las vacunas dentro del laborotiro, ya que las herramientas digitales que poseen no presentan funcionalidades que documente como un historial datos clave como la temperatura y el nivel de esterilzación, forzando la documentación a mano.
-            <br> <br>
-            Entre las herramientas que considera dispensables mencionó la capacidad de almacenar constantemente los cambios y variaciones en el control de la calidad de los lotes, los cuales se refieren en su labor las vacunas. Un ejemplo clave es la temperatura, ya que se tiene un habito el documentar en la mañana, tarde y noche la temperatura mostrada por las herramientas digitales que presentan, lo cual muestra su dificultad en el ambito digital para simplificar el registro de calidad.
+            <b>Tecnología, Marcas y Canales:</b> Emplea herramientas digitales básicas como Microsoft Word y Excel que carecen de módulos de historial automatizado, lo que fuerza la transcripción tediosa de datos de sensores a expedientes físicos. Sus marcos de referencia son los estudios de posgrado en la UNMSM y las directrices de control de calidad de entidades públicas. Utiliza principalmente laptops institucionales y dispositivos móviles para la comunicación inmediata con su equipo.
             </td>
         </tr>
     </tbody>
@@ -471,15 +477,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rocío Santo Alegre es química farmacéutica de producción, una profesión que combina la química con la tecnología farmacéutica aplicada a la elaboración de medicamentos. Actualmente, trabaja en un laboratorio especializado en la producción de radiactivos para diagnóstico, un área de alta precisión y regulación. Desde hace 8 meses, ocupa el puesto de responsable del área, lo que implica supervisar tanto los procesos técnicos como al personal a su cargo.
+            La Sra. Rocío Santo Alegre , de 49 años, es jefa de producción en un laboratorio de radiactivos para diagnóstico, donde supervisa procesos de alta precisión que aún no han sido digitalizados. Toda la información técnica se traslada en formatos impresos generados en Word y completados a mano durante las jornadas de producción, lo que ralentiza significativamente el flujo de trabajo y aumenta el riesgo de pérdida de documentos críticos del expediente.
             <br> <br>
-            Uno de los principales desafíos que enfrenta el laboratorio es que aún no se ha migrado a la digitalización. Esto significa que toda la información técnica relacionada con los procesos de producción se traslada en formatos impresos, utilizando exclusivamente la escritura manual. Esta falta de digitalización no solo ralentiza el flujo de trabajo, sino que también aumenta el riesgo de errores humanos y de pérdida de documentos.
+            <b>Comportamiento y Necesidades:</b> Manifiesta una frustración evidente por la lentitud en la consulta de datos durante las auditorías, valorando la transparencia institucional pero sufriendo el desorden crónico de los expedientes físicos. Busca mecanismos de alerta temprana para detectar desviaciones de parámetros en tiempo real, lo que permitiría acciones correctivas inmediatas antes de finalizar el costoso proceso de producción radiactiva. Desea un sistema que le devuelva el control visual sobre la planta sin depender de inspecciones físicas constantes
             <br> <br>
-            El proceso productivo comienza con una orden de producción que es impresa en papel. Para estructurar los datos de dichas órdenes, se emplean herramientas ofimáticas como Word, pero una vez impresas, todos los documentos pasan a formar parte del expediente de producción. Durante el resto del proceso, cada uno de estos papeles va siendo llenado manualmente por los operarios, desde los registros de materias primas hasta los controles de calidad intermedios.
-            <br> <br>
-            Rocío expresa, desde dos perspectivas complementarias, los desafíos que enfrentan durante las auditorías. Por un lado, desde el punto de vista del productor, ella valora positivamente poder mostrar la información disponible tal como está registrada en los documentos físicos. Por otro lado, desde la perspectiva del auditor, se evidencian claras limitaciones derivadas de la falta de información clara, ordenada y de rápida consulta en el momento de la inspección, lo que puede generar observaciones o retrasos.
-            <br> <br>
-            En cuanto a las desviaciones, estas son detectadas mientras el proceso de producción aún está en marcha, lo que permite tomar acciones correctivas de forma temprana. Para identificar dichas desviaciones, el equipo se basa en dos pilares fundamentales: el conocimiento profundo de los requisitos establecidos por las normativas y procedimientos internos, y el seguimiento continuo y meticuloso de los datos obtenidos durante cada etapa del proceso.
+            <b>Tecnología, Marcas y Canales:</b> Su ecosistema tecnológico se limita al uso de computadoras de escritorio para tareas administrativas básicas y la impresión de órdenes de producción. Gestiona la comunicación y el control mediante el seguimiento meticuloso de datos obtenidos en pizarras físicas y el conocimiento de procedimientos internos. Su canal de actualización principal son las reuniones técnicas presenciales y la normativa publicada en diarios oficiales.
             </td>
         </tr>
     </tbody>
@@ -528,13 +530,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rita Sotelo es una profesional con una amplia trayectoria en el sector farmacéutico. Cuenta con 30 años de experiencia acumulada, habiendo trabajado durante gran parte de su carrera en MediFarma, un laboratorio reconocido en el ámbito nacional. Su rol le ha permitido conocer en profundidad los procesos de manufactura y control de calidad.
+            La Sra. Rita Sotelo es una profesional de 53 años, posee 30 años de experiencia en el sector y actualmente es jefa de biológicos en Edifarma. Representa el perfil más avanzado tecnológicamente del estudio, pues ya utiliza sistemas de manufactura digital que integran protocolos de análisis y aseguramiento de la calidad para una trazabilidad completa de los lotes desde la materia prima hasta el producto final
             <br> <br>
-            En cuanto al sistema de registro utilizado en su laboratorio, la Sra. Sotelo indica que ya han dado el salto hacia la digitalización. Emplean un sistema de manufactura digital que integra protocolos de análisis, fabricación y aseguramiento de la calidad. Esto les permite llevar un control más riguroso y ordenado de todas las etapas productivas.
+            <b>Comportamiento y Necesidades:</b> Valora la inmediatez, el orden y la eficiencia que ofrece la digitalización, pero enfatiza de manera crítica que el éxito de cualquier sistema depende de una capacitación adaptada al perfil específico del usuario farmacéutico. Su requisito  fundamental es que la plataforma garantice la integridad absoluta del "Audit Trail" (historial de cambios) y ofrezca "candados" lógicos infranqueables para prevenir desviaciones durante la fabricación. Es una profesional orientada a resultados que no tolera sistemas con interfaces complejas o flujos de trabajo ilógicos.
             <br> <br>
-            Ella explica que los lotes se digitalizan completamente dentro del sistema, lo que facilita su trazabilidad desde el ingreso de los insumos hasta su utilización final. Además, los productos ya fabricados también son mapeados en el sistema, lo que permite visualizar claramente su distribución y ubicación en la cadena de suministro.
-            <br> <br>
-            Finalmente, la Sra. Rita Sotelo destaca un punto clave para la adopción de herramientas digitales: la capacitación. Según su experiencia, el principal requisito para que este tipo de sistemas realmente permitan conservar y analizar los datos de forma efectiva es una capacitación adecuada, la cual debe estar adaptada al sistema encargado de cada proceso y al perfil de los usuarios que lo operarán.
+            <b>Tecnología, Marcas y Canales:</b> Usuaria experta en software de manufactura digital (ERP/MES) y herramientas de mapeo de distribución de medicamentos. Sus referentes son los sistemas validados de la industria farmacéutica global y las plataformas de gestión de datos que cumplen con estándares internacionales como la FDA 21 CFR Part 11. Utiliza activamente tablets en planta y smartphones para la supervisión remota de procesos, prefiriendo navegadores modernos como Google Chrome para la gestión de aplicaciones web.
             </td>
         </tr>
     </tbody>
@@ -547,8 +547,11 @@ En esta sección se presenta el análisis detallado de la información recolecta
 #### Segmento 1: Gerentes y jefes de Aseguramiento de Calidad
 
 **Análisis de Características Objetivas y Subjetivas:**
-El análisis revela una alta dependencia de procesos análogos en el área de manufactura. Como se detalla en el gráfico a continuación, el **100%** de los jefes de calidad utiliza un **sistema mixto o netamente manual** (tickets físicos y llenado a mano) para el registro de variables críticas, y el **100%** ha recibido observaciones preventivas de DIGEMID respecto a la integridad de datos. Si bien un **33%** se apoya en sistemas logísticos robustos (como SAP), la falta de integración con la producción es crítica.
-A nivel subjetivo, el **100%** valora positivamente la **digitalización y la captura IoT**. Sin embargo, existe una restricción clara: el **67%** manifiesta preocupación por los **retos de implementación**, ya sea por la resistencia cultural del personal antiguo o por la seguridad de los datos.
+El análisis de las entrevistas evidencia que la gestión de calidad en el sector farmacéutico aún se realiza bajo métodos tradicionales y poco integrados. El **100%** de los entrevistados ocupa cargos de alta responsabilidad técnica, lo que valida la relevancia de sus opiniones para el dominio del problema. 
+
+En cuanto al monitoreo de procesos, el **100%** utiliza un sistema mixto o netamente manual (tickets físicos y llenado a mano) para el monitoreo de condiciones críticas en planta, lo que ha derivado en que el 100% haya recibido observaciones preventivas de la DIGEMID respecto a la integridad de datos. 
+
+Aunque un 33% complementa su gestión con herramientas como Excel o sistemas logísticos, existe una desconexión crítica con los datos de producción en tiempo real. A nivel subjetivo, el **100%** manifestó una alta disposición hacia la digitalización mediante sensores IoT. No obstante, el **67%** identificó como condición clave que la herramienta debe ser de fácil adopción para el personal operativo, evitando la complejidad técnica excesiva y garantizando la seguridad de la información inmutable.
 
 <div align="center"><img src="../assets/img/Grafico1Segmento1Cap2.png" alt="Gráfico Estadístico Gerentes de Calidad" width="80%"></div>
 <br>
@@ -556,8 +559,9 @@ A nivel subjetivo, el **100%** valora positivamente la **digitalización y la ca
 #### Segmento 2: Directores y supervisores de Entidades de Salud Pública
 
 **Análisis de Características Objetivas y Subjetivas:**
-Los datos confirman una brecha tecnológica severa en el control de calidad estatal. El **100%** reporta que el expediente de producción se elabora mediante **documentación manual** (Word y lapicero), y el **100%** indica que sus herramientas **no permiten un historial continuo**, forzándolos a registrar variables en turnos aislados.
-Subjetivamente, el dolor principal es el riesgo regulatorio: el **100%** siente **frustración ante las auditorías** por la falta de información rápida. Reconociendo que el papel ralentiza el trabajo, el **100%** considera indispensable una solución que **almacene constantemente las variaciones** para mitigar el error humano.
+El análisis muestra una brecha tecnológica severa en el sector estatal. El **100%** reporta que el expediente de producción se elabora mediante documentación manual y herramientas ofimáticas aisladas, lo que fragmenta la trazabilidad. Asimismo, el **100%** indica dificultades para generar historiales continuos de variables críticas, forzando registros en turnos discontinuos. 
+
+En situaciones de auditoría, el **100%** experimenta frustración debido a la falta de inmediatez en el acceso a la información histórica para la sustentación de conformidad ante los inspectores. A nivel subjetivo, el 100% de los supervisores mostró una alta disposición a utilizar una plataforma digital. Buscan, principalmente, transparencia y respaldo profesional mediante alertas automáticas que reduzcan la incertidumbre y el error humano durante la fabricación.
 
 <div align="center"><img src="../assets/img/Grafico2Segmento2Cap2.png" alt="Gráfico Estadístico Supervisores de Salud" width="80%"></div>
 <br>
@@ -565,7 +569,7 @@ Subjetivamente, el dolor principal es el riesgo regulatorio: el **100%** siente 
 #### Análisis Comparativo
 
 **Contrastación de Segmentos:**
-Al comparar ambos grupos, encontramos coincidencias vitales para el producto: ambos tienen un **100% de dependencia documentaria en papel** y una necesidad unánime de asegurar la trazabilidad. Sin embargo, existe una brecha notable en la percepción de los obstáculos: mientras los gerentes (Segmento 1) prevén retos de adopción y seguridad informática (**67%** de preocupación), los supervisores públicos (Segmento 2) priorizan la urgencia de resolver el desorden operativo ante el auditor. Esto define la propuesta de valor: inmutabilidad y seguridad para la gerencia, y automatización continua para aliviar la carga del supervisor.
+Al comparar ambos segmentos, se identifican coincidencias clave: el **100%** de ambos evidencia la necesidad urgente de centralizar la información y asegurar la trazabilidad inmutable de los lotes.  Sin embargo, existe una diferencia en el enfoque del problema. Para el administrador privado (Segmento 1), la falta de un sistema representa un riesgo de seguridad de datos y resistencia cultural (**67%**), mientras que para el supervisor público (Segmento 2), representa una fuente de desorden operativo ante entes reguladores. Esta diferencia define claramente el enfoque de QualiTrack: mejorar la seguridad de la información para la gerencia y, simultáneamente, brindar eficiencia operativa al supervisor.
 
 <div align="center"><img src="../assets/img/Comparativa_segmentos_objetivos.png" alt="Gráfico Comparativo Segmentos" width="80%"></div>
 <br>
@@ -575,11 +579,11 @@ Al comparar ambos grupos, encontramos coincidencias vitales para el producto: am
 Basado en el análisis estadístico, se definen los siguientes perfiles para los User Personas:
 
 1.  **User Persona Jefe de Calidad:**
-    * **Rasgo clave:** Busca modernizar la planta pero teme la fricción cultural y las vulnerabilidades de datos.
-    * **Sustento:** El 100% valora la captura IoT, pero el 67% se preocupa por la implementación. La solución debe garantizar firmas seguras y ser amigable para operarios sin experiencia digital.
+    * **Rasgo clave:** Busca modernizar la planta mediante automatización, pero necesita una solución que garantice seguridad de datos y baja resistencia al cambio.
+    * **Sustento:** El 100% valora la captura IoT y el 67% teme a la complejidad de la implementación.  Esto demuestra que requiere una plataforma intuitiva con procesos validados.
 2.  **User Persona Supervisor Público:**
-    * **Rasgo clave:** Necesita orden absoluto y trazabilidad continua para proteger la salud pública y superar auditorías.
-    * **Sustento:** El 100% se frustra al recopilar papeles para auditorías y sufre por los registros manuales aislados. La solución debe centrarse en historiales (Batch Records) autogenerados y alertas continuas.
+    * **Rasgo clave:** Necesita información histórica inmediata y continua para garantizar la salud pública y superar auditorías.
+    * **Sustento:** El 100% reporta frustración ante registros manuales aislados y el 100% considera como un requisito indispensable el almacenamiento continuo de variaciones para mitigar el error humano.
 
 <div style="page-break-after: always;"></div>
 
@@ -623,37 +627,37 @@ El User Task Matrix presenta las tareas que realizan los User Persona para cumpl
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left;">Registrar variables críticas (temperatura, pH, esterilización)</td>
+      <td style="text-align:left;">Monitoreo de condiciones críticas en planta (temp, pH, esterilización)</td>
       <td>Often</td><td>High</td>
       <td>Often</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Rastrear y consolidar el historial de un lote de producción</td>
+      <td style="text-align:left;">Control de trazabilidad y antecedentes de lotes de producción</td>
       <td>Often</td><td>High</td>
       <td>Often</td><td>Medium</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Preparar documentación para auditorías de DIGEMID</td>
+      <td style="text-align:left;">Sustentación de conformidad ante inspecciones de DIGEMID</td>
       <td>Occasionally</td><td>High</td>
       <td>Occasionally</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Atender alertas de desviación de equipos (ej. autoclaves)</td>
+      <td style="text-align:left;">Respuesta ante incidentes o fallos en equipos de esterilización</td>
       <td>Occasionally</td><td>High</td>
       <td>Occasionally</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Aprobar y firmar digitalmente la liberación de lotes</td>
+      <td style="text-align:left;">Validación y autorización para la salida de productos al mercado</td>
       <td>Often</td><td>High</td>
       <td>Often</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Generar reportes estadísticos de calidad para gerencia</td>
+      <td style="text-align:left;">Análisis de indicadores de desempeño operativo para la alta dirección</td>
       <td>Often</td><td>Medium</td>
       <td>Monthly</td><td>High</td>
     </tr>
     <tr>
-      <td style="text-align:left;">Capacitar al personal técnico en buenas prácticas (BPM)</td>
+      <td style="text-align:left;">Actualización de competencias técnicas del personal operativo (BPM)</td>
       <td>Rarely</td><td>Medium</td>
       <td>Rarely</td><td>Medium</td>
     </tr>
@@ -661,7 +665,7 @@ El User Task Matrix presenta las tareas que realizan los User Persona para cumpl
 </table>
 
 **Análisis del Task Matrix:**
-Se observa que las tareas **"Registrar variables críticas"** y **"Aprobar y firmar digitalmente la liberación de lotes"** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos, ya que representan el núcleo operativo de la manufactura segura. Esto confirma que estas tareas son el "Core" del negocio y deben ser priorizadas mediante automatización IoT. Además, la tarea crítica de **"Preparar documentación para auditorías"**, aunque es *Occasionally*, tiene una importancia altísima (**High**) para ambos, validando la necesidad de un sistema inmutable y trazable para evitar penalidades de la DIGEMID.
+Se observa que las tareas **Monitoreo de condiciones críticas en planta** y **Validación y autorización para la salida de productos** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos, ya que representan el núcleo operativo de la manufactura segura lo cual confirma que estas tareas son el **Core** del negocio y deben ser priorizadas mediante automatización IoT además la tarea crítica de **Sustentación de conformidad ante inspecciones de DIGEMID**, aunque es *Occasionally*, tiene una importancia altísima (**High**) para ambos, validando la necesidad de un sistema inmutable y trazable para evitar penalidades de la DIGEMID
 
 <div style="page-break-after: always;"></div>
 
@@ -691,43 +695,54 @@ Para crear una solución que realmente se vincula con las personas, no es sufici
 
 Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados, antes de crear un sistema sólido. El Big Picture Event Storming es un método colaborativo que facilita la visualización de todos los sucesosque tienen lugar en una casa de reposo. Al Estructurar estos eventos de forma lógica y cronológica, conseguimos detectar los flujos cruciales del negocio y los lugares en los que la información tiende a retrasarse o a perderse.
 
-**Step 1 – Free Exploration**
-
 En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de recopilar todos los eventos pertinentes al dominio, sin importar la secuencia o la jerarquía. El El propósito principal fue ilustrar los sucesos reales del negocio, sin depender de ninguna función técnica o vinculada a un sistema.
 
-<img src="../assets/img/Event-Storming1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
-
-**Step 2 – Structured Organization**
-
-Luego de enumerar los eventos, el equipo los agrupó en flujos de negocio lógicos que muestran las fases más relevantes en la operación de una casa de reposo. Esta La estructura facilitó la identificación de los procesos fundamentales y las áreas que necesitaban mejoras, las cuales se podrían abordar más tarde a través de soluciones digitales o de gestión.
-
-<img src="../assets/img/Event-Storming2.jpg" alt="Big Picture Event Storming 2" width="auto" height="450"/>
+<img src="../assets/img/design-level-event-storming-step-1.png" alt="Big Picture Event Storming 1" width="auto" height="450"/>
 
 ## 2.5. Ubiquitous Language
 
-Este glosario asegura que los desarrolladores, los químicos farmacéuticos y los auditores de DIGEMID compartan un marco conceptual idéntico, garantizando que el software sea una extensión fiel de las normativas de manufactura.
+Este glosario asegura que los desarrolladores, los químicos farmacéuticos y los
+auditores de DIGEMID compartan un marco conceptual idéntico, garantizando que el
+software sea una extensión fiel de las normativas de manufactura farmacéutica.
+Los términos definidos aquí se reflejan directamente en los nombres de clases,
+interfaces, comandos, rutas y bounded contexts del código fuente de QualiTrack.
 
-| Term               | Definition                                                                                                                                |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Laboratory         | Institutional entity (private or public) that manages manufacturing processes, industrial equipment, and staff within the platform.       |
-| QA-Manager         | Person responsible for quality assurance; supervises production, manages user roles, and authorizes the final release of batches.         |
-| Operator           | Technical user in charge of the daily execution of production and recording variables through the plant interface.                        |
-| Batch              | Specific quantity of a pharmaceutical product produced in a single manufacturing cycle, identified by a unique traceability code.         |
-| Batch-Record       | Digital and immutable file that compiles all telemetry, digital signatures, and interventions associated with a specific production batch.|
-| Telemetry          | Real-time data stream (pH, temperature, pressure) captured by IoT sensors and automatically persisted in the cloud.                       |
-| Device             | Physical industrial equipment (autoclave, pH meter) linked to the platform through a unique identifier to transmit data.                  |
-| BPM-Parameters     | Set of allowed minimum and maximum values configured to validate that a process complies with health and safety regulations.              |
-| Deviation          | Event detected automatically when a critical variable falls outside the established range in the compliance parameters.                   |
-| Compliance-Alert   | Automatic notification generated by the system when a quality risk is detected, allowing for an immediate reaction from staff.            |
-| Blocking           | Restrictive state applied automatically to a batch when a critical deviation is detected, preventing its progress or release.             |
-| Digital-Signature  | Secure authentication mechanism that replaces physical signatures to certify the conformity and release of a batch.                       |
-| Audit-Log          | Chronological and unalterable record of all user interactions in the system, essential for regulatory inspections.                        |
-| Data-Integrity     | Regulatory principle ensuring that all information is attributable, legible, contemporaneous, original, and accurate (ALCOA+).            |
-| SaaS-Subscription  | Scalable access model to the platform based on the volume of processed data and the number of linked devices.                             |
+| Término | Definición |
+|---|---|
+| **Laboratory** | Entidad institucional (privada o pública) que gestiona procesos de manufactura, equipos industriales y personal dentro de la plataforma. Es la unidad raíz del sistema: todos los equipos, lotes y usuarios pertenecen a un laboratorio. Se mapea a la entidad `Laboratory` y al bounded context `laboratory-management`. |
+| **QA Manager** | Usuario responsable del aseguramiento de la calidad. Supervisa la producción, gestiona roles del personal, configura los parámetros BPM de los equipos y autoriza la liberación final de lotes mediante firma digital. Se mapea a `UserRole.QA_MANAGER` en el bounded context `iam`. |
+| **Lab Operator** | Usuario técnico encargado de la ejecución diaria de la producción. Monitorea el estado de los equipos en tiempo real, recibe alertas de desviación y registra observaciones del proceso. Se mapea a `UserRole.LAB_OPERATOR` en el bounded context `iam`. |
+| **Equipment** | Equipo industrial del laboratorio (autoclave, medidor de pH, sensor de presión) vinculado a la plataforma mediante un identificador único de dispositivo (`deviceId`) para transmitir telemetría automáticamente. Se mapea a la entidad `Equipment` en el bounded context `equipment-management`. |
+| **Device Binding** | Vínculo entre un sensor IoT y un equipo registrado en la plataforma. Sin binding activo, el sistema rechaza la telemetría entrante. Se mapea a `DeviceBinding` en el bounded context `tracking`. |
+| **BPM Parameters** | Conjunto de valores mínimos y máximos permitidos configurados para cada variable crítica (temperatura, presión, pH) de un equipo. Definen el rango de cumplimiento normativo. Se mapea a `BpmParameterConfig` en `equipment-management`. |
+| **Measurement** | Registro individual de telemetría capturado por un sensor IoT en un instante de tiempo. Contiene las variables críticas del proceso (temperatura, presión, pH) y se asocia al equipo y lote correspondiente. Se mapea a la entidad `Measurement` en `tracking`. |
+| **Telemetry** | Flujo continuo y automático de mediciones enviadas por los sensores IoT hacia la plataforma. Elimina el registro manual de variables y constituye la fuente de verdad para el compliance BPM. Se mapea al bounded context `tracking`. |
+| **Compliance Event** | Resultado de evaluar una medición contra los parámetros BPM configurados. Puede ser CONFORM, WARNING, DEVIATION o CRITICAL_DEVIATION. Se mapea a la entidad `ComplianceEvent` en `compliance-alerting`. |
+| **Deviation** | Evento detectado automáticamente cuando una variable crítica supera o cae por debajo del rango BPM configurado. Desencadena una alerta inmediata y puede provocar el bloqueo automático del lote asociado. |
+| **Deviation Alert** | Notificación automática generada por el motor de compliance cuando se detecta un riesgo de calidad. Incluye el equipo afectado, la variable desviada, el valor detectado y la severidad. Se mapea a `DeviationAlert` en `compliance-alerting`. |
+| **Deviation Severity** | Clasificación de la gravedad de una desviación: WARNING (advertencia sin bloqueo), CRITICAL (bloqueo inmediato del lote) o CATASTROPHIC (bloqueo y escalamiento). |
+| **Batch** | Cantidad específica de un producto farmacéutico producida en un único ciclo de manufactura, identificada por un código único de trazabilidad (`batchCode`). Se mapea a la entidad `Batch` en `batch-management`. |
+| **Batch Status** | Estado del ciclo de vida de un lote: IN_PROCESS, BLOCKED, UNDER_INVESTIGATION, RELEASED, REJECTED o COMPLETED. Las transiciones de estado siguen reglas estrictas del dominio. |
+| **Blocking** | Estado restrictivo aplicado automáticamente a un lote cuando se detecta una desviación crítica, impidiendo su avance en la cadena de suministro hasta ser investigado. Se mapea al estado `BatchStatus.BLOCKED`. |
+| **Raw Material Usage** | Registro de trazabilidad de las materias primas utilizadas en la fabricación de un lote específico, incluyendo proveedor, número de lote del proveedor y cantidad empleada. Se mapea a `RawMaterialUsage` en `batch-management`. |
+| **Digital Signature** | Mecanismo de autenticación segura que reemplaza las firmas físicas para certificar la conformidad y liberación de un lote. Registra el QA Manager responsable y el timestamp de la firma. Se mapea a `DigitalSignature` en `batch-management`. |
+| **Batch Record** | Archivo digital e inmutable que recopila toda la telemetría, firmas digitales e intervenciones asociadas a un lote de producción. Es el documento central para las inspecciones de DIGEMID. |
+| **Audit Log** | Registro cronológico e inalterable de todas las acciones realizadas por los usuarios en el sistema. Garantiza la trazabilidad de quién hizo qué y cuándo. Se mapea a `AuditLogEntry` en `reporting-audit`. |
+| **Audit Report** | Documento PDF inmutable generado por la plataforma con el historial completo de un lote o periodo, listo para presentar en inspecciones regulatorias. Se mapea a `AuditReport` en `reporting-audit`. |
+| **KPI Metric** | Indicador clave de calidad calculado a partir de los datos históricos del laboratorio (porcentaje de lotes conformes, número de desviaciones, tiempo promedio de liberación). Se mapea a `KpiMetric` en `reporting-audit`. |
+| **Data Integrity** | Principio regulatorio que garantiza que toda la información es atribuible, legible, contemporánea, original y precisa (ALCOA+). Es el eje normativo de toda la arquitectura de QualiTrack. |
+| **Notification Preference** | Configuración por usuario que define los canales habilitados para recibir alertas críticas (email, web push, SMS). Se mapea a `NotificationPreference` en `compliance-alerting`. |
+| **SaaS Subscription** | Modelo de acceso escalable a la plataforma basado en el volumen de datos procesados y el número de dispositivos IoT vinculados. Define el plan Standard Lab o Enterprise del laboratorio. |
 
-**Expected benefits of the ubiquitous language:**
+**Beneficios esperados del lenguaje ubicuo:**
 
-- Facilitates communication among developers, users, and system administrators by eliminating unnecessary technical jargon.
-- Improves understanding of the system's main functionalities, aligning the source code with the pharmaceutical business language.
-- Avoids ambiguities and interpretation errors in the architectural design and the implementation of compliance logic.
-- Ensures consistency across all technical documentation, user interfaces, and reports generated for audits.
+- Elimina ambigüedades entre desarrolladores, usuarios farmacéuticos y auditores
+  regulatorios al compartir un vocabulario común aplicado tanto en el código fuente
+  como en la documentación y la interfaz de usuario.
+- Garantiza que los nombres de bounded contexts, entidades, comandos y rutas del
+  frontend Angular y el backend Spring Boot reflejen fielmente el lenguaje del
+  dominio farmacéutico peruano regulado por DIGEMID.
+- Reduce errores de implementación al alinear directamente los términos del negocio
+  con las clases, interfaces y stores de la arquitectura DDD de QualiTrack.
+- Asegura consistencia entre toda la documentación técnica, las interfaces de usuario
+  y los reportes generados para auditorías regulatorias.
