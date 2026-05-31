@@ -709,17 +709,15 @@ interfaces, comandos, rutas y bounded contexts del código fuente de QualiTrack.
 
 | Término | Definición |
 |---|---|
-| **Laboratory** | Entidad institucional (privada o pública) que gestiona procesos de manufactura, equipos industriales y personal dentro de la plataforma. Es la unidad raíz del sistema: todos los equipos, lotes y usuarios pertenecen a un laboratorio. Se mapea a la entidad `Laboratory` y al bounded context `laboratory-management`. |
-| **QA Manager** | Usuario responsable del aseguramiento de la calidad. Supervisa la producción, gestiona roles del personal, configura los parámetros BPM de los equipos y autoriza la liberación final de lotes mediante firma digital. Se mapea a `UserRole.QA_MANAGER` en el bounded context `iam`. |
-| **Lab Operator** | Usuario técnico encargado de la ejecución diaria de la producción. Monitorea el estado de los equipos en tiempo real, recibe alertas de desviación y registra observaciones del proceso. Se mapea a `UserRole.LAB_OPERATOR` en el bounded context `iam`. |
+| **Laboratory** | Entidad institucional (privada o pública) que gestiona procesos de manufactura farmacéutica, equipos industriales y personal. Es la organización responsable de garantizar la calidad de los productos elaborados. Se mapea a la entidad `Laboratory` y al bounded context `laboratory-management`. |
+| **QA Manager** | Profesional responsable del aseguramiento de la calidad. Supervisa la producción, configura los parámetros normativos de los equipos y autoriza la liberación final o rechazo de los lotes fabricados. Se mapea a `UserRole.QA_MANAGER` en el bounded context `iam`. |
+| **Lab Operator** | Personal técnico encargado de la ejecución diaria de la manufactura. Monitorea el estado de los equipos durante la producción, actúa ante advertencias de calidad y registra observaciones del proceso. Se mapea a `UserRole.LAB_OPERATOR` en el bounded context `iam`. |
 | **Equipment** | Equipo industrial del laboratorio (autoclave, medidor de pH, sensor de presión) vinculado a la plataforma mediante un identificador único de dispositivo (`deviceId`) para transmitir telemetría automáticamente. Se mapea a la entidad `Equipment` en el bounded context `equipment-management`. |
-| **Device Binding** | Vínculo entre un sensor IoT y un equipo registrado en la plataforma. Sin binding activo, el sistema rechaza la telemetría entrante. Se mapea a `DeviceBinding` en el bounded context `tracking`. |
 | **BPM Parameters** | Conjunto de valores mínimos y máximos permitidos configurados para cada variable crítica (temperatura, presión, pH) de un equipo. Definen el rango de cumplimiento normativo. Se mapea a `BpmParameterConfig` en `equipment-management`. |
 | **Measurement** | Registro individual de telemetría capturado por un sensor IoT en un instante de tiempo. Contiene las variables críticas del proceso (temperatura, presión, pH) y se asocia al equipo y lote correspondiente. Se mapea a la entidad `Measurement` en `tracking`. |
 | **Telemetry** | Flujo continuo y automático de mediciones enviadas por los sensores IoT hacia la plataforma. Elimina el registro manual de variables y constituye la fuente de verdad para el compliance BPM. Se mapea al bounded context `tracking`. |
-| **Compliance Event** | Resultado de evaluar una medición contra los parámetros BPM configurados. Puede ser CONFORM, WARNING, DEVIATION o CRITICAL_DEVIATION. Se mapea a la entidad `ComplianceEvent` en `compliance-alerting`. |
 | **Deviation** | Evento detectado automáticamente cuando una variable crítica supera o cae por debajo del rango BPM configurado. Desencadena una alerta inmediata y puede provocar el bloqueo automático del lote asociado. |
-| **Deviation Alert** | Notificación automática generada por el motor de compliance cuando se detecta un riesgo de calidad. Incluye el equipo afectado, la variable desviada, el valor detectado y la severidad. Se mapea a `DeviationAlert` en `compliance-alerting`. |
+| **Deviation Alert** | Incidente de calidad que ocurre cuando una medición crítica de un equipo supera o cae por debajo de los límites establecidos en los Parámetros BPM. Se mapea a `DeviationAlert` en `compliance-alerting`. |
 | **Deviation Severity** | Clasificación de la gravedad de una desviación: WARNING (advertencia sin bloqueo), CRITICAL (bloqueo inmediato del lote) o CATASTROPHIC (bloqueo y escalamiento). |
 | **Batch** | Cantidad específica de un producto farmacéutico producida en un único ciclo de manufactura, identificada por un código único de trazabilidad (`batchCode`). Se mapea a la entidad `Batch` en `batch-management`. |
 | **Batch Status** | Estado del ciclo de vida de un lote: IN_PROCESS, BLOCKED, UNDER_INVESTIGATION, RELEASED, REJECTED o COMPLETED. Las transiciones de estado siguen reglas estrictas del dominio. |
@@ -731,8 +729,7 @@ interfaces, comandos, rutas y bounded contexts del código fuente de QualiTrack.
 | **Audit Report** | Documento PDF inmutable generado por la plataforma con el historial completo de un lote o periodo, listo para presentar en inspecciones regulatorias. Se mapea a `AuditReport` en `reporting-audit`. |
 | **KPI Metric** | Indicador clave de calidad calculado a partir de los datos históricos del laboratorio (porcentaje de lotes conformes, número de desviaciones, tiempo promedio de liberación). Se mapea a `KpiMetric` en `reporting-audit`. |
 | **Data Integrity** | Principio regulatorio que garantiza que toda la información es atribuible, legible, contemporánea, original y precisa (ALCOA+). Es el eje normativo de toda la arquitectura de QualiTrack. |
-| **Notification Preference** | Configuración por usuario que define los canales habilitados para recibir alertas críticas (email, web push, SMS). Se mapea a `NotificationPreference` en `compliance-alerting`. |
-| **SaaS Subscription** | Modelo de acceso escalable a la plataforma basado en el volumen de datos procesados y el número de dispositivos IoT vinculados. Define el plan Standard Lab o Enterprise del laboratorio. |
+
 
 **Beneficios esperados del lenguaje ubicuo:**
 
