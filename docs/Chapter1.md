@@ -82,11 +82,9 @@ Convertirnos en la plataforma SaaS líder en Gestión de Calidad Farmacéutica (
     </td>
     <td valign="top">
       <strong>Felix Orlando Becerra Ttito - (U20211b387)</strong> - Ingeniería de Software<br><br>
-      Tengo 21 años y soy una persona responsable y creativa. Elegí esta carrera porque me gusta la programación y la tecnología, tengo conocimientos en C++,Python,etc.
-Estoy dispuesto a comprometerme con mi grupo de trabajo en todos las tareas que tenga que realizar con ellos. 
+      Tengo 21 años y soy una persona responsable y creativa. Elegí esta carrera porque me gusta la programación y la tecnología, tengo conocimientos en C++,Python,etc. Estoy dispuesto a comprometerme con mi grupo de trabajo en todos las tareas que tenga que realizar con ellos. 
     </td>
   </tr>
-  <tr>
 </table>
 
 
