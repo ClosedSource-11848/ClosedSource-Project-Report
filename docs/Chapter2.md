@@ -697,7 +697,7 @@ Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados
 
 En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de recopilar todos los eventos pertinentes al dominio, sin importar la secuencia o la jerarquía. El El propósito principal fue ilustrar los sucesos reales del negocio, sin depender de ninguna función técnica o vinculada a un sistema.
 
-<img src="../assets/img/design-level-event-storming-step-1.png" alt="Big Picture Event Storming 1" width="auto" height="450"/>
+<img src="../assets/img/design-level-event-storming-step-1.jpeg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
 
 ## 2.5. Ubiquitous Language
 
