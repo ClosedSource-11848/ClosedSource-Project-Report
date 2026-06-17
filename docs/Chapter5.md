@@ -2082,13 +2082,54 @@ general, el layout compartido y las correcciones transversales.
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
 
+comentario -->
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
 
+<p>
+Las entrevistas de validación con usuarios finales constituyen un instrumento clave para la recolección de retroalimentación sobre la solución propuesta. Estas fueron diseñadas con el objetivo de evaluar el grado de adecuación de la plataforma a los requerimientos de los usuarios, así como identificar posibles limitaciones en términos de usabilidad y oportunidades de mejora.
+</p>
+
+<p>
+Se realizaron entrevistas con representantes de los dos segmentos objetivo del proyecto: gerentes y jefes de aseguramiento de calidad, y directores y supervisores de entidades de salud pública, permitiendo obtener una perspectiva integral desde los ámbitos de gestión interna y supervisión del cumplimiento normativo.
+</p>
+
+<h4>Preguntas para el Segmento de Gerentes y Jefes de Aseguramiento de Calidad</h4>
+
+<ol>
+<li>¿Qué limitaciones le generan los sistemas actuales al gestionar la calidad?</li>
+<li>¿Qué tipo de información necesita consultar con mayor frecuencia y rapidez?</li>
+<li>¿Qué dificultades tiene al acceder a información histórica?</li>
+<li>¿Qué tareas le demandan más tiempo y considera que podrían optimizarse?</li>
+<li>¿Qué tipo de alertas o notificaciones serían más útiles para su trabajo?</li>
+<li>¿Qué funciones considera indispensables en una solución digital de aseguramiento de calidad?</li>
+<li>¿Qué beneficios concretos esperaría obtener al implementar una herramienta como esta?</li>
+<li>¿Qué aspectos le generarían desconfianza al usar una plataforma digital?</li>
+<li>¿Qué condiciones deberían cumplirse para considerar su implementación en su organización?</li>
+<li>¿Qué mejoras sugeriría para que la solución se adapte mejor a sus necesidades?</li>
+</ol>
+
+<h4>Preguntas para el Segmento de Directores y Supervisores de Entidades de Salud Pública</h4>
+<ol>
+<li>¿Qué dificultades encuentra al consolidar información de diferentes entidades de salud?</li>
+<li>¿Qué limitaciones tiene el acceso a datos para el monitoreo continuo?</li>
+<li>¿Qué indicadores o información necesita visualizar para tomar decisiones oportunas?</li>
+<li>¿Qué problemas existen en la trazabilidad de las supervisiones o inspecciones?</li>
+<li>¿Qué procesos considera que deberían integrarse en una sola plataforma?</li>
+<li>¿Qué tipo de alertas o reportes le ayudarían en su labor de supervisión?</li>
+<li>¿Qué funcionalidades considera esenciales en una herramienta digital de fiscalización?</li>
+<li>¿Qué beneficios esperaría obtener en términos de eficiencia y control?</li>
+<li>¿Qué factores le generarían desconfianza al usar esta solución?</li>
+<li>¿Qué condiciones o mejoras serían necesarias para adoptar esta herramienta?</li>
+</ol>
+
 ### 5.3.2. Registro de Entrevistas
 
 ### 5.3.3. Evaluaciones según heurísticas
+
+<!--
 
 ## 5.4. Video About-the-Product
 
