@@ -1160,37 +1160,20 @@ responsabilidades de cada módulo y decisiones de diseño técnico.
 
 ## 4.7.1. Class Diagrams
 
-En esta subsección se presentan los diagramas de clases que detallan la estructura interna
-de los principales componentes para cada bounded context. Estos diagramas complementan al
-Component Diagram de la **API Application** y a los contenedores definidos en Structurizr,
-proporcionando una vista centrada en clases, atributos, métodos y relaciones.
+En esta subsección se presentan los diagramas de clases que detallan la estructura interna de los principales componentes del frontend para cada bounded context. Estos diagramas complementan al Component Diagram de la **Web Application** y a los contenedores definidos en Structurizr, proporcionando una vista centrada en clases, atributos, métodos y relaciones entre componentes de presentación, stores de aplicación, servicios de infraestructura, recursos, ensambladores y modelos de dominio.
 
-A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que
-consumen los servicios expuestos por la API:
+A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que consumen los servicios expuestos por la API:
 
-- **Frontend completo**: muestra la organización general de la capa de presentación,
-incluyendo componentes de rutas, componentes de página y servicios de estado que
-interactúan con los contenedores backend definidos en el container diagram.
-- **IAM Frontend**: incluye los formularios y componentes relacionados con autenticación,
-registro, manejo de sesión y autorización, que consumen los endpoints del *IAM Backend*.
-- **Laboratory Management Frontend**: detalla las clases que gestionan las vistas de
-información institucional del laboratorio, catálogo de productos, inventario de materias
-primas y gestión de personal técnico.
-- **Equipment Management Frontend**: modela los componentes responsables del registro de
-equipos industriales, configuración de parámetros BPM, historial de mantenimientos y
-alertas de calibración.
-- **Tracking Frontend**: presenta los componentes de interfaz que construyen el dashboard
-de telemetría en tiempo real, gráficos de historial de variables y el panel de estado
-de equipos conectados.
-- **Compliance & Alerting Frontend**: modela las vistas de historial de alertas, detalle
-de desviaciones, configuración de canales de notificación e indicadores de compliance BPM.
-- **Batch Management Frontend**: detalla los componentes para la gestión de lotes de
-producción, trazabilidad de materias primas, flujos de liberación y rechazo documentado.
-- **Reporting & Audit Frontend**: presenta los componentes del KPI dashboard, generación
-de reportes PDF de trazabilidad y exportación de logs de eventos inmutables.
-- **Shared Frontend**: agrupa componentes reutilizables (layouts, formularios base,
-guards de autenticación, interceptores HTTP, servicios compartidos y pipes) que sirven
-como infraestructura de presentación común para el resto de módulos frontend.
+- **Frontend completo**: muestra la organización general de la capa de presentación de QualiTrack, incluyendo la configuración global de la aplicación, rutas principales, vistas generales, stores, APIs, endpoints, assemblers y bounded contexts frontend.
+- **IAM Frontend**: incluye los componentes relacionados con autenticación, registro, recuperación de contraseña, gestión de usuarios, asignación de roles, manejo de sesión y guards de autorización.
+- **Laboratory Management Frontend**: detalla las clases que gestionan la información institucional del laboratorio, personal técnico, catálogo de productos farmacéuticos, inventario de materias primas y control de stock bajo.
+- **Equipment Management Frontend**: modela los componentes responsables del registro de equipos industriales, configuración de parámetros BPM, historial de mantenimientos y alertas de calibración.
+- **Tracking Frontend**: presenta los componentes de interfaz que construyen el dashboard de telemetría, gráficos de historial, filtros de mediciones, estado de equipos conectados y detección visual de anomalías.
+- **Compliance & Alerting Frontend**: modela las vistas de alertas BPM, historial de desviaciones, detalle de alertas, resolución de incidencias y configuración de preferencias de notificación.
+- **Batch Management Frontend**: detalla los componentes para la gestión de lotes de producción, trazabilidad de materias primas, liberación digital, rechazo documentado y consulta del detalle de lote.
+- **Reporting & Audit Frontend**: presenta los componentes del dashboard KPI, análisis de tendencias de desviación, generación de reportes y visualización de logs de auditoría.
+- **Subscription & Billing Frontend**: integra las clases relacionadas con planes de suscripción, selección de plan, creación de sesión de checkout, pagos, resumen de facturación y estados de pago.
+- **Shared Frontend**: agrupa componentes reutilizables, clases base, recursos compartidos, assemblers genéricos, endpoints base, layout principal, toolbar, selector de idioma, dashboard general y vistas comunes.
 
 A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de
 los módulos definidos como componentes en la **API Application**:
@@ -1234,49 +1217,54 @@ y la reutilización de código entre contextos.
 
 #### Diagrama del frontend completo:
 
-![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=2)
+![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=3)
 
 <h3><strong>Diagrama del frontend dividido por contextos:</strong></h3>
 
 <h4>iam frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, roles y permisos de acceso.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, administración de usuarios, asignación de roles, manejo de sesión y control de acceso mediante guards de autenticación y autorización.</p>
 
-![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=2)
+![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>laboratory management frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de información institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y gestión de personal técnico.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de perfil institucional del laboratorio, registro y edición de información del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas, control de bajo stock y gestión de personal técnico.</p>
 
-![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=2)
+![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>equipment management frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de registro de equipos industriales, vinculación IoT, configuración de parámetros BPM, historial de mantenimientos y alertas de calibración.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de listado, registro y detalle de equipos industriales, configuración de parámetros BPM, historial de mantenimientos, registro de mantenimientos y alertas de calibración asociadas al estado operativo de los equipos.</p>
 
-![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=2)
+![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>tracking frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría en tiempo real, historial de variables críticas (temperatura, presión, pH) y panel de estado de equipos IoT conectados.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría, gráficos de historial de mediciones, consulta de variables críticas, panel de estado de equipos conectados y visualización de información operativa en tiempo real.</p>
 
-![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=2)
+![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>compliance & alerting frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de historial de alertas BPM, detalle de desviaciones detectadas, configuración de canales de notificación y panel de compliance regulatorio.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de alertas de desviación BPM, historial de alertas, eventos de compliance, preferencias de notificación, seguimiento de incidencias y control de cumplimiento regulatorio.</p>
 
-![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=2)
+![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>batch management frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de gestión de lotes de producción, trazabilidad de materias primas, flujos de liberación digital y rechazo documentado de lotes no conformes.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de listado, creación y detalle de lotes de producción, trazabilidad de materias primas utilizadas, liberación digital de lotes y rechazo documentado de lotes no conformes.</p>
 
-![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=2)
+![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>reporting & audit frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, generación y descarga de reportes PDF de trazabilidad inmutables y exportación de logs de eventos de equipos para auditorías DIGEMID.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, métricas operativas, tendencias de desviaciones, generación de reportes, consulta de logs de auditoría y visualización de información para seguimiento regulatorio.</p>
 
-![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=2)
+![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=3)
+
+<h4>subscription & billing frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de planes de suscripción, selección de plan, proceso de checkout, creación de sesión de pago, resumen de facturación, pagos asociados a la suscripción y visualización del estado de la transacción.</p>
+
+![Subscription Billing Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/subscription/subscription-frontend-diagram.puml&fmt=svg&v=3)
 
 <h4>shared frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja los componentes comunes, utilidades, clases base, guards de autenticación, interceptores HTTP, servicios compartidos y patrones reutilizables entre módulos.</p>
+<p><strong>Responsabilidad:</strong> Maneja los componentes comunes, layouts, toolbar, selector de idioma, vistas generales, clases base, recursos compartidos, assemblers, servicios reutilizables y patrones transversales usados por los demás módulos frontend.</p>
 
-![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=2)
+![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=3)
 
 <div style="page-break-after: always;"></div>
 
