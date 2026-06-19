@@ -820,18 +820,18 @@ Posteriormente, organizamos los eventos en líneas de tiempo para visualizar el 
 
 * **IAM & Security Flow:** gestión de identidad, roles, registro, inicio de sesión y desactivación de accesos del personal.
 * **Laboratory Setup Flow:** configuración inicial del laboratorio, registro de personal, creación de catálogo de productos farmacéuticos y materias primas.
-* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración.
+* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración
 * **Tracking & Telemetry Flow:** recepción continua de mediciones IoT, actualización de estado de los equipos y registro de historiales telemétricos.
-* **Compliance & Alerting Flow:** configuración de preferencias de notificación, detección de anomalías, registro de eventos de cumplimiento y envío de alertas Push.
+* **Compliance & Alerting Flow:** configuración de umbrales de alerta, detección de anomalías, registro de eventos de cumplimiento y despacho de alertas de calidad.
 * **Production Batch Flow:** creación de lotes, asignación de materia prima, procesamiento y decisión final de liberación (Release) o rechazo (Reject).
-* **Reporting & Analytics Flow:** cálculo de KPIs, generación de reportes BPM consolidados y exportación de logs inmutables para auditoría.
+* **Reporting & Analytics Flow:** evaluación del desempeño productivo, generación de reportes BPM consolidados y generación de reportes de auditoría de equipos.
 * **Subscription & Payments Flow:** selección de planes SaaS para el laboratorio y procesamiento de transacciones financieras.
 
 Esta organización temporal facilitó la comprensión de dependencias y secuencias críticas entre la configuración humana y la automatización del sistema.
 
-<img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Timelines" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Timelines" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-11.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-12.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-13.png" alt="Bounded Context Timelines" width="80%"/>
 
 #### Paso 3: Commands
 
@@ -839,15 +839,16 @@ En este paso definimos los comandos que los diferentes actores pueden ejecutar e
 
 | Actor | Comandos |
 |-------|----------|
-| **QA Manager** | Sign Up, Sign In, Assign Role, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Update Notification Preference, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report, Subscribe Laboratory. |
-| **Lab Operator** | Sign In, Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
-| **Auditor** | Export Equipment Log. |
+| **QA Manager** | Assign Staff Responsibility, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Configure Alert Threshold, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report. |
+| **Lab Operator** | Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
+| **Auditor** | Generate Equipment Audit Report. |
 | **IoT Sensor** | Record Measurement. |
-| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Send Push Notification, Calculate KPI Metrics. |
+| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Dispatch Quality Alert, Evaluate Production Performance. |
 | **Payment System** | Process Payment. |
 
-<img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Commands" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Commands" width="80%"/>
 
 #### Paso 4: Policies and Actors
 
@@ -855,24 +856,23 @@ En este paso identificamos las políticas de negocio (reglas WHEN/THEN) y los ac
 
 Las políticas identificadas fueron:
 
-* **WHEN** raw material stock reaches the minimum threshold **THEN** trigger a minimum stock alert.
-* **WHEN** an equipment's calibration date is near **THEN** trigger a calibration due alert internally.
-* **WHEN** an IoT device loses connection **THEN** trigger an equipment connection lost alert.
-* **WHEN** telemetry is received **THEN** evaluate the measurement against the configured BPM parameters automatically.
-* **WHEN** a non-critical deviation is detected **THEN** trigger a warning alert and send a push notification to the QA Manager.
-* **WHEN** a critical deviation is detected in telemetry **THEN** block the batch automatically and register a compliance event.
-* **WHEN** a batch is successfully released with a digital signature **THEN** auto-generate the immutable batch record PDF.
-* **WHEN** a QA Manager deactivates a user access **THEN** revoke all permissions immediately while keeping the audit log intact.
+* **WHEN** raw material stock reaches the minimum threshold THEN trigger a minimum stock alert.
+* **WHEN** an equipment's calibration date is near THEN trigger a calibration due alert internally.
+* **WHEN** an IoT device loses connection THEN trigger an equipment connection lost alert.
+* **WHEN** telemetry is received THEN evaluate the measurement against the configured BPM parameters automatically.
+* **WHEN** a non-critical deviation is detected THEN trigger a warning alert and dispatch a quality alert to the QA Manager.
+* **WHEN** a critical deviation is detected in telemetry THEN block the batch automatically and register a compliance event.
+* **WHEN** a batch is successfully released with a digital signature THEN auto-generate the immutable batch record PDF.
+* **WHEN** a QA Manager deactivates a user access THEN revoke all permissions immediately while keeping the audit log intact.
 
 Estas políticas permiten automatizar procesos críticos del sistema, reduciendo drásticamente el error humano y asegurando respuestas oportunas ante situaciones de riesgo que podrían comprometer la calidad de los medicamentos.
 
-<img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Policies" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Policies" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Policies" width="80%"/>
 
 #### 4.6.1.1. Candidate Context Discovery
 
-Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como gestión de identidad, configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
+Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
 
 #### Paso 5: Read Models
 
@@ -887,9 +887,9 @@ Los Read Models representan las vistas de consulta que los actores utilizan para
 * **Performance Metrics & KPI Summary:** dashboard utilizado por Analytics para visualizar el rendimiento y los indicadores clave.
 * **Plan Options:** permite consultar los planes de suscripción disponibles antes de realizar el pago.
 
-<img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Models" width="80%"/>
 
 #### Paso 6: External Systems
 
@@ -902,9 +902,9 @@ En este paso identificamos los sistemas externos que interactúan con el dominio
 * **Audit Vault (Secure Storage):** servicio de almacenamiento seguro utilizado para resguardar los registros de auditoría inmutables.
 * **Stripe / Payment Gateway:** pasarela de pagos externa utilizada para procesar las transacciones de las suscripciones.
 
-<img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context External" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context External" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context External" width="80%"/>
 
 #### Paso 7: Add Aggregates
 
@@ -920,11 +920,10 @@ En este paso identificamos los Aggregates, que representan los objetos de domini
 * **Analytics Engine:** procesa la información para la generación de métricas.
 * **Manufacturing Batch:** controla el ciclo de vida de producción de un lote.
 * **Inventory Ledger:** gestiona el registro exacto de los movimientos de inventario.
-* **Billing Account:** controla el estado de facturación y suscripción.
 
-<img src="../assets/img/design-level-event-storming-step-71.png" alt="Bounded Context aggregates" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-72.png" alt="Bounded Context aggregates" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-73.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context aggregates" width="80%"/>
 
 #### Paso 8: Bounded Contexts
 
