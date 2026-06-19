@@ -1160,7 +1160,7 @@ responsabilidades de cada módulo y decisiones de diseño técnico.
 
 ## 4.7.1. Class Diagrams
 
-En esta subsección se presentan los diagramas de clases que detallan la estructura interna de los principales componentes del frontend para cada bounded context. Estos diagramas complementan al Component Diagram de la **Web Application** y a los contenedores definidos en Structurizr, proporcionando una vista centrada en clases, atributos, métodos y relaciones entre componentes de presentación, stores de aplicación, servicios de infraestructura, recursos, ensambladores y modelos de dominio.
+En esta subsección se presentan los diagramas de clases que detallan la estructura interna de los principales componentes del frontend y backend para cada bounded context. Estos diagramas complementan al Component Diagram de la **Web Application**, al Component Diagram de la **API Application** y a los contenedores definidos en Structurizr, proporcionando una vista centrada en clases, atributos, métodos y relaciones entre componentes de presentación, stores de aplicación, servicios de infraestructura, recursos, ensambladores, modelos de dominio, entidades persistentes, repositorios, controladores y servicios de aplicación.
 
 A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que consumen los servicios expuestos por la API:
 
@@ -1175,41 +1175,18 @@ A nivel de **frontend**, se modelan las clases en función de los módulos y vis
 - **Subscription & Billing Frontend**: integra las clases relacionadas con planes de suscripción, selección de plan, creación de sesión de checkout, pagos, resumen de facturación y estados de pago.
 - **Shared Frontend**: agrupa componentes reutilizables, clases base, recursos compartidos, assemblers genéricos, endpoints base, layout principal, toolbar, selector de idioma, dashboard general y vistas comunes.
 
-A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de
-los módulos definidos como componentes en la **API Application**:
+A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de los módulos definidos como componentes en la **API Application**:
 
-- **Backend completo**: ilustra la estructura general de la capa de dominio y aplicación
-(aggregates, entities, value objects, command handlers, domain services, repositories,
-event handlers), mostrando cómo se distribuyen estas clases entre los distintos bounded
-contexts modelados como componentes (*IAM Backend, Laboratory Management Backend,
-Equipment Management Backend, Tracking Backend, Compliance & Alerting Backend,
-Batch Management Backend, Reporting & Audit Backend y Shared Backend*).
-- **IAM Backend**: muestra clases como `User`, `Role`, `Permission` y `UserRoleAssignment`,
-junto con servicios de autenticación/autorización, JWT token management y repositorios
-para credenciales y roles.
-- **Laboratory Management Backend**: incluye agregados como `Laboratory`, `StaffMember`,
-`ProductCatalog` y `RawMaterial`, junto con sus servicios de dominio y repositorios,
-encargados de la gestión institucional del laboratorio farmacéutico.
-- **Equipment Management Backend**: detalla las clases `Equipment`, `BpmParameterConfig`,
-`MaintenanceRecord` y `CalibrationRecord`, así como servicios de configuración de
-parámetros BPM y gestión del ciclo de vida de los equipos industriales.
-- **Tracking Backend**: define entidades como `Measurement`, `DeviceBinding` y
-`TelemetryRecord` que permiten la ingesta, almacenamiento y consulta de telemetría
-proveniente de sensores IoT vinculados a los equipos de producción.
-- **Compliance & Alerting Backend**: modela el núcleo del sistema con clases como
-`ComplianceEvent`, `DeviationAlert` y `BpmEvaluationService`, responsables de evaluar
-cada medición, clasificar desviaciones por severidad y generar los eventos de bloqueo
-automático de lotes no conformes.
-- **Batch Management Backend**: contiene los agregados `Batch`, `BatchStatus` y
-`RawMaterialUsage`, junto con value objects de estado, servicios de liberación y rechazo,
-y repositorios que mantienen el historial inmutable de cada lote de producción.
-- **Reporting & Audit Backend**: modela las clases `AuditReport`, `ComplianceReport` y
-`KpiMetric`, junto con los servicios de generación de reportes PDF y cálculo de
-indicadores de calidad a partir de datos consolidados de múltiples contextos.
-- **Shared Backend**: concentra clases base auditables (`AuditableEntity`), value objects
-comunes (`LabId`, `UserId`, `DateRange`, `Quantity`), eventos de dominio base y
-configuraciones compartidas por todos los módulos, soportando la consistencia del diseño
-y la reutilización de código entre contextos.
+- **Backend completo**: ilustra la estructura general de la capa de dominio, aplicación, infraestructura e interfaces REST, mostrando cómo se distribuyen las clases entre los distintos bounded contexts modelados como componentes.
+- **IAM Backend**: muestra las clases relacionadas con usuarios, roles, credenciales, autenticación, autorización, manejo de tokens y repositorios de identidad.
+- **Laboratory Management Backend**: incluye agregados y entidades relacionados con laboratorios, personal técnico, productos farmacéuticos y materias primas, junto con sus servicios, comandos, consultas, repositorios y recursos REST.
+- **Equipment Management Backend**: detalla las clases responsables del ciclo de vida de equipos industriales, configuración de parámetros BPM y registros de mantenimiento.
+- **Tracking Backend**: define las clases utilizadas para gestionar telemetría de equipos, mediciones, historial de variables y estados de conectividad.
+- **Compliance & Alerting Backend**: modela las clases responsables de eventos de compliance, alertas de desviación, preferencias de notificación y flujos de resolución o reconocimiento de incidencias.
+- **Batch Management Backend**: contiene las clases asociadas con lotes de producción, uso de materias primas, firmas digitales, registros de rechazo y cambios de estado del lote.
+- **Reporting & Audit Backend**: modela las clases utilizadas para dashboards KPI, métricas, tendencias de desviación, reportes de auditoría y logs de acciones.
+- **Subscription & Billing Backend**: integra las clases relacionadas con planes de suscripción, suscripciones activas, pagos, sesiones de checkout, integración con Stripe, eventos de suscripción y webhooks de pago.
+- **Shared Backend**: concentra clases base, resultados de aplicación, errores, entidades auditables, configuraciones compartidas, ensambladores comunes y patrones transversales usados por los demás módulos.
 
 ---
 
@@ -1217,159 +1194,176 @@ y la reutilización de código entre contextos.
 
 #### Diagrama del frontend completo:
 
-![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=3)
+![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=4)
 
 <h3><strong>Diagrama del frontend dividido por contextos:</strong></h3>
 
 <h4>iam frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, administración de usuarios, asignación de roles, manejo de sesión y control de acceso mediante guards de autenticación y autorización.</p>
 
-![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=3)
+![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>laboratory management frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de perfil institucional del laboratorio, registro y edición de información del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas, control de bajo stock y gestión de personal técnico.</p>
 
-![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=3)
+![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>equipment management frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de listado, registro y detalle de equipos industriales, configuración de parámetros BPM, historial de mantenimientos, registro de mantenimientos y alertas de calibración asociadas al estado operativo de los equipos.</p>
 
-![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=3)
+![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>tracking frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría, gráficos de historial de mediciones, consulta de variables críticas, panel de estado de equipos conectados y visualización de información operativa en tiempo real.</p>
 
-![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=3)
+![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>compliance & alerting frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de alertas de desviación BPM, historial de alertas, eventos de compliance, preferencias de notificación, seguimiento de incidencias y control de cumplimiento regulatorio.</p>
 
-![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=3)
+![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>batch management frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de listado, creación y detalle de lotes de producción, trazabilidad de materias primas utilizadas, liberación digital de lotes y rechazo documentado de lotes no conformes.</p>
 
-![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=3)
+![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>reporting & audit frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, métricas operativas, tendencias de desviaciones, generación de reportes, consulta de logs de auditoría y visualización de información para seguimiento regulatorio.</p>
 
-![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=3)
+![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>subscription & billing frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja las vistas de planes de suscripción, selección de plan, proceso de checkout, creación de sesión de pago, resumen de facturación, pagos asociados a la suscripción y visualización del estado de la transacción.</p>
 
-![Subscription Billing Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/subscription/subscription-frontend-diagram.puml&fmt=svg&v=3)
+![Subscription Billing Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/subscription/subscription-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>shared frontend:</h4>
 <p><strong>Responsabilidad:</strong> Maneja los componentes comunes, layouts, toolbar, selector de idioma, vistas generales, clases base, recursos compartidos, assemblers, servicios reutilizables y patrones transversales usados por los demás módulos frontend.</p>
 
-![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=3)
+![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=4)
 
 <div style="page-break-after: always;"></div>
 
 ---
 
-### Diagrama de clases del backend 
+### Diagrama de clases del backend
 
 #### Diagrama del backend completo:
 
-![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-backend-diagram.puml&fmt=svg)
+![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/qualitrack/qualitrack-backend-diagram.puml&fmt=svg&v=4)
 
 <h3><strong>Diagrama del backend dividido por contextos:</strong></h3>
 
 <h4>iam backend:</h4>
-<p><strong>Responsabilidad:</strong> Usuarios, autenticación, roles, permisos y gestión de credenciales de acceso.</p>
+<p><strong>Responsabilidad:</strong> Maneja usuarios, autenticación, autorización, roles, credenciales, servicios de aplicación, repositorios de identidad y recursos REST asociados al control de acceso.</p>
 
-![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg)
+![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>laboratory management backend:</h4>
-<p><strong>Responsabilidad:</strong> Gestión institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y personal técnico.</p>
+<p><strong>Responsabilidad:</strong> Maneja la gestión institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas, personal técnico, comandos, consultas, repositorios y endpoints REST del contexto.</p>
 
-![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg)
+![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>equipment management backend:</h4>
-<p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, vinculación IoT, configuración de parámetros BPM y registros de mantenimiento y calibración.</p>
+<p><strong>Responsabilidad:</strong> Maneja el ciclo de vida de equipos industriales, configuración de parámetros BPM, registros de mantenimiento, entidades de persistencia, repositorios y controladores REST del contexto.</p>
 
-![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg)
+![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>tracking backend:</h4>
-<p><strong>Responsabilidad:</strong> Ingesta, almacenamiento y consulta de telemetría IoT (temperatura, presión, pH) proveniente de sensores vinculados a equipos industriales.</p>
+<p><strong>Responsabilidad:</strong> Maneja la ingesta, registro, consulta e historial de telemetría de equipos, incluyendo mediciones, estados de conectividad, puntos históricos y servicios de consulta para dashboards.</p>
 
-![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg)
+![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>compliance & alerting backend:</h4>
-<p><strong>Responsabilidad:</strong> Evaluación de mediciones contra parámetros BPM, clasificación de desviaciones por severidad, generación de alertas inmediatas y bloqueo automático de lotes no conformes.</p>
+<p><strong>Responsabilidad:</strong> Maneja la evaluación de mediciones contra parámetros BPM, generación de alertas de desviación, eventos de compliance, preferencias de notificación, reconocimiento de alertas y resolución de incidencias.</p>
 
-![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ca/ca-backend-diagram.puml&fmt=svg)
+![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ca/ca-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>batch management backend:</h4>
-<p><strong>Responsabilidad:</strong> Gestión del ciclo de vida de lotes de producción, trazabilidad de materias primas, liberación digital con firma del QA Manager y rechazo documentado de lotes no conformes.</p>
+<p><strong>Responsabilidad:</strong> Maneja el ciclo de vida de lotes de producción, trazabilidad de materias primas, liberación digital, rechazo documentado, firmas digitales y registros asociados al estado del lote.</p>
 
-![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg)
+![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>reporting & audit backend:</h4>
-<p><strong>Responsabilidad:</strong> Generación de reportes de trazabilidad PDF inmutables por lote o periodo, exportación de logs de eventos de equipos y cálculo de KPIs de calidad farmacéutica.</p>
+<p><strong>Responsabilidad:</strong> Maneja la generación de reportes, logs de auditoría, dashboards KPI, métricas de calidad, tendencias de desviación y servicios de consulta para seguimiento operativo y regulatorio.</p>
 
-![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ra/ra-backend-diagram.puml&fmt=svg)
+![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ra/ra-backend-diagram.puml&fmt=svg&v=4)
+
+<h4>subscription & billing backend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja planes de suscripción, suscripciones activas, pagos, sesiones de checkout, integración con Stripe, webhooks, activación, cancelación y consulta de estados de facturación.</p>
+
+![Subscription Billing Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/subscription/subscription-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>shared backend:</h4>
-<p><strong>Responsabilidad:</strong> Componentes comunes, clases base auditables, value objects (LabId, UserId, DateRange, Quantity), eventos de dominio base y patrones compartidos entre todos los módulos backend.</p>
+<p><strong>Responsabilidad:</strong> Maneja clases base, resultados de aplicación, errores compartidos, entidades auditables, configuraciones transversales, ensambladores comunes y patrones reutilizables por los demás módulos backend.</p>
 
-![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg)
+![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg&v=4)
 
 <div style="page-break-after: always;"></div>
+
+---
 
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
 
-En esta sección se presenta el diseño de la base de datos relacional de QualiTrack,
-organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas,
-garantizando la separación de responsabilidades y la alineación con la arquitectura
-DDD definida en los apartados anteriores. La base de datos está implementada en
-**MySQL** y todas las tablas principales heredan los campos de auditoría
-(`created_at`, `updated_at`, `created_by`) para garantizar la trazabilidad de cada
-operación, cumpliendo con los requisitos de Data Integrity exigidos por DIGEMID.
+En esta sección se presenta el diseño de la base de datos relacional de QualiTrack, organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas, garantizando la separación de responsabilidades y la alineación con la arquitectura DDD definida en los apartados anteriores. La base de datos está implementada en **MySQL** y sus tablas principales incluyen campos de auditoría como `created_at` y `updated_at`, con el objetivo de mantener trazabilidad sobre la creación y actualización de los registros.
+
+Los diagramas de base de datos se organizan en los siguientes contextos:
+
+- **Base de datos completa**: muestra la integración general de las tablas principales de todos los bounded contexts.
+- **IAM Database**: contiene las tablas relacionadas con usuarios, roles y asignaciones de rol.
+- **Laboratory Management Database**: contiene laboratorios, regulaciones, personal técnico, productos farmacéuticos y materias primas.
+- **Equipment Management Database**: contiene equipos industriales, configuraciones de parámetros BPM y registros de mantenimiento.
+- **Batch Management Database**: contiene lotes, uso de materias primas, firmas digitales y registros de rechazo.
+- **Tracking Database**: contiene telemetría de equipos, estados de conectividad, mediciones e historial de variables.
+- **Compliance & Alerting Database**: contiene alertas de desviación, eventos de compliance y preferencias de notificación.
+- **Reporting & Audit Database**: contiene reportes de auditoría, logs, dashboards KPI, métricas y tendencias de desviación.
+- **Subscription & Billing Database**: contiene planes de suscripción, suscripciones, pagos, estados de facturación e identificadores asociados al proveedor de pago.
 
 #### Diagrama de base de datos completo:
 
-![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg&v=2)
+![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg&v=4)
 
 <h3><strong>Diagrama de base de datos dividido por contextos:</strong></h3>
 
 <h4>iam base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Gestión de usuarios, roles, permisos y asignaciones de acceso por laboratorio.</p>
+<p><strong>Responsabilidad:</strong> Gestiona las tablas de usuarios, roles y asignaciones de roles utilizadas para autenticación, autorización y control de acceso dentro de la plataforma.</p>
 
-![IAM Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/iam/iam-database-diagram.puml&fmt=svg)
+![IAM Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/iam/iam-database-diagram.puml&fmt=svg&v=4)
 
 <h4>laboratory management base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Información institucional del laboratorio, personal técnico, catálogo de productos farmacéuticos y materias primas.</p>
+<p><strong>Responsabilidad:</strong> Gestiona la información institucional de laboratorios, regulaciones aplicables, personal técnico, catálogo de productos farmacéuticos y materias primas disponibles.</p>
 
-![Laboratory Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/laboratory/laboratory-database-diagram.puml&fmt=svg)
+![Laboratory Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/laboratory/laboratory-database-diagram.puml&fmt=svg&v=4)
 
 <h4>equipment management base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, configuración de parámetros BPM, historial de mantenimientos y registros de calibración.</p>
+<p><strong>Responsabilidad:</strong> Gestiona equipos industriales, configuraciones de parámetros BPM, rangos permitidos de operación y registros de mantenimiento asociados a cada equipo.</p>
 
-![Equipment Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/equipment/equipment-database-diagram.puml&fmt=svg)
-
-<h4>tracking base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Ingesta y almacenamiento de telemetría IoT, vinculación de sensores a equipos y trazabilidad de mediciones por lote.</p>
-
-![Tracking Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/tracking/tracking-database-diagram.puml&fmt=svg)
-
-<h4>compliance & alerting base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Eventos de compliance BPM, alertas de desviación, historial de resoluciones y preferencias de notificación por usuario.</p>
-
-![Compliance Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ca/ca-database-diagram.puml&fmt=svg)
+![Equipment Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/equipment/equipment-database-diagram.puml&fmt=svg&v=4)
 
 <h4>batch management base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Ciclo de vida de lotes de producción, trazabilidad de materias primas, firmas digitales de liberación y registros de rechazo.</p>
+<p><strong>Responsabilidad:</strong> Gestiona lotes de producción, uso de materias primas, firmas digitales de liberación y registros de rechazo documentado para mantener la trazabilidad del proceso productivo.</p>
 
-![Batch Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/batch/batch-database-diagram.puml&fmt=svg)
+![Batch Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/batch/batch-database-diagram.puml&fmt=svg&v=4)
+
+<h4>tracking base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestiona la telemetría de equipos, estados de conectividad, mediciones de variables críticas e historial de valores registrados para análisis operativo.</p>
+
+![Tracking Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/tracking/tracking-database-diagram.puml&fmt=svg&v=4)
+
+<h4>compliance & alerting base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestiona alertas de desviación, eventos de compliance, estados de resolución, responsables de atención y preferencias de notificación por usuario.</p>
+
+![Compliance Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ca/ca-database-diagram.puml&fmt=svg&v=4)
 
 <h4>reporting & audit base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Reportes de trazabilidad generados, métricas KPI y log de auditoría de acciones de usuarios.</p>
+<p><strong>Responsabilidad:</strong> Gestiona reportes generados, logs de auditoría, dashboards KPI, métricas de calidad, tendencias de desviación y puntos históricos para análisis regulatorio.</p>
 
-![Reporting Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ra/ra-database-diagram.puml&fmt=svg)
+![Reporting Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ra/ra-database-diagram.puml&fmt=svg&v=4)
 
+<h4>subscription & billing base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestiona planes de suscripción, suscripciones activas o históricas, pagos registrados, ciclos de facturación, estado de suscripción e identificadores de Stripe asociados al proceso de checkout.</p>
+
+![Subscription Billing Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/subscription/subscription-database-diagram.puml&fmt=svg&v=4)
