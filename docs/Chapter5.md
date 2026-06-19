@@ -2043,26 +2043,692 @@ general, el layout compartido y las correcciones transversales.
   flujo de feature branches y merges durante el Sprint 2.</em></p>
 </div>
 
-
-<!-- 
-
 ### 5.2.3. Sprint 3
+
+<p>
+Durante el Sprint 3, el equipo de ClosedSource se enfocó en consolidar la versión integrada de QualiTrack. A diferencia del Sprint 2, donde se desarrolló principalmente la Frontend Web Application con consumo de datos simulados, este sprint priorizó la implementación del Backend con Spring Boot, la conexión real entre Frontend y Backend, la autenticación con JWT, la persistencia en base de datos, la integración de pagos con Stripe y el despliegue de los servicios principales en la nube.
+</p>
+
+<p>
+El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcional distribuida en Bounded Contexts, incluyendo IAM, Laboratory Management, Equipment Management, Batch Management, Compliance & Alerting, Tracking & Telemetry, Reporting & Audit y Subscription & Billing. Asimismo, se habilitó la documentación de servicios mediante Swagger/OpenAPI, permitiendo validar los endpoints REST implementados durante el Sprint Review.
+</p>
+
+<p>
+  <strong>Repositorio Backend:</strong>
+  <a href="https://github.com/ClosedSource-11848/qualitrack-platform">
+    https://github.com/ClosedSource-11848/qualitrack-platform
+  </a>
+</p>
+
+<p>
+  <strong>Frontend Web Application Desplegada:</strong>
+  <a href="https://closedsource-qualitrack.web.app/home">
+    https://closedsource-qualitrack.web.app/home
+  </a>
+</p>
+
+<p>
+  <strong>Backend API Desplegada:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>Base de Datos Desplegada:</strong> Railway
+</p>
 
 #### 5.2.3.1. Sprint Planning 3
 
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: center;">Sprint Planning Sprint 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>10:00 p.m.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Discord</td>
+    </tr>
+    <tr>
+      <td>Prepared By</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+    </tr>
+    <tr>
+      <td>Attendees (to planning meeting)</td>
+      <td>
+        Ruiz Madrid, Billy Jake<br>
+        Becerra Ttito, Felix Orlando<br>
+        Diaz Caruzo, Edgard Daniel<br>
+        Viza Quispe, Marlon Packard<br>
+        Castillo Yataco, Mauricio Sebastian<br>
+        Angulo Ramírez, Marcelo Martín
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 2 Review Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        Se completó la primera versión funcional de la Frontend Web Application en Angular,
+        incluyendo los Bounded Contexts principales, la estructura DDD en el frontend,
+        componentes visuales, stores reactivos, vistas de gestión y despliegue en Firebase
+        Hosting. Sin embargo, varios flujos todavía dependían de datos simulados o endpoints
+        no implementados en el backend, por lo que se definió como prioridad completar la
+        integración real con servicios REST.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 2 Retrospective Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        El equipo identificó que el frontend había avanzado más rápido que el backend, lo que
+        generaba errores de integración, respuestas incompletas y flujos que aún no persistían
+        información real. Como acción de mejora, se acordó enfocar el Sprint 3 en implementar
+        los Bounded Contexts faltantes del backend, proteger endpoints con IAM/JWT, documentar
+        los servicios con Swagger y desplegar la solución en entornos cloud.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Sprint 3 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
+        <em>Our focus is on delivering an integrated and deployed version of QualiTrack where authenticated laboratory users can manage core quality assurance operations through an Angular frontend connected to a Spring Boot backend.</em><br><br>
+        <em>We believe it delivers a more realistic and reliable experience to QA Managers, Laboratory Operators and regulated pharmaceutical laboratories, allowing them to manage laboratories, equipment, production batches, compliance alerts, telemetry, audit reports and subscriptions using persistent data and secure access.</em><br><br>
+        <em>This will be confirmed when the Firebase frontend consumes the Render backend, the backend persists information in Railway, Swagger exposes the implemented REST endpoints, Stripe checkout can be tested, and the main business flows can be demonstrated during the Sprint Review.</em>
+      </td>
+    </tr>
+    <tr>
+      <td>Sprint 3 Velocity</td>
+      <td>45 Story Points</td>
+    </tr>
+    <tr>
+      <td>Sum of Story Points</td>
+      <td>45 SP</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.3.2. Aspect Leaders and Collaborators
+
+<p>
+En esta sección se presenta la matriz <strong>Leadership-and-Collaboration (LACX)</strong>
+correspondiente al Sprint 3. Su propósito es identificar los principales aspectos técnicos
+abordados durante el sprint y asignar responsabilidades de liderazgo (<strong>L</strong>) y
+colaboración (<strong>C</strong>) según la evidencia de trabajo registrada en el repositorio
+Backend.
+</p>
+
+<p>Los aspectos se derivan directamente de los objetivos del Sprint 3 Goal:</p>
+
+<ul>
+  <li><strong>Backend Bounded Contexts:</strong> Implementación de los módulos backend para CA, RA, Tracking, Subscription e IAM, junto con correcciones de Laboratory, Equipment y Batch.</li>
+  <li><strong>Frontend Integration & Authentication:</strong> Ajuste del frontend para consumir endpoints reales, envío de JWT mediante interceptor y alineación de IAM con el backend.</li>
+  <li><strong>Deployment, Payments & Documentation:</strong> Despliegue del backend en Render, frontend en Firebase, base de datos en Railway, configuración de Stripe y actualización de Swagger/diagramas.</li>
+</ul>
+
+<table border="1" cellpadding="4" cellspacing="0" align="center">
+  <thead>
+    <tr>
+      <th>GitHub User / Author</th>
+      <th>Backend Bounded Contexts</th>
+      <th>Frontend Integration & Authentication</th>
+      <th>Deployment, Payments & Documentation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BJRM03</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Felixb14</td>
+      <td>L</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Dan-trax</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>V8Z5</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>M4uricioCastillo</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Zock2005</td>
+      <td>C</td><td>C</td><td>L</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>L</strong> = Líder del aspecto</li>
+  <li><strong>C</strong> = Colaborador en el aspecto</li>
+</ul>
 
 #### 5.2.3.3. Sprint Backlog 3
 
+<p>
+El Sprint Backlog 3 reúne las historias técnicas y tareas necesarias para completar el
+backend de QualiTrack, integrar la aplicación frontend con servicios reales, habilitar
+autenticación segura, configurar suscripciones con Stripe y desplegar los componentes en
+la nube. Todas las tareas fueron organizadas según los Bounded Contexts del sistema.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint3-board.jpeg" alt="Sprint 3 Board Screenshot" width="100%">
+  <p><em>Figura: Tablero del Sprint 3 en Jira Software (Proyecto QualiTrack)</em></p>
+</div>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="8" style="text-align:center;">Sprint # 3</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TS05</td>
+      <td>Compliance & Alerts Backend</td>
+      <td>T041</td>
+      <td>Implementar bounded context CA</td>
+      <td>Crear commands, queries, aggregates, persistence, services, REST resources y controllers para alertas, eventos de cumplimiento y preferencias de notificación.</td>
+      <td>6h</td>
+      <td>Zock2005</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS06</td>
+      <td>Laboratory Backend Integration</td>
+      <td>T042</td>
+      <td>Corregir integración de Laboratory</td>
+      <td>Ajustar endpoints de laboratorio, productos, materias primas, staff y eventos de bajo stock.</td>
+      <td>5h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS07</td>
+      <td>Equipment Backend Integration</td>
+      <td>T043</td>
+      <td>Corregir gestión de equipos</td>
+      <td>Ajustar controllers de equipos, configuración BPM, mantenimiento y publicación de eventos.</td>
+      <td>5h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS08</td>
+      <td>Batch Backend Integration</td>
+      <td>T044</td>
+      <td>Corregir gestión de lotes</td>
+      <td>Corregir batch controller, consultas por laboratorio, uso de materias primas, liberación y rechazo de lotes.</td>
+      <td>5h</td>
+      <td>M4uricioCastillo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS09</td>
+      <td>Reporting & Audit Backend</td>
+      <td>T045</td>
+      <td>Implementar bounded context RA</td>
+      <td>Crear comandos, queries, aggregates, entidades, servicios, persistencia JPA, audit log, reports, KPIs y deviation trends.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS10</td>
+      <td>Tracking & Telemetry Backend</td>
+      <td>T046</td>
+      <td>Implementar bounded context Tracking</td>
+      <td>Crear telemetría, mediciones, historial, anomalías, status de equipos, controllers y eventos de integración.</td>
+      <td>8h</td>
+      <td>Felixb14</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS11</td>
+      <td>Subscription & Billing Backend</td>
+      <td>T047</td>
+      <td>Implementar suscripciones y pagos</td>
+      <td>Crear planes, suscripciones, pagos, Stripe Checkout, webhooks, repositories, services y controllers.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS12</td>
+      <td>IAM Backend</td>
+      <td>T048</td>
+      <td>Implementar autenticación y autorización</td>
+      <td>Crear sign-up, sign-in, roles, usuarios, JWT, hashing BCrypt, filtros de seguridad y configuración Spring Security.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS13</td>
+      <td>Cloud Deployment</td>
+      <td>T049</td>
+      <td>Desplegar solución integrada</td>
+      <td>Desplegar frontend en Firebase, backend en Render y base de datos en Railway, configurando variables de entorno.</td>
+      <td>6h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS14</td>
+      <td>Technical Documentation</td>
+      <td>T050</td>
+      <td>Actualizar Swagger y diagramas</td>
+      <td>Publicar documentación OpenAPI y actualizar diagramas de frontend, backend y base de datos por bounded context.</td>
+      <td>6h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.3.4. Development Evidence for Sprint Review
+
+<p>
+En esta sección se explican y presentan los avances en la implementación logrados durante
+el Sprint 3 en relación con el Backend de QualiTrack y la integración completa de la
+plataforma. A lo largo de este sprint se implementaron nuevos Bounded Contexts, se corrigió
+la integración de módulos previamente creados, se configuró seguridad con JWT, se añadió
+Stripe para suscripciones y se preparó la solución para despliegue.
+</p>
+
+<p>
+La tabla siguiente resume commits relevantes del repositorio Backend, indicando la rama,
+el identificador del commit, el autor registrado en GitHub, el mensaje asociado y la fecha.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Author</th>
+      <th>Commit Message</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="18">https://github.com/ClosedSource-11848/qualitrack-platform</td>
+      <td>main</td>
+      <td>47571e6</td>
+      <td>Zock2005</td>
+      <td>feat(ca): add ca commands</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>d98f6c4</td>
+      <td>Zock2005</td>
+      <td>feat(ca): add rest controllers.</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>d699014</td>
+      <td>BJRM03</td>
+      <td>Merge branch 'feature/laboratory' into develop. Related to TS-L001.</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>7bc3d64</td>
+      <td>BJRM03</td>
+      <td>Feature/equipment</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>1a69ca8</td>
+      <td>M4uricioCastillo</td>
+      <td>fix(batch): fix batch queries and laboratory integration</td>
+      <td>10/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>006d639</td>
+      <td>BJRM03</td>
+      <td>feat(ra): add ra commands.</td>
+      <td>12/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>5c13718</td>
+      <td>BJRM03</td>
+      <td>feat(ra): add rest controller.</td>
+      <td>12/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>68edb73</td>
+      <td>Felixb14</td>
+      <td>feat(tracking): add tracking commands.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>f728110</td>
+      <td>Felixb14</td>
+      <td>feat(tracking): add rest controller.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>5739cc4</td>
+      <td>BJRM03</td>
+      <td>feat(eventhandler): add integration events for inter-context communication.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>8b892e7</td>
+      <td>BJRM03</td>
+      <td>feat(subscription): add subscription value objects.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>2b31052</td>
+      <td>BJRM03</td>
+      <td>feat(subscription): add rest controller.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>4ae5843</td>
+      <td>BJRM03</td>
+      <td>feat(iam): add identity and access management backend module.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>0893560</td>
+      <td>BJRM03</td>
+      <td>feat(ra): add kpi dashboard and deviation trend calculation workflows.</td>
+      <td>14/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>4e32071</td>
+      <td>M4uricioCastillo</td>
+      <td>fix(batch): fix batch controller and raw material usage processing.</td>
+      <td>14/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>543a8ba</td>
+      <td>BJRM03</td>
+      <td>fix(tracking): fix telemetry controller and anomaly compliance handling.</td>
+      <td>14/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>d735a48</td>
+      <td>BJRM03</td>
+      <td>chore: add dockerfile configuration.</td>
+      <td>16/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>f5a8a4c</td>
+      <td>BJRM03</td>
+      <td>docs(docs): fix backend and data base diagrams.</td>
+      <td>19/06/2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
+<p>
+Durante el Sprint 3, QualiTrack pasó de una aplicación frontend funcional con datos
+simulados a una solución integrada con backend real, autenticación, persistencia y servicios
+desplegados. La ejecución del sprint permitió validar flujos principales como registro e
+inicio de sesión, creación y edición de laboratorio, registro de equipos, configuración BPM,
+mantenimiento, gestión de lotes, uso de materias primas, alertas de cumplimiento, telemetría,
+reportes, KPIs, tendencias de desviación y suscripciones.
+</p>
+
+<p>
+Las evidencias de ejecución corresponden a la aplicación desplegada en Firebase, la API
+desplegada en Render, la base de datos en Railway y el flujo de pagos de prueba configurado
+en Stripe.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint3-frontend-firebase.jpeg" alt="QualiTrack frontend deployed in Firebase" width="90%">
+  <p><em>Figura: Frontend Web Application de QualiTrack desplegada en Firebase Hosting.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-backend-render.jpeg" alt="QualiTrack backend deployed in Render" width="90%">
+  <p><em>Figura: Backend API de QualiTrack desplegada en Render.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-railway-database.jpeg" alt="QualiTrack database deployed in Railway" width="90%">
+  <p><em>Figura: Base de datos de QualiTrack desplegada en Railway.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-stripe-checkout.jpeg" alt="Stripe checkout subscription flow" width="90%">
+  <p><em>Figura: Flujo de pago de suscripción mediante Stripe Checkout.</em></p>
+</div>
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+<p>
+Durante el Sprint 3, se habilitó la documentación de servicios REST mediante Swagger/OpenAPI
+en el backend desplegado en Render. Esta documentación permite visualizar los endpoints
+implementados por Bounded Context, probar solicitudes HTTP, revisar modelos de request/response
+y validar la integración con autenticación JWT.
+</p>
+
+<p>
+  <strong>Swagger UI:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Bounded Context / API Group</th>
+      <th>Implemented Endpoints</th>
+      <th>Main Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Authentication</td>
+      <td><code>POST /api/v1/authentication/sign-up</code><br><code>POST /api/v1/authentication/sign-in</code></td>
+      <td>Registro, inicio de sesión y generación de token JWT.</td>
+    </tr>
+    <tr>
+      <td>Users & Roles</td>
+      <td><code>GET /api/v1/users</code><br><code>GET /api/v1/users/{userId}</code><br><code>PATCH /api/v1/users/{userId}/roles/{roleName}</code><br><code>PATCH /api/v1/users/{userId}/deactivate</code><br><code>GET /api/v1/roles</code></td>
+      <td>Administración de usuarios, roles y ciclo de vida de cuentas.</td>
+    </tr>
+    <tr>
+      <td>Laboratories</td>
+      <td><code>GET /api/v1/laboratories/{laboratoryId}</code><br><code>PUT /api/v1/laboratories/{laboratoryId}</code><br><code>POST /api/v1/laboratories</code><br><code>GET/POST /api/v1/laboratories/{laboratoryId}/staff</code><br><code>GET/POST /api/v1/laboratories/{laboratoryId}/products</code><br><code>GET/POST /api/v1/laboratories/{laboratoryId}/raw-materials</code></td>
+      <td>Gestión de laboratorio, personal, productos y materias primas.</td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td><code>GET/POST /api/v1/equipments</code><br><code>GET /api/v1/equipments/{equipmentId}</code><br><code>GET/POST /api/v1/equipments/{equipmentId}/maintenance-records</code><br><code>GET/POST /api/v1/equipments/{equipmentId}/bpm-configs</code></td>
+      <td>Gestión de equipos, mantenimiento y configuración BPM.</td>
+    </tr>
+    <tr>
+      <td>Batches</td>
+      <td><code>GET/POST /api/v1/batches</code><br><code>GET /api/v1/batches/{batchId}</code><br><code>GET/POST /api/v1/batches/{batchId}/raw-materials</code><br><code>PATCH /api/v1/batches/{batchId}/release</code><br><code>PATCH /api/v1/batches/{batchId}/reject</code></td>
+      <td>Trazabilidad de lotes, materias primas, liberación y rechazo.</td>
+    </tr>
+    <tr>
+      <td>Compliance & Alerts</td>
+      <td><code>GET/POST /api/v1/alerts</code><br><code>GET /api/v1/alerts/{alertId}</code><br><code>PATCH /api/v1/alerts/{alertId}/acknowledge</code><br><code>PATCH /api/v1/alerts/{alertId}/resolve</code><br><code>GET/PUT /api/v1/notification-preferences/{userId}</code><br><code>GET /api/v1/compliance-events</code></td>
+      <td>Gestión de alertas de desviación, eventos de cumplimiento y preferencias.</td>
+    </tr>
+    <tr>
+      <td>Reporting & Audit</td>
+      <td><code>GET/POST /api/v1/audit-log</code><br><code>GET/POST /api/v1/reports</code><br><code>POST /api/v1/reports/batches</code><br><code>POST /api/v1/reports/compliance</code><br><code>POST /api/v1/reports/equipment-logs</code><br><code>GET/POST /api/v1/kpis</code><br><code>GET/POST /api/v1/deviation-trends</code></td>
+      <td>Auditoría, reportes, KPIs y análisis de tendencias de desviación.</td>
+    </tr>
+    <tr>
+      <td>Tracking</td>
+      <td><code>PUT /api/v1/telemetry/status</code><br><code>GET /api/v1/telemetry/status/{equipmentId}</code><br><code>GET/POST /api/v1/telemetry/measurements</code><br><code>GET/POST /api/v1/telemetry/history</code></td>
+      <td>Monitoreo de telemetría, mediciones, historial y anomalías.</td>
+    </tr>
+    <tr>
+      <td>Subscriptions</td>
+      <td><code>GET /api/v1/subscriptions/plans</code><br><code>POST /api/v1/subscriptions/checkout-sessions</code><br><code>GET /api/v1/subscriptions/laboratories/{laboratoryId}/active</code><br><code>GET /api/v1/subscriptions/laboratories/{laboratoryId}/billing-summary</code><br><code>GET /api/v1/subscriptions/{subscriptionId}/payments</code><br><code>PATCH /api/v1/subscriptions/{subscriptionId}/cancel</code></td>
+      <td>Planes, suscripciones, historial de pagos, checkout y cancelación.</td>
+    </tr>
+    <tr>
+      <td>Stripe Webhooks</td>
+      <td><code>POST /api/v1/subscriptions/stripe/webhook</code></td>
+      <td>Sincronización de eventos de Stripe con suscripciones y pagos.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+<p>
+Durante el Sprint 3 se consolidó el despliegue de los componentes principales de QualiTrack.
+La Frontend Web Application fue desplegada en Firebase Hosting, el Backend API fue desplegado
+en Render, la base de datos MySQL fue configurada en Railway y Stripe fue utilizado en modo
+de prueba para validar el flujo de suscripciones y pagos.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Cloud Service</th>
+      <th>Production URL / Environment</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frontend Web Application</td>
+      <td>Firebase Hosting</td>
+      <td><a href="https://closedsource-qualitrack.web.app/home">https://closedsource-qualitrack.web.app/home</a></td>
+      <td>Deployed</td>
+    </tr>
+    <tr>
+      <td>Backend REST API</td>
+      <td>Render</td>
+      <td><a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">https://qualitrack-platform.onrender.com/swagger-ui/index.html</a></td>
+      <td>Deployed</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>Railway</td>
+      <td>Railway MySQL production database</td>
+      <td>Deployed</td>
+    </tr>
+    <tr>
+      <td>Payment Provider</td>
+      <td>Stripe Test Environment</td>
+      <td>Stripe Checkout and Webhooks</td>
+      <td>Configured</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
+
+<p>
+Durante el Sprint 3, el esfuerzo principal se concentró en cerrar la brecha entre la Frontend
+Web Application desarrollada en el Sprint 2 y el Backend necesario para soportar flujos reales
+de negocio. El historial de commits del repositorio <code>qualitrack-platform</code> evidencia
+la participación de los usuarios <strong>BJRM03</strong>, <strong>Felixb14</strong>, <strong>M4uricioCastillo</strong> y
+<strong>Marcelo</strong>, quienes trabajaron sobre distintos Bounded Contexts y tareas de
+integración.
+</p>
+
+<p>
+El usuario <strong>Marcelo</strong> participó en la implementación del Bounded Context de
+Compliance & Alerts, agregando comandos, queries, servicios, persistencia, recursos REST y
+controladores. El usuario <strong>Felixb14</strong> participó principalmente en el Bounded
+Context de Tracking, implementando value objects, comandos, queries, aggregates,
+eventos, excepciones, persistencia JPA, servicios de aplicación, recursos REST, controladores
+e integración externa. El usuario <strong>M4uricioCastillo</strong> participó principalmente en el Bounded
+Context de Batch, implementando value objects, comandos, queries, aggregates,
+eventos, excepciones, persistencia JPA, servicios de aplicación, recursos REST, controladores
+e integración externa. Por su parte, <strong>BJRM03</strong>
+concentró trabajo en Laboratory, Equipment, RA, Subscription & Billing, IAM, event handlers, seguridad,
+configuración de despliegue, Dockerfile y actualización de diagramas.
+</p>
+
+<p>
+La colaboración se organizó mediante ramas de tipo <code>feature/</code> y merges hacia la
+línea principal de desarrollo. Esto permitió avanzar por módulos, corregir errores de integración
+a medida que aparecían en el frontend y estabilizar progresivamente la API. El resultado final
+del sprint fue una versión desplegada e integrada de QualiTrack, con frontend en Firebase,
+backend en Render, base de datos en Railway, autenticación JWT, documentación Swagger,
+telemetría, reportes, auditoría, alertas de cumplimiento y suscripciones con Stripe.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint3-github-commits.jpeg" alt="GitHub commits during Sprint 3" width="90%">
+  <p><em>Figura: Historial de commits del repositorio Backend durante el Sprint 3.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-swagger-ui.jpeg" alt="Swagger UI documentation for QualiTrack backend" width="90%">
+  <p><em>Figura: Documentación Swagger/OpenAPI del Backend desplegado en Render.</em></p>
+</div>
+
+<!-- 
 
 ### 5.2.4. Sprint 4
 
@@ -2308,10 +2974,13 @@ comentario -->
 <div style="page-break-after: always;"></div>
 
 # Anexos
+
 <h4>Anexo A: Enlaces de Despliegue y Repositorios</h4>
+
 <p>
-  A continuación se listan los enlaces correspondientes a los recursos disponibles hasta el Sprint 1 (AV1), incluyendo el despliegue del Landing Page y los repositorios del proyecto QualiTrack.
+  A continuación se listan los enlaces correspondientes a los recursos disponibles del proyecto QualiTrack, incluyendo los despliegues de la Landing Page, la aplicación frontend, la API backend y los repositorios del proyecto.
 </p>
+
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -2333,6 +3002,14 @@ comentario -->
       <td>
         <a href="https://closedsource-qualitrack.web.app">
           https://closedsource-qualitrack.web.app
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Backend API Documentation (Render / Swagger UI)</strong></td>
+      <td>
+        <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
+          https://qualitrack-platform.onrender.com/swagger-ui/index.html
         </a>
       </td>
     </tr>
@@ -2363,8 +3040,8 @@ comentario -->
     <tr>
       <td><strong>Repositorio Backend</strong></td>
       <td>
-        <a href="https://github.com/ClosedSource-11848/ClosedSource-Backend">
-          https://github.com/ClosedSource-11848/ClosedSource-Backend
+        <a href="https://github.com/ClosedSource-11848/qualitrack-platform">
+          https://github.com/ClosedSource-11848/qualitrack-platform
         </a>
       </td>
     </tr>
