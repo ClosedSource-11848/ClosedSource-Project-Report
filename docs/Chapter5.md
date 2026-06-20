@@ -3090,11 +3090,9 @@ comentario -->
   </tbody>
 </table>
 
-<!-- 
-
 <h4>Anexo C: Videos del Proyecto</h4>
 <p>
-  Material audiovisual del proyecto QualiTrack relacionado a la presentación del producto y del equipo (opcional en AV1 si ya lo tienen grabado).
+  Material audiovisual del proyecto QualiTrack relacionado a la presentación del producto y del equipo.
 </p>
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
@@ -3108,23 +3106,36 @@ comentario -->
     <tr>
       <td rowspan="2"><strong>Video "About the Product"</strong></td>
       <td>YouTube</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://youtu.be/LpOAo21-778">
+          https://youtu.be/LpOAo21-778
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://shorturl.at/FCgv3">
+          https://shorturl.at/FCgv3
+        </a>
+      </td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Video "About the Team"</strong></td>
       <td>YouTube</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://youtu.be/bGTHeGe3x6U">
+          https://youtu.be/bGTHeGe3x6U
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://shorturl.at/Yl5A8">
+          https://shorturl.at/Yl5A8
+        </a>
+      </td>
     </tr>
   </tbody>
 </table>
-
-comentario -->
-
