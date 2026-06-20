@@ -812,7 +812,7 @@ El desarrollo del proceso del Domain-Driven Design se realizó en la aplicación
 El primer paso consistió en realizar una exploración sin estructura para identificar todos los posibles eventos del dominio. Durante esta etapa, el equipo analizó criterios como la mutación de estados y la ejecución exitosa de comandos en el sistema, identificando 38 situaciones concretas (Domain Events) que los diferentes actores del sistema desencadenan. Entre los eventos más relevantes se capturaron: "Batch created", "Measurement recorded", "Deviation alert triggered", "Equipment registered", "Calibration alert triggered", "Raw material usage recorded" y "Batch released", entre otros. Esta exploración permitió capturar el núcleo operativo e IoT del laboratorio en su totalidad.
 
 
-<img src="../assets/img/design-level-event-storming-step-1.png" alt="Bounded Context brainstorming" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-1.jpeg" alt="Bounded Context brainstorming" width="80%"/>
 
 #### Paso 2: Timelines
 
