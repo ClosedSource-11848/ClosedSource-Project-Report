@@ -467,8 +467,6 @@
     </tr>
   </tbody>
 </table>
-  </tbody>
-</table>
 
 <div style="page-break-after: always;"></div>
 
