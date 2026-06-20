@@ -697,7 +697,7 @@ Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados
 
 En esta primera fase, el equipo llevó a cabo una lluvia de ideas con el fin de recopilar todos los eventos pertinentes al dominio, sin importar la secuencia o la jerarquía. El El propósito principal fue ilustrar los sucesos reales del negocio, sin depender de ninguna función técnica o vinculada a un sistema.
 
-<img src="../assets/img/design-level-event-storming-step-1.png" alt="Big Picture Event Storming 1" width="auto" height="450"/>
+<img src="../assets/img/design-level-event-storming-step-1.jpeg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
 
 ## 2.5. Ubiquitous Language
 
@@ -709,25 +709,31 @@ interfaces, comandos, rutas y bounded contexts del código fuente de QualiTrack.
 
 | Término | Definición |
 |---|---|
-| **Laboratory** | Entidad institucional (privada o pública) que gestiona procesos de manufactura farmacéutica, equipos industriales y personal. Es la organización responsable de garantizar la calidad de los productos elaborados. Se mapea a la entidad `Laboratory` y al bounded context `laboratory-management`. |
-| **QA Manager** | Profesional responsable del aseguramiento de la calidad. Supervisa la producción, configura los parámetros normativos de los equipos y autoriza la liberación final o rechazo de los lotes fabricados. Se mapea a `UserRole.QA_MANAGER` en el bounded context `iam`. |
-| **Lab Operator** | Personal técnico encargado de la ejecución diaria de la manufactura. Monitorea el estado de los equipos durante la producción, actúa ante advertencias de calidad y registra observaciones del proceso. Se mapea a `UserRole.LAB_OPERATOR` en el bounded context `iam`. |
-| **Equipment** | Equipo industrial del laboratorio (autoclave, medidor de pH, sensor de presión) vinculado a la plataforma mediante un identificador único de dispositivo (`deviceId`) para transmitir telemetría automáticamente. Se mapea a la entidad `Equipment` en el bounded context `equipment-management`. |
-| **BPM Parameters** | Conjunto de valores mínimos y máximos permitidos configurados para cada variable crítica (temperatura, presión, pH) de un equipo. Definen el rango de cumplimiento normativo. Se mapea a `BpmParameterConfig` en `equipment-management`. |
-| **Measurement** | Registro individual de telemetría capturado por un sensor IoT en un instante de tiempo. Contiene las variables críticas del proceso (temperatura, presión, pH) y se asocia al equipo y lote correspondiente. Se mapea a la entidad `Measurement` en `tracking`. |
-| **Telemetry** | Flujo continuo y automático de mediciones enviadas por los sensores IoT hacia la plataforma. Elimina el registro manual de variables y constituye la fuente de verdad para el compliance BPM. Se mapea al bounded context `tracking`. |
-| **Deviation** | Evento detectado automáticamente cuando una variable crítica supera o cae por debajo del rango BPM configurado. Desencadena una alerta inmediata y puede provocar el bloqueo automático del lote asociado. |
-| **Deviation Alert** | Incidente de calidad que ocurre cuando una medición crítica de un equipo supera o cae por debajo de los límites establecidos en los Parámetros BPM. Se mapea a `DeviationAlert` en `compliance-alerting`. |
-| **Deviation Severity** | Clasificación de la gravedad de una desviación: WARNING (advertencia sin bloqueo), CRITICAL (bloqueo inmediato del lote) o CATASTROPHIC (bloqueo y escalamiento). |
-| **Batch** | Cantidad específica de un producto farmacéutico producida en un único ciclo de manufactura, identificada por un código único de trazabilidad (`batchCode`). Se mapea a la entidad `Batch` en `batch-management`. |
-| **Batch Status** | Estado del ciclo de vida de un lote: IN_PROCESS, BLOCKED, UNDER_INVESTIGATION, RELEASED, REJECTED o COMPLETED. Las transiciones de estado siguen reglas estrictas del dominio. |
+| **Laboratory** | Entidad institucional que gestiona procesos de manufactura, equipos y personal dentro de la plataforma. Es la unidad raíz del sistema: todos los equipos, lotes y usuarios pertenecen a un laboratorio. Se mapea a la entidad `Laboratory` en el bounded context `laboratory-management`. |
+| **Staff Responsibility** | Asignación formal de funciones reguladas a un miembro del personal. Define quién puede ejecutar acciones críticas como liberar un lote o configurar parámetros BPM. Se mapea a `StaffRole` en `iam`. |
+| **Pharmaceutical Product** | Producto farmacéutico registrado en la plataforma al cual se asocian lotes de producción. Es el punto de partida del ciclo de manufactura. Se mapea a `PharmaceuticalProduct` en `batch-management`. |
+| **Raw Material** | Insumo registrado en el sistema utilizado en la fabricación de productos farmacéuticos. Debe estar vinculado a un lote antes de iniciar producción. Se mapea a `RawMaterial` en `batch-management`. |
+| **Raw Material Usage** | Registro de trazabilidad de las materias primas utilizadas en un lote específico, incluyendo proveedor, número de lote del proveedor y cantidad empleada. Se mapea a `RawMaterialUsage` en `batch-management`. |
+| **Batch Status** | Estado del ciclo de vida de un lote: `IN_PROCESS`, `BLOCKED`, `UNDER_INVESTIGATION`, `RELEASED`, `REJECTED` o `COMPLETED`. Las transiciones siguen reglas estrictas del dominio. |
 | **Blocking** | Estado restrictivo aplicado automáticamente a un lote cuando se detecta una desviación crítica, impidiendo su avance en la cadena de suministro hasta ser investigado. Se mapea al estado `BatchStatus.BLOCKED`. |
-| **Raw Material Usage** | Registro de trazabilidad de las materias primas utilizadas en la fabricación de un lote específico, incluyendo proveedor, número de lote del proveedor y cantidad empleada. Se mapea a `RawMaterialUsage` en `batch-management`. |
+| **Batch Record** | Archivo digital e inmutable que recopila toda la telemetría, firmas digitales e intervenciones asociadas a un lote. Es el documento central para inspecciones de DIGEMID. |
 | **Digital Signature** | Mecanismo de autenticación segura que reemplaza las firmas físicas para certificar la conformidad y liberación de un lote. Registra el QA Manager responsable y el timestamp de la firma. Se mapea a `DigitalSignature` en `batch-management`. |
-| **Batch Record** | Archivo digital e inmutable que recopila toda la telemetría, firmas digitales e intervenciones asociadas a un lote de producción. Es el documento central para las inspecciones de DIGEMID. |
-| **Audit Log** | Registro cronológico e inalterable de todas las acciones realizadas por los usuarios en el sistema. Garantiza la trazabilidad de quién hizo qué y cuándo. Se mapea a `AuditLogEntry` en `reporting-audit`. |
-| **Audit Report** | Documento PDF inmutable generado por la plataforma con el historial completo de un lote o periodo, listo para presentar en inspecciones regulatorias. Se mapea a `AuditReport` en `reporting-audit`. |
-| **KPI Metric** | Indicador clave de calidad calculado a partir de los datos históricos del laboratorio (porcentaje de lotes conformes, número de desviaciones, tiempo promedio de liberación). Se mapea a `KpiMetric` en `reporting-audit`. |
+| **Equipment** | Equipo industrial del laboratorio (autoclave, medidor de pH, sensor de presión) vinculado a la plataforma mediante un identificador único de dispositivo (`deviceId`) para transmitir telemetría automáticamente. Se mapea a `Equipment` en `equipment-management`. |
+| **Device Binding** | Vínculo activo entre un sensor IoT y un equipo registrado. Sin binding activo el sistema rechaza la telemetría entrante. Se mapea a `DeviceBinding` en `tracking`. |
+| **BPM Parameters** | Conjunto de valores mínimos y máximos permitidos para cada variable crítica (temperatura, presión, pH) de un equipo. Definen el rango de cumplimiento normativo. Se mapea a `BpmParameterConfig` en `equipment-management`. |
+| **Maintenance** | Registro formal de intervenciones de mantenimiento realizadas sobre un equipo. Garantiza la trazabilidad del estado operativo a lo largo del tiempo. Se mapea a `MaintenanceRecord` en `equipment-management`. |
+| **Calibration Alert** | Notificación generada cuando un equipo requiere calibración según su ciclo programado o por desviación detectada. Se mapea a `CalibrationAlert` en `equipment-management`. |
+| **Measurement** | Registro individual de telemetría capturado por un sensor IoT en un instante de tiempo. Contiene variables críticas del proceso (temperatura, presión, pH) y se asocia al equipo y lote correspondiente. Se mapea a `Measurement` en `tracking`. |
+| **Telemetry** | Flujo continuo y automático de mediciones enviadas por los sensores IoT hacia la plataforma. Constituye la fuente de verdad para el compliance BPM. Se mapea al bounded context `tracking`. |
+| **Equipment Telemetry Snapshot** | Captura puntual del estado de telemetría de un equipo en un momento determinado, usada para monitoreo en tiempo real. Se mapea a `TelemetrySnapshot` en `tracking`. |
+| **Alert Threshold** | Configuración de los límites críticos por variable y equipo a partir de los cuales el sistema genera alertas automáticas. Se mapea a `AlertThreshold` en `compliance-alerting`. |
+| **Compliance Event** | Resultado de evaluar una medición contra los parámetros BPM configurados. Puede ser `CONFORM`, `WARNING`, `DEVIATION` o `CRITICAL_DEVIATION`. Se mapea a `ComplianceEvent` en `compliance-alerting`. |
+| **Deviation Severity** | Clasificación de la gravedad de una desviación: `WARNING` (advertencia sin bloqueo), `CRITICAL` (bloqueo inmediato del lote) o `CATASTROPHIC` (bloqueo y escalamiento). |
+| **Deviation Alert** | Notificación automática generada cuando se detecta un riesgo de calidad. Incluye equipo afectado, variable desviada, valor detectado y severidad. Se mapea a `DeviationAlert` en `compliance-alerting`. |
+| **Quality Alert** | Alerta de calidad despachada al personal responsable ante una desviación crítica confirmada. Se mapea a `QualityAlert` en `compliance-alerting`. |
+| **Audit Report** | Documento PDF inmutable generado por la plataforma con el historial completo de un lote o periodo, listo para inspecciones regulatorias de DIGEMID. Se mapea a `AuditReport` en `reporting-audit`. |
+| **Equipment Audit Report** | Reporte oficial del historial de operación, mantenimiento y calibración de un equipo específico. Se mapea a `EquipmentAuditReport` en `reporting-audit`. |
+| **Production Performance** | Evaluación formal de los indicadores del proceso productivo (lotes conformes, desviaciones, tiempos de liberación) calculada a partir de datos históricos. Se mapea a `ProductionPerformance` en `reporting-audit`. |
 | **Data Integrity** | Principio regulatorio que garantiza que toda la información es atribuible, legible, contemporánea, original y precisa (ALCOA+). Es el eje normativo de toda la arquitectura de QualiTrack. |
 
 
