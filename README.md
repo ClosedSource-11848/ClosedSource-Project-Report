@@ -58,10 +58,14 @@
         <td>U202321425</td>
         <td>Angulo Ramírez, Marcelo Martín</td>
       </tr>
+      <tr>
+        <td>U20211b387</td>
+        <td>Becerra Ttito, Felix Orlando</td>
+      </tr>
     </table>
   </p>
 
-  <h3>Abril, 2026</h3>
+  <h3>Junio, 2026</h3>
 
 </div>
 
@@ -365,6 +369,104 @@
         Creación del bounded context <strong>IAM</strong> para autenticación: vistas de registro y login, store, entidades y servicios API.
       </td>
     </tr>
+    <tr>
+      <td>3.0.0</td>
+      <td>09/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Apertura del Sprint 3: Reunión de planificación (Sprint Planning 3), actualización del Product Backlog en Jira e incorporación formal del sexto integrante.</td>
+    </tr>
+    <tr>
+      <td>3.1.0</td>
+      <td>09/06/2026</td>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>Desarrollo inicial en el backend del bounded context <strong>Compliance & Alerts (CA)</strong>, implementando comandos, queries y agregados base para alertas de desviación.</td>
+    </tr>
+    <tr>
+      <td>3.1.1</td>
+      <td>09/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Refinamiento de Historias de Usuario (User Stories) en Jira y corrección técnica del diagrama físico de base de datos relacional (tracking-database-diagram.puml).</td>
+    </tr>
+    <tr>
+      <td>3.2.0</td>
+      <td>09/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Ajuste e integración de recursos REST en el backend para el módulo <strong>Laboratory</strong>, corrigiendo endpoints de staff, productos y stock de materias primas.</td>
+    </tr>
+    <tr>
+      <td>3.3.0</td>
+      <td>10/06/2026</td>
+      <td>Castillo Yataco, Mauricio Sebastián</td>
+      <td>Corrección técnica de controladores y consultas JPA en el bounded context <strong>Batch</strong> para la gestión relacional de liberación y rechazo de lotes.</td>
+    </tr>
+    <tr>
+      <td>3.4.0</td>
+      <td>12/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Implementación del módulo backend para <strong>Reporting & Audit (RA)</strong>, estructurando las entidades de persistencia inmutable para auditoría exigidas por la normativa BPM.</td>
+    </tr>
+    <tr>
+      <td>3.5.0</td>
+      <td>13/06/2026</td>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Desarrollo del bounded context <strong>Tracking & Telemetry</strong> en el backend, añadiendo los comandos y controladores REST para captura de telemetría IoT.</td>
+    </tr>
+    <tr>
+      <td>3.5.1</td>
+      <td>13/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Integración de eventos (integration events) intercontexto en la capa técnica para habilitar la comunicación asíncrona desacoplada entre módulos backend.</td>
+    </tr>
+    <tr>
+      <td>3.6.0</td>
+      <td>13/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Implementación del módulo <strong>Subscription & Billing</strong>, integrando Stripe Checkout, valor de objetos de pago, webhooks y securización de endpoints del sistema.</td>
+    </tr>
+    <tr>
+      <td>3.7.0</td>
+      <td>13/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Desarrollo del módulo <strong>IAM Backend</strong> para autenticación, configurando filtros HTTP con tokens JWT, cifrado BCrypt y reglas globales de Spring Security.</td>
+    </tr>
+    <tr>
+      <td>3.7.1</td>
+      <td>14/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Acondicionamiento del dashboard de KPIs en el backend y workflows automatizados para el cálculo dinámico de tendencias de desviación (deviation trends).</td>
+    </tr>
+    <tr>
+      <td>3.7.2</td>
+      <td>14/06/2026</td>
+      <td>Castillo Yataco, Mauricio Sebastián</td>
+      <td>Hotfix en el controlador de lotes (BatchController) para subsanar el flujo técnico de procesamiento y descuento físico de insumos/materias primas.</td>
+    </tr>
+    <tr>
+      <td>3.7.3</td>
+      <td>14/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Corrección en el controlador de telemetría (telemetry controller) para estabilizar el manejo de anomalías técnicas reportadas hacia Compliance.</td>
+    </tr>
+    <tr>
+      <td>3.8.0</td>
+      <td>16/06/2026</td>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Configuración del archivo de despliegue Dockerfile de producción y redirección de las propiedades de entorno globales (environment.ts) de Angular hacia Render.</td>
+    </tr>
+    <tr>
+      <td>3.8.1</td>
+      <td>17/06/2026</td>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Estructuración y ordenamiento de los contenidos prácticos y empaquetado del repositorio complementario <strong>Java Fundamentals Course</strong> (Starter a Completed).</td>
+    </tr>
+    <tr>
+      <td>3.9.0</td>
+      <td>19/06/2026</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Consolidación final del reporte del hito AV2, actualización técnica de diagramas de arquitectura C4, Swagger/OpenAPI y verificación de sincronización cloud en vivo.</td>
+    </tr>
+  </tbody>
+</table>
   </tbody>
 </table>
 
@@ -481,6 +583,56 @@ de los distintos bounded contexts (*features*) hacia la rama de desarrollo duran
 
 ---
 
+### Reporte de colaboración de la entrega del AV2
+
+Durante la tercera fase del proyecto (Sprint 3 – AV2), el equipo ClosedSource centró sus esfuerzos en consolidar una versión integrada y desplegada de QualiTrack. A diferencia del Sprint 2, donde el trabajo se enfocó principalmente en la construcción de la Frontend Web Application con consumo de datos simulados, en esta entrega se priorizó la implementación del Backend con Spring Boot, la conexión real entre frontend y backend, la autenticación segura mediante JWT, la persistencia en base de datos, la integración de pagos con Stripe y el despliegue cloud de los principales servicios del sistema.
+
+El trabajo colaborativo del equipo permitió cerrar la brecha entre la interfaz web desarrollada previamente y los servicios REST necesarios para soportar flujos reales de negocio. Para ello, se organizaron responsabilidades por *bounded contexts*, se realizaron correcciones de integración, se documentaron los endpoints mediante Swagger/OpenAPI y se validó el funcionamiento de QualiTrack en entornos desplegados como Firebase, Render, Railway y Stripe Test Environment.
+
+**Billy Jake Ruiz Madrid**
+
+Billy lideró gran parte de la integración técnica del Sprint 3. Participó en la planificación del sprint, refinamiento de User Stories, actualización del Product Backlog y corrección de diagramas técnicos. En el backend, trabajó en los bounded contexts de **Laboratory**, **Equipment**, **Reporting & Audit (RA)**, **Subscription & Billing** e **IAM**. Implementó autenticación y autorización con JWT, cifrado BCrypt, reglas de seguridad con Spring Security, integración de eventos intercontexto, workflows de KPIs y tendencias de desviación. Además, contribuyó con la documentación Swagger/OpenAPI, actualización de diagramas de arquitectura y consolidación final del reporte del hito AV2.
+
+**Marcelo Martín Angulo Ramírez**
+
+Marcelo participó principalmente en el desarrollo backend del bounded context de **Compliance & Alerts (CA)**. Su trabajo estuvo orientado a la implementación de comandos, queries, agregados base, servicios, persistencia y recursos REST relacionados con alertas de desviación, eventos de cumplimiento y preferencias de notificación. Asimismo, colaboró en la validación de la integración del módulo con los demás contextos del sistema, especialmente con Tracking & Telemetry y Reporting & Audit.
+
+**Edgard Daniel Diaz Caruzo**
+
+Daniel colaboró durante el Sprint 3 en la revisión técnica e integración de módulos relacionados con la experiencia web y los flujos funcionales del sistema. Su participación apoyó la validación de que los módulos previamente desarrollados en frontend mantuvieran coherencia con los endpoints reales del backend, especialmente en los flujos asociados a gestión de equipos, formularios, consumo de datos y navegación entre vistas. Además, contribuyó en la revisión de evidencias y consistencia del informe para la entrega AV2.
+
+**Marlon Packard Viza Quispe**
+
+Marlon colaboró en la validación funcional de los flujos relacionados con Compliance & Alerts, dashboards, alertas y comportamiento visual de la aplicación web integrada. Su aporte se centró en verificar que los flujos diseñados durante el Sprint 2 mantuvieran coherencia al conectarse con servicios reales del backend. Además, apoyó en la revisión de documentación, evidencias de ejecución y consistencia de los artefactos visuales incluidos en el reporte AV2.
+
+**Mauricio Sebastián Castillo Yataco**
+
+Mauricio se enfocó principalmente en el bounded context de **Batch Management**. Durante el Sprint 3 realizó correcciones técnicas en controladores, consultas JPA y flujos de gestión de lotes. También trabajó en el procesamiento de uso de materias primas, liberación y rechazo de lotes, asegurando que el módulo Batch funcionara correctamente con la persistencia relacional y la integración con Laboratory. Su aporte permitió estabilizar uno de los flujos principales de trazabilidad dentro de QualiTrack.
+
+**Felix Orlando Becerra Ttito**
+
+Felix tuvo un rol importante en el desarrollo del bounded context de **Tracking & Telemetry**. Implementó comandos, controladores REST y lógica asociada a la captura de telemetría IoT, mediciones, historial y estado de equipos. Además, participó en tareas relacionadas con la preparación del despliegue, configuración de entornos y conexión del frontend hacia el backend desplegado en Render. Su trabajo permitió validar el monitoreo de telemetría y la generación de información técnica para otros módulos como Compliance & Alerts.
+
+A continuación se presentan los gráficos de colaboración que representan la cantidad
+de commits realizados por cada miembro del equipo en el repositorio backend durante esta fase.
+
+<div align="center">
+  <img src="./assets/img/Readme/commits-av2-backend.jpeg" alt="Commits AV2 - Backend" width="90%">
+  <p><em>Figura: Contribuciones por miembro del equipo ClosedSource durante el AV2.</em></p>
+</div>
+
+**Ramificación del proyecto usando GitFlow:**
+
+El siguiente gráfico muestra la ramificación del repositorio backend y la integración 
+de los distintos bounded contexts hacia la rama principal durante la fase AV2.
+
+<div align="center">
+  <img src="./assets/img/Readme/network-av2.jpeg" alt="Network Graph AV2" width="90%">
+  <p><em>Figura: Network Graph del repositorio qualitrack-platform durante el AV2.</em></p>
+</div>
+
+---
+
 ## Tabla de contenido
 
 - [Capítulo I: Introducción](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#capítulo-i-introducción)
@@ -584,9 +736,9 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **Criterio:** Capacidad de comunicarse efectivamente con un rango de audiencias.
 
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones
+En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones
 por parte del grupo, que permiten sustentar el haber alcanzado el logro del
-ABET - EAC - Student Outcome 3.
+ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
 
 <table border="1" cellpadding="5" cellspacing="0" width="100%">
   <thead>
@@ -603,24 +755,33 @@ ABET - EAC - Student Outcome 3.
         <strong>Ruiz Madrid, Billy Jake:</strong><br><br>
         <strong>AV1:</strong> Presentó los avances del Capítulo I y Capítulo III en reuniones de equipo, explicando los segmentos objetivo, el Product Backlog y el Impact Mapping, facilitando la comprensión de las decisiones de priorización y del enfoque del producto.<br><br>
         <strong>TB1:</strong> Expuso ante el equipo la arquitectura base del frontend en Angular, detallando la configuración de entornos, enrutamiento principal y la estructura de los bounded contexts de Shared e IAM para alinear el desarrollo técnico.<br><br>
+        <strong>AV2:</strong> Explicó al equipo la integración general de QualiTrack, detallando la conexión entre Angular y Spring Boot, el funcionamiento de JWT, los módulos IAM, Reporting & Audit, Subscription & Billing, Laboratory y Equipment, así como el despliegue en Firebase, Render y Railway.<br><br>
         <strong>Angulo Ramírez, Marcelo Martín:</strong><br><br>
         <strong>AV1:</strong> Expuso el Lean UX Canvas y los lineamientos de arquitectura del sistema, adaptando el nivel técnico de la explicación según la audiencia para asegurar la comprensión del enfoque de diseño y la estructura general de la solución.<br><br>
         <strong>TB1:</strong> Comunicó en las reuniones de sincronización los detalles de integración del bounded context de Laboratory con las APIs del backend, explicando el flujo de datos de las entidades farmacéuticas.<br><br>
+        <strong>AV2:</strong> Presentó los avances del bounded context de Compliance & Alerts, explicando cómo las alertas, eventos de cumplimiento y preferencias de notificación se relacionan con los demás módulos del sistema.<br><br>
         <strong>Diaz Caruzo, Edgard Daniel:</strong><br><br>
         <strong>AV1:</strong> Comunicó los resultados de las entrevistas y la estructura del proceso de recolección de información, explicando los hallazgos obtenidos y su impacto en la definición de necesidades del sistema.<br><br>
         <strong>TB1:</strong> Presentó la estrategia de manejo de estado basada en señales (signal-based stores) aplicada al bounded context de Equipment, facilitando al equipo la adopción de este patrón en otros módulos.<br><br>
+        <strong>AV2:</strong> Participó en la comunicación de observaciones funcionales sobre la integración del frontend con los endpoints reales del backend, especialmente en flujos relacionados con Equipment, formularios y navegación de la aplicación web.<br><br>
         <strong>Viza Quispe, Marlon Packard:</strong><br><br>
         <strong>AV1:</strong> Presentó los artefactos de análisis de usuario como User Journey Mapping, Empathy Mapping y flujos de navegación, facilitando la comprensión del comportamiento del usuario dentro del sistema.<br><br>
         <strong>TB1:</strong> Explicó el diseño y funcionamiento de los tableros de control y flujos de notificación del bounded context de Compliance & Alerts (CA), asegurando que el equipo entendiera las prioridades visuales de las alertas.<br><br>
+        <strong>AV2:</strong> Comunicó observaciones sobre la validación de flujos de alertas, dashboards y comportamiento visual de la aplicación integrada, contribuyendo a que el equipo verificara la coherencia entre la interfaz y los servicios backend.<br><br>
         <strong>Castillo Yataco, Mauricio Sebastián:</strong><br><br>
         <strong>AV1:</strong> Expuso el desarrollo de entrevistas y el análisis de resultados, explicando la relación entre los hallazgos obtenidos y la definición de funcionalidades del sistema.<br><br>
-        <strong>TB1:</strong> Comunicó la implementación de las técnicas de optimización (como lazy loading) y la estructuración de componentes para el bounded context de Batch, promoviendo buenas prácticas de rendimiento en el equipo.
+        <strong>TB1:</strong> Comunicó la implementación de las técnicas de optimización, como lazy loading, y la estructuración de componentes para el bounded context de Batch, promoviendo buenas prácticas de rendimiento en el equipo.<br><br>
+        <strong>AV2:</strong> Explicó las correcciones realizadas en el bounded context de Batch, incluyendo consultas JPA, controladores, uso de materias primas, liberación y rechazo de lotes, facilitando la comprensión del flujo de trazabilidad.<br><br>
+        <strong>Becerra Ttito, Felix Orlando:</strong><br><br>
+        <strong>AV2:</strong> Presentó los avances del bounded context de Tracking & Telemetry, explicando la captura de telemetría, mediciones, historial, estado de equipos y su relación con la detección de anomalías dentro del sistema QualiTrack.
       </td>
       <td>
         <strong>Conclusión AV1:</strong><br>
         La comunicación oral permitió al equipo compartir avances de manera clara y estructurada, facilitando la comprensión del problema, los usuarios y la solución propuesta. Las exposiciones durante el sprint ayudaron a alinear decisiones y mantener una visión común del proyecto.<br><br>
         <strong>Conclusión TB1:</strong><br>
-        La comunicación oral fue fundamental para sincronizar el desarrollo técnico del frontend. Las discusiones técnicas y exposiciones sobre patrones de diseño, consumo de APIs y arquitectura de Angular garantizaron que todos los miembros desarrollaran sus módulos bajo los mismos estándares, reduciendo conflictos de integración.
+        La comunicación oral fue fundamental para sincronizar el desarrollo técnico del frontend. Las discusiones técnicas y exposiciones sobre patrones de diseño, consumo de APIs y arquitectura de Angular garantizaron que todos los miembros desarrollaran sus módulos bajo los mismos estándares, reduciendo conflictos de integración.<br><br>
+        <strong>Conclusión AV2:</strong><br>
+        La comunicación oral permitió coordinar la integración completa entre frontend, backend, base de datos y servicios externos. Las explicaciones técnicas sobre JWT, bounded contexts, despliegue cloud, Swagger y Stripe facilitaron que el equipo comprendiera el funcionamiento integral de QualiTrack y pudiera presentar una solución funcional ante diferentes audiencias.
       </td>
     </tr>
     <tr>
@@ -628,25 +789,34 @@ ABET - EAC - Student Outcome 3.
       <td>
         <strong>Ruiz Madrid, Billy Jake:</strong><br><br>
         <strong>AV1:</strong> Redactó secciones del Capítulo I, Capítulo III y Capítulo IV, incluyendo Product Backlog, Impact Mapping y diagramas de arquitectura, utilizando un lenguaje técnico claro que permitió la comprensión tanto a nivel académico como técnico.<br><br>
-        <strong>TB1:</strong> Documentó los diagramas de arquitectura frontend, redactó la configuración base del código (clases abstractas, interfaces) y actualizó los archivos de internacionalización (i18n) para asegurar traducciones claras en inglés y español para el usuario final.<br><br>
+        <strong>TB1:</strong> Documentó los diagramas de arquitectura frontend, redactó la configuración base del código, como clases abstractas e interfaces, y actualizó los archivos de internacionalización (i18n) para asegurar traducciones claras en inglés y español para el usuario final.<br><br>
+        <strong>AV2:</strong> Redactó y consolidó documentación técnica del Sprint 3, incluyendo evidencias de desarrollo, despliegue, Swagger/OpenAPI, diagramas de arquitectura, integración de backend, IAM, suscripciones, pagos y persistencia en base de datos.<br><br>
         <strong>Angulo Ramírez, Marcelo Martín:</strong><br><br>
         <strong>AV1:</strong> Documentó el Lean UX Canvas y aportó en la organización y mejora del contenido del informe, manteniendo coherencia en la estructura y claridad en la redacción.<br><br>
-        <strong>TB1:</strong> Redactó de manera estructurada los servicios API, responses, requests y transformadores de datos (assemblers) del bounded context de Laboratory, asegurando un código limpio y autodescriptivo.<br><br>
+        <strong>TB1:</strong> Redactó de manera estructurada los servicios API, responses, requests y transformadores de datos del bounded context de Laboratory, asegurando un código limpio y autodescriptivo.<br><br>
+        <strong>AV2:</strong> Redactó estructuras técnicas asociadas al bounded context de Compliance & Alerts, incluyendo comandos, queries, recursos REST y componentes de persistencia, manteniendo una nomenclatura clara y consistente con la arquitectura del backend.<br><br>
         <strong>Diaz Caruzo, Edgard Daniel:</strong><br><br>
         <strong>AV1:</strong> Redactó el diseño, registro y evidencias de entrevistas en el Capítulo II, organizando la información de manera clara y comprensible para su análisis posterior.<br><br>
         <strong>TB1:</strong> Documentó la configuración de enrutamiento y redactó las interfaces de las entidades de mantenimiento para el bounded context de Equipment, facilitando la mantenibilidad del código.<br><br>
+        <strong>AV2:</strong> Apoyó en la revisión escrita de evidencias funcionales y documentación de integración, verificando que la información del informe mantuviera coherencia con los flujos reales implementados en la aplicación.<br><br>
         <strong>Viza Quispe, Marlon Packard:</strong><br><br>
-        <strong>AV1:</strong> Elaboró la documentación de artefactos de análisis de usuario y diseño (User Journey, Empathy Mapping, wireframes y mockups), asegurando consistencia en el uso de términos y claridad en la representación de flujos.<br><br>
-        <strong>TB1:</strong> Redactó la documentación detallada del CaStore (store de alertas) en el código, explicando los métodos adicionales para eventos de cumplimiento, lo que facilitó la comprensión del flujo de datos por parte de otros desarrolladores.<br><br>
+        <strong>AV1:</strong> Elaboró la documentación de artefactos de análisis de usuario y diseño, como User Journey, Empathy Mapping, wireframes y mockups, asegurando consistencia en el uso de términos y claridad en la representación de flujos.<br><br>
+        <strong>TB1:</strong> Redactó la documentación detallada del CaStore en el código, explicando los métodos adicionales para eventos de cumplimiento, lo que facilitó la comprensión del flujo de datos por parte de otros desarrolladores.<br><br>
+        <strong>AV2:</strong> Colaboró en la revisión escrita de evidencias relacionadas con alertas, dashboards y validación visual de la aplicación integrada, asegurando que la documentación fuera comprensible para usuarios técnicos y no técnicos.<br><br>
         <strong>Castillo Yataco, Mauricio Sebastián:</strong><br><br>
         <strong>AV1:</strong> Documentó entrevistas, análisis de resultados y parte del Capítulo V, organizando la información de forma estructurada y alineada con los requerimientos del informe.<br><br>
-        <strong>TB1:</strong> Redactó los commits del repositorio utilizando convenciones estándar (chore, feat, fix) e implementó el código de las vistas de gestión de lotes (Batch), manteniendo una nomenclatura de variables y métodos clara y coherente.
+        <strong>TB1:</strong> Redactó los commits del repositorio utilizando convenciones estándar, como chore, feat y fix, e implementó el código de las vistas de gestión de lotes, manteniendo una nomenclatura de variables y métodos clara y coherente.<br><br>
+        <strong>AV2:</strong> Redactó e implementó correcciones técnicas en controladores, consultas y flujos del bounded context de Batch, dejando evidencia clara en commits y en el código sobre los ajustes realizados para el procesamiento de materias primas y trazabilidad de lotes.<br><br>
+        <strong>Becerra Ttito, Felix Orlando:</strong><br><br>
+        <strong>AV2:</strong> Redactó e implementó componentes técnicos del bounded context de Tracking & Telemetry, incluyendo comandos, controladores REST y estructuras relacionadas con mediciones, historial y estado de equipos. Además, colaboró en la configuración de despliegue y variables de entorno para conectar la aplicación con el backend desplegado.
       </td>
       <td>
         <strong>Conclusión AV1:</strong><br>
         La comunicación escrita permitió estructurar y documentar de manera clara los avances del proyecto, facilitando la comprensión de los artefactos desarrollados por parte del equipo y del evaluador. La consistencia en la redacción contribuyó a mantener coherencia entre los capítulos y asegurar la trazabilidad del trabajo realizado.<br><br>
         <strong>Conclusión TB1:</strong><br>
-        La comunicación escrita, enfocada en la creación de diagramas de arquitectura, convenciones de commits y redacción de código limpio (Clean Code) y autodescriptivo, permitió que el equipo colaborara de manera asíncrona sobre el repositorio frontend, asegurando que cualquier integrante pudiera entender y extender el trabajo de sus compañeros.
+        La comunicación escrita, enfocada en la creación de diagramas de arquitectura, convenciones de commits y redacción de código limpio y autodescriptivo, permitió que el equipo colaborara de manera asíncrona sobre el repositorio frontend, asegurando que cualquier integrante pudiera entender y extender el trabajo de sus compañeros.<br><br>
+        <strong>Conclusión AV2:</strong><br>
+        La comunicación escrita permitió documentar de forma clara la integración técnica de QualiTrack, incluyendo backend, frontend, base de datos, autenticación, pagos, despliegue y documentación de servicios. La redacción estructurada de commits, diagramas, endpoints y evidencias facilitó la trazabilidad del trabajo y permitió sustentar adecuadamente la entrega del AV2.
       </td>
     </tr>
   </tbody>
