@@ -939,7 +939,7 @@ La navegación sea intuitiva para usuarios con distintos niveles tecnológicos, 
 
 <img src="../assets/img/prototypy.png" alt="ContextDiagram-Diagram" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-https://shorturl.at/kcHKY
+https://shorturl.at/R9XI0
 
 ## 4.6. Domain-Driven Software Architecture
 
