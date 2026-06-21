@@ -2566,13 +2566,20 @@ en Stripe.
 Durante el Sprint 3, se habilitó la documentación de servicios REST mediante Swagger/OpenAPI
 en el backend desplegado en Render. Esta documentación permite visualizar los endpoints
 implementados por Bounded Context, probar solicitudes HTTP, revisar modelos de request/response
-y validar la integración con autenticación JWT.
+y validar la integración con autenticación JWT, suscripciones y eventos de Stripe.
 </p>
 
 <p>
   <strong>Swagger UI:</strong>
   <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
     https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>OpenAPI JSON:</strong>
+  <a href="https://qualitrack-platform.onrender.com/v3/api-docs">
+    https://qualitrack-platform.onrender.com/v3/api-docs
   </a>
 </p>
 
@@ -2587,56 +2594,181 @@ y validar la integración con autenticación JWT.
   <tbody>
     <tr>
       <td>Authentication</td>
-      <td><code>POST /api/v1/authentication/sign-up</code><br><code>POST /api/v1/authentication/sign-in</code></td>
-      <td>Registro, inicio de sesión y generación de token JWT.</td>
+      <td>
+        <code>POST /api/v1/authentication/sign-up</code><br>
+        <code>POST /api/v1/authentication/sign-in</code>
+      </td>
+      <td>Registro de usuarios, inicio de sesión y generación de token JWT.</td>
     </tr>
-    <tr>
-      <td>Users & Roles</td>
-      <td><code>GET /api/v1/users</code><br><code>GET /api/v1/users/{userId}</code><br><code>PATCH /api/v1/users/{userId}/roles/{roleName}</code><br><code>PATCH /api/v1/users/{userId}/deactivate</code><br><code>GET /api/v1/roles</code></td>
-      <td>Administración de usuarios, roles y ciclo de vida de cuentas.</td>
-    </tr>
-    <tr>
-      <td>Laboratories</td>
-      <td><code>GET /api/v1/laboratories/{laboratoryId}</code><br><code>PUT /api/v1/laboratories/{laboratoryId}</code><br><code>POST /api/v1/laboratories</code><br><code>GET/POST /api/v1/laboratories/{laboratoryId}/staff</code><br><code>GET/POST /api/v1/laboratories/{laboratoryId}/products</code><br><code>GET/POST /api/v1/laboratories/{laboratoryId}/raw-materials</code></td>
-      <td>Gestión de laboratorio, personal, productos y materias primas.</td>
-    </tr>
-    <tr>
-      <td>Equipment</td>
-      <td><code>GET/POST /api/v1/equipments</code><br><code>GET /api/v1/equipments/{equipmentId}</code><br><code>GET/POST /api/v1/equipments/{equipmentId}/maintenance-records</code><br><code>GET/POST /api/v1/equipments/{equipmentId}/bpm-configs</code></td>
-      <td>Gestión de equipos, mantenimiento y configuración BPM.</td>
-    </tr>
-    <tr>
-      <td>Batches</td>
-      <td><code>GET/POST /api/v1/batches</code><br><code>GET /api/v1/batches/{batchId}</code><br><code>GET/POST /api/v1/batches/{batchId}/raw-materials</code><br><code>PATCH /api/v1/batches/{batchId}/release</code><br><code>PATCH /api/v1/batches/{batchId}/reject</code></td>
-      <td>Trazabilidad de lotes, materias primas, liberación y rechazo.</td>
-    </tr>
-    <tr>
-      <td>Compliance & Alerts</td>
-      <td><code>GET/POST /api/v1/alerts</code><br><code>GET /api/v1/alerts/{alertId}</code><br><code>PATCH /api/v1/alerts/{alertId}/acknowledge</code><br><code>PATCH /api/v1/alerts/{alertId}/resolve</code><br><code>GET/PUT /api/v1/notification-preferences/{userId}</code><br><code>GET /api/v1/compliance-events</code></td>
-      <td>Gestión de alertas de desviación, eventos de cumplimiento y preferencias.</td>
-    </tr>
-    <tr>
-      <td>Reporting & Audit</td>
-      <td><code>GET/POST /api/v1/audit-log</code><br><code>GET/POST /api/v1/reports</code><br><code>POST /api/v1/reports/batches</code><br><code>POST /api/v1/reports/compliance</code><br><code>POST /api/v1/reports/equipment-logs</code><br><code>GET/POST /api/v1/kpis</code><br><code>GET/POST /api/v1/deviation-trends</code></td>
-      <td>Auditoría, reportes, KPIs y análisis de tendencias de desviación.</td>
-    </tr>
-    <tr>
-      <td>Tracking</td>
-      <td><code>PUT /api/v1/telemetry/status</code><br><code>GET /api/v1/telemetry/status/{equipmentId}</code><br><code>GET/POST /api/v1/telemetry/measurements</code><br><code>GET/POST /api/v1/telemetry/history</code></td>
-      <td>Monitoreo de telemetría, mediciones, historial y anomalías.</td>
-    </tr>
-    <tr>
-      <td>Subscriptions</td>
-      <td><code>GET /api/v1/subscriptions/plans</code><br><code>POST /api/v1/subscriptions/checkout-sessions</code><br><code>GET /api/v1/subscriptions/laboratories/{laboratoryId}/active</code><br><code>GET /api/v1/subscriptions/laboratories/{laboratoryId}/billing-summary</code><br><code>GET /api/v1/subscriptions/{subscriptionId}/payments</code><br><code>PATCH /api/v1/subscriptions/{subscriptionId}/cancel</code></td>
-      <td>Planes, suscripciones, historial de pagos, checkout y cancelación.</td>
-    </tr>
-    <tr>
-      <td>Stripe Webhooks</td>
-      <td><code>POST /api/v1/subscriptions/stripe/webhook</code></td>
-      <td>Sincronización de eventos de Stripe con suscripciones y pagos.</td>
-    </tr>
+<tr>
+  <td>Users</td>
+  <td>
+    <code>GET /api/v1/users</code><br>
+    <code>GET /api/v1/users/{userId}</code><br>
+    <code>PATCH /api/v1/users/{userId}</code><br>
+    <code>PUT /api/v1/users/{userId}/roles/{roleName}</code><br>
+    <code>GET /api/v1/users/{userId}/notification-preferences</code><br>
+    <code>PUT /api/v1/users/{userId}/notification-preferences</code>
+  </td>
+  <td>Administración de usuarios, asignación de roles, estado de cuentas y preferencias de notificación.</td>
+</tr>
+
+<tr>
+  <td>Roles</td>
+  <td>
+    <code>GET /api/v1/roles</code>
+  </td>
+  <td>Consulta de roles disponibles para la gestión de acceso dentro de la plataforma.</td>
+</tr>
+
+<tr>
+  <td>Laboratories</td>
+  <td>
+    <code>POST /api/v1/laboratories</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}</code><br>
+    <code>PUT /api/v1/laboratories/{laboratoryId}</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/staff</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/staff</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/products</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/products</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/raw-materials</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/raw-materials</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/batches</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/reports</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/subscriptions</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/billing-summary</code>
+  </td>
+  <td>Gestión del perfil de laboratorio, personal, productos, materias primas, lotes, reportes, suscripciones y resumen de facturación.</td>
+</tr>
+
+<tr>
+  <td>Equipment</td>
+  <td>
+    <code>GET /api/v1/equipments</code><br>
+    <code>POST /api/v1/equipments</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/telemetry-status</code><br>
+    <code>PUT /api/v1/equipments/{equipmentId}/telemetry-status</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/telemetry-measurements</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/telemetry-measurements</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/telemetry-history</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/telemetry-history</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/maintenance-records</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/maintenance-records</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/bpm-configs</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/bpm-configs</code>
+  </td>
+  <td>Gestión de equipos, telemetría, mediciones, historial, mantenimiento y configuración BPM.</td>
+</tr>
+
+<tr>
+  <td>Equipment Compliance, Audit & Reports</td>
+  <td>
+    <code>GET /api/v1/equipments/{equipmentId}/audit-logs</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/audit-logs</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/reports</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/log-reports</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/compliance-events</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/deviation-trends</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/deviation-trends</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/deviation-alerts</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/deviation-alerts</code>
+  </td>
+  <td>Auditoría de equipos, reportes, eventos de cumplimiento, tendencias de desviación y alertas operativas.</td>
+</tr>
+
+<tr>
+  <td>Staff</td>
+  <td>
+    <code>PATCH /api/v1/staff/{staffId}</code>
+  </td>
+  <td>Actualización del estado de miembros del personal del laboratorio.</td>
+</tr>
+
+<tr>
+  <td>Raw Materials</td>
+  <td>
+    <code>GET /api/v1/raw-materials/{rawMaterialId}/compliance-events</code>
+  </td>
+  <td>Consulta de eventos de cumplimiento asociados a materias primas.</td>
+</tr>
+
+<tr>
+  <td>Batches</td>
+  <td>
+    <code>GET /api/v1/batches</code><br>
+    <code>POST /api/v1/batches</code><br>
+    <code>GET /api/v1/batches/{batchId}</code><br>
+    <code>PATCH /api/v1/batches/{batchId}</code><br>
+    <code>GET /api/v1/batches/{batchId}/raw-materials</code><br>
+    <code>POST /api/v1/batches/{batchId}/raw-materials</code><br>
+    <code>GET /api/v1/batches/{batchId}/audit-logs</code><br>
+    <code>POST /api/v1/batches/{batchId}/audit-logs</code><br>
+    <code>GET /api/v1/batches/{batchId}/reports</code><br>
+    <code>POST /api/v1/batches/{batchId}/reports</code><br>
+    <code>GET /api/v1/batches/{batchId}/deviation-alerts</code><br>
+    <code>GET /api/v1/batches/{batchId}/compliance-events</code>
+  </td>
+  <td>Trazabilidad de lotes, actualización de estado, materias primas utilizadas, auditoría, reportes, alertas y eventos de cumplimiento.</td>
+</tr>
+
+<tr>
+  <td>Reports & KPIs</td>
+  <td>
+    <code>GET /api/v1/reports/{reportId}</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/kpi-dashboards</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/kpi-dashboards</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/compliance-reports</code>
+  </td>
+  <td>Consulta de reportes de auditoría, generación de reportes de cumplimiento y snapshots de KPIs del laboratorio.</td>
+</tr>
+
+<tr>
+  <td>Deviation Alerts</td>
+  <td>
+    <code>GET /api/v1/deviation-alerts/{alertId}</code><br>
+    <code>PATCH /api/v1/deviation-alerts/{alertId}</code>
+  </td>
+  <td>Consulta y actualización del estado de alertas de desviación.</td>
+</tr>
+
+<tr>
+  <td>Subscription Plans</td>
+  <td>
+    <code>GET /api/v1/subscription-plans</code>
+  </td>
+  <td>Consulta de planes de suscripción disponibles para los laboratorios.</td>
+</tr>
+
+<tr>
+  <td>Subscriptions</td>
+  <td>
+    <code>GET /api/v1/laboratories/{laboratoryId}/subscriptions</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/billing-summary</code><br>
+    <code>PATCH /api/v1/subscriptions/{subscriptionId}</code><br>
+    <code>GET /api/v1/subscriptions/{subscriptionId}/payments</code>
+  </td>
+  <td>Consulta de suscripciones por laboratorio, resumen de facturación, actualización de estado y consulta de historial de pagos.</td>
+</tr>
+
+<tr>
+  <td>Subscription Checkout Sessions</td>
+  <td>
+    <code>POST /api/v1/subscription-checkout-sessions</code>
+  </td>
+  <td>Creación de sesiones de Stripe Checkout para iniciar el proceso de pago de una suscripción.</td>
+</tr>
+
+<tr>
+  <td>Stripe Webhooks</td>
+  <td>
+    <code>POST /api/v1/stripe/webhooks</code>
+  </td>
+  <td>Recepción y procesamiento de eventos enviados por Stripe para sincronizar pagos y suscripciones.</td>
+</tr>
   </tbody>
 </table>
+
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
