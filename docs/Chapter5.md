@@ -3490,11 +3490,123 @@ La evaluación heurística permitió identificar oportunidades de mejora en la e
 Sin embargo, para fortalecer la usabilidad en un entorno regulado, se recomienda priorizar la corrección de etiquetas de traducción, mensajes de error amigables, confirmaciones para acciones críticas, indicadores de carga más claros y guías contextuales en formularios técnicos. Estas mejoras contribuirán a que QA Managers, Supervisores de Calidad y Lab Operators puedan usar la plataforma con mayor confianza, reduciendo errores operativos y facilitando la adopción de QualiTrack como solución SaaS para la gestión de calidad farmacéutica.
 </p>
 
-<!--
-
 ## 5.4. Video About-the-Product
 
-comentario -->
+<p>
+  El video <strong>"About the Product"</strong> presenta de manera clara y atractiva la propuesta de valor de
+  <strong>QualiTrack</strong>, explicando los principales problemas que enfrentan los laboratorios farmacéuticos
+  en la gestión de calidad, cumplimiento BPM, trazabilidad de lotes, monitoreo de equipos y control de suscripciones.
+  Asimismo, muestra cómo la solución permite digitalizar procesos críticos, centralizar información operativa,
+  automatizar alertas y fortalecer el cumplimiento regulatorio mediante una plataforma SaaS integrada.
+</p>
+
+<h4>Información General del Video</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Título del Video</strong></td>
+      <td>QualiTrack: Pharmaceutical Quality Management with IoT and BPM Compliance</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>	2 minutos 2 segundos</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Grabación</strong></td>
+      <td>19/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>URL YouTube</strong></td>
+      <td>
+        <a href="https://youtu.be/LpOAo21-778">
+          https://youtu.be/LpOAo21-778
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>
+        <a href="https://shorturl.at/FCgv3">
+          https://shorturl.at/FCgv3
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+
+<div align="center">
+  <img src="../assets/img/about-the-product-video.jpeg" alt="About the Product Video - QualiTrack" width="90%">
+  <p><em>Figura: Captura del video About the Product de QualiTrack.</em></p>
+</div>
+
+<h4>Contenido del Video</h4>
+
+<p>
+  El video está estructurado en las siguientes secciones:
+</p>
+
+<ol>
+  <li>
+    <strong>Introducción:</strong> Presentación de QualiTrack como una solución SaaS orientada a laboratorios
+    farmacéuticos que necesitan mejorar la trazabilidad, el control de calidad y el cumplimiento de buenas
+    prácticas de manufactura.
+  </li>
+  <li>
+    <strong>Problema identificado:</strong> Explicación de las dificultades comunes en laboratorios que aún
+    dependen de registros manuales, hojas de cálculo, reportes dispersos y controles reactivos para supervisar
+    lotes, equipos, materias primas y eventos de cumplimiento.
+  </li>
+  <li>
+    <strong>Propuesta de solución:</strong> Presentación de QualiTrack como una plataforma centralizada que
+    permite gestionar laboratorios, personal, equipos, lotes, alertas, reportes, telemetría y suscripciones
+    desde una misma aplicación web.
+  </li>
+  <li>
+    <strong>Funcionalidades principales:</strong> Demostración de las características clave de la solución:
+    <ul>
+      <li>Dashboard operativo con indicadores de salud general del laboratorio.</li>
+      <li>Gestión de equipos, estados de telemetría, mediciones e historial operativo.</li>
+      <li>Administración de lotes de producción y materias primas asociadas.</li>
+      <li>Registro y seguimiento de alertas de desviación y eventos de cumplimiento.</li>
+      <li>Generación de reportes, auditoría y KPIs para soporte de decisiones.</li>
+      <li>Gestión de planes de suscripción, checkout con Stripe e historial de pagos.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Beneficios para el usuario:</strong> Énfasis en los beneficios para QA Managers, Supervisores de
+    Calidad y Lab Operators, tales como reducción de errores manuales, mayor visibilidad operacional,
+    trazabilidad centralizada y mejor capacidad de respuesta ante desviaciones.
+  </li>
+  <li>
+    <strong>Llamada a la acción:</strong> Invitación a visitar el Landing Page de QualiTrack, conocer los planes
+    disponibles y acceder a la Web Application para explorar las funcionalidades del producto.
+  </li>
+</ol>
+
+<h4>Inscripción en Landing Page</h4>
+
+<p>
+  El video <strong>"About the Product"</strong> se encuentra disponible como material audiovisual de presentación
+  del producto QualiTrack. Este recurso permite que potenciales clientes comprendan la propuesta de valor antes
+  de registrarse, seleccionar un plan o solicitar mayor información sobre la plataforma.
+</p>
+
+<p>
+  <strong>URL del Landing Page donde está el video:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
+</p>
+
+<p>
+  <strong>URL de la Web Application:</strong>
+  <a href="https://closedsource-qualitrack.web.app">
+    https://closedsource-qualitrack.web.app
+  </a>
+</p>
 
 # Conclusiones
 
