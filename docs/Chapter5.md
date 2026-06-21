@@ -2793,6 +2793,290 @@ Se realizaron entrevistas con representantes de los dos segmentos objetivo del p
 
 ### 5.3.2. Registro de Entrevistas
 
+Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmentos objetivo. A continuación se presenta el registro detallado de las entrevistas realizadas, incluyendo información del entrevistado, capturas de video y análisis de respuestas.
+
+<h4>Entrevista 1 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Alberto Valle</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>68 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>Arequipa</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Gerente de Aseguramiento de Calidad</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>18/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:07 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>00:00 - 5:07</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-1.jpg" alt="Interview Segmento 1">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  El señor Alberto Valle comento que la presentación de información no era la más efectiva y considera que algunos elementos localizdos de la pagina no estan siendo aplicados correctamente.
+</p>
+
+<p>
+  El presenta experiencia previa en el area laboral de la fabricación y control de farmacos, por lo que el señalo varios aspectos vitales que da la oportunidad de mejorar el diseño tomandolo de referencia.
+</p>
+
+<p>
+  Calificó la aplicación como "en pcoreso" e indicó una urgencia en el sistmea de generación de lotes y la innecesidad de la extracción de datos relacionados a la materia prima empleada en el desarrollo del contro.
+</p>
+
+<hr>
+
+<h4>Entrevista 2 - Operador de Laboratorio (Segmento 2)</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Rocio Santo Alegre</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>49 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>Chorrillos, Lima</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Operadora de Laboratorio - Casa de Reposo</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>18/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:27 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>5:08 - 10:35</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-2.jpg" alt="Interview Administrator 2">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  Rocio indica que las dificultades más frecuentes es el tiempo en que uno tarda en procesar la información en varios documentos y pasando los datos clave al equipo de trabajo. Además, ella comenta de que el uso de maquinas que permitan registrar información de forma automatica presenta problemas de raíz en dependencia a la metodologia de trabajo del laboratorio.
+</p>
+
+<p>
+  La interfaz de CualiTrack le pareció clara y bien organizada. Sin embargo, señaló la necesidad de mejorar  el sistema de la automatización de los reportes y la falta de indicativos notorios que explican que hace cada oppción de la propuesta
+</p>
+
+<p>
+ Eya no señala un problema alguno importante,considerando que las observación son deenseñanza a los nuevos usuarios dentro de un laboratiro nuevo.
+</p>
+
+<hr>
+
+<h4>Entrevista 3 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Fred Palomino</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>41 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>Sam Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>QA Manager</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>18/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:10 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>10:36 - 15:46</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-3.jpg" alt="Interview Segmento 2">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  Fred Palomino menciona que el trabajo en equipo muchas veces es el factor que más influye en la dificultad en el aarea laboral deobido a que el apunto de los datos que regulan en la fabricación de farmacos es por periodos.
+</p>
+
+<p>
+  Con experiencia en la fabriación de farmacos, el menciona que seria bueno el asignar una clave exclusiva por usuario con el fin de protejer por completo el flujo de trabajo en caso de que en el equipo no se presente integrantes con base.
+</p>
+
+<p>
+  El menciona que, dejando de lado el tema de la seguridad, esta propuesta le interesa debido a que confirma sus capacidades de optimizar el tiempo de desarrollo.
+</p>
+
+<hr>
+
+<h4>Entrevista 4 - Operador de Laboratorio (Segmento 2))</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Risa Sotelo</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>53 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>San Isidro</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Operador de Laboratorio</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>17/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:13 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>15:47 - 20:60</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-4.jpg" alt="Interview Segmento 2">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  Sotelo es la que más defectos pudo detectar en el desarrollo de la startup QualiTrack debido a metodos de trabajos empleados por ella. Expresó que su preocupación principal es el temá de los lotes al ver que el proceso es más simplista y no de una perespectiva positiva.
+</p>
+
+<p>
+  La interfaz de QualiTrack, sibien menciona que el eorden lo bre agradable al mostrarle nuestra propuesta, el temá esta en el sistema de guardado para elementos que no presentan una prioridad en caso de detectar dificultades del control de calidad.
+</p>
+    Indico que la probabilidad de usar Qualitrack  no es la gran cosa considerando sus impresiones iniciales se relacionen con el servicio de automatización, indicando que la forma automatizada de Qualitrack no siempre ofrece un un buen serviciio acomodado al usuario.
+<p>
+  Indicó alta probabilidad de usar VEYRA y recomendó mejorar la documentación técnica y agregar opciones 
+  de exportación de datos en múltiples formatos.
+</p>
+
+<h4>Entrevista 5 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)- </h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Delci Castro</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>59 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>San Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>QA Manager</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>19/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:33 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>15:47 - 20:60</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-5.jpg" alt="Interview Segmento 1">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  La experiencia de Delcy Castro es notoria considerando que inclusve comentó que estaba de descanso temporalmente despues de haber cumplido con la labor del control. Ella menciona que el uso de herramientas que permitan recolectar los datos obtenidos de los sensores 
+</p>
+
+<p>
+  La interfaz de QualiTrack, si  menciona que el el orden lo agradable al mostrarle nuestra propuesta, el temá esta en el sistema de guardado para elementos que no presentan una prioridad en caso de detectar dificultades del control de calidad.
+</p>
+   
+<p>
+  Indicó alta probabilidad de usar CualiTrack y recomendó optimizar los recuross empleados en la formación de lotes. Además indica que la generación de reportes no parece tán completo para ser considerando como una buena opción
+</p>
+
 ### 5.3.3. Evaluaciones según heurísticas
 
 <!--
