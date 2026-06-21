@@ -3778,6 +3778,154 @@ comentario -->
   </li>
 </ul>
 
+## Video About-the-Team
+
+<p>
+  El video <strong>"About the Team"</strong> presenta al equipo de desarrollo de <strong>ClosedSource</strong>,
+  destacando las habilidades, roles y contribuciones de cada integrante en el proyecto <strong>QualiTrack</strong>.
+  Este video complementa la documentación del proyecto mostrando el lado humano detrás del desarrollo de la solución,
+  así como la participación del equipo en el diseño, implementación, integración, despliegue y validación de la plataforma.
+</p>
+
+<h4>Información General del Video</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Título del Video</strong></td>
+      <td>ClosedSource: Meet the Team Behind QualiTrack</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>10 minutos 9 segundos</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Grabación</strong></td>
+      <td>20/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>URL YouTube</strong></td>
+      <td>
+        <a href="https://youtu.be/bGTHeGe3x6U">
+          https://youtu.be/bGTHeGe3x6U
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>
+        <a href="https://shorturl.at/Yl5A8">
+          https://shorturl.at/Yl5A8
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+
+<div align="center">
+  <img src="../assets/img/about-the-team-video.jpeg" alt="QualiTrack About the Team Video" width="90%">
+  <p><em>Figura: Captura del video About the Team de QualiTrack.</em></p>
+</div>
+
+<h4>Contenido del Video</h4>
+
+<p>
+  El video incluye presentaciones individuales de los integrantes del equipo ClosedSource,
+  explicando su participación dentro del desarrollo de QualiTrack y las responsabilidades
+  asumidas durante los sprints del proyecto.
+</p>
+
+<ul>
+  <li>Nombre completo de cada integrante del equipo.</li>
+  <li>Rol principal dentro del proyecto QualiTrack.</li>
+  <li>Responsabilidades asumidas durante el desarrollo.</li>
+  <li>Tecnologías y herramientas utilizadas durante la implementación.</li>
+  <li>Contribuciones en frontend, backend, base de datos, despliegue, documentación y pruebas.</li>
+  <li>Aprendizajes obtenidos durante el desarrollo de una solución SaaS para laboratorios farmacéuticos.</li>
+  <li>Expectativas y oportunidades de mejora para futuras iteraciones del producto.</li>
+</ul>
+
+<h4>Miembros del Equipo</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nombre Completo</th>
+      <th>Rol Principal</th>
+      <th>Contribuciones Destacadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Implementación de funcionalidades frontend en Angular, integración con servicios REST,
+        configuración de despliegue en Firebase, soporte en backend Spring Boot, base de datos
+        MySQL en Railway e integración del flujo de suscripciones con Stripe.
+      </td>
+    </tr>
+    <tr>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Colaboración en el desarrollo e integración de funcionalidades del proyecto QualiTrack,
+        apoyo en la implementación de módulos de la Web Application, revisión de flujos funcionales
+        y participación en la validación de la solución durante el Sprint 3.
+      </td>
+    </tr>
+    <tr>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Desarrollo de módulos funcionales de la Web Application, apoyo en la implementación
+        de componentes Angular, validación de vistas y colaboración en la documentación del proyecto.
+      </td>
+    </tr>
+    <tr>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Implementación de funcionalidades asociadas a la gestión operativa del laboratorio,
+        apoyo en la estructuración de vistas, revisión de integración frontend-backend y pruebas funcionales.
+      </td>
+    </tr>
+    <tr>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Diseño y mejora de interfaces de usuario, aplicación de estilos visuales, apoyo en la
+        experiencia de usuario de la aplicación y colaboración en la validación de componentes.
+      </td>
+    </tr>
+    <tr>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Desarrollo de secciones de la aplicación web, soporte en integración de APIs,
+        revisión de flujos funcionales y colaboración en pruebas, documentación y despliegue.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Relación con el Proyecto</h4>
+
+<p>
+  El video <strong>"About the Team"</strong> evidencia la organización y colaboración del equipo ClosedSource
+  durante el desarrollo de QualiTrack. A través de las presentaciones individuales, se muestra cómo cada
+  integrante contribuyó a la construcción de una solución orientada a laboratorios farmacéuticos, integrando
+  tecnologías como Angular, Spring Boot, MySQL, Firebase Hosting, Render, Railway y Stripe.
+</p>
+
+<p>
+  Además, el video permite reforzar la trazabilidad del trabajo realizado durante los sprints, destacando
+  la participación del equipo en el desarrollo del Landing Page, la Web Application, los Web Services REST,
+  la documentación técnica, la validación funcional y el despliegue cloud de la solución.
+</p>
+
 <div style="page-break-after: always;"></div>
 
 # Anexos
