@@ -4005,8 +4005,9 @@ comentario -->
 
 <h4>Anexo B: Videos de Exposiciones</h4>
 <p>
-  Registro de las exposiciones realizadas hasta el hito AV1 correspondiente al Sprint 1.
+  Registro de las exposiciones realizadas hasta el hito AV2 correspondiente al Sprint 3.
 </p>
+
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -4019,11 +4020,19 @@ comentario -->
     <tr>
       <td rowspan="2"><strong>Video de Exposición AV1 (Sprint 1)</strong></td>
       <td>YouTube</td>
-      <td><a href="https://shorturl.at/6tJNG">[https://shorturl.at/6tJNG]</a></td>
+      <td>
+        <a href="https://shorturl.at/6tJNG">
+          [https://shorturl.at/6tJNG]
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="https://shorturl.at/VP26T">[https://shorturl.at/VP26T]</a></td>
+      <td>
+        <a href="https://shorturl.at/VP26T">
+          [https://shorturl.at/VP26T]
+        </a>
+      </td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Video de Exposición TB1 (Sprint 2)</strong></td>
@@ -4039,6 +4048,23 @@ comentario -->
       <td>
         <a href="https://shorturl.at/Vj4Vm">
           [https://shorturl.at/Vj4Vm]
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Video de Exposición AV2 (Sprint 3)</strong></td>
+      <td>YouTube</td>
+      <td>
+        <a href="https://shorturl.at/EXc7f">
+          [https://shorturl.at/EXc7f]
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td>
+        <a href="https://shorturl.at/hZEJ4">
+          [https://shorturl.at/hZEJ4]
         </a>
       </td>
     </tr>
