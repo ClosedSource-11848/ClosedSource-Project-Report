@@ -261,79 +261,224 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 
 ### 4.4.1. Web Applications Wireframes
 
-En esta sección se presentan los **wireframes diseñados para la aplicación web de ClosedSource(QualiTrack)**. Cada pantalla responde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA), Operario de planta y Auditor.
+En esta sección se presentan **los wireframes diseñados para la aplicación web de ClosedSource (QualiTrack)**. Cada pantalla responde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA) y Operario de planta.
+
+A continuación se muestran las representaciones esquemáticas de baja fidelidad que ilustran la estructura, disposición de elementos y flujos de navegación propuestos para cada módulo de la plataforma.
 
 **Portal de Inicio - ClosedSource** 
 
-Pantalla principal de presentación donde se ofrecen las opciones de ingreso y registro de nuevas plantas industriales.
+Pantalla de presentación inicial que comunica el valor de la plataforma y ofrece opciones de acceso para los diferentes roles de usuario.
 
-<img src="../assets/img/Login - ClosedSource.jpeg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_home.jpg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Crear Cuenta - ClosedSource**  
+**Registro de Usuario - ClosedSource**  
 
-Formulario para registrar laboratorios, solicitando datos del responsable y credenciales de acceso.
+Formulario de creación de cuenta que diferencia entre el registro de un Jefe de QA/Supervisor y un Operario de planta, cada uno con campos específicos.
 
-<img src="../assets/img/Registro – ClosedSource.jpeg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*QA/Supervisor:
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_iam_sign-up_qa-manager.jpg" alt="Registro de Usuario - Manager -ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ingreso al Sistema - ClosedSource** 
+*Operario de Planta:
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_iam_sign-up_lab-operator.jpg" alt="Registro de Usuario - Operador -ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Pantalla de autenticación para usuarios registrados con campos de correo y contraseña.
+**Inicio de Sesión - ClosedSource** 
 
-<img src="../assets/img/Inicio de Sesión – ClosedSource.jpeg" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Pantalla de autenticación para usuarios registrados con campos de usuario y contraseña.
 
-**Panel de Control - ClosedSource** 
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_iam_sign-in.jpg" alt="Inicio de Sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Vista general de la planta que muestra el progreso del lote activo y el estado de las unidades de producción.
+**Panel de Control General - ClosedSource**
 
-<img src="../assets/img/Ingreso-al-Sistema- ClosedSource.jpeg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Centro de comando operativo que muestra la salud general del sistema, el estado de lotes activos, alertas críticas, niveles de materias primas, telemetría en vivo y el estado de la suscripción.
 
-**Ejecución de Lote - ClosedSource** 
+<img src="../assets/img/wireframes/dashboard/closedsource-qualitrack.web.app_dashboard(1).jpg" alt="Panel de Control General - ClosedSource - Primera mitad" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Interfaz para registrar materias primas y verificar procesos con monitoreo de telemetría en vivo.
+<img src="../assets/img/wireframes/dashboard/closedsource-qualitrack.web.app_dashboard(2).jpg" alt="Panel de Control General - ClosedSource - Segunda mitad" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Ejecución-de-Lote-Activo – ClosedSource.jpeg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Listado de Lotes de Producción - ClosedSource**
 
-**Estado de Equipos - ClosedSource** 
+Vista de trazabilidad que permite buscar, filtrar y gestionar todos los lotes de producción, mostrando número de lote, producto, cantidad, estado y fecha de inicio.
 
-Pantalla de monitoreo técnico que detalla el funcionamiento de la maquinaria y sus sensores IoT.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-list.jpg" alt="Listado de Lotes de Producción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Estado-de-Equipamiento-IoT – ClosedSource.jpeg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Creación de Nuevo Lote - ClosedSource**
 
-**Centro de Alertas - ClosedSource** 
+Formulario para registrar un nuevo ciclo de fabricación, seleccionando producto farmacéutico, número de lote, cantidad y notas BPM opcionales.
 
-Módulo de respuesta ante emergencias que permite pausar procesos cuando se detectan desviaciones críticas.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-form.jpg" alt="Creación de Nuevo Lote - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Gestión-de-Alertas-e-Incidentes – ClosedSource.jpeg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Detalle de Lote - ClosedSource**
 
-**Resumen de Calidad - ClosedSource** 
+Vista detallada de un lote específico que incluye información general y una sección para registrar y consultar el historial de uso de materias primas.
 
-Panel consolidado con gráficos e indicadores de cumplimiento (KPIs) globales del laboratorio.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_Xg.jpg" alt="Detalle de Lote - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Dashboard-General – ClosedSource.jpeg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Registro de Uso de Materias Primas - ClosedSource**
 
-**Módulo de Cumplimiento - ClosedSource** 
+Interfaz para registrar el consumo de materiales en un lote, permitiendo seleccionar la materia prima, especificar la cantidad utilizada y visualizar el historial de uso.
 
-Sección dedicada a la validación de normativas y estándares de calidad para cada producto.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_Xr.jpg" alt="Registro de Uso de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Cumplimiento - Normativo – ClosedSource.jpeg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Catálogo de Equipos - ClosedSource**
 
-**Historial de Lotes - ClosedSource** 
+Listado completo de activos industriales del laboratorio, mostrando nombre, tipo, modelo, número de serie y estado operativo.
 
-Listado de trazabilidad que permite buscar y filtrar todos los lotes fabricados anteriormente.
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-list.jpg" alt="Catálogo de Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Ciclo-de-Vida-del-Lote – ClosedSource.jpeg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Registro de Nuevo Equipo - ClosedSource**
 
-**Análisis y Configuración de Equipos - ClosedSource**
+Formulario para incorporar nuevo equipamiento al catálogo, capturando nombre, tipo, modelo y número de serie.
 
-Panel técnico para el monitoreo de telemetría de equipos activos y la configuración detallada de umbrales y parámetros BPM
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_register-equipment.jpg" alt="Registro de Nuevo Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Análisis-y-Configuración-de-Equipos - ClosedSource.jpeg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+**Detalle de Equipo - ClosedSource**
 
-**Logs de Auditoría - ClosedSource**
+Vista técnica de un equipo específico organizada en pestañas: información general, configuración de parámetros BPM (umbrales de calidad) e historial de mantenimiento.
 
-Interfaz para exportar registros de eventos inmutables para inspecciones de DIGEMID.
+*General*:
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_Xg.jpg" alt="Detalle de Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Logs-de-Auditoría - ClosedSource .jpeg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*BPM*:
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_Xbpm.jpg" alt="Detalle de Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+*Mantenimiento*:
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_Xm.jpg" alt="Detalle de Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Configuración de Parámetros BPM - ClosedSource**
+
+Panel para definir rangos de tolerancia (valores mínimo y máximo) de los parámetros de calidad monitoreados por los sensores IoT.
+
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_bpm-config-form_X.jpg" alt="Configuración de Parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Actividad de Mantenimiento - ClosedSource**
+
+Formulario para documentar intervenciones técnicas en equipos, incluyendo técnico responsable, fecha, tipo y descripción de la actividad realizada.
+
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_maintenance-form_X.jpg" alt="Registro de Actividad de Mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de Alertas de Cumplimiento - ClosedSource**
+
+Módulo de monitoreo en tiempo real que visualiza desviaciones BPM a través de gráficos de telemetría, severidad y estado de resolución.
+
+<img src="../assets/img/wireframes/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-dashboard.jpg" alt="Panel de Alertas de Cumplimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Historial de Alertas - ClosedSource**
+
+Registro de auditoría de todas las desviaciones de calidad, permitiendo filtrar por fecha, equipo y parámetro, y mostrando severidad y estado.
+
+<img src="../assets/img/wireframes/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-history.jpg" alt="Historial de Alertas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Preferencias de Notificaciones - ClosedSource**
+
+Pantalla de configuración para definir los canales de comunicación (In-App, Email, SMS) y el umbral mínimo de severidad para recibir alertas.
+
+<img src="../assets/img/wireframes/compliance-alerts/closedsource-qualitrack.web.app_alerts_notification-settings.jpg" alt="Preferencias de Notificaciones - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de KPIs y Rendimiento - ClosedSource**
+
+Panel consolidado de indicadores clave de calidad, mostrando métricas como tasa de liberación de lotes, disponibilidad de equipos y puntaje de cumplimiento BPM.
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(1).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(2).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Análisis de Tendencias de Desviación - ClosedSource**
+
+Herramienta analítica que muestra lecturas de telemetría de un equipo específico con valores registrados, límites superior/inferior y estado de cumplimiento.
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_deviation-trends.jpg" alt="Análisis de Tendencias de Desviación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Generador de Reportes - ClosedSource**
+
+Interfaz para generar documentos de calidad, incluyendo reportes de lote, reportes de cumplimiento y exportación de logs de equipos en formato PDF o CSV.
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_report-generator.jpg" alt="Generador de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Auditoría del Sistema - ClosedSource**
+
+Log inmutable de todas las acciones del sistema, con capacidad de filtrado y búsqueda para inspecciones regulatorias (DIGEMID).
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_audit-log.jpg" alt="Registro de Auditoría del Sistema - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Perfil del Laboratorio - ClosedSource**
+
+Vista de la información institucional del laboratorio (nombre, RUC, dirección, contacto, regulaciones aplicables) con acceso a submódulos de gestión.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_lab-profile.jpg" alt="Perfil del Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Creación de Laboratorio - ClosedSource**
+
+Formulario para registrar un nuevo laboratorio en la plataforma, capturando sus datos legales, de contacto y normativas aplicables.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_lab-form.jpg" alt="Creación de Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Gestión de Personal - ClosedSource**
+
+Directorio del personal del laboratorio con nombre, rol, correo electrónico y estado laboral.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_staff-list.jpg" alt="Gestión de Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Miembro del Personal - ClosedSource**
+
+Formulario para añadir nuevos colaboradores al laboratorio, capturando nombre completo, rol asignado y correo electrónico.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_staff-form.jpg" alt="Registro de Miembro del Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Catálogo de Productos Farmacéuticos - ClosedSource**
+
+Listado de productos con su código SKU, nombre, especificaciones BPM y estado, incluyendo funcionalidad de búsqueda.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_product-catalog.jpg" alt="Catálogo de Productos Farmacéuticos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Nuevo Producto - ClosedSource**
+
+Formulario para añadir productos al catálogo, incluyendo código interno, nombre comercial, descripción terapéutica y especificaciones de calidad BPM.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_product-form.jpg" alt="Registro de Nuevo Producto - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Inventario de Materias Primas - ClosedSource**
+
+Listado de existencias con alerta de materiales por debajo del umbral mínimo, mostrando nombre, código, proveedor, stock actual y fecha de vencimiento.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-list.jpg" alt="Inventario de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Materia Prima / Uso - ClosedSource**
+
+Formulario para añadir nuevas materias primas al inventario o registrar el consumo de materiales existentes, capturando nombre, código, proveedor, cantidad y umbral mínimo.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-form.jpg" alt="Registro de Materia Prima / Uso - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de Telemetría - ClosedSource**
+
+Monitoreo en tiempo real de sensores IoT, mostrando el estado de conexión y las últimas lecturas de parámetros con sus marcas de tiempo.
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(1).jpg" alt="Panel de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(2).jpg" alt="Panel de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Datos de Telemetría - ClosedSource**
+
+Vista detallada y filtrable de todos los puntos de datos de telemetría, mostrando timestamp, parámetro, valor registrado y estado (normal o desviación BPM).
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_history.jpg" alt="Registro de Datos de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Análisis Histórico de Telemetría - ClosedSource**
+
+Visualización gráfica de tendencias de datos de sensores, permitiendo seleccionar equipo y rango de fechas para su análisis.
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_analysis.jpg" alt="Análisis Histórico de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Resumen de Facturación - ClosedSource**
+
+Pantalla que muestra los detalles de la suscripción activa (plan, estado, fechas de inicio y fin) y el historial de pagos realizados.
+
+<img src="../assets/img/wireframes/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_billing-summary.jpg" alt="Resumen de Facturación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Planes de Suscripción - ClosedSource**
+
+Comparativa de los planes disponibles (Plan Empresarial y Plan de Laboratorio Estándar), destacando características, número de usuarios, registros de equipos y precios.
+
+<img src="../assets/img/wireframes/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_plans.jpg" alt="Planes de Suscripción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -343,217 +488,220 @@ Los Wireflows se utilizan, sobre todo, en el diseño de la experiencia del usuar
 
 ### 4.4.3. Web Applications Mock-ups
 
-En esta sección se presentan los mock-ups diseñados para la aplicación web de ClosedSource(QualiTrack). Cada pantalla responde a las funcionalidades principales del sistema
+En esta sección se presentan los **mockups diseñados para la aplicación web de ClosedSource (QualiTrack)**. Cada pantalla corresponde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA) y Operario de planta.
 
-**Inicio - ClosedSource**
+A continuación se muestran las representaciones visuales de alta fidelidad que ilustran el diseño final, la disposición de elementos, la paleta de colores y los flujos de navegación propuestos para cada módulo de la plataforma.
 
-Página de bienvenida con selección de rol (QA Manager/Supervisor o Lab Operator) para acceder al sistema.
+**Portal de Inicio - ClosedSource**
 
-<img src="../assets/img/mockup/outside/home.jpg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Mockup que representa la pantalla de presentación inicial, donde se comunica el valor de la plataforma y se ofrecen opciones de acceso para los diferentes roles de usuario.
+
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_home.jpg" alt="Portal de Inicio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Usuario - ClosedSource**
+
+Mockup del formulario de creación de cuenta que diferencia entre el registro de un Jefe de QA/Supervisor y un Operario de planta, cada uno con campos específicos.
+
+*QA/Supervisor:
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_iam_sign-up_qa-manager.jpg" alt="Registro de Usuario - QA Manager - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+*Operario de Planta:
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_iam_sign-up_lab-operator.jpg" alt="Registro de Usuario - Lab Operator - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Inicio de Sesión - ClosedSource**
 
-Módulo de autenticación de usuarios con credenciales (usuario y contraseña) para acceder a QualiTrack.
+Mockup de la pantalla de autenticación para usuarios registrados con campos de usuario y contraseña, con soporte para cambio de idioma (EN/ES).
 
-<img src="../assets/img/mockup/outside/iam_sign-in.jpg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_iam_sign-in.jpg" alt="Inicio de Sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Gestor de Calidad - ClosedSource**
+**Panel de Control General - ClosedSource**
 
-Creación de cuenta para rol de QA Manager/Supervisor con permisos de administración de calidad.
+Mockup del centro de comando operativo que presenta una visión holística del sistema, mostrando la salud general mediante un indicador porcentual, el estado de los lotes en producción, el volumen de alertas críticas, el nivel de inventario de materias primas, la telemetría en vivo de los equipos, la distribución operativa y un panorama de riesgos que requiere atención.
 
-<img src="../assets/img/mockup/outside/iam_sign-up_role=manager.png" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/dashboard/closedsource-qualitrack.web.app_dashboard(1).jpg" alt="Panel de Control General - ClosedSource - Primera parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Operador de Laboratorio - ClosedSource**
-
-Creación de cuenta para rol de Operador de Laboratorio con acceso a operaciones diarias del laboratorio.
-
-<img src="../assets/img/mockup/outside/iam_sign-up_role=operator.jpg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Panel de Telemetría - ClosedSource**
-
-Monitorización en tiempo real de datos sensoriales de equipos, mostrando estado de conexión y lecturas actuales.
-
-<img src="../assets/img/mockup/tracking/tracking_dashboard.jpg" alt="Panel-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Análisis de Telemetría - ClosedSource**
-
-Módulo de análisis de datos históricos de telemetría de equipos con gráficos y filtros por fecha.
-
-<img src="../assets/img/mockup/tracking/tracking_analysis.jpg" alt="Análisis-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-Registro de Telemetría - ClosedSource
-
-Registro detallado de datos crudos de telemetría con búsqueda y filtros por equipo y rango de fechas.
-
-<img src="../assets/img/mockup/tracking/tracking_history.jpg" alt="Registro-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/dashboard/closedsource-qualitrack.web.app_dashboard(2).jpg" alt="Panel de Control General - ClosedSource - Segunda parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Listado de Lotes de Producción - ClosedSource**
 
-Módulo de listado y seguimiento de lotes para control de trazabilidad y calidad en los ciclos productivos.
+MMockup de la vista de trazabilidad que permite buscar, filtrar y gestionar todos los lotes de producción, mostrando información clave como el número de lote, el producto asociado, la cantidad producida, el estado actual y la fecha de inicio.
 
-<img src="../assets/img/mockup/batch/batch_batch-list.jpg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-list.jpg" alt="Listado de Lotes de Producción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Nuevo Lote - ClosedSource**
+**Creación de Nuevo Lote - ClosedSource**
 
-Formulario para registrar lotes de producción con especificaciones de calidad, número de lote de proveedor y stock inicial.
+Mockup del formulario para registrar un nuevo ciclo de fabricación, que permite seleccionar el producto farmacéutico, asignar un número de lote con formato predefinido, especificar la cantidad en unidades y añadir notas BPM opcionales.
 
-<img src="../assets/img/mockup/batch/batch_batch-form.jpg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-form.jpg" alt="Creación de Nuevo Lote - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ficha Técnica de Lote - ClosedSource**
+**Detalle de Lote - ClosedSource**
 
-Módulo de visualización de detalles técnicos de lotes de producción, incluyendo información general y materias primas asociadas.
+Mockup de la vista detallada de un lote que incluye información general del producto, su estado actual, la cantidad producida, la fecha de inicio y las notas BPM asociadas al proceso.
 
-<img src="../assets/img/mockup/batch/batch_batch-detail_1.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_1g.jpg" alt="Detalle de Lote - ClosedSource - General" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Liberación de Lote - ClosedSource**
+**Registro de Uso de Materias Primas - ClosedSource**
 
-Módulo para liberar lotes que cumplen especificaciones, con registro de notas del proceso BPM.
+Mockup de la interfaz para registrar el consumo de materiales en un lote, permitiendo seleccionar la materia prima, especificar la cantidad utilizada y visualizar el historial de uso con fechas y cantidades.
 
-<img src="../assets/img/mockup/batch/batch_batch-release-form_1.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Rechazo de Lote - ClosedSource**
-
-Registro de lotes no conformes, especificando motivo de rechazo y fecha para auditoría de calidad.
-
-<img src="../assets/img/mockup/batch/batch_batch-reject-form_1.jpg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_1r.jpg" alt="Registro de Uso de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Catálogo de Equipos - ClosedSource**
 
-Gestión y monitoreo de activos de laboratorio con listado de equipos, modelo, número de serie y estado.
+Mockup del listado completo de activos industriales del laboratorio, mostrando el nombre del equipo, su tipo, modelo, número de serie y estado operativo actual.
 
-<img src="../assets/img/mockup/equipment/equipment_equipment-list.jpg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-list.jpg" alt="Catálogo de Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Registro de Nuevo Equipo - ClosedSource**
 
-Alta de nuevos equipos en el catálogo ingresando especificaciones técnicas como nombre, tipo, modelo y número de serie.
+Mockup del formulario para incorporar nuevo equipamiento al catálogo, capturando el nombre, tipo, modelo y número de serie del activo.
 
-<img src="../assets/img/mockup/equipment/equipment_register-equipment.jpg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_register-equipment.jpg" alt="Registro de Nuevo Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Detalle de Equipo - ClosedSource**
 
-Visualización de información general y configuración BPM de equipos de laboratorio.
+Mockup de la vista técnica de un equipo específico organizada en pestañas: información general con sus especificaciones técnicas, configuración de parámetros BPM con rangos de tolerancia, e historial de mantenimiento con registros de intervenciones.
 
-<img src="../assets/img/mockup/equipment/equipment_equipment-detail_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*General*:
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_1g.jpg" alt="Detalle de Equipo - ClosedSource - General" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Detalle de Mantenimiento del Equipo - ClosedSource**
+*BPM*:
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_1bpm.jpg" alt="Detalle de Equipo - ClosedSource - BPM" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Módulo de detalles técnicos de equipos, incluyendo configuración BPM y acceso al historial de mantenimiento.
-
-<img src="../assets/img/mockup/equipment/equipment_equipment-detail_2.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Historial de Mantenimiento - ClosedSource**
-
-Registro cronológico de eventos de mantenimiento y calibración de equipos.
-
-<img src="../assets/img/mockup/equipment/equipment_equipment-detail_3.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*Mantenimiento*:
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_1m.jpg" alt="Detalle de Equipo - ClosedSource - Mantenimiento" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Configuración de Parámetros BPM - ClosedSource**
 
-Definición de rangos de tolerancia y parámetros de monitoreo de calidad para equipos industriales.
+Mockup del panel para definir rangos de tolerancia de los parámetros de calidad monitoreados por los sensores IoT, incluyendo el nombre del parámetro, valores mínimo y máximo, y la unidad de medida correspondiente.
 
-<img src="../assets/img/mockup/equipment/equipment_bpm-config-form_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_bpm-config-form_X.jpg" alt="Configuración de Parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Historial de Mantenimiento - ClosedSource**
+**Registro de Actividad de Mantenimiento - ClosedSource**
 
-Registro cronológico de actividades técnicas con opción de añadir nuevos eventos de mantenimiento.
+Mockup del formulario para documentar intervenciones técnicas en equipos, capturando el técnico responsable, la fecha, el tipo de actividad y una descripción detallada de la intervención realizada.
 
-<img src="../assets/img/mockup/equipment/equipment_maintenance-history_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_maintenance-form_X.jpg" alt="Registro de Actividad de Mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Actividad Técnica - ClosedSource**
+**Panel de Alertas de Cumplimiento - ClosedSource**
 
-Formulario para registrar intervenciones técnicas, mantenimientos y calibraciones realizadas por técnicos responsables.
+Mockup del módulo de monitoreo en tiempo real que visualiza desviaciones BPM, mostrando un resumen de alertas activas y desviaciones críticas, junto con un historial detallado de eventos que incluye fecha/hora, parámetro desviado, nivel de severidad y estado de resolución.
 
-<img src="../assets/img/mockup/equipment/equipment_maintenance-form_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Centro de Alertas - ClosedSource**
-
-Módulo de respuesta ante emergencias que permite pausar procesos cuando se detectan desviaciones críticas.
-
-<img src="../assets/img/mockup/ca/ca_alert-dashboard.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-dashboard.jpg" alt="Panel de Alertas de Cumplimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Historial de Alertas - ClosedSource**
 
-Registro completo de todas las desviaciones de calidad con filtros por equipo, severidad y estado.
+Mockup del registro de auditoría de todas las desviaciones de calidad, que permite filtrar por equipo, severidad y estado, con funcionalidad de búsqueda para facilitar la trazabilidad de incidentes.
 
-<img src="../assets/img/mockup/ca/ca_alert-history.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-history.jpg" alt="Historial de Alertas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Detalle de Desviación - ClosedSource**
+**Preferencias de Notificaciones - ClosedSource**
 
-Inspección técnica de alertas de calidad mostrando detalles específicos de la desviación detectada.
+Mockup de la pantalla de configuración para definir los canales de comunicación (In-App, Email, SMS) y el umbral mínimo de severidad para recibir alertas, permitiendo personalizar la recepción de notificaciones.
 
-<img src="../assets/img/mockup/ca/ca_deviation-detail_1.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/compliance-alerts/closedsource-qualitrack.web.app_alerts_notification-settings.jpg" alt="Preferencias de Notificaciones - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Preferencias de Notificación - ClosedSource**
+**Panel de KPIs y Rendimiento - ClosedSource**
 
-Configuración de canales (app, email, SMS) y umbrales de severidad para recibir alertas del sistema.
+Mockup del panel consolidado de indicadores clave de calidad, mostrando la salud general del sistema, parámetros en riesgo y desviaciones críticas, junto con métricas detalladas como la tasa de liberación de lotes, disponibilidad de equipos, resolución de alertas críticas y puntaje de cumplimiento BPM.
 
-<img src="../assets/img/mockup/ca/ca_notification-settings.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(1).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource - Primera parte" style="width: auto; height: auto; border: 2px solid #00bfff;"><img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(2).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource - Segunda parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Panel de KPIs - ClosedSource**
+**Análisis de Tendencias de Desviación - ClosedSource**
 
-Indicadores clave de rendimiento y métricas de calidad para supervisión de laboratorio.
+Mockup de la herramienta analítica que presenta lecturas de telemetría de un equipo específico, mostrando valores registrados, límites superior e inferior, y el estado de cumplimiento de cada medición para identificar patrones de desviación.
 
-<img src="../assets/img/mockup/ra/ra_kpi-dashboard.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Análisis de Tendencias - ClosedSource**
-
-Módulo de análisis de tendencias de desviaciones para identificar patrones y mejorar procesos de calidad.
-
-<img src="../assets/img/mockup/ra/ra_deviation-trends.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_deviation-trends.jpg" alt="Análisis de Tendencias de Desviación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Generador de Reportes - ClosedSource**
 
-Generación de informes de calidad, trazabilidad de lotes, cumplimiento y exportación de datos técnicos (PDF/CSV).
+Mockup de la interfaz para generar documentos de calidad, incluyendo reportes de lote con opción de incluir logs de telemetría y alertas de desviación, reportes de cumplimiento periódicos y exportación de logs de equipos en formato PDF o CSV.
 
-<img src="../assets/img/mockup/ra/ra_report-generator.jpg" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_report-generator.jpg" alt="Generador de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Auditoría - ClosedSource**
+**Registro de Auditoría del Sistema - ClosedSource**
 
-Trazabilidad completa de acciones del sistema con timestamp, entidad afectada y usuario responsable.
+Mockup del log inmutable de todas las acciones del sistema, mostrando la fecha y hora, el tipo de acción realizada, la entidad afectada, el usuario que realizó la operación y detalles descriptivos, con capacidad de filtrado y búsqueda para inspecciones regulatorias.
 
-<img src="../assets/img/mockup/ra/ra_audit-log.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_audit-log.jpg" alt="Registro de Auditoría del Sistema - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Perfil de Laboratorio - ClosedSource**
+**Perfil del Laboratorio - ClosedSource**
 
-Gestión de información del laboratorio y acceso a módulos de personal, productos y materias primas.
+Mockup de la vista de la información institucional del laboratorio, que incluye el nombre, RUC, dirección física, teléfono de contacto y regulaciones aplicables, con acceso directo a los submódulos de gestión.
 
-<img src="../assets/img/mockup/laboratory/laboratory_lab-profile.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_lab-profile.jpg" alt="Perfil del Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Listado de Personal - ClosedSource**
+**Creación de Laboratorio - ClosedSource**
 
-Lista de miembros del laboratorio con sus roles, correo corporativo y estado laboral.
+Mockup del formulario para registrar un nuevo laboratorio en la plataforma, capturando los datos legales, de contacto y las normativas aplicables a la operación.
 
-<img src="../assets/img/mockup/laboratory/laboratory_staff-list.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_lab-form.jpg" alt="Creación de Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Personal - ClosedSource**
+**Gestión de Personal - ClosedSource**
 
-Formulario para añadir personal autorizado al laboratorio, asignando rol y correo electrónico.
+Mockup del directorio del personal del laboratorio, mostrando el nombre completo de cada miembro, su rol asignado, correo electrónico corporativo y estado laboral actual.
 
-<img src="../assets/img/mockup/laboratory/laboratory_staff-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_staff-list.jpg" alt="Gestión de Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Miembro del Personal - ClosedSource**
+
+Mockup del formulario para añadir nuevos colaboradores al laboratorio, capturando el nombre completo, el rol asignado y el correo electrónico.
+
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_staff-form.jpg" alt="Registro de Miembro del Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Catálogo de Productos Farmacéuticos - ClosedSource**
 
-Listado de productos con especificaciones BPM, código SKU y estado, con funcionalidad de búsqueda.
+Mockup del listado de productos con su código SKU, nombre comercial, especificaciones BPM y estado, incluyendo funcionalidad de búsqueda para facilitar la localización de productos.
 
-<img src="../assets/img/mockup/laboratory/laboratory_product-catalog.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_product-catalog.jpg" alt="Catálogo de Productos Farmacéuticos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Producto - ClosedSource**
+**Registro de Nuevo Producto - ClosedSource**
 
-Formulario para registrar nuevos productos farmacéuticos con nombre comercial, descripción terapéutica y especificaciones de calidad.
+Mockup del formulario para añadir productos al catálogo, incluyendo código interno, nombre comercial, descripción terapéutica y especificaciones de calidad BPM.
 
-<img src="../assets/img/mockup/laboratory/laboratory_product-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_product-form.jpg" alt="Registro de Nuevo Producto - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Listado de Materias Primas - ClosedSource**
+**Inventario de Materias Primas - ClosedSource**
 
-Inventario de materias primas con código interno, proveedor autorizado, stock actual y fecha de caducidad.
+Mockup del listado de existencias con alertas visuales para materiales por debajo del umbral mínimo, mostrando el nombre, código interno, proveedor autorizado, stock actual, fecha de vencimiento y estado del inventario.
 
-<img src="../assets/img/mockup/laboratory/laboratory_raw-material-list.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-list.jpg" alt="Inventario de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Materia Prima - ClosedSource**
+**Registro de Materia Prima / Uso - ClosedSource**
 
-Entrada de materiales al inventario farmacéutico con control de lote, proveedor, fecha de caducidad, cantidad y umbral de stock mínimo.
+Mockup del formulario para añadir nuevas materias primas al inventario o registrar el consumo de materiales existentes, capturando nombre, código, proveedor, fecha de vencimiento, cantidad, unidad de medida y umbral mínimo de stock.
 
-<img src="../assets/img/mockup/laboratory/laboratory_raw-material-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-form.jpg" alt="Registro de Materia Prima / Uso - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de Telemetría - ClosedSource**
+
+Mockup del monitoreo en tiempo real de sensores IoT, mostrando el estado de conexión de los equipos, las últimas lecturas de parámetros con sus marcas de tiempo y la detección de anomalías en las mediciones.
+
+<img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(1).jpg" alt="Panel de Telemetría - ClosedSource - Primera parte" style="width: auto; height: auto; border: 2px solid #00bfff;"><img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(2).jpg" alt="Panel de Telemetría - ClosedSource - Segunda parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Datos de Telemetría - ClosedSource**
+
+Mockup de la vista detallada y filtrable de todos los puntos de datos de telemetría, mostrando el timestamp, el parámetro monitoreado, el valor registrado y el estado de cumplimiento (normal o desviación BPM).
+
+<img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_history.jpg" alt="Registro de Datos de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Análisis Histórico de Telemetría - ClosedSource**
+
+Mockup de la visualización gráfica de tendencias de datos de sensores, permitiendo seleccionar el equipo y el rango de fechas para analizar el comportamiento histórico de los parámetros monitoreados.
+
+<img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_analysis.jpg" alt="Análisis Histórico de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Resumen de Facturación - ClosedSource**
+
+Mockup de la pantalla que muestra los detalles de la suscripción activa, incluyendo el plan contratado, el estado, las fechas de inicio y fin del período, así como el historial de pagos realizados.
+
+<img src="../assets/img/mock-ups/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_billing-summary.jpg" alt="Resumen de Facturación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Planes de Suscripción - ClosedSource**
+
+Mockup de la comparativa de los planes disponibles, destacando las características de cada uno, el número de usuarios y equipos incluidos, los beneficios adicionales y los precios mensuales para facilitar la elección.
+
+<img src="../assets/img/mock-ups/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_plans.jpg" alt="Planes de Suscripción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### Mock-ups Version Mobile
 <p>La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de QualiTrack, el ecosistema orientado a la gestión integral de operaciones de precisión clínica, el monitoreo de telemetría IoT en tiempo real y la trazabilidad inmutable de lotes de producción.
