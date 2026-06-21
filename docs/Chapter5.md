@@ -3211,6 +3211,285 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
 
 ### 5.3.3. Evaluaciones según heurísticas
 
+<div align="center">
+  <h2>UX Heuristics & Principles Evaluation</h2>
+  <h3>Usability – Inclusive Design – Information Architecture</h3>
+</div>
+
+<p><strong>CARRERA:</strong> Ingeniería de Software</p>
+<p><strong>CURSO:</strong> Desarrollo de Aplicaciones Open Source</p>
+<p><strong>PROFESOR:</strong> Ángel Augusto Velasquez Nuñez</p>
+<p><strong>AUDITOR:</strong> Equipo ClosedSource</p>
+<p><strong>PRODUCTO EVALUADO:</strong> QualiTrack Web Application</p>
+<p><strong>CLIENTE(S):</strong> QA Managers, Supervisores de Calidad, Lab Operators y responsables de cumplimiento BPM en laboratorios farmacéuticos.</p>
+
+<br>
+
+<strong>TAREAS A EVALUAR:</strong>
+
+<p>
+El alcance de esta evaluación heurística incluye la revisión de los principales flujos
+implementados en QualiTrack Web Application, considerando criterios de usabilidad,
+diseño inclusivo, arquitectura de información, consistencia visual, prevención de errores
+y claridad de los mensajes del sistema.
+</p>
+
+<ul>
+  <li>Validar el flujo de inicio de sesión y acceso a la plataforma.</li>
+  <li>Evaluar la navegación lateral por módulos y Bounded Contexts.</li>
+  <li>Revisar la claridad del Dashboard operativo del laboratorio.</li>
+  <li>Evaluar la gestión del perfil del laboratorio.</li>
+  <li>Validar los formularios de equipos, lotes, personal, productos y materias primas.</li>
+  <li>Revisar la visualización de telemetría, alertas de cumplimiento y reportes.</li>
+  <li>Evaluar el flujo de planes de suscripción, checkout con Stripe y resumen de facturación.</li>
+  <li>Revisar mensajes de error, estados vacíos, estados de carga y confirmaciones del sistema.</li>
+  <li>Verificar la consistencia del idioma entre inglés y español.</li>
+  <li>Evaluar la claridad de botones de acción, etiquetas, tablas y componentes visuales.</li>
+</ul>
+
+<br>
+
+<strong>ESCALA DE SEVERIDAD:</strong>
+
+<p>
+Los problemas identificados fueron puntuados tomando en cuenta la siguiente escala de
+severidad:
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Problema superficial: puede ser superado fácilmente por el usuario o ocurre con poca frecuencia. No requiere corrección inmediata, salvo que exista disponibilidad de tiempo.</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Problema menor: genera cierta fricción en la experiencia, pero no impide completar la tarea. Debe priorizarse para una siguiente iteración.</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Problema mayor: dificulta completar una tarea importante o puede causar errores frecuentes. Debe corregirse con prioridad alta.</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Problema crítico: impide completar una tarea clave del sistema o afecta gravemente la confianza del usuario. Debe corregirse antes de un release estable.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<strong>TABLA RESUMEN:</strong>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Problema</th>
+      <th>Escala de severidad</th>
+      <th>Heurística/Principio violada(o)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Algunas acciones muestran claves de traducción en lugar de texto legible para el usuario, por ejemplo en el botón de cancelación de suscripción.</td>
+      <td align="center">3</td>
+      <td>Consistency and standards / Match between system and the real world</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Algunos mensajes de error son técnicos o poco orientadores, como errores inesperados al cargar una suscripción.</td>
+      <td align="center">3</td>
+      <td>Help users recognize, diagnose, and recover from errors</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>El Dashboard concentra varias métricas, gráficos y tarjetas en una sola vista, lo que puede generar carga cognitiva para usuarios nuevos.</td>
+      <td align="center">2</td>
+      <td>Aesthetic and minimalist design / Information Architecture</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>El primer acceso al backend desplegado puede tardar por la reactivación del servicio en Render, sin explicar claramente al usuario que el sistema está cargando.</td>
+      <td align="center">2</td>
+      <td>Visibility of system status</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Algunas acciones críticas, como cancelar suscripciones o actualizar estados, requieren mayor confirmación antes de ejecutarse.</td>
+      <td align="center">3</td>
+      <td>Error prevention / User control and freedom</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>La navegación lateral contiene varios módulos y submódulos, lo que puede dificultar encontrar rápidamente una funcionalidad específica.</td>
+      <td align="center">2</td>
+      <td>Recognition rather than recall / Information Architecture</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Algunos campos técnicos de formularios, como parámetros BPM, telemetría o umbrales, no cuentan con ayuda contextual suficiente.</td>
+      <td align="center">3</td>
+      <td>Help and documentation</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Existe mezcla ocasional de inglés y español en etiquetas, estados o mensajes, afectando la consistencia de la experiencia bilingüe.</td>
+      <td align="center">2</td>
+      <td>Consistency and standards</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>El flujo de Stripe Checkout redirige fuera de la plataforma, pero requiere una explicación previa más clara para que el usuario entienda el cambio de contexto.</td>
+      <td align="center">2</td>
+      <td>Visibility of system status / User control and freedom</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Las tablas de pagos, reportes, auditoría o historial podrían beneficiarse de filtros, búsqueda o paginación más visibles.</td>
+      <td align="center">2</td>
+      <td>Flexibility and efficiency of use</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h4>Descripción Detallada de Problemas Críticos</h4>
+
+<p><strong>Problema 1: Etiquetas de traducción visibles en acciones de suscripción.</strong></p>
+
+<p><strong>Severidad:</strong> 3</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Consistency and standards y Match between system and the real world.
+</p>
+
+<p>
+  <strong>Problema:</strong> En la vista de <em>Billing Summary</em> se identificó que una acción relacionada con la suscripción podía mostrarse como una clave de traducción, por ejemplo
+  <code>subscription.billing.cancel-subscription</code>, en lugar de un texto comprensible para el usuario. Este problema afecta la claridad de la interfaz, reduce la confianza en el sistema y transmite la percepción de que la aplicación no está completamente terminada.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem1-subscription-translation.jpeg" alt="Problema de etiqueta de traducción en Billing Summary" width="90%">
+  <p><em>Figura: Evidencia de etiqueta de traducción visible en el módulo Subscription & Billing.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Completar las claves faltantes en los archivos de internacionalización para inglés y español. El texto debe mostrarse como <strong>Cancel subscription</strong> en inglés y <strong>Cancelar suscripción</strong> en español. Además, se recomienda revisar todas las vistas principales con ambos idiomas activos antes del despliegue.
+</p>
+
+<hr>
+
+<p><strong>Problema 2: Mensajes de error técnicos al cargar información de suscripción.</strong></p>
+
+<p><strong>Severidad:</strong> 3</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Help users recognize, diagnose, and recover from errors.
+</p>
+
+<p>
+  <strong>Problema:</strong> Durante la validación del módulo <em>Subscription & Billing</em>, la interfaz mostró mensajes como <em>Failed to fetch subscription for laboratory 1: Unexpected server error</em>. Aunque el mensaje permite identificar el origen técnico del problema, no está orientado al usuario final ni indica una acción clara de recuperación.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem2-subscription-error.jpeg" alt="Error técnico en Billing Summary" width="90%">
+  <p><em>Figura: Mensaje técnico mostrado al usuario durante la carga de suscripción.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Reemplazar los mensajes técnicos por mensajes amigables y accionables, como: <em>No se pudo cargar la información de la suscripción. Por favor, recargue la página o intente nuevamente en unos segundos.</em> El detalle técnico debe mantenerse en consola o logs internos, evitando exponerlo directamente al usuario.
+</p>
+
+<hr>
+
+<p><strong>Problema 3: Alta densidad de información en el Dashboard operativo.</strong></p>
+
+<p><strong>Severidad:</strong> 2</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Aesthetic and minimalist design e Information Architecture.
+</p>
+
+<p>
+  <strong>Problema:</strong> El Dashboard de QualiTrack muestra múltiples elementos en una sola vista: resumen general, salud operacional, tarjetas de equipos, lotes, alertas, materias primas, suscripción, gráficos de distribución y riesgos. Aunque esta información es valiosa, puede resultar abrumadora para usuarios nuevos o para operadores que necesitan identificar rápidamente tareas críticas.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem3-dashboard-density.jpeg" alt="Dashboard operativo de QualiTrack" width="90%">
+  <p><em>Figura: Dashboard con métricas operativas y gráficos en una sola vista.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Priorizar la información crítica mediante una jerarquía visual más clara. Se recomienda agrupar métricas en secciones, destacar alertas críticas con mayor prominencia y añadir filtros rápidos por módulo. También se puede incluir una vista resumida para usuarios operativos y una vista avanzada para administradores o QA Managers.
+</p>
+
+<hr>
+
+<p><strong>Problema 4: Falta de explicación durante el primer tiempo de carga del backend.</strong></p>
+
+<p><strong>Severidad:</strong> 2</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Visibility of system status.
+</p>
+
+<p>
+  <strong>Problema:</strong> Debido al despliegue del backend en Render, el servicio puede tardar en responder cuando la instancia se reactiva después de un periodo de inactividad. Para el usuario final, esta demora puede percibirse como un error de conexión o una falla de la aplicación si no existe un estado de carga claro.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem4-loading-state.jpeg" alt="Estado de carga en QualiTrack" width="90%">
+  <p><em>Figura: Validación del comportamiento de carga durante la conexión con el backend desplegado.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Implementar mensajes de estado más claros durante operaciones de carga prolongadas, por ejemplo: <em>Conectando con el servidor de QualiTrack...</em> o <em>Estamos preparando la información del laboratorio. Esto puede tomar unos segundos.</em> También se recomienda mantener indicadores de carga visibles.
+</p>
+
+<hr>
+
+<p><strong>Problema 5: Acciones críticas sin confirmación suficientemente explícita.</strong></p>
+
+<p><strong>Severidad:</strong> 3</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Error prevention y User control and freedom.
+</p>
+
+<p>
+  <strong>Problema:</strong> Algunas acciones de alto impacto, como cancelar una suscripción, actualizar el estado de un lote, modificar datos de laboratorio o cambiar el estado de una alerta, requieren una confirmación más explícita antes de ejecutarse. En un entorno farmacéutico, estas acciones pueden afectar trazabilidad, cumplimiento y operación.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem5-critical-actions.jpeg" alt="Acciones críticas en QualiTrack" width="90%">
+  <p><em>Figura: Flujo de acción crítica que requiere mayor prevención de errores.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Incorporar modales de confirmación para acciones irreversibles o sensibles. Estos modales deben indicar claramente la consecuencia de la acción, el recurso afectado y las opciones disponibles: <strong>Confirmar</strong>, <strong>Cancelar</strong> o <strong>Volver</strong>. Para acciones de suscripción, se recomienda informar si el acceso se mantendrá hasta el final del periodo activo.
+</p>
+
+<hr>
+
+<h4>Conclusión de la Evaluación Heurística</h4>
+
+<p>
+La evaluación heurística permitió identificar oportunidades de mejora en la experiencia de usuario de QualiTrack, especialmente en consistencia lingüística, prevención de errores, claridad de mensajes, reducción de carga cognitiva y ayuda contextual. En términos generales, la aplicación presenta una estructura funcional sólida y una arquitectura de información alineada con los Bounded Contexts del dominio farmacéutico.
+</p>
+
+<p>
+Sin embargo, para fortalecer la usabilidad en un entorno regulado, se recomienda priorizar la corrección de etiquetas de traducción, mensajes de error amigables, confirmaciones para acciones críticas, indicadores de carga más claros y guías contextuales en formularios técnicos. Estas mejoras contribuirán a que QA Managers, Supervisores de Calidad y Lab Operators puedan usar la plataforma con mayor confianza, reduciendo errores operativos y facilitando la adopción de QualiTrack como solución SaaS para la gestión de calidad farmacéutica.
+</p>
+
 <!--
 
 ## 5.4. Video About-the-Product
