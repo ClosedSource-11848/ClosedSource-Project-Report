@@ -261,79 +261,224 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 
 ### 4.4.1. Web Applications Wireframes
 
-En esta sección se presentan los **wireframes diseñados para la aplicación web de ClosedSource(QualiTrack)**. Cada pantalla responde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA), Operario de planta y Auditor.
+En esta sección se presentan **los wireframes diseñados para la aplicación web de ClosedSource (QualiTrack)**. Cada pantalla responde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA) y Operario de planta.
+
+A continuación se muestran las representaciones esquemáticas de baja fidelidad que ilustran la estructura, disposición de elementos y flujos de navegación propuestos para cada módulo de la plataforma.
 
 **Portal de Inicio - ClosedSource** 
 
-Pantalla principal de presentación donde se ofrecen las opciones de ingreso y registro de nuevas plantas industriales.
+Pantalla de presentación inicial que comunica el valor de la plataforma y ofrece opciones de acceso para los diferentes roles de usuario.
 
-<img src="../assets/img/Login - ClosedSource.jpeg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_home.jpg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Crear Cuenta - ClosedSource**  
+**Registro de Usuario - ClosedSource**  
 
-Formulario para registrar laboratorios, solicitando datos del responsable y credenciales de acceso.
+Formulario de creación de cuenta que diferencia entre el registro de un Jefe de QA/Supervisor y un Operario de planta, cada uno con campos específicos.
 
-<img src="../assets/img/Registro – ClosedSource.jpeg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*QA/Supervisor:
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_iam_sign-up_qa-manager.jpg" alt="Registro de Usuario - Manager -ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ingreso al Sistema - ClosedSource** 
+*Operario de Planta:
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_iam_sign-up_lab-operator.jpg" alt="Registro de Usuario - Operador -ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Pantalla de autenticación para usuarios registrados con campos de correo y contraseña.
+**Inicio de Sesión - ClosedSource** 
 
-<img src="../assets/img/Inicio de Sesión – ClosedSource.jpeg" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Pantalla de autenticación para usuarios registrados con campos de usuario y contraseña.
 
-**Panel de Control - ClosedSource** 
+<img src="../assets/img/wireframes/presentation/closedsource-qualitrack.web.app_iam_sign-in.jpg" alt="Inicio de Sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Vista general de la planta que muestra el progreso del lote activo y el estado de las unidades de producción.
+**Panel de Control General - ClosedSource**
 
-<img src="../assets/img/Ingreso-al-Sistema- ClosedSource.jpeg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Centro de comando operativo que muestra la salud general del sistema, el estado de lotes activos, alertas críticas, niveles de materias primas, telemetría en vivo y el estado de la suscripción.
 
-**Ejecución de Lote - ClosedSource** 
+<img src="../assets/img/wireframes/dashboard/closedsource-qualitrack.web.app_dashboard(1).jpg" alt="Panel de Control General - ClosedSource - Primera mitad" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Interfaz para registrar materias primas y verificar procesos con monitoreo de telemetría en vivo.
+<img src="../assets/img/wireframes/dashboard/closedsource-qualitrack.web.app_dashboard(2).jpg" alt="Panel de Control General - ClosedSource - Segunda mitad" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Ejecución-de-Lote-Activo – ClosedSource.jpeg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Listado de Lotes de Producción - ClosedSource**
 
-**Estado de Equipos - ClosedSource** 
+Vista de trazabilidad que permite buscar, filtrar y gestionar todos los lotes de producción, mostrando número de lote, producto, cantidad, estado y fecha de inicio.
 
-Pantalla de monitoreo técnico que detalla el funcionamiento de la maquinaria y sus sensores IoT.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-list.jpg" alt="Listado de Lotes de Producción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Estado-de-Equipamiento-IoT – ClosedSource.jpeg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Creación de Nuevo Lote - ClosedSource**
 
-**Centro de Alertas - ClosedSource** 
+Formulario para registrar un nuevo ciclo de fabricación, seleccionando producto farmacéutico, número de lote, cantidad y notas BPM opcionales.
 
-Módulo de respuesta ante emergencias que permite pausar procesos cuando se detectan desviaciones críticas.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-form.jpg" alt="Creación de Nuevo Lote - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Gestión-de-Alertas-e-Incidentes – ClosedSource.jpeg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Detalle de Lote - ClosedSource**
 
-**Resumen de Calidad - ClosedSource** 
+Vista detallada de un lote específico que incluye información general y una sección para registrar y consultar el historial de uso de materias primas.
 
-Panel consolidado con gráficos e indicadores de cumplimiento (KPIs) globales del laboratorio.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_Xg.jpg" alt="Detalle de Lote - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Dashboard-General – ClosedSource.jpeg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Registro de Uso de Materias Primas - ClosedSource**
 
-**Módulo de Cumplimiento - ClosedSource** 
+Interfaz para registrar el consumo de materiales en un lote, permitiendo seleccionar la materia prima, especificar la cantidad utilizada y visualizar el historial de uso.
 
-Sección dedicada a la validación de normativas y estándares de calidad para cada producto.
+<img src="../assets/img/wireframes/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_Xr.jpg" alt="Registro de Uso de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Cumplimiento - Normativo – ClosedSource.jpeg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Catálogo de Equipos - ClosedSource**
 
-**Historial de Lotes - ClosedSource** 
+Listado completo de activos industriales del laboratorio, mostrando nombre, tipo, modelo, número de serie y estado operativo.
 
-Listado de trazabilidad que permite buscar y filtrar todos los lotes fabricados anteriormente.
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-list.jpg" alt="Catálogo de Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Ciclo-de-Vida-del-Lote – ClosedSource.jpeg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+**Registro de Nuevo Equipo - ClosedSource**
 
-**Análisis y Configuración de Equipos - ClosedSource**
+Formulario para incorporar nuevo equipamiento al catálogo, capturando nombre, tipo, modelo y número de serie.
 
-Panel técnico para el monitoreo de telemetría de equipos activos y la configuración detallada de umbrales y parámetros BPM
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_register-equipment.jpg" alt="Registro de Nuevo Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Análisis-y-Configuración-de-Equipos - ClosedSource.jpeg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+**Detalle de Equipo - ClosedSource**
 
-**Logs de Auditoría - ClosedSource**
+Vista técnica de un equipo específico organizada en pestañas: información general, configuración de parámetros BPM (umbrales de calidad) e historial de mantenimiento.
 
-Interfaz para exportar registros de eventos inmutables para inspecciones de DIGEMID.
+*General*:
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_Xg.jpg" alt="Detalle de Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-<img src="../assets/img/Logs-de-Auditoría - ClosedSource .jpeg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*BPM*:
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_Xbpm.jpg" alt="Detalle de Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+*Mantenimiento*:
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_Xm.jpg" alt="Detalle de Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Configuración de Parámetros BPM - ClosedSource**
+
+Panel para definir rangos de tolerancia (valores mínimo y máximo) de los parámetros de calidad monitoreados por los sensores IoT.
+
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_bpm-config-form_X.jpg" alt="Configuración de Parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Actividad de Mantenimiento - ClosedSource**
+
+Formulario para documentar intervenciones técnicas en equipos, incluyendo técnico responsable, fecha, tipo y descripción de la actividad realizada.
+
+<img src="../assets/img/wireframes/equipment/closedsource-qualitrack.web.app_equipments_maintenance-form_X.jpg" alt="Registro de Actividad de Mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de Alertas de Cumplimiento - ClosedSource**
+
+Módulo de monitoreo en tiempo real que visualiza desviaciones BPM a través de gráficos de telemetría, severidad y estado de resolución.
+
+<img src="../assets/img/wireframes/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-dashboard.jpg" alt="Panel de Alertas de Cumplimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Historial de Alertas - ClosedSource**
+
+Registro de auditoría de todas las desviaciones de calidad, permitiendo filtrar por fecha, equipo y parámetro, y mostrando severidad y estado.
+
+<img src="../assets/img/wireframes/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-history.jpg" alt="Historial de Alertas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Preferencias de Notificaciones - ClosedSource**
+
+Pantalla de configuración para definir los canales de comunicación (In-App, Email, SMS) y el umbral mínimo de severidad para recibir alertas.
+
+<img src="../assets/img/wireframes/compliance-alerts/closedsource-qualitrack.web.app_alerts_notification-settings.jpg" alt="Preferencias de Notificaciones - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de KPIs y Rendimiento - ClosedSource**
+
+Panel consolidado de indicadores clave de calidad, mostrando métricas como tasa de liberación de lotes, disponibilidad de equipos y puntaje de cumplimiento BPM.
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(1).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(2).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Análisis de Tendencias de Desviación - ClosedSource**
+
+Herramienta analítica que muestra lecturas de telemetría de un equipo específico con valores registrados, límites superior/inferior y estado de cumplimiento.
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_deviation-trends.jpg" alt="Análisis de Tendencias de Desviación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Generador de Reportes - ClosedSource**
+
+Interfaz para generar documentos de calidad, incluyendo reportes de lote, reportes de cumplimiento y exportación de logs de equipos en formato PDF o CSV.
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_report-generator.jpg" alt="Generador de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Auditoría del Sistema - ClosedSource**
+
+Log inmutable de todas las acciones del sistema, con capacidad de filtrado y búsqueda para inspecciones regulatorias (DIGEMID).
+
+<img src="../assets/img/wireframes/reports-&-kpis/closedsource-qualitrack.web.app_reports_audit-log.jpg" alt="Registro de Auditoría del Sistema - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Perfil del Laboratorio - ClosedSource**
+
+Vista de la información institucional del laboratorio (nombre, RUC, dirección, contacto, regulaciones aplicables) con acceso a submódulos de gestión.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_lab-profile.jpg" alt="Perfil del Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Creación de Laboratorio - ClosedSource**
+
+Formulario para registrar un nuevo laboratorio en la plataforma, capturando sus datos legales, de contacto y normativas aplicables.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_lab-form.jpg" alt="Creación de Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Gestión de Personal - ClosedSource**
+
+Directorio del personal del laboratorio con nombre, rol, correo electrónico y estado laboral.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_staff-list.jpg" alt="Gestión de Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Miembro del Personal - ClosedSource**
+
+Formulario para añadir nuevos colaboradores al laboratorio, capturando nombre completo, rol asignado y correo electrónico.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_staff-form.jpg" alt="Registro de Miembro del Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Catálogo de Productos Farmacéuticos - ClosedSource**
+
+Listado de productos con su código SKU, nombre, especificaciones BPM y estado, incluyendo funcionalidad de búsqueda.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_product-catalog.jpg" alt="Catálogo de Productos Farmacéuticos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Nuevo Producto - ClosedSource**
+
+Formulario para añadir productos al catálogo, incluyendo código interno, nombre comercial, descripción terapéutica y especificaciones de calidad BPM.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_product-form.jpg" alt="Registro de Nuevo Producto - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Inventario de Materias Primas - ClosedSource**
+
+Listado de existencias con alerta de materiales por debajo del umbral mínimo, mostrando nombre, código, proveedor, stock actual y fecha de vencimiento.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-list.jpg" alt="Inventario de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Materia Prima / Uso - ClosedSource**
+
+Formulario para añadir nuevas materias primas al inventario o registrar el consumo de materiales existentes, capturando nombre, código, proveedor, cantidad y umbral mínimo.
+
+<img src="../assets/img/wireframes/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-form.jpg" alt="Registro de Materia Prima / Uso - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de Telemetría - ClosedSource**
+
+Monitoreo en tiempo real de sensores IoT, mostrando el estado de conexión y las últimas lecturas de parámetros con sus marcas de tiempo.
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(1).jpg" alt="Panel de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(2).jpg" alt="Panel de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Datos de Telemetría - ClosedSource**
+
+Vista detallada y filtrable de todos los puntos de datos de telemetría, mostrando timestamp, parámetro, valor registrado y estado (normal o desviación BPM).
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_history.jpg" alt="Registro de Datos de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Análisis Histórico de Telemetría - ClosedSource**
+
+Visualización gráfica de tendencias de datos de sensores, permitiendo seleccionar equipo y rango de fechas para su análisis.
+
+<img src="../assets/img/wireframes/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_analysis.jpg" alt="Análisis Histórico de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Resumen de Facturación - ClosedSource**
+
+Pantalla que muestra los detalles de la suscripción activa (plan, estado, fechas de inicio y fin) y el historial de pagos realizados.
+
+<img src="../assets/img/wireframes/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_billing-summary.jpg" alt="Resumen de Facturación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Planes de Suscripción - ClosedSource**
+
+Comparativa de los planes disponibles (Plan Empresarial y Plan de Laboratorio Estándar), destacando características, número de usuarios, registros de equipos y precios.
+
+<img src="../assets/img/wireframes/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_plans.jpg" alt="Planes de Suscripción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -343,217 +488,220 @@ Los Wireflows se utilizan, sobre todo, en el diseño de la experiencia del usuar
 
 ### 4.4.3. Web Applications Mock-ups
 
-En esta sección se presentan los mock-ups diseñados para la aplicación web de ClosedSource(QualiTrack). Cada pantalla responde a las funcionalidades principales del sistema
+En esta sección se presentan los **mockups diseñados para la aplicación web de ClosedSource (QualiTrack)**. Cada pantalla corresponde a las funcionalidades principales del sistema de gestión de calidad e integración IoT, atendiendo a los roles de usuario definidos: Jefe de Aseguramiento de la Calidad (QA) y Operario de planta.
 
-**Inicio - ClosedSource**
+A continuación se muestran las representaciones visuales de alta fidelidad que ilustran el diseño final, la disposición de elementos, la paleta de colores y los flujos de navegación propuestos para cada módulo de la plataforma.
 
-Página de bienvenida con selección de rol (QA Manager/Supervisor o Lab Operator) para acceder al sistema.
+**Portal de Inicio - ClosedSource**
 
-<img src="../assets/img/mockup/outside/home.jpg" alt="Login - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Mockup que representa la pantalla de presentación inicial, donde se comunica el valor de la plataforma y se ofrecen opciones de acceso para los diferentes roles de usuario.
+
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_home.jpg" alt="Portal de Inicio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Usuario - ClosedSource**
+
+Mockup del formulario de creación de cuenta que diferencia entre el registro de un Jefe de QA/Supervisor y un Operario de planta, cada uno con campos específicos.
+
+*QA/Supervisor:
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_iam_sign-up_qa-manager.jpg" alt="Registro de Usuario - QA Manager - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+*Operario de Planta:
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_iam_sign-up_lab-operator.jpg" alt="Registro de Usuario - Lab Operator - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Inicio de Sesión - ClosedSource**
 
-Módulo de autenticación de usuarios con credenciales (usuario y contraseña) para acceder a QualiTrack.
+Mockup de la pantalla de autenticación para usuarios registrados con campos de usuario y contraseña, con soporte para cambio de idioma (EN/ES).
 
-<img src="../assets/img/mockup/outside/iam_sign-in.jpg" alt="Registro – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/presentation/closedsource-qualitrack.web.app_iam_sign-in.jpg" alt="Inicio de Sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Gestor de Calidad - ClosedSource**
+**Panel de Control General - ClosedSource**
 
-Creación de cuenta para rol de QA Manager/Supervisor con permisos de administración de calidad.
+Mockup del centro de comando operativo que presenta una visión holística del sistema, mostrando la salud general mediante un indicador porcentual, el estado de los lotes en producción, el volumen de alertas críticas, el nivel de inventario de materias primas, la telemetría en vivo de los equipos, la distribución operativa y un panorama de riesgos que requiere atención.
 
-<img src="../assets/img/mockup/outside/iam_sign-up_role=manager.png" alt="Inicio de Sesión – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/dashboard/closedsource-qualitrack.web.app_dashboard(1).jpg" alt="Panel de Control General - ClosedSource - Primera parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Operador de Laboratorio - ClosedSource**
-
-Creación de cuenta para rol de Operador de Laboratorio con acceso a operaciones diarias del laboratorio.
-
-<img src="../assets/img/mockup/outside/iam_sign-up_role=operator.jpg" alt="Ingreso-al-Sistema- ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Panel de Telemetría - ClosedSource**
-
-Monitorización en tiempo real de datos sensoriales de equipos, mostrando estado de conexión y lecturas actuales.
-
-<img src="../assets/img/mockup/tracking/tracking_dashboard.jpg" alt="Panel-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Análisis de Telemetría - ClosedSource**
-
-Módulo de análisis de datos históricos de telemetría de equipos con gráficos y filtros por fecha.
-
-<img src="../assets/img/mockup/tracking/tracking_analysis.jpg" alt="Análisis-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-Registro de Telemetría - ClosedSource
-
-Registro detallado de datos crudos de telemetría con búsqueda y filtros por equipo y rango de fechas.
-
-<img src="../assets/img/mockup/tracking/tracking_history.jpg" alt="Registro-de-Telemetría – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/dashboard/closedsource-qualitrack.web.app_dashboard(2).jpg" alt="Panel de Control General - ClosedSource - Segunda parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Listado de Lotes de Producción - ClosedSource**
 
-Módulo de listado y seguimiento de lotes para control de trazabilidad y calidad en los ciclos productivos.
+MMockup de la vista de trazabilidad que permite buscar, filtrar y gestionar todos los lotes de producción, mostrando información clave como el número de lote, el producto asociado, la cantidad producida, el estado actual y la fecha de inicio.
 
-<img src="../assets/img/mockup/batch/batch_batch-list.jpg" alt="Ejecución-de-Lote-Activo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-list.jpg" alt="Listado de Lotes de Producción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Nuevo Lote - ClosedSource**
+**Creación de Nuevo Lote - ClosedSource**
 
-Formulario para registrar lotes de producción con especificaciones de calidad, número de lote de proveedor y stock inicial.
+Mockup del formulario para registrar un nuevo ciclo de fabricación, que permite seleccionar el producto farmacéutico, asignar un número de lote con formato predefinido, especificar la cantidad en unidades y añadir notas BPM opcionales.
 
-<img src="../assets/img/mockup/batch/batch_batch-form.jpg" alt="Estado-de-Equipamiento-IoT – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-form.jpg" alt="Creación de Nuevo Lote - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Ficha Técnica de Lote - ClosedSource**
+**Detalle de Lote - ClosedSource**
 
-Módulo de visualización de detalles técnicos de lotes de producción, incluyendo información general y materias primas asociadas.
+Mockup de la vista detallada de un lote que incluye información general del producto, su estado actual, la cantidad producida, la fecha de inicio y las notas BPM asociadas al proceso.
 
-<img src="../assets/img/mockup/batch/batch_batch-detail_1.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_1g.jpg" alt="Detalle de Lote - ClosedSource - General" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Liberación de Lote - ClosedSource**
+**Registro de Uso de Materias Primas - ClosedSource**
 
-Módulo para liberar lotes que cumplen especificaciones, con registro de notas del proceso BPM.
+Mockup de la interfaz para registrar el consumo de materiales en un lote, permitiendo seleccionar la materia prima, especificar la cantidad utilizada y visualizar el historial de uso con fechas y cantidades.
 
-<img src="../assets/img/mockup/batch/batch_batch-release-form_1.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Rechazo de Lote - ClosedSource**
-
-Registro de lotes no conformes, especificando motivo de rechazo y fecha para auditoría de calidad.
-
-<img src="../assets/img/mockup/batch/batch_batch-reject-form_1.jpg" alt="Cumplimiento - Normativo – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/batch-management/closedsource-qualitrack.web.app_batches_batch-detail_1r.jpg" alt="Registro de Uso de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Catálogo de Equipos - ClosedSource**
 
-Gestión y monitoreo de activos de laboratorio con listado de equipos, modelo, número de serie y estado.
+Mockup del listado completo de activos industriales del laboratorio, mostrando el nombre del equipo, su tipo, modelo, número de serie y estado operativo actual.
 
-<img src="../assets/img/mockup/equipment/equipment_equipment-list.jpg" alt="Ciclo-de-Vida-del-Lote – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-list.jpg" alt="Catálogo de Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Registro de Nuevo Equipo - ClosedSource**
 
-Alta de nuevos equipos en el catálogo ingresando especificaciones técnicas como nombre, tipo, modelo y número de serie.
+Mockup del formulario para incorporar nuevo equipamiento al catálogo, capturando el nombre, tipo, modelo y número de serie del activo.
 
-<img src="../assets/img/mockup/equipment/equipment_register-equipment.jpg" alt="Análisis-y-Configuración-de-Equipos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;"> 
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_register-equipment.jpg" alt="Registro de Nuevo Equipo - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Detalle de Equipo - ClosedSource**
 
-Visualización de información general y configuración BPM de equipos de laboratorio.
+Mockup de la vista técnica de un equipo específico organizada en pestañas: información general con sus especificaciones técnicas, configuración de parámetros BPM con rangos de tolerancia, e historial de mantenimiento con registros de intervenciones.
 
-<img src="../assets/img/mockup/equipment/equipment_equipment-detail_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*General*:
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_1g.jpg" alt="Detalle de Equipo - ClosedSource - General" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Detalle de Mantenimiento del Equipo - ClosedSource**
+*BPM*:
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_1bpm.jpg" alt="Detalle de Equipo - ClosedSource - BPM" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-Módulo de detalles técnicos de equipos, incluyendo configuración BPM y acceso al historial de mantenimiento.
-
-<img src="../assets/img/mockup/equipment/equipment_equipment-detail_2.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Historial de Mantenimiento - ClosedSource**
-
-Registro cronológico de eventos de mantenimiento y calibración de equipos.
-
-<img src="../assets/img/mockup/equipment/equipment_equipment-detail_3.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+*Mantenimiento*:
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_equipment-detail_1m.jpg" alt="Detalle de Equipo - ClosedSource - Mantenimiento" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Configuración de Parámetros BPM - ClosedSource**
 
-Definición de rangos de tolerancia y parámetros de monitoreo de calidad para equipos industriales.
+Mockup del panel para definir rangos de tolerancia de los parámetros de calidad monitoreados por los sensores IoT, incluyendo el nombre del parámetro, valores mínimo y máximo, y la unidad de medida correspondiente.
 
-<img src="../assets/img/mockup/equipment/equipment_bpm-config-form_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_bpm-config-form_X.jpg" alt="Configuración de Parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Historial de Mantenimiento - ClosedSource**
+**Registro de Actividad de Mantenimiento - ClosedSource**
 
-Registro cronológico de actividades técnicas con opción de añadir nuevos eventos de mantenimiento.
+Mockup del formulario para documentar intervenciones técnicas en equipos, capturando el técnico responsable, la fecha, el tipo de actividad y una descripción detallada de la intervención realizada.
 
-<img src="../assets/img/mockup/equipment/equipment_maintenance-history_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/equipment/closedsource-qualitrack.web.app_equipments_maintenance-form_X.jpg" alt="Registro de Actividad de Mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Actividad Técnica - ClosedSource**
+**Panel de Alertas de Cumplimiento - ClosedSource**
 
-Formulario para registrar intervenciones técnicas, mantenimientos y calibraciones realizadas por técnicos responsables.
+Mockup del módulo de monitoreo en tiempo real que visualiza desviaciones BPM, mostrando un resumen de alertas activas y desviaciones críticas, junto con un historial detallado de eventos que incluye fecha/hora, parámetro desviado, nivel de severidad y estado de resolución.
 
-<img src="../assets/img/mockup/equipment/equipment_maintenance-form_1.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Centro de Alertas - ClosedSource**
-
-Módulo de respuesta ante emergencias que permite pausar procesos cuando se detectan desviaciones críticas.
-
-<img src="../assets/img/mockup/ca/ca_alert-dashboard.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-dashboard.jpg" alt="Panel de Alertas de Cumplimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Historial de Alertas - ClosedSource**
 
-Registro completo de todas las desviaciones de calidad con filtros por equipo, severidad y estado.
+Mockup del registro de auditoría de todas las desviaciones de calidad, que permite filtrar por equipo, severidad y estado, con funcionalidad de búsqueda para facilitar la trazabilidad de incidentes.
 
-<img src="../assets/img/mockup/ca/ca_alert-history.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/compliance-alerts/closedsource-qualitrack.web.app_alerts_alert-history.jpg" alt="Historial de Alertas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Detalle de Desviación - ClosedSource**
+**Preferencias de Notificaciones - ClosedSource**
 
-Inspección técnica de alertas de calidad mostrando detalles específicos de la desviación detectada.
+Mockup de la pantalla de configuración para definir los canales de comunicación (In-App, Email, SMS) y el umbral mínimo de severidad para recibir alertas, permitiendo personalizar la recepción de notificaciones.
 
-<img src="../assets/img/mockup/ca/ca_deviation-detail_1.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/compliance-alerts/closedsource-qualitrack.web.app_alerts_notification-settings.jpg" alt="Preferencias de Notificaciones - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Preferencias de Notificación - ClosedSource**
+**Panel de KPIs y Rendimiento - ClosedSource**
 
-Configuración de canales (app, email, SMS) y umbrales de severidad para recibir alertas del sistema.
+Mockup del panel consolidado de indicadores clave de calidad, mostrando la salud general del sistema, parámetros en riesgo y desviaciones críticas, junto con métricas detalladas como la tasa de liberación de lotes, disponibilidad de equipos, resolución de alertas críticas y puntaje de cumplimiento BPM.
 
-<img src="../assets/img/mockup/ca/ca_notification-settings.jpg" alt="Gestión-de-Alertas-e-Incidentes – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(1).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource - Primera parte" style="width: auto; height: auto; border: 2px solid #00bfff;"><img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_kpi-dashboard(2).jpg" alt="Panel de KPIs y Rendimiento - ClosedSource - Segunda parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Panel de KPIs - ClosedSource**
+**Análisis de Tendencias de Desviación - ClosedSource**
 
-Indicadores clave de rendimiento y métricas de calidad para supervisión de laboratorio.
+Mockup de la herramienta analítica que presenta lecturas de telemetría de un equipo específico, mostrando valores registrados, límites superior e inferior, y el estado de cumplimiento de cada medición para identificar patrones de desviación.
 
-<img src="../assets/img/mockup/ra/ra_kpi-dashboard.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-**Análisis de Tendencias - ClosedSource**
-
-Módulo de análisis de tendencias de desviaciones para identificar patrones y mejorar procesos de calidad.
-
-<img src="../assets/img/mockup/ra/ra_deviation-trends.jpg" alt="Dashboard-General – ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_deviation-trends.jpg" alt="Análisis de Tendencias de Desviación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Generador de Reportes - ClosedSource**
 
-Generación de informes de calidad, trazabilidad de lotes, cumplimiento y exportación de datos técnicos (PDF/CSV).
+Mockup de la interfaz para generar documentos de calidad, incluyendo reportes de lote con opción de incluir logs de telemetría y alertas de desviación, reportes de cumplimiento periódicos y exportación de logs de equipos en formato PDF o CSV.
 
-<img src="../assets/img/mockup/ra/ra_report-generator.jpg" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_report-generator.jpg" alt="Generador de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Auditoría - ClosedSource**
+**Registro de Auditoría del Sistema - ClosedSource**
 
-Trazabilidad completa de acciones del sistema con timestamp, entidad afectada y usuario responsable.
+Mockup del log inmutable de todas las acciones del sistema, mostrando la fecha y hora, el tipo de acción realizada, la entidad afectada, el usuario que realizó la operación y detalles descriptivos, con capacidad de filtrado y búsqueda para inspecciones regulatorias.
 
-<img src="../assets/img/mockup/ra/ra_audit-log.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/reports-&-kpis/closedsource-qualitrack.web.app_reports_audit-log.jpg" alt="Registro de Auditoría del Sistema - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Perfil de Laboratorio - ClosedSource**
+**Perfil del Laboratorio - ClosedSource**
 
-Gestión de información del laboratorio y acceso a módulos de personal, productos y materias primas.
+Mockup de la vista de la información institucional del laboratorio, que incluye el nombre, RUC, dirección física, teléfono de contacto y regulaciones aplicables, con acceso directo a los submódulos de gestión.
 
-<img src="../assets/img/mockup/laboratory/laboratory_lab-profile.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_lab-profile.jpg" alt="Perfil del Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Listado de Personal - ClosedSource**
+**Creación de Laboratorio - ClosedSource**
 
-Lista de miembros del laboratorio con sus roles, correo corporativo y estado laboral.
+Mockup del formulario para registrar un nuevo laboratorio en la plataforma, capturando los datos legales, de contacto y las normativas aplicables a la operación.
 
-<img src="../assets/img/mockup/laboratory/laboratory_staff-list.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_lab-form.jpg" alt="Creación de Laboratorio - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Personal - ClosedSource**
+**Gestión de Personal - ClosedSource**
 
-Formulario para añadir personal autorizado al laboratorio, asignando rol y correo electrónico.
+Mockup del directorio del personal del laboratorio, mostrando el nombre completo de cada miembro, su rol asignado, correo electrónico corporativo y estado laboral actual.
 
-<img src="../assets/img/mockup/laboratory/laboratory_staff-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_staff-list.jpg" alt="Gestión de Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Miembro del Personal - ClosedSource**
+
+Mockup del formulario para añadir nuevos colaboradores al laboratorio, capturando el nombre completo, el rol asignado y el correo electrónico.
+
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_staff-form.jpg" alt="Registro de Miembro del Personal - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Catálogo de Productos Farmacéuticos - ClosedSource**
 
-Listado de productos con especificaciones BPM, código SKU y estado, con funcionalidad de búsqueda.
+Mockup del listado de productos con su código SKU, nombre comercial, especificaciones BPM y estado, incluyendo funcionalidad de búsqueda para facilitar la localización de productos.
 
-<img src="../assets/img/mockup/laboratory/laboratory_product-catalog.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_product-catalog.jpg" alt="Catálogo de Productos Farmacéuticos - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Producto - ClosedSource**
+**Registro de Nuevo Producto - ClosedSource**
 
-Formulario para registrar nuevos productos farmacéuticos con nombre comercial, descripción terapéutica y especificaciones de calidad.
+Mockup del formulario para añadir productos al catálogo, incluyendo código interno, nombre comercial, descripción terapéutica y especificaciones de calidad BPM.
 
-<img src="../assets/img/mockup/laboratory/laboratory_product-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_product-form.jpg" alt="Registro de Nuevo Producto - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Listado de Materias Primas - ClosedSource**
+**Inventario de Materias Primas - ClosedSource**
 
-Inventario de materias primas con código interno, proveedor autorizado, stock actual y fecha de caducidad.
+Mockup del listado de existencias con alertas visuales para materiales por debajo del umbral mínimo, mostrando el nombre, código interno, proveedor autorizado, stock actual, fecha de vencimiento y estado del inventario.
 
-<img src="../assets/img/mockup/laboratory/laboratory_raw-material-list.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-list.jpg" alt="Inventario de Materias Primas - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-**Registro de Materia Prima - ClosedSource**
+**Registro de Materia Prima / Uso - ClosedSource**
 
-Entrada de materiales al inventario farmacéutico con control de lote, proveedor, fecha de caducidad, cantidad y umbral de stock mínimo.
+Mockup del formulario para añadir nuevas materias primas al inventario o registrar el consumo de materiales existentes, capturando nombre, código, proveedor, fecha de vencimiento, cantidad, unidad de medida y umbral mínimo de stock.
 
-<img src="../assets/img/mockup/laboratory/laboratory_raw-material-form.jpg" alt="Logs-de-Auditoría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/mock-ups/laboratory/closedsource-qualitrack.web.app_laboratories_raw-material-form.jpg" alt="Registro de Materia Prima / Uso - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Panel de Telemetría - ClosedSource**
+
+Mockup del monitoreo en tiempo real de sensores IoT, mostrando el estado de conexión de los equipos, las últimas lecturas de parámetros con sus marcas de tiempo y la detección de anomalías en las mediciones.
+
+<img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(1).jpg" alt="Panel de Telemetría - ClosedSource - Primera parte" style="width: auto; height: auto; border: 2px solid #00bfff;"><img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_dashboard(2).jpg" alt="Panel de Telemetría - ClosedSource - Segunda parte" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Registro de Datos de Telemetría - ClosedSource**
+
+Mockup de la vista detallada y filtrable de todos los puntos de datos de telemetría, mostrando el timestamp, el parámetro monitoreado, el valor registrado y el estado de cumplimiento (normal o desviación BPM).
+
+<img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_history.jpg" alt="Registro de Datos de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Análisis Histórico de Telemetría - ClosedSource**
+
+Mockup de la visualización gráfica de tendencias de datos de sensores, permitiendo seleccionar el equipo y el rango de fechas para analizar el comportamiento histórico de los parámetros monitoreados.
+
+<img src="../assets/img/mock-ups/tracking-&-telemetry/closedsource-qualitrack.web.app_tracking_analysis.jpg" alt="Análisis Histórico de Telemetría - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Resumen de Facturación - ClosedSource**
+
+Mockup de la pantalla que muestra los detalles de la suscripción activa, incluyendo el plan contratado, el estado, las fechas de inicio y fin del período, así como el historial de pagos realizados.
+
+<img src="../assets/img/mock-ups/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_billing-summary.jpg" alt="Resumen de Facturación - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Planes de Suscripción - ClosedSource**
+
+Mockup de la comparativa de los planes disponibles, destacando las características de cada uno, el número de usuarios y equipos incluidos, los beneficios adicionales y los precios mensuales para facilitar la elección.
+
+<img src="../assets/img/mock-ups/subscription-&-billing/closedsource-qualitrack.web.app_subscriptions_plans.jpg" alt="Planes de Suscripción - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### Mock-ups Version Mobile
 <p>La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de QualiTrack, el ecosistema orientado a la gestión integral de operaciones de precisión clínica, el monitoreo de telemetría IoT en tiempo real y la trazabilidad inmutable de lotes de producción.
@@ -791,7 +939,7 @@ La navegación sea intuitiva para usuarios con distintos niveles tecnológicos, 
 
 <img src="../assets/img/prototypy.png" alt="ContextDiagram-Diagram" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
-https://shorturl.at/kcHKY
+https://shorturl.at/R9XI0
 
 ## 4.6. Domain-Driven Software Architecture
 
@@ -820,18 +968,18 @@ Posteriormente, organizamos los eventos en líneas de tiempo para visualizar el 
 
 * **IAM & Security Flow:** gestión de identidad, roles, registro, inicio de sesión y desactivación de accesos del personal.
 * **Laboratory Setup Flow:** configuración inicial del laboratorio, registro de personal, creación de catálogo de productos farmacéuticos y materias primas.
-* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración.
+* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración
 * **Tracking & Telemetry Flow:** recepción continua de mediciones IoT, actualización de estado de los equipos y registro de historiales telemétricos.
-* **Compliance & Alerting Flow:** configuración de preferencias de notificación, detección de anomalías, registro de eventos de cumplimiento y envío de alertas Push.
+* **Compliance & Alerting Flow:** configuración de umbrales de alerta, detección de anomalías, registro de eventos de cumplimiento y despacho de alertas de calidad.
 * **Production Batch Flow:** creación de lotes, asignación de materia prima, procesamiento y decisión final de liberación (Release) o rechazo (Reject).
-* **Reporting & Analytics Flow:** cálculo de KPIs, generación de reportes BPM consolidados y exportación de logs inmutables para auditoría.
+* **Reporting & Analytics Flow:** evaluación del desempeño productivo, generación de reportes BPM consolidados y generación de reportes de auditoría de equipos.
 * **Subscription & Payments Flow:** selección de planes SaaS para el laboratorio y procesamiento de transacciones financieras.
 
 Esta organización temporal facilitó la comprensión de dependencias y secuencias críticas entre la configuración humana y la automatización del sistema.
 
-<img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Timelines" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Timelines" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-11.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-12.png" alt="Bounded Context Timelines" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-13.png" alt="Bounded Context Timelines" width="80%"/>
 
 #### Paso 3: Commands
 
@@ -839,15 +987,16 @@ En este paso definimos los comandos que los diferentes actores pueden ejecutar e
 
 | Actor | Comandos |
 |-------|----------|
-| **QA Manager** | Sign Up, Sign In, Assign Role, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Update Notification Preference, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report, Subscribe Laboratory. |
-| **Lab Operator** | Sign In, Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
-| **Auditor** | Export Equipment Log. |
+| **QA Manager** | Assign Staff Responsibility, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Configure Alert Threshold, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report. |
+| **Lab Operator** | Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
+| **Auditor** | Generate Equipment Audit Report. |
 | **IoT Sensor** | Record Measurement. |
-| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Send Push Notification, Calculate KPI Metrics. |
+| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Dispatch Quality Alert, Evaluate Production Performance. |
 | **Payment System** | Process Payment. |
 
-<img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Commands" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Commands" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Commands" width="80%"/>
 
 #### Paso 4: Policies and Actors
 
@@ -855,24 +1004,23 @@ En este paso identificamos las políticas de negocio (reglas WHEN/THEN) y los ac
 
 Las políticas identificadas fueron:
 
-* **WHEN** raw material stock reaches the minimum threshold **THEN** trigger a minimum stock alert.
-* **WHEN** an equipment's calibration date is near **THEN** trigger a calibration due alert internally.
-* **WHEN** an IoT device loses connection **THEN** trigger an equipment connection lost alert.
-* **WHEN** telemetry is received **THEN** evaluate the measurement against the configured BPM parameters automatically.
-* **WHEN** a non-critical deviation is detected **THEN** trigger a warning alert and send a push notification to the QA Manager.
-* **WHEN** a critical deviation is detected in telemetry **THEN** block the batch automatically and register a compliance event.
-* **WHEN** a batch is successfully released with a digital signature **THEN** auto-generate the immutable batch record PDF.
-* **WHEN** a QA Manager deactivates a user access **THEN** revoke all permissions immediately while keeping the audit log intact.
+* **WHEN** raw material stock reaches the minimum threshold THEN trigger a minimum stock alert.
+* **WHEN** an equipment's calibration date is near THEN trigger a calibration due alert internally.
+* **WHEN** an IoT device loses connection THEN trigger an equipment connection lost alert.
+* **WHEN** telemetry is received THEN evaluate the measurement against the configured BPM parameters automatically.
+* **WHEN** a non-critical deviation is detected THEN trigger a warning alert and dispatch a quality alert to the QA Manager.
+* **WHEN** a critical deviation is detected in telemetry THEN block the batch automatically and register a compliance event.
+* **WHEN** a batch is successfully released with a digital signature THEN auto-generate the immutable batch record PDF.
+* **WHEN** a QA Manager deactivates a user access THEN revoke all permissions immediately while keeping the audit log intact.
 
 Estas políticas permiten automatizar procesos críticos del sistema, reduciendo drásticamente el error humano y asegurando respuestas oportunas ante situaciones de riesgo que podrían comprometer la calidad de los medicamentos.
 
-<img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Policies" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Policies" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Policies" width="80%"/>
 
 #### 4.6.1.1. Candidate Context Discovery
 
-Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como gestión de identidad, configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
+Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
 
 #### Paso 5: Read Models
 
@@ -887,9 +1035,9 @@ Los Read Models representan las vistas de consulta que los actores utilizan para
 * **Performance Metrics & KPI Summary:** dashboard utilizado por Analytics para visualizar el rendimiento y los indicadores clave.
 * **Plan Options:** permite consultar los planes de suscripción disponibles antes de realizar el pago.
 
-<img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Models" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Models" width="80%"/>
 
 #### Paso 6: External Systems
 
@@ -902,9 +1050,9 @@ En este paso identificamos los sistemas externos que interactúan con el dominio
 * **Audit Vault (Secure Storage):** servicio de almacenamiento seguro utilizado para resguardar los registros de auditoría inmutables.
 * **Stripe / Payment Gateway:** pasarela de pagos externa utilizada para procesar las transacciones de las suscripciones.
 
-<img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context External" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context External" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context External" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context External" width="80%"/>
 
 #### Paso 7: Add Aggregates
 
@@ -920,11 +1068,10 @@ En este paso identificamos los Aggregates, que representan los objetos de domini
 * **Analytics Engine:** procesa la información para la generación de métricas.
 * **Manufacturing Batch:** controla el ciclo de vida de producción de un lote.
 * **Inventory Ledger:** gestiona el registro exacto de los movimientos de inventario.
-* **Billing Account:** controla el estado de facturación y suscripción.
 
-<img src="../assets/img/design-level-event-storming-step-71.png" alt="Bounded Context aggregates" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-72.png" alt="Bounded Context aggregates" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-73.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context aggregates" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context aggregates" width="80%"/>
 
 #### Paso 8: Bounded Contexts
 
@@ -1160,73 +1307,33 @@ responsabilidades de cada módulo y decisiones de diseño técnico.
 
 ## 4.7.1. Class Diagrams
 
-En esta subsección se presentan los diagramas de clases que detallan la estructura interna
-de los principales componentes para cada bounded context. Estos diagramas complementan al
-Component Diagram de la **API Application** y a los contenedores definidos en Structurizr,
-proporcionando una vista centrada en clases, atributos, métodos y relaciones.
+En esta subsección se presentan los diagramas de clases que detallan la estructura interna de los principales componentes del frontend y backend para cada bounded context. Estos diagramas complementan al Component Diagram de la **Web Application**, al Component Diagram de la **API Application** y a los contenedores definidos en Structurizr, proporcionando una vista centrada en clases, atributos, métodos y relaciones entre componentes de presentación, stores de aplicación, servicios de infraestructura, recursos, ensambladores, modelos de dominio, entidades persistentes, repositorios, controladores y servicios de aplicación.
 
-A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que
-consumen los servicios expuestos por la API:
+A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que consumen los servicios expuestos por la API:
 
-- **Frontend completo**: muestra la organización general de la capa de presentación,
-incluyendo componentes de rutas, componentes de página y servicios de estado que
-interactúan con los contenedores backend definidos en el container diagram.
-- **IAM Frontend**: incluye los formularios y componentes relacionados con autenticación,
-registro, manejo de sesión y autorización, que consumen los endpoints del *IAM Backend*.
-- **Laboratory Management Frontend**: detalla las clases que gestionan las vistas de
-información institucional del laboratorio, catálogo de productos, inventario de materias
-primas y gestión de personal técnico.
-- **Equipment Management Frontend**: modela los componentes responsables del registro de
-equipos industriales, configuración de parámetros BPM, historial de mantenimientos y
-alertas de calibración.
-- **Tracking Frontend**: presenta los componentes de interfaz que construyen el dashboard
-de telemetría en tiempo real, gráficos de historial de variables y el panel de estado
-de equipos conectados.
-- **Compliance & Alerting Frontend**: modela las vistas de historial de alertas, detalle
-de desviaciones, configuración de canales de notificación e indicadores de compliance BPM.
-- **Batch Management Frontend**: detalla los componentes para la gestión de lotes de
-producción, trazabilidad de materias primas, flujos de liberación y rechazo documentado.
-- **Reporting & Audit Frontend**: presenta los componentes del KPI dashboard, generación
-de reportes PDF de trazabilidad y exportación de logs de eventos inmutables.
-- **Shared Frontend**: agrupa componentes reutilizables (layouts, formularios base,
-guards de autenticación, interceptores HTTP, servicios compartidos y pipes) que sirven
-como infraestructura de presentación común para el resto de módulos frontend.
+- **Frontend completo**: muestra la organización general de la capa de presentación de QualiTrack, incluyendo la configuración global de la aplicación, rutas principales, vistas generales, stores, APIs, endpoints, assemblers y bounded contexts frontend.
+- **IAM Frontend**: incluye los componentes relacionados con autenticación, registro, recuperación de contraseña, gestión de usuarios, asignación de roles, manejo de sesión y guards de autorización.
+- **Laboratory Management Frontend**: detalla las clases que gestionan la información institucional del laboratorio, personal técnico, catálogo de productos farmacéuticos, inventario de materias primas y control de stock bajo.
+- **Equipment Management Frontend**: modela los componentes responsables del registro de equipos industriales, configuración de parámetros BPM, historial de mantenimientos y alertas de calibración.
+- **Tracking Frontend**: presenta los componentes de interfaz que construyen el dashboard de telemetría, gráficos de historial, filtros de mediciones, estado de equipos conectados y detección visual de anomalías.
+- **Compliance & Alerting Frontend**: modela las vistas de alertas BPM, historial de desviaciones, detalle de alertas, resolución de incidencias y configuración de preferencias de notificación.
+- **Batch Management Frontend**: detalla los componentes para la gestión de lotes de producción, trazabilidad de materias primas, liberación digital, rechazo documentado y consulta del detalle de lote.
+- **Reporting & Audit Frontend**: presenta los componentes del dashboard KPI, análisis de tendencias de desviación, generación de reportes y visualización de logs de auditoría.
+- **Subscription & Billing Frontend**: integra las clases relacionadas con planes de suscripción, selección de plan, creación de sesión de checkout, pagos, resumen de facturación y estados de pago.
+- **Shared Frontend**: agrupa componentes reutilizables, clases base, recursos compartidos, assemblers genéricos, endpoints base, layout principal, toolbar, selector de idioma, dashboard general y vistas comunes.
 
-A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de
-los módulos definidos como componentes en la **API Application**:
+A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de los módulos definidos como componentes en la **API Application**:
 
-- **Backend completo**: ilustra la estructura general de la capa de dominio y aplicación
-(aggregates, entities, value objects, command handlers, domain services, repositories,
-event handlers), mostrando cómo se distribuyen estas clases entre los distintos bounded
-contexts modelados como componentes (*IAM Backend, Laboratory Management Backend,
-Equipment Management Backend, Tracking Backend, Compliance & Alerting Backend,
-Batch Management Backend, Reporting & Audit Backend y Shared Backend*).
-- **IAM Backend**: muestra clases como `User`, `Role`, `Permission` y `UserRoleAssignment`,
-junto con servicios de autenticación/autorización, JWT token management y repositorios
-para credenciales y roles.
-- **Laboratory Management Backend**: incluye agregados como `Laboratory`, `StaffMember`,
-`ProductCatalog` y `RawMaterial`, junto con sus servicios de dominio y repositorios,
-encargados de la gestión institucional del laboratorio farmacéutico.
-- **Equipment Management Backend**: detalla las clases `Equipment`, `BpmParameterConfig`,
-`MaintenanceRecord` y `CalibrationRecord`, así como servicios de configuración de
-parámetros BPM y gestión del ciclo de vida de los equipos industriales.
-- **Tracking Backend**: define entidades como `Measurement`, `DeviceBinding` y
-`TelemetryRecord` que permiten la ingesta, almacenamiento y consulta de telemetría
-proveniente de sensores IoT vinculados a los equipos de producción.
-- **Compliance & Alerting Backend**: modela el núcleo del sistema con clases como
-`ComplianceEvent`, `DeviationAlert` y `BpmEvaluationService`, responsables de evaluar
-cada medición, clasificar desviaciones por severidad y generar los eventos de bloqueo
-automático de lotes no conformes.
-- **Batch Management Backend**: contiene los agregados `Batch`, `BatchStatus` y
-`RawMaterialUsage`, junto con value objects de estado, servicios de liberación y rechazo,
-y repositorios que mantienen el historial inmutable de cada lote de producción.
-- **Reporting & Audit Backend**: modela las clases `AuditReport`, `ComplianceReport` y
-`KpiMetric`, junto con los servicios de generación de reportes PDF y cálculo de
-indicadores de calidad a partir de datos consolidados de múltiples contextos.
-- **Shared Backend**: concentra clases base auditables (`AuditableEntity`), value objects
-comunes (`LabId`, `UserId`, `DateRange`, `Quantity`), eventos de dominio base y
-configuraciones compartidas por todos los módulos, soportando la consistencia del diseño
-y la reutilización de código entre contextos.
+- **Backend completo**: ilustra la estructura general de la capa de dominio, aplicación, infraestructura e interfaces REST, mostrando cómo se distribuyen las clases entre los distintos bounded contexts modelados como componentes.
+- **IAM Backend**: muestra las clases relacionadas con usuarios, roles, credenciales, autenticación, autorización, manejo de tokens y repositorios de identidad.
+- **Laboratory Management Backend**: incluye agregados y entidades relacionados con laboratorios, personal técnico, productos farmacéuticos y materias primas, junto con sus servicios, comandos, consultas, repositorios y recursos REST.
+- **Equipment Management Backend**: detalla las clases responsables del ciclo de vida de equipos industriales, configuración de parámetros BPM y registros de mantenimiento.
+- **Tracking Backend**: define las clases utilizadas para gestionar telemetría de equipos, mediciones, historial de variables y estados de conectividad.
+- **Compliance & Alerting Backend**: modela las clases responsables de eventos de compliance, alertas de desviación, preferencias de notificación y flujos de resolución o reconocimiento de incidencias.
+- **Batch Management Backend**: contiene las clases asociadas con lotes de producción, uso de materias primas, firmas digitales, registros de rechazo y cambios de estado del lote.
+- **Reporting & Audit Backend**: modela las clases utilizadas para dashboards KPI, métricas, tendencias de desviación, reportes de auditoría y logs de acciones.
+- **Subscription & Billing Backend**: integra las clases relacionadas con planes de suscripción, suscripciones activas, pagos, sesiones de checkout, integración con Stripe, eventos de suscripción y webhooks de pago.
+- **Shared Backend**: concentra clases base, resultados de aplicación, errores, entidades auditables, configuraciones compartidas, ensambladores comunes y patrones transversales usados por los demás módulos.
 
 ---
 
@@ -1234,154 +1341,176 @@ y la reutilización de código entre contextos.
 
 #### Diagrama del frontend completo:
 
-![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=2)
+![Frontend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/qualitrack/qualitrack-frontend-diagram.puml&fmt=svg&v=4)
 
 <h3><strong>Diagrama del frontend dividido por contextos:</strong></h3>
 
 <h4>iam frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, roles y permisos de acceso.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de autenticación, registro de usuarios, recuperación de contraseña, administración de usuarios, asignación de roles, manejo de sesión y control de acceso mediante guards de autenticación y autorización.</p>
 
-![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=2)
+![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>laboratory management frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de información institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y gestión de personal técnico.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de perfil institucional del laboratorio, registro y edición de información del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas, control de bajo stock y gestión de personal técnico.</p>
 
-![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=2)
+![Laboratory Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/laboratory/laboratory-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>equipment management frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de registro de equipos industriales, vinculación IoT, configuración de parámetros BPM, historial de mantenimientos y alertas de calibración.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de listado, registro y detalle de equipos industriales, configuración de parámetros BPM, historial de mantenimientos, registro de mantenimientos y alertas de calibración asociadas al estado operativo de los equipos.</p>
 
-![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=2)
+![Equipment Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/equipment/equipment-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>tracking frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría en tiempo real, historial de variables críticas (temperatura, presión, pH) y panel de estado de equipos IoT conectados.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas del dashboard de telemetría, gráficos de historial de mediciones, consulta de variables críticas, panel de estado de equipos conectados y visualización de información operativa en tiempo real.</p>
 
-![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=2)
+![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>compliance & alerting frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de historial de alertas BPM, detalle de desviaciones detectadas, configuración de canales de notificación y panel de compliance regulatorio.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de alertas de desviación BPM, historial de alertas, eventos de compliance, preferencias de notificación, seguimiento de incidencias y control de cumplimiento regulatorio.</p>
 
-![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=2)
+![Compliance Alerting Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ca/ca-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>batch management frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas de gestión de lotes de producción, trazabilidad de materias primas, flujos de liberación digital y rechazo documentado de lotes no conformes.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de listado, creación y detalle de lotes de producción, trazabilidad de materias primas utilizadas, liberación digital de lotes y rechazo documentado de lotes no conformes.</p>
 
-![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=2)
+![Batch Management Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/batch/batch-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>reporting & audit frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, generación y descarga de reportes PDF de trazabilidad inmutables y exportación de logs de eventos de equipos para auditorías DIGEMID.</p>
+<p><strong>Responsabilidad:</strong> Maneja las vistas del KPI dashboard, métricas operativas, tendencias de desviaciones, generación de reportes, consulta de logs de auditoría y visualización de información para seguimiento regulatorio.</p>
 
-![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=2)
+![Reporting Audit Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/ra/ra-frontend-diagram.puml&fmt=svg&v=4)
+
+<h4>subscription & billing frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de planes de suscripción, selección de plan, proceso de checkout, creación de sesión de pago, resumen de facturación, pagos asociados a la suscripción y visualización del estado de la transacción.</p>
+
+![Subscription Billing Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/subscription/subscription-frontend-diagram.puml&fmt=svg&v=4)
 
 <h4>shared frontend:</h4>
-<p><strong>Responsabilidad:</strong> Maneja los componentes comunes, utilidades, clases base, guards de autenticación, interceptores HTTP, servicios compartidos y patrones reutilizables entre módulos.</p>
+<p><strong>Responsabilidad:</strong> Maneja los componentes comunes, layouts, toolbar, selector de idioma, vistas generales, clases base, recursos compartidos, assemblers, servicios reutilizables y patrones transversales usados por los demás módulos frontend.</p>
 
-![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/feature/docs/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=2)
+![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-Frontend/main/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg&v=4)
 
 <div style="page-break-after: always;"></div>
 
 ---
 
-### Diagrama de clases del backend 
+### Diagrama de clases del backend
 
 #### Diagrama del backend completo:
 
-![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-backend-diagram.puml&fmt=svg)
+![Backend Completo](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/qualitrack/qualitrack-backend-diagram.puml&fmt=svg&v=4)
 
 <h3><strong>Diagrama del backend dividido por contextos:</strong></h3>
 
 <h4>iam backend:</h4>
-<p><strong>Responsabilidad:</strong> Usuarios, autenticación, roles, permisos y gestión de credenciales de acceso.</p>
+<p><strong>Responsabilidad:</strong> Maneja usuarios, autenticación, autorización, roles, credenciales, servicios de aplicación, repositorios de identidad y recursos REST asociados al control de acceso.</p>
 
-![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg)
+![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/iam/iam-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>laboratory management backend:</h4>
-<p><strong>Responsabilidad:</strong> Gestión institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas y personal técnico.</p>
+<p><strong>Responsabilidad:</strong> Maneja la gestión institucional del laboratorio, catálogo de productos farmacéuticos, inventario de materias primas, personal técnico, comandos, consultas, repositorios y endpoints REST del contexto.</p>
 
-![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg)
+![Laboratory Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/laboratory/laboratory-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>equipment management backend:</h4>
-<p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, vinculación IoT, configuración de parámetros BPM y registros de mantenimiento y calibración.</p>
+<p><strong>Responsabilidad:</strong> Maneja el ciclo de vida de equipos industriales, configuración de parámetros BPM, registros de mantenimiento, entidades de persistencia, repositorios y controladores REST del contexto.</p>
 
-![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg)
+![Equipment Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/equipment/equipment-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>tracking backend:</h4>
-<p><strong>Responsabilidad:</strong> Ingesta, almacenamiento y consulta de telemetría IoT (temperatura, presión, pH) proveniente de sensores vinculados a equipos industriales.</p>
+<p><strong>Responsabilidad:</strong> Maneja la ingesta, registro, consulta e historial de telemetría de equipos, incluyendo mediciones, estados de conectividad, puntos históricos y servicios de consulta para dashboards.</p>
 
-![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg)
+![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/tracking/tracking-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>compliance & alerting backend:</h4>
-<p><strong>Responsabilidad:</strong> Evaluación de mediciones contra parámetros BPM, clasificación de desviaciones por severidad, generación de alertas inmediatas y bloqueo automático de lotes no conformes.</p>
+<p><strong>Responsabilidad:</strong> Maneja la evaluación de mediciones contra parámetros BPM, generación de alertas de desviación, eventos de compliance, preferencias de notificación, reconocimiento de alertas y resolución de incidencias.</p>
 
-![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ca/ca-backend-diagram.puml&fmt=svg)
+![Compliance Alerting Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ca/ca-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>batch management backend:</h4>
-<p><strong>Responsabilidad:</strong> Gestión del ciclo de vida de lotes de producción, trazabilidad de materias primas, liberación digital con firma del QA Manager y rechazo documentado de lotes no conformes.</p>
+<p><strong>Responsabilidad:</strong> Maneja el ciclo de vida de lotes de producción, trazabilidad de materias primas, liberación digital, rechazo documentado, firmas digitales y registros asociados al estado del lote.</p>
 
-![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg)
+![Batch Management Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/batch/batch-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>reporting & audit backend:</h4>
-<p><strong>Responsabilidad:</strong> Generación de reportes de trazabilidad PDF inmutables por lote o periodo, exportación de logs de eventos de equipos y cálculo de KPIs de calidad farmacéutica.</p>
+<p><strong>Responsabilidad:</strong> Maneja la generación de reportes, logs de auditoría, dashboards KPI, métricas de calidad, tendencias de desviación y servicios de consulta para seguimiento operativo y regulatorio.</p>
 
-![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ra/ra-backend-diagram.puml&fmt=svg)
+![Reporting Audit Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ra/ra-backend-diagram.puml&fmt=svg&v=4)
+
+<h4>subscription & billing backend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja planes de suscripción, suscripciones activas, pagos, sesiones de checkout, integración con Stripe, webhooks, activación, cancelación y consulta de estados de facturación.</p>
+
+![Subscription Billing Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/subscription/subscription-backend-diagram.puml&fmt=svg&v=4)
 
 <h4>shared backend:</h4>
-<p><strong>Responsabilidad:</strong> Componentes comunes, clases base auditables, value objects (LabId, UserId, DateRange, Quantity), eventos de dominio base y patrones compartidos entre todos los módulos backend.</p>
+<p><strong>Responsabilidad:</strong> Maneja clases base, resultados de aplicación, errores compartidos, entidades auditables, configuraciones transversales, ensambladores comunes y patrones reutilizables por los demás módulos backend.</p>
 
-![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg)
+![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/shared/shared-backend-diagram.puml&fmt=svg&v=4)
 
 <div style="page-break-after: always;"></div>
+
+---
 
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
 
-En esta sección se presenta el diseño de la base de datos relacional de QualiTrack,
-organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas,
-garantizando la separación de responsabilidades y la alineación con la arquitectura
-DDD definida en los apartados anteriores. La base de datos está implementada en
-**MySQL** y todas las tablas principales heredan los campos de auditoría
-(`created_at`, `updated_at`, `created_by`) para garantizar la trazabilidad de cada
-operación, cumpliendo con los requisitos de Data Integrity exigidos por DIGEMID.
+En esta sección se presenta el diseño de la base de datos relacional de QualiTrack, organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas, garantizando la separación de responsabilidades y la alineación con la arquitectura DDD definida en los apartados anteriores. La base de datos está implementada en **MySQL** y sus tablas principales incluyen campos de auditoría como `created_at` y `updated_at`, con el objetivo de mantener trazabilidad sobre la creación y actualización de los registros.
+
+Los diagramas de base de datos se organizan en los siguientes contextos:
+
+- **Base de datos completa**: muestra la integración general de las tablas principales de todos los bounded contexts.
+- **IAM Database**: contiene las tablas relacionadas con usuarios, roles y asignaciones de rol.
+- **Laboratory Management Database**: contiene laboratorios, regulaciones, personal técnico, productos farmacéuticos y materias primas.
+- **Equipment Management Database**: contiene equipos industriales, configuraciones de parámetros BPM y registros de mantenimiento.
+- **Batch Management Database**: contiene lotes, uso de materias primas, firmas digitales y registros de rechazo.
+- **Tracking Database**: contiene telemetría de equipos, estados de conectividad, mediciones e historial de variables.
+- **Compliance & Alerting Database**: contiene alertas de desviación, eventos de compliance y preferencias de notificación.
+- **Reporting & Audit Database**: contiene reportes de auditoría, logs, dashboards KPI, métricas y tendencias de desviación.
+- **Subscription & Billing Database**: contiene planes de suscripción, suscripciones, pagos, estados de facturación e identificadores asociados al proveedor de pago.
 
 #### Diagrama de base de datos completo:
 
-![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg&v=2)
+![Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/qualitrack/qualitrack-database-diagram.puml&fmt=svg&v=4)
 
 <h3><strong>Diagrama de base de datos dividido por contextos:</strong></h3>
 
 <h4>iam base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Gestión de usuarios, roles, permisos y asignaciones de acceso por laboratorio.</p>
+<p><strong>Responsabilidad:</strong> Gestiona las tablas de usuarios, roles y asignaciones de roles utilizadas para autenticación, autorización y control de acceso dentro de la plataforma.</p>
 
-![IAM Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/iam/iam-database-diagram.puml&fmt=svg)
+![IAM Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/iam/iam-database-diagram.puml&fmt=svg&v=4)
 
 <h4>laboratory management base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Información institucional del laboratorio, personal técnico, catálogo de productos farmacéuticos y materias primas.</p>
+<p><strong>Responsabilidad:</strong> Gestiona la información institucional de laboratorios, regulaciones aplicables, personal técnico, catálogo de productos farmacéuticos y materias primas disponibles.</p>
 
-![Laboratory Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/laboratory/laboratory-database-diagram.puml&fmt=svg)
+![Laboratory Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/laboratory/laboratory-database-diagram.puml&fmt=svg&v=4)
 
 <h4>equipment management base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Ciclo de vida de equipos industriales, configuración de parámetros BPM, historial de mantenimientos y registros de calibración.</p>
+<p><strong>Responsabilidad:</strong> Gestiona equipos industriales, configuraciones de parámetros BPM, rangos permitidos de operación y registros de mantenimiento asociados a cada equipo.</p>
 
-![Equipment Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/equipment/equipment-database-diagram.puml&fmt=svg)
-
-<h4>tracking base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Ingesta y almacenamiento de telemetría IoT, vinculación de sensores a equipos y trazabilidad de mediciones por lote.</p>
-
-![Tracking Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/tracking/tracking-database-diagram.puml&fmt=svg)
-
-<h4>compliance & alerting base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Eventos de compliance BPM, alertas de desviación, historial de resoluciones y preferencias de notificación por usuario.</p>
-
-![Compliance Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ca/ca-database-diagram.puml&fmt=svg)
+![Equipment Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/equipment/equipment-database-diagram.puml&fmt=svg&v=4)
 
 <h4>batch management base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Ciclo de vida de lotes de producción, trazabilidad de materias primas, firmas digitales de liberación y registros de rechazo.</p>
+<p><strong>Responsabilidad:</strong> Gestiona lotes de producción, uso de materias primas, firmas digitales de liberación y registros de rechazo documentado para mantener la trazabilidad del proceso productivo.</p>
 
-![Batch Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/batch/batch-database-diagram.puml&fmt=svg)
+![Batch Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/batch/batch-database-diagram.puml&fmt=svg&v=4)
+
+<h4>tracking base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestiona la telemetría de equipos, estados de conectividad, mediciones de variables críticas e historial de valores registrados para análisis operativo.</p>
+
+![Tracking Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/tracking/tracking-database-diagram.puml&fmt=svg&v=4)
+
+<h4>compliance & alerting base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestiona alertas de desviación, eventos de compliance, estados de resolución, responsables de atención y preferencias de notificación por usuario.</p>
+
+![Compliance Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ca/ca-database-diagram.puml&fmt=svg&v=4)
 
 <h4>reporting & audit base de datos:</h4>
-<p><strong>Responsabilidad:</strong> Reportes de trazabilidad generados, métricas KPI y log de auditoría de acciones de usuarios.</p>
+<p><strong>Responsabilidad:</strong> Gestiona reportes generados, logs de auditoría, dashboards KPI, métricas de calidad, tendencias de desviación y puntos históricos para análisis regulatorio.</p>
 
-![Reporting Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/ClosedSource-BackEnd/feature/docs/docs/diagrams/ra/ra-database-diagram.puml&fmt=svg)
+![Reporting Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/ra/ra-database-diagram.puml&fmt=svg&v=4)
 
+<h4>subscription & billing base de datos:</h4>
+<p><strong>Responsabilidad:</strong> Gestiona planes de suscripción, suscripciones activas o históricas, pagos registrados, ciclos de facturación, estado de suscripción e identificadores de Stripe asociados al proceso de checkout.</p>
+
+![Subscription Billing Database](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ClosedSource-11848/qualitrack-platform/main/docs/diagrams/subscription/subscription-database-diagram.puml&fmt=svg&v=4)

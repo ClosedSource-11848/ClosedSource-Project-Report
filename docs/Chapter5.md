@@ -2043,26 +2043,824 @@ general, el layout compartido y las correcciones transversales.
   flujo de feature branches y merges durante el Sprint 2.</em></p>
 </div>
 
-
-<!-- 
-
 ### 5.2.3. Sprint 3
+
+<p>
+Durante el Sprint 3, el equipo de ClosedSource se enfocó en consolidar la versión integrada de QualiTrack. A diferencia del Sprint 2, donde se desarrolló principalmente la Frontend Web Application con consumo de datos simulados, este sprint priorizó la implementación del Backend con Spring Boot, la conexión real entre Frontend y Backend, la autenticación con JWT, la persistencia en base de datos, la integración de pagos con Stripe y el despliegue de los servicios principales en la nube.
+</p>
+
+<p>
+El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcional distribuida en Bounded Contexts, incluyendo IAM, Laboratory Management, Equipment Management, Batch Management, Compliance & Alerting, Tracking & Telemetry, Reporting & Audit y Subscription & Billing. Asimismo, se habilitó la documentación de servicios mediante Swagger/OpenAPI, permitiendo validar los endpoints REST implementados durante el Sprint Review.
+</p>
+
+<p>
+  <strong>Repositorio Backend:</strong>
+  <a href="https://github.com/ClosedSource-11848/qualitrack-platform">
+    https://github.com/ClosedSource-11848/qualitrack-platform
+  </a>
+</p>
+
+<p>
+  <strong>Frontend Web Application Desplegada:</strong>
+  <a href="https://closedsource-qualitrack.web.app/home">
+    https://closedsource-qualitrack.web.app/home
+  </a>
+</p>
+
+<p>
+  <strong>Backend API Desplegada:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>Base de Datos Desplegada:</strong> Railway
+</p>
 
 #### 5.2.3.1. Sprint Planning 3
 
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: center;">Sprint Planning Sprint 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>10:00 p.m.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Discord</td>
+    </tr>
+    <tr>
+      <td>Prepared By</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+    </tr>
+    <tr>
+      <td>Attendees (to planning meeting)</td>
+      <td>
+        Ruiz Madrid, Billy Jake<br>
+        Becerra Ttito, Felix Orlando<br>
+        Diaz Caruzo, Edgard Daniel<br>
+        Viza Quispe, Marlon Packard<br>
+        Castillo Yataco, Mauricio Sebastian<br>
+        Angulo Ramírez, Marcelo Martín
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 2 Review Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        Se completó la primera versión funcional de la Frontend Web Application en Angular,
+        incluyendo los Bounded Contexts principales, la estructura DDD en el frontend,
+        componentes visuales, stores reactivos, vistas de gestión y despliegue en Firebase
+        Hosting. Sin embargo, varios flujos todavía dependían de datos simulados o endpoints
+        no implementados en el backend, por lo que se definió como prioridad completar la
+        integración real con servicios REST.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 2 Retrospective Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        El equipo identificó que el frontend había avanzado más rápido que el backend, lo que
+        generaba errores de integración, respuestas incompletas y flujos que aún no persistían
+        información real. Como acción de mejora, se acordó enfocar el Sprint 3 en implementar
+        los Bounded Contexts faltantes del backend, proteger endpoints con IAM/JWT, documentar
+        los servicios con Swagger y desplegar la solución en entornos cloud.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Sprint 3 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
+        <em>Our focus is on delivering an integrated and deployed version of QualiTrack where authenticated laboratory users can manage core quality assurance operations through an Angular frontend connected to a Spring Boot backend.</em><br><br>
+        <em>We believe it delivers a more realistic and reliable experience to QA Managers, Laboratory Operators and regulated pharmaceutical laboratories, allowing them to manage laboratories, equipment, production batches, compliance alerts, telemetry, audit reports and subscriptions using persistent data and secure access.</em><br><br>
+        <em>This will be confirmed when the Firebase frontend consumes the Render backend, the backend persists information in Railway, Swagger exposes the implemented REST endpoints, Stripe checkout can be tested, and the main business flows can be demonstrated during the Sprint Review.</em>
+      </td>
+    </tr>
+    <tr>
+      <td>Sprint 3 Velocity</td>
+      <td>45 Story Points</td>
+    </tr>
+    <tr>
+      <td>Sum of Story Points</td>
+      <td>45 SP</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.3.2. Aspect Leaders and Collaborators
+
+<p>
+En esta sección se presenta la matriz <strong>Leadership-and-Collaboration (LACX)</strong>
+correspondiente al Sprint 3. Su propósito es identificar los principales aspectos técnicos
+abordados durante el sprint y asignar responsabilidades de liderazgo (<strong>L</strong>) y
+colaboración (<strong>C</strong>) según la evidencia de trabajo registrada en el repositorio
+Backend.
+</p>
+
+<p>Los aspectos se derivan directamente de los objetivos del Sprint 3 Goal:</p>
+
+<ul>
+  <li><strong>Backend Bounded Contexts:</strong> Implementación de los módulos backend para CA, RA, Tracking, Subscription e IAM, junto con correcciones de Laboratory, Equipment y Batch.</li>
+  <li><strong>Frontend Integration & Authentication:</strong> Ajuste del frontend para consumir endpoints reales, envío de JWT mediante interceptor y alineación de IAM con el backend.</li>
+  <li><strong>Deployment, Payments & Documentation:</strong> Despliegue del backend en Render, frontend en Firebase, base de datos en Railway, configuración de Stripe y actualización de Swagger/diagramas.</li>
+</ul>
+
+<table border="1" cellpadding="4" cellspacing="0" align="center">
+  <thead>
+    <tr>
+      <th>GitHub User / Author</th>
+      <th>Backend Bounded Contexts</th>
+      <th>Frontend Integration & Authentication</th>
+      <th>Deployment, Payments & Documentation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BJRM03</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Felixb14</td>
+      <td>L</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Dan-trax</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>V8Z5</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>M4uricioCastillo</td>
+      <td>C</td><td>C</td><td>C</td>
+    </tr>
+    <tr>
+      <td>Zock2005</td>
+      <td>C</td><td>C</td><td>L</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>L</strong> = Líder del aspecto</li>
+  <li><strong>C</strong> = Colaborador en el aspecto</li>
+</ul>
 
 #### 5.2.3.3. Sprint Backlog 3
 
+<p>
+El Sprint Backlog 3 reúne las historias técnicas y tareas necesarias para completar el
+backend de QualiTrack, integrar la aplicación frontend con servicios reales, habilitar
+autenticación segura, configurar suscripciones con Stripe y desplegar los componentes en
+la nube. Todas las tareas fueron organizadas según los Bounded Contexts del sistema.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint3-board.jpeg" alt="Sprint 3 Board Screenshot" width="100%">
+  <p><em>Figura: Tablero del Sprint 3 en Jira Software (Proyecto QualiTrack)</em></p>
+</div>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="8" style="text-align:center;">Sprint # 3</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TS05</td>
+      <td>Compliance & Alerts Backend</td>
+      <td>T041</td>
+      <td>Implementar bounded context CA</td>
+      <td>Crear commands, queries, aggregates, persistence, services, REST resources y controllers para alertas, eventos de cumplimiento y preferencias de notificación.</td>
+      <td>6h</td>
+      <td>Zock2005</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS06</td>
+      <td>Laboratory Backend Integration</td>
+      <td>T042</td>
+      <td>Corregir integración de Laboratory</td>
+      <td>Ajustar endpoints de laboratorio, productos, materias primas, staff y eventos de bajo stock.</td>
+      <td>5h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS07</td>
+      <td>Equipment Backend Integration</td>
+      <td>T043</td>
+      <td>Corregir gestión de equipos</td>
+      <td>Ajustar controllers de equipos, configuración BPM, mantenimiento y publicación de eventos.</td>
+      <td>5h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS08</td>
+      <td>Batch Backend Integration</td>
+      <td>T044</td>
+      <td>Corregir gestión de lotes</td>
+      <td>Corregir batch controller, consultas por laboratorio, uso de materias primas, liberación y rechazo de lotes.</td>
+      <td>5h</td>
+      <td>M4uricioCastillo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS09</td>
+      <td>Reporting & Audit Backend</td>
+      <td>T045</td>
+      <td>Implementar bounded context RA</td>
+      <td>Crear comandos, queries, aggregates, entidades, servicios, persistencia JPA, audit log, reports, KPIs y deviation trends.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS10</td>
+      <td>Tracking & Telemetry Backend</td>
+      <td>T046</td>
+      <td>Implementar bounded context Tracking</td>
+      <td>Crear telemetría, mediciones, historial, anomalías, status de equipos, controllers y eventos de integración.</td>
+      <td>8h</td>
+      <td>Felixb14</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS11</td>
+      <td>Subscription & Billing Backend</td>
+      <td>T047</td>
+      <td>Implementar suscripciones y pagos</td>
+      <td>Crear planes, suscripciones, pagos, Stripe Checkout, webhooks, repositories, services y controllers.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS12</td>
+      <td>IAM Backend</td>
+      <td>T048</td>
+      <td>Implementar autenticación y autorización</td>
+      <td>Crear sign-up, sign-in, roles, usuarios, JWT, hashing BCrypt, filtros de seguridad y configuración Spring Security.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS13</td>
+      <td>Cloud Deployment</td>
+      <td>T049</td>
+      <td>Desplegar solución integrada</td>
+      <td>Desplegar frontend en Firebase, backend en Render y base de datos en Railway, configurando variables de entorno.</td>
+      <td>6h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS14</td>
+      <td>Technical Documentation</td>
+      <td>T050</td>
+      <td>Actualizar Swagger y diagramas</td>
+      <td>Publicar documentación OpenAPI y actualizar diagramas de frontend, backend y base de datos por bounded context.</td>
+      <td>6h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.3.4. Development Evidence for Sprint Review
+
+<p>
+En esta sección se explican y presentan los avances en la implementación logrados durante
+el Sprint 3 en relación con el Backend de QualiTrack y la integración completa de la
+plataforma. A lo largo de este sprint se implementaron nuevos Bounded Contexts, se corrigió
+la integración de módulos previamente creados, se configuró seguridad con JWT, se añadió
+Stripe para suscripciones y se preparó la solución para despliegue.
+</p>
+
+<p>
+La tabla siguiente resume commits relevantes del repositorio Backend, indicando la rama,
+el identificador del commit, el autor registrado en GitHub, el mensaje asociado y la fecha.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Author</th>
+      <th>Commit Message</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="18">https://github.com/ClosedSource-11848/qualitrack-platform</td>
+      <td>main</td>
+      <td>47571e6</td>
+      <td>Zock2005</td>
+      <td>feat(ca): add ca commands</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>d98f6c4</td>
+      <td>Zock2005</td>
+      <td>feat(ca): add rest controllers.</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>d699014</td>
+      <td>BJRM03</td>
+      <td>Merge branch 'feature/laboratory' into develop. Related to TS-L001.</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>7bc3d64</td>
+      <td>BJRM03</td>
+      <td>Feature/equipment</td>
+      <td>09/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>1a69ca8</td>
+      <td>M4uricioCastillo</td>
+      <td>fix(batch): fix batch queries and laboratory integration</td>
+      <td>10/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>006d639</td>
+      <td>BJRM03</td>
+      <td>feat(ra): add ra commands.</td>
+      <td>12/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>5c13718</td>
+      <td>BJRM03</td>
+      <td>feat(ra): add rest controller.</td>
+      <td>12/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>68edb73</td>
+      <td>Felixb14</td>
+      <td>feat(tracking): add tracking commands.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>f728110</td>
+      <td>Felixb14</td>
+      <td>feat(tracking): add rest controller.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>5739cc4</td>
+      <td>BJRM03</td>
+      <td>feat(eventhandler): add integration events for inter-context communication.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>8b892e7</td>
+      <td>BJRM03</td>
+      <td>feat(subscription): add subscription value objects.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>2b31052</td>
+      <td>BJRM03</td>
+      <td>feat(subscription): add rest controller.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>4ae5843</td>
+      <td>BJRM03</td>
+      <td>feat(iam): add identity and access management backend module.</td>
+      <td>13/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>0893560</td>
+      <td>BJRM03</td>
+      <td>feat(ra): add kpi dashboard and deviation trend calculation workflows.</td>
+      <td>14/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>4e32071</td>
+      <td>M4uricioCastillo</td>
+      <td>fix(batch): fix batch controller and raw material usage processing.</td>
+      <td>14/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>543a8ba</td>
+      <td>BJRM03</td>
+      <td>fix(tracking): fix telemetry controller and anomaly compliance handling.</td>
+      <td>14/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>d735a48</td>
+      <td>BJRM03</td>
+      <td>chore: add dockerfile configuration.</td>
+      <td>16/06/2026</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>f5a8a4c</td>
+      <td>BJRM03</td>
+      <td>docs(docs): fix backend and data base diagrams.</td>
+      <td>19/06/2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
+<p>
+Durante el Sprint 3, QualiTrack pasó de una aplicación frontend funcional con datos
+simulados a una solución integrada con backend real, autenticación, persistencia y servicios
+desplegados. La ejecución del sprint permitió validar flujos principales como registro e
+inicio de sesión, creación y edición de laboratorio, registro de equipos, configuración BPM,
+mantenimiento, gestión de lotes, uso de materias primas, alertas de cumplimiento, telemetría,
+reportes, KPIs, tendencias de desviación y suscripciones.
+</p>
+
+<p>
+Las evidencias de ejecución corresponden a la aplicación desplegada en Firebase, la API
+desplegada en Render, la base de datos en Railway y el flujo de pagos de prueba configurado
+en Stripe.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint3-frontend-firebase.jpeg" alt="QualiTrack frontend deployed in Firebase" width="90%">
+  <p><em>Figura: Frontend Web Application de QualiTrack desplegada en Firebase Hosting.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-backend-render.jpeg" alt="QualiTrack backend deployed in Render" width="90%">
+  <p><em>Figura: Backend API de QualiTrack desplegada en Render.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-railway-database.jpeg" alt="QualiTrack database deployed in Railway" width="90%">
+  <p><em>Figura: Base de datos de QualiTrack desplegada en Railway.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-stripe-checkout.jpeg" alt="Stripe checkout subscription flow" width="90%">
+  <p><em>Figura: Flujo de pago de suscripción mediante Stripe Checkout.</em></p>
+</div>
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+<p>
+Durante el Sprint 3, se habilitó la documentación de servicios REST mediante Swagger/OpenAPI
+en el backend desplegado en Render. Esta documentación permite visualizar los endpoints
+implementados por Bounded Context, probar solicitudes HTTP, revisar modelos de request/response
+y validar la integración con autenticación JWT, suscripciones y eventos de Stripe.
+</p>
+
+<p>
+  <strong>Swagger UI:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>OpenAPI JSON:</strong>
+  <a href="https://qualitrack-platform.onrender.com/v3/api-docs">
+    https://qualitrack-platform.onrender.com/v3/api-docs
+  </a>
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Bounded Context / API Group</th>
+      <th>Implemented Endpoints</th>
+      <th>Main Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Authentication</td>
+      <td>
+        <code>POST /api/v1/authentication/sign-up</code><br>
+        <code>POST /api/v1/authentication/sign-in</code>
+      </td>
+      <td>Registro de usuarios, inicio de sesión y generación de token JWT.</td>
+    </tr>
+<tr>
+  <td>Users</td>
+  <td>
+    <code>GET /api/v1/users</code><br>
+    <code>GET /api/v1/users/{userId}</code><br>
+    <code>PATCH /api/v1/users/{userId}</code><br>
+    <code>PUT /api/v1/users/{userId}/roles/{roleName}</code><br>
+    <code>GET /api/v1/users/{userId}/notification-preferences</code><br>
+    <code>PUT /api/v1/users/{userId}/notification-preferences</code>
+  </td>
+  <td>Administración de usuarios, asignación de roles, estado de cuentas y preferencias de notificación.</td>
+</tr>
+
+<tr>
+  <td>Roles</td>
+  <td>
+    <code>GET /api/v1/roles</code>
+  </td>
+  <td>Consulta de roles disponibles para la gestión de acceso dentro de la plataforma.</td>
+</tr>
+
+<tr>
+  <td>Laboratories</td>
+  <td>
+    <code>POST /api/v1/laboratories</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}</code><br>
+    <code>PUT /api/v1/laboratories/{laboratoryId}</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/staff</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/staff</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/products</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/products</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/raw-materials</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/raw-materials</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/batches</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/reports</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/subscriptions</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/billing-summary</code>
+  </td>
+  <td>Gestión del perfil de laboratorio, personal, productos, materias primas, lotes, reportes, suscripciones y resumen de facturación.</td>
+</tr>
+
+<tr>
+  <td>Equipment</td>
+  <td>
+    <code>GET /api/v1/equipments</code><br>
+    <code>POST /api/v1/equipments</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/telemetry-status</code><br>
+    <code>PUT /api/v1/equipments/{equipmentId}/telemetry-status</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/telemetry-measurements</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/telemetry-measurements</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/telemetry-history</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/telemetry-history</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/maintenance-records</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/maintenance-records</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/bpm-configs</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/bpm-configs</code>
+  </td>
+  <td>Gestión de equipos, telemetría, mediciones, historial, mantenimiento y configuración BPM.</td>
+</tr>
+
+<tr>
+  <td>Equipment Compliance, Audit & Reports</td>
+  <td>
+    <code>GET /api/v1/equipments/{equipmentId}/audit-logs</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/audit-logs</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/reports</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/log-reports</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/compliance-events</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/deviation-trends</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/deviation-trends</code><br>
+    <code>GET /api/v1/equipments/{equipmentId}/deviation-alerts</code><br>
+    <code>POST /api/v1/equipments/{equipmentId}/deviation-alerts</code>
+  </td>
+  <td>Auditoría de equipos, reportes, eventos de cumplimiento, tendencias de desviación y alertas operativas.</td>
+</tr>
+
+<tr>
+  <td>Staff</td>
+  <td>
+    <code>PATCH /api/v1/staff/{staffId}</code>
+  </td>
+  <td>Actualización del estado de miembros del personal del laboratorio.</td>
+</tr>
+
+<tr>
+  <td>Raw Materials</td>
+  <td>
+    <code>GET /api/v1/raw-materials/{rawMaterialId}/compliance-events</code>
+  </td>
+  <td>Consulta de eventos de cumplimiento asociados a materias primas.</td>
+</tr>
+
+<tr>
+  <td>Batches</td>
+  <td>
+    <code>GET /api/v1/batches</code><br>
+    <code>POST /api/v1/batches</code><br>
+    <code>GET /api/v1/batches/{batchId}</code><br>
+    <code>PATCH /api/v1/batches/{batchId}</code><br>
+    <code>GET /api/v1/batches/{batchId}/raw-materials</code><br>
+    <code>POST /api/v1/batches/{batchId}/raw-materials</code><br>
+    <code>GET /api/v1/batches/{batchId}/audit-logs</code><br>
+    <code>POST /api/v1/batches/{batchId}/audit-logs</code><br>
+    <code>GET /api/v1/batches/{batchId}/reports</code><br>
+    <code>POST /api/v1/batches/{batchId}/reports</code><br>
+    <code>GET /api/v1/batches/{batchId}/deviation-alerts</code><br>
+    <code>GET /api/v1/batches/{batchId}/compliance-events</code>
+  </td>
+  <td>Trazabilidad de lotes, actualización de estado, materias primas utilizadas, auditoría, reportes, alertas y eventos de cumplimiento.</td>
+</tr>
+
+<tr>
+  <td>Reports & KPIs</td>
+  <td>
+    <code>GET /api/v1/reports/{reportId}</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/kpi-dashboards</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/kpi-dashboards</code><br>
+    <code>POST /api/v1/laboratories/{laboratoryId}/compliance-reports</code>
+  </td>
+  <td>Consulta de reportes de auditoría, generación de reportes de cumplimiento y snapshots de KPIs del laboratorio.</td>
+</tr>
+
+<tr>
+  <td>Deviation Alerts</td>
+  <td>
+    <code>GET /api/v1/deviation-alerts/{alertId}</code><br>
+    <code>PATCH /api/v1/deviation-alerts/{alertId}</code>
+  </td>
+  <td>Consulta y actualización del estado de alertas de desviación.</td>
+</tr>
+
+<tr>
+  <td>Subscription Plans</td>
+  <td>
+    <code>GET /api/v1/subscription-plans</code>
+  </td>
+  <td>Consulta de planes de suscripción disponibles para los laboratorios.</td>
+</tr>
+
+<tr>
+  <td>Subscriptions</td>
+  <td>
+    <code>GET /api/v1/laboratories/{laboratoryId}/subscriptions</code><br>
+    <code>GET /api/v1/laboratories/{laboratoryId}/billing-summary</code><br>
+    <code>PATCH /api/v1/subscriptions/{subscriptionId}</code><br>
+    <code>GET /api/v1/subscriptions/{subscriptionId}/payments</code>
+  </td>
+  <td>Consulta de suscripciones por laboratorio, resumen de facturación, actualización de estado y consulta de historial de pagos.</td>
+</tr>
+
+<tr>
+  <td>Subscription Checkout Sessions</td>
+  <td>
+    <code>POST /api/v1/subscription-checkout-sessions</code>
+  </td>
+  <td>Creación de sesiones de Stripe Checkout para iniciar el proceso de pago de una suscripción.</td>
+</tr>
+
+<tr>
+  <td>Stripe Webhooks</td>
+  <td>
+    <code>POST /api/v1/stripe/webhooks</code>
+  </td>
+  <td>Recepción y procesamiento de eventos enviados por Stripe para sincronizar pagos y suscripciones.</td>
+</tr>
+  </tbody>
+</table>
+
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+<p>
+Durante el Sprint 3 se consolidó el despliegue de los componentes principales de QualiTrack.
+La Frontend Web Application fue desplegada en Firebase Hosting, el Backend API fue desplegado
+en Render, la base de datos MySQL fue configurada en Railway y Stripe fue utilizado en modo
+de prueba para validar el flujo de suscripciones y pagos.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Cloud Service</th>
+      <th>Production URL / Environment</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frontend Web Application</td>
+      <td>Firebase Hosting</td>
+      <td><a href="https://closedsource-qualitrack.web.app/home">https://closedsource-qualitrack.web.app/home</a></td>
+      <td>Deployed</td>
+    </tr>
+    <tr>
+      <td>Backend REST API</td>
+      <td>Render</td>
+      <td><a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">https://qualitrack-platform.onrender.com/swagger-ui/index.html</a></td>
+      <td>Deployed</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>Railway</td>
+      <td>Railway MySQL production database</td>
+      <td>Deployed</td>
+    </tr>
+    <tr>
+      <td>Payment Provider</td>
+      <td>Stripe Test Environment</td>
+      <td>Stripe Checkout and Webhooks</td>
+      <td>Configured</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
+
+<p>
+Durante el Sprint 3, el esfuerzo principal se concentró en cerrar la brecha entre la Frontend
+Web Application desarrollada en el Sprint 2 y el Backend necesario para soportar flujos reales
+de negocio. El historial de commits del repositorio <code>qualitrack-platform</code> evidencia
+la participación de los usuarios <strong>BJRM03</strong>, <strong>Felixb14</strong>, <strong>M4uricioCastillo</strong> y
+<strong>Marcelo</strong>, quienes trabajaron sobre distintos Bounded Contexts y tareas de
+integración.
+</p>
+
+<p>
+El usuario <strong>Marcelo</strong> participó en la implementación del Bounded Context de
+Compliance & Alerts, agregando comandos, queries, servicios, persistencia, recursos REST y
+controladores. El usuario <strong>Felixb14</strong> participó principalmente en el Bounded
+Context de Tracking, implementando value objects, comandos, queries, aggregates,
+eventos, excepciones, persistencia JPA, servicios de aplicación, recursos REST, controladores
+e integración externa. El usuario <strong>M4uricioCastillo</strong> participó principalmente en el Bounded
+Context de Batch, implementando value objects, comandos, queries, aggregates,
+eventos, excepciones, persistencia JPA, servicios de aplicación, recursos REST, controladores
+e integración externa. Por su parte, <strong>BJRM03</strong>
+concentró trabajo en Laboratory, Equipment, RA, Subscription & Billing, IAM, event handlers, seguridad,
+configuración de despliegue, Dockerfile y actualización de diagramas.
+</p>
+
+<p>
+La colaboración se organizó mediante ramas de tipo <code>feature/</code> y merges hacia la
+línea principal de desarrollo. Esto permitió avanzar por módulos, corregir errores de integración
+a medida que aparecían en el frontend y estabilizar progresivamente la API. El resultado final
+del sprint fue una versión desplegada e integrada de QualiTrack, con frontend en Firebase,
+backend en Render, base de datos en Railway, autenticación JWT, documentación Swagger,
+telemetría, reportes, auditoría, alertas de cumplimiento y suscripciones con Stripe.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint3-github-commits.jpeg" alt="GitHub commits during Sprint 3" width="90%">
+  <p><em>Figura: Historial de commits del repositorio Backend durante el Sprint 3.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-swagger-ui.jpeg" alt="Swagger UI documentation for QualiTrack backend" width="90%">
+  <p><em>Figura: Documentación Swagger/OpenAPI del Backend desplegado en Render.</em></p>
+</div>
+
+<!-- 
 
 ### 5.2.4. Sprint 4
 
@@ -2082,17 +2880,733 @@ general, el layout compartido y las correcciones transversales.
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
 
+comentario -->
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
 
+<p>
+Las entrevistas de validación con usuarios finales constituyen un instrumento clave para la recolección de retroalimentación sobre la solución propuesta. Estas fueron diseñadas con el objetivo de evaluar el grado de adecuación de la plataforma a los requerimientos de los usuarios, así como identificar posibles limitaciones en términos de usabilidad y oportunidades de mejora.
+</p>
+
+<p>
+Se realizaron entrevistas con representantes de los dos segmentos objetivo del proyecto: gerentes y jefes de aseguramiento de calidad, y directores y supervisores de entidades de salud pública, permitiendo obtener una perspectiva integral desde los ámbitos de gestión interna y supervisión del cumplimiento normativo.
+</p>
+
+<h4>Preguntas para el Segmento de Gerentes y Jefes de Aseguramiento de Calidad</h4>
+
+<ol>
+<li>¿Qué limitaciones le generan los sistemas actuales al gestionar la calidad?</li>
+<li>¿Qué tipo de información necesita consultar con mayor frecuencia y rapidez?</li>
+<li>¿Qué dificultades tiene al acceder a información histórica?</li>
+<li>¿Qué tareas le demandan más tiempo y considera que podrían optimizarse?</li>
+<li>¿Qué tipo de alertas o notificaciones serían más útiles para su trabajo?</li>
+<li>¿Qué funciones considera indispensables en una solución digital de aseguramiento de calidad?</li>
+<li>¿Qué beneficios concretos esperaría obtener al implementar una herramienta como esta?</li>
+<li>¿Qué aspectos le generarían desconfianza al usar una plataforma digital?</li>
+<li>¿Qué condiciones deberían cumplirse para considerar su implementación en su organización?</li>
+<li>¿Qué mejoras sugeriría para que la solución se adapte mejor a sus necesidades?</li>
+</ol>
+
+<h4>Preguntas para el Segmento de Directores y Supervisores de Entidades de Salud Pública</h4>
+<ol>
+<li>¿Qué dificultades encuentra al consolidar información de diferentes entidades de salud?</li>
+<li>¿Qué limitaciones tiene el acceso a datos para el monitoreo continuo?</li>
+<li>¿Qué indicadores o información necesita visualizar para tomar decisiones oportunas?</li>
+<li>¿Qué problemas existen en la trazabilidad de las supervisiones o inspecciones?</li>
+<li>¿Qué procesos considera que deberían integrarse en una sola plataforma?</li>
+<li>¿Qué tipo de alertas o reportes le ayudarían en su labor de supervisión?</li>
+<li>¿Qué funcionalidades considera esenciales en una herramienta digital de fiscalización?</li>
+<li>¿Qué beneficios esperaría obtener en términos de eficiencia y control?</li>
+<li>¿Qué factores le generarían desconfianza al usar esta solución?</li>
+<li>¿Qué condiciones o mejoras serían necesarias para adoptar esta herramienta?</li>
+</ol>
+
 ### 5.3.2. Registro de Entrevistas
+
+Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmentos objetivo. A continuación se presenta el registro detallado de las entrevistas realizadas, incluyendo información del entrevistado, capturas de video y análisis de respuestas.
+
+<h4>Entrevista 1 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Alberto Valle</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>68 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>Arequipa</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Gerente de Aseguramiento de Calidad</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>18/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:07 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>00:00 - 5:07</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-1.jpg" alt="Interview Segmento 1">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  El señor Alberto Valle comento que la presentación de información no era la más efectiva y considera que algunos elementos localizdos de la pagina no estan siendo aplicados correctamente.
+</p>
+
+<p>
+  El presenta experiencia previa en el area laboral de la fabricación y control de farmacos, por lo que el señalo varios aspectos vitales que da la oportunidad de mejorar el diseño tomandolo de referencia.
+</p>
+
+<p>
+  Calificó la aplicación como "en pcoreso" e indicó una urgencia en el sistmea de generación de lotes y la innecesidad de la extracción de datos relacionados a la materia prima empleada en el desarrollo del contro.
+</p>
+
+<hr>
+
+<h4>Entrevista 2 - Operador de Laboratorio (Segmento 2)</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Rocio Santo Alegre</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>49 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>Chorrillos, Lima</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Operadora de Laboratorio - Casa de Reposo</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>18/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:27 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>5:08 - 10:35</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-2.jpg" alt="Interview Administrator 2">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  Rocio indica que las dificultades más frecuentes es el tiempo en que uno tarda en procesar la información en varios documentos y pasando los datos clave al equipo de trabajo. Además, ella comenta de que el uso de maquinas que permitan registrar información de forma automatica presenta problemas de raíz en dependencia a la metodologia de trabajo del laboratorio.
+</p>
+
+<p>
+  La interfaz de CualiTrack le pareció clara y bien organizada. Sin embargo, señaló la necesidad de mejorar  el sistema de la automatización de los reportes y la falta de indicativos notorios que explican que hace cada oppción de la propuesta
+</p>
+
+<p>
+ Eya no señala un problema alguno importante,considerando que las observación son deenseñanza a los nuevos usuarios dentro de un laboratiro nuevo.
+</p>
+
+<hr>
+
+<h4>Entrevista 3 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Fred Palomino</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>41 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>Sam Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>QA Manager</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>18/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:10 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>10:36 - 15:46</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-3.jpg" alt="Interview Segmento 2">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  Fred Palomino menciona que el trabajo en equipo muchas veces es el factor que más influye en la dificultad en el aarea laboral deobido a que el apunto de los datos que regulan en la fabricación de farmacos es por periodos.
+</p>
+
+<p>
+  Con experiencia en la fabriación de farmacos, el menciona que seria bueno el asignar una clave exclusiva por usuario con el fin de protejer por completo el flujo de trabajo en caso de que en el equipo no se presente integrantes con base.
+</p>
+
+<p>
+  El menciona que, dejando de lado el tema de la seguridad, esta propuesta le interesa debido a que confirma sus capacidades de optimizar el tiempo de desarrollo.
+</p>
+
+<hr>
+
+<h4>Entrevista 4 - Operador de Laboratorio (Segmento 2))</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Risa Sotelo</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>53 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>San Isidro</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Operador de Laboratorio</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>17/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:13 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>15:47 - 20:60</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-4.jpg" alt="Interview Segmento 2">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  Sotelo es la que más defectos pudo detectar en el desarrollo de la startup QualiTrack debido a metodos de trabajos empleados por ella. Expresó que su preocupación principal es el temá de los lotes al ver que el proceso es más simplista y no de una perespectiva positiva.
+</p>
+
+<p>
+  La interfaz de QualiTrack, sibien menciona que el eorden lo bre agradable al mostrarle nuestra propuesta, el temá esta en el sistema de guardado para elementos que no presentan una prioridad en caso de detectar dificultades del control de calidad.
+</p>
+    Indico que la probabilidad de usar Qualitrack  no es la gran cosa considerando sus impresiones iniciales se relacionen con el servicio de automatización, indicando que la forma automatizada de Qualitrack no siempre ofrece un un buen serviciio acomodado al usuario.
+<p>
+  Indicó alta probabilidad de usar VEYRA y recomendó mejorar la documentación técnica y agregar opciones 
+  de exportación de datos en múltiples formatos.
+</p>
+
+<h4>Entrevista 5 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)- </h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Nombre Completo</strong></td>
+      <td>Delci Castro</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>59 años</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>San Juan de Lurigancho</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>QA Manager</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Entrevista</strong></td>
+      <td>19/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>5:33 minutos</td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>https://shorturl.at/QxbzJ</td>
+    </tr>
+    <tr>
+      <td><strong>Timing</strong></td>
+      <td>15:47 - 20:60</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+<img src="../assets/img/sprint-interview-5.jpg" alt="Interview Segmento 1">
+
+<p><strong>Resumen de Respuestas:</strong></p>
+<p>
+  La experiencia de Delcy Castro es notoria considerando que inclusve comentó que estaba de descanso temporalmente despues de haber cumplido con la labor del control. Ella menciona que el uso de herramientas que permitan recolectar los datos obtenidos de los sensores 
+</p>
+
+<p>
+  La interfaz de QualiTrack, si  menciona que el el orden lo agradable al mostrarle nuestra propuesta, el temá esta en el sistema de guardado para elementos que no presentan una prioridad en caso de detectar dificultades del control de calidad.
+</p>
+   
+<p>
+  Indicó alta probabilidad de usar CualiTrack y recomendó optimizar los recuross empleados en la formación de lotes. Además indica que la generación de reportes no parece tán completo para ser considerando como una buena opción
+</p>
 
 ### 5.3.3. Evaluaciones según heurísticas
 
+<div align="center">
+  <h2>UX Heuristics & Principles Evaluation</h2>
+  <h3>Usability – Inclusive Design – Information Architecture</h3>
+</div>
+
+<p><strong>CARRERA:</strong> Ingeniería de Software</p>
+<p><strong>CURSO:</strong> Desarrollo de Aplicaciones Open Source</p>
+<p><strong>PROFESOR:</strong> Ángel Augusto Velasquez Nuñez</p>
+<p><strong>AUDITOR:</strong> Equipo ClosedSource</p>
+<p><strong>PRODUCTO EVALUADO:</strong> QualiTrack Web Application</p>
+<p><strong>CLIENTE(S):</strong> QA Managers, Supervisores de Calidad, Lab Operators y responsables de cumplimiento BPM en laboratorios farmacéuticos.</p>
+
+<br>
+
+<strong>TAREAS A EVALUAR:</strong>
+
+<p>
+El alcance de esta evaluación heurística incluye la revisión de los principales flujos
+implementados en QualiTrack Web Application, considerando criterios de usabilidad,
+diseño inclusivo, arquitectura de información, consistencia visual, prevención de errores
+y claridad de los mensajes del sistema.
+</p>
+
+<ul>
+  <li>Validar el flujo de inicio de sesión y acceso a la plataforma.</li>
+  <li>Evaluar la navegación lateral por módulos y Bounded Contexts.</li>
+  <li>Revisar la claridad del Dashboard operativo del laboratorio.</li>
+  <li>Evaluar la gestión del perfil del laboratorio.</li>
+  <li>Validar los formularios de equipos, lotes, personal, productos y materias primas.</li>
+  <li>Revisar la visualización de telemetría, alertas de cumplimiento y reportes.</li>
+  <li>Evaluar el flujo de planes de suscripción, checkout con Stripe y resumen de facturación.</li>
+  <li>Revisar mensajes de error, estados vacíos, estados de carga y confirmaciones del sistema.</li>
+  <li>Verificar la consistencia del idioma entre inglés y español.</li>
+  <li>Evaluar la claridad de botones de acción, etiquetas, tablas y componentes visuales.</li>
+</ul>
+
+<br>
+
+<strong>ESCALA DE SEVERIDAD:</strong>
+
+<p>
+Los problemas identificados fueron puntuados tomando en cuenta la siguiente escala de
+severidad:
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Problema superficial: puede ser superado fácilmente por el usuario o ocurre con poca frecuencia. No requiere corrección inmediata, salvo que exista disponibilidad de tiempo.</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Problema menor: genera cierta fricción en la experiencia, pero no impide completar la tarea. Debe priorizarse para una siguiente iteración.</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Problema mayor: dificulta completar una tarea importante o puede causar errores frecuentes. Debe corregirse con prioridad alta.</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Problema crítico: impide completar una tarea clave del sistema o afecta gravemente la confianza del usuario. Debe corregirse antes de un release estable.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<strong>TABLA RESUMEN:</strong>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Problema</th>
+      <th>Escala de severidad</th>
+      <th>Heurística/Principio violada(o)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Algunas acciones muestran claves de traducción en lugar de texto legible para el usuario, por ejemplo en el botón de cancelación de suscripción.</td>
+      <td align="center">3</td>
+      <td>Consistency and standards / Match between system and the real world</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Algunos mensajes de error son técnicos o poco orientadores, como errores inesperados al cargar una suscripción.</td>
+      <td align="center">3</td>
+      <td>Help users recognize, diagnose, and recover from errors</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>El Dashboard concentra varias métricas, gráficos y tarjetas en una sola vista, lo que puede generar carga cognitiva para usuarios nuevos.</td>
+      <td align="center">2</td>
+      <td>Aesthetic and minimalist design / Information Architecture</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>El primer acceso al backend desplegado puede tardar por la reactivación del servicio en Render, sin explicar claramente al usuario que el sistema está cargando.</td>
+      <td align="center">2</td>
+      <td>Visibility of system status</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Algunas acciones críticas, como cancelar suscripciones o actualizar estados, requieren mayor confirmación antes de ejecutarse.</td>
+      <td align="center">3</td>
+      <td>Error prevention / User control and freedom</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>La navegación lateral contiene varios módulos y submódulos, lo que puede dificultar encontrar rápidamente una funcionalidad específica.</td>
+      <td align="center">2</td>
+      <td>Recognition rather than recall / Information Architecture</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Algunos campos técnicos de formularios, como parámetros BPM, telemetría o umbrales, no cuentan con ayuda contextual suficiente.</td>
+      <td align="center">3</td>
+      <td>Help and documentation</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Existe mezcla ocasional de inglés y español en etiquetas, estados o mensajes, afectando la consistencia de la experiencia bilingüe.</td>
+      <td align="center">2</td>
+      <td>Consistency and standards</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>El flujo de Stripe Checkout redirige fuera de la plataforma, pero requiere una explicación previa más clara para que el usuario entienda el cambio de contexto.</td>
+      <td align="center">2</td>
+      <td>Visibility of system status / User control and freedom</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Las tablas de pagos, reportes, auditoría o historial podrían beneficiarse de filtros, búsqueda o paginación más visibles.</td>
+      <td align="center">2</td>
+      <td>Flexibility and efficiency of use</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h4>Descripción Detallada de Problemas Críticos</h4>
+
+<p><strong>Problema 1: Etiquetas de traducción visibles en acciones de suscripción.</strong></p>
+
+<p><strong>Severidad:</strong> 3</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Consistency and standards y Match between system and the real world.
+</p>
+
+<p>
+  <strong>Problema:</strong> En la vista de <em>Billing Summary</em> se identificó que una acción relacionada con la suscripción podía mostrarse como una clave de traducción, por ejemplo
+  <code>subscription.billing.cancel-subscription</code>, en lugar de un texto comprensible para el usuario. Este problema afecta la claridad de la interfaz, reduce la confianza en el sistema y transmite la percepción de que la aplicación no está completamente terminada.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem1-subscription-translation.jpeg" alt="Problema de etiqueta de traducción en Billing Summary" width="90%">
+  <p><em>Figura: Evidencia de etiqueta de traducción visible en el módulo Subscription & Billing.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Completar las claves faltantes en los archivos de internacionalización para inglés y español. El texto debe mostrarse como <strong>Cancel subscription</strong> en inglés y <strong>Cancelar suscripción</strong> en español. Además, se recomienda revisar todas las vistas principales con ambos idiomas activos antes del despliegue.
+</p>
+
+<hr>
+
+<p><strong>Problema 2: Mensajes de error técnicos al cargar información de suscripción.</strong></p>
+
+<p><strong>Severidad:</strong> 3</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Help users recognize, diagnose, and recover from errors.
+</p>
+
+<p>
+  <strong>Problema:</strong> Durante la validación del módulo <em>Subscription & Billing</em>, la interfaz mostró mensajes como <em>Failed to fetch subscription for laboratory 1: Unexpected server error</em>. Aunque el mensaje permite identificar el origen técnico del problema, no está orientado al usuario final ni indica una acción clara de recuperación.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem2-subscription-error.jpeg" alt="Error técnico en Billing Summary" width="90%">
+  <p><em>Figura: Mensaje técnico mostrado al usuario durante la carga de suscripción.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Reemplazar los mensajes técnicos por mensajes amigables y accionables, como: <em>No se pudo cargar la información de la suscripción. Por favor, recargue la página o intente nuevamente en unos segundos.</em> El detalle técnico debe mantenerse en consola o logs internos, evitando exponerlo directamente al usuario.
+</p>
+
+<hr>
+
+<p><strong>Problema 3: Alta densidad de información en el Dashboard operativo.</strong></p>
+
+<p><strong>Severidad:</strong> 2</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Aesthetic and minimalist design e Information Architecture.
+</p>
+
+<p>
+  <strong>Problema:</strong> El Dashboard de QualiTrack muestra múltiples elementos en una sola vista: resumen general, salud operacional, tarjetas de equipos, lotes, alertas, materias primas, suscripción, gráficos de distribución y riesgos. Aunque esta información es valiosa, puede resultar abrumadora para usuarios nuevos o para operadores que necesitan identificar rápidamente tareas críticas.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem3-dashboard-density.jpeg" alt="Dashboard operativo de QualiTrack" width="90%">
+  <p><em>Figura: Dashboard con métricas operativas y gráficos en una sola vista.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Priorizar la información crítica mediante una jerarquía visual más clara. Se recomienda agrupar métricas en secciones, destacar alertas críticas con mayor prominencia y añadir filtros rápidos por módulo. También se puede incluir una vista resumida para usuarios operativos y una vista avanzada para administradores o QA Managers.
+</p>
+
+<hr>
+
+<p><strong>Problema 4: Falta de explicación durante el primer tiempo de carga del backend.</strong></p>
+
+<p><strong>Severidad:</strong> 2</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Visibility of system status.
+</p>
+
+<p>
+  <strong>Problema:</strong> Debido al despliegue del backend en Render, el servicio puede tardar en responder cuando la instancia se reactiva después de un periodo de inactividad. Para el usuario final, esta demora puede percibirse como un error de conexión o una falla de la aplicación si no existe un estado de carga claro.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem4-loading-state.jpeg" alt="Estado de carga en QualiTrack" width="90%">
+  <p><em>Figura: Validación del comportamiento de carga durante la conexión con el backend desplegado.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Implementar mensajes de estado más claros durante operaciones de carga prolongadas, por ejemplo: <em>Conectando con el servidor de QualiTrack...</em> o <em>Estamos preparando la información del laboratorio. Esto puede tomar unos segundos.</em> También se recomienda mantener indicadores de carga visibles.
+</p>
+
+<hr>
+
+<p><strong>Problema 5: Acciones críticas sin confirmación suficientemente explícita.</strong></p>
+
+<p><strong>Severidad:</strong> 3</p>
+
+<p>
+  <strong>Heurística/Principio violada(o):</strong> Error prevention y User control and freedom.
+</p>
+
+<p>
+  <strong>Problema:</strong> Algunas acciones de alto impacto, como cancelar una suscripción, actualizar el estado de un lote, modificar datos de laboratorio o cambiar el estado de una alerta, requieren una confirmación más explícita antes de ejecutarse. En un entorno farmacéutico, estas acciones pueden afectar trazabilidad, cumplimiento y operación.
+</p>
+
+<div align="center">
+  <img src="../assets/img/heuristic-problem5-critical-actions.jpeg" alt="Acciones críticas en QualiTrack" width="90%">
+  <p><em>Figura: Flujo de acción crítica que requiere mayor prevención de errores.</em></p>
+</div>
+
+<p>
+  <strong>Recomendación:</strong> Incorporar modales de confirmación para acciones irreversibles o sensibles. Estos modales deben indicar claramente la consecuencia de la acción, el recurso afectado y las opciones disponibles: <strong>Confirmar</strong>, <strong>Cancelar</strong> o <strong>Volver</strong>. Para acciones de suscripción, se recomienda informar si el acceso se mantendrá hasta el final del periodo activo.
+</p>
+
+<hr>
+
+<h4>Conclusión de la Evaluación Heurística</h4>
+
+<p>
+La evaluación heurística permitió identificar oportunidades de mejora en la experiencia de usuario de QualiTrack, especialmente en consistencia lingüística, prevención de errores, claridad de mensajes, reducción de carga cognitiva y ayuda contextual. En términos generales, la aplicación presenta una estructura funcional sólida y una arquitectura de información alineada con los Bounded Contexts del dominio farmacéutico.
+</p>
+
+<p>
+Sin embargo, para fortalecer la usabilidad en un entorno regulado, se recomienda priorizar la corrección de etiquetas de traducción, mensajes de error amigables, confirmaciones para acciones críticas, indicadores de carga más claros y guías contextuales en formularios técnicos. Estas mejoras contribuirán a que QA Managers, Supervisores de Calidad y Lab Operators puedan usar la plataforma con mayor confianza, reduciendo errores operativos y facilitando la adopción de QualiTrack como solución SaaS para la gestión de calidad farmacéutica.
+</p>
+
 ## 5.4. Video About-the-Product
 
-comentario -->
+<p>
+  El video <strong>"About the Product"</strong> presenta de manera clara y atractiva la propuesta de valor de
+  <strong>QualiTrack</strong>, explicando los principales problemas que enfrentan los laboratorios farmacéuticos
+  en la gestión de calidad, cumplimiento BPM, trazabilidad de lotes, monitoreo de equipos y control de suscripciones.
+  Asimismo, muestra cómo la solución permite digitalizar procesos críticos, centralizar información operativa,
+  automatizar alertas y fortalecer el cumplimiento regulatorio mediante una plataforma SaaS integrada.
+</p>
+
+<h4>Información General del Video</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Título del Video</strong></td>
+      <td>QualiTrack: Pharmaceutical Quality Management with IoT and BPM Compliance</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>	2 minutos 2 segundos</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Grabación</strong></td>
+      <td>19/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>URL YouTube</strong></td>
+      <td>
+        <a href="https://youtu.be/LpOAo21-778">
+          https://youtu.be/LpOAo21-778
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>
+        <a href="https://shorturl.at/FCgv3">
+          https://shorturl.at/FCgv3
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+
+<div align="center">
+  <img src="../assets/img/about-the-product-video.jpeg" alt="About the Product Video - QualiTrack" width="90%">
+  <p><em>Figura: Captura del video About the Product de QualiTrack.</em></p>
+</div>
+
+<h4>Contenido del Video</h4>
+
+<p>
+  El video está estructurado en las siguientes secciones:
+</p>
+
+<ol>
+  <li>
+    <strong>Introducción:</strong> Presentación de QualiTrack como una solución SaaS orientada a laboratorios
+    farmacéuticos que necesitan mejorar la trazabilidad, el control de calidad y el cumplimiento de buenas
+    prácticas de manufactura.
+  </li>
+  <li>
+    <strong>Problema identificado:</strong> Explicación de las dificultades comunes en laboratorios que aún
+    dependen de registros manuales, hojas de cálculo, reportes dispersos y controles reactivos para supervisar
+    lotes, equipos, materias primas y eventos de cumplimiento.
+  </li>
+  <li>
+    <strong>Propuesta de solución:</strong> Presentación de QualiTrack como una plataforma centralizada que
+    permite gestionar laboratorios, personal, equipos, lotes, alertas, reportes, telemetría y suscripciones
+    desde una misma aplicación web.
+  </li>
+  <li>
+    <strong>Funcionalidades principales:</strong> Demostración de las características clave de la solución:
+    <ul>
+      <li>Dashboard operativo con indicadores de salud general del laboratorio.</li>
+      <li>Gestión de equipos, estados de telemetría, mediciones e historial operativo.</li>
+      <li>Administración de lotes de producción y materias primas asociadas.</li>
+      <li>Registro y seguimiento de alertas de desviación y eventos de cumplimiento.</li>
+      <li>Generación de reportes, auditoría y KPIs para soporte de decisiones.</li>
+      <li>Gestión de planes de suscripción, checkout con Stripe e historial de pagos.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Beneficios para el usuario:</strong> Énfasis en los beneficios para QA Managers, Supervisores de
+    Calidad y Lab Operators, tales como reducción de errores manuales, mayor visibilidad operacional,
+    trazabilidad centralizada y mejor capacidad de respuesta ante desviaciones.
+  </li>
+  <li>
+    <strong>Llamada a la acción:</strong> Invitación a visitar el Landing Page de QualiTrack, conocer los planes
+    disponibles y acceder a la Web Application para explorar las funcionalidades del producto.
+  </li>
+</ol>
+
+<h4>Inscripción en Landing Page</h4>
+
+<p>
+  El video <strong>"About the Product"</strong> se encuentra disponible como material audiovisual de presentación
+  del producto QualiTrack. Este recurso permite que potenciales clientes comprendan la propuesta de valor antes
+  de registrarse, seleccionar un plan o solicitar mayor información sobre la plataforma.
+</p>
+
+<p>
+  <strong>URL del Landing Page donde está el video:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
+</p>
+
+<p>
+  <strong>URL de la Web Application:</strong>
+  <a href="https://closedsource-qualitrack.web.app">
+    https://closedsource-qualitrack.web.app
+  </a>
+</p>
 
 # Conclusiones
 
@@ -2264,13 +3778,164 @@ comentario -->
   </li>
 </ul>
 
+## Video About-the-Team
+
+<p>
+  El video <strong>"About the Team"</strong> presenta al equipo de desarrollo de <strong>ClosedSource</strong>,
+  destacando las habilidades, roles y contribuciones de cada integrante en el proyecto <strong>QualiTrack</strong>.
+  Este video complementa la documentación del proyecto mostrando el lado humano detrás del desarrollo de la solución,
+  así como la participación del equipo en el diseño, implementación, integración, despliegue y validación de la plataforma.
+</p>
+
+<h4>Información General del Video</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><strong>Título del Video</strong></td>
+      <td>ClosedSource: Meet the Team Behind QualiTrack</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>10 minutos 9 segundos</td>
+    </tr>
+    <tr>
+      <td><strong>Fecha de Grabación</strong></td>
+      <td>20/06/2026</td>
+    </tr>
+    <tr>
+      <td><strong>URL YouTube</strong></td>
+      <td>
+        <a href="https://youtu.be/bGTHeGe3x6U">
+          https://youtu.be/bGTHeGe3x6U
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>URL Microsoft Stream</strong></td>
+      <td>
+        <a href="https://shorturl.at/Yl5A8">
+          https://shorturl.at/Yl5A8
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Screenshot del video:</strong></p>
+
+<div align="center">
+  <img src="../assets/img/about-the-team-video.jpeg" alt="QualiTrack About the Team Video" width="90%">
+  <p><em>Figura: Captura del video About the Team de QualiTrack.</em></p>
+</div>
+
+<h4>Contenido del Video</h4>
+
+<p>
+  El video incluye presentaciones individuales de los integrantes del equipo ClosedSource,
+  explicando su participación dentro del desarrollo de QualiTrack y las responsabilidades
+  asumidas durante los sprints del proyecto.
+</p>
+
+<ul>
+  <li>Nombre completo de cada integrante del equipo.</li>
+  <li>Rol principal dentro del proyecto QualiTrack.</li>
+  <li>Responsabilidades asumidas durante el desarrollo.</li>
+  <li>Tecnologías y herramientas utilizadas durante la implementación.</li>
+  <li>Contribuciones en frontend, backend, base de datos, despliegue, documentación y pruebas.</li>
+  <li>Aprendizajes obtenidos durante el desarrollo de una solución SaaS para laboratorios farmacéuticos.</li>
+  <li>Expectativas y oportunidades de mejora para futuras iteraciones del producto.</li>
+</ul>
+
+<h4>Miembros del Equipo</h4>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nombre Completo</th>
+      <th>Rol Principal</th>
+      <th>Contribuciones Destacadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Implementación de funcionalidades frontend en Angular, integración con servicios REST,
+        configuración de despliegue en Firebase, soporte en backend Spring Boot, base de datos
+        MySQL en Railway e integración del flujo de suscripciones con Stripe.
+      </td>
+    </tr>
+    <tr>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Colaboración en el desarrollo e integración de funcionalidades del proyecto QualiTrack,
+        apoyo en la implementación de módulos de la Web Application, revisión de flujos funcionales
+        y participación en la validación de la solución durante el Sprint 3.
+      </td>
+    </tr>
+    <tr>
+      <td>Diaz Caruzo, Edgard Daniel</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Desarrollo de módulos funcionales de la Web Application, apoyo en la implementación
+        de componentes Angular, validación de vistas y colaboración en la documentación del proyecto.
+      </td>
+    </tr>
+    <tr>
+      <td>Viza Quispe, Marlon Packard</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Implementación de funcionalidades asociadas a la gestión operativa del laboratorio,
+        apoyo en la estructuración de vistas, revisión de integración frontend-backend y pruebas funcionales.
+      </td>
+    </tr>
+    <tr>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Diseño y mejora de interfaces de usuario, aplicación de estilos visuales, apoyo en la
+        experiencia de usuario de la aplicación y colaboración en la validación de componentes.
+      </td>
+    </tr>
+    <tr>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>Backend and Frontend Developer</td>
+      <td>
+        Desarrollo de secciones de la aplicación web, soporte en integración de APIs,
+        revisión de flujos funcionales y colaboración en pruebas, documentación y despliegue.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Relación con el Proyecto</h4>
+
+<p>
+  El video <strong>"About the Team"</strong> evidencia la organización y colaboración del equipo ClosedSource
+  durante el desarrollo de QualiTrack. A través de las presentaciones individuales, se muestra cómo cada
+  integrante contribuyó a la construcción de una solución orientada a laboratorios farmacéuticos, integrando
+  tecnologías como Angular, Spring Boot, MySQL, Firebase Hosting, Render, Railway y Stripe.
+</p>
+
+<p>
+  Además, el video permite reforzar la trazabilidad del trabajo realizado durante los sprints, destacando
+  la participación del equipo en el desarrollo del Landing Page, la Web Application, los Web Services REST,
+  la documentación técnica, la validación funcional y el despliegue cloud de la solución.
+</p>
+
 <div style="page-break-after: always;"></div>
 
 # Anexos
+
 <h4>Anexo A: Enlaces de Despliegue y Repositorios</h4>
+
 <p>
-  A continuación se listan los enlaces correspondientes a los recursos disponibles hasta el Sprint 1 (AV1), incluyendo el despliegue del Landing Page y los repositorios del proyecto QualiTrack.
+  A continuación se listan los enlaces correspondientes a los recursos disponibles del proyecto QualiTrack, incluyendo los despliegues de la Landing Page, la aplicación frontend, la API backend y los repositorios del proyecto.
 </p>
+
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -2292,6 +3957,14 @@ comentario -->
       <td>
         <a href="https://closedsource-qualitrack.web.app">
           https://closedsource-qualitrack.web.app
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Backend API Documentation (Render / Swagger UI)</strong></td>
+      <td>
+        <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">
+          https://qualitrack-platform.onrender.com/swagger-ui/index.html
         </a>
       </td>
     </tr>
@@ -2322,8 +3995,8 @@ comentario -->
     <tr>
       <td><strong>Repositorio Backend</strong></td>
       <td>
-        <a href="https://github.com/ClosedSource-11848/ClosedSource-Backend">
-          https://github.com/ClosedSource-11848/ClosedSource-Backend
+        <a href="https://github.com/ClosedSource-11848/qualitrack-platform">
+          https://github.com/ClosedSource-11848/qualitrack-platform
         </a>
       </td>
     </tr>
@@ -2332,8 +4005,9 @@ comentario -->
 
 <h4>Anexo B: Videos de Exposiciones</h4>
 <p>
-  Registro de las exposiciones realizadas hasta el hito AV1 correspondiente al Sprint 1.
+  Registro de las exposiciones realizadas hasta el hito AV2 correspondiente al Sprint 3.
 </p>
+
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -2346,11 +4020,19 @@ comentario -->
     <tr>
       <td rowspan="2"><strong>Video de Exposición AV1 (Sprint 1)</strong></td>
       <td>YouTube</td>
-      <td><a href="https://shorturl.at/6tJNG">[https://shorturl.at/6tJNG]</a></td>
+      <td>
+        <a href="https://shorturl.at/6tJNG">
+          [https://shorturl.at/6tJNG]
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="https://shorturl.at/VP26T">[https://shorturl.at/VP26T]</a></td>
+      <td>
+        <a href="https://shorturl.at/VP26T">
+          [https://shorturl.at/VP26T]
+        </a>
+      </td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Video de Exposición TB1 (Sprint 2)</strong></td>
@@ -2369,14 +4051,29 @@ comentario -->
         </a>
       </td>
     </tr>
+    <tr>
+      <td rowspan="2"><strong>Video de Exposición AV2 (Sprint 3)</strong></td>
+      <td>YouTube</td>
+      <td>
+        <a href="https://shorturl.at/EXc7f">
+          [https://shorturl.at/EXc7f]
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td>
+        <a href="https://shorturl.at/hZEJ4">
+          [https://shorturl.at/hZEJ4]
+        </a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
-<!-- 
-
 <h4>Anexo C: Videos del Proyecto</h4>
 <p>
-  Material audiovisual del proyecto QualiTrack relacionado a la presentación del producto y del equipo (opcional en AV1 si ya lo tienen grabado).
+  Material audiovisual del proyecto QualiTrack relacionado a la presentación del producto y del equipo.
 </p>
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
@@ -2390,23 +4087,36 @@ comentario -->
     <tr>
       <td rowspan="2"><strong>Video "About the Product"</strong></td>
       <td>YouTube</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://youtu.be/LpOAo21-778">
+          https://youtu.be/LpOAo21-778
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://shorturl.at/FCgv3">
+          https://shorturl.at/FCgv3
+        </a>
+      </td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Video "About the Team"</strong></td>
       <td>YouTube</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://youtu.be/bGTHeGe3x6U">
+          https://youtu.be/bGTHeGe3x6U
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
-      <td><a href="#">[OPCIONAL]</a></td>
+      <td>
+        <a href="https://shorturl.at/Yl5A8">
+          https://shorturl.at/Yl5A8
+        </a>
+      </td>
     </tr>
   </tbody>
 </table>
-
-comentario -->
-
