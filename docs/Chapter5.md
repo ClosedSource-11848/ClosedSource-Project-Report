@@ -2152,37 +2152,34 @@ El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcio
   <td colspan="2">
     <strong>Sprint 3 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
     <em>
-      Our focus is on transforming QualiTrack from a mostly frontend-based prototype into
-      an integrated SaaS product increment with a public Landing Page, authenticated web
-      application, operational quality-management modules, subscription/payment flows and
-      deployed backend services.
+      Our focus is on completing the QualiTrack experience by improving the
+      Landing Page, connecting the Angular frontend with real backend services, adding
+      authentication, enabling subscription/payment flows and deploying the platform.
     </em><br><br>
     <em>
-      We believe it delivers value to pharmaceutical laboratories by offering features that
-      were not fully available before: public communication of the product value proposition,
-      subscription plan discovery, role-based sign-up and secure sign-in, laboratory profile
-      management, staff administration, product and raw material catalogs, equipment
-      registration, BPM parameter configuration, maintenance records, batch traceability,
-      raw material usage tracking, batch release and rejection, telemetry monitoring,
-      anomaly history, compliance alerts, notification preferences, KPI dashboards,
-      deviation trend analysis, regulatory report generation, audit logs and billing
-      management through Stripe.
+      In the Landing Page, we will add video sections for About the Product and About the
+      Team, so visitors can better understand what QualiTrack offers, who is behind the
+      solution and why they can trust the product before choosing a subscription plan.
     </em><br><br>
     <em>
-      This will help QA Managers, Laboratory Operators and auditors move from isolated
-      screens and simulated flows to a more reliable end-to-end platform where quality
-      operations can be registered, monitored, analyzed, audited and connected to a
-      subscription-based business model.
+      In the web application, we will replace simulated flows with real integrated modules:
+      sign-up and sign-in with JWT, laboratory profile management, staff, products, raw
+      materials, equipment, BPM configuration, maintenance, batches, telemetry, compliance
+      alerts, KPI dashboard, deviation trends, report generation, audit logs and subscription
+      billing.
     </em><br><br>
     <em>
-      This will be confirmed when visitors can navigate the deployed Landing Page and review
-      benefits, contact information and subscription plans; users can register or sign in
-      with JWT-based authentication; authenticated users can manage laboratories, equipment,
-      batches, telemetry, alerts, reports, audit logs and subscriptions from the Angular
-      frontend; payments can be initiated through Stripe Checkout; backend services are
-      documented in Swagger/OpenAPI; data is persisted in Railway; and the complete solution
-      can be demonstrated through the Firebase frontend and Render backend during the Sprint
-      Review.
+      In the backend, we will implement and expose the missing REST services for IAM,
+      subscriptions with Stripe, tracking, reporting and audit, compliance alerts and the
+      required integrations between bounded contexts, making the API available through
+      Swagger and ready for deployment.
+    </em><br><br>
+    <em>
+      This will be confirmed when users can watch the Landing Page videos, review the plans,
+      register or sign in, use the main quality-management modules with persisted data,
+      start a Stripe checkout session, consult billing information, test the documented
+      backend services in Swagger, and access the deployed solution through Firebase,
+      Render and Railway.
     </em>
   </td>
 </tr>
