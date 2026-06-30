@@ -2251,16 +2251,30 @@ Backend.
 #### 5.2.3.3. Sprint Backlog 3
 
 <p>
-El Sprint Backlog 3 reúne las historias técnicas y tareas necesarias para completar el
-backend de QualiTrack, integrar la aplicación frontend con servicios reales, habilitar
-autenticación segura, configurar suscripciones con Stripe y desplegar los componentes en
-la nube. Todas las tareas fueron organizadas según los Bounded Contexts del sistema.
+El Sprint Backlog 3 fue definido a partir del Sprint Goal orientado a consolidar una
+experiencia completa y demostrable de QualiTrack, integrando la Landing Page, la aplicación
+Frontend Web y los servicios Backend desplegados. Durante este sprint se trabajaron historias
+relacionadas con la presentación comercial del producto, autenticación, suscripciones con
+Stripe, gestión operativa del laboratorio, tracking, alertas, reportes, auditoría, navegación
+global, localización y despliegue cloud.
+</p>
+
+<p>
+Las historias seleccionadas provienen del Product Backlog definido en el Capítulo 3. A partir
+de ellas se descompusieron tareas funcionales y técnicas necesarias para entregar valor de
+extremo a extremo, desde la interfaz pública hasta los servicios REST, persistencia,
+integración entre bounded contexts y despliegue.
 </p>
 
 <div align="center">
   <img src="../assets/img/sprint3-board.jpeg" alt="Sprint 3 Board Screenshot" width="100%">
   <p><em>Figura: Tablero del Sprint 3 en Jira Software (Proyecto QualiTrack)</em></p>
 </div>
+
+<p>
+<strong>Board URL:</strong>
+<a href="https://closedsource-11848.atlassian.net/jira/software/projects/KAN/boards/1/backlog" target="_blank">https://closedsource-11848.atlassian.net/jira/software/projects/KAN/boards/1/backlog</a>
+</p>
 
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
@@ -2284,101 +2298,231 @@ la nube. Todas las tareas fueron organizadas según los Bounded Contexts del sis
   </thead>
   <tbody>
     <tr>
-      <td>TS05</td>
-      <td>Compliance & Alerts Backend</td>
+      <td>US01 / US02 / US03 / US04 / US05 / US06</td>
+      <td>Landing page navigation, value proposition, subscription plans, contact request, language selection, terms and privacy access</td>
       <td>T041</td>
-      <td>Implementar bounded context CA</td>
-      <td>Crear commands, queries, aggregates, persistence, services, REST resources y controllers para alertas, eventos de cumplimiento y preferencias de notificación.</td>
-      <td>6h</td>
-      <td>Zock2005</td>
+      <td>Implement Landing Page public experience</td>
+      <td>Implementar la landing page responsive y bilingüe con navegación pública, propuesta de valor, beneficios, planes, contacto y acceso a términos y privacidad.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS06</td>
-      <td>Laboratory Backend Integration</td>
+      <td>TS01</td>
+      <td>Landing page responsive implementation</td>
       <td>T042</td>
-      <td>Corregir integración de Laboratory</td>
-      <td>Ajustar endpoints de laboratorio, productos, materias primas, staff y eventos de bajo stock.</td>
+      <td>Validate Landing Page deployment</td>
+      <td>Ajustar diseño responsive, validar navegación pública y desplegar la landing page en Firebase Hosting.</td>
       <td>5h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US07 / US08 / US09 / US10</td>
+      <td>Plan selection before authentication, Stripe checkout redirection, payment success confirmation, billing summary</td>
+      <td>T043</td>
+      <td>Implement subscription frontend flow</td>
+      <td>Crear vistas de planes, checkout, confirmación de pago y resumen de facturación conectadas al backend de suscripciones.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS02 / TS03 / TS04</td>
+      <td>Subscription plans API, Stripe checkout session API, Stripe webhook processing</td>
+      <td>T044</td>
+      <td>Implement Subscription and Payments backend</td>
+      <td>Crear planes, suscripciones, pagos, sesiones de Stripe Checkout, procesamiento de webhooks y endpoints REST para facturación.</td>
+      <td>10h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US11 / US12 / US13</td>
+      <td>Role-based sign-up, secure sign-in, protected application access</td>
+      <td>T045</td>
+      <td>Implement IAM frontend and protected access</td>
+      <td>Alinear las vistas de sign-up y sign-in con el backend, manejar roles, sesión JWT, token storage e interceptor de autorización.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS05 / TS06</td>
+      <td>JWT authentication API, Authorization interceptor</td>
+      <td>T046</td>
+      <td>Implement IAM backend security</td>
+      <td>Crear usuarios, roles, autenticación JWT, hashing BCrypt, filtros Bearer, configuración Spring Security y endpoints de autenticación.</td>
+      <td>10h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US14 / US15 / US16 / US17 / US18</td>
+      <td>Laboratory profile registration, laboratory profile update, staff management, pharmaceutical product catalog, raw material inventory</td>
+      <td>T047</td>
+      <td>Complete Laboratory bounded context integration</td>
+      <td>Integrar vistas y servicios para laboratorio, personal, productos farmacéuticos y materias primas con validaciones y persistencia backend.</td>
+      <td>9h</td>
       <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>TS07</td>
-      <td>Equipment Backend Integration</td>
-      <td>T043</td>
-      <td>Corregir gestión de equipos</td>
-      <td>Ajustar controllers de equipos, configuración BPM, mantenimiento y publicación de eventos.</td>
-      <td>5h</td>
+      <td>Laboratory REST API</td>
+      <td>T048</td>
+      <td>Implement Laboratory REST services</td>
+      <td>Exponer endpoints REST para laboratorio, staff, productos y materias primas, incluyendo eventos de bajo stock e integración con otros bounded contexts.</td>
+      <td>8h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US19 / US20 / US21</td>
+      <td>Equipment registration, BPM parameter configuration, equipment maintenance records</td>
+      <td>T049</td>
+      <td>Complete Equipment frontend and backend integration</td>
+      <td>Implementar registro de equipos, configuración BPM, mantenimiento y consumo de endpoints protegidos desde la aplicación web.</td>
+      <td>8h</td>
       <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>TS08</td>
-      <td>Batch Backend Integration</td>
-      <td>T044</td>
-      <td>Corregir gestión de lotes</td>
-      <td>Corregir batch controller, consultas por laboratorio, uso de materias primas, liberación y rechazo de lotes.</td>
-      <td>5h</td>
-      <td>M4uricioCastillo</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>TS09</td>
-      <td>Reporting & Audit Backend</td>
-      <td>T045</td>
-      <td>Implementar bounded context RA</td>
-      <td>Crear comandos, queries, aggregates, entidades, servicios, persistencia JPA, audit log, reports, KPIs y deviation trends.</td>
+      <td>Equipment REST API</td>
+      <td>T050</td>
+      <td>Implement Equipment REST services</td>
+      <td>Exponer endpoints REST para equipos, parámetros BPM, mantenimiento y eventos relacionados con calibración y sensores.</td>
       <td>8h</td>
       <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
+      <td>US25 / US26 / US27 / US28 / US29</td>
+      <td>Batch creation, batch detail and history, raw material usage in batch, batch release, batch rejection</td>
+      <td>T051</td>
+      <td>Complete Batch management workflow</td>
+      <td>Integrar creación de lotes, detalle, historial, asociación de materias primas, liberación y rechazo con endpoints REST actualizados.</td>
+      <td>9h</td>
+      <td>M4uricioCastillo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
       <td>TS10</td>
-      <td>Tracking & Telemetry Backend</td>
-      <td>T046</td>
-      <td>Implementar bounded context Tracking</td>
-      <td>Crear telemetría, mediciones, historial, anomalías, status de equipos, controllers y eventos de integración.</td>
+      <td>Batch REST API</td>
+      <td>T052</td>
+      <td>Implement Batch REST services</td>
+      <td>Exponer endpoints REST para lotes y uso de materias primas, aplicando rutas RESTful y eventos de integración para auditoría y cumplimiento.</td>
+      <td>8h</td>
+      <td>M4uricioCastillo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US22 / US23 / US24</td>
+      <td>Telemetry dashboard, telemetry measurements, telemetry history and anomalies</td>
+      <td>T053</td>
+      <td>Implement Tracking and Telemetry workflow</td>
+      <td>Conectar dashboard de telemetría, mediciones, historial y anomalías con selección de equipos y datos reales del backend.</td>
       <td>8h</td>
       <td>Felixb14</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS11</td>
-      <td>Subscription & Billing Backend</td>
-      <td>T047</td>
-      <td>Implementar suscripciones y pagos</td>
-      <td>Crear planes, suscripciones, pagos, Stripe Checkout, webhooks, repositories, services y controllers.</td>
+      <td>TS09</td>
+      <td>Telemetry REST API</td>
+      <td>T054</td>
+      <td>Implement Tracking REST services</td>
+      <td>Crear endpoints REST para estado de telemetría, mediciones, historial, anomalías y eventos de integración para reporting y alertas.</td>
       <td>8h</td>
+      <td>Felixb14</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US30 / US31 / US32 / US33</td>
+      <td>Deviation alerts, alert acknowledgement and resolution, notification preferences, compliance event trail</td>
+      <td>T055</td>
+      <td>Complete Compliance and Alerts workflow</td>
+      <td>Implementar alertas de desviación, resolución, preferencias de notificación y eventos de cumplimiento en frontend y backend.</td>
+      <td>8h</td>
+      <td>Zock2005</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS11</td>
+      <td>Compliance REST API</td>
+      <td>T056</td>
+      <td>Implement Compliance REST services</td>
+      <td>Exponer endpoints REST para alertas, eventos de cumplimiento y preferencias de notificación, alineando rutas por recurso.</td>
+      <td>8h</td>
+      <td>Zock2005</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US34 / US35 / US36 / US37</td>
+      <td>KPI dashboard, deviation trends, regulatory report generation, audit log</td>
+      <td>T057</td>
+      <td>Complete Reporting and Audit workflow</td>
+      <td>Implementar panel KPI, tendencias de desviación, generación de reportes y auditoría desde frontend conectado al backend.</td>
+      <td>10h</td>
       <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>TS12</td>
-      <td>IAM Backend</td>
-      <td>T048</td>
-      <td>Implementar autenticación y autorización</td>
-      <td>Crear sign-up, sign-in, roles, usuarios, JWT, hashing BCrypt, filtros de seguridad y configuración Spring Security.</td>
-      <td>8h</td>
+      <td>Reporting and audit REST API</td>
+      <td>T058</td>
+      <td>Implement Reporting and Audit REST services</td>
+      <td>Crear endpoints REST para KPIs, deviation trends, reportes, audit logs y generación de documentos descargables.</td>
+      <td>10h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US38 / US39 / US40</td>
+      <td>Application shell navigation, application localization, dashboard overview</td>
+      <td>T059</td>
+      <td>Complete application shell and dashboard</td>
+      <td>Actualizar layout, menú lateral, navegación por bounded context, cambio de idioma y dashboard general con información operativa.</td>
+      <td>7h</td>
       <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>TS13</td>
-      <td>Cloud Deployment</td>
-      <td>T049</td>
-      <td>Desplegar solución integrada</td>
-      <td>Desplegar frontend en Firebase, backend en Render y base de datos en Railway, configurando variables de entorno.</td>
-      <td>6h</td>
+      <td>Integration events and ACL between bounded contexts</td>
+      <td>T060</td>
+      <td>Implement integration events and ACLs</td>
+      <td>Publicar eventos de integración y aplicar ACLs entre bounded contexts para mantener bajo acoplamiento entre módulos.</td>
+      <td>8h</td>
       <td>BJRM03</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>TS14</td>
-      <td>Technical Documentation</td>
-      <td>T050</td>
-      <td>Actualizar Swagger y diagramas</td>
-      <td>Publicar documentación OpenAPI y actualizar diagramas de frontend, backend y base de datos por bounded context.</td>
+      <td>Consistent API error handling</td>
+      <td>T061</td>
+      <td>Standardize API error handling and REST paths</td>
+      <td>Unificar respuestas de error, adaptar consumo frontend y corregir rutas RESTful en Swagger para recursos principales.</td>
+      <td>7h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>Cloud deployment and environment configuration</td>
+      <td>T062</td>
+      <td>Deploy integrated solution</td>
+      <td>Configurar y validar despliegue de base de datos en Railway, backend en Render y frontend en Firebase Hosting con variables de entorno.</td>
+      <td>6h</td>
+      <td>BJRM03</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>Technical documentation update</td>
+      <td>T063</td>
+      <td>Update diagrams and API documentation</td>
+      <td>Actualizar diagramas de frontend, backend y base de datos por bounded context, además de validar documentación OpenAPI en Swagger.</td>
       <td>6h</td>
       <td>BJRM03</td>
       <td>Done</td>
