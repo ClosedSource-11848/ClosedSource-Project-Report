@@ -178,11 +178,11 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hipótesis 1:** ***We believe we will achieve*** a reduction of human error in records to a level close to 0% ***If*** plant operators and personnel responsible for recording critical variables ***Attain*** automatic and reliable data capture without manual intervention ***With*** the integration of IoT sensors to measure pH, temperature, and pressure.
-* **Hipótesis 2:** We believe we will achieve a 15% reduction in production waste If quality supervisors and process control personnel Attain early detection and blocking of non-compliant batches before distribution With a centralized alert system and preventive batch blocking mechanism.
-* **Hipótesis 3:** We believe we will achieve an 80% reduction in audit preparation time If regulatory compliance and quality personnel Attain fast and transparent access to traceable information With immutable digital traceability through QualiTrack.
-* **Hipótesis 4:** We believe we will achieve a more efficient and secure supply chain (batch release in less than 10 minutes) If quality supervisors Attain the ability to approve and release batches remotely and efficiently With digital signature capabilities in a responsive web dashboard.
-* **Hipótesis 5:** We believe we will achieve a response time to failures of less than 5 seconds If plant operators Attain immediate detection of mechanical failures in critical equipment With real-time notifications of parameter deviations.
+* **Hipótesis 1:** **Creemos que lograremos** una reducción del error humano en los registros a un nivel cercano al 0% **si**  los operadores de planta y el personal responsable de registrar las variables críticas **logran** una captura de datos automática y confiable sin intervención manual **con** la integración de sensores IoT para medir el pH, la temperatura y la presión.
+* **Hipótesis 2:** **Creemos que lograremos** una reducción del 15% en los residuos de producción **si** los supervisores de calidad y el personal de control de procesos **logran** la detección temprana y el bloqueo de lotes no conformes antes de su distribución **con** un sistema de alertas centralizado y un mecanismo de bloqueo preventivo de lotes.
+* **Hipótesis 3:** **Creemos que lograremos** una reducción del 80% en el tiempo de preparación de auditorías **si** el personal de control de calidad y cumplimiento normativo **logra** un acceso rápido y transparente a información trazable **con** una trazabilidad digital inmutable a través de QualiTrack.
+* **Hipótesis 4:** **Creemos que lograremos** la liberación de lotes en menos de 10 minutos para una cadena de suministro más eficiente y segura **si** los supervisores de calidad **logran** la capacidad de aprobar y liberar lotes de forma remota y eficiente **con** funciones de firma digital en un panel web con diseño adaptable.
+* **Hipótesis 5:** **Creemos que lograremos** un tiempo de respuesta ante fallas menor a 5 segundos **si** los operadores de planta **logran** la detección inmediata de fallas mecánicas en equipos críticos **con** notificaciones en tiempo real de desviaciones de parámetros.
 
 #### 1.2.2.4. Lean UX Canvas
 
