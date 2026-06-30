@@ -2122,12 +2122,13 @@ El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcio
     </tr>
     <tr>
       <td colspan="2">
-        Se completó la primera versión funcional de la Frontend Web Application en Angular,
-        incluyendo los Bounded Contexts principales, la estructura DDD en el frontend,
-        componentes visuales, stores reactivos, vistas de gestión y despliegue en Firebase
-        Hosting. Sin embargo, varios flujos todavía dependían de datos simulados o endpoints
-        no implementados en el backend, por lo que se definió como prioridad completar la
-        integración real con servicios REST.
+        During Sprint 2, the team completed the first functional version of the Angular
+        Frontend Web Application, including the main bounded contexts, presentation views,
+        reactive stores, application routing and deployment through Firebase Hosting.
+        However, several user flows still depended on simulated data or incomplete backend
+        services. For this reason, Sprint 3 was planned as an integration-oriented sprint
+        focused on connecting the Landing Page, Frontend Web Application and Backend Web
+        Services into a more complete product experience.
       </td>
     </tr>
     <tr>
@@ -2135,11 +2136,13 @@ El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcio
     </tr>
     <tr>
       <td colspan="2">
-        El equipo identificó que el frontend había avanzado más rápido que el backend, lo que
-        generaba errores de integración, respuestas incompletas y flujos que aún no persistían
-        información real. Como acción de mejora, se acordó enfocar el Sprint 3 en implementar
-        los Bounded Contexts faltantes del backend, proteger endpoints con IAM/JWT, documentar
-        los servicios con Swagger y desplegar la solución en entornos cloud.
+        The team identified that the frontend had advanced faster than the backend, which
+        caused integration gaps, incomplete persistence flows and inconsistencies between
+        the user interface and the available REST services. As an improvement action, the
+        team agreed to coordinate Sprint 3 around end-to-end product increments: improving
+        the Landing Page, completing frontend integration, implementing missing backend
+        bounded contexts, documenting REST APIs with Swagger and deploying the solution in
+        cloud environments.
       </td>
     </tr>
     <tr>
@@ -2148,9 +2151,26 @@ El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcio
     <tr>
       <td colspan="2">
         <strong>Sprint 3 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
-        <em>Our focus is on delivering an integrated and deployed version of QualiTrack where authenticated laboratory users can manage core quality assurance operations through an Angular frontend connected to a Spring Boot backend.</em><br><br>
-        <em>We believe it delivers a more realistic and reliable experience to QA Managers, Laboratory Operators and regulated pharmaceutical laboratories, allowing them to manage laboratories, equipment, production batches, compliance alerts, telemetry, audit reports and subscriptions using persistent data and secure access.</em><br><br>
-        <em>This will be confirmed when the Firebase frontend consumes the Render backend, the backend persists information in Railway, Swagger exposes the implemented REST endpoints, Stripe checkout can be tested, and the main business flows can be demonstrated during the Sprint Review.</em>
+        <em>
+          Our focus is on delivering a more complete and demonstrable QualiTrack product
+          experience across the Landing Page, Frontend Web Application and Backend Web
+          Services.
+        </em><br><br>
+        <em>
+          We believe it delivers clearer product communication to new visitors, more
+          reliable operational workflows to QA Managers and Laboratory Operators, and a
+          stronger technical foundation for the development team through deployed REST
+          services, persistent data and integrated subscription/payment capabilities.
+        </em><br><br>
+        <em>
+          This will be confirmed when visitors can access the deployed Landing Page and
+          understand the value proposition and subscription plans, authenticated users can
+          use the Angular frontend connected to the Spring Boot backend for the main
+          laboratory quality-management workflows, backend services are documented in
+          Swagger, data is persisted in the Railway database, and the product can be
+          demonstrated through the Firebase frontend and Render backend during the Sprint
+          Review.
+        </em>
       </td>
     </tr>
     <tr>
