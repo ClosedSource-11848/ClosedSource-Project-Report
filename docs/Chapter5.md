@@ -2145,41 +2145,30 @@ El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcio
         cloud environments.
       </td>
     </tr>
-    <tr>
+   <tr>
   <td colspan="2" style="text-align: center;"><strong>Sprint Goal & User Stories</strong></td>
 </tr>
 <tr>
   <td colspan="2">
     <strong>Sprint 3 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
     <em>
-      Our focus is on completing the QualiTrack experience by improving the
-      Landing Page, connecting the Angular frontend with real backend services, adding
-      authentication, enabling subscription/payment flows and deploying the platform.
+      Our focus is on helping new visitors trust QualiTrack, understand the product value,
+      choose a subscription plan, and enabling authenticated laboratory users to operate
+      the main quality-management workflows with real platform data.
     </em><br><br>
     <em>
-      In the Landing Page, we will add video sections for About the Product and About the
-      Team, so visitors can better understand what QualiTrack offers, who is behind the
-      solution and why they can trust the product before choosing a subscription plan.
+      We believe it delivers more confidence and clearer product understanding to potential
+      customers through the About the Product and About the Team videos, easier plan
+      evaluation and subscription intent to laboratory decision-makers, and a more useful
+      operational experience to QA Managers and Laboratory Operators who need to manage
+      laboratories, equipment, batches, telemetry, alerts, reports and billing from one
+      connected platform.
     </em><br><br>
     <em>
-      In the web application, we will replace simulated flows with real integrated modules:
-      sign-up and sign-in with JWT, laboratory profile management, staff, products, raw
-      materials, equipment, BPM configuration, maintenance, batches, telemetry, compliance
-      alerts, KPI dashboard, deviation trends, report generation, audit logs and subscription
-      billing.
-    </em><br><br>
-    <em>
-      In the backend, we will implement and expose the missing REST services for IAM,
-      subscriptions with Stripe, tracking, reporting and audit, compliance alerts and the
-      required integrations between bounded contexts, making the API available through
-      Swagger and ready for deployment.
-    </em><br><br>
-    <em>
-      This will be confirmed when users can watch the Landing Page videos, review the plans,
-      register or sign in, use the main quality-management modules with persisted data,
-      start a Stripe checkout session, consult billing information, test the documented
-      backend services in Swagger, and access the deployed solution through Firebase,
-      Render and Railway.
+      This will be confirmed when visitors can watch the product and team videos, review
+      subscription plans and start the subscription flow from the deployed Landing Page;
+      and when authenticated users can sign in and complete the main laboratory quality
+      workflows using the deployed web application connected to persistent backend services.
     </em>
   </td>
 </tr>
