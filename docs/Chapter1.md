@@ -178,11 +178,11 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hipótesis 1:** Creemos que al integrar sensores IoT para la captura automática de variables críticas (pH, temperatura, presión), eliminaremos el riesgo de manipulación y error de transcripción. Lo sabremos cuando el error humano en los registros se reduzca a un valor cercano al 0%.
-* **Hipótesis 2:** Creemos que al implementar un sistema centralizado de alertas y bloqueo preventivo de lotes no conformes, reduciremos el desperdicio de producción. Lo sabremos cuando la pérdida de lotes por desviaciones de parámetros disminuya en un 15%.
-* **Hipótesis 3:** Creemos que al digitalizar la trazabilidad de forma inmutable mediante QualiTrack, agilizaremos las inspecciones regulatorias de DIGEMID. Lo sabremos cuando el tiempo de preparación de documentos para auditorías se reduzca en un 80% en las instituciones piloto.
-* **Hipótesis 4:** Creemos que al habilitar la firma digital en un dashboard web responsivo, aceleraremos la cadena de suministro segura. Lo sabremos cuando los supervisores de calidad logren firmar y liberar lotes de forma remota en menos de 10 minutos tras finalizar la producción.
-* **Hipótesis 5:** Creemos que al utilizar notificaciones en tiempo real, el personal de planta reaccionará instantáneamente ante fallas mecánicas en equipos como autoclaves. Lo sabremos cuando los operarios visualicen y atiendan alertas de desviación en menos de 5 segundos.
+* **Hipótesis 1:** ***We believe we will achieve*** a reduction of human error in records to a level close to 0% ***If*** plant operators and personnel responsible for recording critical variables ***Attain*** automatic and reliable data capture without manual intervention ***With*** the integration of IoT sensors to measure pH, temperature, and pressure.
+* **Hipótesis 2:** We believe we will achieve a 15% reduction in production waste If quality supervisors and process control personnel Attain early detection and blocking of non-compliant batches before distribution With a centralized alert system and preventive batch blocking mechanism.
+* **Hipótesis 3:** We believe we will achieve an 80% reduction in audit preparation time If regulatory compliance and quality personnel Attain fast and transparent access to traceable information With immutable digital traceability through QualiTrack.
+* **Hipótesis 4:** We believe we will achieve a more efficient and secure supply chain (batch release in less than 10 minutes) If quality supervisors Attain the ability to approve and release batches remotely and efficiently With digital signature capabilities in a responsive web dashboard.
+* **Hipótesis 5:** We believe we will achieve a response time to failures of less than 5 seconds If plant operators Attain immediate detection of mechanical failures in critical equipment With real-time notifications of parameter deviations.
 
 #### 1.2.2.4. Lean UX Canvas
 
