@@ -2820,23 +2820,189 @@ suscripción mediante Stripe.
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
 <p>
-Durante el Sprint 3, QualiTrack pasó de una aplicación frontend funcional con datos
-simulados a una solución integrada con backend real, autenticación, persistencia y servicios
-desplegados. La ejecución del sprint permitió validar flujos principales como registro e
-inicio de sesión, creación y edición de laboratorio, registro de equipos, configuración BPM,
-mantenimiento, gestión de lotes, uso de materias primas, alertas de cumplimiento, telemetría,
-reportes, KPIs, tendencias de desviación y suscripciones.
+Durante el Sprint 3 se logró integrar y validar una versión funcional de QualiTrack compuesta
+por tres frentes principales: la Landing Page, la Frontend Web Application y la Backend REST
+API. El incremento permitió demostrar el recorrido completo del producto, desde la presentación
+pública de la solución y sus planes de suscripción, hasta el acceso autenticado a los módulos
+operativos de laboratorio, equipos, lotes, tracking, alertas, reportes, auditoría y facturación.
 </p>
 
 <p>
-Las evidencias de ejecución corresponden a la aplicación desplegada en Firebase, la API
-desplegada en Render, la base de datos en Railway y el flujo de pagos de prueba configurado
-en Stripe.
+A nivel de ejecución, se validó la navegación pública de la Landing Page, la visualización
+de beneficios y planes comerciales, el acceso hacia el flujo de autenticación, la navegación
+entre módulos internos, el consumo de servicios REST protegidos con JWT, la persistencia de
+datos en la base de datos desplegada, la integración con Stripe Checkout para suscripciones,
+la visualización de documentación Swagger/OpenAPI y el despliegue de los componentes
+principales en servicios cloud. Las siguientes evidencias muestran las principales vistas
+implementadas y probadas durante el Sprint 3.
+</p>
+
+<p>
+  <strong>Landing Page:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/" target="_blank">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
+</p>
+
+<p>
+  <strong>Frontend Web Application:</strong>
+  <a href="https://closedsource-qualitrack.web.app/home" target="_blank">
+    https://closedsource-qualitrack.web.app/home
+  </a>
+</p>
+
+<p>
+  <strong>Backend API Documentation:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html" target="_blank">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>Sprint 3 Demo Video:</strong>
+  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_3" target="_blank">
+    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_3
+  </a>
 </p>
 
 <div align="center">
-  <img src="../assets/img/sprint3-frontend-firebase.jpeg" alt="QualiTrack frontend deployed in Firebase" width="90%">
-  <p><em>Figura: Frontend Web Application de QualiTrack desplegada en Firebase Hosting.</em></p>
+  <img src="../assets/img/sprint3-landing-home.jpeg" alt="QualiTrack Landing Page home view" width="90%">
+  <p><em>Figura: Vista principal de la Landing Page de QualiTrack, donde se presenta la propuesta de valor del producto.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-landing-benefits.jpeg" alt="QualiTrack Landing Page benefits section" width="90%">
+  <p><em>Figura: Sección de beneficios de la Landing Page, orientada a comunicar trazabilidad, cumplimiento BPM y digitalización del control de calidad.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-landing-plans.jpeg" alt="QualiTrack Landing Page subscription plans section" width="90%">
+  <p><em>Figura: Sección de planes de suscripción en la Landing Page, conectada con el modelo SaaS de QualiTrack.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-landing-contact.jpeg" alt="QualiTrack Landing Page contact section" width="90%">
+  <p><em>Figura: Sección de contacto de la Landing Page para solicitudes comerciales de potenciales clientes.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-sign-in.jpeg" alt="QualiTrack sign in view" width="90%">
+  <p><em>Figura: Vista de inicio de sesión integrada con el backend IAM y autenticación JWT.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-sign-up.jpeg" alt="QualiTrack sign up view" width="90%">
+  <p><em>Figura: Vista de registro de usuario con selección de rol para acceso a la plataforma.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-dashboard.jpeg" alt="QualiTrack dashboard overview" width="90%">
+  <p><em>Figura: Dashboard principal con resumen operativo del laboratorio y accesos rápidos a módulos internos.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-laboratory-profile.jpeg" alt="QualiTrack laboratory profile view" width="90%">
+  <p><em>Figura: Perfil de laboratorio con datos institucionales consumidos desde el backend.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-laboratory-products.jpeg" alt="QualiTrack pharmaceutical product catalog view" width="90%">
+  <p><em>Figura: Catálogo de productos farmacéuticos registrados para la gestión de lotes.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-raw-materials.jpeg" alt="QualiTrack raw material inventory view" width="90%">
+  <p><em>Figura: Inventario de materias primas para trazabilidad de insumos del laboratorio.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-equipment-catalog.jpeg" alt="QualiTrack equipment catalog view" width="90%">
+  <p><em>Figura: Catálogo de equipos industriales registrados en la plataforma.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-equipment-detail.jpeg" alt="QualiTrack equipment detail view" width="90%">
+  <p><em>Figura: Detalle de equipo con información general, configuración BPM y mantenimiento.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-batch-management.jpeg" alt="QualiTrack batch management view" width="90%">
+  <p><em>Figura: Gestión de lotes de producción y trazabilidad del ciclo productivo.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-batch-detail.jpeg" alt="QualiTrack batch detail view" width="90%">
+  <p><em>Figura: Detalle de lote con información general, materias primas utilizadas, liberación y rechazo.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-tracking-dashboard.jpeg" alt="QualiTrack telemetry dashboard view" width="90%">
+  <p><em>Figura: Dashboard de tracking y telemetría para monitoreo de equipos.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-tracking-history.jpeg" alt="QualiTrack telemetry history view" width="90%">
+  <p><em>Figura: Historial de telemetría y anomalías registradas por equipo.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-compliance-alerts.jpeg" alt="QualiTrack compliance alerts view" width="90%">
+  <p><em>Figura: Gestión de alertas de cumplimiento y desviaciones operativas.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-notification-preferences.jpeg" alt="QualiTrack notification preferences view" width="90%">
+  <p><em>Figura: Configuración de preferencias de notificación por canal y severidad.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-kpi-dashboard.jpeg" alt="QualiTrack KPI dashboard view" width="90%">
+  <p><em>Figura: Panel de KPIs de calidad para evaluación del desempeño del laboratorio.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-deviation-trends.jpeg" alt="QualiTrack deviation trends view" width="90%">
+  <p><em>Figura: Análisis de tendencias de desviación por equipo y parámetro.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-report-generator.jpeg" alt="QualiTrack report generator view" width="90%">
+  <p><em>Figura: Generador de reportes regulatorios y documentos de auditoría.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-audit-log.jpeg" alt="QualiTrack audit log view" width="90%">
+  <p><em>Figura: Registro de auditoría para trazabilidad de acciones críticas.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-subscription-plans.jpeg" alt="QualiTrack subscription plans view" width="90%">
+  <p><em>Figura: Vista interna de planes de suscripción disponibles para contratación.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-checkout.jpeg" alt="QualiTrack checkout view" width="90%">
+  <p><em>Figura: Vista de checkout previa a la redirección hacia Stripe.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-stripe-checkout.jpeg" alt="Stripe checkout subscription flow" width="90%">
+  <p><em>Figura: Flujo de pago de suscripción mediante Stripe Checkout en entorno de prueba.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-payment-success.jpeg" alt="QualiTrack payment success view" width="90%">
+  <p><em>Figura: Confirmación de pago exitoso luego de completar el flujo de Stripe.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-billing-summary.jpeg" alt="QualiTrack billing summary view" width="90%">
+  <p><em>Figura: Resumen de facturación con suscripción activa e historial de pagos.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint3-swagger-openapi.jpeg" alt="QualiTrack Swagger OpenAPI documentation" width="90%">
+  <p><em>Figura: Documentación Swagger/OpenAPI con endpoints organizados por recursos y bounded contexts.</em></p>
 </div>
 
 <div align="center">
@@ -2846,13 +3012,15 @@ en Stripe.
 
 <div align="center">
   <img src="../assets/img/sprint3-railway-database.jpeg" alt="QualiTrack database deployed in Railway" width="90%">
-  <p><em>Figura: Base de datos de QualiTrack desplegada en Railway.</em></p>
+  <p><em>Figura: Base de datos de QualiTrack desplegada en Railway para persistencia de la plataforma.</em></p>
 </div>
 
-<div align="center">
-  <img src="../assets/img/sprint3-stripe-checkout.jpeg" alt="Stripe checkout subscription flow" width="90%">
-  <p><em>Figura: Flujo de pago de suscripción mediante Stripe Checkout.</em></p>
-</div>
+<p>
+Estas evidencias muestran que el Sprint 3 permitió validar una navegación integrada entre
+módulos, el consumo de datos reales desde la API, la protección de rutas mediante autenticación,
+la operación de los principales bounded contexts y la conexión con servicios externos como
+Stripe, Firebase, Render y Railway.
+</p>
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
