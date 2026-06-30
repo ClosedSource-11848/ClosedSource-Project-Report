@@ -164,10 +164,10 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 * La resistencia inicial al cambio tecnológico en planta se reduce significativamente cuando la interfaz destinada al operario es simple, directa y enfocada exclusivamente en sus funciones esenciales.
 
 **User Outcomes:**
-* Los Jefes de Aseguramiento de la Calidad enfrentan inspecciones regulatorias con mayor tranquilidad al contar con información organizada, accesible y actualizada en tiempo real.
-* Los operarios reducen el tiempo dedicado a tareas administrativas y se concentran en la correcta operación de los equipos de esterilización y manufactura.
-* Los supervisores detectan desviaciones térmicas o de presión en el momento en que ocurren, permitiendo bloquear lotes defectuosos antes de que avancen en la cadena de suministro.
-* Las decisiones de liberación o rechazo de medicamentos se basan en datos capturados directamente por hardware, eliminando errores asociados a la transcripción manual.
+* Los Jefes de Aseguramiento de la Calidad sienten total confianza y control absoluto durante las auditorías regulatorias, sabiendo que la información es infalible y está disponible al instante, eliminando el estrés y las horas de preparación de último minuto.
+* Los operarios de plantas se liberan de la carga del papeleo monótono para enfocarse en lo que mejor saben hacer: operar los equipos con precisión y orgullo, reduciendo la ansiedad de cometer errores de registro manual.
+* Los supervisors presentan tranquilidad de que ningún lote defectuoso saldrá de la planta bajo su guardia, gracias a la capacidad de reaccionar de inmediato ante cualquier anomalía sin depender de revisiones manuales tardías.
+* La direccion de la Liberación de Medicamentos toman decisiones de liberación de medicamentos de forma rápida y con la certeza absoluta de que están respaldadas por datos puros y reales, protegiendo la salud de los pacientes y la reputación de la compañía.
 
 **Features:**
 * **Disponibilidad confiable de datos operativos críticos:** Capacidad del sistema para disponer de información precisa y continua sobre variables críticas del proceso productivo, reduciendo la dependencia de registros humanos y asegurando consistencia en los datos utilizados para control de calidad.
