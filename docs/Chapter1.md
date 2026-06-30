@@ -150,11 +150,11 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 * El modelo de QualiTrack es escalable a otros países de la región debido a la similitud entre las normativas de Buenas Prácticas de Manufactura aplicadas en Latinoamérica.
 
 **Business Outcomes:**
-* Que los laboratorios adopten QualiTrack como su sistema principal de gestión de calidad, reduciendo progresivamente la dependencia de registros en papel y hojas de cálculo.
-* Reducir en aproximadamente un 80% el tiempo destinado a la preparación, consolidación y revisión de documentación durante auditorías regulatorias.
-* Disminuir en un 15% la pérdida de lotes de medicamentos mediante la detección temprana de desviaciones en variables críticas del proceso productivo.
-* Conseguir la suscripción de al menos dos laboratorios piloto en los primeros ocho meses de operación, validando la factibilidad y estabilidad del uso de la plataforma en entornos reales.
-* Posicionar a QualiTrack como una solución confiable y reconocida de trazabilidad digital frente a auditores regulatorios y entidades de control sanitario.
+* Registrar variables críticas (pH, temperatura, presión) directamente en la plataforma digital, abandonando progresivamente el uso de bitácoras físicas y hojas de cálculo para el control diario.
+* Exportar expedientes de lotes e informes de trazabilidad consolidados con un solo clic durante una inspección, reduciendo las horas de búsqueda manual de documentos.
+* Interactuar de inmediato con las alertas del sistema ante desvíos térmicos o de presión, ejecutando el bloqueo preventivo del lote afectado desde la interfaz antes de que avance en la cadena.
+* Completar el proceso de configuración inicial de la planta y conectar los primeros sensores al panel de QualiTrack durante la fase de prueba piloto.
+* Mostrar las pantallas de auditoría y los registros inmutables de la plataforma directamente a los inspectores de DIGEMID como evidencia de cumplimiento normativo.
 
 **User Assumptions:**
 * Los Jefes de Aseguramiento de la Calidad requieren visibilidad remota de la producción para supervisar procesos y liberar lotes sin necesidad de supervisión presencial constante.
