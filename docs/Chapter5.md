@@ -2152,23 +2152,32 @@ El trabajo realizado permitió que QualiTrack cuente con una arquitectura funcio
   <td colspan="2">
     <strong>Sprint 3 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
     <em>
-      Our focus is on helping new visitors trust QualiTrack, understand the product value,
-      choose a subscription plan, and enabling authenticated laboratory users to operate
-      the main quality-management workflows with real platform data.
+      Our focus is on helping new visitors trust QualiTrack and helping laboratory users
+      complete the main quality-management workflows through an integrated, deployed
+      platform experience.
     </em><br><br>
     <em>
-      We believe it delivers more confidence and clearer product understanding to potential
-      customers through the About the Product and About the Team videos, easier plan
-      evaluation and subscription intent to laboratory decision-makers, and a more useful
-      operational experience to QA Managers and Laboratory Operators who need to manage
-      laboratories, equipment, batches, telemetry, alerts, reports and billing from one
-      connected platform.
+      We believe it delivers clearer product understanding and more confidence to potential
+      customers through the About the Product and About the Team videos in the Landing Page;
+      easier subscription evaluation to laboratory decision-makers through visible plans
+      and Stripe checkout; and a more useful operational experience to QA Managers,
+      Laboratory Operators and auditors through the connected frontend modules for
+      laboratory management, equipment control, batch traceability, telemetry monitoring,
+      compliance alerts, KPI dashboards, reports, audit logs and billing.
+    </em><br><br>
+    <em>
+      We also believe it delivers a more reliable product foundation to the team and future
+      integrations because the backend now exposes documented REST services, protects
+      internal workflows with JWT authentication, persists real operational data, processes
+      subscription payments, and connects the main bounded contexts used by the web
+      application.
     </em><br><br>
     <em>
       This will be confirmed when visitors can watch the product and team videos, review
       subscription plans and start the subscription flow from the deployed Landing Page;
-      and when authenticated users can sign in and complete the main laboratory quality
-      workflows using the deployed web application connected to persistent backend services.
+      authenticated users can sign in and use the main frontend workflows with real
+      persisted data; Stripe checkout can create a subscription session; and developers can
+      test the deployed backend services through Swagger without relying on simulated data.
     </em>
   </td>
 </tr>
