@@ -2533,16 +2533,21 @@ integración entre bounded contexts y despliegue.
 #### 5.2.3.4. Development Evidence for Sprint Review
 
 <p>
-En esta sección se explican y presentan los avances en la implementación logrados durante
-el Sprint 3 en relación con el Backend de QualiTrack y la integración completa de la
-plataforma. A lo largo de este sprint se implementaron nuevos Bounded Contexts, se corrigió
-la integración de módulos previamente creados, se configuró seguridad con JWT, se añadió
-Stripe para suscripciones y se preparó la solución para despliegue.
+En esta sección se presentan las evidencias de desarrollo correspondientes al Sprint 3.
+A diferencia de los sprints anteriores, este incremento no se concentró únicamente en un
+módulo aislado, sino en consolidar una solución integrada de QualiTrack compuesta por la
+Landing Page, la Frontend Web Application y la Backend REST API. El trabajo realizado
+permitió conectar la propuesta comercial del producto con los flujos internos de operación,
+autenticación, suscripciones, gestión de laboratorio, equipos, lotes, tracking, alertas,
+reportes y auditoría.
 </p>
 
 <p>
-La tabla siguiente resume commits relevantes del repositorio Backend, indicando la rama,
-el identificador del commit, el autor registrado en GitHub, el mensaje asociado y la fecha.
+Las evidencias se organizan por repositorio, considerando los commits más representativos
+del Sprint 3. Estos commits muestran el avance sobre la experiencia pública, la integración
+frontend con servicios reales, la implementación de bounded contexts en backend, la seguridad
+JWT, la integración con Stripe, la corrección de endpoints RESTful y la preparación de la
+plataforma para despliegue.
 </p>
 
 <table border="1" cellpadding="4" cellspacing="0">
@@ -2554,138 +2559,263 @@ el identificador del commit, el autor registrado en GitHub, el mensaje asociado 
       <th>Author</th>
       <th>Commit Message</th>
       <th>Committed on (Date)</th>
+      <th>Sprint Scope</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="18">https://github.com/ClosedSource-11848/qualitrack-platform</td>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">ClosedSource-LandingPage</a></td>
       <td>main</td>
-      <td>47571e6</td>
-      <td>Zock2005</td>
-      <td>feat(ca): add ca commands</td>
-      <td>09/06/2026</td>
+      <td>9331e3d</td>
+      <td>BJRM03</td>
+      <td>fix(toolbar): fix toolbar landing page.</td>
+      <td>14/05/2026</td>
+      <td>Landing Page public experience and navigation.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>33db3e9</td>
+      <td>BJRM03</td>
+      <td>fix(shared): integrate subscription module into application navigation.</td>
+      <td>12/06/2026</td>
+      <td>Application shell navigation and subscription menu integration.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>29f069f</td>
+      <td>BJRM03</td>
+      <td>fix(batch): fix batch forms and management views.</td>
+      <td>14/06/2026</td>
+      <td>Batch creation, detail and production traceability views.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>141d631</td>
+      <td>BJRM03</td>
+      <td>fix(subscription): fix checkout and billing workflows.</td>
+      <td>14/06/2026</td>
+      <td>Stripe checkout, payment confirmation and billing summary integration.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>7793758</td>
+      <td>BJRM03</td>
+      <td>fix(ra): fix dashboard, KPI and reporting integration.</td>
+      <td>14/06/2026</td>
+      <td>KPI dashboard, reports and audit-related frontend integration.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>2e85fe8</td>
+      <td>BJRM03</td>
+      <td>fix(equipment): fix equipment and telemetry integration.</td>
+      <td>14/06/2026</td>
+      <td>Equipment management, telemetry status and measurement visualization.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>8f38a3f</td>
+      <td>BJRM03</td>
+      <td>fix(laboratory): fix laboratory management workflows.</td>
+      <td>14/06/2026</td>
+      <td>Laboratory profile, products, raw materials and staff workflows.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>36023e4</td>
+      <td>BJRM03</td>
+      <td>fix(iam): fix authentication and user registration flow.</td>
+      <td>14/06/2026</td>
+      <td>Sign-in, sign-up, role-based registration and protected frontend access.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>43e0f32</td>
+      <td>BJRM03</td>
+      <td>fix(ca): fix alerts, compliance events and notification integrations.</td>
+      <td>21/06/2026</td>
+      <td>Compliance alerts, notification preferences and compliance event views.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>6a3be07</td>
+      <td>BJRM03</td>
+      <td>fix(ra): fix audit logs, reports, kpis and deviation trends integrations.</td>
+      <td>21/06/2026</td>
+      <td>Audit log, report generator, KPI dashboard and deviation trend integration.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>5907a64</td>
+      <td>BJRM03</td>
+      <td>fix(tracking): fix equipment status, measurements and telemetry integrations.</td>
+      <td>21/06/2026</td>
+      <td>Tracking dashboard, telemetry measurements and anomaly history integration.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">ClosedSource-Frontend</a></td>
+      <td>main</td>
+      <td>3718400</td>
+      <td>BJRM03</td>
+      <td>chore: update frontend environment configuration.</td>
+      <td>21/06/2026</td>
+      <td>Frontend deployment configuration and backend API connection.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>d98f6c4</td>
       <td>Zock2005</td>
       <td>feat(ca): add rest controllers.</td>
       <td>09/06/2026</td>
+      <td>Compliance and Alerts backend endpoints.</td>
     </tr>
     <tr>
-      <td>main</td>
-      <td>d699014</td>
-      <td>BJRM03</td>
-      <td>Merge branch 'feature/laboratory' into develop. Related to TS-L001.</td>
-      <td>09/06/2026</td>
-    </tr>
-    <tr>
-      <td>main</td>
-      <td>7bc3d64</td>
-      <td>BJRM03</td>
-      <td>Feature/equipment</td>
-      <td>09/06/2026</td>
-    </tr>
-    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>1a69ca8</td>
       <td>M4uricioCastillo</td>
-      <td>fix(batch): fix batch queries and laboratory integration</td>
+      <td>fix(batch): fix batch queries and laboratory integration.</td>
       <td>10/06/2026</td>
+      <td>Batch management backend integration with laboratory context.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>006d639</td>
       <td>BJRM03</td>
       <td>feat(ra): add ra commands.</td>
       <td>12/06/2026</td>
+      <td>Reporting and Audit command layer.</td>
     </tr>
     <tr>
-      <td>main</td>
-      <td>5c13718</td>
-      <td>BJRM03</td>
-      <td>feat(ra): add rest controller.</td>
-      <td>12/06/2026</td>
-    </tr>
-    <tr>
-      <td>main</td>
-      <td>68edb73</td>
-      <td>Felixb14</td>
-      <td>feat(tracking): add tracking commands.</td>
-      <td>13/06/2026</td>
-    </tr>
-    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>f728110</td>
       <td>Felixb14</td>
       <td>feat(tracking): add rest controller.</td>
       <td>13/06/2026</td>
+      <td>Tracking and telemetry REST endpoints.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>5739cc4</td>
       <td>BJRM03</td>
       <td>feat(eventhandler): add integration events for inter-context communication.</td>
       <td>13/06/2026</td>
+      <td>Integration events and ACL communication between bounded contexts.</td>
     </tr>
     <tr>
-      <td>main</td>
-      <td>8b892e7</td>
-      <td>BJRM03</td>
-      <td>feat(subscription): add subscription value objects.</td>
-      <td>13/06/2026</td>
-    </tr>
-    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>2b31052</td>
       <td>BJRM03</td>
       <td>feat(subscription): add rest controller.</td>
       <td>13/06/2026</td>
+      <td>Subscription and billing backend endpoints.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>4ae5843</td>
       <td>BJRM03</td>
       <td>feat(iam): add identity and access management backend module.</td>
       <td>13/06/2026</td>
+      <td>IAM backend module with authentication and authorization support.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>0893560</td>
       <td>BJRM03</td>
       <td>feat(ra): add kpi dashboard and deviation trend calculation workflows.</td>
       <td>14/06/2026</td>
+      <td>KPI dashboard and deviation trend backend workflows.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>4e32071</td>
       <td>M4uricioCastillo</td>
       <td>fix(batch): fix batch controller and raw material usage processing.</td>
       <td>14/06/2026</td>
+      <td>Batch REST controller and raw material usage workflow correction.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>543a8ba</td>
       <td>BJRM03</td>
       <td>fix(tracking): fix telemetry controller and anomaly compliance handling.</td>
       <td>14/06/2026</td>
+      <td>Telemetry anomaly processing and compliance event integration.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>d735a48</td>
       <td>BJRM03</td>
       <td>chore: add dockerfile configuration.</td>
       <td>16/06/2026</td>
+      <td>Backend deployment preparation for Render.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
+      <td>main</td>
+      <td>0358520</td>
+      <td>BJRM03</td>
+      <td>fix(ra): fix report, audit log and analytics rest controllers.</td>
+      <td>20/06/2026</td>
+      <td>RESTful correction of reporting, audit log and analytics endpoints.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
+      <td>main</td>
+      <td>26a6410</td>
+      <td>BJRM03</td>
+      <td>fix(ca): fix compliance monitoring and alert management rest endpoints.</td>
+      <td>20/06/2026</td>
+      <td>RESTful correction of compliance monitoring and alert endpoints.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
+      <td>main</td>
+      <td>c5d7aae</td>
+      <td>BJRM03</td>
+      <td>fix(subscription): fix subscription and stripe integration endpoints.</td>
+      <td>20/06/2026</td>
+      <td>Stripe, subscription and payment endpoint corrections.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ClosedSource-11848/qualitrack-platform">qualitrack-platform</a></td>
       <td>main</td>
       <td>f5a8a4c</td>
       <td>BJRM03</td>
       <td>docs(docs): fix backend and data base diagrams.</td>
       <td>19/06/2026</td>
+      <td>Backend and database diagram updates by bounded context.</td>
     </tr>
   </tbody>
 </table>
+
+<p>
+Como resultado de estas actividades, el Sprint 3 entregó evidencia de desarrollo en los
+tres frentes principales del producto: una Landing Page pública para comunicar la propuesta
+de valor, una Frontend Web Application integrada con servicios reales y una Backend REST API
+desplegable con persistencia, seguridad, documentación OpenAPI y soporte para flujos de
+suscripción mediante Stripe.
+</p>
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
