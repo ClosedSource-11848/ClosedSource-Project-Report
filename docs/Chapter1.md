@@ -130,13 +130,13 @@ El Lean UX es una perspectiva que facilita la validación de las soluciones suge
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-En la industria farmacéutica peruana y en las entidades de salud pública, los procesos de control de calidad y fabricación continúan dependiendo en gran medida de registros manuales, sistemas aislados y documentos físicos, lo que incrementa significativamente el riesgo de error humano, compromete la integridad de los datos y dificulta el cumplimiento oportuno de las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
+La industria farmacéutica peruana opera bajo estrictos requisitos regulatorios definidos por las Buenas Prácticas de Manufactura (BPM) y las auditorías realizadas por DIGEMID. Sin embargo, muchos laboratorios medianos y entidades de salud pública continúan gestionando sus procesos de control de calidad y producción mediante registros manuales, hojas de cálculo y sistemas no integrados.
 
-Actualmente, los Jefes de Aseguramiento de la Calidad y los Supervisores de entidades públicas deben invertir grandes cantidades de tiempo en consolidar información dispersa para auditorías regulatorias, sin contar con trazabilidad digital continua ni alertas tempranas ante desviaciones críticas de variables como temperatura, presión o pH. Esta brecha tecnológica no solo ralentiza la operación diaria, sino que expone a las instituciones a observaciones regulatorias, sanciones económicas y potenciales riesgos para la salud pública.
+Esta situación dificulta el acceso oportuno a información confiable, incrementa el riesgo de errores humanos en el registro de datos críticos y limita la capacidad de detectar desviaciones operativas de manera temprana. Como consecuencia, los responsables de aseguramiento de la calidad deben invertir una cantidad significativa de tiempo y esfuerzo en consolidar información para auditorías, verificar la trazabilidad de los procesos y garantizar el cumplimiento regulatorio, lo que genera ineficiencias operativas, mayores costes de supervisión y exposición a observaciones regulatorias.
 
-Existe una oportunidad clara de mercado para una plataforma SaaS especializada que permita digitalizar la trazabilidad de procesos farmacéuticos, automatizar la captura de variables críticas mediante integración IoT y garantizar registros inmutables auditables, especialmente dirigida a laboratorios medianos y entidades públicas que no pueden adoptar soluciones corporativas costosas como SAP o LIMS tradicionales.
+Al mismo tiempo, las soluciones empresariales disponibles en el mercado suelen resultar complejas o costosas para organizaciones medianas y entidades públicas, dejando una necesidad insatisfecha de herramientas accesibles que faciliten la gestión de calidad y la trazabilidad de la producción.
 
-¿Cómo podríamos permitir que los responsables de aseguramiento de la calidad y supervisión pública gestionen, supervisen y auditen procesos de fabricación farmacéutica en tiempo real, con trazabilidad digital completa y mínima fricción operativa, eliminando la dependencia de registros manuales y reduciendo drásticamente el tiempo y riesgo asociado a las auditorías de DIGEMID?
+¿Cómo podríamos ayudar a los Jefes de Aseguramiento de la Calidad y a los Operarios de Planta a supervisar y registrar los procesos de fabricación farmacéutica de forma más eficiente, reduciendo los errores de registro, mejorando la trazabilidad de la información y disminuyendo el tiempo requerido para las actividades de control y auditoría regulatoria?
 
 #### 1.2.2.2. Lean UX Assumptions
 
