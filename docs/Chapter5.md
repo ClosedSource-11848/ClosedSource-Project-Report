@@ -6,21 +6,26 @@
 ## 5.1. Software Configuration Management
 
 <p>
-En esta sección se describen las decisiones, convenciones y principios adoptados por el
-equipo de ClosedSource para garantizar la coherencia, trazabilidad y control de versiones
-durante el ciclo de vida del desarrollo de la solución QualiTrack. Se establecen los
-lineamientos para la configuración del entorno de desarrollo, gestión del código fuente,
-convenciones de estilo y configuración de despliegue.
+En esta sección se describen las decisiones, convenciones y herramientas utilizadas por el
+equipo ClosedSource para gestionar la implementación, validación y despliegue de QualiTrack.
+El proyecto fue desarrollado como una solución compuesta por tres productos principales:
+Landing Page, Frontend Web Application y Backend Web Services.
+</p>
+
+<p>
+Durante el desarrollo se aplicaron prácticas de control de versiones, organización por
+repositorios, convenciones de código, documentación técnica y configuración de despliegue
+en servicios cloud. Estas decisiones permitieron mantener trazabilidad sobre los cambios
+realizados en cada sprint y facilitar la integración progresiva entre la presentación pública
+del producto, la aplicación web interna y los servicios backend.
 </p>
 
 ### 5.1.1. Software Development Environment Configuration
 
 <p>
-En esta sección se especifican los productos de software utilizados durante el ciclo de
-vida del proyecto, incluyendo el nombre de cada herramienta, su propósito técnico
-específico dentro del proyecto QualiTrack, y la ruta de referencia (para software SaaS)
-o ruta de descarga (para productos de instalación local). Las herramientas se organizan
-según las siguientes disciplinas:
+En esta sección se presentan las herramientas utilizadas durante el ciclo de vida del
+proyecto QualiTrack. Estas herramientas se organizan según las disciplinas de gestión,
+diseño, desarrollo, pruebas, documentación y despliegue.
 </p>
 
 <ol>
@@ -30,188 +35,274 @@ según las siguientes disciplinas:
   <li>Software Development</li>
   <li>Software Testing</li>
   <li>Software Documentation</li>
+  <li>Software Deployment</li>
 </ol>
 
 <h4>Project Management</h4>
 
 <p>
-Esta disciplina se centra en la planificación, seguimiento y control de las actividades
-del proyecto, asegurando el cumplimiento de los objetivos dentro del tiempo y recursos
-establecidos.
+Esta disciplina se centró en la planificación, seguimiento y control del trabajo realizado
+por el equipo durante los sprints.
 </p>
 
 <ul>
   <li>
-    <strong>Jira:</strong> Plataforma de gestión de proyectos ágiles utilizada para la
-    administración del Product Backlog, planificación de Sprints, asignación de User
-    Stories y Technical Stories a los miembros del equipo, y seguimiento del progreso
-    mediante tableros Scrum con estados To-Do, In-Process, To-Review y Done.<br>
+    <strong>Jira:</strong> Herramienta utilizada para organizar el Product Backlog, registrar
+    User Stories y Technical Stories, planificar Sprints y realizar seguimiento del estado
+    de los work-items del equipo.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://www.atlassian.com/software/jira">https://www.atlassian.com/software/jira</a>
+    <a href="https://www.atlassian.com/software/jira" target="_blank">
+      https://www.atlassian.com/software/jira
+    </a>
+  </li>
+  <li>
+    <strong>Trello:</strong> Herramienta visual utilizada como board de apoyo para mostrar
+    el avance de tareas durante los sprints y evidenciar el estado del trabajo realizado
+    por el equipo.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://trello.com" target="_blank">https://trello.com</a>
   </li>
 </ul>
 
 <h4>Requirements Management</h4>
 
 <p>
-Este proceso se enfoca en la documentación, verificación y seguimiento de los requisitos
-del proyecto, asegurando que las necesidades de los laboratorios farmacéuticos y las
-normativas BPM sean satisfechas.
+La gestión de requisitos permitió documentar las necesidades de los segmentos objetivo,
+definir User Stories, Technical Stories y criterios de aceptación alineados con los procesos
+de gestión de calidad farmacéutica.
 </p>
 
 <ul>
   <li>
-    <strong>Trello:</strong> Plataforma de gestión visual basada en tableros, listas y
-    tarjetas, utilizada para la organización rápida del Sprint Backlog, gestión de User
-    Stories por estado y colaboración del equipo en la priorización de requisitos del
-    proyecto QualiTrack.<br>
+    <strong>Markdown:</strong> Lenguaje utilizado para redactar el Product Backlog, Sprint
+    Backlog, evidencias de implementación y documentación del proyecto dentro del Project
+    Report.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://trello.com">https://trello.com</a>
+    <a href="https://www.markdownguide.org/" target="_blank">
+      https://www.markdownguide.org/
+    </a>
+  </li>
+  <li>
+    <strong>Gherkin:</strong> Lenguaje utilizado para redactar criterios de aceptación en
+    formato Given-When-Then, facilitando la validación de comportamiento esperado en las
+    User Stories.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://cucumber.io/docs/gherkin/" target="_blank">
+      https://cucumber.io/docs/gherkin/
+    </a>
   </li>
 </ul>
 
 <h4>Product UX/UI Design</h4>
 
 <p>
-El diseño de la experiencia de usuario y la interfaz para QualiTrack contempla paneles
-de control de telemetría de alta densidad de datos y flujos de gestión de lotes
-farmacéuticos. Se utilizan las siguientes herramientas:
+El diseño de experiencia de usuario y de interfaz permitió definir la propuesta visual de
+QualiTrack, desde la Landing Page hasta las vistas principales de la Web Application.
 </p>
 
 <ol>
   <li>
-    <strong>UXPressia:</strong> Plataforma para la elaboración de User Personas (Jefe de
-    QA y Supervisor de Salud Pública), Empathy Maps y Customer Journey Maps.<br>
+    <strong>Figma:</strong> Herramienta utilizada para la elaboración de wireframes,
+    mock-ups y prototipos de la Landing Page y de la Frontend Web Application.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://uxpressia.com/">https://uxpressia.com/</a>
+    <a href="https://www.figma.com/" target="_blank">https://www.figma.com/</a>
   </li>
   <li>
-    <strong>Miro:</strong> Pizarra digital colaborativa utilizada para sesiones de Big
-    Picture Event Storming y Design-Level Event Storming, facilitando la identificación
-    de Bounded Contexts del dominio farmacéutico de QualiTrack.<br>
+    <strong>Miro:</strong> Herramienta colaborativa utilizada para actividades de análisis,
+    identificación de bounded contexts y organización visual de ideas del dominio.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://miro.com/es/">https://miro.com/es/</a>
+    <a href="https://miro.com/" target="_blank">https://miro.com/</a>
   </li>
   <li>
-    <strong>Figma:</strong> Herramienta de diseño colaborativo para la creación de
-    Wireframes, Mock-ups y Prototipos interactivos del Landing Page y la Web Application
-    SaaS de QualiTrack.<br>
+    <strong>UXPressia:</strong> Herramienta utilizada para trabajar artefactos de
+    entendimiento del usuario, como User Personas, Empathy Maps y Customer Journey Maps.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://www.figma.com/es-es/">https://www.figma.com/es-es/</a>
+    <a href="https://uxpressia.com/" target="_blank">https://uxpressia.com/</a>
   </li>
   <li>
-    <strong>LucidChart:</strong> Aplicación de diagramación colaborativa para la creación
-    de diagramas C4, Class Diagrams y Database Diagrams de la arquitectura de QualiTrack.<br>
+    <strong>Lucidchart:</strong> Herramienta utilizada para elaborar diagramas de apoyo
+    arquitectónico y de modelado, incluyendo diagramas de clases y diagramas de base de
+    datos.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://www.lucidchart.com/pages/es">https://www.lucidchart.com/pages/es</a>
+    <a href="https://www.lucidchart.com/" target="_blank">https://www.lucidchart.com/</a>
   </li>
 </ol>
 
 <h4>Software Development</h4>
 
 <p>
-El desarrollo abarca la implementación del Landing Page, la Frontend Web Application (SPA
-Angular) y los Backend Web Services integrados con telemetría IoT.
+El desarrollo de QualiTrack abarcó la implementación de la Landing Page, la Frontend Web
+Application en Angular y los Backend Web Services en Spring Boot. La solución fue organizada
+por bounded contexts y con una estructura orientada a capas.
 </p>
 
 <ol>
   <li>
-    <strong>GitHub:</strong> Sistema de control de versiones distribuido y plataforma de
-    hosting para repositorios de código fuente. Gestión de la organización
-    ClosedSource-11848, implementación de GitFlow Workflow y Conventional Commits.<br>
+    <strong>GitHub:</strong> Plataforma utilizada para alojar los repositorios del proyecto,
+    administrar el control de versiones y mantener trazabilidad de commits por producto.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://github.com">https://github.com</a><br>
+    <a href="https://github.com" target="_blank">https://github.com</a><br>
     <strong>Organización del proyecto:</strong>
-    <a href="https://github.com/ClosedSource-11848">https://github.com/ClosedSource-11848</a>
+    <a href="https://github.com/ClosedSource-11848" target="_blank">
+      https://github.com/ClosedSource-11848
+    </a>
   </li>
   <li>
-    <strong>WebStorm:</strong> Entorno de desarrollo integrado (IDE) de JetBrains para la
-    implementación del Frontend utilizando Angular Framework, HTML5, CSS3, JavaScript y
-    TypeScript. Incluye integración con GitHub para control de versiones.<br>
+    <strong>WebStorm:</strong> IDE utilizado para el desarrollo de la Frontend Web
+    Application con Angular, TypeScript, HTML y CSS.<br>
     <strong>Ruta de descarga:</strong>
-    <a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a>
+    <a href="https://www.jetbrains.com/webstorm/" target="_blank">
+      https://www.jetbrains.com/webstorm/
+    </a>
   </li>
   <li>
-    <strong>IntelliJ IDEA:</strong> Entorno de desarrollo integrado (IDE) de JetBrains
-    para la implementación del Backend con Spring Boot Framework y Java 17. Incluye
-    integración con plataformas cloud para despliegue de Web Services.<br>
+    <strong>IntelliJ IDEA:</strong> IDE utilizado para el desarrollo del Backend Web Service
+    con Java, Spring Boot, Spring Security, JPA/Hibernate y MySQL.<br>
     <strong>Ruta de descarga:</strong>
-    <a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a>
+    <a href="https://www.jetbrains.com/idea/" target="_blank">
+      https://www.jetbrains.com/idea/
+    </a>
   </li>
   <li>
-    <strong>Angular Framework:</strong> Framework principal para la SPA de QualiTrack.
-    Construcción de componentes reutilizables, gestión de estado mediante Services y RxJS,
-    enrutamiento entre vistas y consumo de APIs REST para los dashboards de telemetría en
-    tiempo real.<br>
+    <strong>Angular:</strong> Framework utilizado para implementar la SPA de QualiTrack,
+    incluyendo componentes standalone, rutas, stores, servicios HTTP, soporte bilingüe y
+    consumo de APIs REST.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://angular.io/">https://angular.io/</a>
+    <a href="https://angular.dev/" target="_blank">https://angular.dev/</a>
   </li>
   <li>
-    <strong>Spring Boot (Java 17):</strong> Framework para el desarrollo de los Web
-    Services RESTful del Backend de QualiTrack. Implementación de la lógica de compliance
-    BPM, ingesta de telemetría IoT y persistencia de datos con JPA/Hibernate.<br>
+    <strong>Spring Boot:</strong> Framework utilizado para implementar los servicios REST
+    del backend, organizados por bounded contexts como IAM, Laboratory, Equipment, Batch,
+    Tracking, Compliance & Alerts, Reporting & Audit y Subscription.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://spring.io/projects/spring-boot">https://spring.io/projects/spring-boot</a>
+    <a href="https://spring.io/projects/spring-boot" target="_blank">
+      https://spring.io/projects/spring-boot
+    </a>
   </li>
   <li>
-    <strong>HTML5, CSS3, JavaScript:</strong> Tecnologías fundamentales para la
-    implementación del Landing Page y estructura base de la Web Application.<br>
-    <strong>Referencias:</strong>
-    <ul>
-      <li>HTML5: <a href="https://html.spec.whatwg.org/">https://html.spec.whatwg.org/</a></li>
-      <li>CSS3: <a href="https://www.w3.org/Style/CSS/">https://www.w3.org/Style/CSS/</a></li>
-      <li>JavaScript: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">https://developer.mozilla.org/es/docs/Web/JavaScript</a></li>
-    </ul>
-  </li>
-  <li>
-    <strong>TypeScript:</strong> Lenguaje de programación tipado para el desarrollo del
-    Frontend con Angular. Proporciona tipado estático, detección temprana de errores y
-    mejor soporte de IDE.<br>
+    <strong>Spring Security:</strong> Framework utilizado para proteger los endpoints del
+    backend mediante autenticación JWT y autorización de requests autenticados.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a>
+    <a href="https://spring.io/projects/spring-security" target="_blank">
+      https://spring.io/projects/spring-security
+    </a>
+  </li>
+  <li>
+    <strong>MySQL:</strong> Sistema gestor de base de datos relacional utilizado para la
+    persistencia de usuarios, laboratorios, equipos, lotes, telemetría, alertas, reportes,
+    auditoría, suscripciones y pagos.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.mysql.com/" target="_blank">https://www.mysql.com/</a>
+  </li>
+  <li>
+    <strong>Stripe:</strong> Plataforma utilizada para implementar el flujo de suscripción
+    y pago mediante Stripe Checkout en modo de prueba.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://stripe.com/" target="_blank">https://stripe.com/</a>
   </li>
 </ol>
 
 <h4>Software Testing</h4>
 
 <p>
-Las pruebas de software permiten verificar que los módulos de compliance BPM, bloqueo
-automático de lotes y generación de reportes inmutables funcionen correctamente según los
-criterios de aceptación definidos.
+Las pruebas y validaciones se realizaron mediante navegación manual, ejecución de flujos
+principales, revisión de respuestas HTTP, Swagger UI, DevTools del navegador y validación
+directa de datos persistidos.
 </p>
 
 <ul>
   <li>
-    <strong>Lenguaje Gherkin:</strong> Lenguaje de dominio específico (DSL) para la
-    redacción de Acceptance Criteria de User Stories en formato Given-When-Then, utilizado
-    para definir escenarios de prueba legibles por stakeholders y ejecutables por
-    herramientas de automatización.<br>
+    <strong>Swagger UI:</strong> Herramienta utilizada para probar endpoints REST del backend,
+    revisar contratos de request/response y validar recursos documentados mediante OpenAPI.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://cucumber.io/docs/gherkin/">https://cucumber.io/docs/gherkin/</a>
+    <a href="https://swagger.io/tools/swagger-ui/" target="_blank">
+      https://swagger.io/tools/swagger-ui/
+    </a>
+  </li>
+  <li>
+    <strong>Chrome DevTools:</strong> Herramienta utilizada para inspeccionar requests,
+    responses, errores de CORS, tokens JWT, carga de recursos y comportamiento visual de la
+    aplicación frontend.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://developer.chrome.com/docs/devtools/" target="_blank">
+      https://developer.chrome.com/docs/devtools/
+    </a>
+  </li>
+  <li>
+    <strong>MySQL Workbench:</strong> Herramienta utilizada para consultar y validar los datos
+    persistidos por la aplicación durante las pruebas funcionales.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.mysql.com/products/workbench/" target="_blank">
+      https://www.mysql.com/products/workbench/
+    </a>
   </li>
 </ul>
 
 <h4>Software Documentation</h4>
 
 <p>
-La documentación de software permite explicar el funcionamiento, uso y arquitectura de los
-productos desarrollados, facilitando su mantenimiento y evolución.
+La documentación permitió describir la arquitectura, endpoints, diagramas, decisiones de
+diseño y evidencias de desarrollo del proyecto.
 </p>
 
 <ul>
   <li>
-    <strong>OpenAPI Specification / Swagger:</strong> Estándar para la documentación
-    interactiva de los Web Services RESTful del Backend de QualiTrack. Especificación de
-    endpoints de telemetría, gestión de lotes, compliance y reportes de auditoría.<br>
+    <strong>OpenAPI Specification / Swagger:</strong> Estándar utilizado para documentar los
+    servicios REST del Backend Web Service de QualiTrack.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://swagger.io/">https://swagger.io/</a>
+    <a href="https://swagger.io/specification/" target="_blank">
+      https://swagger.io/specification/
+    </a>
   </li>
   <li>
-    <strong>Markdown:</strong> Lenguaje de marcado ligero para la elaboración del Project
-    Report en el repositorio GitHub, permitiendo estructurar la documentación con formato
-    consistente y compatible con control de versiones.<br>
+    <strong>PlantUML:</strong> Herramienta utilizada para representar diagramas de clases,
+    diagramas de base de datos y diagramas generales de la solución.<br>
     <strong>Ruta de referencia:</strong>
-    <a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a>
+    <a href="https://plantuml.com/" target="_blank">https://plantuml.com/</a>
+  </li>
+  <li>
+    <strong>Markdown:</strong> Lenguaje utilizado para redactar el Project Report y mantener
+    la documentación versionada en GitHub.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://www.markdownguide.org/" target="_blank">
+      https://www.markdownguide.org/
+    </a>
+  </li>
+</ul>
+
+<h4>Software Deployment</h4>
+
+<p>
+El despliegue de QualiTrack se realizó utilizando servicios cloud diferenciados para cada
+producto de la solución.
+</p>
+
+<ul>
+  <li>
+    <strong>GitHub Pages:</strong> Servicio utilizado para desplegar la Landing Page pública
+    de QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://pages.github.com/" target="_blank">https://pages.github.com/</a>
+  </li>
+  <li>
+    <strong>Firebase Hosting:</strong> Servicio utilizado para desplegar la Frontend Web
+    Application desarrollada en Angular.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://firebase.google.com/products/hosting" target="_blank">
+      https://firebase.google.com/products/hosting
+    </a>
+  </li>
+  <li>
+    <strong>Render:</strong> Plataforma utilizada para desplegar el Backend Web Service de
+    QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://render.com/" target="_blank">https://render.com/</a>
+  </li>
+  <li>
+    <strong>Railway:</strong> Plataforma utilizada para desplegar la base de datos MySQL de
+    QualiTrack.<br>
+    <strong>Ruta de referencia:</strong>
+    <a href="https://railway.com/" target="_blank">https://railway.com/</a>
   </li>
 </ul>
 
@@ -220,9 +311,9 @@ productos desarrollados, facilitando su mantenimiento y evolución.
 ### 5.1.2. Source Code Management
 
 <p>
-En esta sección se establecen los medios y esquemas de organización aplicados para el
-seguimiento de modificaciones del código fuente. Se utiliza GitHub como plataforma y
-sistema de control de versiones distribuido.
+El código fuente del proyecto QualiTrack fue organizado en repositorios independientes para
+facilitar la gestión, revisión y despliegue de cada producto. Se utilizó GitHub como sistema
+de control de versiones distribuido y como plataforma de colaboración del equipo.
 </p>
 
 <h4>Repositorios del Proyecto</h4>
@@ -237,23 +328,43 @@ sistema de control de versiones distribuido.
   <tbody>
     <tr>
       <td>Organización ClosedSource-11848</td>
-      <td><a href="https://github.com/ClosedSource-11848">https://github.com/ClosedSource-11848</a></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848" target="_blank">
+          https://github.com/ClosedSource-11848
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Project Report</td>
-      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Project-Report">https://github.com/ClosedSource-11848/ClosedSource-Project-Report</a></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-Project-Report" target="_blank">
+          https://github.com/ClosedSource-11848/ClosedSource-Project-Report
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Landing Page</td>
-      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage">https://github.com/ClosedSource-11848/ClosedSource-LandingPage</a></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-LandingPage" target="_blank">
+          https://github.com/ClosedSource-11848/ClosedSource-LandingPage
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Frontend Web Application</td>
-      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">https://github.com/ClosedSource-11848/ClosedSource-Frontend</a></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend" target="_blank">
+          https://github.com/ClosedSource-11848/ClosedSource-Frontend
+        </a>
+      </td>
     </tr>
     <tr>
       <td>Backend Web Services</td>
-      <td><a href="https://github.com/ClosedSource-11848/ClosedSource-Backend">https://github.com/ClosedSource-11848/ClosedSource-Backend</a></td>
+      <td>
+        <a href="https://github.com/ClosedSource-11848/qualitrack-platform" target="_blank">
+          https://github.com/ClosedSource-11848/qualitrack-platform
+        </a>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -261,51 +372,48 @@ sistema de control de versiones distribuido.
 <h4>GitFlow Workflow</h4>
 
 <p>
-Se implementa GitFlow como modelo de flujo de trabajo para el control de versiones,
-estableciendo una estructura de ramas que facilita el desarrollo paralelo de los Bounded
-Contexts y la gestión de releases.
+Se adoptó GitFlow como flujo de trabajo para organizar el desarrollo por funcionalidades.
+Este enfoque permitió separar el código estable, el trabajo en integración y las ramas de
+desarrollo específicas por módulo o bounded context.
 </p>
 
-<p><strong>Ramas Principales:</strong></p>
+<p><strong>Ramas principales:</strong></p>
 
 <ul>
   <li>
-    <strong>main:</strong> Rama principal que contiene el historial oficial de versiones
-    estables listas para producción. Solo recibe merges de release branches y hotfix
-    branches.
+    <strong>main:</strong> Rama principal utilizada para versiones estables y desplegables
+    del producto.
   </li>
   <li>
-    <strong>develop:</strong> Rama de integración donde se consolidan los features
-    completados y probados. Sirve como base para la creación de release branches.
+    <strong>develop:</strong> Rama de integración utilizada para consolidar funcionalidades
+    antes de su paso a una versión estable.
   </li>
 </ul>
 
-<p><strong>Ramas de Soporte:</strong></p>
+<p><strong>Ramas de soporte:</strong></p>
 
 <ul>
   <li>
-    <strong>feature/&lt;bounded-context&gt;-&lt;funcionalidad&gt;:</strong> Ramas creadas
-    a partir de develop para implementar nuevas funcionalidades. Se fusionan de vuelta a
-    develop una vez completadas y revisadas. Ejemplo:
-    <code>feature/batch-release-digital-signature</code>,
-    <code>feature/tracking-iot-telemetry-ingestion</code>.
+    <strong>feature/&lt;scope&gt;-&lt;functionality&gt;:</strong> Ramas utilizadas para
+    implementar nuevas funcionalidades o módulos específicos. Ejemplos:
+    <code>feature/laboratory-management</code>, <code>feature/subscription-billing</code>.
   </li>
   <li>
-    <strong>release/&lt;version&gt;:</strong> Ramas creadas a partir de develop para
-    preparar una nueva versión de producción. Ejemplo: <code>release/1.0.0</code>.
+    <strong>fix/&lt;scope&gt;-&lt;issue&gt;:</strong> Ramas utilizadas para correcciones de
+    comportamiento o errores detectados durante pruebas.
   </li>
   <li>
-    <strong>hotfix/&lt;issue&gt;:</strong> Ramas creadas a partir de main para
-    correcciones urgentes en producción. Se fusionan tanto a main como a develop.
-    Ejemplo: <code>hotfix/fix-bpm-evaluation-threshold</code>.
+    <strong>docs/&lt;section&gt;:</strong> Ramas utilizadas para cambios relacionados con
+    documentación del proyecto.
   </li>
 </ul>
 
 <h4>Conventional Commits</h4>
 
 <p>
-Se aplica la especificación Conventional Commits para los mensajes de commit, siguiendo
-la estructura: <code>&lt;type&gt;[optional scope]: &lt;description&gt;</code>
+El equipo utilizó la especificación Conventional Commits para mantener mensajes de commit
+claros y trazables. La estructura general aplicada fue:
+<code>&lt;type&gt;[optional scope]: &lt;description&gt;</code>.
 </p>
 
 <table>
@@ -317,93 +425,93 @@ la estructura: <code>&lt;type&gt;[optional scope]: &lt;description&gt;</code>
   </thead>
   <tbody>
     <tr><td><code>feat</code></td><td>Nueva funcionalidad para el usuario</td></tr>
-    <tr><td><code>fix</code></td><td>Corrección de un bug</td></tr>
+    <tr><td><code>fix</code></td><td>Corrección de errores</td></tr>
     <tr><td><code>docs</code></td><td>Cambios en documentación</td></tr>
-    <tr><td><code>style</code></td><td>Cambios de formato sin afectar lógica</td></tr>
-    <tr><td><code>refactor</code></td><td>Refactorización sin cambiar funcionalidad</td></tr>
+    <tr><td><code>style</code></td><td>Cambios de formato sin afectar funcionalidad</td></tr>
+    <tr><td><code>refactor</code></td><td>Mejoras internas sin cambiar comportamiento externo</td></tr>
     <tr><td><code>test</code></td><td>Adición o corrección de pruebas</td></tr>
-    <tr><td><code>build</code></td><td>Cambios en sistema de build o dependencias</td></tr>
-    <tr><td><code>chore</code></td><td>Tareas de mantenimiento sin afectar producción</td></tr>
+    <tr><td><code>build</code></td><td>Cambios en build, dependencias o configuración</td></tr>
+    <tr><td><code>chore</code></td><td>Tareas de mantenimiento</td></tr>
   </tbody>
 </table>
 
-<p><strong>Ejemplos de commits adaptados al dominio QualiTrack:</strong></p>
+<p><strong>Ejemplos de commits adaptados al proyecto:</strong></p>
 
-<pre><code>feat(tracking): implement IoT telemetry ingestion endpoint
-fix(compliance): resolve blocking mechanism for minor deviations
-docs(readme): update deployment instructions for GitHub Pages
-build(deps): upgrade Spring Boot to 3.1.2
-chore: initial commit.
-feat: add main structure and content to index
-docs: add terms of service.
-docs: add privacy policy compliant with peruvian law.
+<pre><code>feat(landing): add product benefits section
+feat(iam): implement sign-in and sign-up views
+feat(laboratory): add product and raw material management
+feat(equipment): implement equipment registration and maintenance views
+feat(batch): add batch management and raw material usage
+feat(subscription): integrate Stripe checkout flow
+feat(api): expose REST endpoints for QualiTrack bounded contexts
+fix(reporting): correct audit log resource paths
+docs(report): update sprint execution evidence
 </code></pre>
 
 <h4>Semantic Versioning</h4>
 
 <p>
-Se aplica Semantic Versioning 2.0.0 para el versionado de releases, siguiendo el formato
-<code>MAJOR.MINOR.PATCH</code>:
+Se considera Semantic Versioning 2.0.0 como referencia para identificar releases del
+producto, siguiendo el formato <code>MAJOR.MINOR.PATCH</code>.
 </p>
 
 <ul>
-  <li><strong>MAJOR:</strong> Cambios incompatibles con versiones anteriores</li>
-  <li><strong>MINOR:</strong> Nuevas funcionalidades compatibles con versiones anteriores</li>
-  <li><strong>PATCH:</strong> Correcciones de bugs compatibles con versiones anteriores</li>
+  <li><strong>MAJOR:</strong> Cambios incompatibles con versiones anteriores.</li>
+  <li><strong>MINOR:</strong> Nuevas funcionalidades compatibles con versiones anteriores.</li>
+  <li><strong>PATCH:</strong> Correcciones compatibles con versiones anteriores.</li>
 </ul>
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
 <p>
-En esta sección se establecen las convenciones de estilo y nomenclatura adoptadas para
-los lenguajes utilizados en el proyecto QualiTrack: HTML, CSS, JavaScript, TypeScript,
-Java y Gherkin. Se aplica nomenclatura en inglés para todos los elementos del código,
-siguiendo el Ubiquitous Language definido para el dominio de gestión de calidad
-farmacéutica.
+En esta sección se describen las convenciones de estilo y nomenclatura adoptadas para los
+lenguajes y frameworks utilizados en QualiTrack. Se priorizó el uso de nombres en inglés,
+alineados con el Ubiquitous Language del dominio, y una estructura consistente entre
+Landing Page, Frontend Web Application y Backend Web Services.
 </p>
 
-<h4>Referencias de Guías de Estilo Adoptadas</h4>
+<h4>Referencias de guías de estilo adoptadas</h4>
 
 <table>
   <thead>
     <tr>
       <th>Lenguaje/Tecnología</th>
-      <th>Guía de Estilo</th>
+      <th>Guía de estilo</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>HTML/CSS</td>
-      <td><a href="https://google.github.io/styleguide/htmlcssguide.html">Google HTML/CSS Style Guide</a></td>
+      <td><a href="https://google.github.io/styleguide/htmlcssguide.html" target="_blank">Google HTML/CSS Style Guide</a></td>
     </tr>
     <tr>
       <td>JavaScript</td>
-      <td><a href="https://google.github.io/styleguide/jsguide.html">Google JavaScript Style Guide</a></td>
+      <td><a href="https://google.github.io/styleguide/jsguide.html" target="_blank">Google JavaScript Style Guide</a></td>
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://google.github.io/styleguide/tsguide.html">Google TypeScript Style Guide</a></td>
+      <td><a href="https://google.github.io/styleguide/tsguide.html" target="_blank">Google TypeScript Style Guide</a></td>
     </tr>
     <tr>
       <td>Angular</td>
-      <td><a href="https://angular.io/guide/styleguide">Angular Coding Style Guide</a></td>
+      <td><a href="https://angular.dev/style-guide" target="_blank">Angular Style Guide</a></td>
     </tr>
     <tr>
       <td>Java</td>
-      <td><a href="https://google.github.io/styleguide/javaguide.html">Google Java Style Guide</a></td>
+      <td><a href="https://google.github.io/styleguide/javaguide.html" target="_blank">Google Java Style Guide</a></td>
     </tr>
     <tr>
       <td>Spring Boot</td>
-      <td><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html">Spring Boot Reference Documentation</a></td>
+      <td><a href="https://docs.spring.io/spring-boot/index.html" target="_blank">Spring Boot Documentation</a></td>
     </tr>
     <tr>
       <td>Gherkin</td>
-      <td><a href="https://cucumber.io/docs/gherkin/reference/">Gherkin Reference</a></td>
+      <td><a href="https://cucumber.io/docs/gherkin/reference/" target="_blank">Gherkin Reference</a></td>
     </tr>
   </tbody>
 </table>
 
-<h4>Nomenclatura General</h4>
+<h4>Nomenclatura general</h4>
 
 <table>
   <thead>
@@ -415,174 +523,131 @@ farmacéutica.
   </thead>
   <tbody>
     <tr>
-      <td>Clases (Java/TypeScript)</td>
+      <td>Clases Java/TypeScript</td>
       <td>PascalCase</td>
-      <td><code>BatchService</code>, <code>EquipmentController</code></td>
+      <td><code>BatchCommandServiceImpl</code>, <code>EquipmentApiEndpoint</code></td>
     </tr>
     <tr>
-      <td>Interfaces (TypeScript)</td>
+      <td>Interfaces TypeScript</td>
       <td>PascalCase</td>
-      <td><code>IBatchRecord</code>, <code>Equipment</code></td>
+      <td><code>SignInRequest</code>, <code>CreateBatchCommand</code></td>
     </tr>
     <tr>
-      <td>Métodos/Funciones</td>
+      <td>Métodos y funciones</td>
       <td>camelCase</td>
       <td><code>getBatchById()</code>, <code>registerEquipment()</code></td>
     </tr>
     <tr>
       <td>Variables</td>
       <td>camelCase</td>
-      <td><code>batchCode</code>, <code>equipmentList</code></td>
+      <td><code>laboratoryId</code>, <code>selectedPlanCode</code></td>
     </tr>
     <tr>
       <td>Constantes</td>
       <td>SCREAMING_SNAKE_CASE</td>
-      <td><code>MAX_DEVIATION</code>, <code>API_BASE_URL</code></td>
+      <td><code>API_BASE_URL</code>, <code>DEFAULT_LANGUAGE</code></td>
     </tr>
     <tr>
-      <td>Archivos de componentes Angular</td>
+      <td>Archivos Angular</td>
       <td>kebab-case</td>
-      <td><code>batch-list.component.ts</code></td>
+      <td><code>billing-summary.ts</code>, <code>equipment-detail.html</code></td>
     </tr>
     <tr>
       <td>Clases CSS</td>
       <td>kebab-case</td>
-      <td><code>.batch-card</code>, <code>.telemetry-form</code></td>
+      <td><code>.summary-card</code>, <code>.toolbar-actions</code></td>
     </tr>
     <tr>
       <td>Endpoints REST</td>
-      <td>kebab-case (plural)</td>
-      <td><code>/api/v1/batches</code>, <code>/api/v1/equipment</code></td>
+      <td>kebab-case plural</td>
+      <td><code>/api/v1/batches</code>, <code>/api/v1/equipments</code></td>
     </tr>
   </tbody>
 </table>
 
-<h4>Sangría</h4>
+<h4>Convenciones frontend</h4>
 
-<p>
-Se aplica un espaciado de dos espacios para la indentación en todos los archivos HTML,
-CSS, JavaScript y TypeScript.
-</p>
-
-<p><strong>Ejemplo HTML:</strong></p>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;QualiTrack - Pharmaceutical Quality Management&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;header&gt;
-      &lt;h1&gt;Welcome to QualiTrack&lt;/h1&gt;
-    &lt;/header&gt;
-    &lt;main&gt;
-      &lt;p&gt;Real-time IoT Monitoring and BPM Compliance.&lt;/p&gt;
-    &lt;/main&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<h4>Convenciones por Lenguaje</h4>
-
-<h5>HTML</h5>
 <ul>
-  <li>Declarar <code>&lt;!DOCTYPE html&gt;</code> en la primera línea.</li>
-  <li>Utilizar minúsculas para nombres de elementos y atributos.</li>
-  <li>Utilizar comillas dobles para valores de atributos: <code>&lt;div class="container"&gt;</code></li>
-  <li>Incluir atributos <code>alt</code> en todas las imágenes para accesibilidad.</li>
-  <li>No omitir elementos <code>&lt;title&gt;</code> y meta tags.</li>
-  <li>Usar líneas en blanco para separar bloques de código extensos.</li>
+  <li>Uso de Angular standalone components.</li>
+  <li>Separación por bounded context dentro de <code>src/app</code>.</li>
+  <li>Organización por capas: domain, application, infrastructure y presentation.</li>
+  <li>Uso de stores y signals para gestión de estado.</li>
+  <li>Uso de services/endpoints para encapsular comunicación HTTP.</li>
+  <li>Uso de archivos de traducción para soporte bilingüe ES/EN.</li>
+  <li>Uso de nombres en inglés para componentes, entidades, comandos y recursos.</li>
 </ul>
 
-<h5>CSS</h5>
+<h4>Convenciones backend</h4>
+
 <ul>
-  <li>Utilizar shorthand properties cuando sea posible: <code>margin: 10px 20px;</code></li>
-  <li>Terminar todas las declaraciones con punto y coma.</li>
-  <li>Un espacio después de los dos puntos en propiedades: <code>color: #333;</code></li>
-  <li>Usar comillas simples para font-family: <code>font-family: 'Rubik', sans-serif;</code></li>
-  <li>Organizar propiedades alfabéticamente dentro de cada selector.</li>
+  <li>Organización por bounded context dentro del paquete <code>platform</code>.</li>
+  <li>Uso de capas domain, application, infrastructure e interfaces.</li>
+  <li>Uso de REST controllers dentro de <code>interfaces.rest</code>.</li>
+  <li>Uso de resources y assemblers para transformar datos de entrada y salida.</li>
+  <li>Uso de command services y query services para separar casos de uso.</li>
+  <li>Uso de repositories como puertos de persistencia del dominio.</li>
+  <li>Uso de entidades JPA, assemblers y adapters dentro de infrastructure.</li>
+  <li>Uso de endpoints REST con recursos en plural y parámetros de recurso en path.</li>
+  <li>Uso de Javadoc para clases públicas relevantes.</li>
 </ul>
 
-<h5>JavaScript / TypeScript</h5>
-<ul>
-  <li>Usar <code>const</code> y <code>let</code> en lugar de <code>var</code>.</li>
-  <li>Espacios alrededor de operadores: <code>const isCompliant = temp &lt; maxTemp;</code></li>
-  <li>Punto y coma al final de instrucciones.</li>
-  <li>Llaves de apertura en la misma línea de la declaración.</li>
-  <li>Usar arrow functions para callbacks: <code>batches.map(batch =&gt; batch.id)</code></li>
-</ul>
+<h4>Ejemplo TypeScript</h4>
 
-<p><strong>Ejemplo TypeScript:</strong></p>
-
-<pre><code>export class BatchService {
-  private batches: Batch[] = [];
-
-  getBatchById(id: string): Batch | undefined {
-    return this.batches.find(batch =&gt; batch.id === id);
-  }
-
-  createBatch(batch: Batch): void {
-    this.batches.push(batch);
+<pre><code>export class SubscriptionPlan {
+  constructor(params: {
+    id: number;
+    code: string;
+    name: string;
+    priceAmount: number;
+    currency: string;
+  }) {
+    this.id = params.id;
+    this.code = params.code;
+    this.name = params.name;
+    this.priceAmount = params.priceAmount;
+    this.currency = params.currency;
   }
 }
 </code></pre>
 
-<h5>Java</h5>
-<ul>
-  <li>Seguir convenciones de nomenclatura de Spring Boot.</li>
-  <li>Documentar clases y métodos públicos con Javadoc.</li>
-  <li>Organizar imports alfabéticamente, separando imports de java.*, javax.*, org.*, com.*</li>
-  <li>Máximo 120 caracteres por línea.</li>
-  <li>Usar anotaciones de Spring en líneas separadas.</li>
-</ul>
-
-<p><strong>Ejemplo Java:</strong></p>
+<h4>Ejemplo Java</h4>
 
 <pre><code>@RestController
-@RequestMapping("/api/v1/batches")
+@RequestMapping(value = "/api/v1/batches", produces = APPLICATION_JSON_VALUE)
 public class BatchController {
 
-    private final BatchService batchService;
+    private final BatchCommandService batchCommandService;
+    private final BatchQueryService batchQueryService;
 
-    public BatchController(BatchService batchService) {
-        this.batchService = batchService;
+    public BatchController(
+            BatchCommandService batchCommandService,
+            BatchQueryService batchQueryService
+    ) {
+        this.batchCommandService = batchCommandService;
+        this.batchQueryService = batchQueryService;
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity&lt;Batch&gt; getBatchById(@PathVariable String id) {
-        return batchService.findById(id)
-            .map(ResponseEntity::ok)
-            .orElse(ResponseEntity.notFound().build());
+    @GetMapping("/{batchId}")
+    public ResponseEntity&lt;BatchResource&gt; getBatchById(@PathVariable Long batchId) {
+        var batch = batchQueryService.handle(new GetBatchByIdQuery(batchId));
+        return batch.map(value -&gt; ResponseEntity.ok(
+                BatchResourceFromEntityAssembler.toResourceFromEntity(value)
+        )).orElseGet(() -&gt; ResponseEntity.notFound().build());
     }
 }
 </code></pre>
 
-<h5>Gherkin</h5>
-<ul>
-  <li>Escribir escenarios en inglés.</li>
-  <li>Un escenario por comportamiento específico.</li>
-  <li>Mantener pasos atómicos y reutilizables.</li>
-  <li>Usar indentación de dos espacios para los pasos.</li>
-</ul>
+<h4>Ejemplo Gherkin</h4>
 
-<p><strong>Ejemplo Gherkin:</strong></p>
+<pre><code>Feature: Batch traceability
 
-<pre><code>Feature: Equipment Management
-
-  Scenario: Successfully link an IoT equipment
+  Scenario: Link raw material to a production batch
     Given the QA Manager is authenticated
-    And the QA Manager is on the equipment registration form
-    When the QA Manager enters a valid device ID and BPM parameters
-    And clicks the "Link Equipment" button
-    Then the system should display a success message
-    And the new equipment should appear active in the telemetry dashboard
-
-  Scenario: Attempt to link equipment with missing BPM parameters
-    Given the QA Manager is authenticated
-    And the QA Manager is on the equipment registration form
-    When the QA Manager submits the form with empty max temperature limits
-    Then the system should display validation error messages
-    And the equipment should not be registered
+    And a production batch exists
+    And a raw material exists in the laboratory inventory
+    When the QA Manager links the raw material to the batch
+    Then the system should register the raw material usage
+    And the batch traceability history should include the linked material
 </code></pre>
 
 <div style="page-break-after: always;"></div>
@@ -590,96 +655,137 @@ public class BatchController {
 ### 5.1.4. Software Deployment Configuration
 
 <p>
-En esta sección se especifica la configuración de despliegue para cada uno de los
-productos digitales de la solución QualiTrack: Landing Page, Frontend Web Application
-y Backend Web Services.
+En esta sección se especifica la configuración de despliegue aplicada a los productos
+digitales de QualiTrack: Landing Page, Frontend Web Application, Backend Web Services y
+base de datos.
 </p>
 
-<h4>Landing Page – GitHub Pages</h4>
+<h4>Landing Page - GitHub Pages</h4>
 
 <p>
-El Landing Page se despliega mediante GitHub Pages directamente desde el repositorio,
-aprovechando el hosting gratuito para sitios estáticos.
+La Landing Page se desplegó mediante GitHub Pages desde el repositorio
+<code>ClosedSource-LandingPage</code>. Este servicio permitió publicar la página estática
+desarrollada con HTML, CSS y JavaScript.
 </p>
 
 <p><strong>Pasos de configuración:</strong></p>
 
 <ol>
   <li>Acceder al repositorio <code>ClosedSource-LandingPage</code> en GitHub.</li>
-  <li>Navegar a <strong>Settings &gt; Pages</strong> en el menú lateral.</li>
-  <li>En la sección "Source", seleccionar la rama <code>main</code> y carpeta
-  <code>/ (root)</code>.</li>
-  <li>Hacer clic en <strong>Save</strong> y esperar la generación del sitio (1-2 minutos).</li>
-  <li>Verificar el despliegue accediendo a la URL generada.</li>
+  <li>Navegar a <strong>Settings &gt; Pages</strong>.</li>
+  <li>Seleccionar la rama <code>main</code> y la carpeta <code>/ (root)</code>.</li>
+  <li>Guardar la configuración y esperar la publicación del sitio.</li>
+  <li>Validar la carga de la Landing Page desde la URL generada.</li>
 </ol>
 
 <p>
   <strong>URL de despliegue:</strong>
-  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">https://closedsource-11848.github.io/ClosedSource-LandingPage/</a>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/" target="_blank">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
 </p>
 
-<h4>Frontend Web Application – Vercel</h4>
+<h4>Frontend Web Application - Firebase Hosting</h4>
 
 <p>
-El Frontend desarrollado con Angular se desplegará en Vercel, plataforma que ofrece
-hosting optimizado para aplicaciones frontend con CDN global y despliegue automático.
+La Frontend Web Application desarrollada en Angular se desplegó en Firebase Hosting. Este
+servicio permitió publicar la aplicación SPA y conectarla posteriormente con la API REST
+desplegada.
 </p>
 
 <p><strong>Pasos de configuración:</strong></p>
 
 <ol>
-  <li>Crear cuenta en <a href="https://vercel.com">Vercel</a> y vincular con GitHub.</li>
-  <li>Importar el repositorio <code>ClosedSource-Frontend</code> desde GitHub.</li>
-  <li>Configurar el proyecto:
-    <ul>
-      <li><strong>Framework Preset:</strong> Angular</li>
-      <li><strong>Build Command:</strong> <code>ng build --configuration production</code></li>
-      <li><strong>Output Directory:</strong> <code>dist/qualitrack-frontend</code></li>
-    </ul>
-  </li>
-  <li>Configurar variables de entorno: <code>API_BASE_URL</code> con la URL del Backend.</li>
-  <li>Habilitar despliegue automático en cada push a la rama <code>main</code>.</li>
+  <li>Instalar Firebase CLI con <code>npm install -g firebase-tools</code>.</li>
+  <li>Autenticarse mediante <code>firebase login</code>.</li>
+  <li>Inicializar Firebase Hosting con <code>firebase init hosting</code>.</li>
+  <li>Configurar el directorio de salida generado por Angular.</li>
+  <li>Compilar el proyecto con <code>ng build --configuration production</code>.</li>
+  <li>Desplegar con <code>firebase deploy --only hosting</code>.</li>
 </ol>
 
-<h4>Backend Web Services – Azure App Service</h4>
-
 <p>
-El Backend desarrollado con Spring Boot se desplegará en Azure App Service, servicio PaaS
-que facilita el hosting de aplicaciones web Java.
+  <strong>URL de despliegue:</strong>
+  <a href="https://closedsource-qualitrack.web.app/home" target="_blank">
+    https://closedsource-qualitrack.web.app/home
+  </a>
 </p>
 
-<p><strong>Configuración principal:</strong></p>
+<h4>Backend Web Services - Render</h4>
+
+<p>
+El Backend Web Service desarrollado con Spring Boot se desplegó en Render. Este despliegue
+permitió exponer públicamente los endpoints REST de QualiTrack y la documentación Swagger
+para pruebas e integración con el frontend.
+</p>
+
+<p><strong>Variables de entorno principales:</strong></p>
 
 <table>
   <thead>
     <tr>
-      <th>Variable de Entorno</th>
+      <th>Variable de entorno</th>
       <th>Descripción</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>SPRING_DATASOURCE_URL</code></td>
-      <td>Cadena de conexión JDBC a MySQL</td>
-    </tr>
-    <tr>
-      <td><code>SPRING_DATASOURCE_USERNAME</code></td>
-      <td>Usuario de la base de datos</td>
-    </tr>
-    <tr>
-      <td><code>SPRING_DATASOURCE_PASSWORD</code></td>
-      <td>Contraseña de la base de datos</td>
-    </tr>
-    <tr>
       <td><code>SPRING_PROFILES_ACTIVE</code></td>
-      <td><code>prod</code></td>
+      <td>Perfil activo de ejecución del backend.</td>
     </tr>
     <tr>
-      <td><code>JWT_SECRET_KEY</code></td>
-      <td>Clave secreta para generación de tokens JWT</td>
+      <td><code>DATABASE_URL</code></td>
+      <td>Cadena de conexión JDBC hacia la base de datos MySQL.</td>
+    </tr>
+    <tr>
+      <td><code>DATABASE_USERNAME</code></td>
+      <td>Usuario de conexión a la base de datos.</td>
+    </tr>
+    <tr>
+      <td><code>DATABASE_PASSWORD</code></td>
+      <td>Contraseña de conexión a la base de datos.</td>
+    </tr>
+    <tr>
+      <td><code>JWT_SECRET</code></td>
+      <td>Clave secreta utilizada para firmar tokens JWT.</td>
+    </tr>
+    <tr>
+      <td><code>STRIPE_SECRET_KEY</code></td>
+      <td>Clave secreta de Stripe utilizada para crear sesiones de checkout.</td>
+    </tr>
+    <tr>
+      <td><code>STRIPE_WEBHOOK_SECRET</code></td>
+      <td>Clave utilizada para validar eventos recibidos desde Stripe Webhooks.</td>
     </tr>
   </tbody>
 </table>
+
+<p>
+  <strong>Swagger desplegado:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html" target="_blank">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<h4>Database - Railway</h4>
+
+<p>
+La base de datos MySQL de QualiTrack se desplegó en Railway. Esta instancia permitió
+persistir la información operativa y comercial utilizada por la plataforma.
+</p>
+
+<p><strong>Datos persistidos principales:</strong></p>
+
+<ul>
+  <li>Usuarios, roles y autenticación.</li>
+  <li>Laboratorios, personal, productos y materias primas.</li>
+  <li>Equipos, configuración BPM y mantenimientos.</li>
+  <li>Lotes de producción y uso de materias primas.</li>
+  <li>Telemetría, mediciones, historial y anomalías.</li>
+  <li>Alertas de cumplimiento y preferencias de notificación.</li>
+  <li>Reportes, KPIs, tendencias y auditoría.</li>
+  <li>Planes, suscripciones y pagos.</li>
+</ul>
 
 ---
 
