@@ -761,15 +761,22 @@ y el despliegue en GitHub Pages.
     <tr>
       <td colspan="2">
         <strong>Sprint 1 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
-        <em>Our focus is on delivering the first marketing Landing Page of QualiTrack that
-        clearly communicates the value proposition regarding IoT automation and BPM
-        compliance for pharmaceutical laboratories.</em><br><br>
-        <em>We believe it delivers a clear, professional first impression for QA Managers
-        and Public Health Directors, helping them understand our SaaS offering and the
-        regulatory compliance benefits.</em><br><br>
-        <em>This will be confirmed when users can navigate through all core sections
-        (Hero, Features, Benefits, Plans, About Us, Team, Contact) and can access the
-        Terms of Service and Privacy Policy pages without issues.</em>
+        <em>
+          Our focus is on allowing first-time visitors to understand what QualiTrack offers
+          to pharmaceutical laboratories through a public Landing Page.
+        </em><br><br>
+        <em>
+          We believe it delivers faster product understanding to QA Managers and Public Health
+          Directors by showing the platform value proposition, BPM compliance benefits, IoT-based
+          quality monitoring features, subscription plans, team information and contact options
+          before they decide to request more information.
+        </em><br><br>
+        <em>
+          This will be confirmed when a visitor can navigate the Landing Page on desktop and
+          mobile, identify the product purpose from the Hero section, review the Features,
+          Benefits, Plans, About Us, Team and Contact sections, and access the Terms of Service
+          and Privacy Policy pages without broken navigation.
+        </em>
       </td>
     </tr>
     <tr>
@@ -1075,45 +1082,96 @@ del cambio introducido y la fecha de commit.
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
 <p>
-Durante el Sprint 1, se completó exitosamente la implementación del Landing Page de
-QualiTrack con todas sus secciones, soporte bilingüe (ES/EN) y despliegue en GitHub
-Pages. A continuación se presentan evidencias de ejecución mediante capturas de pantalla
-de las principales vistas del Landing Page.
+Durante el Sprint 1 se implementó y validó la primera versión pública de la Landing Page
+de QualiTrack. Esta entrega permitió presentar la propuesta de valor del producto a
+visitantes externos, mostrando cómo la solución ayuda a laboratorios farmacéuticos a
+digitalizar procesos de calidad, fortalecer la trazabilidad y apoyar el cumplimiento BPM.
 </p>
 
-<p><strong>Encabezado y menú de navegación:</strong></p>
-<img src="../assets/img/header-landing-page.jpeg" alt="Header Landing Page QualiTrack" width="90%">
+<p>
+La ejecución del Sprint Review se centró en verificar que un visitante pudiera navegar por
+las secciones principales de la página, comprender rápidamente qué ofrece QualiTrack,
+identificar los beneficios de la plataforma, revisar los planes disponibles, conocer al equipo
+desarrollador y acceder a información de contacto. Además, se validó el soporte bilingüe
+ES/EN y la correcta visualización de la Landing Page en el despliegue realizado mediante
+GitHub Pages.
+</p>
 
-<p><strong>Sección Hero:</strong></p>
-<img src="../assets/img/hero-landing-page.jpeg" alt="Hero Section QualiTrack" width="90%">
+<p>
+  <strong>Landing Page:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/" target="_blank">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
+</p>
 
-<p><strong>Sección What We Offer:</strong></p>
-<img src="../assets/img/features-landing-page.jpeg" alt="Features Section QualiTrack" width="90%">
+<p>
+  <strong>Sprint 1 Demo Video:</strong>
+  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_1" target="_blank">
+    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_1
+  </a>
+</p>
 
-<p><strong>Sección Plans:</strong></p>
-<img src="../assets/img/plans-landing-page.jpeg" alt="Plans Section QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/header-landing-page.jpeg" alt="Header Landing Page QualiTrack" width="90%">
+  <p><em>Figura: Encabezado y menú de navegación de la Landing Page. Esta vista evidencia la estructura principal de navegación pública, permitiendo que el visitante acceda a las secciones informativas del producto de forma ordenada y directa.</em></p>
+</div>
 
-<p><strong>Sección About Us:</strong></p>
-<img src="../assets/img/about-landing-page.jpeg" alt="About Us Section QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/hero-landing-page.jpeg" alt="Hero Section QualiTrack" width="90%">
+  <p><em>Figura: Sección Hero de QualiTrack. Esta pantalla valida la comunicación inicial de la propuesta de valor, presentando a QualiTrack como una plataforma orientada a automatizar el control de calidad, trazabilidad y cumplimiento BPM en laboratorios farmacéuticos.</em></p>
+</div>
 
-<p><strong>Sección Our Team:</strong></p>
-<img src="../assets/img/team-landing-page1.jpeg" alt="Our Team Section QualiTrack1" width="90%">
-<img src="../assets/img/team-landing-page2.jpeg" alt="Our Team Section QualiTrack2" width="90%">
+<div align="center">
+  <img src="../assets/img/features-landing-page.jpeg" alt="Features Section QualiTrack" width="90%">
+  <p><em>Figura: Sección What We Offer. Esta evidencia muestra las principales funcionalidades ofrecidas por la solución, como monitoreo IoT, control de lotes, trazabilidad, alertas y soporte para procesos de calidad regulados.</em></p>
+</div>
 
-<p><strong>Sección Testimonials:</strong></p>
-<img src="../assets/img/testimonials-landing-page.jpeg" alt="Testimonials Section QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/plans-landing-page.jpeg" alt="Plans Section QualiTrack" width="90%">
+  <p><em>Figura: Sección Plans. Esta vista permite que el visitante compare las alternativas comerciales disponibles, relacionando las necesidades del laboratorio con un modelo de suscripción SaaS.</em></p>
+</div>
 
-<p><strong>Footer:</strong></p>
-<img src="../assets/img/footer-landing-page.jpeg" alt="Footer QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/about-landing-page.jpeg" alt="About Us Section QualiTrack" width="90%">
+  <p><em>Figura: Sección About Us. Esta evidencia presenta el propósito del producto y el problema que busca resolver, reforzando la necesidad de digitalizar procesos manuales de calidad y cumplimiento regulatorio.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/team-landing-page1.jpeg" alt="Our Team Section QualiTrack 1" width="90%">
+  <p><em>Figura: Primera vista de la sección Our Team. Esta pantalla permite que el visitante conozca a los integrantes responsables del desarrollo de QualiTrack, aportando transparencia y confianza sobre el equipo detrás de la solución.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/team-landing-page2.jpeg" alt="Our Team Section QualiTrack 2" width="90%">
+  <p><em>Figura: Segunda vista de la sección Our Team. Esta evidencia complementa la presentación del equipo, mostrando una Landing Page más completa y orientada a generar credibilidad frente a potenciales clientes.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/testimonials-landing-page.jpeg" alt="Testimonials Section QualiTrack" width="90%">
+  <p><em>Figura: Sección Testimonials. Esta vista evidencia el uso de testimonios como recurso de validación social, ayudando a reforzar la percepción de utilidad y confianza del producto frente a visitantes interesados.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/footer-landing-page.jpeg" alt="Footer QualiTrack" width="90%">
+  <p><em>Figura: Footer de la Landing Page. Esta evidencia muestra el cierre de la navegación pública, incluyendo accesos finales, información complementaria y enlaces a documentos legales como Terms of Service y Privacy Policy.</em></p>
+</div>
+
+<p>
+En conjunto, estas evidencias muestran que el Sprint 1 permitió entregar una Landing Page
+funcional, navegable y desplegada, alineada con el objetivo de comunicar la propuesta de
+valor de QualiTrack a visitantes externos antes de implementar la aplicación interna y los
+servicios backend en los siguientes sprints.
+</p>
+
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 <p>
-En el Sprint 1, el equipo diseñó, implementó y desplegó el Landing Page de QualiTrack.
-Esta es una página web completamente estática desarrollada con HTML, CSS y JavaScript,
-por lo que no se implementaron Web Services ni endpoints REST en este sprint. La
-implementación y documentación de los Web Services de telemetría IoT, gestión de lotes y
-compliance BPM se abordará en los sprints posteriores orientados al Backend.
+Durante el Sprint 1 no se implementaron Web Services ni endpoints REST, debido a que el
+alcance de la iteración estuvo enfocado en la primera versión pública de la Landing Page de
+QualiTrack. Esta entrega correspondió a una aplicación web estática desarrollada con HTML,
+CSS y JavaScript, orientada a comunicar el valor del producto, sus beneficios, planes,
+equipo y canales de contacto.
 </p>
 
 <table border="1" cellpadding="4" cellspacing="0">
@@ -1131,26 +1189,58 @@ compliance BPM se abordará en los sprints posteriores orientados al Backend.
   </tbody>
 </table>
 
+<p>
+Por esta razón, no se generó documentación Swagger/OpenAPI ni evidencia de consumo de
+servicios backend en este sprint. La implementación de Web Services para autenticación,
+gestión de laboratorios, equipos, lotes, telemetría, cumplimiento, reportes y suscripciones
+fue planificada para sprints posteriores, cuando el equipo inició el desarrollo de la
+Frontend Web Application y la Backend REST API.
+</p>
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 <p>
-El Landing Page de QualiTrack fue desplegado exitosamente en <strong>GitHub Pages</strong>
-directamente desde la rama <code>main</code> del repositorio
-<code>ClosedSource-LandingPage</code>. El proceso de despliegue se realizó configurando
-GitHub Pages en la sección Settings del repositorio, seleccionando la rama main y la
-carpeta raíz como fuente.
+Durante el Sprint 1 se realizó el despliegue de la primera versión pública de la Landing Page
+de QualiTrack. Debido a que el alcance de este sprint estuvo enfocado en una página web
+estática desarrollada con HTML, CSS y JavaScript, el equipo utilizó GitHub Pages como servicio
+de hosting para publicar el sitio y permitir su acceso mediante una URL pública.
+</p>
+
+<p>
+El proceso de deployment consistió en crear el repositorio <code>ClosedSource-LandingPage</code>,
+subir los archivos fuente de la Landing Page, configurar la rama <code>main</code> como fuente de
+publicación y seleccionar la carpeta raíz del proyecto como directorio de despliegue. Esta
+configuración permitió que cada actualización enviada a la rama principal pudiera reflejarse
+en la versión publicada del sitio.
+</p>
+
+<p>
+Como parte de la validación del deployment, el equipo verificó que la Landing Page cargara
+correctamente desde la URL pública, que las secciones principales fueran navegables, que los
+estilos e imágenes se visualizaran correctamente y que los enlaces hacia documentos como
+Terms of Service y Privacy Policy estuvieran disponibles para los visitantes.
 </p>
 
 <p>
   <strong>URL de Producción:</strong>
-  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/">https://closedsource-11848.github.io/ClosedSource-LandingPage/</a>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/" target="_blank">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
 </p>
 
 <div align="center">
   <img src="../assets/img/deployment-evidence-sprint1.jpeg"
        alt="GitHub Pages Deployment Evidence Sprint 1" width="90%">
-  <p><em>Figura: Configuración de GitHub Pages para el despliegue del Landing Page de QualiTrack.</em></p>
+  <p><em>Figura: Configuración de GitHub Pages para el despliegue de la Landing Page de QualiTrack desde la rama main del repositorio ClosedSource-LandingPage.</em></p>
 </div>
+
+<p>
+Esta evidencia confirma que, al cierre del Sprint 1, QualiTrack contaba con una primera
+presencia pública desplegada en la nube. Este despliegue permitió demostrar la propuesta de
+valor del producto durante el Sprint Review y sirvió como base para conectar posteriormente
+la Landing Page con la Frontend Web Application y los servicios backend desarrollados en
+sprints posteriores.
+</p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
