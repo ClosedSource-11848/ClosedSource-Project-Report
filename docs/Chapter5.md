@@ -2832,10 +2832,9 @@ operativos de laboratorio, equipos, lotes, tracking, alertas, reportes, auditor�
 A nivel de ejecución, se validó la navegación pública de la Landing Page, la visualización
 de beneficios y planes comerciales, el acceso hacia el flujo de autenticación, la navegación
 entre módulos internos, el consumo de servicios REST protegidos con JWT, la persistencia de
-datos en la base de datos desplegada, la integración con Stripe Checkout para suscripciones,
-la visualización de documentación Swagger/OpenAPI y el despliegue de los componentes
-principales en servicios cloud. Las siguientes evidencias muestran las principales vistas
-implementadas y probadas durante el Sprint 3.
+datos en la base de datos desplegada, la integración con Stripe Checkout para suscripciones
+y la visualización de documentación Swagger/OpenAPI. Las siguientes evidencias muestran
+las principales vistas implementadas y probadas durante el Sprint 3.
 </p>
 
 <p>
@@ -2868,159 +2867,159 @@ implementadas y probadas durante el Sprint 3.
 
 <div align="center">
   <img src="../assets/img/sprint3-landing-home.jpeg" alt="QualiTrack Landing Page home view" width="90%">
-  <p><em>Figura: Vista principal de la Landing Page de QualiTrack, donde se presenta la propuesta de valor del producto.</em></p>
+  <p><em>Figura: Vista principal de la Landing Page de QualiTrack. Esta pantalla evidencia la presentación pública del producto, comunicando la propuesta de valor principal para laboratorios farmacéuticos que buscan digitalizar trazabilidad, control de calidad y cumplimiento BPM.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-landing-benefits.jpeg" alt="QualiTrack Landing Page benefits section" width="90%">
-  <p><em>Figura: Sección de beneficios de la Landing Page, orientada a comunicar trazabilidad, cumplimiento BPM y digitalización del control de calidad.</em></p>
+  <p><em>Figura: Sección de beneficios de la Landing Page. Esta evidencia muestra cómo el Sprint 3 reforzó la comunicación comercial del producto, resaltando beneficios como trazabilidad, reducción de registros manuales, monitoreo de procesos y soporte para auditorías regulatorias.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-landing-plans.jpeg" alt="QualiTrack Landing Page subscription plans section" width="90%">
-  <p><em>Figura: Sección de planes de suscripción en la Landing Page, conectada con el modelo SaaS de QualiTrack.</em></p>
+  <p><em>Figura: Sección de planes de suscripción. Esta vista permite que un visitante compare opciones comerciales antes de ingresar al sistema, validando el enfoque SaaS de QualiTrack y conectando la Landing Page con el flujo de suscripción implementado en el Sprint 3.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-landing-contact.jpeg" alt="QualiTrack Landing Page contact section" width="90%">
-  <p><em>Figura: Sección de contacto de la Landing Page para solicitudes comerciales de potenciales clientes.</em></p>
+  <p><em>Figura: Sección de contacto de la Landing Page. Esta evidencia muestra el canal disponible para que potenciales clientes soliciten información comercial, lo cual complementa el proceso de adquisición junto con los planes y videos informativos agregados durante el sprint.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-sign-in.jpeg" alt="QualiTrack sign in view" width="90%">
-  <p><em>Figura: Vista de inicio de sesión integrada con el backend IAM y autenticación JWT.</em></p>
+  <p><em>Figura: Vista de inicio de sesión. Esta pantalla evidencia la integración del frontend con el bounded context de IAM del backend, permitiendo autenticar usuarios y generar una sesión protegida mediante JWT para consumir los módulos internos de la plataforma.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-sign-up.jpeg" alt="QualiTrack sign up view" width="90%">
-  <p><em>Figura: Vista de registro de usuario con selección de rol para acceso a la plataforma.</em></p>
+  <p><em>Figura: Vista de registro de usuario. Esta evidencia muestra la creación de cuentas con selección de rol, permitiendo diferenciar accesos para usuarios como QA Manager, Supervisor o Lab Operator, alineando la autenticación con los perfiles operativos del producto.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-dashboard.jpeg" alt="QualiTrack dashboard overview" width="90%">
-  <p><em>Figura: Dashboard principal con resumen operativo del laboratorio y accesos rápidos a módulos internos.</em></p>
+  <p><em>Figura: Dashboard principal de la aplicación. Esta vista demuestra la navegación interna posterior al inicio de sesión, centralizando accesos a los módulos de laboratorio, equipos, lotes, tracking, cumplimiento, reportes y suscripciones.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-laboratory-profile.jpeg" alt="QualiTrack laboratory profile view" width="90%">
-  <p><em>Figura: Perfil de laboratorio con datos institucionales consumidos desde el backend.</em></p>
+  <p><em>Figura: Perfil de laboratorio. Esta evidencia valida que la aplicación permite consultar y actualizar información institucional del laboratorio usando datos persistidos en el backend, dejando atrás el uso de información simulada.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-laboratory-products.jpeg" alt="QualiTrack pharmaceutical product catalog view" width="90%">
-  <p><em>Figura: Catálogo de productos farmacéuticos registrados para la gestión de lotes.</em></p>
+  <p><em>Figura: Catálogo de productos farmacéuticos. Esta pantalla evidencia la gestión de productos asociados al laboratorio, información necesaria para crear lotes de producción y mantener trazabilidad entre producto, lote y controles de calidad.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-raw-materials.jpeg" alt="QualiTrack raw material inventory view" width="90%">
-  <p><em>Figura: Inventario de materias primas para trazabilidad de insumos del laboratorio.</em></p>
+  <p><em>Figura: Inventario de materias primas. Esta evidencia muestra el registro y consulta de insumos del laboratorio, incluyendo stock y umbrales mínimos, lo cual permite activar eventos de cumplimiento cuando una materia prima se encuentra por debajo del nivel permitido.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-equipment-catalog.jpeg" alt="QualiTrack equipment catalog view" width="90%">
-  <p><em>Figura: Catálogo de equipos industriales registrados en la plataforma.</em></p>
+  <p><em>Figura: Catálogo de equipos. Esta vista valida el registro y consulta de equipos industriales del laboratorio, permitiendo que posteriormente se les asocie configuración BPM, mantenimiento, telemetría y análisis de desviaciones.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-equipment-detail.jpeg" alt="QualiTrack equipment detail view" width="90%">
-  <p><em>Figura: Detalle de equipo con información general, configuración BPM y mantenimiento.</em></p>
+  <p><em>Figura: Detalle de equipo. Esta evidencia muestra la información operativa de un equipo seleccionado, incluyendo datos generales, configuración de parámetros críticos y mantenimiento, integrando el bounded context de Equipment con los flujos de calidad.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-batch-management.jpeg" alt="QualiTrack batch management view" width="90%">
-  <p><em>Figura: Gestión de lotes de producción y trazabilidad del ciclo productivo.</em></p>
+  <p><em>Figura: Gestión de lotes de producción. Esta pantalla evidencia que los usuarios pueden consultar lotes registrados, revisar su estado y acceder a acciones relacionadas con trazabilidad, liberación o rechazo del lote.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-batch-detail.jpeg" alt="QualiTrack batch detail view" width="90%">
-  <p><em>Figura: Detalle de lote con información general, materias primas utilizadas, liberación y rechazo.</em></p>
+  <p><em>Figura: Detalle de lote. Esta evidencia valida la trazabilidad del ciclo productivo, mostrando información general del lote y materias primas utilizadas, además de acciones relevantes como liberación y rechazo según reglas del proceso.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-tracking-dashboard.jpeg" alt="QualiTrack telemetry dashboard view" width="90%">
-  <p><em>Figura: Dashboard de tracking y telemetría para monitoreo de equipos.</em></p>
+  <p><em>Figura: Dashboard de tracking y telemetría. Esta vista demuestra el monitoreo de equipos mediante estados, mediciones y anomalías, permitiendo observar datos sensoriales vinculados a los equipos registrados en la plataforma.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-tracking-history.jpeg" alt="QualiTrack telemetry history view" width="90%">
-  <p><em>Figura: Historial de telemetría y anomalías registradas por equipo.</em></p>
+  <p><em>Figura: Historial de telemetría. Esta evidencia muestra el registro histórico de mediciones por equipo y parámetro, incluyendo puntos normales y anómalos que sirven como base para análisis de desviaciones y alertas de cumplimiento.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-compliance-alerts.jpeg" alt="QualiTrack compliance alerts view" width="90%">
-  <p><em>Figura: Gestión de alertas de cumplimiento y desviaciones operativas.</em></p>
+  <p><em>Figura: Gestión de alertas de cumplimiento. Esta pantalla valida que el sistema permite visualizar desviaciones operativas y eventos relevantes para cumplimiento, facilitando el seguimiento de incidencias por parte de responsables de calidad.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-notification-preferences.jpeg" alt="QualiTrack notification preferences view" width="90%">
-  <p><em>Figura: Configuración de preferencias de notificación por canal y severidad.</em></p>
+  <p><em>Figura: Preferencias de notificación. Esta evidencia muestra la configuración de canales y severidad mínima para recibir alertas, permitiendo personalizar cómo los usuarios son informados sobre eventos críticos de la plataforma.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-kpi-dashboard.jpeg" alt="QualiTrack KPI dashboard view" width="90%">
-  <p><em>Figura: Panel de KPIs de calidad para evaluación del desempeño del laboratorio.</em></p>
+  <p><em>Figura: Panel de KPIs de calidad. Esta vista evidencia el cálculo y visualización de indicadores clave del laboratorio, como desempeño general, parámetros en riesgo y desviaciones críticas, apoyando la toma de decisiones de QA Managers.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-deviation-trends.jpeg" alt="QualiTrack deviation trends view" width="90%">
-  <p><em>Figura: Análisis de tendencias de desviación por equipo y parámetro.</em></p>
+  <p><em>Figura: Análisis de tendencias de desviación. Esta evidencia muestra la evaluación de tendencias por equipo y parámetro, permitiendo identificar comportamientos crecientes, decrecientes o estables en variables críticas del proceso.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-report-generator.jpeg" alt="QualiTrack report generator view" width="90%">
-  <p><em>Figura: Generador de reportes regulatorios y documentos de auditoría.</em></p>
+  <p><em>Figura: Generador de reportes. Esta pantalla evidencia la generación de documentos relacionados con lotes, cumplimiento y equipos, permitiendo descargar reportes que apoyan auditorías y revisión de trazabilidad.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-audit-log.jpeg" alt="QualiTrack audit log view" width="90%">
-  <p><em>Figura: Registro de auditoría para trazabilidad de acciones críticas.</em></p>
+  <p><em>Figura: Registro de auditoría del sistema. Esta evidencia muestra acciones críticas registradas por la plataforma, incluyendo entidad afectada, usuario responsable y fecha de ocurrencia, fortaleciendo la trazabilidad de operaciones internas.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-subscription-plans.jpeg" alt="QualiTrack subscription plans view" width="90%">
-  <p><em>Figura: Vista interna de planes de suscripción disponibles para contratación.</em></p>
+  <p><em>Figura: Vista interna de planes de suscripción. Esta pantalla permite consultar los planes disponibles desde la aplicación web, validando que el módulo de suscripciones está integrado al frontend y conectado con datos del backend.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-checkout.jpeg" alt="QualiTrack checkout view" width="90%">
-  <p><em>Figura: Vista de checkout previa a la redirección hacia Stripe.</em></p>
+  <p><em>Figura: Vista previa de checkout. Esta evidencia muestra el paso previo a la redirección hacia Stripe, donde el usuario confirma el plan seleccionado y se prepara la sesión de pago desde el backend.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-stripe-checkout.jpeg" alt="Stripe checkout subscription flow" width="90%">
-  <p><em>Figura: Flujo de pago de suscripción mediante Stripe Checkout en entorno de prueba.</em></p>
+  <p><em>Figura: Flujo de pago mediante Stripe Checkout. Esta pantalla evidencia la integración con un proveedor externo de pagos en entorno de prueba, permitiendo validar el inicio de una suscripción realista desde QualiTrack.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-payment-success.jpeg" alt="QualiTrack payment success view" width="90%">
-  <p><em>Figura: Confirmación de pago exitoso luego de completar el flujo de Stripe.</em></p>
+  <p><em>Figura: Confirmación de pago exitoso. Esta evidencia muestra el retorno del usuario a la aplicación luego de completar el flujo de Stripe, validando la experiencia posterior al pago dentro del módulo de suscripción y facturación.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-billing-summary.jpeg" alt="QualiTrack billing summary view" width="90%">
-  <p><em>Figura: Resumen de facturación con suscripción activa e historial de pagos.</em></p>
+  <p><em>Figura: Resumen de facturación. Esta vista evidencia la consulta de la suscripción activa y el historial de pagos, permitiendo que el usuario revise su estado comercial dentro de la plataforma.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-swagger-openapi.jpeg" alt="QualiTrack Swagger OpenAPI documentation" width="90%">
-  <p><em>Figura: Documentación Swagger/OpenAPI con endpoints organizados por recursos y bounded contexts.</em></p>
+  <p><em>Figura: Documentación Swagger/OpenAPI. Esta evidencia demuestra que el backend expone endpoints documentados y organizados por recursos, facilitando la validación de servicios REST y la integración con el frontend.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-backend-render.jpeg" alt="QualiTrack backend deployed in Render" width="90%">
-  <p><em>Figura: Backend API de QualiTrack desplegada en Render.</em></p>
+  <p><em>Figura: Backend API desplegada en Render. Esta evidencia confirma que los servicios REST implementados durante el sprint están disponibles en un entorno cloud, permitiendo que la aplicación frontend consuma datos fuera del entorno local.</em></p>
 </div>
 
 <div align="center">
   <img src="../assets/img/sprint3-railway-database.jpeg" alt="QualiTrack database deployed in Railway" width="90%">
-  <p><em>Figura: Base de datos de QualiTrack desplegada en Railway para persistencia de la plataforma.</em></p>
+  <p><em>Figura: Base de datos desplegada en Railway. Esta evidencia muestra la persistencia cloud utilizada por el backend para almacenar usuarios, laboratorios, equipos, lotes, telemetría, alertas, reportes, auditoría, suscripciones y pagos.</em></p>
 </div>
 
 <p>
-Estas evidencias muestran que el Sprint 3 permitió validar una navegación integrada entre
-módulos, el consumo de datos reales desde la API, la protección de rutas mediante autenticación,
-la operación de los principales bounded contexts y la conexión con servicios externos como
-Stripe, Firebase, Render y Railway.
+En conjunto, estas evidencias muestran que el Sprint 3 permitió validar una navegación
+integrada entre módulos, el consumo de datos reales desde la API, la protección de rutas
+mediante autenticación, la operación de los principales bounded contexts y la conexión con
+servicios externos como Stripe, Firebase, Render y Railway.
 </p>
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
