@@ -3611,6 +3611,13 @@ visualizar suscripciones y consumir servicios backend desplegados.
 
 #### 5.2.4.1. Sprint Planning 4
 
+<p>
+En esta sección se presenta el Sprint Planning Meeting correspondiente al Sprint 4,
+en el cual el equipo definió el objetivo final de la iteración, la capacidad estimada
+de trabajo y las principales historias orientadas al cierre de la versión final de
+QualiTrack.
+</p>
+
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -3623,7 +3630,7 @@ visualizar suscripciones y consumir servicios backend desplegados.
     </tr>
     <tr>
       <td>Date</td>
-      <td>30/06/2026</td>
+      <td>2026-06-30</td>
     </tr>
     <tr>
       <td>Time</td>
@@ -3651,12 +3658,13 @@ visualizar suscripciones y consumir servicios backend desplegados.
     </tr>
     <tr>
       <td colspan="2">
-        During Sprint 3, the team completed the integration-oriented increment of
-        QualiTrack. The Landing Page was improved with product and team communication
-        assets, the frontend was connected to real backend services, and the backend
-        exposed REST endpoints for the main bounded contexts. The team also configured
-        Stripe Checkout, deployed the frontend in Firebase Hosting, deployed the backend
-        in Render and connected the platform to a Railway MySQL database.
+        Durante el Sprint 3, el equipo completó el incremento orientado a la integración
+        de QualiTrack. La Landing Page fue mejorada con recursos de comunicación sobre el
+        producto y el equipo, el frontend fue conectado con servicios backend reales y el
+        backend expuso endpoints REST para los principales bounded contexts. Además, se
+        configuró Stripe Checkout, se desplegó el frontend en Firebase Hosting, se desplegó
+        el backend en Render y se conectó la plataforma con una base de datos MySQL en
+        Railway.
       </td>
     </tr>
     <tr>
@@ -3664,12 +3672,12 @@ visualizar suscripciones y consumir servicios backend desplegados.
     </tr>
     <tr>
       <td colspan="2">
-        The team identified that the product was already functional but still required
-        final polish before presentation. Some frontend routes needed protection, the
-        authenticated user session had to be reflected in the interface, several REST
-        endpoints required resource-oriented corrections, and the final deployment evidence
-        had to be aligned with the finished product. For this reason, Sprint 4 was planned
-        as a stabilization and final delivery sprint.
+        El equipo identificó que el producto ya era funcional, pero todavía requería ajustes
+        finales antes de la presentación. Algunas rutas del frontend necesitaban protección,
+        la sesión del usuario autenticado debía reflejarse en la interfaz, varios endpoints
+        REST requerían correcciones orientadas a recursos y la evidencia final de despliegue
+        debía alinearse con la versión terminada del producto. Por esta razón, el Sprint 4
+        fue planificado como un sprint de estabilización y entrega final.
       </td>
     </tr>
     <tr>
@@ -3783,8 +3791,8 @@ A continuación, se presenta la evidencia del board utilizado para gestionar el 
 
 <p>
   <strong>Sprint 4 Board URL:</strong>
-  <a href="COLOCAR_URL_PUBLICA_DEL_BOARD_SPRINT_4" target="_blank">
-    COLOCAR_URL_PUBLICA_DEL_BOARD_SPRINT_4
+  <a href="https://closedsource-11848.atlassian.net/jira/software/projects/KAN/boards/1/backlog" target="_blank">
+    https://closedsource-11848.atlassian.net/jira/software/projects/KAN/boards/1/backlog
   </a>
 </p>
 
@@ -3998,11 +4006,11 @@ Sprint Goal y el incremento final entregado para el Sprint Review.
 #### 5.2.4.5. Execution Evidence for Sprint Review
 
 <p>
-During Sprint 4, the team validated the final version of QualiTrack from the perspective of
-visitors, authenticated users and evaluators. The review focused on confirming that the
-Landing Page communicates the final product offer, the frontend protects internal routes,
-the user session is visible in the toolbar, and the main modules remain usable with the
-deployed backend services.
+Durante el Sprint 4, el equipo validó la versión final de QualiTrack desde la perspectiva de
+visitantes, usuarios autenticados y evaluadores. La revisión se enfocó en confirmar que la
+Landing Page comunica la oferta final del producto, que el frontend protege rutas internas,
+que la sesión del usuario se visualiza en la barra superior y que los módulos principales
+continúan funcionando con los servicios backend desplegados.
 </p>
 
 <p>
@@ -4059,10 +4067,10 @@ deployed backend services.
 </div>
 
 <p>
-These execution evidences confirm that Sprint 4 closed the main product experience by
-protecting internal access, presenting the active session, validating final navigation,
-keeping the deployed backend available and maintaining the public Landing Page ready for
-review.
+Estas evidencias de ejecución confirman que el Sprint 4 permitió cerrar la experiencia
+principal del producto: proteger el acceso interno, presentar la sesión activa, validar la
+navegación final, mantener disponible el backend desplegado y conservar la Landing Page
+pública lista para revisión.
 </p>
 
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review
