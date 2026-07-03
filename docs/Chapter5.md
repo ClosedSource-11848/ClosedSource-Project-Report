@@ -3235,49 +3235,39 @@ y validar la integración con autenticación JWT, suscripciones y eventos de Str
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-<p>
-Durante el Sprint 3 se consolidó el despliegue de los componentes principales de QualiTrack.
-La Frontend Web Application fue desplegada en Firebase Hosting, el Backend API fue desplegado
-en Render, la base de datos MySQL fue configurada en Railway y Stripe fue utilizado en modo
-de prueba para validar el flujo de suscripciones y pagos.
-</p>
+Durante el Sprint 3, el equipo realizó el despliegue de los principales productos de QualiTrack para poder presentar una versión integrada y funcional durante el Sprint Review. El proceso de deployment incluyó la publicación de la Landing Page y la Frontend Web Application en Firebase Hosting, el despliegue del Backend Web Service en Render, la configuración de la base de datos MySQL en Railway y la integración del flujo de suscripción mediante Stripe Checkout.
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Cloud Service</th>
-      <th>Production URL / Environment</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Frontend Web Application</td>
-      <td>Firebase Hosting</td>
-      <td><a href="https://closedsource-qualitrack.web.app/home">https://closedsource-qualitrack.web.app/home</a></td>
-      <td>Deployed</td>
-    </tr>
-    <tr>
-      <td>Backend REST API</td>
-      <td>Render</td>
-      <td><a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html">https://qualitrack-platform.onrender.com/swagger-ui/index.html</a></td>
-      <td>Deployed</td>
-    </tr>
-    <tr>
-      <td>Database</td>
-      <td>Railway</td>
-      <td>Railway MySQL production database</td>
-      <td>Deployed</td>
-    </tr>
-    <tr>
-      <td>Payment Provider</td>
-      <td>Stripe Test Environment</td>
-      <td>Stripe Checkout and Webhooks</td>
-      <td>Configured</td>
-    </tr>
-  </tbody>
-</table>
+Para lograrlo, se configuraron los entornos cloud necesarios, se ajustaron variables de entorno para conectar frontend, backend, base de datos y servicios externos, y se validó que los módulos implementados pudieran ejecutarse fuera del entorno local. Esto permitió que visitantes, usuarios autenticados y evaluadores pudieran acceder a QualiTrack mediante URLs públicas y probar los principales flujos desarrollados durante el sprint.
+
+En el caso del frontend, se configuró el proyecto Angular para consumir el backend desplegado en Render, se generó el build de producción y se publicó la aplicación mediante Firebase Hosting. Esta versión incluye la navegación principal, autenticación, gestión de laboratorio, equipos, lotes, telemetría, alertas, reportes, auditoría y suscripciones.
+
+<div align="center">
+  <img src="../assets/img/sprint3-frontend-firebase.jpeg" alt="QualiTrack frontend deployed in Firebase" width="90%">
+  <p><em>Figura: Frontend Web Application de QualiTrack desplegada en Firebase Hosting.</em></p>
+</div>
+
+Para el backend, se configuró un servicio web en Render conectado al repositorio del Backend Web Service. Además, se definieron variables de entorno para la conexión con la base de datos, autenticación JWT, configuración de Stripe y perfiles de ejecución. Como resultado, la API REST quedó disponible públicamente y documentada mediante Swagger UI.
+
+<div align="center">
+  <img src="../assets/img/sprint3-backend-render.jpeg" alt="QualiTrack backend deployed in Render" width="90%">
+  <p><em>Figura: Backend API de QualiTrack desplegada en Render.</em></p>
+</div>
+
+La persistencia de datos fue desplegada en Railway mediante una instancia MySQL. Esta base de datos permitió almacenar usuarios, laboratorios, productos, materiales, equipos, lotes, mediciones de telemetría, alertas, reportes, auditoría, planes de suscripción, pagos y suscripciones activas. El backend desplegado en Render fue configurado para conectarse a esta base de datos mediante variables de entorno.
+
+<div align="center">
+  <img src="../assets/img/sprint3-railway-database.jpeg" alt="QualiTrack database deployed in Railway" width="90%">
+  <p><em>Figura: Base de datos de QualiTrack desplegada en Railway.</em></p>
+</div>
+
+Finalmente, se configuró Stripe en modo de prueba para validar el flujo de suscripción. Se crearon productos y precios para los planes de QualiTrack, se integró Stripe Checkout desde el backend y se validó que el usuario pudiera iniciar una sesión de pago desde la aplicación web. Esta integración permitió demostrar el flujo comercial de selección de plan y suscripción durante el Sprint Review.
+
+<div align="center">
+  <img src="../assets/img/sprint3-stripe-checkout.jpeg" alt="Stripe checkout subscription flow" width="90%">
+  <p><em>Figura: Flujo de pago de suscripción mediante Stripe Checkout.</em></p>
+</div>
+
+Como resultado del deployment, QualiTrack quedó disponible para demostración mediante servicios públicos desplegados en la nube. La aplicación frontend puede ser usada desde Firebase Hosting, el backend puede ser validado desde Swagger en Render, la información se persiste en Railway y el flujo de suscripción se procesa mediante Stripe Checkout en modo de prueba.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
