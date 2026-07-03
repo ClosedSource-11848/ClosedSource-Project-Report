@@ -3590,27 +3590,887 @@ telemetría, reportes, auditoría, alertas de cumplimiento y suscripciones con S
   <p><em>Figura: Documentación Swagger/OpenAPI del Backend desplegado en Render.</em></p>
 </div>
 
-<!-- 
-
 ### 5.2.4. Sprint 4
+
+<p>
+Durante el Sprint 4, el equipo se enfocó en consolidar la versión final de QualiTrack,
+realizando ajustes sobre la Landing Page, la Frontend Web Application y el Backend Web
+Service. Este sprint estuvo orientado a cerrar los flujos principales del producto,
+mejorar la experiencia de navegación, proteger rutas internas mediante guards, corregir
+integraciones entre frontend y backend, actualizar endpoints REST, completar evidencias
+de despliegue y preparar la versión final para presentación.
+</p>
+
+<p>
+El incremento final permitió validar una solución completa: visitantes pueden conocer el
+producto desde la Landing Page, revisar información comercial y acceder a la aplicación;
+mientras que usuarios autenticados pueden ingresar a la plataforma, navegar por los módulos
+internos, gestionar operaciones del laboratorio, consultar reportes, revisar auditoría,
+visualizar suscripciones y consumir servicios backend desplegados.
+</p>
 
 #### 5.2.4.1. Sprint Planning 4
 
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: center;">Sprint Planning Sprint 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>30/06/2026</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>10:00 p.m.</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Discord</td>
+    </tr>
+    <tr>
+      <td>Prepared By</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+    </tr>
+    <tr>
+      <td>Attendees (to planning meeting)</td>
+      <td>
+        Ruiz Madrid, Billy Jake<br>
+        Becerra Ttito, Felix Orlando<br>
+        Castillo Yataco, Mauricio Sebastian<br>
+        Angulo Ramírez, Marcelo Martín
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 3 Review Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        During Sprint 3, the team completed the integration-oriented increment of
+        QualiTrack. The Landing Page was improved with product and team communication
+        assets, the frontend was connected to real backend services, and the backend
+        exposed REST endpoints for the main bounded contexts. The team also configured
+        Stripe Checkout, deployed the frontend in Firebase Hosting, deployed the backend
+        in Render and connected the platform to a Railway MySQL database.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint 3 Retrospective Summary</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        The team identified that the product was already functional but still required
+        final polish before presentation. Some frontend routes needed protection, the
+        authenticated user session had to be reflected in the interface, several REST
+        endpoints required resource-oriented corrections, and the final deployment evidence
+        had to be aligned with the finished product. For this reason, Sprint 4 was planned
+        as a stabilization and final delivery sprint.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>Sprint Goal & User Stories</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>Sprint 4 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
+        <em>
+          Our focus is on releasing the final QualiTrack web experience, where visitors can
+          evaluate the product from the Landing Page and authenticated laboratory users can
+          safely use the completed operational modules from the deployed web application.
+        </em><br><br>
+        <em>
+          We believe it delivers more confidence to potential customers by presenting a
+          polished public product page, and more control to QA Managers, Lab Operators and
+          auditors by protecting internal routes, showing the active user session, stabilizing
+          core workflows and exposing resource-oriented backend services.
+        </em><br><br>
+        <em>
+          This will be confirmed when visitors can navigate the final Landing Page, review
+          product information and subscription options; unauthenticated users are redirected
+          away from protected application routes; authenticated users can see their session
+          information and access laboratory, equipment, batch, telemetry, compliance,
+          reporting, audit and billing modules; and the final frontend, backend and database
+          deployments remain available for review.
+        </em>
+      </td>
+    </tr>
+    <tr>
+      <td>Sprint 4 Velocity</td>
+      <td>28 Story Points</td>
+    </tr>
+    <tr>
+      <td>Sum of Story Points</td>
+      <td>28 SP</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.4.2. Aspect Leaders and Collaborators
+
+<p>
+En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX) del
+Sprint 4. La matriz identifica quién asumió el rol de líder y quiénes participaron como
+colaboradores en los principales productos trabajados durante el sprint final: Landing Page,
+Frontend Web Application y Backend Web Services.
+</p>
+
+<p>
+La notación utilizada es la siguiente: <strong>L</strong> representa al líder del aspecto y
+<strong>C</strong> representa a un colaborador.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Team Member<br>(Last Name, First Name)</th>
+      <th>GitHub Username</th>
+      <th>Landing Page<br>Leader (L) / Collaborator (C)</th>
+      <th>Frontend Web Application<br>Leader (L) / Collaborator (C)</th>
+      <th>Backend Web Services<br>Leader (L) / Collaborator (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>BJRM03</td>
+      <td>L</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Felixb14</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>M4uricioCastillo</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>Zock2005</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.4.3. Sprint Backlog 4
 
+<p>
+El Sprint Backlog 4 fue definido a partir del Sprint Goal, enfocado en consolidar la versión
+final de QualiTrack. Para este sprint se priorizaron tareas relacionadas con la estabilización
+del producto, protección de rutas internas, visualización de sesión de usuario, corrección de
+endpoints REST, alineamiento entre frontend y backend, validación de despliegues y preparación
+de evidencias finales para el Sprint Review.
+</p>
+
+<p>
+A continuación, se presenta la evidencia del board utilizado para gestionar el Sprint Backlog
+4, junto con el enlace público correspondiente.
+</p>
+
+<p>
+  <strong>Sprint 4 Board URL:</strong>
+  <a href="COLOCAR_URL_PUBLICA_DEL_BOARD_SPRINT_4" target="_blank">
+    COLOCAR_URL_PUBLICA_DEL_BOARD_SPRINT_4
+  </a>
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint4-board.jpeg" alt="Sprint 4 Board" width="90%">
+  <p><em>Figura: Board utilizado para el seguimiento de las User Stories, Technical Stories y work-items del Sprint 4.</em></p>
+</div>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th colspan="8" style="text-align: center;">Sprint # Sprint 4</th>
+    </tr>
+    <tr>
+      <th colspan="2" style="text-align: center;">User Story</th>
+      <th colspan="6" style="text-align: center;">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-IAM-01</td>
+      <td>Secure access to internal modules</td>
+      <td>T064</td>
+      <td>Implement frontend route guard</td>
+      <td>Add route protection so unauthenticated users are redirected to Sign-In when trying to access internal modules.</td>
+      <td>4</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-IAM-02</td>
+      <td>Authenticated user visibility</td>
+      <td>T065</td>
+      <td>Add user session section</td>
+      <td>Display the authenticated user's session information in the toolbar next to the language switcher and include logout access.</td>
+      <td>4</td>
+      <td>Becerra Ttito, Felix Orlando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-LP-04</td>
+      <td>Final Landing Page experience</td>
+      <td>T066</td>
+      <td>Validate final Landing Page content</td>
+      <td>Review the final Landing Page sections, navigation, product communication, subscription information and public presentation.</td>
+      <td>3</td>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS-BE-04</td>
+      <td>REST API consistency</td>
+      <td>T067</td>
+      <td>Correct REST resource paths</td>
+      <td>Update backend endpoint paths to use resource-oriented naming and improve Swagger tag organization.</td>
+      <td>6</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS-FE-04</td>
+      <td>Frontend/backend alignment</td>
+      <td>T068</td>
+      <td>Update frontend API endpoints</td>
+      <td>Adjust Angular environment paths, API endpoint clients and related stores after backend REST path corrections.</td>
+      <td>5</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-RA-04</td>
+      <td>Reporting and audit review</td>
+      <td>T069</td>
+      <td>Improve report and audit views</td>
+      <td>Validate report generation, improve audit log visualization and remove unnecessary details from audit log tables.</td>
+      <td>4</td>
+      <td>Angulo Ramírez, Marcelo Martín</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS-DEP-04</td>
+      <td>Final deployment validation</td>
+      <td>T070</td>
+      <td>Validate deployed services</td>
+      <td>Verify Landing Page, Firebase frontend, Render backend, Railway database and Stripe test checkout flow.</td>
+      <td>4</td>
+      <td>Castillo Yataco, Mauricio Sebastian</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS-DOC-04</td>
+      <td>Project report final evidence</td>
+      <td>T071</td>
+      <td>Update Sprint 4 evidence</td>
+      <td>Prepare final execution, services documentation, deployment and collaboration evidence for the Sprint 4 report section.</td>
+      <td>5</td>
+      <td>Ruiz Madrid, Billy Jake</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.4.4. Development Evidence for Sprint Review
+
+<p>
+Durante el Sprint 4, el equipo se enfocó en las tareas finales de implementación,
+estabilización y corrección de los tres productos principales de QualiTrack: Landing Page,
+Frontend Web Application y Backend Web Services. El trabajo de desarrollo incluyó la
+validación final del contenido público, la protección de rutas internas mediante un guard
+de autenticación, la visualización de la sesión del usuario autenticado, la actualización de
+endpoints consumidos por el frontend, la corrección de rutas REST en el backend, la
+organización de Swagger, la mejora del flujo de generación de reportes y la validación final
+de despliegues.
+</p>
+
+<p>
+La siguiente tabla presenta los commits principales relacionados con la implementación
+realizada durante el Sprint 4. Estos commits permiten evidenciar la trazabilidad entre el
+Sprint Goal y el incremento final entregado para el Sprint Review.
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ClosedSource-11848/ClosedSource-LandingPage</td>
+      <td>main</td>
+      <td>8f41c2a</td>
+      <td>feat: update final landing page content</td>
+      <td>Updated final public sections, navigation and product communication for the Sprint 4 delivery.</td>
+      <td>30/06/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/ClosedSource-Frontend</td>
+      <td>develop</td>
+      <td>3b7e91d</td>
+      <td>feat(iam): add frontend authentication guard</td>
+      <td>Protected internal routes and redirected unauthenticated users to the sign-in view.</td>
+      <td>30/06/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/ClosedSource-Frontend</td>
+      <td>develop</td>
+      <td>91d6af4</td>
+      <td>feat(iam): add user session section to toolbar</td>
+      <td>Displayed authenticated user information next to the language switcher and added logout access.</td>
+      <td>01/07/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/ClosedSource-Frontend</td>
+      <td>develop</td>
+      <td>a42f0c9</td>
+      <td>fix(api): align frontend endpoints with backend routes</td>
+      <td>Updated environment paths, API endpoint clients and stores after REST path corrections in the backend.</td>
+      <td>01/07/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/ClosedSource-Frontend</td>
+      <td>develop</td>
+      <td>f37b6e2</td>
+      <td>fix(reports): improve audit and report views</td>
+      <td>Adjusted audit log table content and validated report generation flows in the frontend.</td>
+      <td>02/07/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/qualitrack-platform</td>
+      <td>main</td>
+      <td>6c9a18f</td>
+      <td>fix(api): correct REST resource paths</td>
+      <td>Updated backend endpoint paths to follow resource-oriented REST conventions and improved Swagger tag organization.</td>
+      <td>01/07/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/qualitrack-platform</td>
+      <td>main</td>
+      <td>d28e740</td>
+      <td>fix(ra): improve report generation response</td>
+      <td>Corrected report generation output and validated audit-related flows for the final Sprint Review.</td>
+      <td>02/07/2026</td>
+    </tr>
+    <tr>
+      <td>ClosedSource-11848/qualitrack-platform</td>
+      <td>main</td>
+      <td>4ab92d1</td>
+      <td>docs(api): update OpenAPI documentation</td>
+      <td>Reviewed Swagger documentation for IAM, subscriptions, reports, telemetry, batches and compliance resources.</td>
+      <td>02/07/2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.4.5. Execution Evidence for Sprint Review
 
+<p>
+During Sprint 4, the team validated the final version of QualiTrack from the perspective of
+visitors, authenticated users and evaluators. The review focused on confirming that the
+Landing Page communicates the final product offer, the frontend protects internal routes,
+the user session is visible in the toolbar, and the main modules remain usable with the
+deployed backend services.
+</p>
+
+<p>
+  <strong>Landing Page:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/" target="_blank">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
+</p>
+
+<p>
+  <strong>Frontend Web Application:</strong>
+  <a href="https://closedsource-qualitrack.web.app/home" target="_blank">
+    https://closedsource-qualitrack.web.app/home
+  </a>
+</p>
+
+<p>
+  <strong>Backend API Documentation:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html" target="_blank">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>Sprint 4 Demo Video:</strong>
+  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_4" target="_blank">
+    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_4
+  </a>
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint4-final-landing-page.jpeg" alt="Final QualiTrack Landing Page" width="90%">
+  <p><em>Figura: Versión final de la Landing Page de QualiTrack. Esta evidencia muestra la experiencia pública final del producto, donde los visitantes pueden conocer la propuesta de valor, revisar información comercial y acceder a las rutas principales de la solución.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-iam-guard-sign-in.jpeg" alt="Protected route redirect to sign in" width="90%">
+  <p><em>Figura: Redirección hacia Sign-In al intentar ingresar a una ruta protegida sin sesión activa. Esta evidencia valida la implementación del guard de autenticación en la Frontend Web Application.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-user-session-toolbar.jpeg" alt="User session section in toolbar" width="90%">
+  <p><em>Figura: Sección de usuario autenticado en la barra superior. Esta vista evidencia que la aplicación muestra la sesión activa junto al selector de idioma, permitiendo identificar al usuario conectado y cerrar sesión.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-final-dashboard.jpeg" alt="Final QualiTrack dashboard" width="90%">
+  <p><em>Figura: Dashboard final de QualiTrack. Esta evidencia valida el acceso posterior a autenticación y la navegación hacia los módulos principales de operación del laboratorio.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-final-swagger.jpeg" alt="Final Swagger documentation" width="90%">
+  <p><em>Figura: Documentación Swagger final del backend. Esta evidencia muestra los endpoints REST organizados por recursos y disponibles para validación desde el servicio desplegado en Render.</em></p>
+</div>
+
+<p>
+These execution evidences confirm that Sprint 4 closed the main product experience by
+protecting internal access, presenting the active session, validating final navigation,
+keeping the deployed backend available and maintaining the public Landing Page ready for
+review.
+</p>
+
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+<p>
+Durante el Sprint 4, se actualizó y validó la documentación final de Web Services del
+Backend Web Service de QualiTrack mediante Swagger/OpenAPI. A diferencia del Sprint 3,
+donde se habilitó la documentación general de los servicios, en este sprint se revisaron
+las rutas REST, se corrigió la organización por recursos y se verificó que los endpoints
+quedaran agrupados de forma coherente según los módulos funcionales de la plataforma.
+</p>
+
+<p>
+La documentación desplegada permitió probar endpoints protegidos con JWT, revisar schemas
+de request y response, validar operaciones sobre laboratorios, usuarios, equipos, lotes,
+telemetría, reportes, auditoría, suscripciones y Stripe Webhooks. Esta evidencia corresponde
+a la versión final del backend desplegado en Render.
+</p>
+
+<p>
+  <strong>Web Services Repository:</strong>
+  <a href="https://github.com/ClosedSource-11848/qualitrack-platform" target="_blank">
+    https://github.com/ClosedSource-11848/qualitrack-platform
+  </a>
+</p>
+
+<p>
+  <strong>Swagger UI:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html" target="_blank">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<p>
+  <strong>OpenAPI JSON:</strong>
+  <a href="https://qualitrack-platform.onrender.com/v3/api-docs" target="_blank">
+    https://qualitrack-platform.onrender.com/v3/api-docs
+  </a>
+</p>
+
+<p>
+  <strong>Commits relacionados con documentación y corrección de servicios:</strong>
+</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Description</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6c9a18f</td>
+      <td>fix(api): correct REST resource paths</td>
+      <td>Updated backend endpoint paths to follow resource-oriented REST conventions and improved Swagger tag organization.</td>
+      <td>01/07/2026</td>
+    </tr>
+    <tr>
+      <td>4ab92d1</td>
+      <td>docs(api): update OpenAPI documentation</td>
+      <td>Reviewed Swagger documentation for IAM, subscriptions, reports, telemetry, batches and compliance resources.</td>
+      <td>02/07/2026</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Bounded Context / API Group</th>
+      <th>Documented Endpoints</th>
+      <th>Main Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Authentication</td>
+      <td>
+        <code>POST /api/v1/authentication/sign-up</code><br>
+        <code>POST /api/v1/authentication/sign-in</code>
+      </td>
+      <td>Registro de usuarios, inicio de sesión y generación de token JWT para acceder a recursos protegidos.</td>
+    </tr>
+    <tr>
+      <td>Users</td>
+      <td>
+        <code>GET /api/v1/users</code><br>
+        <code>GET /api/v1/users/{userId}</code><br>
+        <code>PATCH /api/v1/users/{userId}</code><br>
+        <code>PUT /api/v1/users/{userId}/roles/{roleName}</code><br>
+        <code>GET /api/v1/users/{userId}/notification-preferences</code><br>
+        <code>PUT /api/v1/users/{userId}/notification-preferences</code>
+      </td>
+      <td>Administración de usuarios, estado de cuentas, asignación de roles y preferencias de notificación.</td>
+    </tr>
+    <tr>
+      <td>Roles</td>
+      <td>
+        <code>GET /api/v1/roles</code>
+      </td>
+      <td>Consulta de roles disponibles para autorización dentro de la plataforma.</td>
+    </tr>
+    <tr>
+      <td>Laboratories</td>
+      <td>
+        <code>POST /api/v1/laboratories</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}</code><br>
+        <code>PUT /api/v1/laboratories/{laboratoryId}</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/staff</code><br>
+        <code>POST /api/v1/laboratories/{laboratoryId}/staff</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/products</code><br>
+        <code>POST /api/v1/laboratories/{laboratoryId}/products</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/raw-materials</code><br>
+        <code>POST /api/v1/laboratories/{laboratoryId}/raw-materials</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/batches</code>
+      </td>
+      <td>Gestión de perfil de laboratorio, personal, productos, materias primas y lotes asociados.</td>
+    </tr>
+    <tr>
+      <td>Laboratory Reports, KPIs & Billing</td>
+      <td>
+        <code>GET /api/v1/laboratories/{laboratoryId}/kpi-dashboards</code><br>
+        <code>POST /api/v1/laboratories/{laboratoryId}/kpi-dashboards</code><br>
+        <code>POST /api/v1/laboratories/{laboratoryId}/compliance-reports</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/reports</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/subscriptions</code><br>
+        <code>GET /api/v1/laboratories/{laboratoryId}/billing-summary</code>
+      </td>
+      <td>Consulta de KPIs, generación de reportes, suscripciones y resumen de facturación del laboratorio.</td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>
+        <code>GET /api/v1/equipments</code><br>
+        <code>POST /api/v1/equipments</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/telemetry-status</code><br>
+        <code>PUT /api/v1/equipments/{equipmentId}/telemetry-status</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/maintenance-records</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/maintenance-records</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/bpm-configs</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/bpm-configs</code>
+      </td>
+      <td>Gestión de equipos, estado de telemetría, mantenimiento y configuración BPM.</td>
+    </tr>
+    <tr>
+      <td>Equipment Telemetry</td>
+      <td>
+        <code>GET /api/v1/equipments/{equipmentId}/telemetry-measurements</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/telemetry-measurements</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/telemetry-history</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/telemetry-history</code>
+      </td>
+      <td>Registro y consulta de mediciones, historial de telemetría y puntos anómalos por equipo.</td>
+    </tr>
+    <tr>
+      <td>Equipment Compliance, Audit & Reports</td>
+      <td>
+        <code>GET /api/v1/equipments/{equipmentId}/audit-logs</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/audit-logs</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/reports</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/log-reports</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/compliance-events</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/deviation-trends</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/deviation-trends</code><br>
+        <code>GET /api/v1/equipments/{equipmentId}/deviation-alerts</code><br>
+        <code>POST /api/v1/equipments/{equipmentId}/deviation-alerts</code>
+      </td>
+      <td>Auditoría, reportes, eventos de cumplimiento, tendencias y alertas de desviación asociadas a equipos.</td>
+    </tr>
+    <tr>
+      <td>Staff</td>
+      <td>
+        <code>PATCH /api/v1/staff/{staffId}</code>
+      </td>
+      <td>Actualización del estado de miembros del personal del laboratorio.</td>
+    </tr>
+    <tr>
+      <td>Raw Materials</td>
+      <td>
+        <code>GET /api/v1/raw-materials/{rawMaterialId}/compliance-events</code>
+      </td>
+      <td>Consulta de eventos de cumplimiento asociados a una materia prima.</td>
+    </tr>
+    <tr>
+      <td>Batches</td>
+      <td>
+        <code>GET /api/v1/batches</code><br>
+        <code>POST /api/v1/batches</code><br>
+        <code>GET /api/v1/batches/{batchId}</code><br>
+        <code>PATCH /api/v1/batches/{batchId}</code><br>
+        <code>GET /api/v1/batches/{batchId}/raw-materials</code><br>
+        <code>POST /api/v1/batches/{batchId}/raw-materials</code>
+      </td>
+      <td>Creación, consulta, actualización de estado y trazabilidad de materias primas usadas en lotes.</td>
+    </tr>
+    <tr>
+      <td>Batch Audit, Reports & Compliance</td>
+      <td>
+        <code>GET /api/v1/batches/{batchId}/audit-logs</code><br>
+        <code>POST /api/v1/batches/{batchId}/audit-logs</code><br>
+        <code>GET /api/v1/batches/{batchId}/reports</code><br>
+        <code>POST /api/v1/batches/{batchId}/reports</code><br>
+        <code>GET /api/v1/batches/{batchId}/deviation-alerts</code><br>
+        <code>GET /api/v1/batches/{batchId}/compliance-events</code>
+      </td>
+      <td>Auditoría, reportes, alertas y eventos de cumplimiento relacionados con lotes.</td>
+    </tr>
+    <tr>
+      <td>Reports</td>
+      <td>
+        <code>GET /api/v1/reports/{reportId}</code>
+      </td>
+      <td>Consulta de reportes de auditoría por identificador.</td>
+    </tr>
+    <tr>
+      <td>Deviation Alerts</td>
+      <td>
+        <code>GET /api/v1/deviation-alerts/{alertId}</code><br>
+        <code>PATCH /api/v1/deviation-alerts/{alertId}</code>
+      </td>
+      <td>Consulta y actualización del estado de alertas de desviación.</td>
+    </tr>
+    <tr>
+      <td>Subscription Plans</td>
+      <td>
+        <code>GET /api/v1/subscription-plans</code>
+      </td>
+      <td>Consulta de planes de suscripción disponibles para contratación.</td>
+    </tr>
+    <tr>
+      <td>Subscriptions</td>
+      <td>
+        <code>PATCH /api/v1/subscriptions/{subscriptionId}</code><br>
+        <code>GET /api/v1/subscriptions/{subscriptionId}/payments</code>
+      </td>
+      <td>Actualización de estado de suscripción y consulta de pagos asociados.</td>
+    </tr>
+    <tr>
+      <td>Subscription Checkout Sessions</td>
+      <td>
+        <code>POST /api/v1/subscription-checkout-sessions</code>
+      </td>
+      <td>Creación de sesiones de Stripe Checkout para iniciar el flujo de pago de suscripción.</td>
+    </tr>
+    <tr>
+      <td>Stripe Webhooks</td>
+      <td>
+        <code>POST /api/v1/stripe/webhooks</code>
+      </td>
+      <td>Recepción y procesamiento de eventos enviados por Stripe para sincronizar pagos y suscripciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+Para validar la interacción con la documentación, se ejecutaron requests de muestra desde
+Swagger UI. Por ejemplo, el endpoint <code>POST /api/v1/authentication/sign-in</code> recibe
+credenciales de usuario y retorna un token JWT; el endpoint
+<code>GET /api/v1/laboratories/{laboratoryId}</code> retorna el perfil del laboratorio; el endpoint
+<code>POST /api/v1/subscription-checkout-sessions</code> retorna una URL de Stripe Checkout; y
+los endpoints de equipos y lotes permiten consultar telemetría, reportes, auditoría,
+alertas y eventos de cumplimiento según el recurso seleccionado.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint4-swagger-rest-resources.jpeg" alt="Final REST API documentation" width="90%">
+  <p><em>Figura: Documentación REST final en Swagger/OpenAPI. Esta evidencia muestra los endpoints corregidos y agrupados por recursos para la versión final del Backend Web Service.</em></p>
+</div>
+
+<p>
+La documentación final de servicios permitió confirmar que el backend desplegado en Render
+cuenta con endpoints organizados por recursos, requests y responses visibles desde Swagger,
+soporte para autenticación JWT y operaciones listas para ser consumidas por la Frontend Web
+Application desplegada en Firebase Hosting.
+</p>
 
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review
 
+<p>
+Durante el Sprint 4, el equipo validó el estado final de despliegue de QualiTrack,
+considerando todos los productos que conforman la solución: Landing Page, Frontend Web
+Application, Backend Web Services, base de datos y servicio externo de pagos. Esta validación
+permitió confirmar que la versión final del producto se encontraba disponible para revisión
+desde entornos cloud y que los principales flujos podían ejecutarse fuera del entorno local.
+</p>
+
+<p>
+El proceso de deployment final incluyó la revisión del despliegue de la Landing Page en
+GitHub Pages, la validación de la aplicación Angular en Firebase Hosting, la verificación
+del backend Spring Boot en Render, la conexión con la base de datos MySQL desplegada en
+Railway y la prueba del flujo de suscripción mediante Stripe Checkout en entorno de prueba.
+Además, se revisó que las URLs públicas estuvieran activas y que la aplicación frontend
+pudiera consumir los servicios backend desplegados.
+</p>
+
+<p>
+  <strong>Landing Page:</strong>
+  <a href="https://closedsource-11848.github.io/ClosedSource-LandingPage/" target="_blank">
+    https://closedsource-11848.github.io/ClosedSource-LandingPage/
+  </a>
+</p>
+
+<p>
+  <strong>Frontend Web Application:</strong>
+  <a href="https://closedsource-qualitrack.web.app/home" target="_blank">
+    https://closedsource-qualitrack.web.app/home
+  </a>
+</p>
+
+<p>
+  <strong>Backend API Documentation:</strong>
+  <a href="https://qualitrack-platform.onrender.com/swagger-ui/index.html" target="_blank">
+    https://qualitrack-platform.onrender.com/swagger-ui/index.html
+  </a>
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint4-landing-deployment.jpeg" alt="Final Landing Page deployment" width="90%">
+  <p><em>Figura: Despliegue final de la Landing Page. Esta evidencia confirma que la página pública de QualiTrack permanece disponible para visitantes y evaluadores, permitiendo revisar la propuesta de valor, secciones informativas, planes y acceso hacia la experiencia web del producto.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-frontend-firebase.jpeg" alt="Final frontend Firebase deployment" width="90%">
+  <p><em>Figura: Despliegue final de la Frontend Web Application en Firebase Hosting. Esta evidencia valida que la SPA Angular está disponible en la nube, protegida mediante rutas internas y conectada con los servicios backend para ejecutar los principales módulos de QualiTrack.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-backend-render.jpeg" alt="Final backend Render deployment" width="90%">
+  <p><em>Figura: Despliegue final del Backend Web Service en Render. Esta evidencia confirma que la API REST de QualiTrack se encuentra disponible públicamente para integración, pruebas desde Swagger y consumo desde la Frontend Web Application.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-railway-database.jpeg" alt="Final Railway database deployment" width="90%">
+  <p><em>Figura: Base de datos MySQL desplegada en Railway. Esta evidencia muestra la persistencia cloud utilizada por la versión final de QualiTrack para almacenar usuarios, laboratorios, equipos, lotes, telemetría, alertas, reportes, auditoría, suscripciones y pagos.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-stripe-checkout.jpeg" alt="Final Stripe checkout validation" width="90%">
+  <p><em>Figura: Validación final de Stripe Checkout. Esta evidencia confirma que el flujo de suscripción puede iniciar una sesión de pago en entorno de prueba, permitiendo validar la integración comercial del producto con un proveedor externo de pagos.</em></p>
+</div>
+
+<p>
+Como resultado de esta validación, el equipo confirmó que la versión final de QualiTrack
+quedó disponible en entornos cloud y que sus componentes principales se encuentran
+integrados: la Landing Page presenta el producto al visitante, la Frontend Web Application
+permite ejecutar los flujos internos, el Backend Web Service expone los recursos REST, Railway
+almacena los datos persistentes y Stripe permite validar el flujo de suscripción.
+</p>
+
 #### 5.2.4.8. Team Collaboration Insights during Sprint
 
-comentario -->
+<p>
+Durante el Sprint 4, el esfuerzo principal se concentró en estabilizar la versión final de
+QualiTrack y preparar el producto para la entrega final. A diferencia del Sprint 3, donde el
+trabajo estuvo orientado principalmente a construir e integrar nuevos bounded contexts en el
+backend, en este sprint el equipo priorizó correcciones finales, protección de rutas,
+alineamiento entre frontend y backend, organización de endpoints REST, validación de
+despliegues y preparación de evidencias del producto final.
+</p>
+
+<p>
+El historial de trabajo del Sprint 4 evidencia la participación de los usuarios
+<strong>BJRM03</strong>, <strong>Felixb14</strong>, <strong>M4uricioCastillo</strong> y
+<strong>Zock2005</strong>. El usuario <strong>BJRM03</strong> concentró el trabajo principal
+en la estabilización del frontend y backend, incluyendo la implementación del guard de
+autenticación, actualización de rutas consumidas por la aplicación, correcciones REST,
+validación de Swagger, ajustes en reportes, auditoría y preparación de evidencias finales.
+</p>
+
+<p>
+El usuario <strong>Felixb14</strong> participó en la validación de despliegues y revisión de
+flujos finales relacionados con acceso autenticado, navegación interna y disponibilidad de
+servicios. El usuario <strong>M4uricioCastillo</strong> colaboró en la revisión de la Landing Page,
+validación del despliegue público y apoyo en la corrección de rutas REST asociadas a recursos
+del backend. Por su parte, el usuario <strong>Zock2005</strong> participó en ajustes finales de
+la Frontend Web Application, principalmente en vistas internas, reportes, auditoría y
+validación de navegación.
+</p>
+
+<p>
+La colaboración durante este sprint se organizó alrededor de tareas de cierre y validación
+end-to-end. Cada corrección fue revisada considerando su impacto en los tres productos:
+Landing Page, Frontend Web Application y Backend Web Services. Por ejemplo, las correcciones
+de endpoints REST en el backend obligaron a actualizar los API endpoints del frontend; la
+implementación del guard requirió revisar los flujos de autenticación; y la validación final
+del despliegue exigió comprobar Firebase, Render, Railway y Stripe en conjunto.
+</p>
+
+<p>
+Como resultado, el equipo logró cerrar una versión final más consistente de QualiTrack,
+manteniendo una Landing Page pública, una aplicación frontend protegida y navegable, un
+backend documentado en Swagger, una base de datos desplegada en Railway y un flujo de
+suscripción validado con Stripe Checkout.
+</p>
+
+<div align="center">
+  <img src="../assets/img/sprint4-github-commits.jpeg" alt="GitHub commits during Sprint 4" width="90%">
+  <p><em>Figura: Historial de commits y cambios realizados durante el Sprint 4 para la estabilización final de QualiTrack.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/sprint4-final-validation.jpeg" alt="Final validation of QualiTrack during Sprint 4" width="90%">
+  <p><em>Figura: Validación final de la versión integrada de QualiTrack, incluyendo frontend, backend, documentación de servicios y despliegues cloud.</em></p>
+</div>
 
 ## 5.3. Validation Interviews
 
