@@ -1290,23 +1290,33 @@ diferentes miembros.
 
 <p>
 Durante el Sprint 2, el equipo de ClosedSource se enfocó en el desarrollo e implementación
-de la primera versión de la Frontend Web Application (SPA Angular) de QualiTrack. Este
-sprint abarcó la construcción de los módulos correspondientes a los Bounded Contexts del
-dominio farmacéutico: IAM, Laboratory Management, Equipment Management, Batch Management,
-Compliance & Alerting, Tracking (IoT), Reporting & Audit y Shared. Se implementó la
-arquitectura DDD con capas de dominio, infraestructura y presentación, soporte bilingüe
-(ES/EN), consumo de APIs REST mediante JSON Server como fake API, y despliegue en Firebase
-Hosting.
+de la primera versión de la Frontend Web Application de QualiTrack, construida como una
+SPA en Angular. Este sprint permitió transformar la propuesta presentada en la Landing Page
+en una experiencia interna navegable para usuarios de laboratorio.
+</p>
+
+<p>
+El desarrollo incluyó los módulos principales asociados a los bounded contexts del dominio:
+IAM, Laboratory Management, Equipment Management, Batch Management, Compliance & Alerting,
+Tracking, Reporting & Audit y Shared. La aplicación fue organizada siguiendo una estructura
+inspirada en DDD, con separación entre dominio, infraestructura, aplicación y presentación.
+También se implementó soporte bilingüe ES/EN, navegación mediante layout y sidebar,
+componentes reutilizables, consumo de datos mediante JSON Server como fake API y despliegue
+en Firebase Hosting.
 </p>
 
 <p>
   <strong>Repositorio:</strong>
-  <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend">https://github.com/ClosedSource-11848/ClosedSource-Frontend</a>
+  <a href="https://github.com/ClosedSource-11848/ClosedSource-Frontend" target="_blank">
+    https://github.com/ClosedSource-11848/ClosedSource-Frontend
+  </a>
 </p>
 
 <p>
   <strong>Frontend Web Application Desplegada:</strong>
-  <a href="https://closedsource-qualitrack.web.app">https://closedsource-qualitrack.web.app</a>
+  <a href="https://closedsource-qualitrack.web.app" target="_blank">
+    https://closedsource-qualitrack.web.app
+  </a>
 </p>
 
 #### 5.2.2.1. Sprint Planning 2
@@ -1352,12 +1362,11 @@ Hosting.
     </tr>
     <tr>
       <td colspan="2">
-        Se completó exitosamente el desarrollo y despliegue del Landing Page de QualiTrack
-        en GitHub Pages, incluyendo todas las secciones planificadas (Hero, Features,
-        Benefits, Plans, About Us, Team, Contact), soporte bilingüe (ES/EN), documentos
-        legales (Terms of Service y Privacy Policy) y correcciones de estructura tras
-        revisión de pares. Se identificó la necesidad de mejorar la coordinación en la
-        asignación de tareas para evitar commits redundantes sobre la misma sección.
+        Se completó el desarrollo y despliegue de la Landing Page de QualiTrack en GitHub
+        Pages, incluyendo las secciones Hero, Features, Benefits, Plans, About Us, Team y
+        Contact, además del soporte bilingüe ES/EN y los documentos legales Terms of Service
+        y Privacy Policy. Durante la revisión se confirmó que la página permitía comunicar
+        la propuesta de valor del producto a visitantes externos.
       </td>
     </tr>
     <tr>
@@ -1365,10 +1374,11 @@ Hosting.
     </tr>
     <tr>
       <td colspan="2">
-        El equipo reconoció que la concentración de commits de corrección sobre la sección
-        Our Team evidenció la necesidad de aplicar GitFlow con feature branches desde el
-        inicio. Se acordó implementar ramas feature/ por Bounded Context para el Sprint 2
-        y realizar revisiones de código antes de cada merge a develop.
+        El equipo identificó que algunos cambios se concentraron en las mismas secciones
+        de la Landing Page, especialmente en componentes visuales y contenido del equipo.
+        Como acción de mejora para el Sprint 2, se acordó organizar el trabajo por módulos
+        de la aplicación, usar ramas feature por bounded context y realizar revisiones antes
+        de integrar cambios principales.
       </td>
     </tr>
     <tr>
@@ -1377,20 +1387,24 @@ Hosting.
     <tr>
       <td colspan="2">
         <strong>Sprint 2 Goal (Outcome–Impact–Customer–Confirmation):</strong><br><br>
-        <em>Our focus is on delivering the first functional version of the QualiTrack
-        Frontend Web Application, implementing the core Bounded Contexts (IAM, Laboratory
-        Management, Equipment Management, Batch Management, Compliance & Alerting,
-        Tracking and Reporting & Audit) with Angular, consuming a fake API via JSON Server
-        and deploying to Firebase Hosting.</em><br><br>
-        <em>We believe it delivers a tangible, navigable first impression of the
-        pharmaceutical quality management platform to QA Managers and Lab Operators,
-        allowing them to explore the dashboard, manage laboratory data, monitor equipment
-        and review compliance alerts from a unified interface.</em><br><br>
-        <em>This will be confirmed when users can authenticate (sign-in/sign-up), navigate
-        through all Bounded Context modules via the sidebar, perform CRUD operations on
-        laboratory entities (products, raw materials, staff), view equipment details with
-        BPM parameters, consult batch records, review compliance alerts and access KPI
-        dashboards, all connected to the fake API and deployed on Firebase.</em>
+        <em>
+          Our focus is on allowing laboratory users to explore the main QualiTrack
+          operational workflows through the first navigable Angular web application.
+        </em><br><br>
+        <em>
+          We believe it delivers a clearer understanding of how QA Managers and Lab
+          Operators would use QualiTrack in their daily work by letting them simulate
+          authentication, laboratory management, equipment control, batch traceability,
+          compliance alerts, telemetry monitoring and KPI/reporting views from a unified
+          interface.
+        </em><br><br>
+        <em>
+          This will be confirmed when a user can sign in or sign up, navigate through the
+          sidebar modules, view and manage laboratory information, products, raw materials
+          and staff, inspect equipment and BPM parameters, consult batches, review alerts,
+          access telemetry and KPI dashboards, switch between English and Spanish, and use
+          the deployed Firebase version connected to JSON Server test data.
+        </em>
       </td>
     </tr>
     <tr>
@@ -1894,45 +1908,95 @@ descripción del cambio introducido y la fecha de commit.
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
 <p>
-Durante el Sprint 2, se completó exitosamente la implementación de la primera versión de
-la Frontend Web Application de QualiTrack con todos los Bounded Contexts del dominio
-farmacéutico, soporte bilingüe (ES/EN), consumo de fake API y despliegue en Firebase
-Hosting. A continuación se presentan evidencias de ejecución mediante capturas de pantalla
-de las principales vistas de la aplicación web.
+Durante el Sprint 2 se completó la primera versión funcional de la Frontend Web Application
+de QualiTrack. Esta entrega permitió demostrar una SPA desarrollada en Angular con navegación
+interna, módulos organizados por bounded context, soporte bilingüe ES/EN y consumo de datos
+mediante JSON Server como fake API.
 </p>
 
-<p><strong>Home:</strong></p>
-<img src="../assets/img/home.jpeg" alt="Home QualiTrack" width="90%">
+<p>
+La ejecución del Sprint Review se enfocó en validar que un usuario pudiera ingresar a la
+aplicación, navegar por los módulos principales desde el layout interno, consultar información
+de laboratorio, equipos, lotes, alertas, telemetría y reportes, y comprender cómo sería la
+experiencia operativa de QualiTrack antes de la integración con el backend real.
+</p>
 
-<p><strong>Pantalla de Sign-In:</strong></p>
-<img src="../assets/img/frontend-sign-in.jpeg" alt="Sign In QualiTrack" width="90%">
+<p>
+  <strong>Frontend Web Application:</strong>
+  <a href="https://closedsource-qualitrack.web.app" target="_blank">
+    https://closedsource-qualitrack.web.app
+  </a>
+</p>
 
-<p><strong>Pantalla de Sign-Up:</strong></p>
-<img src="../assets/img/frontend-sign-up.jpeg" alt="Sign Up QualiTrack" width="90%">
+<p>
+  <strong>Sprint 2 Demo Video:</strong>
+  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_2" target="_blank">
+    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_2
+  </a>
+</p>
 
-<p><strong>Módulo Laboratory - Perfil del laboratorio:</strong></p>
-<img src="../assets/img/frontend-laboratory-profile.jpeg" alt="Laboratory Profile QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/home.jpeg" alt="Home QualiTrack" width="90%">
+  <p><em>Figura: Vista Home de la aplicación web. Esta pantalla evidencia el punto de entrada de la Frontend Web Application y permite validar la navegación inicial hacia las funcionalidades internas de QualiTrack.</em></p>
+</div>
 
-<p><strong>Módulo Laboratory - Catálogo de productos:</strong></p>
-<img src="../assets/img/frontend-product-catalog.jpeg" alt="Product Catalog QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-sign-in.jpeg" alt="Sign In QualiTrack" width="90%">
+  <p><em>Figura: Pantalla de Sign-In. Esta evidencia muestra el primer flujo de autenticación simulado, permitiendo representar cómo un usuario accedería a la plataforma antes de integrar el bounded context IAM con el backend real.</em></p>
+</div>
 
-<p><strong>Módulo Equipment - Lista de equipos:</strong></p>
-<img src="../assets/img/frontend-equipment-list.jpeg" alt="Equipment List QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-sign-up.jpeg" alt="Sign Up QualiTrack" width="90%">
+  <p><em>Figura: Pantalla de Sign-Up. Esta vista valida el registro de usuarios en la primera versión frontend, incluyendo la estructura visual del formulario y el flujo previo a la autenticación real.</em></p>
+</div>
 
-<p><strong>Módulo Equipment - Detalle de equipo:</strong></p>
-<img src="../assets/img/frontend-equipment-detail.jpeg" alt="Equipment Detail QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-laboratory-profile.jpeg" alt="Laboratory Profile QualiTrack" width="90%">
+  <p><em>Figura: Módulo Laboratory - Perfil del laboratorio. Esta evidencia muestra la visualización de datos institucionales del laboratorio, permitiendo representar cómo un QA Manager revisaría información básica como nombre, RUC, dirección, contacto y regulaciones aplicables.</em></p>
+</div>
 
-<p><strong>Módulo Batch - Lista de lotes:</strong></p>
-<img src="../assets/img/frontend-batch-list.jpeg" alt="Batch List QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-product-catalog.jpeg" alt="Product Catalog QualiTrack" width="90%">
+  <p><em>Figura: Módulo Laboratory - Catálogo de productos. Esta pantalla evidencia la gestión visual de productos farmacéuticos registrados, información necesaria para relacionar productos con lotes de producción en los flujos posteriores.</em></p>
+</div>
 
-<p><strong>Módulo Compliance & Alerting - Dashboard de alertas:</strong></p>
-<img src="../assets/img/frontend-alerts-dashboard.jpeg" alt="Alerts Dashboard QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-equipment-list.jpeg" alt="Equipment List QualiTrack" width="90%">
+  <p><em>Figura: Módulo Equipment - Lista de equipos. Esta vista valida la presentación del catálogo de equipos industriales del laboratorio, mostrando información resumida como nombre, tipo, modelo, número de serie y estado operativo.</em></p>
+</div>
 
-<p><strong>Módulo Tracking - Dashboard de telemetría:</strong></p>
-<img src="../assets/img/frontend-telemetry-dashboard.jpeg" alt="Telemetry Dashboard QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-equipment-detail.jpeg" alt="Equipment Detail QualiTrack" width="90%">
+  <p><em>Figura: Módulo Equipment - Detalle de equipo. Esta evidencia muestra la navegación hacia una vista específica de equipo, donde se organizan datos generales, configuración BPM y mantenimiento, anticipando los flujos operativos integrados en sprints posteriores.</em></p>
+</div>
 
-<p><strong>Módulo Reporting & Audit - KPI Dashboard:</strong></p>
-<img src="../assets/img/frontend-kpi-dashboard.jpeg" alt="KPI Dashboard QualiTrack" width="90%">
+<div align="center">
+  <img src="../assets/img/frontend-batch-list.jpeg" alt="Batch List QualiTrack" width="90%">
+  <p><em>Figura: Módulo Batch - Lista de lotes. Esta pantalla evidencia la consulta de lotes de producción, permitiendo validar la estructura visual para trazabilidad del ciclo productivo y revisión de estados de lote.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/frontend-alerts-dashboard.jpeg" alt="Alerts Dashboard QualiTrack" width="90%">
+  <p><em>Figura: Módulo Compliance & Alerting - Dashboard de alertas. Esta evidencia muestra la vista destinada a monitorear alertas de cumplimiento y desviaciones, permitiendo al usuario identificar eventos relevantes dentro del proceso de calidad.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/frontend-telemetry-dashboard.jpeg" alt="Telemetry Dashboard QualiTrack" width="90%">
+  <p><em>Figura: Módulo Tracking - Dashboard de telemetría. Esta vista evidencia la representación frontend del monitoreo IoT, mostrando cómo se visualizarían estados, mediciones y eventos de equipos conectados.</em></p>
+</div>
+
+<div align="center">
+  <img src="../assets/img/frontend-kpi-dashboard.jpeg" alt="KPI Dashboard QualiTrack" width="90%">
+  <p><em>Figura: Módulo Reporting & Audit - KPI Dashboard. Esta evidencia muestra la visualización de indicadores de calidad, permitiendo representar cómo los usuarios podrían revisar métricas clave del laboratorio desde una interfaz centralizada.</em></p>
+</div>
+
+<p>
+En conjunto, estas evidencias muestran que el Sprint 2 permitió entregar una primera
+experiencia interna navegable de QualiTrack. Aunque los datos aún provenían de una fake API,
+la aplicación permitió validar la estructura visual, la organización por módulos, la navegación
+principal, el soporte bilingüe y los flujos operativos que luego serían conectados al backend
+real en el Sprint 3.
+</p>
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -2052,36 +2116,54 @@ abordará en los sprints posteriores orientados al Backend.
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
 <p>
-La Frontend Web Application de QualiTrack fue desplegada exitosamente en
-<strong>Firebase Hosting</strong> desde la rama <code>develop</code> del repositorio
-<code>ClosedSource-Frontend</code>. El proceso de despliegue se realizó siguiendo los
-siguientes pasos:
+Durante el Sprint 2 se realizó el despliegue de la primera versión de la Frontend Web
+Application de QualiTrack en Firebase Hosting. Este despliegue permitió que la aplicación
+Angular estuviera disponible mediante una URL pública y pudiera ser utilizada durante el
+Sprint Review para demostrar la navegación interna, los módulos principales y el consumo
+de datos desde una fake API.
 </p>
 
-<p><strong>Pasos de configuración:</strong></p>
+<p>
+Para llevar a cabo el deployment, el equipo configuró Firebase Hosting en el proyecto
+<code>ClosedSource-Frontend</code>, preparó el build de producción de Angular y publicó los
+archivos generados desde el directorio de distribución. Además, se verificó que las rutas
+principales de la SPA funcionaran correctamente, que el layout cargara sin errores, que el
+soporte bilingüe ES/EN estuviera disponible y que las vistas de los bounded contexts pudieran
+ser navegadas desde el entorno desplegado.
+</p>
+
+<p><strong>Pasos de configuración realizados:</strong></p>
 
 <ol>
-  <li>Instalar Firebase CLI globalmente: <code>npm install -g firebase-tools</code>.</li>
-  <li>Autenticarse con Firebase: <code>firebase login</code>.</li>
-  <li>Inicializar el proyecto: <code>firebase init hosting</code>, seleccionando el
-  directorio de output <code>dist/qualitrack-frontend</code>.</li>
-  <li>Compilar el proyecto Angular para producción:
-  <code>ng build --configuration production</code>.</li>
-  <li>Desplegar: <code>firebase deploy --only hosting</code>.</li>
-  <li>Verificar el despliegue accediendo a la URL generada.</li>
+  <li>Se instaló Firebase CLI mediante <code>npm install -g firebase-tools</code>.</li>
+  <li>Se autenticó la cuenta del equipo con <code>firebase login</code>.</li>
+  <li>Se inicializó Firebase Hosting en el proyecto frontend mediante <code>firebase init hosting</code>.</li>
+  <li>Se configuró el directorio de salida del build de Angular como fuente de despliegue.</li>
+  <li>Se generó el build de producción con <code>ng build --configuration production</code>.</li>
+  <li>Se publicó la aplicación con <code>firebase deploy --only hosting</code>.</li>
+  <li>Se validó el acceso a la aplicación desde la URL pública generada por Firebase.</li>
 </ol>
 
 <p>
   <strong>URL de Producción:</strong>
-  <a href="https://closedsource-qualitrack.web.app">https://closedsource-qualitrack.web.app</a>
+  <a href="https://closedsource-qualitrack.web.app" target="_blank">
+    https://closedsource-qualitrack.web.app
+  </a>
 </p>
 
 <div align="center">
   <img src="../assets/img/deployment-evidence-sprint2.jpeg"
        alt="Firebase Hosting Deployment Evidence Sprint 2" width="90%">
-  <p><em>Figura: Configuración de Firebase Hosting para el despliegue de la Frontend Web
-  Application de QualiTrack.</em></p>
+  <p><em>Figura: Configuración de Firebase Hosting para el despliegue de la Frontend Web Application de QualiTrack. Esta evidencia muestra que la primera SPA de QualiTrack quedó publicada en un entorno cloud y disponible para su revisión fuera del entorno local.</em></p>
 </div>
+
+<p>
+Este despliegue permitió validar que la Frontend Web Application podía ser ejecutada desde
+un servicio cloud, manteniendo la navegación entre módulos, la estructura visual de la
+aplicación y la simulación de datos mediante fake API. Con ello, el Sprint 2 cerró con una
+versión demostrable de la experiencia interna de QualiTrack, preparada para ser integrada
+con el backend real en el siguiente sprint.
+</p>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
