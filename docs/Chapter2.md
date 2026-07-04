@@ -606,6 +606,7 @@ Para este segmento se elaboró el User Persona **Valeria Castro**. Se considerar
 
 <img src="../assets/img/UserPersona1.png" alt="User Persona 1" width="auto" height="1900"/>
 
+
 <br>
 
 **2) Segmento 2: Directores y Supervisores de Entidades de Salud Pública**
@@ -613,6 +614,7 @@ Para este segmento se elaboró el User Persona **Valeria Castro**. Se considerar
 Para este segmento se elaboró el User Persona **Rosa Amelia Mendoza**. Se consideraron aspectos como su formación científica y su rol en la supervisión de la producción de biológicos o vacunas a nivel estatal. Sus motivaciones están orientadas a estandarizar los procesos de manufactura cumpliendo estrictamente con las normativas nacionales de salud. Entre sus frustraciones se encuentra la falta de sistemas integrados, lo que obliga a su personal a realizar mediciones manuales constantemente, generando brechas de seguridad en la información y lentitud operativa. Su perfil refleja una necesidad crítica de sistemas inmutables y de trazabilidad en tiempo real que garanticen la seguridad pública de manera amigable para el personal técnico.
 
 <img src="../assets/img/UserPersona2.png" alt="User Persona 2" width="auto" height="1900"/>
+
 
 ### 2.3.2. User Task Matrix
 
