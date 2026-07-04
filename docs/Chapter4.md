@@ -187,7 +187,7 @@ Esta sección presenta lo que hace única a QualiTrack: una plataforma para labo
 
 En esta sección, se humaniza la marca al presentar al equipo detrás de QualiTrack. Con fotos y descripciones de los miembros, mostramos a las personas dedicadas a este proyecto, construyendo confianza y una conexión personal con los visitantes.
 
-<img src="../assets/img/ourteam-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/ourteam-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Precios (Plans):**
 
