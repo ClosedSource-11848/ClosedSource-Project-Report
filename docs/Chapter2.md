@@ -700,13 +700,57 @@ Para crear una solución que realmente se vincula con las personas, no es sufici
 
 <img src="../assets/img/EmpathyMapping2.png" alt="Empathy Mapping 2" width="auto" height="450"/>
 
-## 2.4. Big Picture Event Storming
+### 2.4. Big Picture Event Storming
 
-Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados, antes de crear un sistema sólido. El Big Picture Event Storming es un método colaborativo que facilita la visualización de alto nivel de todos los hitos y sucesos regulatorios y operativos que tienen lugar en un laboratorio farmacéutico. Al estructurar estos eventos de forma lógica y cronológica, conseguimos detectar los flujos cruciales del negocio y los puntos críticos en los que la información de calidad tiende a retrasarse o a perderse, exponiendo potenciales riesgos de cumplimiento normativo.
+<p>
+Antes de definir funcionalidades, módulos o componentes técnicos para <strong>QualiTrack</strong>,
+el equipo realizó una sesión de <strong>Big Picture Event Storming</strong> con el objetivo de
+comprender el dominio del negocio desde una perspectiva general. Esta actividad permitió
+visualizar los principales eventos que ocurren dentro de un laboratorio farmacéutico, desde
+la gestión de usuarios y planes de suscripción hasta la operación de lotes, materias primas,
+equipos, telemetría, alertas de calidad, auditoría y cumplimiento regulatorio.
+</p>
 
-En esta primera fase, el equipo llevó a cabo una sesión de lluvia de ideas con el fin de recopilar todos los eventos significativos pertinentes al dominio, sin importar inicialmente la secuencia o la jerarquía. El propósito principal fue ilustrar de forma visual y abstracta los sucesos reales del negocio, abstrayendo por completo cualquier función técnica, interfaz de usuario o vinculación directa a los sistemas de software y bases de datos, priorizando el descubrimiento del Lenguaje Ubicuo de la organización.
+<p>
+El proceso se desarrolló de manera colaborativa, priorizando el descubrimiento del negocio
+sin enfocarse inicialmente en pantallas, bases de datos, endpoints o detalles de implementación.
+El equipo recopiló eventos significativos del dominio y los organizó como una primera
+aproximación visual al flujo general de la organización. Esta dinámica permitió identificar
+procesos clave, posibles puntos de retraso, riesgos de pérdida de información y oportunidades
+para mejorar la trazabilidad y el cumplimiento de Buenas Prácticas de Manufactura (BPM).
+</p>
 
-<img src="../assets/img/design-level-event-storming-step-1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
+<p>
+La primera etapa consistió en recolectar eventos de dominio. En esta fase, los integrantes
+propusieron sucesos relevantes expresados en pasado, como hechos que ya ocurrieron dentro
+del negocio. Esta forma de redacción permitió representar acontecimientos reales del dominio,
+por ejemplo: un usuario fue registrado, un lote de producción fue programado, una materia
+prima fue consumida, una desviación de calidad fue detectada, un reporte de cumplimiento fue
+emitido o una auditoría fue finalizada.
+</p>
+
+<div align="center">
+  <img src="../assets/img/design-level-event-storming-step-1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
+  <p><em>Figura: Primera etapa del Big Picture Event Storming, enfocada en la recolección de eventos de dominio.</em></p>
+</div>
+
+<p>
+Como resultado de esta etapa, se identificaron grupos iniciales de eventos relacionados con
+la administración de usuarios, suscripciones, gestión de laboratorios, materias primas,
+equipos, producción de lotes, telemetría, alertas de cumplimiento, auditoría y reportes.
+Esta exploración permitió reconocer que el dominio de QualiTrack no se limita únicamente al
+monitoreo de equipos, sino que integra varios procesos operativos y regulatorios que deben
+mantenerse conectados para asegurar trazabilidad.
+</p>
+
+<p>
+A partir de los eventos recolectados, el equipo pudo detectar áreas críticas del negocio:
+la gestión del inventario de materias primas, el uso de insumos durante los lotes de producción,
+la detección de desviaciones, la generación de acciones correctivas, la interrupción de
+telemetría y la emisión de reportes regulatorios. Estos elementos fueron considerados como
+insumos principales para la posterior identificación de procesos, bounded contexts y
+funcionalidades del sistema.
+</p>
 
 ## 2.5. Ubiquitous Language
 
