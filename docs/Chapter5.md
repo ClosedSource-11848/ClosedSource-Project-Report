@@ -1212,8 +1212,8 @@ GitHub Pages.
 
 <p>
   <strong>Sprint 1 Demo Video:</strong>
-  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_1" target="_blank">
-    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_1
+  <a href="https://youtu.be/DNOJpRzapM8" target="_blank">
+    https://youtu.be/DNOJpRzapM8
   </a>
 </p>
 
@@ -2036,8 +2036,8 @@ experiencia operativa de QualiTrack antes de la integración con el backend real
 
 <p>
   <strong>Sprint 2 Demo Video:</strong>
-  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_2" target="_blank">
-    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_2
+  <a href="https://youtu.be/hEhx71BwzhM" target="_blank">
+    https://youtu.be/hEhx71BwzhM
   </a>
 </p>
 
@@ -3138,8 +3138,8 @@ las principales vistas implementadas y probadas durante el Sprint 3.
 
 <p>
   <strong>Sprint 3 Demo Video:</strong>
-  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_3" target="_blank">
-    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_3
+  <a href="https://youtu.be/EgUB5ACJqcU" target="_blank">
+    https://youtu.be/EgUB5ACJqcU
   </a>
 </p>
 
@@ -4036,8 +4036,8 @@ continúan funcionando con los servicios backend desplegados.
 
 <p>
   <strong>Sprint 4 Demo Video:</strong>
-  <a href="COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_4" target="_blank">
-    COLOCAR_URL_DEL_VIDEO_DEMO_SPRINT_4
+  <a href="https://youtu.be/IyKiOV5A7o0" target="_blank">
+    https://youtu.be/IyKiOV5A7o0
   </a>
 </p>
 
