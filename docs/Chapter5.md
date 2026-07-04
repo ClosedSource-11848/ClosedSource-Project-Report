@@ -4485,47 +4485,60 @@ suscripción validado con Stripe Checkout.
 ### 5.3.1. Diseño de Entrevistas
 
 <p>
-Las entrevistas de validación con usuarios finales constituyen un instrumento clave para la recolección de retroalimentación sobre la solución propuesta. Estas fueron diseñadas con el objetivo de evaluar el grado de adecuación de la plataforma a los requerimientos de los usuarios, así como identificar posibles limitaciones en términos de usabilidad y oportunidades de mejora.
+Las entrevistas de validación con usuarios finales constituyen un instrumento clave para
+recoger retroalimentación sobre la solución propuesta. Estas entrevistas fueron diseñadas
+con el objetivo de evaluar el grado de adecuación de <strong>QualiTrack</strong> frente a las
+necesidades de los usuarios, identificar limitaciones de usabilidad y reconocer oportunidades
+de mejora para futuras iteraciones del producto.
 </p>
 
 <p>
-Se realizaron entrevistas con representantes de los dos segmentos objetivo del proyecto: gerentes y jefes de aseguramiento de calidad, y directores y supervisores de entidades de salud pública, permitiendo obtener una perspectiva integral desde los ámbitos de gestión interna y supervisión del cumplimiento normativo.
+Se realizaron entrevistas con representantes de los segmentos objetivo del proyecto:
+gerentes y jefes de aseguramiento de calidad, así como operadores de laboratorio. Esta
+selección permitió obtener una perspectiva complementaria entre quienes supervisan la
+calidad y cumplimiento de procesos, y quienes ejecutan actividades operativas dentro del
+laboratorio.
 </p>
 
 <h4>Preguntas para el Segmento de Gerentes y Jefes de Aseguramiento de Calidad</h4>
 
 <ol>
-<li>¿Qué limitaciones le generan los sistemas actuales al gestionar la calidad?</li>
-<li>¿Qué tipo de información necesita consultar con mayor frecuencia y rapidez?</li>
-<li>¿Qué dificultades tiene al acceder a información histórica?</li>
-<li>¿Qué tareas le demandan más tiempo y considera que podrían optimizarse?</li>
-<li>¿Qué tipo de alertas o notificaciones serían más útiles para su trabajo?</li>
-<li>¿Qué funciones considera indispensables en una solución digital de aseguramiento de calidad?</li>
-<li>¿Qué beneficios concretos esperaría obtener al implementar una herramienta como esta?</li>
-<li>¿Qué aspectos le generarían desconfianza al usar una plataforma digital?</li>
-<li>¿Qué condiciones deberían cumplirse para considerar su implementación en su organización?</li>
-<li>¿Qué mejoras sugeriría para que la solución se adapte mejor a sus necesidades?</li>
+  <li>¿Qué limitaciones le generan los sistemas actuales al gestionar la calidad?</li>
+  <li>¿Qué tipo de información necesita consultar con mayor frecuencia y rapidez?</li>
+  <li>¿Qué dificultades tiene al acceder a información histórica?</li>
+  <li>¿Qué tareas le demandan más tiempo y considera que podrían optimizarse?</li>
+  <li>¿Qué tipo de alertas o notificaciones serían más útiles para su trabajo?</li>
+  <li>¿Qué funciones considera indispensables en una solución digital de aseguramiento de calidad?</li>
+  <li>¿Qué beneficios concretos esperaría obtener al implementar una herramienta como esta?</li>
+  <li>¿Qué aspectos le generarían desconfianza al usar una plataforma digital?</li>
+  <li>¿Qué condiciones deberían cumplirse para considerar su implementación en su organización?</li>
+  <li>¿Qué mejoras sugeriría para que la solución se adapte mejor a sus necesidades?</li>
 </ol>
 
-<h4>Preguntas para el Segmento de Directores y Supervisores de Entidades de Salud Pública</h4>
+<h4>Preguntas para el Segmento de Operadores de Laboratorio</h4>
+
 <ol>
-<li>¿Qué dificultades encuentra al consolidar información de diferentes entidades de salud?</li>
-<li>¿Qué limitaciones tiene el acceso a datos para el monitoreo continuo?</li>
-<li>¿Qué indicadores o información necesita visualizar para tomar decisiones oportunas?</li>
-<li>¿Qué problemas existen en la trazabilidad de las supervisiones o inspecciones?</li>
-<li>¿Qué procesos considera que deberían integrarse en una sola plataforma?</li>
-<li>¿Qué tipo de alertas o reportes le ayudarían en su labor de supervisión?</li>
-<li>¿Qué funcionalidades considera esenciales en una herramienta digital de fiscalización?</li>
-<li>¿Qué beneficios esperaría obtener en términos de eficiencia y control?</li>
-<li>¿Qué factores le generarían desconfianza al usar esta solución?</li>
-<li>¿Qué condiciones o mejoras serían necesarias para adoptar esta herramienta?</li>
+  <li>¿Qué dificultades encuentra al registrar o consultar información operativa del laboratorio?</li>
+  <li>¿Qué limitaciones tiene actualmente para acceder a datos de equipos, lotes o materias primas?</li>
+  <li>¿Qué información necesita visualizar para realizar sus actividades con mayor seguridad?</li>
+  <li>¿Qué problemas existen en la trazabilidad de las actividades que realiza durante la jornada?</li>
+  <li>¿Qué procesos considera que deberían integrarse en una sola plataforma?</li>
+  <li>¿Qué tipo de alertas o reportes le ayudarían en su labor diaria?</li>
+  <li>¿Qué funcionalidades considera esenciales en una herramienta digital para laboratorio?</li>
+  <li>¿Qué beneficios esperaría obtener en términos de eficiencia y control?</li>
+  <li>¿Qué factores le generarían desconfianza al usar esta solución?</li>
+  <li>¿Qué condiciones o mejoras serían necesarias para adoptar esta herramienta?</li>
 </ol>
 
 ### 5.3.2. Registro de Entrevistas
 
-Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmentos objetivo. A continuación se presenta el registro detallado de las entrevistas realizadas, incluyendo información del entrevistado, capturas de video y análisis de respuestas.
+<p>
+Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmentos objetivo.
+A continuación, se presenta el registro detallado de las entrevistas realizadas, incluyendo
+información del entrevistado, capturas de video y análisis de respuestas.
+</p>
 
-<h4>Entrevista 1 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
+<h4>Entrevista 1 - Gerentes y Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
 
 <table border="1" cellpadding="4" cellspacing="0">
   <tbody>
@@ -4559,25 +4572,39 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
     </tr>
     <tr>
       <td><strong>Timing</strong></td>
-      <td>00:00 - 5:07</td>
+      <td>00:00 - 05:07</td>
     </tr>
   </tbody>
 </table>
 
 <p><strong>Screenshot del video:</strong></p>
-<img src="../assets/img/sprint-interview-1.jpg" alt="Interview Segmento 1">
+
+<div align="center">
+  <img src="../assets/img/sprint-interview-1.jpg" alt="Interview Segmento 1" width="90%">
+  <p><em>Figura: Entrevista de validación a Alberto Valle, representante del segmento de aseguramiento de calidad.</em></p>
+</div>
 
 <p><strong>Resumen de Respuestas:</strong></p>
+
 <p>
-  El señor Alberto Valle comento que la presentación de información no era la más efectiva y considera que algunos elementos localizdos de la pagina no estan siendo aplicados correctamente.
+El señor Alberto Valle comentó que la presentación de información dentro de una solución
+digital debe ser clara, directa y fácil de interpretar. Señaló que algunos elementos de la
+página podrían organizarse mejor para facilitar la comprensión de las funciones principales
+de la plataforma.
 </p>
 
 <p>
-  El presenta experiencia previa en el area laboral de la fabricación y control de farmacos, por lo que el señalo varios aspectos vitales que da la oportunidad de mejorar el diseño tomandolo de referencia.
+Debido a su experiencia en fabricación y control de productos farmacéuticos, resaltó la
+importancia de contar con herramientas que permitan revisar información crítica de manera
+ordenada. Sus observaciones brindaron oportunidades de mejora relacionadas con la visualización
+de datos, el control de lotes y la claridad de los procesos presentados.
 </p>
 
 <p>
-  Calificó la aplicación como "en pcoreso" e indicó una urgencia en el sistmea de generación de lotes y la innecesidad de la extracción de datos relacionados a la materia prima empleada en el desarrollo del contro.
+También indicó que QualiTrack aún puede seguir fortaleciéndose, especialmente en el flujo de
+generación de lotes y en la forma en que se muestra la información relacionada con materias
+primas y control de calidad. Su retroalimentación confirmó la necesidad de priorizar trazabilidad,
+claridad operativa y reportes más completos.
 </p>
 
 <hr>
@@ -4616,30 +4643,42 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
     </tr>
     <tr>
       <td><strong>Timing</strong></td>
-      <td>5:08 - 10:35</td>
+      <td>05:08 - 10:35</td>
     </tr>
   </tbody>
 </table>
 
 <p><strong>Screenshot del video:</strong></p>
-<img src="../assets/img/sprint-interview-2.jpg" alt="Interview Administrator 2">
+
+<div align="center">
+  <img src="../assets/img/sprint-interview-2.jpg" alt="Interview Segmento 2" width="90%">
+  <p><em>Figura: Entrevista de validación a Rocio Santo Alegre, representante del segmento de operadores de laboratorio.</em></p>
+</div>
 
 <p><strong>Resumen de Respuestas:</strong></p>
+
 <p>
-  Rocio indica que las dificultades más frecuentes es el tiempo en que uno tarda en procesar la información en varios documentos y pasando los datos clave al equipo de trabajo. Además, ella comenta de que el uso de maquinas que permitan registrar información de forma automatica presenta problemas de raíz en dependencia a la metodologia de trabajo del laboratorio.
+Rocio indicó que una de las dificultades más frecuentes en su trabajo es el tiempo que toma
+procesar información distribuida en varios documentos y comunicar datos clave al equipo.
+También mencionó que la automatización puede ser útil, pero debe adaptarse correctamente a
+la metodología de trabajo del laboratorio.
 </p>
 
 <p>
-  La interfaz de CualiTrack le pareció clara y bien organizada. Sin embargo, señaló la necesidad de mejorar  el sistema de la automatización de los reportes y la falta de indicativos notorios que explican que hace cada oppción de la propuesta
+La interfaz de <strong>QualiTrack</strong> le pareció clara y organizada. Sin embargo, señaló la
+necesidad de mejorar la automatización de reportes y agregar indicaciones más visibles que
+expliquen la función de cada opción, especialmente para usuarios nuevos.
 </p>
 
 <p>
- Eya no señala un problema alguno importante,considerando que las observación son deenseñanza a los nuevos usuarios dentro de un laboratiro nuevo.
+Su retroalimentación permitió identificar que la solución debe facilitar el aprendizaje del
+usuario, reducir la dependencia de documentos separados y ofrecer reportes más comprensibles
+para apoyar la operación diaria.
 </p>
 
 <hr>
 
-<h4>Entrevista 3 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
+<h4>Entrevista 3 - Gerentes y Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
 
 <table border="1" cellpadding="4" cellspacing="0">
   <tbody>
@@ -4653,7 +4692,7 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
     </tr>
     <tr>
       <td><strong>Distrito</strong></td>
-      <td>Sam Juan de Lurigancho</td>
+      <td>San Juan de Lurigancho</td>
     </tr>
     <tr>
       <td><strong>Ocupación</strong></td>
@@ -4679,24 +4718,36 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
 </table>
 
 <p><strong>Screenshot del video:</strong></p>
-<img src="../assets/img/sprint-interview-3.jpg" alt="Interview Segmento 2">
+
+<div align="center">
+  <img src="../assets/img/sprint-interview-3.jpg" alt="Interview Segmento 1" width="90%">
+  <p><em>Figura: Entrevista de validación a Fred Palomino, representante del segmento de aseguramiento de calidad.</em></p>
+</div>
 
 <p><strong>Resumen de Respuestas:</strong></p>
+
 <p>
-  Fred Palomino menciona que el trabajo en equipo muchas veces es el factor que más influye en la dificultad en el aarea laboral deobido a que el apunto de los datos que regulan en la fabricación de farmacos es por periodos.
+Fred Palomino mencionó que el trabajo en equipo influye directamente en la gestión de calidad,
+especialmente cuando los datos relacionados con la fabricación de productos farmacéuticos se
+registran por periodos y deben mantenerse correctamente organizados.
 </p>
 
 <p>
-  Con experiencia en la fabriación de farmacos, el menciona que seria bueno el asignar una clave exclusiva por usuario con el fin de protejer por completo el flujo de trabajo en caso de que en el equipo no se presente integrantes con base.
+Desde su experiencia en fabricación de fármacos, resaltó la importancia de asignar credenciales
+individuales por usuario para proteger el flujo de trabajo y evitar accesos no controlados.
+Esta observación refuerza la necesidad de mantener un módulo de autenticación y roles dentro
+de QualiTrack.
 </p>
 
 <p>
-  El menciona que, dejando de lado el tema de la seguridad, esta propuesta le interesa debido a que confirma sus capacidades de optimizar el tiempo de desarrollo.
+Finalmente, indicó que la propuesta resulta interesante porque puede contribuir a optimizar
+tiempos de trabajo, siempre que se refuercen aspectos de seguridad, control de acceso y
+trazabilidad de la información.
 </p>
 
 <hr>
 
-<h4>Entrevista 4 - Operador de Laboratorio (Segmento 2))</h4>
+<h4>Entrevista 4 - Operador de Laboratorio (Segmento 2)</h4>
 
 <table border="1" cellpadding="4" cellspacing="0">
   <tbody>
@@ -4730,29 +4781,43 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
     </tr>
     <tr>
       <td><strong>Timing</strong></td>
-      <td>15:47 - 20:60</td>
+      <td>15:47 - 21:00</td>
     </tr>
   </tbody>
 </table>
 
 <p><strong>Screenshot del video:</strong></p>
-<img src="../assets/img/sprint-interview-4.jpg" alt="Interview Segmento 2">
+
+<div align="center">
+  <img src="../assets/img/sprint-interview-4.jpg" alt="Interview Segmento 2" width="90%">
+  <p><em>Figura: Entrevista de validación a Risa Sotelo, representante del segmento de operadores de laboratorio.</em></p>
+</div>
 
 <p><strong>Resumen de Respuestas:</strong></p>
+
 <p>
-  Sotelo es la que más defectos pudo detectar en el desarrollo de la startup QualiTrack debido a metodos de trabajos empleados por ella. Expresó que su preocupación principal es el temá de los lotes al ver que el proceso es más simplista y no de una perespectiva positiva.
+Risa Sotelo identificó varios puntos de mejora en la propuesta de QualiTrack, principalmente
+relacionados con el manejo de lotes y la forma en que se representa el flujo operativo dentro
+del sistema. Su preocupación principal estuvo asociada a que el proceso no debe simplificarse
+en exceso, ya que los laboratorios requieren control detallado sobre sus actividades.
 </p>
 
 <p>
-  La interfaz de QualiTrack, sibien menciona que el eorden lo bre agradable al mostrarle nuestra propuesta, el temá esta en el sistema de guardado para elementos que no presentan una prioridad en caso de detectar dificultades del control de calidad.
-</p>
-    Indico que la probabilidad de usar Qualitrack  no es la gran cosa considerando sus impresiones iniciales se relacionen con el servicio de automatización, indicando que la forma automatizada de Qualitrack no siempre ofrece un un buen serviciio acomodado al usuario.
-<p>
-  Indicó alta probabilidad de usar VEYRA y recomendó mejorar la documentación técnica y agregar opciones 
-  de exportación de datos en múltiples formatos.
+Aunque señaló que la interfaz mantiene un orden visual agradable, indicó que se debe reforzar
+el sistema de guardado y la priorización de información cuando se detectan dificultades en
+control de calidad.
 </p>
 
-<h4>Entrevista 5 - QA Manageres y/o Jefes de Aseguramiento de Calidad (Segmento 1)- </h4>
+<p>
+También mencionó que la automatización debe adaptarse a las necesidades reales del usuario,
+ya que no siempre una solución automatizada resulta útil si no considera adecuadamente el
+contexto operativo del laboratorio. Esta observación permite reconocer la importancia de
+continuar validando los flujos con usuarios reales.
+</p>
+
+<hr>
+
+<h4>Entrevista 5 - Gerentes y Jefes de Aseguramiento de Calidad (Segmento 1)</h4>
 
 <table border="1" cellpadding="4" cellspacing="0">
   <tbody>
@@ -4786,25 +4851,37 @@ Las entrevistas de validación se llevaron a cabo con usuarios de ambos segmento
     </tr>
     <tr>
       <td><strong>Timing</strong></td>
-      <td>15:47 - 20:60</td>
+      <td>21:01 - 26:34</td>
     </tr>
   </tbody>
 </table>
 
 <p><strong>Screenshot del video:</strong></p>
-<img src="../assets/img/sprint-interview-5.jpg" alt="Interview Segmento 1">
+
+<div align="center">
+  <img src="../assets/img/sprint-interview-5.jpg" alt="Interview Segmento 1" width="90%">
+  <p><em>Figura: Entrevista de validación a Delci Castro, representante del segmento de aseguramiento de calidad.</em></p>
+</div>
 
 <p><strong>Resumen de Respuestas:</strong></p>
+
 <p>
-  La experiencia de Delcy Castro es notoria considerando que inclusve comentó que estaba de descanso temporalmente despues de haber cumplido con la labor del control. Ella menciona que el uso de herramientas que permitan recolectar los datos obtenidos de los sensores 
+Delci Castro mostró experiencia en actividades relacionadas con control de calidad y resaltó
+la utilidad de contar con herramientas que permitan recolectar y consultar datos provenientes
+de sensores o procesos críticos del laboratorio.
 </p>
 
 <p>
-  La interfaz de QualiTrack, si  menciona que el el orden lo agradable al mostrarle nuestra propuesta, el temá esta en el sistema de guardado para elementos que no presentan una prioridad en caso de detectar dificultades del control de calidad.
+Sobre la interfaz de <strong>QualiTrack</strong>, mencionó que el orden visual resulta adecuado,
+pero que deben mejorarse ciertos mecanismos de guardado y priorización de información cuando
+se presentan dificultades vinculadas al control de calidad.
 </p>
-   
+
 <p>
-  Indicó alta probabilidad de usar CualiTrack y recomendó optimizar los recuross empleados en la formación de lotes. Además indica que la generación de reportes no parece tán completo para ser considerando como una buena opción
+Indicó una alta probabilidad de uso de QualiTrack si la plataforma continúa optimizando los
+recursos empleados en la formación de lotes y mejora la generación de reportes. Asimismo,
+recomendó fortalecer el nivel de detalle de los reportes para que puedan ser considerados
+una herramienta más completa en escenarios de revisión y auditoría.
 </p>
 
 ### 5.3.3. Evaluaciones según heurísticas
