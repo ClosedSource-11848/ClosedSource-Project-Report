@@ -5210,13 +5210,227 @@ Sin embargo, para fortalecer la usabilidad en un entorno regulado, se recomienda
 
 ## Conclusiones y recomendaciones
 
-<p> Al finalizar el ciclo de desarrollo, implementación y validación de la solución <strong>QualiTrack</strong>, el equipo ha llegado a una serie de conclusiones clave, contrastando los resultados obtenidos con los planteamientos iniciales definidos bajo el enfoque Lean UX y el desarrollo ágil basado en Sprints. </p> <p><strong>1. Validación de Problem Statements y Supuestos (Assumptions):</strong></p> <p> Inicialmente, se planteó como <em>Problem Statement</em> que los laboratorios farmacéuticos enfrentan dificultades para garantizar el cumplimiento de las Buenas Prácticas de Manufactura (BPM) debido a procesos manuales, falta de trazabilidad en tiempo real y limitada integración de datos de telemetría. A partir de la implementación del Landing Page y la validación con usuarios, se confirmó que existe una necesidad real de soluciones digitales que automaticen el monitoreo y control de procesos críticos. </p> <p> Asimismo, se validó el supuesto de que los responsables de calidad (QA Managers) valoran altamente la centralización de información y la automatización de alertas. Sin embargo, se identificó que el nivel de exigencia en términos de precisión, auditoría y cumplimiento normativo es incluso mayor al esperado, lo que implica que la solución debe priorizar la confiabilidad, integridad de datos y cumplimiento regulatorio desde sus etapas iniciales. </p> <p><strong>2. Contrastación de Hipótesis (Hypothesis Statements):</strong></p> <ul> <li> <strong>Hipótesis de Valor para QA Managers:</strong> Se planteó que "Si proporcionamos dashboards con monitoreo en tiempo real y alertas automáticas, los responsables de calidad podrán detectar desviaciones de forma más eficiente". Los resultados obtenidos en el Sprint 1 (a nivel de propuesta de valor y percepción del usuario) validan esta hipótesis, ya que las funcionalidades relacionadas con monitoreo IoT y control automatizado fueron percibidas como altamente relevantes. </li> <li> <strong>Hipótesis de Valor para Entidades Reguladoras:</strong> Se asumió que "La generación de reportes auditables facilitará los procesos de supervisión y cumplimiento". Esta hipótesis se mantiene validada a nivel conceptual, aunque se identificó que los usuarios requieren no solo reportes estáticos, sino también historiales inmutables, trazabilidad completa y facilidad de exportación para auditorías externas. </li> </ul> <p><strong>3. Cumplimiento de Criterios de Éxito:</strong></p> <p> Durante el Sprint 1, se logró implementar y desplegar exitosamente el Landing Page de QualiTrack mediante GitHub Pages, cumpliendo con los criterios de aceptación definidos: navegación completa, presentación clara de la propuesta de valor, soporte bilingüe y acceso a documentos legales. </p> <p> No obstante, al tratarse de un primer incremento enfocado en la capa de presentación, aún no se han validado métricas críticas relacionadas con el uso del sistema, tales como eficiencia operativa, reducción de errores o tiempos de respuesta, las cuales serán evaluadas en los siguientes sprints con la implementación del Backend y los servicios de telemetría. </p> <p><strong>Recomendaciones (Roadmap):</strong></p> <p> En base a los hallazgos obtenidos y las limitaciones actuales del alcance del Sprint 1, se proponen las siguientes líneas de acción para las siguientes etapas del proyecto: </p> <ul> <li> <strong>Implementación del Backend y Servicios IoT:</strong> Priorizar el desarrollo de los Web Services con Spring Boot para la ingesta de datos de telemetría en tiempo real, ya que representan el núcleo funcional de la propuesta de valor de QualiTrack. </li> <li> <strong>Desarrollo del Dashboard Interactivo:</strong> Construir la aplicación frontend completa en Angular que permita visualizar datos en tiempo real, gestionar lotes y monitorear cumplimiento BPM mediante dashboards dinámicos. </li> <li> <strong>Integración de Módulo de Auditoría:</strong> Incorporar funcionalidades de generación de reportes inmutables, historiales de cambios y trazabilidad completa, alineadas con los requerimientos de auditoría del sector farmacéutico. </li> <li> <strong>Validación con Usuarios Reales:</strong> Realizar pruebas de usabilidad y validación con QA Managers y entidades regulatorias para medir el impacto real de la solución y ajustar funcionalidades según feedback directo. </li> <li> <strong>Escalabilidad y Despliegue en Producción:</strong> Preparar la arquitectura para soportar despliegues en la nube (Azure), asegurando alta disponibilidad, seguridad de datos y cumplimiento de estándares industriales. </li> </ul>
+<p>
+Al finalizar el ciclo de desarrollo, implementación, integración y validación de
+<strong>QualiTrack</strong>, el equipo ClosedSource concluye que la solución responde al
+problema identificado en el Capítulo I: la dificultad que enfrentan los laboratorios
+farmacéuticos para mantener trazabilidad, control de calidad y cumplimiento de Buenas
+Prácticas de Manufactura (BPM) cuando dependen de procesos manuales, información dispersa
+y baja visibilidad sobre equipos críticos. A través de los cuatro sprints, el producto
+evolucionó desde una propuesta comunicada en una Landing Page hasta una plataforma web
+integrada, desplegada y conectada con servicios backend reales, orientada a apoyar a
+responsables de calidad, operadores de laboratorio y perfiles vinculados a auditoría y
+cumplimiento regulatorio.
+</p>
 
-<!-- 
+<p><strong>1. Validación de Problem Statements y Supuestos (Assumptions):</strong></p>
 
-## Video About-the-Team
+<p>
+Desde el enfoque Lean UX desarrollado en los primeros capítulos, se identificó que los
+laboratorios farmacéuticos requieren herramientas que les permitan reducir la dependencia
+de registros manuales, centralizar información operativa y mejorar la trazabilidad de los
+procesos de producción, control de calidad y monitoreo de equipos. La implementación de
+QualiTrack permitió contrastar este planteamiento inicial con una solución funcional que
+integra gestión de laboratorio, equipos, lotes, materias primas, telemetría, alertas,
+reportes, auditoría y suscripciones.
+</p>
 
-comentario -->
+<p>
+Durante el <strong>Sprint 1</strong>, la Landing Page permitió comunicar la propuesta de valor
+del producto, explicar sus beneficios y presentar la solución a potenciales usuarios.
+Esto ayudó a validar el supuesto de que los responsables de calidad y perfiles relacionados
+con auditoría necesitan comprender rápidamente cómo una plataforma digital puede aportar
+valor en trazabilidad, cumplimiento BPM y monitoreo de procesos críticos.
+</p>
+
+<p>
+Durante el <strong>Sprint 2</strong>, la primera versión de la Frontend Web Application permitió
+representar los principales flujos operativos del sistema. Aunque se trabajó inicialmente
+con una fake API, la aplicación permitió visualizar cómo los usuarios podrían gestionar
+laboratorios, productos, materias primas, personal, equipos, lotes, alertas, telemetría y
+reportes desde una interfaz centralizada.
+</p>
+
+<p>
+Durante el <strong>Sprint 3</strong>, la implementación del backend permitió validar que los
+flujos diseñados podían conectarse con servicios reales, persistencia de datos, seguridad
+mediante JWT y documentación Swagger/OpenAPI. Además, la integración con Stripe permitió
+incorporar el flujo de suscripción como parte de la propuesta SaaS de QualiTrack.
+</p>
+
+<p>
+Finalmente, durante el <strong>Sprint 4</strong>, la solución fue estabilizada mediante la
+protección de rutas con guard de autenticación, la visualización de la sesión activa del
+usuario, la corrección de rutas REST, la alineación de endpoints del frontend y la validación
+final de despliegues. Esto permitió consolidar una versión más coherente y demostrable del
+producto.
+</p>
+
+<p>
+Con ello, se validó el supuesto de que QualiTrack debe priorizar la confiabilidad,
+la trazabilidad, la seguridad de acceso, la documentación clara de servicios y la integración
+entre módulos para generar confianza en usuarios que operan dentro de un entorno regulado.
+</p>
+
+<p><strong>2. Contrastación de Hipótesis (Hypothesis Statements):</strong></p>
+
+<ul>
+  <li>
+    <strong>Hipótesis de valor para visitantes y potenciales clientes:</strong>
+    Se planteó que si QualiTrack comunica de forma clara sus beneficios, funcionalidades,
+    equipo y planes de suscripción, los visitantes podrían comprender mejor la propuesta
+    y evaluar su adopción. Esta hipótesis fue reforzada mediante la Landing Page, la
+    incorporación de contenido sobre el producto y el equipo, la presentación de planes
+    y la conexión con el flujo de suscripción mediante Stripe Checkout.
+  </li>
+
+  <li>
+    <strong>Hipótesis de valor para QA Managers:</strong>
+    Se planteó que si la plataforma ofrece dashboards, alertas, trazabilidad y reportes,
+    los responsables de calidad podrían detectar desviaciones y revisar información crítica
+    de forma más eficiente. Esta hipótesis fue validada progresivamente mediante los módulos
+    de Compliance & Alerts, Tracking, Reporting & Audit, KPI Dashboard, System Audit Log y
+    generación de reportes.
+  </li>
+
+  <li>
+    <strong>Hipótesis de valor para operadores de laboratorio:</strong>
+    Se asumió que si los operadores cuentan con una interfaz para registrar laboratorios,
+    productos, materias primas, equipos, mantenimiento y lotes, podrían reducir la dependencia
+    de registros manuales. Esta hipótesis fue reforzada con los módulos Laboratory, Equipment
+    y Batch, los cuales permiten registrar, consultar y actualizar información operativa
+    persistida en base de datos.
+  </li>
+
+  <li>
+    <strong>Hipótesis de valor para auditoría y cumplimiento:</strong>
+    Se asumió que la generación de reportes, eventos de cumplimiento y registros de auditoría
+    facilitaría la revisión de procesos regulados. El desarrollo de audit logs, compliance
+    events, reportes por lote/equipo/laboratorio y documentación Swagger confirmó que la
+    solución puede aportar una base técnica para trazabilidad y revisión posterior, aunque
+    todavía requiere validación con usuarios reales del sector farmacéutico.
+  </li>
+</ul>
+
+<p><strong>3. Cumplimiento de Criterios de Éxito por Sprint:</strong></p>
+
+<p>
+En el <strong>Sprint 1</strong>, se cumplió con la implementación y despliegue de la Landing Page
+mediante GitHub Pages. Se logró presentar la propuesta de valor, beneficios, planes, equipo,
+contacto, soporte bilingüe y documentos legales, permitiendo que QualiTrack tuviera una
+primera presencia pública.
+</p>
+
+<p>
+En el <strong>Sprint 2</strong>, se desarrolló la primera versión funcional de la Frontend Web
+Application con Angular. Se implementaron los principales bounded contexts del producto,
+navegación lateral, soporte bilingüe, stores reactivos, vistas operativas y consumo de una
+fake API. Esto permitió visualizar cómo sería la experiencia principal del usuario dentro
+de la plataforma.
+</p>
+
+<p>
+En el <strong>Sprint 3</strong>, se cerró la brecha entre frontend y backend mediante la
+implementación de servicios reales con Spring Boot. Se incorporaron los bounded contexts de
+Laboratory, Equipment, Batch, Compliance & Alerts, Tracking, Reporting & Audit, IAM y
+Subscription & Billing. Además, se integró autenticación JWT, cifrado BCrypt, Stripe Checkout,
+Railway como base de datos, Render para el backend, Firebase para el frontend y Swagger/OpenAPI
+para la documentación de servicios.
+</p>
+
+<p>
+En el <strong>Sprint 4</strong>, se consolidó la versión final del producto. Se implementó la
+protección de rutas en el frontend, se agregó la visualización de usuario autenticado, se
+corrigieron rutas REST para mejorar su consistencia, se alinearon los endpoints del frontend,
+se validaron flujos finales de reportes, auditoría, suscripciones y módulos operativos, y se
+prepararon evidencias finales para la entrega TB2.
+</p>
+
+<p><strong>4. Aprendizajes técnicos y de gestión:</strong></p>
+
+<p>
+El desarrollo de QualiTrack permitió aplicar una arquitectura organizada por bounded contexts
+y separación por capas: domain, application, infrastructure e interfaces. Esta estructura
+facilitó que los módulos mantuvieran coherencia tanto en frontend como en backend, y permitió
+que el equipo pudiera trabajar por áreas funcionales sin perder la visión general del producto.
+</p>
+
+<p>
+Asimismo, el equipo fortaleció competencias técnicas relacionadas con Angular, Spring Boot,
+Spring Security, JWT, JPA, MySQL, Swagger/OpenAPI, Firebase Hosting, Render, Railway y Stripe.
+La experiencia también permitió comprender que una solución SaaS no solo requiere implementar
+pantallas o endpoints, sino integrar propuesta de valor, experiencia de usuario, seguridad,
+persistencia, documentación, despliegue y validación funcional.
+</p>
+
+<p>
+Desde la gestión del proyecto, el uso de GitFlow, ramas feature, commits documentados, Jira,
+diagramas de arquitectura y evidencias por sprint ayudó a mejorar la coordinación del equipo.
+Sin embargo, también se identificó que la integración entre frontend y backend debe planificarse
+desde etapas tempranas para reducir ajustes tardíos y evitar inconsistencias entre rutas,
+contratos de datos y vistas implementadas.
+</p>
+
+<p><strong>5. Recomendaciones y Roadmap:</strong></p>
+
+<ul>
+  <li>
+    <strong>Validación con usuarios reales:</strong>
+    Realizar pruebas de usabilidad con QA Managers, operadores de laboratorio y perfiles
+    relacionados con auditoría para validar si los flujos implementados responden correctamente
+    a sus necesidades operativas.
+  </li>
+
+  <li>
+    <strong>Telemetría IoT en tiempo real:</strong>
+    Evolucionar el módulo Tracking para conectarse con sensores reales o simuladores IoT más
+    avanzados, permitiendo visualizar mediciones en tiempo real y detectar anomalías de manera
+    automática.
+  </li>
+
+  <li>
+    <strong>Mejora de reportes y auditoría:</strong>
+    Fortalecer la generación de documentos PDF, historiales inmutables, filtros avanzados y
+    exportaciones para auditorías externas, alineando el sistema con exigencias más estrictas
+    del sector farmacéutico.
+  </li>
+
+  <li>
+    <strong>Seguridad y roles avanzados:</strong>
+    Ampliar el módulo IAM para incorporar permisos más granulares por rol, laboratorio y
+    operación, de modo que la plataforma pueda adaptarse mejor a organizaciones con múltiples
+    usuarios y responsabilidades.
+  </li>
+
+  <li>
+    <strong>Suscripciones y billing productivo:</strong>
+    Completar la configuración productiva de Stripe, incluyendo planes definitivos, portal de
+    clientes, cancelaciones, renovaciones, webhooks robustos y conciliación de pagos.
+  </li>
+
+  <li>
+    <strong>Escalabilidad y observabilidad:</strong>
+    Incorporar monitoreo de logs, métricas, health checks, pruebas automatizadas y pipelines de
+    despliegue continuo para mejorar la estabilidad de la solución en entornos cloud.
+  </li>
+
+  <li>
+    <strong>Mejora continua de la experiencia de usuario:</strong>
+    Continuar refinando las vistas de dashboard, alertas, reportes, planes de suscripción y
+    navegación general para reducir fricción y facilitar el uso recurrente de la plataforma.
+  </li>
+</ul>
+
+<p>
+En conclusión, QualiTrack logró materializar la propuesta de valor definida desde el
+Capítulo I: ofrecer una plataforma SaaS orientada a mejorar la trazabilidad, automatizar
+el monitoreo de procesos críticos, centralizar información operativa y facilitar el
+cumplimiento BPM en laboratorios farmacéuticos. Aunque todavía existen oportunidades de
+mejora para alcanzar un entorno productivo completo, el proyecto demuestra una base sólida
+para seguir evolucionando hacia una solución escalable, segura y útil para equipos de
+calidad que necesitan reducir errores manuales, detectar desviaciones y sustentar auditorías
+con información confiable.
+</p>
 
 # Bibliografía
 
@@ -5379,10 +5593,18 @@ comentario -->
 ## Video About-the-Team
 
 <p>
-  El video <strong>"About the Team"</strong> presenta al equipo de desarrollo de <strong>ClosedSource</strong>,
-  destacando las habilidades, roles y contribuciones de cada integrante en el proyecto <strong>QualiTrack</strong>.
-  Este video complementa la documentación del proyecto mostrando el lado humano detrás del desarrollo de la solución,
-  así como la participación del equipo en el diseño, implementación, integración, despliegue y validación de la plataforma.
+  El video <strong>"About the Team"</strong> presenta al equipo activo de <strong>ClosedSource</strong>
+  durante el <strong>Sprint 4</strong>, correspondiente a la entrega final TB2 del proyecto
+  <strong>QualiTrack</strong>. En esta etapa, el equipo se enfocó en consolidar la versión final
+  de la solución, estabilizando la Landing Page, la Frontend Web Application y los Backend Web
+  Services, además de validar los despliegues cloud y preparar las evidencias finales del producto.
+</p>
+
+<p>
+  Este video complementa la documentación del proyecto mostrando el lado humano detrás del desarrollo
+  de QualiTrack, así como la participación de los integrantes en la integración final, corrección de
+  rutas REST, protección de rutas autenticadas, validación de módulos funcionales, despliegue y cierre
+  del reporte final.
 </p>
 
 <h4>Información General del Video</h4>
@@ -5395,25 +5617,25 @@ comentario -->
     </tr>
     <tr>
       <td><strong>Duración</strong></td>
-      <td>10 minutos 9 segundos</td>
+      <td>6 minutos 44 segundos</td>
     </tr>
     <tr>
       <td><strong>Fecha de Grabación</strong></td>
-      <td>20/06/2026</td>
+      <td>03/07/2026</td>
     </tr>
     <tr>
       <td><strong>URL YouTube</strong></td>
       <td>
-        <a href="https://youtu.be/bGTHeGe3x6U">
-          https://youtu.be/bGTHeGe3x6U
+        <a href="https://youtu.be/vu7Rlkn2lEc">
+          https://youtu.be/vu7Rlkn2lEc
         </a>
       </td>
     </tr>
     <tr>
       <td><strong>URL Microsoft Stream</strong></td>
       <td>
-        <a href="https://shorturl.at/Yl5A8">
-          https://shorturl.at/Yl5A8
+        <a href="https://shorturl.at/2CJGz">
+          https://shorturl.at/2CJGz
         </a>
       </td>
     </tr>
@@ -5424,25 +5646,27 @@ comentario -->
 
 <div align="center">
   <img src="../assets/img/about-the-team-video.jpeg" alt="QualiTrack About the Team Video" width="90%">
-  <p><em>Figura: Captura del video About the Team de QualiTrack.</em></p>
+  <p><em>Figura: Captura del video About the Team de QualiTrack para la entrega final TB2.</em></p>
 </div>
 
 <h4>Contenido del Video</h4>
 
 <p>
-  El video incluye presentaciones individuales de los integrantes del equipo ClosedSource,
-  explicando su participación dentro del desarrollo de QualiTrack y las responsabilidades
-  asumidas durante los sprints del proyecto.
+  El video incluye presentaciones individuales de los integrantes que participaron en el Sprint 4,
+  explicando su rol dentro del proyecto, las tareas desarrolladas durante la entrega final y los
+  aprendizajes obtenidos en el curso. Cada intervención se relaciona con el objetivo de cerrar una
+  versión integrada, desplegada y demostrable de QualiTrack.
 </p>
 
 <ul>
-  <li>Nombre completo de cada integrante del equipo.</li>
-  <li>Rol principal dentro del proyecto QualiTrack.</li>
-  <li>Responsabilidades asumidas durante el desarrollo.</li>
-  <li>Tecnologías y herramientas utilizadas durante la implementación.</li>
-  <li>Contribuciones en frontend, backend, base de datos, despliegue, documentación y pruebas.</li>
-  <li>Aprendizajes obtenidos durante el desarrollo de una solución SaaS para laboratorios farmacéuticos.</li>
-  <li>Expectativas y oportunidades de mejora para futuras iteraciones del producto.</li>
+  <li>Presentación de los integrantes activos durante el Sprint 4.</li>
+  <li>Rol principal de cada integrante dentro del proyecto QualiTrack.</li>
+  <li>Contribuciones realizadas en la versión final de la Landing Page, frontend y backend.</li>
+  <li>Correcciones aplicadas en rutas REST, documentación Swagger/OpenAPI y endpoints consumidos por Angular.</li>
+  <li>Implementación y validación de autenticación, guard de rutas y sección de usuario activo.</li>
+  <li>Validación de despliegues en GitHub Pages, Firebase Hosting, Render y Railway.</li>
+  <li>Aprendizajes obtenidos sobre trabajo colaborativo, arquitectura DDD, integración frontend-backend y despliegue cloud.</li>
+  <li>Reflexión final sobre la evolución de QualiTrack como solución SaaS para laboratorios farmacéuticos.</li>
 </ul>
 
 <h4>Miembros del Equipo</h4>
@@ -5452,7 +5676,7 @@ comentario -->
     <tr>
       <th>Nombre Completo</th>
       <th>Rol Principal</th>
-      <th>Contribuciones Destacadas</th>
+      <th>Contribuciones Destacadas durante el Sprint 4</th>
     </tr>
   </thead>
   <tbody>
@@ -5460,50 +5684,39 @@ comentario -->
       <td>Ruiz Madrid, Billy Jake</td>
       <td>Backend and Frontend Developer</td>
       <td>
-        Implementación de funcionalidades frontend en Angular, integración con servicios REST,
-        configuración de despliegue en Firebase, soporte en backend Spring Boot, base de datos
-        MySQL en Railway e integración del flujo de suscripciones con Stripe.
+        Lideró la consolidación técnica de la versión final de QualiTrack. Participó en la
+        implementación del guard de autenticación, la protección de rutas internas, la alineación
+        de endpoints del frontend con el backend, la corrección de rutas REST, la organización de
+        Swagger/OpenAPI y la preparación de evidencias del reporte TB2.
       </td>
     </tr>
     <tr>
       <td>Becerra Ttito, Felix Orlando</td>
       <td>Backend and Frontend Developer</td>
       <td>
-        Colaboración en el desarrollo e integración de funcionalidades del proyecto QualiTrack,
-        apoyo en la implementación de módulos de la Web Application, revisión de flujos funcionales
-        y participación en la validación de la solución durante el Sprint 3.
-      </td>
-    </tr>
-    <tr>
-      <td>Diaz Caruzo, Edgard Daniel</td>
-      <td>Backend and Frontend Developer</td>
-      <td>
-        Desarrollo de módulos funcionales de la Web Application, apoyo en la implementación
-        de componentes Angular, validación de vistas y colaboración en la documentación del proyecto.
-      </td>
-    </tr>
-    <tr>
-      <td>Viza Quispe, Marlon Packard</td>
-      <td>Backend and Frontend Developer</td>
-      <td>
-        Implementación de funcionalidades asociadas a la gestión operativa del laboratorio,
-        apoyo en la estructuración de vistas, revisión de integración frontend-backend y pruebas funcionales.
+        Colaboró en la experiencia de usuario autenticado, apoyando la incorporación de la sección
+        de usuario activo en la barra superior, el cierre de sesión y la validación de navegación
+        protegida. También participó en la revisión de despliegues y conexión entre frontend y
+        backend desplegado.
       </td>
     </tr>
     <tr>
       <td>Castillo Yataco, Mauricio Sebastian</td>
       <td>Backend and Frontend Developer</td>
       <td>
-        Diseño y mejora de interfaces de usuario, aplicación de estilos visuales, apoyo en la
-        experiencia de usuario de la aplicación y colaboración en la validación de componentes.
+        Participó en la validación final de la Landing Page y en la revisión de flujos asociados
+        a Batch Management. Su aporte estuvo relacionado con la consistencia de procesos como
+        liberación de lotes, rechazo, uso de materias primas y validación de endpoints REST del
+        módulo.
       </td>
     </tr>
     <tr>
       <td>Angulo Ramírez, Marcelo Martín</td>
       <td>Backend and Frontend Developer</td>
       <td>
-        Desarrollo de secciones de la aplicación web, soporte en integración de APIs,
-        revisión de flujos funcionales y colaboración en pruebas, documentación y despliegue.
+        Colaboró en la validación final de módulos relacionados con Compliance & Alerts, auditoría
+        y visualización de información operativa. Además, apoyó en la revisión de evidencias,
+        consistencia funcional y documentación necesaria para sustentar la entrega final.
       </td>
     </tr>
   </tbody>
@@ -5512,16 +5725,20 @@ comentario -->
 <h4>Relación con el Proyecto</h4>
 
 <p>
-  El video <strong>"About the Team"</strong> evidencia la organización y colaboración del equipo ClosedSource
-  durante el desarrollo de QualiTrack. A través de las presentaciones individuales, se muestra cómo cada
-  integrante contribuyó a la construcción de una solución orientada a laboratorios farmacéuticos, integrando
-  tecnologías como Angular, Spring Boot, MySQL, Firebase Hosting, Render, Railway y Stripe.
+  El video <strong>"About the Team"</strong> evidencia la colaboración del equipo ClosedSource
+  durante el cierre del proyecto QualiTrack. A diferencia de etapas anteriores, el Sprint 4 no se
+  enfocó en crear módulos desde cero, sino en estabilizar la solución completa, corregir detalles
+  de integración, proteger el acceso a la aplicación y validar que los principales productos del
+  proyecto funcionen como una experiencia integrada.
 </p>
 
 <p>
-  Además, el video permite reforzar la trazabilidad del trabajo realizado durante los sprints, destacando
-  la participación del equipo en el desarrollo del Landing Page, la Web Application, los Web Services REST,
-  la documentación técnica, la validación funcional y el despliegue cloud de la solución.
+  A través de las presentaciones individuales, se muestra cómo cada integrante contribuyó a la
+  versión final del producto: desde la Landing Page pública, la aplicación Angular desplegada en
+  Firebase, los servicios REST en Spring Boot desplegados en Render, la base de datos MySQL en
+  Railway y el flujo de suscripción con Stripe. El video refuerza la trazabilidad del trabajo
+  realizado y permite presentar al equipo detrás de una solución orientada a mejorar la gestión,
+  monitoreo, trazabilidad y cumplimiento BPM en laboratorios farmacéuticos.
 </p>
 
 <div style="page-break-after: always;"></div>
@@ -5703,16 +5920,16 @@ comentario -->
       <td rowspan="2"><strong>Video "About the Team"</strong></td>
       <td>YouTube</td>
       <td>
-        <a href="https://youtu.be/bGTHeGe3x6U">
-          https://youtu.be/bGTHeGe3x6U
+        <a href="https://youtu.be/vu7Rlkn2lEc">
+          https://youtu.be/vu7Rlkn2lEc
         </a>
       </td>
     </tr>
     <tr>
       <td>Microsoft Stream</td>
       <td>
-        <a href="https://shorturl.at/Yl5A8">
-          https://shorturl.at/Yl5A8
+        <a href="https://shorturl.at/2CJGz">
+          https://shorturl.at/2CJGz
         </a>
       </td>
     </tr>
