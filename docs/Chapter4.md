@@ -761,7 +761,7 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   **Unhappy Path**
 
-  El usuario intenta registrar un nuevo lote de producción, pero introduce información inconsistente o fuera de los parámetros permitidos para el equipo o proceso seleccionado.
+    El usuario intenta registrar un nuevo lote de producción, pero introduce información inconsistente o fuera de los parámetros permitidos para el equipo o proceso seleccionado.
 
   Durante la validación, QualiTrack detecta la anomalía y rechaza el registro, mostrando un mensaje de error que informa la causa del problema. Como resultado, el lote no es creado y el usuario debe corregir los datos ingresados antes de volver a intentar el proceso de registro.
 
@@ -769,17 +769,21 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
 ----
 
-- #### **Objetivo 3: El usuario requiere modificar la configuración tanto del sistema como su perfil.**
+- #### **Objetivo 3: Un QA Manager desea generar y descargar reportes de producción y trazabilidad.**
 
   **Happy Path**
 
-  En este flujo ideal, el usuario accede a la sección de configuración, modifica los datos que necesita actualizar (como perfil de usuario, información de la organización o preferencias de notificación), luego presiona el botón "Save Settings" y finalmente espera a que el sistema procese y cargue los cambios correctamente, mostrando un mensaje de confirmación y aplicando las nuevas configuraciones en toda la plataforma sin afectar la continuidad operativa del laboratorio.
+  El usuario accede al módulo Report & Document Generator para obtener información relacionada con los lotes de producción registrados en la plataforma. A continuación, selecciona el tipo de reporte deseado, especifica los parámetros de búsqueda requeridos y el formato de exportación correspondiente (PDF o CSV).
+
+  Tras presionar el botón Download, QualiTrack procesa la solicitud, valida la información ingresada y genera exitosamente el documento. Finalmente, el sistema muestra una notificación de confirmación y descarga automáticamente el archivo solicitado, permitiendo al usuario acceder a la documentación para fines de análisis, auditoría o seguimiento operativo.
 
   <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
   **Unhappy Path**
 
-  En este escenario alternativo, el usuario modifica los datos necesarios en la sección de configuración y presiona el botón "Save Settings", pero al esperar que se carguen los cambios, el sistema presenta dificultades técnicas como validación de campos fallida (formato de correo incorrecto, contraseñas que no coinciden, URL inválida), problemas de conectividad con el servidor o un error interno en la API; como resultado, la configuración no se guarda, se muestra un mensaje de error específico indicando la causa, y el usuario debe corregir los datos o reintentar la operación, quedando registrado el intento fallido en el log de auditoría para garantizar la trazabilidad exigida por DIGEMID.
+  El usuario intenta generar un reporte desde el módulo Report & Document Generator; sin embargo, durante el proceso ocurre un error que impide completar la descarga del archivo solicitado.
+
+  Al presionar el botón Download, el sistema detecta la incidencia y muestra una notificación indicando que la generación del reporte ha fallado. Como resultado, el documento no es descargado y el usuario deberá verificar los parámetros ingresados o volver a intentar la operación para obtener el reporte requerido.
 
   <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
