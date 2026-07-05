@@ -807,6 +807,26 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-4.png" alt="Configuración de parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
+----
+
+- #### **Objetivo 5: Un Operario de Laboratorio desea registrar un evento de mantenimiento en un equipo industrial.**
+
+  **Happy Path**
+
+  El operario accede al módulo Equipment Catalog y selecciona la opción Details del equipo correspondiente. Posteriormente, ingresa a la sección Maintenance, donde puede visualizar el historial de actividades relacionadas con el mantenimiento del equipo.
+
+  A continuación, selecciona la opción Register New Event, completa la información requerida sobre la actividad realizada y presiona el botón Save Changes. El sistema valida los datos ingresados y registra exitosamente el evento, actualizando el historial de mantenimiento para garantizar la trazabilidad de las intervenciones realizadas sobre el equipo.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-5.png" alt="Registro de un evento de mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  El operario intenta registrar un nuevo evento de mantenimiento, pero durante el proceso ingresa información incompleta o inválida en el formulario de registro.
+
+  Al presionar Save Changes, QualiTrack detecta las inconsistencias y rechaza la operación, mostrando un mensaje de error para informar al usuario que el evento no pudo ser registrado. Como resultado, la información no se almacena en el historial de mantenimiento hasta que los datos sean corregidos y validados correctamente.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-4.png" alt="Registro de un evento de mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
 ## 4.5. Web Applications Prototyping
 
 La sección de Web Applications Prototyping presenta los prototipos interactivos diseñados para la versión Desktop y Mobile Web de QualiTrack. Estos prototipos permiten simular la navegación real dentro de la plataforma y visualizar cómo los usuarios recorren los principales paths definidos en los User Flow Diagrams.
