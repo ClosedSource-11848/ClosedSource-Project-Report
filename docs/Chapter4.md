@@ -737,7 +737,7 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   Posteriormente, ingresa sus credenciales y el sistema valida la información. Si la autenticación es correcta, se concede el acceso a la plataforma y se muestra la interfaz correspondiente a su rol, permitiéndole gestionar y supervisar las actividades relacionadas con el aseguramiento de la calidad y las operaciones del laboratorio.  
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1.png" alt="Registro / Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
   
   **Unhappy Path**
 
@@ -745,7 +745,7 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   Como respuesta, QualiTrack resalta los campos afectados y muestra mensajes de validación específicos para orientar al usuario en la corrección de la información ingresada. El acceso solo se habilita cuando las credenciales proporcionadas son válidas.  
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-1.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-1.png" alt="Registro / Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ----
 
@@ -757,7 +757,7 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   Tras verificar que los datos ingresados son válidos y cumplen con las restricciones establecidas por el sistema, selecciona la opción Register. QualiTrack procesa la información, crea el nuevo lote exitosamente y lo agrega a la lista de lotes registrados, asignándole un estado inicial que permitirá su posterior monitoreo y seguimiento.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-2.png" alt="Registro de Lotes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
   **Unhappy Path**
 
@@ -765,7 +765,7 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   Durante la validación, QualiTrack detecta la anomalía y rechaza el registro, mostrando un mensaje de error que informa la causa del problema. Como resultado, el lote no es creado y el usuario debe corregir los datos ingresados antes de volver a intentar el proceso de registro.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-2.png" alt="Registro de Lotes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ----
 
@@ -777,7 +777,7 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   Tras presionar el botón Download, QualiTrack procesa la solicitud, valida la información ingresada y genera exitosamente el documento. Finalmente, el sistema muestra una notificación de confirmación y descarga automáticamente el archivo solicitado, permitiendo al usuario acceder a la documentación para fines de análisis, auditoría o seguimiento operativo.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-3.png" alt="Generación de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
   **Unhappy Path**
 
@@ -785,7 +785,27 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
   Al presionar el botón Download, el sistema detecta la incidencia y muestra una notificación indicando que la generación del reporte ha fallado. Como resultado, el documento no es descargado y el usuario deberá verificar los parámetros ingresados o volver a intentar la operación para obtener el reporte requerido.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-3.png" alt="Generación de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+----
+
+- #### **Objetivo 4: Un Operario de Laboratorio desea configurar los parámetros BPM de un equipo industrial.**
+
+  **Happy Path**
+
+  El operario accede al módulo Equipment Catalog y selecciona la opción Details del equipo que desea configurar. A continuación, ingresa a la sección BPM Config, donde puede visualizar y modificar los parámetros de monitoreo asociados al equipo.
+
+  Posteriormente, selecciona Parameter Name, introduce los valores requeridos y presiona el botón Save Changes. El sistema valida la información ingresada y almacena exitosamente la nueva configuración, actualizando los parámetros operativos del equipo para futuras mediciones y controles.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-4.png" alt="Configuración de parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  El operario accede al módulo de configuración de un equipo y realiza modificaciones en los parámetros BPM. Sin embargo, durante el proceso de guardado se detectan valores inválidos o inconsistentes que incumplen las restricciones definidas por el sistema.
+
+  Al presionar Save Changes, QualiTrack rechaza la actualización y muestra un mensaje de error indicando que la configuración no pudo ser registrada. Como resultado, los cambios no son almacenados y el operario deberá corregir la información antes de intentar nuevamente la operación.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-4.png" alt="Configuración de parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ## 4.5. Web Applications Prototyping
 
