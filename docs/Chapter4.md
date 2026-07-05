@@ -749,17 +749,21 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
 ----
 
-- #### **Objetivo 2: Un supervisor necesita realizar una investigación de una alerta activa.**
+- #### **Objetivo 2: Un QA Manager desea registrar un nuevo lote de producción.**
 
   **Happy Path**
 
-  En este flujo ideal, el Supervisor de QA identifica una alerta activa en el dashboard de telemetría, presiona el botón "Investigate" para iniciar el análisis de la desviación detectada, luego presiona el botón "Complete Investigation" una vez que ha revisado la información, y finalmente espera a que el sistema realice el proceso de investigación automática, el cual confirma el origen de la desviación y, si corresponde, libera o mantiene el bloqueo del lote conforme a los parámetros BPM, registrando toda la acción en el historial inmutable de cumplimiento.
+  El usuario accede al módulo Production Batches y selecciona la opción New Batch para registrar un nuevo lote. A continuación, completa el formulario con la información requerida, como el producto farmacéutico, número de lote, fecha de inicio, cantidad y descripción operativa.
+
+  Tras verificar que los datos ingresados son válidos y cumplen con las restricciones establecidas por el sistema, selecciona la opción Register. QualiTrack procesa la información, crea el nuevo lote exitosamente y lo agrega a la lista de lotes registrados, asignándole un estado inicial que permitirá su posterior monitoreo y seguimiento.
 
   <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
   **Unhappy Path**
 
-  En este escenario alternativo, el supervisor presiona el botón "Investigate" sobre una alerta activa, luego presiona "Complete Investigation" para finalizar el análisis, pero al esperar el proceso de investigación automática, el sistema presenta dificultades técnicas como lentitud extrema, timeout de conexión o error en el motor de compliance, impidiendo que la investigación se complete correctamente; como resultado, la alerta permanece sin resolver, el lote no cambia de estado y se muestra un mensaje de error, quedando registrado el incidente en el log de auditoría para su revisión posterior.
+  El usuario intenta registrar un nuevo lote de producción, pero introduce información inconsistente o fuera de los parámetros permitidos para el equipo o proceso seleccionado.
+
+  Durante la validación, QualiTrack detecta la anomalía y rechaza el registro, mostrando un mensaje de error que informa la causa del problema. Como resultado, el lote no es creado y el usuario debe corregir los datos ingresados antes de volver a intentar el proceso de registro.
 
   <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
