@@ -482,9 +482,21 @@ Comparativa de los planes disponibles (Plan Empresarial y Plan de Laboratorio Es
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-Los Wireflows se utilizan, sobre todo, en el diseño de la experiencia del usuario (UX) y son particularmente beneficiosos para aplicaciones que contienen interacciones complejas y flujos de trabajo.
+Los Wireflows se utilizan principalmente en el diseño de la experiencia de usuario (UX) para representar de manera visual la interacción entre las diferentes pantallas de una aplicación y las acciones que realiza el usuario para alcanzar un objetivo determinado. Estos diagramas permiten comprender el recorrido del usuario dentro del sistema, así como los cambios de estado que se producen en las interfaces a lo largo del flujo de navegación.
 
-<img src="../assets/img/Web-Applications-Wireflow-Diagrams.jpeg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Para QualiTrack, se desarrollaron Wireflow Diagrams para los principales User Personas identificados: Operator y Manager. Cada diagrama muestra el conjunto de pasos, decisiones y transiciones que siguen los usuarios dentro de la plataforma para ejecutar sus tareas y cumplir sus objetivos de negocio. Asimismo, los Wireflows permiten visualizar la relación entre los diferentes módulos de la aplicación, como la gestión de inspecciones, control de calidad, seguimiento de registros, administración de información y generación de reportes.
+
+***Manager Wireflow Diagram***
+
+El siguiente Wireflow representa el flujo de interacción del usuario con rol **Manager**. El recorrido comienza desde la autenticación del usuario y continúa con el acceso a las funcionalidades de supervisión y gestión. A través de este flujo, el manager puede visualizar indicadores de calidad, monitorear procesos, revisar registros, administrar información estratégica y acceder a reportes para la toma de decisiones. El diagrama describe las diferentes interacciones y rutas de navegación que permiten al usuario supervisar el desempeño general de las operaciones dentro de la plataforma.
+
+<img src="../assets/img/Web-Applications-Wireflow-Diagrams-Manager.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***Operator Wireflow Diagram***
+
+El siguiente Wireflow representa el flujo de interacción del usuario con rol **Operator**. El recorrido inicia desde la página principal y el proceso de autenticación, permitiendo posteriormente el acceso a los módulos operativos de la plataforma. A través de este flujo, el operador puede gestionar inspecciones, consultar registros, registrar nueva información y actualizar datos existentes. El diagrama muestra las diferentes rutas de navegación disponibles y los cambios de estado que experimenta cada pantalla durante la ejecución de las tareas operativas del sistema.
+
+<img src="../assets/img/Web-Applications-Wireflow-Diagrams-Operator.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### 4.4.3. Web Applications Mock-ups
 
