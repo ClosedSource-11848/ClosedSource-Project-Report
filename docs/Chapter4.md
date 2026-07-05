@@ -1018,15 +1018,12 @@ Una vez identificados los eventos, flujos, comandos y políticas del dominio, se
 
 #### Paso 4: Read Models
 
-Los Read Models representan las vistas de consulta que los actores utilizan para tomar decisiones dentro del sistema. De acuerdo con el modelado, se identificaron las siguientes vistas principales mediante los post-its verdes:
+Los Read Models representan las vistas de consulta críticas que los actores utilizan para tomar decisiones dentro del sistema. Para mantener el enfoque en el Core Domain, el modelado destaca las 4 vistas principales (post-its verdes) que cruzan mayor cantidad de información:
 
-* **Sign-Up / Login Form:** utilizado en IAM para autenticación y recuperación de credenciales.
-* **Pricing Plans View:** utilizado por el QA Manager para evaluar niveles de suscripción.
-* **Laboratory Infrastructure Map:** permite consultar el estado y la configuración general del laboratorio.
-* **Equipment Inventory & Config:** utilizado para verificar la maquinaria y sus umbrales BPM.
-* **Manual Telemetry Entry Form:** interfaz diseñada para la captura manual de métricas y fluctuaciones del entorno.
-* **Batch Genealogy & Material Stock:** utilizado para consultar la trazabilidad del lote de producción y el inventario disponible.
-* **Performance Metrics & KPI Dashboard:** panel utilizado para visualizar el rendimiento operativo y las tendencias de desviación.
+* **Laboratory Infrastructure Map:** permite al QA Manager consultar el perfil, la certificación y el estado general de configuración del laboratorio.
+* **Equipment Inventory & Config:** utilizado para verificar el estado de la maquinaria, sus umbrales de calidad (BPM) y la última calibración registrada.
+* **Batch Genealogy & Material Stock:** panel esencial utilizado en producción para consultar la trazabilidad del lote y validar el inventario disponible de materias primas antes de iniciar un ciclo.
+* **Performance Metrics & KPI Dashboard:** panel gerencial utilizado por auditoría y QA para visualizar el rendimiento operativo y las tendencias de desviaciones de calidad.
 
 <img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Models" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Models" width="80%"/>
