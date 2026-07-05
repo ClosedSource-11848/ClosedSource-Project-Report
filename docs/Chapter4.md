@@ -1011,6 +1011,7 @@ Estas políticas permiten automatizar procesos críticos del sistema, reduciendo
 
 <img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Policies" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-33.png" alt="Bounded Context Policies" width="80%"/>
 
 #### 4.6.1.1. Candidate Context Discovery
 
@@ -1026,8 +1027,7 @@ Los Read Models representan las vistas de consulta críticas que los actores uti
 * **Performance Metrics & KPI Dashboard:** panel gerencial utilizado por auditoría y QA para visualizar el rendimiento operativo y las tendencias de desviaciones de calidad.
 
 <img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Models" width="80%"/>
+
 
 #### Paso 5: External Systems
 
@@ -1077,9 +1077,9 @@ Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados e
 | **BC: Reporting & Audit** | Contiene el Aggregate `Audit Trail` y el `Report Engine` para fines regulatorios. |
 
 <img src="../assets/img/bc-iam.png" alt="Bounded Context iam" width="80%"/>
-<img src="../assets/img/bc-subscription.png" alt="Bounded Context subscription" width="80%"/>
+<img src="../assets/img/bc-sp.png" alt="Bounded Context subscription" width="80%"/>
 <img src="../assets/img/bc-lm.png" alt="Bounded Context lm" width="80%"/>
-<img src="../assets/img/bc-inventory.png" alt="Bounded Context inventory" width="80%"/>
+<img src="../assets/img/bc-im.png" alt="Bounded Context inventory" width="80%"/>
 <img src="../assets/img/bc-em.png" alt="Bounded Context em" width="80%"/>
 <img src="../assets/img/bc-tracking.png" alt="Bounded Context tracking" width="80%"/>
 <img src="../assets/img/bc-bm.png" alt="Bounded Context bm" width="80%"/>
