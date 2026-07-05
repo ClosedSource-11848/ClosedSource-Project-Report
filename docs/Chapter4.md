@@ -963,7 +963,7 @@ Storming. Esta técnica permite visualizar y comprender el flujo de eventos dent
 dominio, facilitando la identificación de los Bounded Contexts.
 
 El desarrollo del proceso del Domain-Driven Design se realizó en la aplicación Miro: 
-[https://shorturl.at/0eSVT]
+[https://l1nq.com/cplp9a0]
 
 ---
 #### Paso 1: Timelines
