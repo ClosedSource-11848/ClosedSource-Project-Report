@@ -729,18 +729,21 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
 ---
 
-- #### **Objetivo 1: Un operativo o supervisor desea registrarse e iniciar sesión en el sistema.**
+- #### **Objetivo 1: Un Jefe de Aseguramiento de la Calidad (QA Manager) o un Operario de Laboratorio desea registrarse e iniciar sesión en la plataforma.**
 
   **Happy Path**
 
-  En este flujo ideal, el usuario accede por primera vez a QualiTrack y, al no tener una cuenta registrada, desde la pantalla de inicio de sesión selecciona la opción "Registrarse", completa el formulario con los datos del laboratorio y sus credenciales, y una vez finalizado el proceso exitosamente es redirigido a la sección de inicio de sesión, donde ingresa su correo y contraseña; si se trata de un Jefe de Aseguramiento de la Calidad (QA Manager), el sistema le presenta el dashboard de telemetría en tiempo real con los indicadores de cumplimiento BPM y el estado de los lotes activos, mientras que si el usuario es un Operario de planta, se le muestra una interfaz especializada enfocada en el monitoreo de equipos industriales, alertas de desviación y registro de observaciones en el laboratorio.
+  El usuario accede a QualiTrack y selecciona la opción de registro correspondiente a su rol (QA Manager/Supervisor o Lab Operator). Completa el formulario de creación de cuenta con un nombre de usuario y contraseña válidos. Tras registrarse exitosamente, es redirigido a la pantalla de inicio de sesión.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1(1).png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1(2).png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  Posteriormente, ingresa sus credenciales y el sistema valida la información. Si la autenticación es correcta, se concede el acceso a la plataforma y se muestra la interfaz correspondiente a su rol, permitiéndole gestionar y supervisar las actividades relacionadas con el aseguramiento de la calidad y las operaciones del laboratorio.  
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
   
   **Unhappy Path**
 
-  En este escenario alternativo, el usuario intenta acceder a QualiTrack con su cuenta, pero se presenta un problema técnico como credenciales incorrectas, conectividad inestable o bloqueo temporal por múltiples intentos fallidos; por lo tanto, el sistema no permite el ingreso y muestra un mensaje de error específico según la causa, invitando al usuario a verificar sus datos, revisar su conexión o contactar al administrador del laboratorio, registrando cada intento fallido en el log de auditoría para garantizar la trazabilidad exigida por DIGEMID.
+  El usuario intenta iniciar sesión, pero introduce credenciales incorrectas o deja campos obligatorios sin completar. Durante la validación, el sistema detecta los errores y bloquea temporalmente el acceso.
+
+  Como respuesta, QualiTrack resalta los campos afectados y muestra mensajes de validación específicos para orientar al usuario en la corrección de la información ingresada. El acceso solo se habilita cuando las credenciales proporcionadas son válidas.  
 
   <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-1.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
