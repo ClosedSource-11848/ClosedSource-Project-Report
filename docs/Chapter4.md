@@ -482,21 +482,85 @@ Comparativa de los planes disponibles (Plan Empresarial y Plan de Laboratorio Es
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-Los Wireflows se utilizan principalmente en el diseño de la experiencia de usuario (UX) para representar de manera visual la interacción entre las diferentes pantallas de una aplicación y las acciones que realiza el usuario para alcanzar un objetivo determinado. Estos diagramas permiten comprender el recorrido del usuario dentro del sistema, así como los cambios de estado que se producen en las interfaces a lo largo del flujo de navegación.
+Los Wireflows se utilizan en el diseño de la experiencia de usuario (UX) para representar visualmente las interacciones que realizan los usuarios dentro de una aplicación con el fin de alcanzar un objetivo específico. Estos diagramas combinan wireframes y flujos de navegación para mostrar las transiciones entre pantallas y los cambios de estado generados por las acciones del usuario.
 
-Para QualiTrack, se desarrollaron Wireflow Diagrams para los principales User Personas identificados: Operator y Manager. Cada diagrama muestra el conjunto de pasos, decisiones y transiciones que siguen los usuarios dentro de la plataforma para ejecutar sus tareas y cumplir sus objetivos de negocio. Asimismo, los Wireflows permiten visualizar la relación entre los diferentes módulos de la aplicación, como la gestión de inspecciones, control de calidad, seguimiento de registros, administración de información y generación de reportes.
+Para QualiTrack se desarrollaron diferentes Wireflow Diagrams basados en los principales User Goals identificados para los User Personas definidos en el proyecto. Cada diagrama describe el recorrido necesario para completar una tarea específica dentro del sistema.
 
 ***Manager Wireflow Diagram***
 
-El siguiente Wireflow representa el flujo de interacción del usuario con rol **Manager**. El recorrido comienza desde la autenticación del usuario y continúa con el acceso a las funcionalidades de supervisión y gestión. A través de este flujo, el manager puede visualizar indicadores de calidad, monitorear procesos, revisar registros, administrar información estratégica y acceder a reportes para la toma de decisiones. El diagrama describe las diferentes interacciones y rutas de navegación que permiten al usuario supervisar el desempeño general de las operaciones dentro de la plataforma.
+* **User Goal 1: Obtener acceso al dashboard en el que puede conseguir información del laboratorio y manejar su plan de subscripción.**
 
-<img src="../assets/img/Web-Applications-Wireflow-Diagrams-Manager.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Como Manager, quiero acceder a un dashboard centralizado para visualizar la información del laboratorio y gestionar el plan de suscripción de la organización.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-1.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 2: Creación y acceso de los lotes de producción.**
+
+Como Manager, quiero crear y acceder a los lotes de producción para supervisar las operaciones y garantizar la trazabilidad de los procesos.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-2.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 3: Revisión y ajustes de las alertas de cumplimiento.**
+
+Como Manager, quiero revisar y configurar alertas de cumplimiento para detectar oportunamente desviaciones y asegurar el cumplimiento de los estándares de calidad.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-3.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 4: Revisión de los reportes de KPIs y generación de reportes de auditoría.**
+
+Como Manager, quiero consultar indicadores de desempeño y generar reportes de auditoría para respaldar la toma de decisiones y los procesos de evaluación.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-4.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 5: Gestión de la información del laboratorio, incluyendo personal, productos y materias primas.**
+
+Como Manager, quiero administrar la información del laboratorio para mantener actualizados los registros de personal, productos y materias primas.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-5.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 6: Seguimiento de la suscripción y facturación del laboratorio.**
+
+Como Manager, quiero consultar la información de suscripción y facturación para supervisar los costos y servicios contratados por el laboratorio.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-6.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ***Operator Wireflow Diagram***
 
-El siguiente Wireflow representa el flujo de interacción del usuario con rol **Operator**. El recorrido inicia desde la página principal y el proceso de autenticación, permitiendo posteriormente el acceso a los módulos operativos de la plataforma. A través de este flujo, el operador puede gestionar inspecciones, consultar registros, registrar nueva información y actualizar datos existentes. El diagrama muestra las diferentes rutas de navegación disponibles y los cambios de estado que experimenta cada pantalla durante la ejecución de las tareas operativas del sistema.
+* **User Goal 1: Acceder al panel operativo para visualizar actividades, métricas y tareas asignadas.**
 
-<img src="../assets/img/Web-Applications-Wireflow-Diagrams-Operator.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Como Operator, quiero acceder al panel operativo para visualizar actividades, métricas y tareas asignadas que me permitan realizar mis funciones diarias de manera eficiente.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-1.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 2: Registrar y gestionar equipos empleados en el laboratorio.**
+
+Como Operator, quiero registrar y administrar equipos utilizados en el laboratorio para mantener actualizada la información de los dispositivos empleados en los procesos de calidad.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-2.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 3: Registrar pruebas de calidad y documentar sus resultados.**
+
+Como Operator, quiero registrar pruebas de calidad y documentar sus resultados para asegurar la trazabilidad y el cumplimiento de los procedimientos establecidos.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-3.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 4: Revisar y gestionar alertas de calidad asociadas a incidencias operativas.**
+
+Como Operator, quiero revisar y gestionar alertas de calidad para responder oportunamente a incidencias detectadas durante las operaciones.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-4.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 5: Gestión de la información del laboratorio, incluyendo personal, productos y materias primas.**
+
+Como Operator, quiero consultar y actualizar información relacionada con productos, materias primas y recursos del laboratorio para apoyar la ejecución de las actividades operativas.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-5.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 6: Analizar la suscripción y facturación del laboratorio.**
+
+Como Operator, quiero consultar la información de suscripción y facturación del laboratorio para conocer el estado de los servicios disponibles dentro de la plataforma.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-6.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### 4.4.3. Web Applications Mock-ups
 
