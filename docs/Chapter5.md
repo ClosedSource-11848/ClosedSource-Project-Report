@@ -5897,7 +5897,7 @@ con información confiable.
 
 <h4>Anexo B: Videos de Exposiciones</h4>
 <p>
-  Registro de las exposiciones realizadas hasta el hito AV2 correspondiente al Sprint 3.
+  Registro de las exposiciones realizadas hasta el hito TB2 correspondiente al Sprint 4.
 </p>
 
 <table border="1" cellpadding="4" cellspacing="0">
@@ -5957,6 +5957,23 @@ con información confiable.
       <td>
         <a href="https://shorturl.at/hZEJ4">
           [https://shorturl.at/hZEJ4]
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Video de Exposición TB2 (Sprint 4)</strong></td>
+      <td>YouTube</td>
+      <td>
+        <a href="https://shorturl.at/Si2A0">
+          [https://shorturl.at/Si2A0]
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Microsoft Stream</td>
+      <td>
+        <a href="https://shorturl.at/UEfL3">
+          [https://shorturl.at/UEfL3]
         </a>
       </td>
     </tr>
