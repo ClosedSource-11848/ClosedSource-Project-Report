@@ -263,11 +263,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Delci Castro Codorines una profesional de 59 años, residente de San Juan de Lurigancho y Química Farmacéutica egresada de la UNMSM, quien actualmente cursa una maestría en Ingeniería Industrial enfocada en emprendimiento. En su cargo como subdirectora de operaciones en una planta de radioisótopos, lidera procesos de manufactura donde la trazabilidad depende de registros manuales consolidados en un dossier físico por cada lote, a pesar de contar con equipos con salida digital. Su labor implica supervisar que cada dispositivo codificado cumpla con los controles de calidad antes de la distribución de los radiofármacos.
+            La Sra. Delcy Castro Condori es una profesional de 59 años, residente de San Juan de Lurigancho y Química Farmacéutica egresada de la UNMSM, quien actualmente cursa una maestría en Ingeniería Industrial enfocada en emprendimiento. En su cargo como subdirectora de operaciones en una planta de radioisótopos, lidera procesos de manufactura donde la trazabilidad depende de registros manuales consolidados en un dossier físico por cada lote, aunque algunos equipos ya cuentan con impresión digital para generar registros automáticos. Su labor implica supervisar que cada dispositivo codificado cumpla con los controles de calidad antes de la distribución de los radiofármacos. Además, cuenta con formación complementaria en regulación y control de radiofármacos, protección radiológica y sistemas integrados de gestión, lo que fortalece su capacidad para supervisar procesos críticos y garantizar el cumplimiento de los estándares regulatorios del sector farmacéutico.
             <br> <br>
-            <b>Comportamiento y Necesidades:</b> Se define por un perfil metódico, analítico y orientado al cumplimiento normativo estricto, mostrando una actitud proactiva ante la innovación necesaria para eliminar la redundancia de datos. Su principal necesidad es adoptar una solución que permita la captura de datos de forma simultánea para mitigar los riesgos de integridad señalados por la DIGEMID en auditorías previas. Busca reducir el tiempo dedicado a la revisión manual de expedientes para enfocarse en la mejora estratégica de la planta.
+            <b>Comportamiento y Necesidades:</b> Se caracteriza por un perfil metódico, analítico y orientado al cumplimiento normativo estricto, mostrando una actitud proactiva ante la innovación necesaria para eliminar la redundancia de datos. Su principal necesidad es adoptar una solución que permita la captura automática de datos para fortalecer la integridad de la información y continuar mejorando los procesos de trazabilidad durante las auditorías regulatorias. Busca reducir el tiempo dedicado a la revisión manual de expedientes para enfocarse en la mejora estratégica de la planta. Entre sus principales habilidades destacan la supervisión de procesos de manufactura, la gestión documental, el control de calidad y la aplicación de normativas regulatorias. Asimismo, considera importante incorporar progresivamente tecnologías que automaticen el registro de información sin comprometer la trazabilidad ni el cumplimiento de las Buenas Prácticas de Manufactura, facilitando además la preparación de auditorías internas y de certificación.
             <br> <br>
-            <b>Tecnología, Marcas y Canales:</b> Es usuaria frecuente de hardware especializado en medición con capacidad de impresión digital, aunque reconoce que la integración con sistemas informáticos es nula. Domina herramientas ofimáticas como Microsoft Excel para la supervisión administrativa y utiliza el correo institucional para la coordinación técnica. Sus canales de referencia son las normativas de seguridad radiológica y los estándares de gestión de la DIGEMID, utilizando bases de datos locales para la identificación de lotes.
+            <b>Tecnología, Marcas y Canales:</b> Es usuaria frecuente de hardware especializado en medición con capacidad de impresión digital, aunque reconoce que la integración con sistemas informáticos aún es parcial debido a que varios procesos continúan apoyándose en registros manuales. Domina herramientas ofimáticas como Microsoft Excel para la supervisión administrativa y utiliza el correo institucional para la coordinación técnica. Sus canales de referencia son las normativas de seguridad radiológica y los estándares de gestión de la DIGEMID, utilizando bases de datos locales para la identificación de lotes. Además, desarrolla sus actividades principalmente mediante computadoras de escritorio y equipos especializados de laboratorio, tomando como principales referentes las Buenas Prácticas de Manufactura, los lineamientos de la DIGEMID y los procedimientos internos de auditoría.Estas necesidades evidencian la importancia de implementar soluciones que automaticen el registro de información y fortalezcan la trazabilidad de los procesos farmacéuticos.
             </td>
         </tr>
     </tbody>
@@ -316,11 +316,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            El Sr. Fredd Palomino de 41 años, labora en el Instituto Nacional de la Salud en la fabricación de productos farmacéuticos estériles, lo que exige un riguroso control ambiental para garantizar la ausencia de microorganismos. Emplea un sistema mixto donde los datos de temperatura y presión se anotan manualmente para complementar los reportes impresos por equipos de medición, preservando la trazabilidad de cada lote fabricado. La complejidad de su trabajo reside en la coordinación de múltiples variables críticas que deben ser validadas antes de cualquier liberación de producto.
+            El Sr. Fredd Palomino, de 41 años, labora en el Instituto Nacional de Salud en la fabricación de productos farmacéuticos estériles, lo que exige un riguroso control ambiental para garantizar la ausencia de microorganismos. Emplea un sistema mixto donde los datos de temperatura y presión se anotan manualmente para complementar los reportes impresos por equipos de medición, preservando la trazabilidad de cada lote fabricado. La complejidad de su trabajo reside en la coordinación de múltiples variables críticas que deben ser validadas antes de cualquier liberación de producto. Su experiencia en la fabricación de productos estériles le ha permitido desarrollar conocimientos en el control de procesos, revisión documental y aseguramiento de la calidad, participando activamente en la verificación de las condiciones necesarias para garantizar la conformidad de los productos antes de su liberación.
             <br> <br>
-            <b>Comportamiento y Necesidades:</b> Revela una frustración latente por la excesiva carga administrativa, ya que la preparación documental puede extenderse hasta por un año debido a la identificación manual minuciosa de materiales y procesos. Desea una plataforma que automatice el traslado de datos hacia informes virtuales en tiempo real, priorizando la seguridad y confidencialidad de la información estratégica del laboratorio. Valora la precisión técnica y busca herramientas que reduzcan el margen de error humano en situaciones de alta presión.
+            <b>Comportamiento y Necesidades:</b> Revela una frustración latente por la excesiva carga administrativa, ya que la preparación documental puede extenderse hasta por un año debido a la identificación manual minuciosa de materiales y procesos. Desea una plataforma que automatice el traslado de datos hacia informes virtuales en tiempo real, priorizando la seguridad y confidencialidad de la información estratégica del laboratorio. Valora la precisión técnica y busca herramientas que reduzcan el margen de error humano en situaciones de alta presión. Entre sus principales habilidades destacan la supervisión de variables críticas, el control documental y la validación de información durante los procesos de producción. Su principal objetivo es optimizar el registro y la consolidación de datos para reducir el tiempo destinado a la elaboración de expedientes, permitiendo una gestión más eficiente de la información sin comprometer los requisitos regulatorios ni la trazabilidad de cada lote.
             <br> <br>
-            <b>Tecnología, Marcas y Canales:</b> Utiliza equipos de medición de variables críticas de alta precisión y formatos de papel emitidos directamente por el hardware de control. Sus influencias tecnológicas provienen de los sistemas de referencia del INS y los parámetros establecidos por el ente regulador sanitario. Interactúa principalmente mediante informes técnicos complejos y registros de manufactura físicos, utilizando computadoras de escritorio para la consolidación final de la data.
+            <b>Tecnología, Marcas y Canales:</b> Utiliza equipos de medición de variables críticas de alta precisión y formatos de papel emitidos directamente por el hardware de control. Sus influencias tecnológicas provienen de los sistemas de referencia del INS y los parámetros establecidos por el ente regulador sanitario. Interactúa principalmente mediante informes técnicos complejos y registros de manufactura físicos, utilizando computadoras de escritorio para la consolidación final de la data. Asimismo, emplea herramientas informáticas institucionales para la elaboración y revisión de documentación técnica, tomando como principales referentes las Buenas Prácticas de Manufactura y los lineamientos establecidos por el Instituto Nacional de Salud para garantizar la integridad de los procesos. Lo anterior refleja la necesidad de contar con herramientas que reduzcan la carga administrativa y mejoren la gestión documental durante la producción.
             </td>
         </tr>
     </tbody>
@@ -369,11 +369,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            El Sr. Alberto Valle es un Químico Farmacéutico de 68 años con base en Arequipa y cuatro décadas de trayectoria en la industria manejando diversos métodos de producción. Describe el entorno farmacéutico como estrictamente manual y punitivo, donde cada variable debe registrarse en formatos específicos para evitar observaciones en auditorías integrales de calidad y mantenimiento. Su experiencia le permite detectar fallas en el flujo de trabajo que personal menos experimentado suele omitir.
+            El Sr. Alberto Valle Vega es un Químico Farmacéutico de 68 años con base en Arequipa y cuatro décadas de trayectoria en la industria manejando diversos métodos de producción. Describe el entorno farmacéutico como estrictamente manual, donde cada variable debe registrarse en formatos específicos para garantizar el cumplimiento de los procesos y evitar observaciones durante las auditorías de calidad y mantenimiento. Su experiencia le permite detectar fallas en el flujo de trabajo que personal menos experimentado suele omitir. A lo largo de su trayectoria ha fortalecido sus conocimientos en supervisión de procesos productivos, aseguramiento de la calidad y gestión documental, convirtiéndose en un referente para la aplicación de procedimientos y el cumplimiento de los estándares exigidos por la industria farmacéutica.
             <br> <br>
-            <b>Comportamiento y Necesidades:</b> Presenta un perfil disciplinado, conservador y habituado al rigor del método manual, pero reconoce que la preparación para inspecciones demanda un tiempo excesivo de revisión de datos históricos, usualmente de hasta 4 semanas. Busca un sistema de registro más sencillo y estandarizado que reduzca el esfuerzo cognitivo del operario y mejore la agilidad operativa sin comprometer el cumplimiento de los estándares de seguridad. Su motivación principal es dejar un legado de procesos eficientes para las futuras generaciones del laboratorio.  
+            <b>Comportamiento y Necesidades:</b> Presenta un perfil disciplinado y habituado al rigor del método manual, pero reconoce que la preparación para inspecciones demanda un tiempo considerable de revisión de datos históricos. Busca un sistema de registro más sencillo y estandarizado que reduzca el esfuerzo operativo del personal y mejore la agilidad de los procesos sin comprometer el cumplimiento de los estándares de seguridad. Su motivación principal es contribuir a la mejora continua de los procesos y facilitar el trabajo de las futuras generaciones dentro del laboratorio. Entre sus principales habilidades destacan la supervisión de operaciones, la revisión de documentación técnica, el control de calidad y la aplicación de procedimientos de manufactura. Su principal objetivo es optimizar la gestión de la información para reducir el tiempo dedicado a la revisión manual de expedientes, manteniendo la confiabilidad y trazabilidad de los registros requeridos durante las auditorías regulatorias.  
             <br> <br>
-            <b>Tecnología, Marcas y Canales:</b> Experto en formatos de anotación manual y protocolos de control de cantidad vigentes en el sector por décadas. Identifica a los sistemas IoT y las actualizaciones tecnológicas como herramientas de alta disponibilidad necesarias para modernizar el laboratorio, tomando como referencia las normativas internacionales de manufactura farmacéutica. Su principal medio de información son los boletines técnicos impresos y las capacitaciones presenciales del sector.
+            <b>Tecnología, Marcas y Canales:</b> Experto en formatos de anotación manual y protocolos de control de cantidad vigentes en el sector por décadas. Identifica a los sistemas IoT y las actualizaciones tecnológicas como herramientas con potencial para modernizar el laboratorio y mejorar la disponibilidad de la información, tomando como referencia las normativas internacionales de manufactura farmacéutica. Su principal medio de información son los boletines técnicos impresos y las capacitaciones presenciales del sector. Asimismo, utiliza computadoras para actividades administrativas y consulta documentación técnica relacionada con los procedimientos de calidad. Sus principales referentes son las Buenas Prácticas de Manufactura y las normas aplicables al sector farmacéutico. Esto demuestra la oportunidad de incorporar tecnologías que simplifiquen el registro de información sin afectar el cumplimiento normativo.
             </td>
         </tr>
     </tbody>
@@ -424,11 +424,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rosa Amelia Mendoza de 51 años, es Química Farmacéutica con maestría en Salud Pública y se desempeña en la supervisión de la producción de vacunas. Su labor se centra en el control meticuloso de la documentación siguiendo los estándares de la DIGEMID, enfrentando diariamente la dificultad de no contar con historiales digitales automáticos para variables críticas de almacenamiento
+            La Sra. Rosa Amelia Mendoza de 51 años, es Química Farmacéutica con maestría en Salud Pública y se desempeña en la supervisión de la producción de vacunas. Su labor se centra en el control meticuloso de la documentación siguiendo los estándares de la DIGEMID, enfrentando diariamente la dificultad de no contar con historiales digitales automáticos para variables críticas de almacenamiento. Gracias a su experiencia en el sector farmacéutico y en la producción de productos biológicos, ha fortalecido sus conocimientos en supervisión de procesos, aseguramiento de la calidad y control documental, participando activamente en la verificación de las condiciones de almacenamiento y conservación necesarias para garantizar la estabilidad de las vacunas y el cumplimiento de las exigencias regulatorias.
             <br> <br>
-            <b>Comportamiento y Necesidades:</b> Se muestra receptiva, empática y abierta hacia herramientas que eliminen la redundancia de documentar manualmente la temperatura y esterilización tres veces al día en turnos rotativos. Necesita una plataforma que almacene y grafique constantemente las variaciones de calidad de los lotes para reducir la probabilidad de error humano en el manejo de productos biológicos sensibles. Su mayor preocupación es la estabilidad de las vacunas y el impacto en la salud pública si la cadena de frío falla por un registro tardío.  
+            <b>Comportamiento y Necesidades:</b> Se muestra receptiva, empática y abierta hacia herramientas que eliminen la redundancia de documentar manualmente la temperatura y esterilización tres veces al día en turnos rotativos. Necesita una plataforma que almacene y grafique constantemente las variaciones de calidad de los lotes para reducir la probabilidad de error humano en el manejo de productos biológicos sensibles. Su mayor preocupación es la estabilidad de las vacunas y el impacto en la salud pública si la cadena de frío falla por un registro tardío. Entre sus principales habilidades destacan la supervisión de procesos farmacéuticos, el seguimiento de variables críticas, la revisión de documentación técnica y la coordinación de actividades relacionadas con el aseguramiento de la calidad. Su principal objetivo es contar con información histórica confiable y disponible oportunamente para facilitar el monitoreo continuo de los lotes, fortalecer la toma de decisiones y garantizar el cumplimiento de los requisitos establecidos por las entidades regulatorias.  
             <br> <br>
-            <b>Tecnología, Marcas y Canales:</b> Emplea herramientas digitales básicas como Microsoft Word y Excel que carecen de módulos de historial automatizado, lo que fuerza la transcripción tediosa de datos de sensores a expedientes físicos. Sus marcos de referencia son los estudios de posgrado en la UNMSM y las directrices de control de calidad de entidades públicas. Utiliza principalmente laptops institucionales y dispositivos móviles para la comunicación inmediata con su equipo.
+            <b>Tecnología, Marcas y Canales:</b> Emplea herramientas digitales básicas como Microsoft Word y Excel que carecen de módulos de historial automatizado, lo que fuerza la transcripción tediosa de datos de sensores a expedientes físicos. Sus marcos de referencia son los estudios de posgrado en la UNMSM y las directrices de control de calidad de entidades públicas. Utiliza principalmente laptops institucionales y dispositivos móviles para la comunicación inmediata con su equipo. Asimismo, desarrolla sus actividades mediante herramientas ofimáticas y equipos institucionales para la elaboración y revisión de documentación técnica, tomando como principales referentes las normas de la DIGEMID, las Buenas Prácticas de Manufactura y los lineamientos aplicables a la producción de productos biológicos, los cuales orientan la ejecución de sus actividades y el cumplimiento de los estándares de calidad. Estos aspectos resaltan la importancia de disponer de información continua para garantizar la estabilidad de los productos biológicos y facilitar su supervisión.
             </td>
         </tr>
     </tbody>
@@ -477,11 +477,11 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rocío Santo Alegre , de 49 años, es jefa de producción en un laboratorio de radiactivos para diagnóstico, donde supervisa procesos de alta precisión que aún no han sido digitalizados. Toda la información técnica se traslada en formatos impresos generados en Word y completados a mano durante las jornadas de producción, lo que ralentiza significativamente el flujo de trabajo y aumenta el riesgo de pérdida de documentos críticos del expediente.
+            La Sra. Rocío Santo Alegre, de 49 años, es jefa de producción en un laboratorio de radiactivos para diagnóstico, donde supervisa procesos de alta precisión que aún no han sido digitalizados. Toda la información técnica se traslada en formatos impresos generados en Word y completados a mano durante las jornadas de producción, lo que ralentiza significativamente el flujo de trabajo y aumenta el riesgo de pérdida de documentos críticos del expediente. Su experiencia en la gestión de procesos productivos le ha permitido fortalecer sus conocimientos en supervisión de operaciones, control documental y coordinación de equipos de trabajo, asegurando que cada etapa del proceso se desarrolle conforme a los procedimientos establecidos y a los estándares de calidad requeridos para este tipo de productos.
             <br> <br>
-            <b>Comportamiento y Necesidades:</b> Manifiesta una frustración evidente por la lentitud en la consulta de datos durante las auditorías, valorando la transparencia institucional pero sufriendo el desorden crónico de los expedientes físicos. Busca mecanismos de alerta temprana para detectar desviaciones de parámetros en tiempo real, lo que permitiría acciones correctivas inmediatas antes de finalizar el costoso proceso de producción radiactiva. Desea un sistema que le devuelva el control visual sobre la planta sin depender de inspecciones físicas constantes
+            <b>Comportamiento y Necesidades:</b> Identifica como una de las principales dificultades la lentitud en la consulta de datos durante las auditorías, valorando la transparencia institucional pero enfrentando las dificultades derivadas de la gestión de expedientes físicos. Busca mecanismos de alerta temprana para detectar desviaciones de parámetros en tiempo real, lo que permitiría acciones correctivas inmediatas antes de finalizar el proceso de producción. Desea un sistema que le devuelva el control visual sobre la planta sin depender de inspecciones físicas constantes. Entre sus principales habilidades destacan la supervisión de procesos, la organización de la documentación técnica y la coordinación de actividades operativas dentro del laboratorio. Su principal objetivo es disponer de información organizada, accesible y actualizada que facilite el seguimiento de la producción, agilice la atención de auditorías y contribuya a una respuesta más oportuna frente a posibles desviaciones durante el proceso.
             <br> <br>
-            <b>Tecnología, Marcas y Canales:</b> Su ecosistema tecnológico se limita al uso de computadoras de escritorio para tareas administrativas básicas y la impresión de órdenes de producción. Gestiona la comunicación y el control mediante el seguimiento meticuloso de datos obtenidos en pizarras físicas y el conocimiento de procedimientos internos. Su canal de actualización principal son las reuniones técnicas presenciales y la normativa publicada en diarios oficiales.
+            <b>Tecnología, Marcas y Canales:</b> Su ecosistema tecnológico se limita al uso de computadoras de escritorio para tareas administrativas básicas y la impresión de órdenes de producción. Gestiona la comunicación y el control mediante el seguimiento meticuloso de datos obtenidos en pizarras físicas y el conocimiento de procedimientos internos. Su canal de actualización principal son las reuniones técnicas presenciales y la normativa publicada en diarios oficiales. Asimismo, emplea herramientas ofimáticas para la elaboración de documentación y toma como principales referentes los procedimientos internos del laboratorio y la normativa vigente aplicable al sector farmacéutico, utilizando estos lineamientos para garantizar el cumplimiento de los procesos y la calidad de la información registrada. Estas necesidades evidencian la importancia de implementar mecanismos de monitoreo continuo y acceso inmediato a la información durante la producción.
             </td>
         </tr>
     </tbody>
@@ -497,7 +497,7 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
     <tbody>
         <tr>
             <td>Nombre</td>
-            <td>Risa</td>
+            <td>Rita</td>
         </tr>
         <tr>
             <td>Apellidos</td>
@@ -530,9 +530,9 @@ En esta sección se presentan los resultados de las entrevistas aplicadas a cada
         <tr>
             <td>Resumen</td>
             <td>
-            La Sra. Rita Sotelo es una profesional de 53 años, posee 30 años de experiencia en el sector y actualmente es jefa de biológicos en Edifarma. Representa el perfil más avanzado tecnológicamente del estudio, pues ya utiliza sistemas de manufactura digital que integran protocolos de análisis y aseguramiento de la calidad para una trazabilidad completa de los lotes desde la materia prima hasta el producto final
+            La Sra. Rita Sotelo, de 53 años, posee más de 30 años de experiencia en la industria farmacéutica y actualmente se desempeña como jefa del área de biológicos en Edifarma. Representa el perfil con mayor nivel de madurez tecnológica dentro del estudio, ya que participa en procesos respaldados por sistemas digitales de manufactura que permiten integrar información relacionada con la producción, el control de calidad y la trazabilidad de los lotes desde la recepción de la materia prima hasta el producto terminado. Gracias a su amplia trayectoria profesional, ha fortalecido sus conocimientos en la gestión de procesos farmacéuticos, supervisión de sistemas digitales de manufactura, aseguramiento de la calidad y liderazgo de equipos de trabajo, promoviendo la mejora continua y el cumplimiento de los estándares regulatorios aplicables a la industria.
             <br> <br>
-            <b>Comportamiento y Necesidades:</b> Valora la inmediatez, el orden y la eficiencia que ofrece la digitalización, pero enfatiza de manera crítica que el éxito de cualquier sistema depende de una capacitación adaptada al perfil específico del usuario farmacéutico. Su requisito  fundamental es que la plataforma garantice la integridad absoluta del "Audit Trail" (historial de cambios) y ofrezca "candados" lógicos infranqueables para prevenir desviaciones durante la fabricación. Es una profesional orientada a resultados que no tolera sistemas con interfaces complejas o flujos de trabajo ilógicos.
+            <b>Comportamiento y Necesidades:</b> Valora la inmediatez, el orden y la eficiencia que ofrece la digitalización, pero enfatiza que el éxito de cualquier sistema depende de una adecuada capacitación del personal y de una implementación alineada con las necesidades de los usuarios. Considera indispensable que la plataforma garantice la integridad de la información mediante mecanismos que permitan mantener un historial confiable de los cambios realizados durante el proceso de fabricación. Su experiencia le permite identificar que la adopción de nuevas tecnologías debe ir acompañada de procesos intuitivos y controles adecuados para asegurar la trazabilidad, la confiabilidad de los registros y el cumplimiento de las exigencias regulatorias sin afectar la productividad del laboratorio.
             <br> <br>
             <b>Tecnología, Marcas y Canales:</b> Usuaria experta en software de manufactura digital (ERP/MES) y herramientas de mapeo de distribución de medicamentos. Sus referentes son los sistemas validados de la industria farmacéutica global y las plataformas de gestión de datos que cumplen con estándares internacionales como la FDA 21 CFR Part 11. Utiliza activamente tablets en planta y smartphones para la supervisión remota de procesos, prefiriendo navegadores modernos como Google Chrome para la gestión de aplicaciones web.
             </td>
@@ -547,21 +547,22 @@ En esta sección se presenta el análisis detallado de la información recolecta
 #### Segmento 1: Gerentes y jefes de Aseguramiento de Calidad
 
 **Análisis de Características Objetivas y Subjetivas:**
-El análisis de las entrevistas evidencia que la gestión de calidad en el sector farmacéutico aún se realiza bajo métodos tradicionales y poco integrados. El **100%** de los entrevistados ocupa cargos de alta responsabilidad técnica, lo que valida la relevancia de sus opiniones para el dominio del problema. 
+El análisis de las entrevistas evidencia que la gestión de calidad dentro de las organizaciones farmacéuticas evaluadas aún mantiene una fuerte dependencia de procesos manuales o mixtos para el registro de información crítica durante la producción. El 100% de los entrevistados ocupa cargos relacionados con la supervisión, aseguramiento de la calidad o dirección de procesos productivos, lo que brinda solidez y representatividad a la información recopilada para comprender las necesidades del dominio del problema. 
 
-En cuanto al monitoreo de procesos, el **100%** utiliza un sistema mixto o netamente manual (tickets físicos y llenado a mano) para el monitoreo de condiciones críticas en planta, lo que ha derivado en que el 100% haya recibido observaciones preventivas de la DIGEMID respecto a la integridad de datos. 
+Respecto al monitoreo de procesos, el 100% manifestó utilizar registros físicos o esquemas mixtos que combinan documentación manual con equipos capaces de generar parte de la información de manera automática. Sin embargo, estos registros continúan requiriendo consolidación manual para conformar el expediente de producción, generando mayores tiempos de revisión y aumentando la dependencia del personal para garantizar la trazabilidad de cada lote. Asimismo, se identificó que 33% de los entrevistados ya emplea herramientas complementarias como Microsoft Excel o sistemas internos para apoyar determinadas actividades administrativas; no obstante, estas soluciones permanecen desconectadas de los datos generados directamente durante la fabricación. 
 
-Aunque un 33% complementa su gestión con herramientas como Excel o sistemas logísticos, existe una desconexión crítica con los datos de producción en tiempo real. A nivel subjetivo, el **100%** manifestó una alta disposición hacia la digitalización mediante sensores IoT. No obstante, el **67%** identificó como condición clave que la herramienta debe ser de fácil adopción para el personal operativo, evitando la complejidad técnica excesiva y garantizando la seguridad de la información inmutable.
-
+Desde la perspectiva subjetiva, todos los entrevistados manifestaron una valoración positiva hacia la incorporación de soluciones digitales que automaticen el registro de información y fortalezcan la trazabilidad del proceso productivo. No obstante, aproximadamente el 67% señaló que cualquier solución tecnológica debe ser sencilla de utilizar, integrarse con las actividades actuales del laboratorio y garantizar la integridad y seguridad de la información registrada, con el fin de facilitar su adopción por parte del personal operativo.
 <div align="center"><img src="../assets/img/Grafico1Segmento1Cap2.png" alt="Gráfico Estadístico Gerentes de Calidad" width="80%"></div>
 <br>
 
 #### Segmento 2: Directores y supervisores de Entidades de Salud Pública
 
 **Análisis de Características Objetivas y Subjetivas:**
-El análisis muestra una brecha tecnológica severa en el sector estatal. El **100%** reporta que el expediente de producción se elabora mediante documentación manual y herramientas ofimáticas aisladas, lo que fragmenta la trazabilidad. Asimismo, el **100%** indica dificultades para generar historiales continuos de variables críticas, forzando registros en turnos discontinuos. 
+El análisis realizado evidencia que las instituciones públicas entrevistadas mantienen una elevada dependencia de procedimientos documentales tradicionales para garantizar el cumplimiento de las exigencias regulatorias. El 100% de los participantes indicó que gran parte del expediente de producción continúa elaborándose mediante registros manuales complementados con herramientas ofimáticas, lo que dificulta la consolidación y consulta oportuna de la información histórica durante las actividades de supervisión.
 
-En situaciones de auditoría, el **100%** experimenta frustración debido a la falta de inmediatez en el acceso a la información histórica para la sustentación de conformidad ante los inspectores. A nivel subjetivo, el 100% de los supervisores mostró una alta disposición a utilizar una plataforma digital. Buscan, principalmente, transparencia y respaldo profesional mediante alertas automáticas que reduzcan la incertidumbre y el error humano durante la fabricación.
+Asimismo, el 100% manifestó que la ausencia de un historial continuo de variables críticas obliga a realizar registros periódicos durante la jornada laboral, incrementando el tiempo dedicado a tareas administrativas y reduciendo la disponibilidad inmediata de información para la toma de decisiones o la atención de auditorías.
+
+Desde el punto de vista subjetivo, todos los entrevistados mostraron una actitud favorable hacia la implementación de plataformas digitales capaces de automatizar el almacenamiento de información y mejorar la trazabilidad de los procesos. Las entrevistas reflejan además una necesidad común de disponer de información histórica organizada, alertas oportunas y mecanismos que disminuyan la probabilidad de errores derivados del registro manual, fortaleciendo así el control de calidad y el cumplimiento de los requisitos regulatorios.
 
 <div align="center"><img src="../assets/img/Grafico2Segmento2Cap2.png" alt="Gráfico Estadístico Supervisores de Salud" width="80%"></div>
 <br>
@@ -569,7 +570,11 @@ En situaciones de auditoría, el **100%** experimenta frustración debido a la f
 #### Análisis Comparativo
 
 **Contrastación de Segmentos:**
-Al comparar ambos segmentos, se identifican coincidencias clave: el **100%** de ambos evidencia la necesidad urgente de centralizar la información y asegurar la trazabilidad inmutable de los lotes.  Sin embargo, existe una diferencia en el enfoque del problema. Para el administrador privado (Segmento 1), la falta de un sistema representa un riesgo de seguridad de datos y resistencia cultural (**67%**), mientras que para el supervisor público (Segmento 2), representa una fuente de desorden operativo ante entes reguladores. Esta diferencia define claramente el enfoque de QualiTrack: mejorar la seguridad de la información para la gerencia y, simultáneamente, brindar eficiencia operativa al supervisor.
+Al comparar ambos segmentos se observa una coincidencia importante: el 100% de los entrevistados considera necesario mejorar la trazabilidad de la información y reducir la dependencia de registros manuales durante los procesos de producción farmacéutica. Tanto el sector privado como el público reconocen que la digitalización contribuiría a optimizar la gestión documental, facilitar las auditorías y fortalecer la confiabilidad de los datos generados durante la fabricación.
+
+No obstante, también se identifican diferencias en el enfoque de sus necesidades. En el segmento conformado por gerentes y jefes de aseguramiento de calidad, la principal preocupación se orienta hacia la integridad de la información, la facilidad de adopción de nuevas tecnologías y el cumplimiento de los estándares regulatorios sin afectar las operaciones existentes. En contraste, los supervisores y responsables del sector público enfatizan principalmente la necesidad de disponer de información histórica continua, reducir el tiempo invertido en la preparación documental y facilitar el acceso inmediato a los registros durante las actividades de supervisión y auditoría.
+
+Estas diferencias permiten identificar oportunidades claras para QualiTrack, orientando la solución hacia una plataforma que combine automatización del registro de datos, trazabilidad de extremo a extremo y acceso oportuno a la información para responder a las necesidades específicas de ambos segmentos.
 
 <div align="center"><img src="../assets/img/Comparativa_segmentos_objetivos.png" alt="Gráfico Comparativo Segmentos" width="80%"></div>
 <br>
@@ -579,11 +584,13 @@ Al comparar ambos segmentos, se identifican coincidencias clave: el **100%** de 
 Basado en el análisis estadístico, se definen los siguientes perfiles para los User Personas:
 
 1.  **User Persona Jefe de Calidad:**
-    * **Rasgo clave:** Busca modernizar la planta mediante automatización, pero necesita una solución que garantice seguridad de datos y baja resistencia al cambio.
-    * **Sustento:** El 100% valora la captura IoT y el 67% teme a la complejidad de la implementación.  Esto demuestra que requiere una plataforma intuitiva con procesos validados.
+    * **Rasgo clave:** Busca fortalecer la trazabilidad y optimizar los procesos de aseguramiento de la calidad mediante herramientas que automaticen el registro de información, siempre que sean fáciles de implementar y mantengan la integridad de los datos.
+    * **Sustento:** La totalidad de los entrevistados pertenecientes a este segmento manifestó interés por incorporar soluciones que automaticen el registro de información y reduzcan la dependencia de procesos manuales. Asimismo, una parte importante resaltó que la facilidad de uso, la integración con los procesos existentes y la confiabilidad de los datos constituyen factores determinantes para la adopción de nuevas tecnologías.
+
+
 2.  **User Persona Supervisor Público:**
-    * **Rasgo clave:** Necesita información histórica inmediata y continua para garantizar la salud pública y superar auditorías.
-    * **Sustento:** El 100% reporta frustración ante registros manuales aislados y el 100% considera como un requisito indispensable el almacenamiento continuo de variaciones para mitigar el error humano.
+    * **Rasgo clave:** Requiere disponer de información histórica organizada y accesible para facilitar el seguimiento de los procesos, responder oportunamente a auditorías y fortalecer el control de calidad durante la producción.
+    * **Sustento:** Todos los entrevistados del sector público coincidieron en que la documentación manual incrementa la carga administrativa y dificulta la consulta inmediata de la información. Por ello, consideran prioritario implementar herramientas que automaticen el almacenamiento de datos, mejoren la trazabilidad y reduzcan la posibilidad de errores durante la elaboración de los expedientes de producción.
 
 <div style="page-break-after: always;"></div>
 
@@ -599,6 +606,7 @@ Para este segmento se elaboró el User Persona **Valeria Castro**. Se considerar
 
 <img src="../assets/img/UserPersona1.png" alt="User Persona 1" width="auto" height="1900"/>
 
+
 <br>
 
 **2) Segmento 2: Directores y Supervisores de Entidades de Salud Pública**
@@ -606,6 +614,7 @@ Para este segmento se elaboró el User Persona **Valeria Castro**. Se considerar
 Para este segmento se elaboró el User Persona **Rosa Amelia Mendoza**. Se consideraron aspectos como su formación científica y su rol en la supervisión de la producción de biológicos o vacunas a nivel estatal. Sus motivaciones están orientadas a estandarizar los procesos de manufactura cumpliendo estrictamente con las normativas nacionales de salud. Entre sus frustraciones se encuentra la falta de sistemas integrados, lo que obliga a su personal a realizar mediciones manuales constantemente, generando brechas de seguridad en la información y lentitud operativa. Su perfil refleja una necesidad crítica de sistemas inmutables y de trazabilidad en tiempo real que garanticen la seguridad pública de manera amigable para el personal técnico.
 
 <img src="../assets/img/UserPersona2.png" alt="User Persona 2" width="auto" height="1900"/>
+
 
 ### 2.3.2. User Task Matrix
 
@@ -691,13 +700,57 @@ Para crear una solución que realmente se vincula con las personas, no es sufici
 
 <img src="../assets/img/EmpathyMapping2.png" alt="Empathy Mapping 2" width="auto" height="450"/>
 
-## 2.4. Big Picture Event Storming
+### 2.4. Big Picture Event Storming
 
-Es necesario comprender el negocio en su totalidad, sin tecnicismos involucrados, antes de crear un sistema sólido. El Big Picture Event Storming es un método colaborativo que facilita la visualización de alto nivel de todos los hitos y sucesos regulatorios y operativos que tienen lugar en un laboratorio farmacéutico. Al estructurar estos eventos de forma lógica y cronológica, conseguimos detectar los flujos cruciales del negocio y los puntos críticos en los que la información de calidad tiende a retrasarse o a perderse, exponiendo potenciales riesgos de cumplimiento normativo.
+<p>
+Antes de definir funcionalidades, módulos o componentes técnicos para <strong>QualiTrack</strong>,
+el equipo realizó una sesión de <strong>Big Picture Event Storming</strong> con el objetivo de
+comprender el dominio del negocio desde una perspectiva general. Esta actividad permitió
+visualizar los principales eventos que ocurren dentro de un laboratorio farmacéutico, desde
+la gestión de usuarios y planes de suscripción hasta la operación de lotes, materias primas,
+equipos, telemetría, alertas de calidad, auditoría y cumplimiento regulatorio.
+</p>
 
-En esta primera fase, el equipo llevó a cabo una sesión de lluvia de ideas con el fin de recopilar todos los eventos significativos pertinentes al dominio, sin importar inicialmente la secuencia o la jerarquía. El propósito principal fue ilustrar de forma visual y abstracta los sucesos reales del negocio, abstrayendo por completo cualquier función técnica, interfaz de usuario o vinculación directa a los sistemas de software y bases de datos, priorizando el descubrimiento del Lenguaje Ubicuo de la organización.
+<p>
+El proceso se desarrolló de manera colaborativa, priorizando el descubrimiento del negocio
+sin enfocarse inicialmente en pantallas, bases de datos, endpoints o detalles de implementación.
+El equipo recopiló eventos significativos del dominio y los organizó como una primera
+aproximación visual al flujo general de la organización. Esta dinámica permitió identificar
+procesos clave, posibles puntos de retraso, riesgos de pérdida de información y oportunidades
+para mejorar la trazabilidad y el cumplimiento de Buenas Prácticas de Manufactura (BPM).
+</p>
 
-<img src="../assets/img/design-level-event-storming-step-1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
+<p>
+La primera etapa consistió en recolectar eventos de dominio. En esta fase, los integrantes
+propusieron sucesos relevantes expresados en pasado, como hechos que ya ocurrieron dentro
+del negocio. Esta forma de redacción permitió representar acontecimientos reales del dominio,
+por ejemplo: un usuario fue registrado, un lote de producción fue programado, una materia
+prima fue consumida, una desviación de calidad fue detectada, un reporte de cumplimiento fue
+emitido o una auditoría fue finalizada.
+</p>
+
+<div align="center">
+  <img src="../assets/img/design-level-event-storming-step-1.jpg" alt="Big Picture Event Storming 1" width="auto" height="450"/>
+  <p><em>Figura: Primera etapa del Big Picture Event Storming, enfocada en la recolección de eventos de dominio.</em></p>
+</div>
+
+<p>
+Como resultado de esta etapa, se identificaron grupos iniciales de eventos relacionados con
+la administración de usuarios, suscripciones, gestión de laboratorios, materias primas,
+equipos, producción de lotes, telemetría, alertas de cumplimiento, auditoría y reportes.
+Esta exploración permitió reconocer que el dominio de QualiTrack no se limita únicamente al
+monitoreo de equipos, sino que integra varios procesos operativos y regulatorios que deben
+mantenerse conectados para asegurar trazabilidad.
+</p>
+
+<p>
+A partir de los eventos recolectados, el equipo pudo detectar áreas críticas del negocio:
+la gestión del inventario de materias primas, el uso de insumos durante los lotes de producción,
+la detección de desviaciones, la generación de acciones correctivas, la interrupción de
+telemetría y la emisión de reportes regulatorios. Estos elementos fueron considerados como
+insumos principales para la posterior identificación de procesos, bounded contexts y
+funcionalidades del sistema.
+</p>
 
 ## 2.5. Ubiquitous Language
 
