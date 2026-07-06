@@ -187,7 +187,7 @@ Esta sección presenta lo que hace única a QualiTrack: una plataforma para labo
 
 En esta sección, se humaniza la marca al presentar al equipo detrás de QualiTrack. Con fotos y descripciones de los miembros, mostramos a las personas dedicadas a este proyecto, construyendo confianza y una conexión personal con los visitantes.
 
-<img src="../assets/img/ourteam-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/ourteam-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Precios (Plans):**
 
@@ -482,9 +482,85 @@ Comparativa de los planes disponibles (Plan Empresarial y Plan de Laboratorio Es
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-Los Wireflows se utilizan, sobre todo, en el diseño de la experiencia del usuario (UX) y son particularmente beneficiosos para aplicaciones que contienen interacciones complejas y flujos de trabajo.
+Los Wireflows se utilizan en el diseño de la experiencia de usuario (UX) para representar visualmente las interacciones que realizan los usuarios dentro de una aplicación con el fin de alcanzar un objetivo específico. Estos diagramas combinan wireframes y flujos de navegación para mostrar las transiciones entre pantallas y los cambios de estado generados por las acciones del usuario.
 
-<img src="../assets/img/Web-Applications-Wireflow-Diagrams.jpeg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+Para QualiTrack se desarrollaron diferentes Wireflow Diagrams basados en los principales User Goals identificados para los User Personas definidos en el proyecto. Cada diagrama describe el recorrido necesario para completar una tarea específica dentro del sistema.
+
+***Manager Wireflow Diagram***
+
+* **User Goal 1: Obtener acceso al dashboard en el que puede conseguir información del laboratorio y manejar su plan de subscripción.**
+
+Como Manager, quiero acceder a un dashboard centralizado para visualizar la información del laboratorio y gestionar el plan de suscripción de la organización.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-1.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 2: Creación y acceso de los lotes de producción.**
+
+Como Manager, quiero crear y acceder a los lotes de producción para supervisar las operaciones y garantizar la trazabilidad de los procesos.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-2.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 3: Revisión y ajustes de las alertas de cumplimiento.**
+
+Como Manager, quiero revisar y configurar alertas de cumplimiento para detectar oportunamente desviaciones y asegurar el cumplimiento de los estándares de calidad.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-3.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 4: Revisión de los reportes de KPIs y generación de reportes de auditoría.**
+
+Como Manager, quiero consultar indicadores de desempeño y generar reportes de auditoría para respaldar la toma de decisiones y los procesos de evaluación.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-4.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 5: Gestión de la información del laboratorio, incluyendo personal, productos y materias primas.**
+
+Como Manager, quiero administrar la información del laboratorio para mantener actualizados los registros de personal, productos y materias primas.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-5.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 6: Seguimiento de la suscripción y facturación del laboratorio.**
+
+Como Manager, quiero consultar la información de suscripción y facturación para supervisar los costos y servicios contratados por el laboratorio.
+
+<img src="../assets/img/user-goals/manager/user-goal-m-6.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***Operator Wireflow Diagram***
+
+* **User Goal 1: Acceder al panel operativo para visualizar actividades, métricas y tareas asignadas.**
+
+Como Operator, quiero acceder al panel operativo para visualizar actividades, métricas y tareas asignadas que me permitan realizar mis funciones diarias de manera eficiente.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-1.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 2: Registrar y gestionar equipos empleados en el laboratorio.**
+
+Como Operator, quiero registrar y administrar equipos utilizados en el laboratorio para mantener actualizada la información de los dispositivos empleados en los procesos de calidad.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-2.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 3: Registrar pruebas de calidad y documentar sus resultados.**
+
+Como Operator, quiero registrar pruebas de calidad y documentar sus resultados para asegurar la trazabilidad y el cumplimiento de los procedimientos establecidos.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-3.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 4: Revisar y gestionar alertas de calidad asociadas a incidencias operativas.**
+
+Como Operator, quiero revisar y gestionar alertas de calidad para responder oportunamente a incidencias detectadas durante las operaciones.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-4.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 5: Gestión de la información del laboratorio, incluyendo personal, productos y materias primas.**
+
+Como Operator, quiero consultar y actualizar información relacionada con productos, materias primas y recursos del laboratorio para apoyar la ejecución de las actividades operativas.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-5.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+* **User Goal 6: Analizar la suscripción y facturación del laboratorio.**
+
+Como Operator, quiero consultar la información de suscripción y facturación del laboratorio para conocer el estado de los servicios disponibles dentro de la plataforma.
+
+<img src="../assets/img/user-goals/operative/user-goal-o-6.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -729,52 +805,103 @@ El user flow es la representación visual del camino que un usuario sigue dentro
 
 ---
 
-- #### **Objetivo 1: Un operativo o supervisor desea registrarse e iniciar sesión en el sistema.**
+- #### **Objetivo 1: Un Jefe de Aseguramiento de la Calidad (QA Manager) o un Operario de Laboratorio desea registrarse e iniciar sesión en la plataforma.**
 
   **Happy Path**
 
-  En este flujo ideal, el usuario accede por primera vez a QualiTrack y, al no tener una cuenta registrada, desde la pantalla de inicio de sesión selecciona la opción "Registrarse", completa el formulario con los datos del laboratorio y sus credenciales, y una vez finalizado el proceso exitosamente es redirigido a la sección de inicio de sesión, donde ingresa su correo y contraseña; si se trata de un Jefe de Aseguramiento de la Calidad (QA Manager), el sistema le presenta el dashboard de telemetría en tiempo real con los indicadores de cumplimiento BPM y el estado de los lotes activos, mientras que si el usuario es un Operario de planta, se le muestra una interfaz especializada enfocada en el monitoreo de equipos industriales, alertas de desviación y registro de observaciones en el laboratorio.
+  El usuario accede a QualiTrack y selecciona la opción de registro correspondiente a su rol (QA Manager/Supervisor o Lab Operator). Completa el formulario de creación de cuenta con un nombre de usuario y contraseña válidos. Tras registrarse exitosamente, es redirigido a la pantalla de inicio de sesión.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1(1).png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1(2).png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  Posteriormente, ingresa sus credenciales y el sistema valida la información. Si la autenticación es correcta, se concede el acceso a la plataforma y se muestra la interfaz correspondiente a su rol, permitiéndole gestionar y supervisar las actividades relacionadas con el aseguramiento de la calidad y las operaciones del laboratorio.  
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-1.png" alt="Registro / Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
   
   **Unhappy Path**
 
-  En este escenario alternativo, el usuario intenta acceder a QualiTrack con su cuenta, pero se presenta un problema técnico como credenciales incorrectas, conectividad inestable o bloqueo temporal por múltiples intentos fallidos; por lo tanto, el sistema no permite el ingreso y muestra un mensaje de error específico según la causa, invitando al usuario a verificar sus datos, revisar su conexión o contactar al administrador del laboratorio, registrando cada intento fallido en el log de auditoría para garantizar la trazabilidad exigida por DIGEMID.
+  El usuario intenta iniciar sesión, pero introduce credenciales incorrectas o deja campos obligatorios sin completar. Durante la validación, el sistema detecta los errores y bloquea temporalmente el acceso.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-1.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  Como respuesta, QualiTrack resalta los campos afectados y muestra mensajes de validación específicos para orientar al usuario en la corrección de la información ingresada. El acceso solo se habilita cuando las credenciales proporcionadas son válidas.  
 
-----
-
-- #### **Objetivo 2: Un supervisor necesita realizar una investigación de una alerta activa.**
-
-  **Happy Path**
-
-  En este flujo ideal, el Supervisor de QA identifica una alerta activa en el dashboard de telemetría, presiona el botón "Investigate" para iniciar el análisis de la desviación detectada, luego presiona el botón "Complete Investigation" una vez que ha revisado la información, y finalmente espera a que el sistema realice el proceso de investigación automática, el cual confirma el origen de la desviación y, si corresponde, libera o mantiene el bloqueo del lote conforme a los parámetros BPM, registrando toda la acción en el historial inmutable de cumplimiento.
-
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
-
-  **Unhappy Path**
-
-  En este escenario alternativo, el supervisor presiona el botón "Investigate" sobre una alerta activa, luego presiona "Complete Investigation" para finalizar el análisis, pero al esperar el proceso de investigación automática, el sistema presenta dificultades técnicas como lentitud extrema, timeout de conexión o error en el motor de compliance, impidiendo que la investigación se complete correctamente; como resultado, la alerta permanece sin resolver, el lote no cambia de estado y se muestra un mensaje de error, quedando registrado el incidente en el log de auditoría para su revisión posterior.
-
-  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-2.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-1.png" alt="Registro / Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ----
 
-- #### **Objetivo 3: El usuario requiere modificar la configuración tanto del sistema como su perfil.**
+- #### **Objetivo 2: Un QA Manager desea registrar un nuevo lote de producción.**
 
   **Happy Path**
 
-  En este flujo ideal, el usuario accede a la sección de configuración, modifica los datos que necesita actualizar (como perfil de usuario, información de la organización o preferencias de notificación), luego presiona el botón "Save Settings" y finalmente espera a que el sistema procese y cargue los cambios correctamente, mostrando un mensaje de confirmación y aplicando las nuevas configuraciones en toda la plataforma sin afectar la continuidad operativa del laboratorio.
+  El usuario accede al módulo Production Batches y selecciona la opción New Batch para registrar un nuevo lote. A continuación, completa el formulario con la información requerida, como el producto farmacéutico, número de lote, fecha de inicio, cantidad y descripción operativa.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  Tras verificar que los datos ingresados son válidos y cumplen con las restricciones establecidas por el sistema, selecciona la opción Register. QualiTrack procesa la información, crea el nuevo lote exitosamente y lo agrega a la lista de lotes registrados, asignándole un estado inicial que permitirá su posterior monitoreo y seguimiento.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-2.png" alt="Registro de Lotes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
   **Unhappy Path**
 
-  En este escenario alternativo, el usuario modifica los datos necesarios en la sección de configuración y presiona el botón "Save Settings", pero al esperar que se carguen los cambios, el sistema presenta dificultades técnicas como validación de campos fallida (formato de correo incorrecto, contraseñas que no coinciden, URL inválida), problemas de conectividad con el servidor o un error interno en la API; como resultado, la configuración no se guarda, se muestra un mensaje de error específico indicando la causa, y el usuario debe corregir los datos o reintentar la operación, quedando registrado el intento fallido en el log de auditoría para garantizar la trazabilidad exigida por DIGEMID.
+    El usuario intenta registrar un nuevo lote de producción, pero introduce información inconsistente o fuera de los parámetros permitidos para el equipo o proceso seleccionado.
 
-  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-3.png" alt="Inició de sesión - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+  Durante la validación, QualiTrack detecta la anomalía y rechaza el registro, mostrando un mensaje de error que informa la causa del problema. Como resultado, el lote no es creado y el usuario debe corregir los datos ingresados antes de volver a intentar el proceso de registro.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-2.png" alt="Registro de Lotes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+----
+
+- #### **Objetivo 3: Un QA Manager desea generar y descargar reportes de producción y trazabilidad.**
+
+  **Happy Path**
+
+  El usuario accede al módulo Report & Document Generator para obtener información relacionada con los lotes de producción registrados en la plataforma. A continuación, selecciona el tipo de reporte deseado, especifica los parámetros de búsqueda requeridos y el formato de exportación correspondiente (PDF o CSV).
+
+  Tras presionar el botón Download, QualiTrack procesa la solicitud, valida la información ingresada y genera exitosamente el documento. Finalmente, el sistema muestra una notificación de confirmación y descarga automáticamente el archivo solicitado, permitiendo al usuario acceder a la documentación para fines de análisis, auditoría o seguimiento operativo.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-3.png" alt="Generación de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  El usuario intenta generar un reporte desde el módulo Report & Document Generator; sin embargo, durante el proceso ocurre un error que impide completar la descarga del archivo solicitado.
+
+  Al presionar el botón Download, el sistema detecta la incidencia y muestra una notificación indicando que la generación del reporte ha fallado. Como resultado, el documento no es descargado y el usuario deberá verificar los parámetros ingresados o volver a intentar la operación para obtener el reporte requerido.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-3.png" alt="Generación de Reportes - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+----
+
+- #### **Objetivo 4: Un Operario de Laboratorio desea configurar los parámetros BPM de un equipo industrial.**
+
+  **Happy Path**
+
+  El operario accede al módulo Equipment Catalog y selecciona la opción Details del equipo que desea configurar. A continuación, ingresa a la sección BPM Config, donde puede visualizar y modificar los parámetros de monitoreo asociados al equipo.
+
+  Posteriormente, selecciona Parameter Name, introduce los valores requeridos y presiona el botón Save Changes. El sistema valida la información ingresada y almacena exitosamente la nueva configuración, actualizando los parámetros operativos del equipo para futuras mediciones y controles.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-4.png" alt="Configuración de parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  El operario accede al módulo de configuración de un equipo y realiza modificaciones en los parámetros BPM. Sin embargo, durante el proceso de guardado se detectan valores inválidos o inconsistentes que incumplen las restricciones definidas por el sistema.
+
+  Al presionar Save Changes, QualiTrack rechaza la actualización y muestra un mensaje de error indicando que la configuración no pudo ser registrada. Como resultado, los cambios no son almacenados y el operario deberá corregir la información antes de intentar nuevamente la operación.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-4.png" alt="Configuración de parámetros BPM - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+----
+
+- #### **Objetivo 5: Un Operario de Laboratorio desea registrar un evento de mantenimiento en un equipo industrial.**
+
+  **Happy Path**
+
+  El operario accede al módulo Equipment Catalog y selecciona la opción Details del equipo correspondiente. Posteriormente, ingresa a la sección Maintenance, donde puede visualizar el historial de actividades relacionadas con el mantenimiento del equipo.
+
+  A continuación, selecciona la opción Register New Event, completa la información requerida sobre la actividad realizada y presiona el botón Save Changes. El sistema valida los datos ingresados y registra exitosamente el evento, actualizando el historial de mantenimiento para garantizar la trazabilidad de las intervenciones realizadas sobre el equipo.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/happy-path-5.png" alt="Registro de un evento de mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+  **Unhappy Path**
+
+  El operario intenta registrar un nuevo evento de mantenimiento, pero durante el proceso ingresa información incompleta o inválida en el formulario de registro.
+
+  Al presionar Save Changes, QualiTrack detecta las inconsistencias y rechaza la operación, mostrando un mensaje de error para informar al usuario que el evento no pudo ser registrado. Como resultado, la información no se almacena en el historial de mantenimiento hasta que los datos sean corregidos y validados correctamente.
+
+  <img src="../assets/img/web-applications-user-flow-diagrams/unhappy-path-4.png" alt="Registro de un evento de mantenimiento - ClosedSource" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ## 4.5. Web Applications Prototyping
 
@@ -952,150 +1079,139 @@ Storming. Esta técnica permite visualizar y comprender el flujo de eventos dent
 dominio, facilitando la identificación de los Bounded Contexts.
 
 El desarrollo del proceso del Domain-Driven Design se realizó en la aplicación Miro: 
-[https://shorturl.at/0eSVT]
+[https://l1nq.com/cplp9a0]
 
 ---
-#### Paso 1: Brainstorming (Unstructured Exploration)
+#### Paso 1: Timelines
 
-El primer paso consistió en realizar una exploración sin estructura para identificar todos los posibles eventos del dominio. Durante esta etapa, el equipo analizó criterios como la mutación de estados y la ejecución exitosa de comandos en el sistema, identificando 38 situaciones concretas (Domain Events) que los diferentes actores del sistema desencadenan. Entre los eventos más relevantes se capturaron: "Batch created", "Measurement recorded", "Deviation alert triggered", "Equipment registered", "Calibration alert triggered", "Raw material usage recorded" y "Batch released", entre otros. Esta exploración permitió capturar el núcleo operativo e IoT del laboratorio en su totalidad.
+Posteriormente, organizamos los eventos en líneas de tiempo para visualizar el flujo de interacciones y secuencias entre eventos de negocio. Se identificaron los siguientes flujos principales (Bounded Contexts):
 
+* **Identity & Access Management (IAM) Flow:** ciclo de vida de la seguridad, incluyendo el registro, autorización de accesos, inicio de sesión y la recuperación segura de credenciales del personal.
+* **Subscription & Payments Flow:** selección de planes comerciales, procesamiento de pagos mediante pasarela y renovación de suscripciones para el laboratorio.
+* **Laboratory Management Flow:** establecimiento del perfil institucional, auditorías de las instalaciones, incorporación de personal y formulación de productos farmacéuticos.
+* **Inventory Management Flow:** catalogación de materias primas, monitoreo de stock y gestión de mermas por caducidad.
+* **Equipment Management Flow:** comisionamiento de maquinaria industrial, definición de umbrales de calidad (BPM) y programación de ciclos de mantenimiento.
+* **Tracking & Telemetry Flow:** captura manual de métricas de proceso, evaluación de líneas base ambientales y detección de patrones anómalos.
+* **Batch Management Flow:** planificación de lotes de producción, consumo de materiales, emisión de veredictos de calidad y gestión de cuarentenas.
+* **Compliance & Alerting Flow:** escalamiento de desviaciones de calidad, ejecución de acciones correctivas y actualización de estándares normativos.
+* **Reporting & Audit Flow:** traza inmutable de auditoría, evaluación del desempeño operativo y emisión concatenada de reportes regulatorios.
 
-<img src="../assets/img/design-level-event-storming-step-1.png" alt="Bounded Context brainstorming" width="80%"/>
-
-#### Paso 2: Timelines
-
-Posteriormente, organizamos los eventos en líneas de tiempo para visualizar el flujo de interacciones y secuencias entre eventos. Se identificaron los siguientes flujos principales:
-
-* **IAM & Security Flow:** gestión de identidad, roles, registro, inicio de sesión y desactivación de accesos del personal.
-* **Laboratory Setup Flow:** configuración inicial del laboratorio, registro de personal, creación de catálogo de productos farmacéuticos y materias primas.
-* **Equipment & IoT Configuration Flow:** registro de maquinaria industrial, configuración de parámetros BPM, vinculación de sensores IoT y alertas de calibración
-* **Tracking & Telemetry Flow:** recepción continua de mediciones IoT, actualización de estado de los equipos y registro de historiales telemétricos.
-* **Compliance & Alerting Flow:** configuración de umbrales de alerta, detección de anomalías, registro de eventos de cumplimiento y despacho de alertas de calidad.
-* **Production Batch Flow:** creación de lotes, asignación de materia prima, procesamiento y decisión final de liberación (Release) o rechazo (Reject).
-* **Reporting & Analytics Flow:** evaluación del desempeño productivo, generación de reportes BPM consolidados y generación de reportes de auditoría de equipos.
-* **Subscription & Payments Flow:** selección de planes SaaS para el laboratorio y procesamiento de transacciones financieras.
-
-Esta organización temporal facilitó la comprensión de dependencias y secuencias críticas entre la configuración humana y la automatización del sistema.
+Esta organización temporal facilitó la comprensión de dependencias y secuencias críticas entre la operación humana y la automatización del sistema.
 
 <img src="../assets/img/design-level-event-storming-step-11.png" alt="Bounded Context Timelines" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-12.png" alt="Bounded Context Timelines" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-13.png" alt="Bounded Context Timelines" width="80%"/>
 
-#### Paso 3: Commands
+#### Paso 2: Commands
 
 En este paso definimos los comandos que los diferentes actores pueden ejecutar en el sistema. Los comandos representan las intenciones o acciones (en verbo imperativo) que mutan el estado de la aplicación y desencadenan los eventos en el dominio.
 
 | Actor | Comandos |
 |-------|----------|
-| **QA Manager** | Assign Staff Responsibility, Deactivate User Access, Update Laboratory, Register Staff, Create Product, Create Raw Material, Register Equipment, Configure BPM, Link Sensor, Register Maintenance, Configure Alert Threshold, Acknowledge Deviation, Create Batch, Link Raw Material, Release Batch, Reject Batch, Generate Batch Report, Generate Compliance Report. |
-| **Lab Operator** | Update Staff Profile, Record Raw Material Usage, Start Batch Processing. |
-| **Auditor** | Generate Equipment Audit Report. |
-| **IoT Sensor** | Record Measurement. |
-| **System (QualiTrack)** | Detect Connection Loss, Evaluate Calibration Status, Update Equipment Status, Record Telemetry History, Trigger Deviation Alert, Record Compliance Event, Dispatch Quality Alert, Evaluate Production Performance. |
-| **Payment System** | Process Payment. |
+| **QA Manager** | Authorize Access, Escalate Privilege, Select Plan, Process Payment, Establish Profile, Renew Certification, Onboard Staff, Formulate Product, Reconcile Inventory, Commission Hardware, Define Thresholds, Schedule Calibration, Schedule Batch, Issue Verdict, Initiate Action, Escalate Deviation, Close Issue, Update Standard, Issue Compliance Report. |
+| **Lab Operator / Personnel** | Request Access, Recover Password, Log Out, Catalog Material, Initiate Downtime, Complete Cycle, Change Mode, Capture Metric (Manual Entry), Start Cycle, Consume Material. |
+| **Auditor / Regulatory Body** | Audit Facility, Submit Inquiry. |
+| **System / Analytics Engine** | Initiate Trial, Process Renewal, Monitor Stock, Check Expirations, Run Diagnostic, Flag Anomaly, Finalize Archival, Evaluate Performance. |
 
 <img src="../assets/img/design-level-event-storming-step-21.png" alt="Bounded Context Commands" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-22.png" alt="Bounded Context Commands" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-23.png" alt="Bounded Context Commands" width="80%"/>
 
-#### Paso 4: Policies and Actors
+#### Paso 3: Policies and Actors
 
-En este paso identificamos las políticas de negocio (reglas WHEN/THEN) y los actores responsables de cada flujo. Las políticas representan las reglas automáticas que el sistema ejecuta en respuesta a ciertos eventos, garantizando el estricto cumplimiento de las normativas de manufactura sin depender de la intervención humana constante.
+En este paso identificamos las políticas de negocio (reglas WHEN/THEN) y los actores responsables de cada flujo. Las políticas representan las reglas automáticas que el sistema ejecuta en respuesta a ciertos eventos, garantizando el estricto cumplimiento de las normativas de manufactura BPM sin depender de la intervención humana constante.
 
 Las políticas identificadas fueron:
 
-* **WHEN** raw material stock reaches the minimum threshold THEN trigger a minimum stock alert.
-* **WHEN** an equipment's calibration date is near THEN trigger a calibration due alert internally.
-* **WHEN** an IoT device loses connection THEN trigger an equipment connection lost alert.
-* **WHEN** telemetry is received THEN evaluate the measurement against the configured BPM parameters automatically.
-* **WHEN** a non-critical deviation is detected THEN trigger a warning alert and dispatch a quality alert to the QA Manager.
-* **WHEN** a critical deviation is detected in telemetry THEN block the batch automatically and register a compliance event.
-* **WHEN** a batch is successfully released with a digital signature THEN auto-generate the immutable batch record PDF.
-* **WHEN** a QA Manager deactivates a user access THEN revoke all permissions immediately while keeping the audit log intact.
+* **WHEN** password recovery is requested **THEN** verify identity via email.
+* **WHEN** plan selection is finalized **THEN** process payment via gateway.
+* **WHEN** raw material batch is expired **THEN** lock inventory and dispose waste.
+* **WHEN** equipment is commissioned **THEN** mandate quality threshold configuration.
+* **WHEN** process metric is manually captured **THEN** evaluate against environmental baseline.
+* **WHEN** baseline fluctuation exceeds limit **THEN** flag anomalous pattern.
+* **WHEN** batch quality verdict is APPROVED **THEN** auto-seal traceability file.
+* **WHEN** batch quality verdict is REJECTED **THEN** auto-quarantine batch.
+* **WHEN** anomalous pattern is detected **THEN** flag quality deviation and trigger corrective workflow.
+* **WHEN** compliance report is issued **THEN** auto-generate product safety report.
 
 Estas políticas permiten automatizar procesos críticos del sistema, reduciendo drásticamente el error humano y asegurando respuestas oportunas ante situaciones de riesgo que podrían comprometer la calidad de los medicamentos.
 
 <img src="../assets/img/design-level-event-storming-step-31.png" alt="Bounded Context Policies" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-32.png" alt="Bounded Context Policies" width="80%"/>
+<img src="../assets/img/design-level-event-storming-step-33.png" alt="Bounded Context Policies" width="80%"/>
 
 #### 4.6.1.1. Candidate Context Discovery
 
 Una vez identificados los eventos, flujos, comandos y políticas del dominio, se procedió al descubrimiento de contextos candidatos. Esta etapa permitió agrupar elementos relacionados según su cohesión funcional y sus reglas de negocio compartidas, delimitando áreas específicas como configuración de equipos, telemetría IoT, cumplimiento normativo (compliance), gestión de lotes y reportes de auditoría. De esta manera, el equipo logró estructurar el dominio de QualiTrack en contextos con responsabilidades claramente diferenciadas y alineadas a los módulos desarrollados en el código fuente.
 
-#### Paso 5: Read Models
+#### Paso 4: Read Models
 
-Los Read Models representan las vistas de consulta que los actores utilizan para tomar decisiones dentro del sistema. De acuerdo con el modelado, se identificaron las siguientes vistas principales mediante los post-its verdes:
+Los Read Models representan las vistas de consulta críticas que los actores utilizan para tomar decisiones dentro del sistema. Para mantener el enfoque en el Core Domain, el modelado destaca las 4 vistas principales (post-its verdes) que cruzan mayor cantidad de información:
 
-* **User Directory & role Permissions:** utilizado en el flujo de IAM para consultar accesos y permisos.
-* **Equipment Inventory & Connectivity Status:** utilizado para verificar el inventario de maquinaria y su estado de conexión a la red.
-* **Laboratory Infrastructure Map:** permite consultar el estado y la configuración de la infraestructura del laboratorio.
-* **Sensor Config:** vista utilizada para consultar los parámetros de configuración de los dispositivos IoT.
-* **Real-time Telemetry Dashboard:** panel para el monitoreo continuo y en vivo de los datos transmitidos por los sensores.
-* **Batch Genealogy & Material Stock:** utilizado para consultar la trazabilidad del lote y el inventario disponible de materias primas.
-* **Performance Metrics & KPI Summary:** dashboard utilizado por Analytics para visualizar el rendimiento y los indicadores clave.
-* **Plan Options:** permite consultar los planes de suscripción disponibles antes de realizar el pago.
+* **Laboratory Infrastructure Map:** permite al QA Manager consultar el perfil, la certificación y el estado general de configuración del laboratorio.
+* **Equipment Inventory & Config:** utilizado para verificar el estado de la maquinaria, sus umbrales de calidad (BPM) y la última calibración registrada.
+* **Batch Genealogy & Material Stock:** panel esencial utilizado en producción para consultar la trazabilidad del lote y validar el inventario disponible de materias primas antes de iniciar un ciclo.
+* **Performance Metrics & KPI Dashboard:** panel gerencial utilizado por auditoría y QA para visualizar el rendimiento operativo y las tendencias de desviaciones de calidad.
 
 <img src="../assets/img/design-level-event-storming-step-41.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-42.png" alt="Bounded Context Models" width="80%"/>
-<img src="../assets/img/design-level-event-storming-step-43.png" alt="Bounded Context Models" width="80%"/>
 
-#### Paso 6: External Systems
+
+#### Paso 5: External Systems
 
 En este paso identificamos los sistemas externos que interactúan con el dominio, pero que están fuera del control directo del sistema (representados con post-its rosados).
 
-* **SendGrid / Email Service:** sistema externo utilizado en el contexto de IAM para el envío de correos, como la recuperación de contraseñas.
-* **IoT Hub:** infraestructura externa encargada de gestionar la conectividad y recepción de datos de los equipos.
-* **Cloudinary (Product Assets):** servicio en la nube utilizado para el almacenamiento de imágenes y recursos del laboratorio.
-* **OneSignal:** sistema externo utilizado para el envío de notificaciones push ante eventos de cumplimiento y alertas.
-* **Audit Vault (Secure Storage):** servicio de almacenamiento seguro utilizado para resguardar los registros de auditoría inmutables.
-* **Stripe / Payment Gateway:** pasarela de pagos externa utilizada para procesar las transacciones de las suscripciones.
+* **Email Service (SendGrid):** sistema externo utilizado en el contexto de IAM para la validación de identidad y recuperación de credenciales.
+* **Payment Gateway (Stripe):** pasarela externa utilizada para procesar y validar las transacciones de los planes de suscripción.
+* **Cloudinary (Product Assets):** servicio en la nube utilizado para el almacenamiento de catálogos e imágenes del laboratorio.
+* **Audit Vault (Secure Storage):** servicio de almacenamiento seguro inmutable utilizado para resguardar los registros regulatorios.
 
 <img src="../assets/img/design-level-event-storming-step-51.png" alt="Bounded Context External" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-52.png" alt="Bounded Context External" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-53.png" alt="Bounded Context External" width="80%"/>
 
-#### Paso 7: Add Aggregates
+#### Paso 6: Add Aggregates
 
-En este paso identificamos los Aggregates, que representan los objetos de dominio centrales que agrupan entidades relacionadas y se tratan como una sola unidad. Cada aggregate (post-it amarillo grande) actúa como el punto central alrededor del cual giran los eventos y comandos:
+En este paso identificamos los Aggregates, que representan los objetos de dominio centrales que agrupan entidades relacionadas y se tratan como una sola unidad de consistencia. Cada aggregate (post-it amarillo grande) actúa como el punto central alrededor del cual giran los eventos y comandos:
 
-* **User Security:** centraliza la lógica de autenticación y roles de usuario.
-* **Equipment:** gestiona el estado y ciclo de vida de la maquinaria industrial.
-* **Maintenance Log:** controla los registros de mantenimiento de los equipos.
-* **Laboratory:** agrupa la configuración y catálogo central del laboratorio.
-* **Telemetry Log:** concentra el registro histórico de las mediciones capturadas.
-* **Compliance Event:** gestiona las incidencias y alertas de cumplimiento normativo.
-* **Audit Trail:** centraliza la traza inmutable de acciones críticas en el sistema.
-* **Analytics Engine:** procesa la información para la generación de métricas.
-* **Manufacturing Batch:** controla el ciclo de vida de producción de un lote.
-* **Inventory Ledger:** gestiona el registro exacto de los movimientos de inventario.
+* **User Profile & Security Module:** centraliza la lógica de acceso y recuperación de identidades.
+* **Subscription Account & Billing Engine:** gestiona la facturación y el nivel de acceso comercial.
+* **Laboratory & Staff Member:** agrupa la configuración institucional y la fuerza laboral.
+* **Inventory Ledger & Raw Material:** gestiona el ciclo de vida y disponibilidad de insumos.
+* **Equipment & Maintenance Log:** controla el estado operativo y las calibraciones de la maquinaria.
+* **Telemetry Stream & Environment Log:** concentra el registro de las métricas manuales ingresadas y sus anomalías.
+* **Production Batch:** controla la trazabilidad completa del ciclo de manufactura.
+* **Compliance Log:** gestiona las desviaciones y el flujo de resolución de calidad.
+* **Audit Trail & Report Engine:** centraliza la evidencia inmutable y la emisión de documentación oficial.
 
 <img src="../assets/img/design-level-event-storming-step-61.png" alt="Bounded Context aggregates" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-62.png" alt="Bounded Context aggregates" width="80%"/>
 <img src="../assets/img/design-level-event-storming-step-63.png" alt="Bounded Context aggregates" width="80%"/>
 
-#### Paso 8: Bounded Contexts
+#### Paso 7: Bounded Contexts
 
-Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados en contextos delimitados con responsabilidades claras. Según las agrupaciones finales del tablero, se definieron los siguientes:
+Finalmente, definimos los Bounded Contexts que agrupan los flujos relacionados en contextos delimitados con responsabilidades claras. Tras la abstracción de la arquitectura y la ingeniería inversa del código, se definieron un total de 9 contextos independientes:
 
 | Bounded Context | Descripción de Componentes Clave |
 |-----------------|----------------------------------|
-| **BC: IAM** | Contiene el Aggregate `User Security` y las políticas de sesión. |
-| **BC: Equipment Management** | Agrupa los Aggregates `Equipment` y `Maintenance Log`, junto con IoT Hub. |
-| **BC: Laboratory Management** | Contiene el Aggregate `Laboratory`. |
-| **BC: Tracking (IoT)** | Agrupa el Aggregate `Telemetry Log` y las pantallas de monitoreo en tiempo real. |
-| **BC: Compliance & Alerting** | Contiene los Aggregates `Compliance Event` y `Audit Trail`. |
-| **BC: Reporting & Audit** | Contiene el Aggregate `Analytics Engine` y el almacenamiento seguro. |
-| **BC: Batch Management** | Agrupa los Aggregates `Manufacturing Batch` e `Inventory Ledger`. |
-| **BC: Context Shared** | Contiene el Aggregate `Billing Account` y la integración para cobros. |
+| **BC: Identity & Access Management** | Contiene el Aggregate `Security Module` y las políticas de recuperación de acceso. |
+| **BC: Subscription & Payments** | Agrupa los Aggregates `Subscription Account` y `Billing Engine`, interactuando con la pasarela de pagos. |
+| **BC: Laboratory Management** | Contiene los Aggregates `Laboratory` y `Staff Member` para la gestión central. |
+| **BC: Inventory Management** | Contiene el Aggregate `Inventory Ledger`, gestionando mermas y disponibilidad de insumos. |
+| **BC: Equipment Management** | Agrupa los Aggregates `Equipment` y `Maintenance Log` para el control industrial. |
+| **BC: Tracking & Telemetry** | Gestiona el `Telemetry Stream` para la evaluación de métricas de proceso ingresadas manualmente. |
+| **BC: Batch Management** | Agrupa el Aggregate `Production Batch` manejando toda la trazabilidad de manufactura. |
+| **BC: Compliance & Alerting** | Contiene el `Compliance Log` y el manejo de acciones correctivas ante desviaciones. |
+| **BC: Reporting & Audit** | Contiene el Aggregate `Audit Trail` y el `Report Engine` para fines regulatorios. |
 
 <img src="../assets/img/bc-iam.png" alt="Bounded Context iam" width="80%"/>
-<img src="../assets/img/bc-em.png" alt="Bounded Context em" width="80%"/>
+<img src="../assets/img/bc-sp.png" alt="Bounded Context subscription" width="80%"/>
 <img src="../assets/img/bc-lm.png" alt="Bounded Context lm" width="80%"/>
+<img src="../assets/img/bc-im.png" alt="Bounded Context inventory" width="80%"/>
+<img src="../assets/img/bc-em.png" alt="Bounded Context em" width="80%"/>
 <img src="../assets/img/bc-tracking.png" alt="Bounded Context tracking" width="80%"/>
+<img src="../assets/img/bc-bm.png" alt="Bounded Context bm" width="80%"/>
 <img src="../assets/img/bc-ca.png" alt="Bounded Context ca" width="80%"/>
 <img src="../assets/img/bc-ra.png" alt="Bounded Context ra" width="80%"/>
-<img src="../assets/img/bc-bm.png" alt="Bounded Context bm" width="80%"/>
-<img src="../assets/img/bc-shared.png" alt="Bounded Context shared" width="80%"/>
 
 
 ## 4.6.2. Software Architecture Context Diagram
