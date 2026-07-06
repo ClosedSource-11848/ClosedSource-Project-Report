@@ -130,13 +130,13 @@ El Lean UX es una perspectiva que facilita la validación de las soluciones suge
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-En la industria farmacéutica peruana y en las entidades de salud pública, los procesos de control de calidad y fabricación continúan dependiendo en gran medida de registros manuales, sistemas aislados y documentos físicos, lo que incrementa significativamente el riesgo de error humano, compromete la integridad de los datos y dificulta el cumplimiento oportuno de las Buenas Prácticas de Manufactura (BPM) exigidas por DIGEMID.
+La industria farmacéutica peruana opera bajo estrictos requisitos regulatorios definidos por las Buenas Prácticas de Manufactura (BPM) y las auditorías realizadas por DIGEMID. Sin embargo, muchos laboratorios medianos y entidades de salud pública continúan gestionando sus procesos de control de calidad y producción mediante registros manuales, hojas de cálculo y sistemas no integrados.
 
-Actualmente, los Jefes de Aseguramiento de la Calidad y los Supervisores de entidades públicas deben invertir grandes cantidades de tiempo en consolidar información dispersa para auditorías regulatorias, sin contar con trazabilidad digital continua ni alertas tempranas ante desviaciones críticas de variables como temperatura, presión o pH. Esta brecha tecnológica no solo ralentiza la operación diaria, sino que expone a las instituciones a observaciones regulatorias, sanciones económicas y potenciales riesgos para la salud pública.
+Esta situación dificulta el acceso oportuno a información confiable, incrementa el riesgo de errores humanos en el registro de datos críticos y limita la capacidad de detectar desviaciones operativas de manera temprana. Como consecuencia, los responsables de aseguramiento de la calidad deben invertir una cantidad significativa de tiempo y esfuerzo en consolidar información para auditorías, verificar la trazabilidad de los procesos y garantizar el cumplimiento regulatorio, lo que genera ineficiencias operativas, mayores costes de supervisión y exposición a observaciones regulatorias.
 
-Existe una oportunidad clara de mercado para una plataforma SaaS especializada que permita digitalizar la trazabilidad de procesos farmacéuticos, automatizar la captura de variables críticas mediante integración IoT y garantizar registros inmutables auditables, especialmente dirigida a laboratorios medianos y entidades públicas que no pueden adoptar soluciones corporativas costosas como SAP o LIMS tradicionales.
+Al mismo tiempo, las soluciones empresariales disponibles en el mercado suelen resultar complejas o costosas para organizaciones medianas y entidades públicas, dejando una necesidad insatisfecha de herramientas accesibles que faciliten la gestión de calidad y la trazabilidad de la producción.
 
-¿Cómo podríamos permitir que los responsables de aseguramiento de la calidad y supervisión pública gestionen, supervisen y auditen procesos de fabricación farmacéutica en tiempo real, con trazabilidad digital completa y mínima fricción operativa, eliminando la dependencia de registros manuales y reduciendo drásticamente el tiempo y riesgo asociado a las auditorías de DIGEMID?
+¿Cómo podríamos ayudar a los Jefes de Aseguramiento de la Calidad y a los Operarios de Planta a supervisar y registrar los procesos de fabricación farmacéutica de forma más eficiente, reduciendo los errores de registro, mejorando la trazabilidad de la información y disminuyendo el tiempo requerido para las actividades de control y auditoría regulatoria?
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -150,11 +150,11 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 * El modelo de QualiTrack es escalable a otros países de la región debido a la similitud entre las normativas de Buenas Prácticas de Manufactura aplicadas en Latinoamérica.
 
 **Business Outcomes:**
-* Que los laboratorios adopten QualiTrack como su sistema principal de gestión de calidad, reduciendo progresivamente la dependencia de registros en papel y hojas de cálculo.
-* Reducir en aproximadamente un 80% el tiempo destinado a la preparación, consolidación y revisión de documentación durante auditorías regulatorias.
-* Disminuir en un 15% la pérdida de lotes de medicamentos mediante la detección temprana de desviaciones en variables críticas del proceso productivo.
-* Conseguir la suscripción de al menos dos laboratorios piloto en los primeros ocho meses de operación, validando la factibilidad y estabilidad del uso de la plataforma en entornos reales.
-* Posicionar a QualiTrack como una solución confiable y reconocida de trazabilidad digital frente a auditores regulatorios y entidades de control sanitario.
+* Registrar variables críticas (pH, temperatura, presión) directamente en la plataforma digital, abandonando progresivamente el uso de bitácoras físicas y hojas de cálculo para el control diario.
+* Exportar expedientes de lotes e informes de trazabilidad consolidados con un solo clic durante una inspección, reduciendo las horas de búsqueda manual de documentos.
+* Interactuar de inmediato con las alertas del sistema ante desvíos térmicos o de presión, ejecutando el bloqueo preventivo del lote afectado desde la interfaz antes de que avance en la cadena.
+* Completar el proceso de configuración inicial de la planta y conectar los primeros sensores al panel de QualiTrack durante la fase de prueba piloto.
+* Mostrar las pantallas de auditoría y los registros inmutables de la plataforma directamente a los inspectores de DIGEMID como evidencia de cumplimiento normativo.
 
 **User Assumptions:**
 * Los Jefes de Aseguramiento de la Calidad requieren visibilidad remota de la producción para supervisar procesos y liberar lotes sin necesidad de supervisión presencial constante.
@@ -164,25 +164,25 @@ En esta sección se exponen las premisas sobre las cuales se construye la propue
 * La resistencia inicial al cambio tecnológico en planta se reduce significativamente cuando la interfaz destinada al operario es simple, directa y enfocada exclusivamente en sus funciones esenciales.
 
 **User Outcomes:**
-* Los Jefes de Aseguramiento de la Calidad enfrentan inspecciones regulatorias con mayor tranquilidad al contar con información organizada, accesible y actualizada en tiempo real.
-* Los operarios reducen el tiempo dedicado a tareas administrativas y se concentran en la correcta operación de los equipos de esterilización y manufactura.
-* Los supervisores detectan desviaciones térmicas o de presión en el momento en que ocurren, permitiendo bloquear lotes defectuosos antes de que avancen en la cadena de suministro.
-* Las decisiones de liberación o rechazo de medicamentos se basan en datos capturados directamente por hardware, eliminando errores asociados a la transcripción manual.
+* Los Jefes de Aseguramiento de la Calidad sienten total confianza y control absoluto durante las auditorías regulatorias, sabiendo que la información es infalible y está disponible al instante, eliminando el estrés y las horas de preparación de último minuto.
+* Los operarios de plantas se liberan de la carga del papeleo monótono para enfocarse en lo que mejor saben hacer: operar los equipos con precisión y orgullo, reduciendo la ansiedad de cometer errores de registro manual.
+* Los supervisors presentan tranquilidad de que ningún lote defectuoso saldrá de la planta bajo su guardia, gracias a la capacidad de reaccionar de inmediato ante cualquier anomalía sin depender de revisiones manuales tardías.
+* La direccion de la Liberación de Medicamentos toman decisiones de liberación de medicamentos de forma rápida y con la certeza absoluta de que están respaldadas por datos puros y reales, protegiendo la salud de los pacientes y la reputación de la compañía.
 
 **Features:**
-* **Disponibilidad confiable de datos operativos críticos:** Capacidad del sistema para disponer de información precisa y continua sobre variables críticas del proceso productivo, reduciendo la dependencia de registros humanos y asegurando consistencia en los datos utilizados para control de calidad.
-* **Capacidad de reacción inmediata ante eventos de riesgo:** Capacidad del sistema para advertir oportunamente sobre desviaciones relevantes durante la operación, permitiendo que el personal responsable actúe sin demoras ante condiciones que comprometan la calidad del producto.
-* **Conservación íntegra y verificable de la información de producción:** Capacidad del sistema para mantener un registro completo, confiable y no alterable de la información asociada a los procesos y lotes, de manera que pueda ser consultada y utilizada como evidencia cuando sea necesario.
-* **Autorización digital descentralizada de decisiones críticas:** Capacidad del sistema para permitir que las decisiones de liberación o aprobación se realicen de forma digital y remota, sin depender de presencia física ni de flujos manuales tradicionales.
-* **Sustitución del registro manual como fuente principal de información:** Capacidad del sistema para consolidarse como la fuente central y más confiable de información operativa y regulatoria, desplazando progresivamente los registros manuales y hojas de cálculo en la gestión de calidad.
+* **Captura automática de datos mediante sensores IoT:** Capacidad de registrar de forma automática y continua variables críticas del proceso, como pH, temperatura y presión, eliminando la necesidad de ingreso manual de información y reduciendo los errores de registro.
+* **Sistema centralizado de alertas y bloqueo preventivo:** Capacidad de detectar desviaciones en parámetros de calidad y notificar de inmediato al personal responsable, permitiendo además restringir la liberación de lotes potencialmente no conformes.
+* **Trazabilidad digital inmutable de procesos y lotes:** Capacidad de almacenar y consultar el historial completo de registros, eventos y actividades asociadas a la producción, garantizando la integridad y transparencia de la información para auditorías y controles regulatorios.
+* **Aprobación y liberación remota con firma digital:** Capacidad de gestionar procesos de aprobación y liberación de lotes desde una plataforma web mediante mecanismos de firma digital que aseguren autenticidad y cumplimiento normativo.
+* **Notificaciones en tiempo real de fallas y desviaciones operativas:** Capacidad de informar de manera inmediata sobre anomalías en equipos o procesos críticos, facilitando una respuesta rápida del personal operativo para minimizar riesgos e interrupciones.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hipótesis 1:** Creemos que al integrar sensores IoT para la captura automática de variables críticas (pH, temperatura, presión), eliminaremos el riesgo de manipulación y error de transcripción. Lo sabremos cuando el error humano en los registros se reduzca a un valor cercano al 0%.
-* **Hipótesis 2:** Creemos que al implementar un sistema centralizado de alertas y bloqueo preventivo de lotes no conformes, reduciremos el desperdicio de producción. Lo sabremos cuando la pérdida de lotes por desviaciones de parámetros disminuya en un 15%.
-* **Hipótesis 3:** Creemos que al digitalizar la trazabilidad de forma inmutable mediante QualiTrack, agilizaremos las inspecciones regulatorias de DIGEMID. Lo sabremos cuando el tiempo de preparación de documentos para auditorías se reduzca en un 80% en las instituciones piloto.
-* **Hipótesis 4:** Creemos que al habilitar la firma digital en un dashboard web responsivo, aceleraremos la cadena de suministro segura. Lo sabremos cuando los supervisores de calidad logren firmar y liberar lotes de forma remota en menos de 10 minutos tras finalizar la producción.
-* **Hipótesis 5:** Creemos que al utilizar notificaciones en tiempo real, el personal de planta reaccionará instantáneamente ante fallas mecánicas en equipos como autoclaves. Lo sabremos cuando los operarios visualicen y atiendan alertas de desviación en menos de 5 segundos.
+* **Hipótesis 1:** **Creemos que lograremos** una reducción del error humano en los registros a un nivel cercano al 0% **si** los operadores de planta y el personal responsable de registrar las variables críticas **logran** una captura de datos automática y confiable sin intervención manual **con** la integración de sensores IoT para medir el pH, la temperatura y la presión.
+* **Hipótesis 2:** **Creemos que lograremos** una reducción del 15% en los residuos de producción **si** los supervisores de calidad y el personal de control de procesos **logran** la detección temprana y el bloqueo de lotes no conformes antes de su distribución **con** un sistema de alertas centralizado y un mecanismo de bloqueo preventivo de lotes.
+* **Hipótesis 3:** **Creemos que lograremos** una reducción del 80% en el tiempo de preparación de auditorías **si** el personal de control de calidad y cumplimiento normativo **logra** un acceso rápido y transparente a información trazable **con** una trazabilidad digital inmutable a través de QualiTrack.
+* **Hipótesis 4:** **Creemos que lograremos** la liberación de lotes en menos de 10 minutos para una cadena de suministro más eficiente y segura **si** los supervisores de calidad **logran** la capacidad de aprobar y liberar lotes de forma remota y eficiente **con** funciones de firma digital en un panel web con diseño adaptable.
+* **Hipótesis 5:** **Creemos que lograremos** un tiempo de respuesta ante fallas menor a 5 segundos **si** los operadores de planta **logran** la detección inmediata de fallas mecánicas en equipos críticos **con** notificaciones en tiempo real de desviaciones de parámetros.
 
 #### 1.2.2.4. Lean UX Canvas
 
