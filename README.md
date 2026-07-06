@@ -65,7 +65,7 @@
     </table>
   </p>
 
-  <h3>Junio, 2026</h3>
+  <h3>Julio, 2026</h3>
 
 </div>
 
@@ -465,6 +465,66 @@
       <td>Ruiz Madrid, Billy Jake</td>
       <td>Consolidación final del reporte del hito AV2, actualización técnica de diagramas de arquitectura C4, Swagger/OpenAPI y verificación de sincronización cloud en vivo.</td>
     </tr>
+    <tr>
+  <td>4.0.0</td>
+  <td>30/06/2026</td>
+  <td>Ruiz Madrid, Billy Jake</td>
+  <td>Apertura del Sprint 4 para la entrega TB2, planificación del incremento final y actualización del alcance del reporte.</td>
+</tr>
+<tr>
+  <td>4.1.0</td>
+  <td>30/06/2026</td>
+  <td>Castillo Yataco, Mauricio Sebastián</td>
+  <td>Validación final de la Landing Page, revisión de contenido público, navegación, secciones informativas y presentación comercial del producto.</td>
+</tr>
+<tr>
+  <td>4.2.0</td>
+  <td>01/07/2026</td>
+  <td>Ruiz Madrid, Billy Jake</td>
+  <td>Implementación del guard de autenticación en la Frontend Web Application para proteger rutas internas y redirigir usuarios no autenticados.</td>
+</tr>
+<tr>
+  <td>4.2.1</td>
+  <td>01/07/2026</td>
+  <td>Becerra Ttito, Felix Orlando</td>
+  <td>Incorporación de la sección de usuario autenticado en la barra superior, incluyendo visualización de sesión activa y opción de cierre de sesión.</td>
+</tr>
+<tr>
+  <td>4.3.0</td>
+  <td>01/07/2026</td>
+  <td>Ruiz Madrid, Billy Jake / Angulo Ramírez, Marcelo Martín</td>
+  <td>Alineación de endpoints del frontend con las rutas REST corregidas del backend y ajustes finales en vistas de auditoría, reportes y suscripciones.</td>
+</tr>
+<tr>
+  <td>4.4.0</td>
+  <td>02/07/2026</td>
+  <td>Ruiz Madrid, Billy Jake</td>
+  <td>Corrección de rutas REST del backend, organización de endpoints por recursos y mejora de la documentación Swagger/OpenAPI.</td>
+</tr>
+<tr>
+  <td>4.5.0</td>
+  <td>02/07/2026</td>
+  <td>Castillo Yataco, Mauricio Sebastián</td>
+  <td>Correcciones finales en flujos de Batch Management, incluyendo liberación, rechazo, uso de materias primas y consistencia con endpoints REST.</td>
+</tr>
+<tr>
+  <td>4.6.0</td>
+  <td>02/07/2026</td>
+  <td>Angulo Ramírez, Marcelo Martín</td>
+  <td>Validación final de módulos de Compliance & Alerts, auditoría y visualización de datos operativos en la aplicación web.</td>
+</tr>
+<tr>
+  <td>4.7.0</td>
+  <td>03/07/2026</td>
+  <td>Ruiz Madrid, Billy Jake / Becerra Ttito, Felix Orlando</td>
+  <td>Validación final de despliegues en GitHub Pages, Firebase Hosting, Render, Railway y flujo de suscripción mediante Stripe Checkout.</td>
+</tr>
+<tr>
+  <td>4.8.0</td>
+  <td>03/07/2026</td>
+  <td>Ruiz Madrid, Billy Jake</td>
+  <td>Consolidación del reporte final TB2, actualización de evidencias, colaboración, despliegue, servicios documentados y Student Outcome.</td>
+</tr>
   </tbody>
 </table>
 
@@ -631,6 +691,40 @@ de los distintos bounded contexts hacia la rama principal durante la fase AV2.
 
 ---
 
+### Reporte de colaboración de la entrega del TB2
+
+Durante la fase final del proyecto (Sprint 4 – TB2), el equipo ClosedSource se enfocó en consolidar la versión final de QualiTrack. El trabajo estuvo orientado a estabilizar la Landing Page, proteger la Frontend Web Application mediante autenticación, corregir rutas REST del backend, alinear los endpoints consumidos por Angular, validar los despliegues cloud y preparar las evidencias finales del informe.
+
+**Billy Jake Ruiz Madrid**
+
+Billy lideró la consolidación técnica del Sprint 4. Implementó el guard de autenticación en el frontend, ajustó rutas protegidas, alineó los servicios Angular con los endpoints REST corregidos y trabajó en la organización final de la documentación Swagger/OpenAPI. Además, consolidó las evidencias del reporte TB2, incluyendo ejecución, despliegue, documentación de servicios y Student Outcome.
+
+**Felix Orlando Becerra Ttito**
+
+Felix colaboró en la mejora de la experiencia de usuario autenticado dentro de la aplicación web. Participó en la incorporación de la sección de sesión activa en la barra superior, la validación del cierre de sesión y la revisión de flujos protegidos por autenticación. También apoyó en la validación de despliegues y conexión del frontend con el backend desplegado.
+
+**Mauricio Sebastián Castillo Yataco**
+
+Mauricio participó en la validación final de la Landing Page y en la revisión de flujos asociados al backend, especialmente en Batch Management. Su trabajo permitió asegurar que los procesos de lotes, liberación, rechazo y uso de materias primas mantuvieran consistencia con la estructura REST final y con la información presentada en el reporte.
+
+**Marcelo Martín Angulo Ramírez**
+
+Marcelo colaboró en la revisión final de módulos relacionados con Compliance & Alerts, auditoría y visualización de información operativa. También apoyó en la validación funcional de pantallas, consistencia de datos, evidencias visuales y correcciones necesarias para presentar una versión final más estable y coherente de QualiTrack.
+
+A continuación se presentan las evidencias de colaboración correspondientes a la entrega TB2.
+
+<div align="center">
+  <img src="./assets/img/Readme/commits-tb2.jpeg" alt="Commits TB2" width="90%">
+  <p><em>Figura: Contribuciones por miembro del equipo ClosedSource durante el TB2.</em></p>
+</div>
+
+<div align="center">
+  <img src="./assets/img/Readme/network-tb2.jpeg" alt="Network Graph TB2" width="90%">
+  <p><em>Figura: Network Graph de los repositorios durante la entrega TB2.</em></p>
+</div>
+
+---
+
 ## Tabla de contenido
 
 - [Capítulo I: Introducción](https://github.com/ClosedSource-11848/ClosedSource-Project-Report/blob/main/docs/ChapterI.md#capítulo-i-introducción)
@@ -736,7 +830,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones
 por parte del grupo, que permiten sustentar el haber alcanzado el logro del
-ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
+ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1, AV2 y TB2.
 
 <table border="1" cellpadding="5" cellspacing="0" width="100%">
   <thead>
@@ -754,10 +848,12 @@ ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
         <strong>AV1:</strong> Presentó los avances del Capítulo I y Capítulo III en reuniones de equipo, explicando los segmentos objetivo, el Product Backlog y el Impact Mapping, facilitando la comprensión de las decisiones de priorización y del enfoque del producto.<br><br>
         <strong>TB1:</strong> Expuso ante el equipo la arquitectura base del frontend en Angular, detallando la configuración de entornos, enrutamiento principal y la estructura de los bounded contexts de Shared e IAM para alinear el desarrollo técnico.<br><br>
         <strong>AV2:</strong> Explicó al equipo la integración general de QualiTrack, detallando la conexión entre Angular y Spring Boot, el funcionamiento de JWT, los módulos IAM, Reporting & Audit, Subscription & Billing, Laboratory y Equipment, así como el despliegue en Firebase, Render y Railway.<br><br>
+        <strong>TB2:</strong> Presentó la versión final de QualiTrack, explicando el funcionamiento del guard de autenticación, la navegación protegida, la sesión activa del usuario, las rutas REST corregidas, la documentación Swagger/OpenAPI y la validación final de despliegues en GitHub Pages, Firebase, Render y Railway.<br><br>
         <strong>Angulo Ramírez, Marcelo Martín:</strong><br><br>
         <strong>AV1:</strong> Expuso el Lean UX Canvas y los lineamientos de arquitectura del sistema, adaptando el nivel técnico de la explicación según la audiencia para asegurar la comprensión del enfoque de diseño y la estructura general de la solución.<br><br>
         <strong>TB1:</strong> Comunicó en las reuniones de sincronización los detalles de integración del bounded context de Laboratory con las APIs del backend, explicando el flujo de datos de las entidades farmacéuticas.<br><br>
         <strong>AV2:</strong> Presentó los avances del bounded context de Compliance & Alerts, explicando cómo las alertas, eventos de cumplimiento y preferencias de notificación se relacionan con los demás módulos del sistema.<br><br>
+        <strong>TB2:</strong> Explicó la validación final de los módulos de Compliance & Alerts y auditoría, comunicando cómo las alertas, eventos y registros de auditoría aportan trazabilidad y control dentro de la solución final.<br><br>
         <strong>Diaz Caruzo, Edgard Daniel:</strong><br><br>
         <strong>AV1:</strong> Comunicó los resultados de las entrevistas y la estructura del proceso de recolección de información, explicando los hallazgos obtenidos y su impacto en la definición de necesidades del sistema.<br><br>
         <strong>TB1:</strong> Presentó la estrategia de manejo de estado basada en señales (signal-based stores) aplicada al bounded context de Equipment, facilitando al equipo la adopción de este patrón en otros módulos.<br><br>
@@ -770,8 +866,10 @@ ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
         <strong>AV1:</strong> Expuso el desarrollo de entrevistas y el análisis de resultados, explicando la relación entre los hallazgos obtenidos y la definición de funcionalidades del sistema.<br><br>
         <strong>TB1:</strong> Comunicó la implementación de las técnicas de optimización, como lazy loading, y la estructuración de componentes para el bounded context de Batch, promoviendo buenas prácticas de rendimiento en el equipo.<br><br>
         <strong>AV2:</strong> Explicó las correcciones realizadas en el bounded context de Batch, incluyendo consultas JPA, controladores, uso de materias primas, liberación y rechazo de lotes, facilitando la comprensión del flujo de trazabilidad.<br><br>
+        <strong>TB2:</strong> Presentó las validaciones finales del flujo de Batch Management, explicando la consistencia entre liberación de lotes, rechazo, uso de materias primas y endpoints REST asociados.<br><br>
         <strong>Becerra Ttito, Felix Orlando:</strong><br><br>
-        <strong>AV2:</strong> Presentó los avances del bounded context de Tracking & Telemetry, explicando la captura de telemetría, mediciones, historial, estado de equipos y su relación con la detección de anomalías dentro del sistema QualiTrack.
+        <strong>AV2:</strong> Presentó los avances del bounded context de Tracking & Telemetry, explicando la captura de telemetría, mediciones, historial, estado de equipos y su relación con la detección de anomalías dentro del sistema QualiTrack.<br><br>
+        <strong>TB2:</strong> Comunicó los ajustes relacionados con la experiencia de usuario autenticado, incluyendo la sección de sesión activa, cierre de sesión y validación de rutas protegidas en la aplicación web.
       </td>
       <td>
         <strong>Conclusión AV1:</strong><br>
@@ -779,7 +877,9 @@ ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
         <strong>Conclusión TB1:</strong><br>
         La comunicación oral fue fundamental para sincronizar el desarrollo técnico del frontend. Las discusiones técnicas y exposiciones sobre patrones de diseño, consumo de APIs y arquitectura de Angular garantizaron que todos los miembros desarrollaran sus módulos bajo los mismos estándares, reduciendo conflictos de integración.<br><br>
         <strong>Conclusión AV2:</strong><br>
-        La comunicación oral permitió coordinar la integración completa entre frontend, backend, base de datos y servicios externos. Las explicaciones técnicas sobre JWT, bounded contexts, despliegue cloud, Swagger y Stripe facilitaron que el equipo comprendiera el funcionamiento integral de QualiTrack y pudiera presentar una solución funcional ante diferentes audiencias.
+        La comunicación oral permitió coordinar la integración completa entre frontend, backend, base de datos y servicios externos. Las explicaciones técnicas sobre JWT, bounded contexts, despliegue cloud, Swagger y Stripe facilitaron que el equipo comprendiera el funcionamiento integral de QualiTrack y pudiera presentar una solución funcional ante diferentes audiencias.<br><br>
+        <strong>Conclusión TB2:</strong><br>
+        La comunicación oral permitió presentar la versión final de QualiTrack de forma clara, explicando a diferentes audiencias cómo la Landing Page, la aplicación web, los servicios REST, la autenticación y los despliegues cloud funcionan como una solución integrada.
       </td>
     </tr>
     <tr>
@@ -789,10 +889,12 @@ ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
         <strong>AV1:</strong> Redactó secciones del Capítulo I, Capítulo III y Capítulo IV, incluyendo Product Backlog, Impact Mapping y diagramas de arquitectura, utilizando un lenguaje técnico claro que permitió la comprensión tanto a nivel académico como técnico.<br><br>
         <strong>TB1:</strong> Documentó los diagramas de arquitectura frontend, redactó la configuración base del código, como clases abstractas e interfaces, y actualizó los archivos de internacionalización (i18n) para asegurar traducciones claras en inglés y español para el usuario final.<br><br>
         <strong>AV2:</strong> Redactó y consolidó documentación técnica del Sprint 3, incluyendo evidencias de desarrollo, despliegue, Swagger/OpenAPI, diagramas de arquitectura, integración de backend, IAM, suscripciones, pagos y persistencia en base de datos.<br><br>
+        <strong>TB2:</strong> Redactó y consolidó la documentación final del Sprint 4, incluyendo evidencias de ejecución, despliegue, documentación de servicios REST, correcciones de endpoints, guard de autenticación y actualización del Student Outcome.<br><br>
         <strong>Angulo Ramírez, Marcelo Martín:</strong><br><br>
         <strong>AV1:</strong> Documentó el Lean UX Canvas y aportó en la organización y mejora del contenido del informe, manteniendo coherencia en la estructura y claridad en la redacción.<br><br>
         <strong>TB1:</strong> Redactó de manera estructurada los servicios API, responses, requests y transformadores de datos del bounded context de Laboratory, asegurando un código limpio y autodescriptivo.<br><br>
         <strong>AV2:</strong> Redactó estructuras técnicas asociadas al bounded context de Compliance & Alerts, incluyendo comandos, queries, recursos REST y componentes de persistencia, manteniendo una nomenclatura clara y consistente con la arquitectura del backend.<br><br>
+        <strong>TB2:</strong> Colaboró en la revisión escrita de evidencias relacionadas con Compliance & Alerts, auditoría y validación funcional de pantallas, asegurando coherencia entre la documentación y la versión final implementada.<br><br>
         <strong>Diaz Caruzo, Edgard Daniel:</strong><br><br>
         <strong>AV1:</strong> Redactó el diseño, registro y evidencias de entrevistas en el Capítulo II, organizando la información de manera clara y comprensible para su análisis posterior.<br><br>
         <strong>TB1:</strong> Documentó la configuración de enrutamiento y redactó las interfaces de las entidades de mantenimiento para el bounded context de Equipment, facilitando la mantenibilidad del código.<br><br>
@@ -805,8 +907,10 @@ ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
         <strong>AV1:</strong> Documentó entrevistas, análisis de resultados y parte del Capítulo V, organizando la información de forma estructurada y alineada con los requerimientos del informe.<br><br>
         <strong>TB1:</strong> Redactó los commits del repositorio utilizando convenciones estándar, como chore, feat y fix, e implementó el código de las vistas de gestión de lotes, manteniendo una nomenclatura de variables y métodos clara y coherente.<br><br>
         <strong>AV2:</strong> Redactó e implementó correcciones técnicas en controladores, consultas y flujos del bounded context de Batch, dejando evidencia clara en commits y en el código sobre los ajustes realizados para el procesamiento de materias primas y trazabilidad de lotes.<br><br>
+        <strong>TB2:</strong> Documentó validaciones y correcciones asociadas a Batch Management, contribuyendo a dejar evidencia clara sobre los flujos finales de lotes, materias primas y trazabilidad.<br><br>
         <strong>Becerra Ttito, Felix Orlando:</strong><br><br>
-        <strong>AV2:</strong> Redactó e implementó componentes técnicos del bounded context de Tracking & Telemetry, incluyendo comandos, controladores REST y estructuras relacionadas con mediciones, historial y estado de equipos. Además, colaboró en la configuración de despliegue y variables de entorno para conectar la aplicación con el backend desplegado.
+        <strong>AV2:</strong> Redactó e implementó componentes técnicos del bounded context de Tracking & Telemetry, incluyendo comandos, controladores REST y estructuras relacionadas con mediciones, historial y estado de equipos. Además, colaboró en la configuración de despliegue y variables de entorno para conectar la aplicación con el backend desplegado.<br><br>
+        <strong>TB2:</strong> Apoyó en la documentación de la experiencia de usuario autenticado, validación de rutas protegidas, sesión activa y evidencias de despliegue final de la aplicación.
       </td>
       <td>
         <strong>Conclusión AV1:</strong><br>
@@ -814,7 +918,9 @@ ABET - EAC - Student Outcome 3 durante las entregas AV1, TB1 y AV2.
         <strong>Conclusión TB1:</strong><br>
         La comunicación escrita, enfocada en la creación de diagramas de arquitectura, convenciones de commits y redacción de código limpio y autodescriptivo, permitió que el equipo colaborara de manera asíncrona sobre el repositorio frontend, asegurando que cualquier integrante pudiera entender y extender el trabajo de sus compañeros.<br><br>
         <strong>Conclusión AV2:</strong><br>
-        La comunicación escrita permitió documentar de forma clara la integración técnica de QualiTrack, incluyendo backend, frontend, base de datos, autenticación, pagos, despliegue y documentación de servicios. La redacción estructurada de commits, diagramas, endpoints y evidencias facilitó la trazabilidad del trabajo y permitió sustentar adecuadamente la entrega del AV2.
+        La comunicación escrita permitió documentar de forma clara la integración técnica de QualiTrack, incluyendo backend, frontend, base de datos, autenticación, pagos, despliegue y documentación de servicios. La redacción estructurada de commits, diagramas, endpoints y evidencias facilitó la trazabilidad del trabajo y permitió sustentar adecuadamente la entrega del AV2.<br><br>
+        <strong>Conclusión TB2:</strong><br>
+        La comunicación escrita permitió consolidar el reporte final con evidencias de implementación, ejecución, servicios documentados, despliegue y colaboración. Esto facilitó la trazabilidad del trabajo realizado y permitió sustentar la entrega TB2 con información clara, ordenada y alineada al producto final.
       </td>
     </tr>
   </tbody>
